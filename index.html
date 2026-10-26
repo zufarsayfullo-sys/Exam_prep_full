@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7faff">
+  <title>ExamPrep for Teachers — Choose a Level</title>
+  <style>
+    :root {
+      --ink: #10254a;
+      --muted: #536b93;
+      --blue: #315cff;
+      --surface: rgba(255,255,255,.82);
+      --shadow: 0 16px 38px rgba(36, 72, 132, .09);
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(ellipse at 0% 0%, rgba(194,224,255,.7), transparent 30rem),
+        radial-gradient(ellipse at 100% 100%, rgba(199,250,224,.55), transparent 28rem),
+        #f7faff;
+    }
+    a { color: inherit; }
+    .site-header {
+      width: min(1440px, 100%);
+      margin: 0 auto;
+      padding: 24px clamp(20px, 4vw, 58px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      min-width: 0;
+    }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      flex: 0 0 auto;
+      color: white;
+      border-radius: 15px;
+      background: linear-gradient(145deg, #5a8bff, #244be8);
+      box-shadow: 0 8px 18px rgba(49,92,255,.24);
+    }
+    .brand-mark svg { width: 29px; height: 29px; }
+    .brand-name { font-size: 1.25rem; font-weight: 850; letter-spacing: -.045em; line-height: 1.1; }
+    .brand-subtitle { margin-top: 4px; color: var(--muted); font-size: .9rem; }
+    .teacher-area { display: flex; align-items: center; gap: 15px; }
+    .icon-button, .profile-button {
+      border: 0;
+      color: var(--ink);
+      background: transparent;
+      font: inherit;
+      cursor: pointer;
+    }
+    .icon-button {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+    }
+    .icon-button:hover, .profile-button:hover { background: rgba(49,92,255,.07); }
+    .notification-dot {
+      position: absolute;
+      top: 7px;
+      right: 7px;
+      width: 8px;
+      height: 8px;
+      border: 2px solid #f7faff;
+      border-radius: 50%;
+      background: #ff626c;
+    }
+    .profile-button { display: flex; align-items: center; gap: 10px; padding: 5px 8px; border-radius: 999px; }
+    .avatar {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      color: white;
+      font-size: .9rem;
+      font-weight: 800;
+      background: linear-gradient(145deg, #477cff, #382ee8);
+    }
+    .profile-label { font-weight: 650; }
+    .chevron { color: #7183a6; font-size: .85rem; }
+    main {
+      width: min(1440px, 100%);
+      margin: 0 auto;
+      padding: clamp(32px, 5vw, 70px) clamp(20px, 4vw, 58px) 76px;
+    }
+    .intro { max-width: 760px; margin: 0 auto 38px; text-align: center; }
+    .greeting { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 12px; color: var(--muted); font-size: clamp(1.1rem, 2vw, 1.55rem); }
+    .wave { font-size: 1.8em; line-height: 1; }
+    h1 { margin: 0; font-size: clamp(2.3rem, 5.6vw, 4.35rem); line-height: 1.04; letter-spacing: -.065em; font-weight: 900; }
+    h1 span { color: var(--blue); }
+    .intro-copy { max-width: 650px; margin: 18px auto 0; color: var(--muted); font-size: clamp(1rem, 1.8vw, 1.2rem); line-height: 1.7; }
+    .level-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 18px;
+      align-items: stretch;
+    }
+    .level-card {
+      --accent: #16a765;
+      --tint: #dff9eb;
+      position: relative;
+      isolation: isolate;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 0;
+      min-height: 420px;
+      overflow: hidden;
+      padding: 26px 18px 22px;
+      text-align: center;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.9);
+      border-radius: var(--radius);
+      background: linear-gradient(155deg, color-mix(in srgb, var(--tint) 82%, white), var(--tint));
+      box-shadow: var(--shadow);
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .level-card::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 190px;
+      height: 190px;
+      top: 38px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      background: rgba(255,255,255,.36);
+    }
+    .level-card::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 150%;
+      height: 72px;
+      bottom: -38px;
+      left: -25%;
+      border-radius: 50% 50% 0 0;
+      background: rgba(255,255,255,.42);
+    }
+    .level-card:hover { transform: translateY(-6px); box-shadow: 0 22px 44px rgba(36,72,132,.15); border-color: rgba(255,255,255,1); }
+    .level-card:focus-visible, button:focus-visible { outline: 3px solid #244be8; outline-offset: 4px; }
+    .level-card:active { transform: translateY(-2px); }
+    .level-card.elementary { --accent: #2877f9; --tint: #dcefff; }
+    .level-card.preint { --accent: #6847e9; --tint: #eee7ff; }
+    .level-card.inter { --accent: #ff8a21; --tint: #fff0d5; }
+    .level-card.upper { --accent: #079bb0; --tint: #d5f7f8; }
+    .illustration { display: grid; place-items: center; width: 142px; height: 142px; margin: 0 auto 12px; }
+    .illustration svg { display: block; width: 100%; height: 100%; overflow: visible; }
+    .level-name { margin: 0; font-size: clamp(1.15rem, 1.65vw, 1.55rem); line-height: 1.2; letter-spacing: -.04em; font-weight: 850; }
+    .level-code { margin-top: 14px; padding: 7px 17px; color: var(--accent); background: rgba(255,255,255,.54); border-radius: 999px; font-size: .95rem; font-weight: 850; }
+    .level-description { max-width: 220px; margin: 16px 0 20px; color: #49638a; font-size: .96rem; line-height: 1.55; }
+    .arrow {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      margin-top: auto;
+      color: white;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 8px 18px color-mix(in srgb, var(--accent) 23%, transparent);
+      transition: transform .2s ease;
+    }
+    .level-card:hover .arrow { transform: translateX(3px); }
+    .arrow svg { width: 23px; height: 23px; }
+    .footer-note { margin: 34px 0 0; color: #8493ad; text-align: center; font-size: .88rem; }
+    @media (max-width: 1120px) {
+      .level-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .level-card { min-height: 390px; }
+      .level-card:last-child { grid-column: auto; }
+    }
+    @media (max-width: 700px) {
+      .site-header { padding: 16px 18px; }
+      .brand-mark { width: 42px; height: 42px; border-radius: 13px; }
+      .brand-name { font-size: 1.08rem; }
+      .brand-subtitle { font-size: .8rem; }
+      .teacher-area { gap: 4px; }
+      .icon-button { width: 36px; height: 36px; }
+      .avatar { width: 36px; height: 36px; }
+      .profile-label, .chevron { display: none; }
+      main { padding: 34px 18px 48px; }
+      .intro { margin-bottom: 28px; }
+      .intro-copy { line-height: 1.55; }
+      .level-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .level-card { min-height: 330px; padding: 18px 12px 16px; border-radius: 20px; }
+      .illustration { width: min(118px, 100%); height: 118px; margin-bottom: 8px; }
+      .level-name { font-size: clamp(1rem, 4.2vw, 1.25rem); }
+      .level-code { margin-top: 10px; padding: 6px 13px; }
+      .level-description { margin: 12px 0 16px; font-size: .88rem; }
+      .arrow { width: 44px; height: 44px; }
+    }
+    @media (max-width: 380px) {
+      .brand-mark { width: 38px; height: 38px; }
+      .brand { gap: 8px; }
+      .brand-name { font-size: 1rem; }
+      .notification { display: none; }
+      .level-grid { grid-template-columns: 1fr; }
+      .level-card { min-height: 300px; }
+      .illustration { width: 112px; height: 112px; }
+      .level-description { max-width: 260px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="ExamPrep for Teachers home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none">
+          <path d="M4 17 24 6l20 11-20 11L4 17Z" fill="white"/>
+          <path d="M11 22v11l13 8 13-8V22L24 29 11 22Z" fill="#DCE7FF"/>
+          <path d="M42 19v12" stroke="white" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="42" cy="34" r="2.5" fill="#FFD66B"/>
+        </svg>
+      </span>
+      <span>
+        <span class="brand-name">ExamPrep</span>
+        <span class="brand-subtitle" style="display:block">For Teachers</span>
+      </span>
+    </a>
+    <div class="teacher-area">
+      <button class="icon-button notification" type="button" aria-label="Notifications" title="Notifications">
+        <svg width="23" height="23" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z" stroke="#536b93" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M10 21h4" stroke="#536b93" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="notification-dot"></span>
+      </button>
+      <button class="profile-button" type="button" aria-label="Teacher profile">
+        <span class="avatar">TS</span>
+        <span class="profile-label">Teacher</span>
+        <span class="chevron" aria-hidden="true">⌄</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="greeting"><span class="wave" aria-hidden="true">👋</span> Hello, Teacher!</p>
+      <h1 id="page-title">Choose a <span>level</span></h1>
+      <p class="intro-copy">Select the level you want to work with. You can access lesson plans, activities, and resources tailored to each level.</p>
+    </section>
+
+    <section class="level-grid" aria-label="Choose a teaching level">
+      <a class="level-card beginner" href="./beginner/index.html" aria-label="Open Beginner level, A1">
+        <div class="illustration" aria-hidden="true">
+          <svg viewBox="0 0 160 160">
+            <ellipse cx="80" cy="137" rx="51" ry="8" fill="#20B66C" opacity=".16"/>
+            <path d="M80 122V65" stroke="#16894D" stroke-width="7" stroke-linecap="round"/>
+            <path d="M78 88C44 83 32 60 38 42c26 0 43 17 40 46Z" fill="#16A765"/>
+            <path d="M83 76c1-30 22-48 47-43 2 26-15 45-47 43Z" fill="#2AC778"/>
+            <path d="M78 87 49 52M85 72l32-28" stroke="#8BE6B4" stroke-width="3" stroke-linecap="round"/>
+            <path d="M45 124c-4-9 8-15 18-12 6-10 23-10 29 0 13-4 24 5 20 13-3 7-59 9-67-1Z" fill="#674C3D"/>
+            <path d="M33 79l-8-4m13-8-5-7m87 22 8-5m-11-11 7-8" stroke="#54D995" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h2 class="level-name">Beginner</h2><span class="level-code">A1</span>
+        <p class="level-description">Build basic skills and confidence.</p>
+        <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+
+      <a class="level-card elementary" href="./elementary/index.html" aria-label="Open Elementary level, A2">
+        <div class="illustration" aria-hidden="true">
+          <svg viewBox="0 0 160 160">
+            <ellipse cx="80" cy="136" rx="53" ry="8" fill="#3286F7" opacity=".15"/>
+            <g transform="rotate(-7 79 104)">
+              <path d="M34 99h82c8 0 15 5 15 12v10H48c-10 0-17-6-17-14 0-4 1-6 3-8Z" fill="#F5A51A"/>
+              <path d="M39 91h82c8 0 13 5 13 11v7H46c-9 0-15-5-15-11 0-3 3-6 8-7Z" fill="#FFC43D"/>
+              <path d="M48 98h75" stroke="#FFE8A2" stroke-width="3" stroke-linecap="round"/>
+              <path d="M43 60h79c7 0 12 5 12 12v8H52c-10 0-17-5-17-12 0-4 3-7 8-8Z" fill="#1762D9"/>
+              <path d="M40 51h83c7 0 12 5 12 12v8H49c-9 0-15-5-15-12 0-4 2-7 6-8Z" fill="#3185FF"/>
+              <path d="M48 58h77" stroke="#8DBAFF" stroke-width="3" stroke-linecap="round"/>
+              <path d="M126 68v13" stroke="#DCEBFF" stroke-width="3"/>
+            </g>
+            <path d="m28 70-7-4m9 17-9 1m112-25 6-7m-3 22 8-1" stroke="#6CB4FF" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h2 class="level-name">Elementary</h2><span class="level-code">A2</span>
+        <p class="level-description">Develop everyday communication skills.</p>
+        <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+
+      <a class="level-card preint" href="./pre-int/index.html" aria-label="Open Pre-Intermediate level, B1">
+        <div class="illustration" aria-hidden="true">
+          <svg viewBox="0 0 160 160" fill="none">
+            <ellipse cx="80" cy="135" rx="51" ry="8" fill="#6847E9" opacity=".15"/>
+            <rect x="24" y="38" width="112" height="76" rx="12" fill="#8C72F5"/>
+            <rect x="30" y="44" width="100" height="64" rx="8" fill="#F5F1FF"/>
+            <path d="M17 117h126l-11 11H28l-11-11Z" fill="#5136CF"/>
+            <path d="M36 117h88l-5 5H41l-5-5Z" fill="#9D8BFF"/>
+            <path d="M54 63c0-7 7-12 16-12h21c9 0 16 5 16 12v7c0 7-7 12-16 12H78l-12 9v-11c-7-2-12-8-12-15v-2Z" fill="#704CEB"/>
+            <circle cx="72" cy="69" r="3" fill="white"/><circle cx="82" cy="69" r="3" fill="white"/><circle cx="92" cy="69" r="3" fill="white"/>
+            <path d="m20 57-6-4m10 17-8 1m118-13 6-5m-8 22 8 1" stroke="#B9A8FF" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h2 class="level-name">Pre-Int</h2><span class="level-code">B1</span>
+        <p class="level-description">Gain fluency and use more complex language.</p>
+        <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+
+      <a class="level-card inter" href="./inter/index.html" aria-label="Open Intermediate level, B2">
+        <div class="illustration" aria-hidden="true">
+          <svg viewBox="0 0 160 160" fill="none">
+            <ellipse cx="80" cy="137" rx="51" ry="8" fill="#FF8A21" opacity=".15"/>
+            <circle cx="75" cy="81" r="48" fill="#FFB75A" opacity=".22"/>
+            <circle cx="75" cy="81" r="39" fill="#FF7A18"/>
+            <circle cx="75" cy="81" r="28" fill="#FFF0D5"/>
+            <circle cx="75" cy="81" r="18" fill="#FF8A21"/>
+            <circle cx="75" cy="81" r="8" fill="#FFD37A"/>
+            <path d="m72 83 50-51" stroke="#3C66E8" stroke-width="7" stroke-linecap="round"/>
+            <path d="m117 27 13-7 1 17-11 5-3-15Z" fill="#557CFF"/>
+            <path d="m117 27-8-2 1 16 10 1" fill="#315CFF"/>
+            <path d="m28 62-7-4m11 18-8 2m94 26 7 4m-5-61 7-5" stroke="#FFB24C" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h2 class="level-name">Inter</h2><span class="level-code">B2</span>
+        <p class="level-description">Express ideas clearly and accurately.</p>
+        <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+
+      <a class="level-card upper" href="./upper-inter/index.html" aria-label="Open Upper-Intermediate level, B2+">
+        <div class="illustration" aria-hidden="true">
+          <svg viewBox="0 0 160 160" fill="none">
+            <ellipse cx="80" cy="137" rx="53" ry="8" fill="#079BB0" opacity=".15"/>
+            <path d="M20 124 57 68l17 25 21-42 46 73H20Z" fill="#2F78E8"/>
+            <path d="m45 124 29-49 13 19-20 30H45Z" fill="#1559C9"/>
+            <path d="m76 124 19-73 46 73H76Z" fill="#3F8CF5"/>
+            <path d="m88 80 7-29 16 25-10-3-4 9-9-2Z" fill="#D9EBFF"/>
+            <path d="M113 49V21" stroke="#164EA7" stroke-width="4" stroke-linecap="round"/>
+            <path d="M115 22h29l-8 10 8 9h-29V22Z" fill="#FF674F"/>
+            <path d="M18 79c0-7 7-12 14-9 5-11 21-8 23 3 9 0 12 13 3 17H28c-6 0-10-5-10-11Z" fill="white" opacity=".9"/>
+            <path d="M103 88c0-6 6-10 12-8 4-9 17-7 19 3 7 0 10 11 3 14h-26c-5 0-8-4-8-9Z" fill="white" opacity=".9"/>
+            <path d="m38 59-5-5m111 12 5-6" stroke="#22B9C8" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h2 class="level-name">Upper-Inter</h2><span class="level-code">B2+</span>
+        <p class="level-description">Refine your skills for academic and professional success.</p>
+        <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </section>
+    <p class="footer-note">Better lessons. Higher scores.</p>
+  </main>
+</body>
+</html>
