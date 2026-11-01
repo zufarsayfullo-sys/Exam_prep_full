@@ -1,96 +1,145 @@
-{
-  "title": "There is / There are — Word Order",
-  "level": "beginner",
-  "category": "Grammar",
-  "questions": [
-    {
-      "id": "tia-001",
-      "type": "affirmative",
-      "prompt": "the living room / a sofa / There's / in",
-      "answer": "There's a sofa in the living room.",
+      "answer": "Is there a fridge in the kitchen?",
       "points": 1
     },
     {
-      "id": "tia-002",
-      "type": "affirmative",
-      "prompt": "There's / the bathroom / in / a mirror",
-      "answer": "There's a mirror in the bathroom.",
+      "id": "tia-051",
+      "type": "question",
+      "prompt": "a desk / next to / Is there / the window / ?",
+      "answer": "Is there a desk next to the window?",
       "points": 1
     },
     {
-      "id": "tia-003",
-      "type": "affirmative",
-      "prompt": "a lamp / on / the table / There's",
-      "answer": "There's a lamp on the table.",
+      "id": "tia-052",
+      "type": "question",
+      "prompt": "Is there / in / a TV / your bedroom / ?",
+      "answer": "Is there a TV in your bedroom?",
       "points": 1
     },
     {
-      "id": "tia-004",
-      "type": "affirmative",
-      "prompt": "There's / the shelf / on / a book",
-      "answer": "There's a book on the shelf.",
+      "id": "tia-053",
+      "type": "question",
+      "prompt": "a bus stop / Is there / near / the school / ?",
+      "answer": "Is there a bus stop near the school?",
       "points": 1
     },
     {
-      "id": "tia-005",
-      "type": "affirmative",
-      "prompt": "a rug / the bed / There's / under",
-      "answer": "There's a rug under the bed.",
+      "id": "tia-054",
+      "type": "question",
+      "prompt": "two beds / the bedroom / Are there / in / ?",
+      "answer": "Are there two beds in the bedroom?",
       "points": 1
     },
     {
-      "id": "tia-006",
-      "type": "affirmative",
-      "prompt": "on / the wall / There's / a clock",
-      "answer": "There's a clock on the wall.",
+      "id": "tia-055",
+      "type": "question",
+      "prompt": "the hall / Are there / any wardrobes / in / ?",
+      "answer": "Are there any wardrobes in the hall?",
       "points": 1
     },
     {
-      "id": "tia-007",
-      "type": "affirmative",
-      "prompt": "There's / in / the kitchen / a fridge",
-      "answer": "There's a fridge in the kitchen.",
+      "id": "tia-056",
+      "type": "question",
+      "prompt": "Are there / the kitchen / in / any chairs / ?",
+      "answer": "Are there any chairs in the kitchen?",
       "points": 1
     },
     {
-      "id": "tia-008",
-      "type": "affirmative",
-      "prompt": "the desk / next to / There's / a chair",
-      "answer": "There's a chair next to the desk.",
+      "id": "tia-057",
+      "type": "question",
+      "prompt": "the shelf / any books / on / Are there / ?",
+      "answer": "Are there any books on the shelf?",
       "points": 1
     },
     {
-      "id": "tia-009",
-      "type": "affirmative",
-      "prompt": "behind / a garden / the house / There's",
-      "answer": "There's a garden behind the house.",
+      "id": "tia-058",
+      "type": "question",
+      "prompt": "the room / in / Are there / three windows / ?",
+      "answer": "Are there three windows in the room?",
       "points": 1
     },
     {
-      "id": "tia-010",
-      "type": "affirmative",
-      "prompt": "There's / above / the sofa / a picture",
-      "answer": "There's a picture above the sofa.",
+      "id": "tia-059",
+      "type": "question",
+      "prompt": "on / any pictures / the wall / Are there / ?",
+      "answer": "Are there any pictures on the wall?",
       "points": 1
     },
     {
-      "id": "tia-011",
-      "type": "affirmative",
-      "prompt": "in / a TV / my bedroom / There is",
-      "answer": "There is a TV in my bedroom.",
+      "id": "tia-060",
+      "type": "question",
+      "prompt": "any shops / near / Are there / your house / ?",
+      "answer": "Are there any shops near your house?",
       "points": 1
     },
     {
-      "id": "tia-012",
-      "type": "affirmative",
-      "prompt": "There is / a window / the hall / in",
-      "answer": "There is a window in the hall.",
+      "id": "tia-061",
+      "type": "question",
+      "prompt": "the garden / Are there / in / any flowers / ?",
+      "answer": "Are there any flowers in the garden?",
       "points": 1
     },
     {
-      "id": "tia-013",
-      "type": "affirmative",
-      "prompt": "the kitchen / in / There is / a small table",
-      "answer": "There is a small table in the kitchen.",
+      "id": "tia-062",
+      "type": "question",
+      "prompt": "rooms / How many / in your house / are there / ?",
+      "answer": "How many rooms are there in your house?",
       "points": 1
     },
+    {
+      "id": "tia-063",
+      "type": "question",
+      "prompt": "How many / in the kitchen / are there / chairs / ?",
+      "answer": "How many chairs are there in the kitchen?",
+      "points": 1
+    },
+    {
+      "id": "tia-064",
+      "type": "question",
+      "prompt": "are there / windows / How many / in your bedroom / ?",
+      "answer": "How many windows are there in your bedroom?",
+      "points": 1
+    },
+    {
+      "id": "tia-065",
+      "type": "question",
+      "prompt": "How many / in the classroom / are there / students / ?",
+      "answer": "How many students are there in the classroom?",
+      "points": 1
+    },
+    {
+      "id": "tia-066",
+      "type": "question",
+      "prompt": "How many / are there / on the desk / books / ?",
+      "answer": "How many books are there on the desk?",
+      "points": 1
+    },
+    {
+      "id": "tia-067",
+      "type": "question",
+      "prompt": "How many / in the living room / lamps / are there / ?",
+      "answer": "How many lamps are there in the living room?",
+      "points": 1
+    },
+    {
+      "id": "tia-068",
+      "type": "question",
+      "prompt": "beds / are there / in the flat / How many / ?",
+      "answer": "How many beds are there in the flat?",
+      "points": 1
+    },
+    {
+      "id": "tia-069",
+      "type": "question",
+      "prompt": "in the hall / How many / are there / doors / ?",
+      "answer": "How many doors are there in the hall?",
+      "points": 1
+    },
+    {
+      "id": "tia-070",
+      "type": "question",
+      "prompt": "pictures / are there / How many / on the wall / ?",
+      "answer": "How many pictures are there on the wall?",
+      "points": 1
+    }
+  ]
+}
