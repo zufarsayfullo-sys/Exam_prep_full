@@ -11,7 +11,7 @@
 <script>
 /* Paste only the PUBLIC anon / publishable key here. NEVER use a service_role or secret key. */
 const SUPABASE_URL='https://dfepopppcggzecdxexeho.supabase.co';
-const SUPABASE_PUBLIC_KEY='PASTE_YOUR_SUPABASE_ANON_OR_PUBLISHABLE_KEY';
+const SUPABASE_PUBLIC_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo';
 const $=id=>document.getElementById(id);
 const show=id=>{for(const el of ['home','teacher','join','waiting','quiz','result'])$(el).classList.toggle('hidden',el!==id)};
 let sid=null,pid=null,items=[],index=0,answers={},submitted=false,busy=false;
