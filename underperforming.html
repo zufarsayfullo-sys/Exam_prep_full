@@ -10,8 +10,8 @@
 </div><script>
 'use strict';
 const SUPABASE_URL='https://dfepopppcggzecdxexeh.supabase.co';
-// IMPORTANT: Replace with the anon/publishable key from THIS SAME Supabase project.
-const PUBLIC_KEY='PASTE_MATCHING_SUPABASE_PUBLIC_ANON_KEY';
+// Public anon key from the working ExamPrep live quiz (same Supabase project).
+const PUBLIC_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo';
 const $=id=>document.getElementById(id);
 let records=[],tab='pending',working=false;
 const ready=()=>PUBLIC_KEY&&!PUBLIC_KEY.startsWith('PASTE_');
