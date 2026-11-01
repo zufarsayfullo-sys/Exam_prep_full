@@ -1,275 +1,822 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Print Worksheets | ExamPrep Studio</title>
+
 <style>
-:root{font-family:Inter,system-ui,Arial,sans-serif;color:#172554;background:#f5f7fc}*{box-sizing:border-box}body{margin:0}header{background:#172554;color:white;padding:25px max(20px,calc((100% - 1050px)/2))}header h1{margin:8px 0;font-size:30px}header p{margin:0;color:#cbd5e1}main{max-width:1050px;margin:28px auto;padding:0 18px}.panel{background:white;border:1px solid #e2e8f0;border-radius:18px;padding:23px;margin-bottom:18px;box-shadow:0 5px 22px #1725540a}.controls{display:grid;grid-template-columns:1fr 1fr 145px;gap:14px}label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}select,input{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;background:white;font:inherit}button{background:#4f46e5;color:white;border:0;border-radius:10px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}.secondary{background:#eef2ff;color:#3730a3}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.status{font-size:13px;color:#475569;margin:12px 0 0}.error{color:#b91c1c}.sheet{background:white;color:#111827;border:1px solid #e2e8f0;border-radius:15px;padding:32px;min-height:450px}.sheet h2{text-align:center;margin:0 0 6px}.sheet .subtitle{text-align:center;color:#475569;margin:0 0 23px}.student-fields{display:flex;justify-content:space-between;gap:18px;margin-bottom:22px}.question{break-inside:avoid;margin:0 0 21px;line-height:1.55}.question strong{font-weight:700}.options{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;margin:9px 0 0 22px}.line{border-bottom:1px dotted #9ca3af;height:24px;margin:8px 0 0 23px}.key{margin-top:28px;border-top:2px dashed #94a3b8;padding-top:15px}.key h3{margin:0 0 12px}.key-list{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;font-size:13px}.muted{color:#64748b}.hidden{display:none!important}footer{text-align:center;color:#64748b;font-size:12px;padding:15px}@media(max-width:650px){.controls{grid-template-columns:1fr}.sheet{padding:18px}.options{grid-template-columns:1fr}.student-fields{display:block}.student-fields div{margin-bottom:12px}.key-list{grid-template-columns:repeat(2,1fr)}}@page{size:A4;margin:15mm}@media print{header,.panel,footer{display:none!important}body{background:white}.sheet{border:0;padding:0;border-radius:0;min-height:0}.question{margin-bottom:15px}.key{break-before:page}.sheet h2{font-size:19px}} 
-</style></head><body>
-<header><div style="font-weight:800">✦ ExamPrep Studio</div><h1>Print Worksheets</h1><p>Automatically load quiz banks and create printable practice sheets.</p></header>
-<main>
-<section class="panel">
-<div class="controls">
-<div><label for="level">Level</label><select id="level"><option value="">Loading levels...</option></select></div>
-<div><label for="quiz">Quiz</label><select id="quiz"><option value="">Choose a level</option></select></div>
-<div><label for="count">Questions</label><select id="count"><option>10</option><option>15</option><option>20</option></select></div>
-</div>
-<div class="actions"><button id="generate" disabled>Generate worksheet</button><button class="secondary" id="reshuffle" disabled>↻ New random set</button><button class="secondary" id="print" disabled>🖨 Print</button><label style="display:flex;align-items:center;gap:8px;margin:0 0 0 auto"><input type="checkbox" id="answerKey" style="width:auto" checked> Include answer key</label></div>
-<p class="status" id="status" role="status">Looking for quiz indexes...</p>
-</section>
-<article id="sheet" class="sheet hidden"><h2 id="sheetTitle"></h2><p id="sheetSub" class="subtitle"></p><div class="student-fields"><div>Name: __________________________</div><div>Date: __________________</div><div>Score: ____ / <span id="maxScore"></span></div></div><div id="questions"></div><section id="key" class="key"><h3>Answer key</h3><div id="answers" class="key-list"></div></section></article>
-</main><footer>ExamPrep Studio · Universal worksheet generator</footer>
-<script>
-'use strict';
-const LEVELS=[['beginner','Beginner'],['elementary','Elementary'],['pre-int','Pre-Intermediate'],['inter','Intermediate'],['upper-inter','Upper-Intermediate']];
-const $=id=>document.getElementById(id);
-let catalog=new Map(),bank=[],selection=[];
-function msg(t,error=false){$('status').textContent=t;$('status').classList.toggle('error',error)}
-function safePath(v){if(typeof v!=='string'||!v.trim())return null;let s=v.trim();if(/^(https?:)?\/\//i.test(s)||s.startsWith('/')||s.includes('..')||s.includes('\\'))return null;return s.replace(/^\.\//,'')}
-function entryName(x){return typeof x==='string'?x:(x.title||x.name||x.label||x.quiz_name||x.id||'Unnamed quiz')}
-function entries(json){
- if(Array.isArray(json))return json;
- for(const k of ['quizzes','items','entries','data'])if(Array.isArray(json?.[k]))return json[k];
- if(json&&typeof json==='object')return Object.entries(json).filter(([k,v])=>v&&typeof v==='object').map(([k,v])=>({name:k,...v}));
- return [];
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #172554;
+  background: #f5f7fc;
 }
-function findBankPath(item,level){
- const value=typeof item==='string'?item:(item.bank||item.bank_file||item.bankFile||item.questions_file||item.questionsFile||item.questions_json||item.json||item.file||item.path||item.url||item.href||item.src);
- const path=safePath(value);if(!path)return null;
- if(path.endsWith('.json')){
-  if(path.startsWith(level+'/'))return path;
-  if(path.startsWith('quizzes/'))return level+'/'+path;
-  return level+'/quizzes/'+path;
- }
- if(path.endsWith('.html'))return null; // Never parse arbitrary quiz HTML.
- return null;
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+header {
+  background: #172554;
+  color: white;
+  padding: 28px max(20px, calc((100% - 1050px)/2));
 }
-async function getJson(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error(path+': HTTP '+r.status);return r.json()}
-async function discoverLevel(slug){
- let all=[];
- try{
-  const data=await getJson(slug+'/quizzes/index.json');
-  all=entries(data).map((x,i)=>({label:entryName(x),path:findBankPath(x,slug),item:x})).filter(x=>x.path);
- }catch(e){console.info('Index not readable for '+slug,e.message)}
- // Fallback: discover conventional JSON banks even when the index contains only HTML links.
- // GitHub Pages cannot list directories, so we probe numbered bank filenames.
- const seen=new Set(all.map(x=>x.path));
- for(let i=1;i<=20;i++){
-  const name='quiz-'+String(i).padStart(2,'0')+'.bank.json';
-  const path=slug+'/quizzes/'+name;
-  if(seen.has(path))continue;
-  try{
-   const data=await getJson(path);
-   if(extractQuestions(data).length){
-    const label=data.title||data.name||data.quiz_name||('Quiz '+String(i).padStart(2,'0'));
-    all.push({label,path,item:{}});seen.add(path);
-   }
-  }catch(e){
-   // Stop after the first absent file beyond existing numbered banks.
-   if(i>1)break;
-   break;
+header h1 { margin: 10px 0; font-size: 30px; }
+header p { color: #cbd5e1; margin: 0; }
+
+main {
+  max-width: 1050px;
+  margin: 28px auto;
+  padding: 0 18px;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 145px;
+  gap: 14px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: white;
+  font: inherit;
+}
+
+button {
+  background: #4f46e5;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  align-items: center;
+}
+
+.status {
+  font-size: 13px;
+  color: #475569;
+  margin: 14px 0 0;
+}
+
+.error { color: #b91c1c; }
+.hidden { display: none !important; }
+
+.sheet {
+  background: white;
+  color: #111827;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 32px;
+}
+
+.sheet h2 {
+  text-align: center;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #475569;
+  margin-bottom: 25px;
+}
+
+.student-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.question {
+  break-inside: avoid;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px 18px;
+  margin: 10px 0 0 22px;
+}
+
+.line {
+  border-bottom: 1px dotted #9ca3af;
+  height: 24px;
+  margin: 8px 0 0 22px;
+}
+
+.key {
+  margin-top: 28px;
+  border-top: 2px dashed #94a3b8;
+  padding-top: 18px;
+}
+
+.key-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+  padding: 20px;
+}
+
+@media (max-width: 650px) {
+  .controls { grid-template-columns: 1fr; }
+  .sheet { padding: 18px; }
+  .options { grid-template-columns: 1fr; }
+  .student-fields { display: block; }
+  .student-fields div { margin-bottom: 10px; }
+  .key-list { grid-template-columns: repeat(2, 1fr); }
+}
+
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+@media print {
+  header, .panel, footer { display: none !important; }
+  body { background: white; }
+  .sheet {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
   }
- }
- return all;
+  .key { break-before: page; }
+  .question { margin-bottom: 16px; }
 }
-async function init(){
- msg('Scanning quiz indexes and JSON banks...');
- let found=0;
- await Promise.all(LEVELS.map(async ([slug,label])=>{
-  const all=await discoverLevel(slug);
-  if(all.length){catalog.set(slug,all);found+=all.length}
- }));
- const levels=LEVELS.filter(([slug])=>catalog.has(slug));
- $('level').replaceChildren(new Option(levels.length?'Select level':'No quiz banks found',''),...levels.map(([slug,label])=>new Option(label,slug)));
- if(levels.length){$('level').value=levels[0][0];changeLevel();msg('Found '+found+' JSON quiz bank'+(found===1?'':'s')+' across '+levels.length+' level(s).')}
- else msg('No readable JSON question banks were found. Check that quiz-01.bank.json is published under beginner/quizzes/ and contains a questions array.',true);
-}
-function changeLevel(){
- const items=catalog.get($('level').value)||[];
- $('quiz').replaceChildren(new Option(items.length?'Select quiz':'No quizzes',''),...items.map((x,i)=>new Option(x.label,String(i))));
- $('quiz').value=items.length?'0':'';
- $('generate').disabled=!items.length;
- $('sheet').classList.add('hidden');$('print').disabled=true;$('reshuffle').disabled=true;
-}
-function extractQuestions(data){
- if(Array.isArray(data))return data;
- for(const key of ['questions','bank','items','data','questionBank','question_bank'])if(Array.isArray(data?.[key]))return data[key];
- if(data&&typeof data==='object'){
-  for(const value of Object.values(data)){
-   if(Array.isArray(value)&&value.some(q=>q&&typeof q==='object'&&(q.question||q.prompt||q.text||q.q)))return value;
-  }
- }
- return [];
-}
-function normalize(q){
- if(typeof q==='string')return {prompt:q,options:[],answer:''};
- if(!q||typeof q!=='object')return null;
- const prompt=q.question||q.prompt||q.text||q.q||q.sentence||q.stem;
- if(typeof prompt!=='string'||!prompt.trim())return null;
- let opts=q.options||q.choices||q.answers||[];
- if(opts&&typeof opts==='object'&&!Array.isArray(opts))opts=Object.values(opts);
- opts=Array.isArray(opts)?opts.map(v=>typeof v==='string'?v:(v?.text||v?.label||v?.value||'')).filter(Boolean):[];
- let ans=q.correctAnswer??q.correct_answer??q.correct??q.answer??q.key??'';
- if(typeof ans==='number'&&opts.length){ans=opts[ans]??String(ans)}
- if(typeof ans==='string'&&/^[A-D]$/i.test(ans)&&opts.length)ans=opts[ans.toUpperCase().charCodeAt(0)-65]||ans;
- return {prompt,options:opts,answer:String(ans)};
-}
-function randomSample(a,n){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b.slice(0,n)}
-function add(tag,text,parent,cls){const e=document.createElement(tag);e.textContent=text;if(cls)e.className=cls;parent.append(e);return e}
-function render(){
- const item=catalog.get($('level').value)[Number($('quiz').value)];
- $('sheetTitle').textContent=item.label;
- $('sheetSub').textContent=LEVELS.find(x=>x[0]===$('level').value)?.[1]+' · '+selection.length+' questions';
- $('maxScore').textContent=selection.length;
- $('questions').replaceChildren();$('answers').replaceChildren();
- selection.forEach((q,i)=>{
-  const wrap=add('div','',$('questions'),'question');
-  add('strong',(i+1)+'. '+q.prompt,wrap);
-  if(q.options.length){const grid=add('div','',wrap,'options');q.options.forEach((v,j)=>add('div',String.fromCharCode(65+j)+'. '+v,grid))}
-  else add('div','',wrap,'line');
-  add('div',(i+1)+'. '+(q.answer||'—'),$('answers'));
- });
- $('key').classList.toggle('hidden',!$('answerKey').checked);
- $('sheet').classList.remove('hidden');$('print').disabled=false;$('reshuffle').disabled=false;
-}
-async function generate(){
- const item=catalog.get($('level').value)?.[Number($('quiz').value)];
- if(!item)return;
- $('generate').disabled=true;msg('Loading '+item.path+'...');
- try{
-  const data=await getJson(item.path);
-  bank=extractQuestions(data).map(normalize).filter(Boolean);
-  if(!bank.length)throw Error('No supported questions found in '+item.path+'. Expected an array or a "questions" array.');
-  reshuffle();msg('Loaded '+bank.length+' questions from '+item.path+'.');
- }catch(e){msg(e.message,true);$('sheet').classList.add('hidden');$('print').disabled=true;$('reshuffle').disabled=true}
- finally{$('generate').disabled=false}
-}
-function reshuffle(){if(!bank.length)return;selection=randomSample(bank,Math.min(Number($('count').value),bank.length));render()}
-$('level').addEventListener('change',changeLevel);
-$('quiz').addEventListener('change',()=>{$('sheet').classList.add('hidden');$('print').disabled=true;$('reshuffle').disabled=true});
-$('generate').addEventListener('click',generate);
-$('reshuffle').addEventListener('click',reshuffle);
-$('print').addEventListener('click',()=>window.print());
-$('answerKey').addEventListener('change',()=>{$('key').classList.toggle('hidden',!$('answerKey').checked)});
-init();
-</script></body></html><!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Print Worksheets | ExamPrep Studio</title>
-<style>
-:root{font-family:Inter,system-ui,Arial,sans-serif;color:#172554;background:#f5f7fc}*{box-sizing:border-box}body{margin:0}header{background:#172554;color:white;padding:25px max(20px,calc((100% - 1050px)/2))}header h1{margin:8px 0;font-size:30px}header p{margin:0;color:#cbd5e1}main{max-width:1050px;margin:28px auto;padding:0 18px}.panel{background:white;border:1px solid #e2e8f0;border-radius:18px;padding:23px;margin-bottom:18px;box-shadow:0 5px 22px #1725540a}.controls{display:grid;grid-template-columns:1fr 1fr 145px;gap:14px}label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}select,input{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;background:white;font:inherit}button{background:#4f46e5;color:white;border:0;border-radius:10px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}.secondary{background:#eef2ff;color:#3730a3}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.status{font-size:13px;color:#475569;margin:12px 0 0}.error{color:#b91c1c}.sheet{background:white;color:#111827;border:1px solid #e2e8f0;border-radius:15px;padding:32px;min-height:450px}.sheet h2{text-align:center;margin:0 0 6px}.sheet .subtitle{text-align:center;color:#475569;margin:0 0 23px}.student-fields{display:flex;justify-content:space-between;gap:18px;margin-bottom:22px}.question{break-inside:avoid;margin:0 0 21px;line-height:1.55}.question strong{font-weight:700}.options{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;margin:9px 0 0 22px}.line{border-bottom:1px dotted #9ca3af;height:24px;margin:8px 0 0 23px}.key{margin-top:28px;border-top:2px dashed #94a3b8;padding-top:15px}.key h3{margin:0 0 12px}.key-list{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;font-size:13px}.muted{color:#64748b}.hidden{display:none!important}footer{text-align:center;color:#64748b;font-size:12px;padding:15px}@media(max-width:650px){.controls{grid-template-columns:1fr}.sheet{padding:18px}.options{grid-template-columns:1fr}.student-fields{display:block}.student-fields div{margin-bottom:12px}.key-list{grid-template-columns:repeat(2,1fr)}}@page{size:A4;margin:15mm}@media print{header,.panel,footer{display:none!important}body{background:white}.sheet{border:0;padding:0;border-radius:0;min-height:0}.question{margin-bottom:15px}.key{break-before:page}.sheet h2{font-size:19px}} 
-</style></head><body>
-<header><div style="font-weight:800">✦ ExamPrep Studio</div><h1>Print Worksheets</h1><p>Automatically load quiz banks and create printable practice sheets.</p></header>
+</style>
+</head>
+
+<body>
+
+<header>
+  <strong>✦ ExamPrep Studio</strong>
+  <h1>Print Worksheets</h1>
+  <p>Automatically discover quiz banks and create printable worksheets.</p>
+</header>
+
 <main>
+
 <section class="panel">
-<div class="controls">
-<div><label for="level">Level</label><select id="level"><option value="">Loading levels...</option></select></div>
-<div><label for="quiz">Quiz</label><select id="quiz"><option value="">Choose a level</option></select></div>
-<div><label for="count">Questions</label><select id="count"><option>10</option><option>15</option><option>20</option></select></div>
-</div>
-<div class="actions"><button id="generate" disabled>Generate worksheet</button><button class="secondary" id="reshuffle" disabled>↻ New random set</button><button class="secondary" id="print" disabled>🖨 Print</button><label style="display:flex;align-items:center;gap:8px;margin:0 0 0 auto"><input type="checkbox" id="answerKey" style="width:auto" checked> Include answer key</label></div>
-<p class="status" id="status" role="status">Looking for quiz indexes...</p>
+
+  <div class="controls">
+
+    <div>
+      <label for="level">Level</label>
+      <select id="level">
+        <option>Loading levels...</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="quiz">Quiz</label>
+      <select id="quiz">
+        <option>Choose a level</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="count">Questions</label>
+      <select id="count">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+
+  </div>
+
+  <div class="actions">
+    <button id="generate" disabled>Generate worksheet</button>
+    <button id="reshuffle" class="secondary" disabled>
+      New random set
+    </button>
+    <button id="print" class="secondary" disabled>
+      Print
+    </button>
+
+    <label style="display:flex;align-items:center;gap:8px;margin:0 0 0 auto">
+      <input type="checkbox" id="answerKey" checked>
+      Include answer key
+    </label>
+  </div>
+
+  <p id="status" class="status">
+    Searching level folders...
+  </p>
+
 </section>
-<article id="sheet" class="sheet hidden"><h2 id="sheetTitle"></h2><p id="sheetSub" class="subtitle"></p><div class="student-fields"><div>Name: __________________________</div><div>Date: __________________</div><div>Score: ____ / <span id="maxScore"></span></div></div><div id="questions"></div><section id="key" class="key"><h3>Answer key</h3><div id="answers" class="key-list"></div></section></article>
-</main><footer>ExamPrep Studio · Universal worksheet generator</footer>
+
+<article id="sheet" class="sheet hidden">
+
+  <h2 id="sheetTitle"></h2>
+  <p id="sheetSub" class="subtitle"></p>
+
+  <div class="student-fields">
+    <div>Name: ______________________</div>
+    <div>Date: ______________</div>
+    <div>Score: ____ / <span id="maxScore"></span></div>
+  </div>
+
+  <div id="questions"></div>
+
+  <section id="key" class="key">
+    <h3>Answer Key</h3>
+    <div id="answers" class="key-list"></div>
+  </section>
+
+</article>
+
+</main>
+
+<footer>ExamPrep Studio · Universal Worksheet Generator</footer>
+
 <script>
-'use strict';
-const LEVELS=[['beginner','Beginner'],['elementary','Elementary'],['pre-int','Pre-Intermediate'],['inter','Intermediate'],['upper-inter','Upper-Intermediate']];
-const $=id=>document.getElementById(id);
-let catalog=new Map(),bank=[],selection=[];
-function msg(t,error=false){$('status').textContent=t;$('status').classList.toggle('error',error)}
-function safePath(v){if(typeof v!=='string'||!v.trim())return null;let s=v.trim();if(/^(https?:)?\/\//i.test(s)||s.startsWith('/')||s.includes('..')||s.includes('\\'))return null;return s.replace(/^\.\//,'')}
-function entryName(x){return typeof x==='string'?x:(x.title||x.name||x.label||x.quiz_name||x.id||'Unnamed quiz')}
-function entries(json){
- if(Array.isArray(json))return json;
- for(const k of ['quizzes','items','entries','data'])if(Array.isArray(json?.[k]))return json[k];
- if(json&&typeof json==='object')return Object.entries(json).filter(([k,v])=>v&&typeof v==='object').map(([k,v])=>({name:k,...v}));
- return [];
+"use strict";
+
+// YOUR GITHUB REPOSITORY
+const REPO = "zufarsayfullo-sys/Exam_prep_full";
+const BRANCH = "main";
+
+// ALL LEVEL FOLDERS
+const LEVELS = [
+  ["beginner", "Beginner"],
+  ["elementary", "Elementary"],
+  ["pre-int", "Pre-Intermediate"],
+  ["inter", "Intermediate"],
+  ["upper-inter", "Upper-Intermediate"]
+];
+
+const $ = id => document.getElementById(id);
+
+let catalog = new Map();
+let bank = [];
+let selection = [];
+
+function message(text, error = false) {
+  $("status").textContent = text;
+  $("status").classList.toggle("error", error);
 }
-function findBankPath(item,level){
- const value=typeof item==='string'?item:(item.bank||item.bank_file||item.bankFile||item.questions_file||item.questionsFile||item.questions_json||item.json||item.file||item.path||item.url||item.href||item.src);
- const path=safePath(value);if(!path)return null;
- if(path.endsWith('.json')){
-  if(path.startsWith(level+'/'))return path;
-  if(path.startsWith('quizzes/'))return level+'/'+path;
-  return level+'/quizzes/'+path;
- }
- if(path.endsWith('.html'))return null; // Never parse arbitrary quiz HTML.
- return null;
+
+// Load JSON from GitHub Pages
+async function getJSON(path) {
+  const response = await fetch(path, { cache: "no-store" });
+
+  if (!response.ok) {
+    throw new Error("Could not load " + path);
+  }
+
+  return response.json();
 }
-async function getJson(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error(path+': HTTP '+r.status);return r.json()}
-async function init(){
- let found=0;
- await Promise.all(LEVELS.map(async ([slug,label])=>{
-  try{
-   const data=await getJson(slug+'/quizzes/index.json');
-   const all=entries(data).map((x,i)=>({label:entryName(x),path:findBankPath(x,slug),item:x})).filter(x=>x.path);
-   if(all.length){catalog.set(slug,all);found+=all.length}
-  }catch(e){console.info('No readable index for '+slug,e.message)}
- }));
- const levels=LEVELS.filter(([slug])=>catalog.has(slug));
- $('level').replaceChildren(new Option(levels.length?'Select level':'No quiz banks found',''),...levels.map(([slug,label])=>new Option(label,slug)));
- if(levels.length){$('level').value=levels[0][0];changeLevel();msg('Found '+found+' JSON quiz bank'+(found===1?'':'s')+' across '+levels.length+' level(s).')}
- else msg('No JSON question banks found in the level indexes. Each quizzes/index.json must reference a .json bank file (e.g. {"title":"Past Simple","bank":"quiz-01.bank.json"}).',true);
+
+// Recognize common JSON question-bank formats
+function extractQuestions(data) {
+  if (Array.isArray(data)) return data;
+
+  for (const key of [
+    "questions",
+    "bank",
+    "items",
+    "data",
+    "questionBank",
+    "question_bank"
+  ]) {
+    if (Array.isArray(data?.[key])) {
+      return data[key];
+    }
+  }
+
+  if (data && typeof data === "object") {
+    for (const value of Object.values(data)) {
+      if (
+        Array.isArray(value) &&
+        value.some(q =>
+          q && typeof q === "object" &&
+          (q.question || q.prompt || q.text || q.q)
+        )
+      ) {
+        return value;
+      }
+    }
+  }
+
+  return [];
 }
-function changeLevel(){
- const items=catalog.get($('level').value)||[];
- $('quiz').replaceChildren(new Option(items.length?'Select quiz':'No quizzes',''),...items.map((x,i)=>new Option(x.label,String(i))));
- $('quiz').value=items.length?'0':'';
- $('generate').disabled=!items.length;
- $('sheet').classList.add('hidden');$('print').disabled=true;$('reshuffle').disabled=true;
+
+// Discover JSON files inside a level's quizzes folder
+async function discoverLevel(slug) {
+  const found = new Map();
+
+  function add(path, title) {
+    if (!found.has(path)) {
+      found.set(path, { path, label: title });
+    }
+  }
+
+  // GitHub API can list public repository folders
+  const apiURL =
+    "https://api.github.com/repos/" +
+    REPO +
+    "/contents/" +
+    slug +
+    "/quizzes?ref=" +
+    BRANCH;
+
+  try {
+    const response = await fetch(apiURL, {
+      headers: {
+        Accept: "application/vnd.github+json"
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error("GitHub API: " + response.status);
+    }
+
+    const files = await response.json();
+
+    for (const file of files) {
+      if (file.type !== "file") continue;
+      if (!file.name.toLowerCase().endsWith(".json")) continue;
+      if (file.name.toLowerCase() === "index.json") continue;
+
+      const path = slug + "/quizzes/" + file.name;
+
+      const title = file.name
+        .replace(/\.bank\.json$/i, "")
+        .replace(/\.json$/i, "")
+        .replace(/[-_]/g, " ");
+
+      add(path, title);
+    }
+  } catch (error) {
+    console.warn("Folder discovery:", slug, error);
+  }
+
+  // Also check index.json for explicitly registered banks
+  try {
+    const index = await getJSON(slug + "/quizzes/index.json");
+
+    let entries = [];
+
+    if (Array.isArray(index)) {
+      entries = index;
+    } else {
+      for (const key of ["quizzes", "items", "entries", "data"]) {
+        if (Array.isArray(index?.[key])) {
+          entries = index[key];
+          break;
+        }
+      }
+    }
+
+    for (const item of entries) {
+      const filename =
+        typeof item === "string"
+          ? item
+          : item.bank ||
+            item.bank_file ||
+            item.bankFile ||
+            item.questions_file ||
+            item.questionsFile ||
+            item.json ||
+            item.file ||
+            item.path;
+
+      if (!filename || !filename.endsWith(".json")) continue;
+
+      let path;
+
+      if (filename.startsWith(slug + "/")) {
+        path = filename;
+      } else if (filename.startsWith("quizzes/")) {
+        path = slug + "/" + filename;
+      } else {
+        path = slug + "/quizzes/" + filename;
+      }
+
+      // Only accept paths inside the level's quizzes folder
+      if (
+        !path.startsWith(slug + "/quizzes/") ||
+        path.includes("..") ||
+        path.includes("\\")
+      ) continue;
+
+      const title =
+        typeof item === "string"
+          ? filename
+          : item.title || item.name || item.label || filename;
+
+      add(path, title);
+
+      // Prefer the title from index.json
+      found.get(path).label = title;
+    }
+  } catch (error) {
+    console.info("No usable index:", slug);
+  }
+
+  // Fallback if GitHub API is temporarily unavailable
+  if (found.size === 0) {
+    for (let i = 1; i <= 5; i++) {
+      const filename =
+        "quiz-" + String(i).padStart(2, "0") + ".bank.json";
+
+      const path = slug + "/quizzes/" + filename;
+
+      try {
+        const data = await getJSON(path);
+
+        if (extractQuestions(data).length) {
+          add(path, data.title || "Quiz " + i);
+        }
+      } catch (error) {
+        // File does not exist
+      }
+    }
+  }
+
+  // Verify that the discovered files contain questions
+  const verified = await Promise.all(
+    [...found.values()].map(async item => {
+      try {
+        const data = await getJSON(item.path);
+
+        if (!extractQuestions(data).length) {
+          return null;
+        }
+
+        item.label =
+          data.title ||
+          data.quiz_title ||
+          data.name ||
+          item.label;
+
+        return item;
+      } catch (error) {
+        return null;
+      }
+    })
+  );
+
+  return verified
+    .filter(Boolean)
+    .sort((a, b) =>
+      a.label.localeCompare(b.label, undefined, {
+        numeric: true
+      })
+    );
 }
-function extractQuestions(data){
- if(Array.isArray(data))return data;
- for(const key of ['questions','bank','items','data','questionBank','question_bank'])if(Array.isArray(data?.[key]))return data[key];
- return [];
+
+// Load every level automatically
+async function initialize() {
+  message("Opening level folders and reading JSON question banks...");
+
+  let total = 0;
+
+  await Promise.all(
+    LEVELS.map(async ([slug]) => {
+      const quizzes = await discoverLevel(slug);
+
+      if (quizzes.length) {
+        catalog.set(slug, quizzes);
+        total += quizzes.length;
+      }
+    })
+  );
+
+  const available = LEVELS.filter(([slug]) =>
+    catalog.has(slug)
+  );
+
+  $("level").replaceChildren(
+    new Option(
+      available.length ? "Select level" : "No quiz banks found",
+      ""
+    ),
+    ...available.map(([slug, title]) =>
+      new Option(title, slug)
+    )
+  );
+
+  if (!available.length) {
+    message(
+      "No readable JSON question banks found. Check the repository folders and JSON format.",
+      true
+    );
+    return;
+  }
+
+  $("level").value = available[0][0];
+  changeLevel();
+
+  message(
+    "Found " + total + " question bank(s) across " +
+    available.length + " level(s)."
+  );
 }
-function normalize(q){
- if(typeof q==='string')return {prompt:q,options:[],answer:''};
- if(!q||typeof q!=='object')return null;
- const prompt=q.question||q.prompt||q.text||q.q||q.sentence||q.stem;
- if(typeof prompt!=='string'||!prompt.trim())return null;
- let opts=q.options||q.choices||q.answers||[];
- if(opts&&typeof opts==='object'&&!Array.isArray(opts))opts=Object.values(opts);
- opts=Array.isArray(opts)?opts.map(v=>typeof v==='string'?v:(v?.text||v?.label||v?.value||'')).filter(Boolean):[];
- let ans=q.correctAnswer??q.correct_answer??q.correct??q.answer??q.key??'';
- if(typeof ans==='number'&&opts.length){ans=opts[ans]??String(ans)}
- if(typeof ans==='string'&&/^[A-D]$/i.test(ans)&&opts.length)ans=opts[ans.toUpperCase().charCodeAt(0)-65]||ans;
- return {prompt,options:opts,answer:String(ans)};
+
+function changeLevel() {
+  const quizzes = catalog.get($("level").value) || [];
+
+  $("quiz").replaceChildren(
+    new Option("Select quiz", ""),
+    ...quizzes.map((quiz, index) =>
+      new Option(quiz.label, String(index))
+    )
+  );
+
+  $("quiz").value = quizzes.length ? "0" : "";
+
+  $("generate").disabled = !quizzes.length;
+  $("reshuffle").disabled = true;
+  $("print").disabled = true;
+  $("sheet").classList.add("hidden");
+  bank = [];
 }
-function randomSample(a,n){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b.slice(0,n)}
-function add(tag,text,parent,cls){const e=document.createElement(tag);e.textContent=text;if(cls)e.className=cls;parent.append(e);return e}
-function render(){
- const item=catalog.get($('level').value)[Number($('quiz').value)];
- $('sheetTitle').textContent=item.label;
- $('sheetSub').textContent=LEVELS.find(x=>x[0]===$('level').value)?.[1]+' · '+selection.length+' questions';
- $('maxScore').textContent=selection.length;
- $('questions').replaceChildren();$('answers').replaceChildren();
- selection.forEach((q,i)=>{
-  const wrap=add('div','',$('questions'),'question');
-  add('strong',(i+1)+'. '+q.prompt,wrap);
-  if(q.options.length){const grid=add('div','',wrap,'options');q.options.forEach((v,j)=>add('div',String.fromCharCode(65+j)+'. '+v,grid))}
-  else add('div','',wrap,'line');
-  add('div',(i+1)+'. '+(q.answer||'—'),$('answers'));
- });
- $('key').classList.toggle('hidden',!$('answerKey').checked);
- $('sheet').classList.remove('hidden');$('print').disabled=false;$('reshuffle').disabled=false;
+
+// Convert question objects into a printable format
+function normalizeQuestion(q) {
+  if (typeof q === "string") {
+    return {
+      prompt: q,
+      options: [],
+      answer: ""
+    };
+  }
+
+  if (!q || typeof q !== "object") return null;
+
+  const prompt =
+    q.question ||
+    q.prompt ||
+    q.text ||
+    q.q ||
+    q.sentence ||
+    q.stem;
+
+  if (typeof prompt !== "string" || !prompt.trim()) {
+    return null;
+  }
+
+  let options = q.options || q.choices || q.answers || [];
+
+  if (!Array.isArray(options) && typeof options === "object") {
+    options = Object.values(options);
+  }
+
+  options = Array.isArray(options)
+    ? options.map(value =>
+        typeof value === "string"
+          ? value
+          : value?.text || value?.label || value?.value || ""
+      ).filter(Boolean)
+    : [];
+
+  let answer =
+    q.correctAnswer ??
+    q.correct_answer ??
+    q.correct ??
+    q.answer ??
+    q.key ??
+    "";
+
+  if (typeof answer === "number" && options.length) {
+    answer = options[answer] ?? String(answer);
+  }
+
+  if (
+    typeof answer === "string" &&
+    /^[A-D]$/i.test(answer) &&
+    options.length
+  ) {
+    const index = answer.toUpperCase().charCodeAt(0) - 65;
+    answer = options[index] || answer;
+  }
+
+  return {
+    prompt,
+    options,
+    answer: String(answer)
+  };
 }
-async function generate(){
- const item=catalog.get($('level').value)?.[Number($('quiz').value)];
- if(!item)return;
- $('generate').disabled=true;msg('Loading '+item.path+'...');
- try{
-  const data=await getJson(item.path);
-  bank=extractQuestions(data).map(normalize).filter(Boolean);
-  if(!bank.length)throw Error('No supported questions found in '+item.path+'. Expected an array or a "questions" array.');
-  reshuffle();msg('Loaded '+bank.length+' questions from '+item.path+'.');
- }catch(e){msg(e.message,true);$('sheet').classList.add('hidden');$('print').disabled=true;$('reshuffle').disabled=true}
- finally{$('generate').disabled=false}
+
+// Shuffle without changing the original question bank
+function randomSample(array, count) {
+  const copy = [...array];
+
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+
+  return copy.slice(0, count);
 }
-function reshuffle(){if(!bank.length)return;selection=randomSample(bank,Math.min(Number($('count').value),bank.length));render()}
-$('level').addEventListener('change',changeLevel);
-$('quiz').addEventListener('change',()=>{$('sheet').classList.add('hidden');$('print').disabled=true;$('reshuffle').disabled=true});
-$('generate').addEventListener('click',generate);
-$('reshuffle').addEventListener('click',reshuffle);
-$('print').addEventListener('click',()=>window.print());
-$('answerKey').addEventListener('change',()=>{$('key').classList.toggle('hidden',!$('answerKey').checked)});
-init();
-</script></body></html>
+
+function addElement(tag, text, parent, className) {
+  const element = document.createElement(tag);
+  element.textContent = text;
+
+  if (className) element.className = className;
+
+  parent.append(element);
+  return element;
+}
+
+// Build printable worksheet
+function renderWorksheet() {
+  const level = $("level").value;
+  const quizIndex = Number($("quiz").value);
+  const quiz = catalog.get(level)[quizIndex];
+
+  $("sheetTitle").textContent = quiz.label;
+
+  const levelName =
+    LEVELS.find(item => item[0] === level)?.[1] || level;
+
+  $("sheetSub").textContent =
+    levelName + " · " + selection.length + " questions";
+
+  $("maxScore").textContent = selection.length;
+
+  $("questions").replaceChildren();
+  $("answers").replaceChildren();
+
+  selection.forEach((question, index) => {
+    const wrapper = addElement(
+      "div", "", $("questions"), "question"
+    );
+
+    addElement(
+      "strong",
+      (index + 1) + ". " + question.prompt,
+      wrapper
+    );
+
+    if (question.options.length) {
+      const options = addElement(
+        "div", "", wrapper, "options"
+      );
+
+      question.options.forEach((option, optionIndex) => {
+        addElement(
+          "div",
+          String.fromCharCode(65 + optionIndex) + ". " + option,
+          options
+        );
+      });
+    } else {
+      addElement("div", "", wrapper, "line");
+    }
+
+    addElement(
+      "div",
+      (index + 1) + ". " + (question.answer || "—"),
+      $("answers")
+    );
+  });
+
+  $("key").classList.toggle(
+    "hidden",
+    !$("answerKey").checked
+  );
+
+  $("sheet").classList.remove("hidden");
+  $("print").disabled = false;
+  $("reshuffle").disabled = false;
+}
+
+// Load the selected JSON question bank
+async function generateWorksheet() {
+  const level = $("level").value;
+  const quiz = catalog.get(level)?.[Number($("quiz").value)];
+
+  if (!quiz) return;
+
+  $("generate").disabled = true;
+  message("Loading " + quiz.path + "...");
+
+  try {
+    const data = await getJSON(quiz.path);
+
+    bank = extractQuestions(data)
+      .map(normalizeQuestion)
+      .filter(Boolean);
+
+    if (!bank.length) {
+      throw new Error(
+        "No supported questions found in " + quiz.path
+      );
+    }
+
+    reshuffle();
+
+    message(
+      "Loaded " + bank.length +
+      " questions from " + quiz.path
+    );
+  } catch (error) {
+    message(error.message, true);
+    $("sheet").classList.add("hidden");
+    $("print").disabled = true;
+    $("reshuffle").disabled = true;
+  } finally {
+    $("generate").disabled = false;
+  }
+}
+
+// Generate a new random set
+function reshuffle() {
+  if (!bank.length) return;
+
+  const count = Math.min(
+    Number($("count").value),
+    bank.length
+  );
+
+  selection = randomSample(bank, count);
+  renderWorksheet();
+}
+
+// Events
+$("level").addEventListener("change", changeLevel);
+
+$("quiz").addEventListener("change", () => {
+  bank = [];
+  $("sheet").classList.add("hidden");
+  $("print").disabled = true;
+  $("reshuffle").disabled = true;
+});
+
+$("generate").addEventListener(
+  "click",
+  generateWorksheet
+);
+
+$("reshuffle").addEventListener(
+  "click",
+  reshuffle
+);
+
+$("print").addEventListener(
+  "click",
+  () => window.print()
+);
+
+$("answerKey").addEventListener("change", () => {
+  $("key").classList.toggle(
+    "hidden",
+    !$("answerKey").checked
+  );
+});
+
+// Start automatically
+initialize();
+</script>
+
+</body>
+</html>
