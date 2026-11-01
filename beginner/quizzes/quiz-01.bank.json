@@ -1,0 +1,503 @@
+{
+  "quizId": "past-simple-past-simple",
+  "title": "Past Simple - Past Simple",
+  "level": "beginner",
+  "category": "Grammar",
+  "selection": {
+    "affirmative": 4,
+    "negative": 3,
+    "question": 3
+  },
+  "questions": [
+    {
+      "id": "ps-001",
+      "type": "affirmative",
+      "prompt": "He speaks three languages.",
+      "answer": "He spoke three languages.",
+      "points": 1
+    },
+    {
+      "id": "ps-002",
+      "type": "affirmative",
+      "prompt": "They cook lunch.",
+      "answer": "They cooked lunch.",
+      "points": 1
+    },
+    {
+      "id": "ps-003",
+      "type": "affirmative",
+      "prompt": "She speaks English well.",
+      "answer": "She spoke English well.",
+      "points": 1
+    },
+    {
+      "id": "ps-004",
+      "type": "affirmative",
+      "prompt": "I walk to school.",
+      "answer": "I walked to school.",
+      "points": 1
+    },
+    {
+      "id": "ps-005",
+      "type": "affirmative",
+      "prompt": "We watch TV in the evening.",
+      "answer": "We watched TV in the evening.",
+      "points": 1
+    },
+    {
+      "id": "ps-006",
+      "type": "affirmative",
+      "prompt": "He plays football.",
+      "answer": "He played football.",
+      "points": 1
+    },
+    {
+      "id": "ps-007",
+      "type": "affirmative",
+      "prompt": "She visits her grandmother.",
+      "answer": "She visited her grandmother.",
+      "points": 1
+    },
+    {
+      "id": "ps-008",
+      "type": "affirmative",
+      "prompt": "They live in a small house.",
+      "answer": "They lived in a small house.",
+      "points": 1
+    },
+    {
+      "id": "ps-009",
+      "type": "affirmative",
+      "prompt": "I listen to music.",
+      "answer": "I listened to music.",
+      "points": 1
+    },
+    {
+      "id": "ps-010",
+      "type": "affirmative",
+      "prompt": "We clean our classroom.",
+      "answer": "We cleaned our classroom.",
+      "points": 1
+    },
+    {
+      "id": "ps-011",
+      "type": "affirmative",
+      "prompt": "He goes to work by bus.",
+      "answer": "He went to work by bus.",
+      "points": 1
+    },
+    {
+      "id": "ps-012",
+      "type": "affirmative",
+      "prompt": "She buys some bread.",
+      "answer": "She bought some bread.",
+      "points": 1
+    },
+    {
+      "id": "ps-013",
+      "type": "affirmative",
+      "prompt": "They eat breakfast at seven.",
+      "answer": "They ate breakfast at seven.",
+      "points": 1
+    },
+    {
+      "id": "ps-014",
+      "type": "affirmative",
+      "prompt": "I drink tea in the morning.",
+      "answer": "I drank tea in the morning.",
+      "points": 1
+    },
+    {
+      "id": "ps-015",
+      "type": "affirmative",
+      "prompt": "We see our friends.",
+      "answer": "We saw our friends.",
+      "points": 1
+    },
+    {
+      "id": "ps-016",
+      "type": "affirmative",
+      "prompt": "He gets up at six.",
+      "answer": "He got up at six.",
+      "points": 1
+    },
+    {
+      "id": "ps-017",
+      "type": "affirmative",
+      "prompt": "She has a shower.",
+      "answer": "She had a shower.",
+      "points": 1
+    },
+    {
+      "id": "ps-018",
+      "type": "affirmative",
+      "prompt": "They take the bus to school.",
+      "answer": "They took the bus to school.",
+      "points": 1
+    },
+    {
+      "id": "ps-019",
+      "type": "affirmative",
+      "prompt": "I make dinner for my family.",
+      "answer": "I made dinner for my family.",
+      "points": 1
+    },
+    {
+      "id": "ps-020",
+      "type": "affirmative",
+      "prompt": "We meet our friends at the café.",
+      "answer": "We met our friends at the café.",
+      "points": 1
+    },
+    {
+      "id": "ps-021",
+      "type": "affirmative",
+      "prompt": "He studies English every day.",
+      "answer": "He studied English every day.",
+      "points": 1
+    },
+    {
+      "id": "ps-022",
+      "type": "affirmative",
+      "prompt": "She carries a heavy bag.",
+      "answer": "She carried a heavy bag.",
+      "points": 1
+    },
+    {
+      "id": "ps-023",
+      "type": "affirmative",
+      "prompt": "They stop at the shop.",
+      "answer": "They stopped at the shop.",
+      "points": 1
+    },
+    {
+      "id": "ps-024",
+      "type": "affirmative",
+      "prompt": "I try a new food.",
+      "answer": "I tried a new food.",
+      "points": 1
+    },
+    {
+      "id": "ps-025",
+      "type": "affirmative",
+      "prompt": "We travel to another city.",
+      "answer": "We travelled to another city.",
+      "points": 1
+    },
+    {
+      "id": "ps-026",
+      "type": "affirmative",
+      "prompt": "He writes an email.",
+      "answer": "He wrote an email.",
+      "points": 1
+    },
+    {
+      "id": "ps-027",
+      "type": "affirmative",
+      "prompt": "She reads a book.",
+      "answer": "She read a book.",
+      "points": 1
+    },
+    {
+      "id": "ps-028",
+      "type": "affirmative",
+      "prompt": "They come home late.",
+      "answer": "They came home late.",
+      "points": 1
+    },
+    {
+      "id": "ps-029",
+      "type": "affirmative",
+      "prompt": "I find my keys.",
+      "answer": "I found my keys.",
+      "points": 1
+    },
+    {
+      "id": "ps-030",
+      "type": "affirmative",
+      "prompt": "We do our homework.",
+      "answer": "We did our homework.",
+      "points": 1
+    },
+    {
+      "id": "ps-031",
+      "type": "negative",
+      "prompt": "I do not like Chinese food.",
+      "answer": "I did not like Chinese food.",
+      "points": 1
+    },
+    {
+      "id": "ps-032",
+      "type": "negative",
+      "prompt": "She doesn't watch TV.",
+      "answer": "She didn't watch TV.",
+      "points": 1
+    },
+    {
+      "id": "ps-033",
+      "type": "negative",
+      "prompt": "They don't play tennis.",
+      "answer": "They didn't play tennis.",
+      "points": 1
+    },
+    {
+      "id": "ps-034",
+      "type": "negative",
+      "prompt": "He doesn't work on Sundays.",
+      "answer": "He didn't work on Sundays.",
+      "points": 1
+    },
+    {
+      "id": "ps-035",
+      "type": "negative",
+      "prompt": "We don't study French.",
+      "answer": "We didn't study French.",
+      "points": 1
+    },
+    {
+      "id": "ps-036",
+      "type": "negative",
+      "prompt": "I don't drink coffee.",
+      "answer": "I didn't drink coffee.",
+      "points": 1
+    },
+    {
+      "id": "ps-037",
+      "type": "negative",
+      "prompt": "She doesn't go to the gym.",
+      "answer": "She didn't go to the gym.",
+      "points": 1
+    },
+    {
+      "id": "ps-038",
+      "type": "negative",
+      "prompt": "They don't eat meat.",
+      "answer": "They didn't eat meat.",
+      "points": 1
+    },
+    {
+      "id": "ps-039",
+      "type": "negative",
+      "prompt": "He doesn't buy expensive clothes.",
+      "answer": "He didn't buy expensive clothes.",
+      "points": 1
+    },
+    {
+      "id": "ps-040",
+      "type": "negative",
+      "prompt": "We don't see our teacher.",
+      "answer": "We didn't see our teacher.",
+      "points": 1
+    },
+    {
+      "id": "ps-041",
+      "type": "negative",
+      "prompt": "I don't get up early.",
+      "answer": "I didn't get up early.",
+      "points": 1
+    },
+    {
+      "id": "ps-042",
+      "type": "negative",
+      "prompt": "She doesn't have breakfast.",
+      "answer": "She didn't have breakfast.",
+      "points": 1
+    },
+    {
+      "id": "ps-043",
+      "type": "negative",
+      "prompt": "They don't take the train.",
+      "answer": "They didn't take the train.",
+      "points": 1
+    },
+    {
+      "id": "ps-044",
+      "type": "negative",
+      "prompt": "He doesn't make lunch.",
+      "answer": "He didn't make lunch.",
+      "points": 1
+    },
+    {
+      "id": "ps-045",
+      "type": "negative",
+      "prompt": "We don't visit our cousins.",
+      "answer": "We didn't visit our cousins.",
+      "points": 1
+    },
+    {
+      "id": "ps-046",
+      "type": "negative",
+      "prompt": "I don't understand the question.",
+      "answer": "I didn't understand the question.",
+      "points": 1
+    },
+    {
+      "id": "ps-047",
+      "type": "negative",
+      "prompt": "She doesn't speak German.",
+      "answer": "She didn't speak German.",
+      "points": 1
+    },
+    {
+      "id": "ps-048",
+      "type": "negative",
+      "prompt": "They don't finish their homework.",
+      "answer": "They didn't finish their homework.",
+      "points": 1
+    },
+    {
+      "id": "ps-049",
+      "type": "negative",
+      "prompt": "He doesn't call his mother.",
+      "answer": "He didn't call his mother.",
+      "points": 1
+    },
+    {
+      "id": "ps-050",
+      "type": "negative",
+      "prompt": "We don't go shopping.",
+      "answer": "We didn't go shopping.",
+      "points": 1
+    },
+    {
+      "id": "ps-051",
+      "type": "question",
+      "prompt": "What sports do you like?",
+      "answer": "What sports did you like?",
+      "points": 1
+    },
+    {
+      "id": "ps-052",
+      "type": "question",
+      "prompt": "Do you play football?",
+      "answer": "Did you play football?",
+      "points": 1
+    },
+    {
+      "id": "ps-053",
+      "type": "question",
+      "prompt": "Does she speak English?",
+      "answer": "Did she speak English?",
+      "points": 1
+    },
+    {
+      "id": "ps-054",
+      "type": "question",
+      "prompt": "Where do they live?",
+      "answer": "Where did they live?",
+      "points": 1
+    },
+    {
+      "id": "ps-055",
+      "type": "question",
+      "prompt": "What time does he get up?",
+      "answer": "What time did he get up?",
+      "points": 1
+    },
+    {
+      "id": "ps-056",
+      "type": "question",
+      "prompt": "Do you watch TV in the evening?",
+      "answer": "Did you watch TV in the evening?",
+      "points": 1
+    },
+    {
+      "id": "ps-057",
+      "type": "question",
+      "prompt": "Does she work in a hospital?",
+      "answer": "Did she work in a hospital?",
+      "points": 1
+    },
+    {
+      "id": "ps-058",
+      "type": "question",
+      "prompt": "Where do you go after school?",
+      "answer": "Where did you go after school?",
+      "points": 1
+    },
+    {
+      "id": "ps-059",
+      "type": "question",
+      "prompt": "What does he eat for breakfast?",
+      "answer": "What did he eat for breakfast?",
+      "points": 1
+    },
+    {
+      "id": "ps-060",
+      "type": "question",
+      "prompt": "Do they study English?",
+      "answer": "Did they study English?",
+      "points": 1
+    },
+    {
+      "id": "ps-061",
+      "type": "question",
+      "prompt": "When do you visit your grandparents?",
+      "answer": "When did you visit your grandparents?",
+      "points": 1
+    },
+    {
+      "id": "ps-062",
+      "type": "question",
+      "prompt": "Does he drive to work?",
+      "answer": "Did he drive to work?",
+      "points": 1
+    },
+    {
+      "id": "ps-063",
+      "type": "question",
+      "prompt": "What do you do at weekends?",
+      "answer": "What did you do at weekends?",
+      "points": 1
+    },
+    {
+      "id": "ps-064",
+      "type": "question",
+      "prompt": "Does she like her new job?",
+      "answer": "Did she like her new job?",
+      "points": 1
+    },
+    {
+      "id": "ps-065",
+      "type": "question",
+      "prompt": "Where do they buy their food?",
+      "answer": "Where did they buy their food?",
+      "points": 1
+    },
+    {
+      "id": "ps-066",
+      "type": "question",
+      "prompt": "Do you have lunch at school?",
+      "answer": "Did you have lunch at school?",
+      "points": 1
+    },
+    {
+      "id": "ps-067",
+      "type": "question",
+      "prompt": "What time does the film start?",
+      "answer": "What time did the film start?",
+      "points": 1
+    },
+    {
+      "id": "ps-068",
+      "type": "question",
+      "prompt": "Does he read books in English?",
+      "answer": "Did he read books in English?",
+      "points": 1
+    },
+    {
+      "id": "ps-069",
+      "type": "question",
+      "prompt": "How do you travel to school?",
+      "answer": "How did you travel to school?",
+      "points": 1
+    },
+    {
+      "id": "ps-070",
+      "type": "question",
+      "prompt": "Do they cook dinner together?",
+      "answer": "Did they cook dinner together?",
+      "points": 1
+    }
+  ]
+}
