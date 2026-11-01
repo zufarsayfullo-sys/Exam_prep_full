@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Print Worksheets | ExamPrep Studio</title>
+<style>
+:root{font-family:Inter,system-ui,Arial,sans-serif;color:#172554;background:#f5f7fc}*{box-sizing:border-box}body{margin:0}header{background:#172554;color:white;padding:25px max(20px,calc((100% - 1050px)/2))}header h1{margin:8px 0;font-size:30px}header p{margin:0;color:#cbd5e1}main{max-width:1050px;margin:28px auto;padding:0 18px}.panel{background:white;border:1px solid #e2e8f0;border-radius:18px;padding:23px;margin-bottom:18px;box-shadow:0 5px 22px #1725540a}.controls{display:grid;grid-template-columns:1fr 1fr 145px;gap:14px}label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}select,input{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;background:white;font:inherit}button{background:#4f46e5;color:white;border:0;border-radius:10px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}.secondary{background:#eef2ff;color:#3730a3}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.status{font-size:13px;color:#475569;margin:12px 0 0}.error{color:#b91c1c}.sheet{background:white;color:#111827;border:1px solid #e2e8f0;border-radius:15px;padding:32px;min-height:450px}.sheet h2{text-align:center;margin:0 0 6px}.sheet .subtitle{text-align:center;color:#475569;margin:0 0 23px}.student-fields{display:flex;justify-content:space-between;gap:18px;margin-bottom:22px}.question{break-inside:avoid;margin:0 0 21px;line-height:1.55}.question strong{font-weight:700}.options{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;margin:9px 0 0 22px}.line{border-bottom:1px dotted #9ca3af;height:24px;margin:8px 0 0 23px}.key{margin-top:28px;border-top:2px dashed #94a3b8;padding-top:15px}.key h3{margin:0 0 12px}.key-list{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;font-size:13px}.muted{color:#64748b}.hidden{display:none!important}footer{text-align:center;color:#64748b;font-size:12px;padding:15px}@media(max-width:650px){.controls{grid-template-columns:1fr}.sheet{padding:18px}.options{grid-template-columns:1fr}.student-fields{display:block}.student-fields div{margin-bottom:12px}.key-list{grid-template-columns:repeat(2,1fr)}}@page{size:A4;margin:15mm}@media print{header,.panel,footer{display:none!important}body{background:white}.sheet{border:0;padding:0;border-radius:0;min-height:0}.question{margin-bottom:15px}.key{break-before:page}.sheet h2{font-size:19px}} 
+</style></head><body>
+<header><div style="font-weight:800">✦ ExamPrep Studio</div><h1>Print Worksheets</h1><p>Automatically load quiz banks and create printable practice sheets.</p></header>
+<main>
+<section class="panel">
+<div class="controls">
+<div><label for="level">Level</label><select id="level"><option value="">Loading levels...</option></select></div>
+<div><label for="quiz">Quiz</label><select id="quiz"><option value="">Choose a level</option></select></div>
+<div><label for="count">Questions</label><select id="count"><option>10</option><option>15</option><option>20</option></select></div>
+</div>
+<div class="actions"><button id="generate" disabled>Generate worksheet</button><button class="secondary" id="reshuffle" disabled>↻ New random set</button><button class="secondary" id="print" disabled>🖨 Print</button><label style="display:flex;align-items:center;gap:8px;margin:0 0 0 auto"><input type="checkbox" id="answerKey" style="width:auto" checked> Include answer key</label></div>
+<p class="status" id="status" role="status">Looking for quiz indexes...</p>
+</section>
+<article id="sheet" class="sheet hidden"><h2 id="sheetTitle"></h2><p id="sheetSub" class="subtitle"></p><div class="student-fields"><div>Name: __________________________</div><div>Date: __________________</div><div>Score: ____ / <span id="maxScore"></span></div></div><div id="questions"></div><section id="key" class="key"><h3>Answer key</h3><div id="answers" class="key-list"></div></section></article>
+</main><footer>ExamPrep Studio · Universal worksheet generator</footer>
+<script>
+'use strict';
+const LEVELS=[['beginner','Beginner'],['elementary','Elementary'],['pre-int','Pre-Intermediate'],['inter','Intermediate'],['upper-inter','Upper-Intermediate']];
+const $=id=>document.getElementById(id);
+let catalog=new Map(),bank=[],selection=[];
+function msg(t,error=false){$('status').textContent=t;$('status').classList.toggle('error',error)}
+function safePath(v){if(typeof v!=='string'||!v.trim())return null;let s=v.trim();if(/^(https?:)?\/\//i.test(s)||s.startsWith('/')||s.includes('..')||s.includes('\\'))return null;return s.replace(/^\.\//,'')}
+function entryName(x){return typeof x==='string'?x:(x.title||x.name||x.label||x.quiz_name||x.id||'Unnamed quiz')}
+function entries(json){
+ if(Array.isArray(json))return json;
+ for(const k of ['quizzes','items','entries','data'])if(Array.isArray(json?.[k]))return json[k];
+ if(json&&typeof json==='object')return Object.entries(json).filter(([k,v])=>v&&typeof v==='object').map(([k,v])=>({name:k,...v}));
+ return [];
+}
+function findBankPath(item,level){
+ const value=typeof item==='string'?item:(item.bank||item.bank_file||item.bankFile||item.questions_file||item.questionsFile||item.questions_json||item.json||item.file||item.path||item.url||item.href||item.src);
+ const path=safePath(value);if(!path)return null;
+ if(path.endsWith('.json')){
+  if(path.startsWith(level+'/'))return path;
+  if(path.startsWith('quizzes/'))return level+'/'+path;
+  return level+'/quizzes/'+path;
+ }
+ if(path.endsWith('.html'))return null; // Never parse arbitrary quiz HTML.
+ return null;
+}
+async function getJson(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error(path+': HTTP '+r.status);return r.json()}
+async function init(){
+ let found=0;
+ await Promise.all(LEVELS.map(async ([slug,label])=>{
+  try{
+   const data=await getJson(slug+'/quizzes/index.json');
+   const all=entries(data).map((x,i)=>({label:entryName(x),path:findBankPath(x,slug),item:x})).filter(x=>x.path);
+   if(all.length){catalog.set(slug,all);found+=all.length}
+  }catch(e){console.info('No readable index for '+slug,e.message)}
+ }));
+ const levels=LEVELS.filter(([slug])=>catalog.has(slug));
+ $('level').replaceChildren(new Option(levels.length?'Select level':'No quiz banks found',''),...levels.map(([slug,label])=>new Option(label,slug)));
+ if(levels.length){$('level').value=levels[0][0];changeLevel();msg('Found '+found+' JSON quiz bank'+(found===1?'':'s')+' across '+levels.length+' level(s).')}
+ else msg('No JSON question banks found in the level indexes. Each quizzes/index.json must reference a .json bank file (e.g. {"title":"Past Simple","bank":"quiz-01.bank.json"}).',true);
+}
+function changeLevel(){
+ const items=catalog.get($('level').value)||[];
+ $('quiz').replaceChildren(new Option(items.length?'Select quiz':'No quizzes',''),...items.map((x,i)=>new Option(x.label,String(i))));
+ $('quiz').value=items.length?'0':'';
+ $('generate').disabled=!items.length;
+ $('sheet').classList.add('hidden');$('print').disabled=true;$('reshuffle').disabled=true;
+}
+function extractQuestions(data){
+ if(Array.isArray(data))return data;
+ for(const key of ['questions','bank','items','data','questionBank','question_bank'])if(Array.isArray(data?.[key]))return data[key];
+ return [];
+}
+function normalize(q){
+ if(typeof q==='string')return {prompt:q,options:[],answer:''};
+ if(!q||typeof q!=='object')return null;
+ const prompt=q.question||q.prompt||q.text||q.q||q.sentence||q.stem;
+ if(typeof prompt!=='string'||!prompt.trim())return null;
+ let opts=q.options||q.choices||q.answers||[];
+ if(opts&&typeof opts==='object'&&!Array.isArray(opts))opts=Object.values(opts);
+ opts=Array.isArray(opts)?opts.map(v=>typeof v==='string'?v:(v?.text||v?.label||v?.value||'')).filter(Boolean):[];
+ let ans=q.correctAnswer??q.correct_answer??q.correct??q.answer??q.key??'';
+ if(typeof ans==='number'&&opts.length){ans=opts[ans]??String(ans)}
+ if(typeof ans==='string'&&/^[A-D]$/i.test(ans)&&opts.length)ans=opts[ans.toUpperCase().charCodeAt(0)-65]||ans;
+ return {prompt,options:opts,answer:String(ans)};
+}
+function randomSample(a,n){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b.slice(0,n)}
+function add(tag,text,parent,cls){const e=document.createElement(tag);e.textContent=text;if(cls)e.className=cls;parent.append(e);return e}
+function render(){
+ const item=catalog.get($('level').value)[Number($('quiz').value)];
+ $('sheetTitle').textContent=item.label;
+ $('sheetSub').textContent=LEVELS.find(x=>x[0]===$('level').value)?.[1]+' · '+selection.length+' questions';
+ $('maxScore').textContent=selection.length;
+ $('questions').replaceChildren();$('answers').replaceChildren();
+ selection.forEach((q,i)=>{
+  const wrap=add('div','',$('questions'),'question');
+  add('strong',(i+1)+'. '+q.prompt,wrap);
+  if(q.options.length){const grid=add('div','',wrap,'options');q.options.forEach((v,j)=>add('div',String.fromCharCode(65+j)+'. '+v,grid))}
+  else add('div','',wrap,'line');
+  add('div',(i+1)+'. '+(q.answer||'—'),$('answers'));
+ });
+ $('key').classList.toggle('hidden',!$('answerKey').checked);
+ $('sheet').classList.remove('hidden');$('print').disabled=false;$('reshuffle').disabled=false;
+}
+async function generate(){
+ const item=catalog.get($('level').value)?.[Number($('quiz').value)];
+ if(!item)return;
+ $('generate').disabled=true;msg('Loading '+item.path+'...');
+ try{
+  const data=await getJson(item.path);
+  bank=extractQuestions(data).map(normalize).filter(Boolean);
+  if(!bank.length)throw Error('No supported questions found in '+item.path+'. Expected an array or a "questions" array.');
+  reshuffle();msg('Loaded '+bank.length+' questions from '+item.path+'.');
+ }catch(e){msg(e.message,true);$('sheet').classList.add('hidden');$('print').disabled=true;$('reshuffle').disabled=true}
+ finally{$('generate').disabled=false}
+}
+function reshuffle(){if(!bank.length)return;selection=randomSample(bank,Math.min(Number($('count').value),bank.length));render()}
+$('level').addEventListener('change',changeLevel);
+$('quiz').addEventListener('change',()=>{$('sheet').classList.add('hidden');$('print').disabled=true;$('reshuffle').disabled=true});
+$('generate').addEventListener('click',generate);
+$('reshuffle').addEventListener('click',reshuffle);
+$('print').addEventListener('click',()=>window.print());
+$('answerKey').addEventListener('change',()=>{$('key').classList.toggle('hidden',!$('answerKey').checked)});
+init();
+</script></body></html>
