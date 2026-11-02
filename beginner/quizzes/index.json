@@ -34,6 +34,14 @@
   "file": "quiz-04.html",
   "bank": "quiz-04.bank.json",
   "questionCount": 70
+  },
+  {
+  "id": "beginner-005",
+  "title": "Going to — Choose the Correct Words",
+  "category": "Grammar",
+  "level": "beginner",
+  "file": "quiz-05.html",
+  "bank": "quiz-05.bank.json",
+  "questionCount": 70
   }
-
 ]
