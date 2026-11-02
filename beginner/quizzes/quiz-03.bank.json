@@ -1,112 +1,497 @@
-      "id": "bd-055",
+
+{
+  "title": "Past Simple — Was Born / Died",
+  "level": "beginner",
+  "category": "Grammar",
+  "questions": [
+    {
+      "id": "bd-001",
+      "type": "born",
+      "prompt": "Elvis Presley ___ (be born) in Mississippi in 1935.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-002",
       "type": "died",
-      "prompt": "Nikola Tesla ___ (die) in 1943.",
+      "prompt": "Elvis Presley ___ (die) in 1977.",
       "answer": "died",
       "points": 1
     },
     {
+      "id": "bd-003",
+      "type": "born",
+      "prompt": "Albert Einstein ___ (be born) in Germany in 1879.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-004",
+      "type": "died",
+      "prompt": "Albert Einstein ___ (die) in 1955.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-005",
+      "type": "born",
+      "prompt": "Marie Curie ___ (be born) in Poland in 1867.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-006",
+      "type": "died",
+      "prompt": "Marie Curie ___ (die) in 1934.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-007",
+      "type": "born",
+      "prompt": "William Shakespeare ___ (be born) in England in 1564.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-008",
+      "type": "died",
+      "prompt": "William Shakespeare ___ (die) in 1616.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-009",
+      "type": "born",
+      "prompt": "Leonardo da Vinci ___ (be born) in Italy in 1452.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-010",
+      "type": "died",
+      "prompt": "Leonardo da Vinci ___ (die) in France in 1519.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-011",
+      "type": "born",
+      "prompt": "Michael Jackson ___ (be born) in 1958.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-012",
+      "type": "died",
+      "prompt": "Michael Jackson ___ (die) in 2009.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-013",
+      "type": "born",
+      "prompt": "Princess Diana ___ (be born) in 1961.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-014",
+      "type": "died",
+      "prompt": "Princess Diana ___ (die) in 1997.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-015",
+      "type": "born",
+      "prompt": "Steve Jobs ___ (be born) in 1955.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-016",
+      "type": "died",
+      "prompt": "Steve Jobs ___ (die) in 2011.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-017",
+      "type": "born",
+      "prompt": "Nelson Mandela ___ (be born) in South Africa in 1918.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-018",
+      "type": "died",
+      "prompt": "Nelson Mandela ___ (die) in 2013.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-019",
+      "type": "born",
+      "prompt": "Queen Elizabeth II ___ (be born) in 1926.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-020",
+      "type": "died",
+      "prompt": "Queen Elizabeth II ___ (die) in 2022.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-021",
+      "type": "born",
+      "prompt": "Isaac Newton ___ (be born) in England in 1643.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-022",
+      "type": "died",
+      "prompt": "Isaac Newton ___ (die) in 1727.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-023",
+      "type": "born",
+      "prompt": "Charles Darwin ___ (be born) in 1809.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-024",
+      "type": "died",
+      "prompt": "Charles Darwin ___ (die) in 1882.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-025",
+      "type": "born",
+      "prompt": "Ludwig van Beethoven ___ (be born) in 1770.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-026",
+      "type": "died",
+      "prompt": "Ludwig van Beethoven ___ (die) in 1827.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-027",
+      "type": "born",
+      "prompt": "Wolfgang Amadeus Mozart ___ (be born) in 1756.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-028",
+      "type": "died",
+      "prompt": "Wolfgang Amadeus Mozart ___ (die) in 1791.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-029",
+      "type": "born",
+      "prompt": "Frida Kahlo ___ (be born) in Mexico in 1907.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-030",
+      "type": "died",
+      "prompt": "Frida Kahlo ___ (die) in 1954.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-031",
+      "type": "born",
+      "prompt": "Vincent van Gogh ___ (be born) in 1853.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-032",
+      "type": "died",
+      "prompt": "Vincent van Gogh ___ (die) in 1890.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-033",
+      "type": "born",
+      "prompt": "Pablo Picasso ___ (be born) in Spain in 1881.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-034",
+      "type": "died",
+      "prompt": "Pablo Picasso ___ (die) in 1973.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-035",
+      "type": "born",
+      "prompt": "Walt Disney ___ (be born) in 1901.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-036",
+      "type": "died",
+      "prompt": "Walt Disney ___ (die) in 1966.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-037",
+      "type": "born",
+      "prompt": "Charlie Chaplin ___ (be born) in London in 1889.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-038",
+      "type": "died",
+      "prompt": "Charlie Chaplin ___ (die) in 1977.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-039",
+      "type": "born",
+      "prompt": "Martin Luther King Jr. ___ (be born) in 1929.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-040",
+      "type": "died",
+      "prompt": "Martin Luther King Jr. ___ (die) in 1968.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-041",
+      "type": "born",
+      "prompt": "Abraham Lincoln ___ (be born) in 1809.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-042",
+      "type": "died",
+      "prompt": "Abraham Lincoln ___ (die) in 1865.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-043",
+      "type": "born",
+      "prompt": "George Washington ___ (be born) in 1732.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-044",
+      "type": "died",
+      "prompt": "George Washington ___ (die) in 1799.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-045",
+      "type": "born",
+      "prompt": "Napoleon Bonaparte ___ (be born) in 1769.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-046",
+      "type": "died",
+      "prompt": "Napoleon Bonaparte ___ (die) in 1821.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-047",
+      "type": "born",
+      "prompt": "Florence Nightingale ___ (be born) in 1820.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-048",
+      "type": "died",
+      "prompt": "Florence Nightingale ___ (die) in 1910.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-049",
+      "type": "born",
+      "prompt": "Agatha Christie ___ (be born) in England in 1890.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-050",
+      "type": "died",
+      "prompt": "Agatha Christie ___ (die) in 1976.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-051",
+      "type": "born",
+      "prompt": "J. R. R. Tolkien ___ (be born) in 1892.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-052",
+      "type": "died",
+      "prompt": "J. R. R. Tolkien ___ (die) in 1973.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-053",
+      "type": "born",
+      "prompt": "Anne Frank ___ (be born) in Germany in 1929.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
+      "id": "bd-054",
+      "type": "died",
+      "prompt": "Anne Frank ___ (die) in 1945.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-055",
+      "type": "born",
+      "prompt": "Mahatma Gandhi ___ (be born) in India in 1869.",
+      "answer": "was born",
+      "points": 1
+    },
+    {
       "id": "bd-056",
-      "type": "mixed",
-      "prompt": "Elvis Presley ___ (live) in Tupelo as a child.",
-      "answer": "lived",
+      "type": "died",
+      "prompt": "Mahatma Gandhi ___ (die) in 1948.",
+      "answer": "died",
       "points": 1
     },
     {
       "id": "bd-057",
-      "type": "mixed",
-      "prompt": "His family ___ (move) to Memphis in 1948.",
-      "answer": "moved",
+      "type": "born",
+      "prompt": "Mother Teresa ___ (be born) in 1910.",
+      "answer": "was born",
       "points": 1
     },
     {
       "id": "bd-058",
-      "type": "mixed",
-      "prompt": "Elvis ___ (love) music when he was young.",
-      "answer": "loved",
+      "type": "died",
+      "prompt": "Mother Teresa ___ (die) in 1997.",
+      "answer": "died",
       "points": 1
     },
     {
       "id": "bd-059",
-      "type": "mixed",
-      "prompt": "He ___ (finish) school in 1953.",
-      "answer": "finished",
+      "type": "born",
+      "prompt": "Alan Turing ___ (be born) in 1912.",
+      "answer": "was born",
       "points": 1
     },
     {
       "id": "bd-060",
-      "type": "mixed",
-      "prompt": "He ___ (work) in different jobs before he became famous.",
-      "answer": "worked",
+      "type": "died",
+      "prompt": "Alan Turing ___ (die) in 1954.",
+      "answer": "died",
       "points": 1
     },
     {
       "id": "bd-061",
-      "type": "mixed",
-      "prompt": "Elvis ___ (become) a famous singer.",
-      "answer": "became",
+      "type": "born",
+      "prompt": "Stephen Hawking ___ (be born) in 1942.",
+      "answer": "was born",
       "points": 1
     },
     {
       "id": "bd-062",
-      "type": "mixed",
-      "prompt": "Marie Curie ___ (study) science in Paris.",
-      "answer": "studied",
+      "type": "died",
+      "prompt": "Stephen Hawking ___ (die) in 2018.",
+      "answer": "died",
       "points": 1
     },
     {
       "id": "bd-063",
-      "type": "mixed",
-      "prompt": "Albert Einstein ___ (work) as a scientist.",
-      "answer": "worked",
+      "type": "born",
+      "prompt": "Bruce Lee ___ (be born) in 1940.",
+      "answer": "was born",
       "points": 1
     },
     {
       "id": "bd-064",
-      "type": "mixed",
-      "prompt": "Mozart ___ (write) music when he was a child.",
-      "answer": "wrote",
+      "type": "died",
+      "prompt": "Bruce Lee ___ (die) in 1973.",
+      "answer": "died",
       "points": 1
     },
     {
       "id": "bd-065",
-      "type": "mixed",
-      "prompt": "Frida Kahlo ___ (paint) many self-portraits.",
-      "answer": "painted",
+      "type": "born",
+      "prompt": "Freddie Mercury ___ (be born) in 1946.",
+      "answer": "was born",
       "points": 1
     },
     {
       "id": "bd-066",
-      "type": "mixed",
-      "prompt": "Nelson Mandela ___ (become) president in 1994.",
-      "answer": "became",
+      "type": "died",
+      "prompt": "Freddie Mercury ___ (die) in 1991.",
+      "answer": "died",
       "points": 1
     },
     {
       "id": "bd-067",
-      "type": "mixed",
-      "prompt": "Jane Austen ___ (write) novels.",
-      "answer": "wrote",
+      "type": "born",
+      "prompt": "Cristiano Ronaldo ___ (be born) in 1985.",
+      "answer": "was born",
       "points": 1
     },
     {
       "id": "bd-068",
-      "type": "mixed",
-      "prompt": "Charlie Chaplin ___ (make) silent films.",
-      "answer": "made",
+      "type": "born",
+      "prompt": "Lionel Messi ___ (be born) in 1987.",
+      "answer": "was born",
       "points": 1
     },
     {
       "id": "bd-069",
-      "type": "mixed",
-      "prompt": "Walt Disney ___ (create) Mickey Mouse with Ub Iwerks.",
-      "answer": "created",
+      "type": "born",
+      "prompt": "Adele ___ (be born) in London in 1988.",
+      "answer": "was born",
       "points": 1
     },
     {
       "id": "bd-070",
-      "type": "mixed",
-      "prompt": "Shakespeare ___ (write) plays and poems.",
-      "answer": "wrote",
+      "type": "born",
+      "prompt": "Taylor Swift ___ (be born) in 1989.",
+      "answer": "was born",
       "points": 1
     }
   ]
