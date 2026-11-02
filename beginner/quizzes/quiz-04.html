@@ -1,10 +1,11 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Put the Words in Order | ExamPrep Studio</title>
+<title>Quiz 04 | ExamPrep Studio</title>
+
 <style>
 :root {
   font-family:system-ui,-apple-system,Segoe UI,sans-serif;
@@ -13,20 +14,34 @@
 }
 * { box-sizing:border-box; }
 body { margin:0; }
-.wrap { max-width:920px; margin:auto; padding:16px; }
-.brand { font-size:24px; font-weight:800; margin:10px 0 25px; }
+.wrap {
+  max-width:920px;
+  margin:auto;
+  padding:16px;
+}
+.brand {
+  font-size:24px;
+  font-weight:800;
+  margin:10px 0 25px;
+}
 .brand span { color:#7138e5; }
 .card {
-  background:white;
+  background:#fff;
   border:1px solid #e6e4f5;
   border-radius:22px;
   padding:clamp(20px,5vw,34px);
   box-shadow:0 12px 36px #16164c0b;
   margin-bottom:20px;
 }
-h1 { font-size:clamp(26px,5vw,36px); margin:8px 0 12px; }
+h1 {
+  font-size:clamp(26px,5vw,36px);
+  margin:8px 0 12px;
+}
 h2 { font-size:22px; }
-.muted { color:#69718a; line-height:1.6; }
+.muted {
+  color:#69718a;
+  line-height:1.6;
+}
 .tag {
   display:inline-block;
   background:#eee9ff;
@@ -36,7 +51,12 @@ h2 { font-size:22px; }
   font-weight:700;
   font-size:13px;
 }
-.actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
+.actions {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
 button {
   border:0;
   border-radius:12px;
@@ -48,8 +68,14 @@ button {
   cursor:pointer;
   min-height:48px;
 }
-button.alt { background:#f0eaff; color:#6832cb; }
-button:disabled { opacity:.45; cursor:default; }
+button.alt {
+  background:#f0eaff;
+  color:#6832cb;
+}
+button:disabled {
+  opacity:.45;
+  cursor:default;
+}
 input {
   font:inherit;
   border:1px solid #d9d9ef;
@@ -59,7 +85,10 @@ input {
   margin:8px 0 12px;
   min-height:50px;
 }
-input:focus { outline:2px solid #7138e5; outline-offset:1px; }
+input:focus {
+  outline:2px solid #7138e5;
+  outline-offset:1px;
+}
 label { font-weight:650; }
 .hidden { display:none!important; }
 .question {
@@ -78,14 +107,23 @@ label { font-weight:650; }
   border-radius:20px;
   overflow:hidden;
 }
-.progress div { background:#7138e5; height:100%; }
-table { width:100%; border-collapse:collapse; }
+.progress div {
+  background:#7138e5;
+  height:100%;
+}
+table {
+  width:100%;
+  border-collapse:collapse;
+}
 td,th {
   text-align:left;
   border-bottom:1px solid #eee;
   padding:12px;
 }
-.review { padding:12px 0; border-bottom:1px solid #eee; }
+.review {
+  padding:12px 0;
+  border-bottom:1px solid #eee;
+}
 .good { color:#087e43; }
 .bad { color:#bd3348; }
 #notice {
@@ -93,15 +131,26 @@ td,th {
   min-height:22px;
   white-space:pre-wrap;
 }
-a { color:#6832cb; overflow-wrap:anywhere; }
+a {
+  color:#6832cb;
+  overflow-wrap:anywhere;
+}
 @media(max-width:600px) {
-  .card { padding:18px 15px; border-radius:17px; }
+  .card {
+    padding:18px 15px;
+    border-radius:17px;
+  }
   .actions {
     display:grid;
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
-  .actions button { width:100%; padding:13px 8px; }
-  #home button,#joinBtn { width:100%; }
+  .actions button {
+    width:100%;
+    padding:13px 8px;
+  }
+  #home button,#joinBtn {
+    width:100%;
+  }
   #quiz .actions {
     position:sticky;
     bottom:0;
@@ -112,18 +161,23 @@ a { color:#6832cb; overflow-wrap:anywhere; }
 }
 </style>
 </head>
+
 <body>
 <main class="wrap">
 
-<div class="brand">✦ ExamPrep <span>Studio</span></div>
+<div class="brand">
+  ✦ ExamPrep <span>Studio</span>
+</div>
 
 <section class="card" id="home">
   <span class="tag">Beginner · Grammar</span>
   <h1>Put the Words in Order</h1>
   <p class="muted">
-    70 questions · 10 randomly selected · 80% pass mark
+    70 questions · 10 randomly selected · Pass mark 80%
   </p>
-  <button id="create" disabled>Loading question bank...</button>
+  <button id="create" disabled>
+    Loading question bank...
+  </button>
   <p class="muted">
     Students join from student.html.
     Start the session when everyone is ready.
@@ -133,22 +187,30 @@ a { color:#6832cb; overflow-wrap:anywhere; }
 <section class="card hidden" id="teacher">
   <span class="tag">Teacher live session</span>
   <h1>Put the Words in Order</h1>
+
   <p>Session code: <strong id="code"></strong></p>
+
   <p>
     Student Board:
     <a href="../../student.html" target="_blank" rel="noopener">
       Open student.html
     </a>
   </p>
+
   <p id="count"></p>
+
   <div class="actions">
     <button id="start">Start Quiz</button>
     <button id="end" class="alt">End Session</button>
   </div>
+
   <h2>Live leaderboard</h2>
   <table>
     <thead>
-      <tr><th>Student</th><th>Score</th></tr>
+      <tr>
+        <th>Student</th>
+        <th>Score</th>
+      </tr>
     </thead>
     <tbody id="leader"></tbody>
   </table>
@@ -157,32 +219,49 @@ a { color:#6832cb; overflow-wrap:anywhere; }
 <section class="card hidden" id="join">
   <span class="tag">Student joining</span>
   <h1>Put the Words in Order</h1>
+
   <label for="name">Full name</label>
-  <input id="name" maxlength="80" placeholder="Enter your name">
+  <input
+    id="name"
+    maxlength="80"
+    placeholder="Enter your name"
+  >
+
   <button id="joinBtn">Join Session</button>
 </section>
 
 <section class="card hidden" id="waiting">
   <h1>You're in!</h1>
-  <p class="muted">Wait for your teacher to start the quiz.</p>
+  <p class="muted">
+    Wait for your teacher to start the quiz.
+  </p>
 </section>
 
 <section class="card hidden" id="quiz">
   <span class="tag" id="counter"></span>
+
   <h2>Put the words in the correct order.</h2>
-  <div class="progress"><div id="fill"></div></div>
+
+  <div class="progress">
+    <div id="fill"></div>
+  </div>
+
   <div class="question" id="prompt"></div>
+
   <label for="answer">Your sentence</label>
+
   <input
     id="answer"
     autocomplete="off"
     spellcheck="false"
     placeholder="Write the complete sentence"
   >
+
   <p class="muted">
-    Use all the words. Capitalization, extra spaces and
-    punctuation will not affect your score.
+    Use all the words. Capitalization and punctuation
+    do not affect your score.
   </p>
+
   <div class="actions">
     <button class="alt" id="prev">Previous</button>
     <button id="next">Next</button>
@@ -193,17 +272,25 @@ a { color:#6832cb; overflow-wrap:anywhere; }
   <span class="tag">Your result</span>
   <h1 id="score"></h1>
   <p id="outcome"></p>
-  <button class="alt" id="toggleReview">Review answers</button>
+
+  <button class="alt" id="toggleReview">
+    Review answers
+  </button>
+
   <div class="hidden" id="review"></div>
 </section>
 
 <p id="notice" role="status"></p>
+
 </main>
 
 <script>
 "use strict";
 
-// Existing working Supabase connection
+/* ==============================
+   SUPABASE — EXISTING CONNECTION
+================================ */
+
 const URL_BASE =
   "https://dfepopppcggzecdxexeh.supabase.co";
 
@@ -213,23 +300,33 @@ const PUBLIC_KEY =
 const QUIZ_TITLE = "Put the Words in Order";
 const QUIZ_PATH = "beginner/quizzes/quiz-04.html";
 const BANK_FILE = "quiz-04.bank.json";
-const PASS_MARK = 80;
+
 const QUESTION_COUNT = 10;
+const PASS_MARK = 80;
+
+const TEACHER_KEY = "eps2_quiz04_teacher";
+const PLAYER_KEY = "eps2_quiz04_player";
+const PROGRESS_PREFIX = "eps2_quiz04_progress_";
 
 const $ = id => document.getElementById(id);
 
 const views = [
-  "home","teacher","join","waiting","quiz","result"
+  "home",
+  "teacher",
+  "join",
+  "waiting",
+  "quiz",
+  "result"
 ];
 
 function show(id) {
-  views.forEach(v => {
-    $(v).classList.toggle("hidden",v!==id);
+  views.forEach(view => {
+    $(view).classList.toggle("hidden", view !== id);
   });
 }
 
-function notice(text) {
-  $("notice").textContent = text || "";
+function notice(message) {
+  $("notice").textContent = message || "";
 }
 
 let BANK = [];
@@ -242,13 +339,14 @@ let index = 0;
 let submitted = false;
 let busy = false;
 let polling = false;
+let quizStarted = false;
+let sessionClosed = false;
 
 const query = new URLSearchParams(location.search);
 
-// Quiz-specific storage prevents conflicts with Quiz 03.
-const TEACHER_KEY = "eps2_quiz04_teacher";
-const PLAYER_KEY = "eps2_quiz04_player";
-const PROGRESS_PREFIX = "eps2_quiz04_progress_";
+/* ==============================
+   STORAGE
+================================ */
 
 function readStorage(key) {
   try {
@@ -263,7 +361,7 @@ function writeStorage(key,value) {
   try {
     sessionStorage.setItem(key,JSON.stringify(value));
   } catch {
-    // Quiz can continue if browser storage is unavailable.
+    // Continue without storage if unavailable.
   }
 }
 
@@ -277,8 +375,10 @@ function progressKey() {
   return PROGRESS_PREFIX + code + "_" + playerId;
 }
 
-// Ignore capitalization and punctuation, but retain
-// word order and apostrophes in contractions.
+/* ==============================
+   ANSWER NORMALIZATION
+================================ */
+
 function normalize(value) {
   return String(value || "")
     .toLowerCase()
@@ -288,7 +388,7 @@ function normalize(value) {
     .trim();
 }
 
-function tokens(value) {
+function words(value) {
   return normalize(value)
     .split(" ")
     .filter(Boolean)
@@ -296,17 +396,18 @@ function tokens(value) {
 }
 
 function sameWords(a,b) {
-  const x = tokens(a);
-  const y = tokens(b);
+  const x = words(a);
+  const y = words(b);
 
   return x.length === y.length &&
     x.every((word,i) => word === y[i]);
 }
 
 function acceptedAnswers(q) {
-  const alternatives = Array.isArray(q.alternativeAnswers)
-    ? q.alternativeAnswers
-    : [];
+  const alternatives =
+    Array.isArray(q.alternativeAnswers)
+      ? q.alternativeAnswers
+      : [];
 
   return [q.answer,...alternatives];
 }
@@ -321,13 +422,17 @@ function isCorrect(q,answer) {
   );
 }
 
+/* ==============================
+   QUESTION BANK VALIDATION
+================================ */
+
 function validateBank(data) {
   const questions = Array.isArray(data)
     ? data
-    : data.questions;
+    : data?.questions;
 
   if (!Array.isArray(questions)) {
-    throw Error("Question bank must contain a questions array.");
+    throw Error("Invalid question bank format.");
   }
 
   if (questions.length !== 70) {
@@ -337,6 +442,7 @@ function validateBank(data) {
   }
 
   const ids = new Set();
+  const uniquePrompts = new Set();
 
   for (const q of questions) {
     if (
@@ -345,7 +451,11 @@ function validateBank(data) {
       typeof q.prompt !== "string" ||
       typeof q.answer !== "string"
     ) {
-      throw Error("A question has missing or invalid fields.");
+      throw Error("A question contains invalid fields.");
+    }
+
+    if (!q.id.trim() || !q.prompt.trim() || !q.answer.trim()) {
+      throw Error("A question contains empty fields.");
     }
 
     if (ids.has(q.id)) {
@@ -358,25 +468,25 @@ function validateBank(data) {
       throw Error("Invalid question type: " + q.id);
     }
 
-    if (!q.prompt.trim() || !q.answer.trim()) {
-      throw Error("Empty question or answer: " + q.id);
-    }
-
     const promptWords = q.prompt
       .split("/")
-      .map(w => w.trim())
+      .map(part => part.trim())
       .join(" ");
 
     if (!sameWords(promptWords,q.answer)) {
       throw Error(
-        "Scrambled words do not match the answer: " + q.id
+        "Words do not match the answer: " + q.id
       );
     }
+
+    const promptKey = words(q.prompt).join(" ");
+
+    uniquePrompts.add(promptKey);
 
     if (q.alternativeAnswers !== undefined) {
       if (!Array.isArray(q.alternativeAnswers)) {
         throw Error(
-          "alternativeAnswers must be an array: " + q.id
+          "Invalid alternative answers: " + q.id
         );
       }
 
@@ -393,6 +503,12 @@ function validateBank(data) {
     }
   }
 
+  if (uniquePrompts.size < QUESTION_COUNT) {
+    throw Error(
+      "The bank needs at least 10 different questions."
+    );
+  }
+
   return questions;
 }
 
@@ -404,8 +520,8 @@ async function loadBank() {
 
     if (!response.ok) {
       throw Error(
-        "Cannot load " + BANK_FILE +
-        " (HTTP " + response.status + ")"
+        "Cannot load question bank: HTTP " +
+        response.status
       );
     }
 
@@ -426,8 +542,10 @@ async function loadBank() {
   }
 }
 
-// These RPC names and parameters are preserved
-// from the working Quiz 03 implementation.
+/* ==============================
+   SUPABASE RPC
+================================ */
+
 async function rpc(fn,data={}) {
   const response = await fetch(
     URL_BASE + "/rest/v1/rpc/" + fn,
@@ -478,6 +596,14 @@ async function run(fn) {
   }
 }
 
+/* ==============================
+   RANDOM QUESTION SELECTION
+
+   IMPORTANT:
+   Never select the same question
+   text twice for one student.
+================================ */
+
 function shuffle(items) {
   const result = [...items];
 
@@ -494,15 +620,38 @@ function shuffle(items) {
   return result;
 }
 
+function questionKey(q) {
+  return words(q.prompt).join(" ");
+}
+
 function choose() {
   if (BANK.length !== 70) {
     throw Error("Question bank is not ready.");
   }
 
-  const result = shuffle(BANK).slice(0,QUESTION_COUNT);
+  const shuffled = shuffle(BANK);
+  const seen = new Set();
+  const result = [];
+
+  for (const q of shuffled) {
+    const key = questionKey(q);
+
+    if (seen.has(key)) {
+      continue;
+    }
+
+    seen.add(key);
+    result.push(q);
+
+    if (result.length === QUESTION_COUNT) {
+      break;
+    }
+  }
 
   if (result.length !== QUESTION_COUNT) {
-    throw Error("Could not select 10 questions.");
+    throw Error(
+      "Could not select 10 different questions."
+    );
   }
 
   return result;
@@ -517,10 +666,14 @@ function sessionCode() {
   ).join("");
 }
 
-// Save the student's question IDs, not a new random
-// set on every refresh.
+/* ==============================
+   SAVE AND RESTORE PROGRESS
+================================ */
+
 function saveProgress() {
-  if (!code || !playerId || !selected.length) return;
+  if (!code || !playerId || !selected.length) {
+    return;
+  }
 
   writeStorage(progressKey(),{
     questionIds:selected.map(q=>q.id),
@@ -547,20 +700,26 @@ function restoreProgress() {
 
   if (
     questions.some(q=>!q) ||
-    new Set(saved.questionIds).size !== QUESTION_COUNT
+    new Set(saved.questionIds).size !== QUESTION_COUNT ||
+    new Set(questions.map(questionKey)).size !== QUESTION_COUNT
   ) {
     return false;
   }
 
   selected = questions;
-  answers = saved.answers &&
+
+  answers =
+    saved.answers &&
     typeof saved.answers === "object" &&
     !Array.isArray(saved.answers)
       ? saved.answers
       : {};
 
   index = Number.isInteger(saved.index)
-    ? Math.max(0,Math.min(saved.index,QUESTION_COUNT-1))
+    ? Math.max(
+        0,
+        Math.min(saved.index,QUESTION_COUNT-1)
+      )
     : 0;
 
   submitted = saved.submitted === true;
@@ -568,10 +727,13 @@ function restoreProgress() {
   return true;
 }
 
-// TEACHER: CREATE SESSION
+/* ==============================
+   TEACHER: CREATE SESSION
+================================ */
+
 $("create").onclick = () => run(async()=>{
   if (BANK.length !== 70) {
-    throw Error("Question bank has not loaded.");
+    throw Error("Question bank is not loaded.");
   }
 
   const newToken = crypto.randomUUID();
@@ -589,18 +751,26 @@ $("create").onclick = () => run(async()=>{
     p_path:QUIZ_PATH
   });
 
-  teacherToken = newToken;
   code = newCode;
+  teacherToken = newToken;
+  sessionClosed = false;
 
-  writeStorage(TEACHER_KEY,{code,teacherToken});
+  writeStorage(TEACHER_KEY,{
+    code,
+    teacherToken
+  });
 
   $("code").textContent = code;
+
   show("teacher");
 
   await poll(true);
 });
 
-// STUDENT: JOIN SESSION
+/* ==============================
+   STUDENT: JOIN SESSION
+================================ */
+
 $("joinBtn").onclick = () => run(async()=>{
   const name = $("name").value.trim();
   const joinCode = query.get("join") || "";
@@ -619,23 +789,33 @@ $("joinBtn").onclick = () => run(async()=>{
   });
 
   if (!result?.player_id) {
-    throw Error("Supabase did not return a player ID.");
+    throw Error("Student ID was not returned.");
   }
 
   code = joinCode;
   playerId = result.player_id;
-  submitted = false;
+
   selected = [];
   answers = {};
   index = 0;
+  submitted = false;
+  quizStarted = false;
+  sessionClosed = false;
 
-  writeStorage(PLAYER_KEY,{code,playerId});
+  writeStorage(PLAYER_KEY,{
+    code,
+    playerId
+  });
 
   show("waiting");
+
   await poll(true);
 });
 
-// TEACHER: START
+/* ==============================
+   TEACHER: START AND END
+================================ */
+
 $("start").onclick = () => run(async()=>{
   await rpc("eps2_start",{
     p_code:code,
@@ -645,14 +825,17 @@ $("start").onclick = () => run(async()=>{
   await poll(true);
 });
 
-// TEACHER: END
 $("end").onclick = () => run(async()=>{
-  if (!confirm("End this live session?")) return;
+  if (!confirm("End this live session?")) {
+    return;
+  }
 
   await rpc("eps2_end",{
     p_code:code,
     p_token:teacherToken
   });
+
+  sessionClosed = true;
 
   removeStorage(TEACHER_KEY);
 
@@ -663,12 +846,17 @@ $("end").onclick = () => run(async()=>{
   notice("Session ended.");
 });
 
-// STUDENT: DISPLAY QUESTION
+/* ==============================
+   DISPLAY CURRENT QUESTION
+================================ */
+
 function render() {
   const q = selected[index];
 
   if (!q) {
-    notice("Question unavailable. Please reload the page.");
+    notice(
+      "Question unavailable. Please reload the page."
+    );
     return;
   }
 
@@ -679,6 +867,7 @@ function render() {
     ((index+1)/selected.length*100) + "%";
 
   $("prompt").textContent = q.prompt;
+
   $("answer").value = answers[q.id] || "";
 
   $("prev").disabled = index === 0;
@@ -692,17 +881,26 @@ function render() {
 function saveAnswer() {
   const q = selected[index];
 
-  if (!q) return;
+  if (!q || submitted) return;
 
   answers[q.id] = $("answer").value.trim();
+
   saveProgress();
 }
 
-// Save even if the browser is refreshed while typing.
-$("answer").addEventListener("input",saveAnswer);
+$("answer").addEventListener(
+  "input",
+  saveAnswer
+);
+
+/* ==============================
+   PREVIOUS QUESTION
+================================ */
 
 $("prev").onclick = () => {
-  if (submitted || !selected.length) return;
+  if (submitted || !selected.length) {
+    return;
+  }
 
   saveAnswer();
 
@@ -712,6 +910,10 @@ $("prev").onclick = () => {
     render();
   }
 };
+
+/* ==============================
+   NEXT QUESTION / SUBMISSION
+================================ */
 
 $("next").onclick = () => run(async()=>{
   if (submitted) return;
@@ -729,7 +931,9 @@ $("next").onclick = () => run(async()=>{
     return;
   }
 
-  if (!confirm("Submit your 10 answers?")) return;
+  if (!confirm("Submit your 10 answers?")) {
+    return;
+  }
 
   const correct = selected.filter(
     q => isCorrect(q,answers[q.id])
@@ -737,7 +941,6 @@ $("next").onclick = () => run(async()=>{
 
   const score = correct * 10;
 
-  // Do not mark submitted until Supabase confirms.
   await rpc("eps2_submit",{
     p_code:code,
     p_player:playerId,
@@ -750,7 +953,12 @@ $("next").onclick = () => run(async()=>{
   displayResult(score);
 });
 
+/* ==============================
+   RESULTS
+================================ */
+
 function displayResult(score) {
+  quizStarted = false;
   show("result");
 
   const correct = score / 10;
@@ -780,7 +988,10 @@ function displayResult(score) {
     const feedback = document.createElement("p");
     const correct = isCorrect(q,answers[q.id]);
 
-    feedback.className = correct ? "good" : "bad";
+    feedback.className = correct
+      ? "good"
+      : "bad";
+
     feedback.textContent = correct
       ? "✓ Correct"
       : "Correct answer: " + q.answer;
@@ -794,9 +1005,23 @@ $("toggleReview").onclick = () => {
   $("review").classList.toggle("hidden");
 };
 
-// POLLING: EXISTING SUPABASE SESSION FLOW
+/* ==============================
+   LIVE SESSION POLLING
+
+   FIX:
+   Polling must NOT redraw a question
+   every three seconds.
+================================ */
+
 async function poll(force=false) {
-  if (!code || polling || (!force && busy)) return;
+  if (
+    !code ||
+    sessionClosed ||
+    polling ||
+    (!force && busy)
+  ) {
+    return;
+  }
 
   polling = true;
 
@@ -815,8 +1040,11 @@ async function poll(force=false) {
       $("count").textContent =
         `${players.length} student(s) · ${state.status}`;
 
-      $("start").disabled = state.status !== "waiting";
-      $("end").disabled = state.status !== "active";
+      $("start").disabled =
+        state.status !== "waiting";
+
+      $("end").disabled =
+        state.status !== "active";
 
       const leaderboard = $("leader");
       leaderboard.replaceChildren();
@@ -825,7 +1053,8 @@ async function poll(force=false) {
         const row = document.createElement("tr");
 
         const name = document.createElement("td");
-        name.textContent = `${i+1}. ${player.name}`;
+        name.textContent =
+          `${i+1}. ${player.name}`;
 
         const score = document.createElement("td");
         score.textContent = player.completed
@@ -838,13 +1067,17 @@ async function poll(force=false) {
 
     } else if (playerId) {
 
-      if (state.status === "active" && !submitted) {
+      if (
+        state.status === "active" &&
+        !submitted
+      ) {
 
         if (BANK.length !== 70) {
           const loaded = await loadBank();
           if (!loaded) return;
         }
 
+        // Only select questions if none are saved.
         if (!selected.length) {
           if (!restoreProgress()) {
             selected = choose();
@@ -854,12 +1087,26 @@ async function poll(force=false) {
           }
         }
 
-        show("quiz");
-        render();
+        // CRITICAL FIX:
+        // Render only when entering the quiz.
+        // Never render again during ordinary polling.
+        if (!quizStarted) {
+          quizStarted = true;
+          show("quiz");
+          render();
+        }
       }
 
-      if (state.status === "completed" && !submitted) {
+      if (
+        state.status === "completed" &&
+        !submitted
+      ) {
+        sessionClosed = true;
         notice("Teacher ended the session.");
+
+        if (!quizStarted) {
+          show("waiting");
+        }
       }
     }
 
@@ -870,7 +1117,10 @@ async function poll(force=false) {
   }
 }
 
-// RESTORE THE CORRECT SESSION AFTER REFRESH
+/* ==============================
+   RESTORE SESSION AFTER REFRESH
+================================ */
+
 function restoreSession() {
   if (query.has("join")) {
     const saved = readStorage(PLAYER_KEY);
@@ -884,15 +1134,7 @@ function restoreSession() {
       code = saved.code;
       playerId = saved.playerId;
 
-      const progress = readStorage(progressKey());
-
-      if (progress?.submitted === true) {
-        submitted = true;
-        notice("Your answers have already been submitted.");
-        show("waiting");
-      } else {
-        show("waiting");
-      }
+      show("waiting");
     } else {
       show("join");
     }
@@ -914,6 +1156,10 @@ function restoreSession() {
   }
 }
 
+/* ==============================
+   INITIALIZATION
+================================ */
+
 async function initialize() {
   restoreSession();
 
@@ -931,6 +1177,7 @@ async function initialize() {
 
       if (selected.length === QUESTION_COUNT) {
         displayResult(correct*10);
+        return;
       }
     }
   }
@@ -942,8 +1189,14 @@ async function initialize() {
 
 initialize();
 
+// Poll only for session changes.
+// Never reset or re-render the active question.
 setInterval(()=>{
-  if (code && !submitted) {
+  if (
+    code &&
+    !submitted &&
+    !sessionClosed
+  ) {
     poll();
   }
 },3000);
