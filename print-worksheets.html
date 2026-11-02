@@ -85,32 +85,43 @@ function getEntries(index) {
   }
   throw new Error("Catalogue must be a JSON array or contain a quizzes array");
 }
-function resolveBank(slug, item) {
-  if (typeof item === "string") item = {bank:item};
-  if (!item || typeof item !== "object") return null;
-  let name = item.bank || item.bank_file || item.bankFile || item.questions_file || item.questionsFile || item.json || item.path || item.file;
-  if (typeof name !== "string") return null;
-  name = name.trim();
-  if (/\.html$/i.test(name)) name = name.replace(/\.html$/i, ".bank.json");
-  const prefix = slug + "/quizzes/";
-  if (name.startsWith(prefix)) name = name.slice(prefix.length);
-  else if (name.startsWith("quizzes/")) name = name.slice(8);
-  if (!/^[a-z0-9_-]+\.json$/i.test(name) || name.toLowerCase() === "index.json") return null;
-  return {
-    path: prefix + name,
-    label: item.title || item.name || item.label || name.replace(/\.bank\.json$/i, "").replace(/\.json$/i, "").replace(/[-_]/g, " ")
-  };
+function resolveBank(slug, item, position) {
+  // Catalogue entries may be objects, filenames, or labels.
+  const raw = typeof item === "string" ? {file:item} : item;
+  const obj = raw && typeof raw === "object" ? raw : {};
+  const candidates = [obj.bank,obj.bank_file,obj.bankFile,obj.questions_file,
+    obj.questionsFile,obj.json,obj.path,obj.file,obj.url,obj.href,obj.quiz,
+    obj.id,typeof item === "string" ? item : null];
+  let filename = "";
+  for (const candidate of candidates) {
+    if (typeof candidate !== "string") continue;
+    const base = candidate.split(/[?#]/)[0].split("/").pop();
+    if (/^quiz[-_]\d+(?:\.bank)?\.(?:json|html)$/i.test(base)) {
+      filename = base.replace(/\.html$/i,".bank.json")
+        .replace(/^(quiz[-_]\d+)\.json$/i,"$1.bank.json");
+      break;
+    }
+    const match = candidate.match(/(?:quiz[-_]|(?:beginner|elementary)[-_])(\d+)/i);
+    if (match) {
+      filename = "quiz-" + String(Number(match[1])).padStart(2,"0") + ".bank.json";
+      break;
+    }
+  }
+  // When a catalogue supplies only labels, its ordered entries still
+  // correspond to quiz-01, quiz-02, etc. Do not silently drop them.
+  if (!filename) filename = "quiz-" + String(position + 1).padStart(2,"0") + ".bank.json";
+  const fallback = "Quiz " + String(position + 1).padStart(2,"0");
+  const label = [obj.title,obj.name,obj.label].find(v=>typeof v==="string" && v.trim()) || fallback;
+  return {path:slug + "/quizzes/" + filename,label};
 }
 async function loadLevel(slug) {
   const path = slug + "/quizzes/index.json";
   try {
     const entries = getEntries(await getJSON(path));
     const unique = new Map();
-    let invalid = 0;
-    for (const entry of entries) {
-      const quiz = resolveBank(slug, entry);
-      if (quiz) unique.set(quiz.path, quiz);
-      else invalid++;
+    for (const [position, entry] of entries.entries()) {
+      const quiz = resolveBank(slug, entry, position);
+      unique.set(quiz.path, quiz);
     }
     const quizzes = [...unique.values()].sort((a,b) => a.path.localeCompare(b.path, undefined, {numeric:true}));
     // Resolve descriptive titles from each bank when index.json only provides filenames.
@@ -127,7 +138,7 @@ async function loadLevel(slug) {
       }
     }));
     catalog.set(slug, quizzes);
-    problems.set(slug, invalid ? invalid + " catalogue entry/entries lack a valid JSON bank filename." : "");
+    problems.set(slug, "");
   } catch (error) {
     catalog.set(slug, []);
     problems.set(slug, error.message);
