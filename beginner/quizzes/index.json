@@ -61,5 +61,14 @@
   "file": "quiz-07.html",
   "bank": "quiz-07.bank.json",
   "questionCount": 70
+  },
+  {
+  "id": "beginner-008",
+  "title": "Adjectives vs Adverbs — Choose the Correct Word",
+  "category": "Grammar",
+  "level": "beginner",
+  "file": "quiz-08.html",
+  "bank": "quiz-08.bank.json",
+  "questionCount": 70
   }
 ]
