@@ -79,5 +79,14 @@
   "file": "quiz-09.html",
   "bank": "quiz-09.bank.json",
   "questionCount": 70
+  },
+  {
+  "id": "beginner-010",
+  "title": "Hotel Vocabulary — Complete the Sentences",
+  "category": "Vocabulary",
+  "level": "beginner",
+  "file": "quiz-10.html",
+  "bank": "quiz-10.bank.json",
+  "questionCount": 70
   }
 ]
