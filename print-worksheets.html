@@ -92,6 +92,7 @@ button:disabled {
   font-size: 13px;
   color: #475569;
   margin: 14px 0 0;
+  line-height: 1.6;
 }
 
 .error { color: #b91c1c; }
@@ -199,22 +200,20 @@ footer {
 </header>
 
 <main>
-
 <section class="panel">
-
   <div class="controls">
 
     <div>
       <label for="level">Level</label>
       <select id="level">
-        <option>Loading levels...</option>
+        <option value="">Loading levels...</option>
       </select>
     </div>
 
     <div>
       <label for="quiz">Quiz</label>
       <select id="quiz">
-        <option>Choose a level</option>
+        <option value="">Choose a level</option>
       </select>
     </div>
 
@@ -230,10 +229,14 @@ footer {
   </div>
 
   <div class="actions">
-    <button id="generate" disabled>Generate worksheet</button>
+    <button id="generate" disabled>
+      Generate worksheet
+    </button>
+
     <button id="reshuffle" class="secondary" disabled>
       New random set
     </button>
+
     <button id="print" class="secondary" disabled>
       Print
     </button>
@@ -245,13 +248,11 @@ footer {
   </div>
 
   <p id="status" class="status">
-    Searching level folders...
+    Loading quiz catalogues...
   </p>
-
 </section>
 
 <article id="sheet" class="sheet hidden">
-
   <h2 id="sheetTitle"></h2>
   <p id="sheetSub" class="subtitle"></p>
 
@@ -267,21 +268,19 @@ footer {
     <h3>Answer Key</h3>
     <div id="answers" class="key-list"></div>
   </section>
-
 </article>
-
 </main>
 
-<footer>ExamPrep Studio · Universal Worksheet Generator</footer>
+<footer>
+  ExamPrep Studio · Universal Worksheet Generator
+</footer>
 
 <script>
 "use strict";
 
-// YOUR GITHUB REPOSITORY
 const REPO = "zufarsayfullo-sys/Exam_prep_full";
 const BRANCH = "main";
 
-// ALL LEVEL FOLDERS
 const LEVELS = [
   ["beginner", "Beginner"],
   ["elementary", "Elementary"],
@@ -292,29 +291,45 @@ const LEVELS = [
 
 const $ = id => document.getElementById(id);
 
-let catalog = new Map();
+const catalog = new Map();
+
 let bank = [];
 let selection = [];
+let loadedQuizPath = "";
+let requestNumber = 0;
 
 function message(text, error = false) {
   $("status").textContent = text;
   $("status").classList.toggle("error", error);
 }
 
-// Load JSON from GitHub Pages
 async function getJSON(path) {
-  const response = await fetch(path, { cache: "no-store" });
+  const response = await fetch(path, {
+    cache: "no-store"
+  });
 
   if (!response.ok) {
-    throw new Error("Could not load " + path);
+    throw new Error(
+      "HTTP " + response.status + ": " + path
+    );
   }
 
-  return response.json();
+  try {
+    return await response.json();
+  } catch (error) {
+    throw new Error(
+      "Invalid JSON syntax in " + path +
+      ". Check the file for extra characters, commas or brackets."
+    );
+  }
 }
 
-// Recognize common JSON question-bank formats
 function extractQuestions(data) {
   if (Array.isArray(data)) return data;
+
+  if (!data || typeof data !== "object") {
+    return [];
+  }
 
   for (const key of [
     "questions",
@@ -324,261 +339,352 @@ function extractQuestions(data) {
     "questionBank",
     "question_bank"
   ]) {
-    if (Array.isArray(data?.[key])) {
+    if (Array.isArray(data[key])) {
       return data[key];
     }
   }
 
-  if (data && typeof data === "object") {
-    for (const value of Object.values(data)) {
-      if (
-        Array.isArray(value) &&
-        value.some(q =>
-          q && typeof q === "object" &&
-          (q.question || q.prompt || q.text || q.q)
-        )
-      ) {
-        return value;
-      }
+  for (const value of Object.values(data)) {
+    if (
+      Array.isArray(value) &&
+      value.some(q =>
+        q &&
+        typeof q === "object" &&
+        (q.question || q.prompt || q.text || q.q)
+      )
+    ) {
+      return value;
     }
   }
 
   return [];
 }
 
-// Discover JSON files inside a level's quizzes folder
-async function discoverLevel(slug) {
-  const found = new Map();
+function getIndexEntries(index) {
+  if (Array.isArray(index)) {
+    return index;
+  }
 
-  function add(path, title) {
-    if (!found.has(path)) {
-      found.set(path, { path, label: title });
+  if (index && typeof index === "object") {
+    for (const key of [
+      "quizzes",
+      "items",
+      "entries",
+      "data"
+    ]) {
+      if (Array.isArray(index[key])) {
+        return index[key];
+      }
     }
   }
 
-  // GitHub API can list public repository folders
-  const apiURL =
+  throw new Error(
+    "The quiz catalogue must contain an array."
+  );
+}
+
+function bankPath(slug, filename) {
+  if (
+    typeof filename !== "string" ||
+    !filename.trim()
+  ) {
+    return null;
+  }
+
+  let name = filename.trim();
+
+  if (name.startsWith(slug + "/quizzes/")) {
+    name = name.slice((slug + "/quizzes/").length);
+  } else if (name.startsWith("quizzes/")) {
+    name = name.slice("quizzes/".length);
+  } else if (name.startsWith(slug + "/")) {
+    name = name.slice((slug + "/").length);
+  }
+
+  // Only permit a JSON filename in this level's quiz folder.
+  if (
+    !/^[a-zA-Z0-9_-]+\.json$/.test(name) ||
+    name.toLowerCase() === "index.json"
+  ) {
+    return null;
+  }
+
+  return slug + "/quizzes/" + name;
+}
+
+function entryToQuiz(slug, entry) {
+  if (
+    typeof entry !== "string" &&
+    (!entry || typeof entry !== "object")
+  ) {
+    return null;
+  }
+
+  const item = typeof entry === "string"
+    ? { bank: entry }
+    : entry;
+
+  let filename =
+    item.bank ||
+    item.bank_file ||
+    item.bankFile ||
+    item.questions_file ||
+    item.questionsFile ||
+    item.json ||
+    item.path ||
+    "";
+
+  // If only an HTML filename is registered,
+  // infer the corresponding question-bank filename.
+  if (!filename && typeof item.file === "string") {
+    filename = item.file;
+  }
+
+  if (/\.html$/i.test(filename)) {
+    filename = filename.replace(/\.html$/i, ".bank.json");
+  }
+
+  const path = bankPath(slug, filename);
+
+  if (!path) return null;
+
+  const fallbackTitle = path
+    .split("/")
+    .pop()
+    .replace(/\.bank\.json$/i, "")
+    .replace(/\.json$/i, "")
+    .replace(/[-_]/g, " ");
+
+  return {
+    path,
+    label:
+      item.title ||
+      item.name ||
+      item.label ||
+      fallbackTitle
+  };
+}
+
+async function discoverFromGitHub(slug) {
+  const url =
     "https://api.github.com/repos/" +
     REPO +
     "/contents/" +
     slug +
     "/quizzes?ref=" +
-    BRANCH;
+    encodeURIComponent(BRANCH);
 
-  try {
-    const response = await fetch(apiURL, {
-      headers: {
-        Accept: "application/vnd.github+json"
-      }
-    });
+  const response = await fetch(url, {
+    headers: {
+      Accept: "application/vnd.github+json"
+    },
+    cache: "no-store"
+  });
 
-    if (!response.ok) {
-      throw new Error("GitHub API: " + response.status);
-    }
-
-    const files = await response.json();
-
-    for (const file of files) {
-      if (file.type !== "file") continue;
-      if (!file.name.toLowerCase().endsWith(".json")) continue;
-      if (file.name.toLowerCase() === "index.json") continue;
-
-      const path = slug + "/quizzes/" + file.name;
-
-      const title = file.name
-        .replace(/\.bank\.json$/i, "")
-        .replace(/\.json$/i, "")
-        .replace(/[-_]/g, " ");
-
-      add(path, title);
-    }
-  } catch (error) {
-    console.warn("Folder discovery:", slug, error);
-  }
-
-  // Also check index.json for explicitly registered banks
-  try {
-    const index = await getJSON(slug + "/quizzes/index.json");
-
-    let entries = [];
-
-    if (Array.isArray(index)) {
-      entries = index;
-    } else {
-      for (const key of ["quizzes", "items", "entries", "data"]) {
-        if (Array.isArray(index?.[key])) {
-          entries = index[key];
-          break;
-        }
-      }
-    }
-
-    for (const item of entries) {
-      const filename =
-        typeof item === "string"
-          ? item
-          : item.bank ||
-            item.bank_file ||
-            item.bankFile ||
-            item.questions_file ||
-            item.questionsFile ||
-            item.json ||
-            item.file ||
-            item.path;
-
-      if (!filename || !filename.endsWith(".json")) continue;
-
-      let path;
-
-      if (filename.startsWith(slug + "/")) {
-        path = filename;
-      } else if (filename.startsWith("quizzes/")) {
-        path = slug + "/" + filename;
-      } else {
-        path = slug + "/quizzes/" + filename;
-      }
-
-      // Only accept paths inside the level's quizzes folder
-      if (
-        !path.startsWith(slug + "/quizzes/") ||
-        path.includes("..") ||
-        path.includes("\\")
-      ) continue;
-
-      const title =
-        typeof item === "string"
-          ? filename
-          : item.title || item.name || item.label || filename;
-
-      add(path, title);
-
-      // Prefer the title from index.json
-      found.get(path).label = title;
-    }
-  } catch (error) {
-    console.info("No usable index:", slug);
-  }
-
-  // Fallback if GitHub API is temporarily unavailable
-  if (found.size === 0) {
-    for (let i = 1; i <= 5; i++) {
-      const filename =
-        "quiz-" + String(i).padStart(2, "0") + ".bank.json";
-
-      const path = slug + "/quizzes/" + filename;
-
-      try {
-        const data = await getJSON(path);
-
-        if (extractQuestions(data).length) {
-          add(path, data.title || "Quiz " + i);
-        }
-      } catch (error) {
-        // File does not exist
-      }
-    }
-  }
-
-  // Verify that the discovered files contain questions
-  const verified = await Promise.all(
-    [...found.values()].map(async item => {
-      try {
-        const data = await getJSON(item.path);
-
-        if (!extractQuestions(data).length) {
-          return null;
-        }
-
-        item.label =
-          data.title ||
-          data.quiz_title ||
-          data.name ||
-          item.label;
-
-        return item;
-      } catch (error) {
-        return null;
-      }
-    })
-  );
-
-  return verified
-    .filter(Boolean)
-    .sort((a, b) =>
-      a.label.localeCompare(b.label, undefined, {
-        numeric: true
-      })
+  if (!response.ok) {
+    throw new Error(
+      "GitHub folder lookup failed: HTTP " +
+      response.status
     );
+  }
+
+  const files = await response.json();
+
+  if (!Array.isArray(files)) {
+    throw new Error("Unexpected GitHub folder response.");
+  }
+
+  return files
+    .filter(file =>
+      file.type === "file" &&
+      /\.bank\.json$/i.test(file.name)
+    )
+    .map(file => ({
+      path: slug + "/quizzes/" + file.name,
+      label: file.name
+        .replace(/\.bank\.json$/i, "")
+        .replace(/[-_]/g, " ")
+    }));
 }
 
-// Load every level automatically
-async function initialize() {
-  message("Opening level folders and reading JSON question banks...");
+async function discoverLevel(slug) {
+  const found = new Map();
+  const problems = [];
 
-  let total = 0;
+  function add(quiz) {
+    if (!quiz) return;
 
-  await Promise.all(
-    LEVELS.map(async ([slug]) => {
-      const quizzes = await discoverLevel(slug);
-
-      if (quizzes.length) {
-        catalog.set(slug, quizzes);
-        total += quizzes.length;
-      }
-    })
-  );
-
-  const available = LEVELS.filter(([slug]) =>
-    catalog.has(slug)
-  );
-
-  $("level").replaceChildren(
-    new Option(
-      available.length ? "Select level" : "No quiz banks found",
-      ""
-    ),
-    ...available.map(([slug, title]) =>
-      new Option(title, slug)
-    )
-  );
-
-  if (!available.length) {
-    message(
-      "No readable JSON question banks found. Check the repository folders and JSON format.",
-      true
-    );
-    return;
+    if (!found.has(quiz.path)) {
+      found.set(quiz.path, quiz);
+    }
   }
 
-  $("level").value = available[0][0];
-  changeLevel();
+  // First use the same index.json catalogue
+  // structure used by the Teacher quiz selector.
+  try {
+    const index = await getJSON(
+      slug + "/quizzes/index.json"
+    );
 
-  message(
-    "Found " + total + " question bank(s) across " +
-    available.length + " level(s)."
+    const entries = getIndexEntries(index);
+
+    for (const entry of entries) {
+      add(entryToQuiz(slug, entry));
+    }
+  } catch (error) {
+    problems.push(
+      "Catalogue: " + error.message
+    );
+  }
+
+  // Discover banks not yet registered in index.json.
+  // This also provides a fallback if the index fails.
+  try {
+    const files = await discoverFromGitHub(slug);
+
+    for (const quiz of files) {
+      add(quiz);
+    }
+  } catch (error) {
+    problems.push(
+      "Folder discovery: " + error.message
+    );
+  }
+
+  const quizzes = [...found.values()].sort(
+    (a, b) =>
+      a.path.localeCompare(b.path, undefined, {
+        numeric: true
+      })
   );
+
+  return { quizzes, problems };
+}
+
+function clearWorksheet() {
+  bank = [];
+  selection = [];
+  loadedQuizPath = "";
+
+  $("sheet").classList.add("hidden");
+  $("generate").disabled = true;
+  $("reshuffle").disabled = true;
+  $("print").disabled = true;
 }
 
 function changeLevel() {
-  const quizzes = catalog.get($("level").value) || [];
+  requestNumber++;
+  clearWorksheet();
+
+  const slug = $("level").value;
+  const quizzes = catalog.get(slug) || [];
 
   $("quiz").replaceChildren(
-    new Option("Select quiz", ""),
+    new Option(
+      quizzes.length
+        ? "Select quiz"
+        : "No quizzes registered",
+      ""
+    ),
     ...quizzes.map((quiz, index) =>
       new Option(quiz.label, String(index))
     )
   );
 
-  $("quiz").value = quizzes.length ? "0" : "";
+  if (quizzes.length) {
+    $("quiz").value = "0";
+    $("generate").disabled = false;
 
-  $("generate").disabled = !quizzes.length;
-  $("reshuffle").disabled = true;
-  $("print").disabled = true;
-  $("sheet").classList.add("hidden");
-  bank = [];
+    message(
+      "Found " + quizzes.length +
+      " quiz(es) in " + slug +
+      ". Select a quiz and generate a worksheet."
+    );
+  } else {
+    message(
+      "No quiz banks were discovered for " + slug +
+      ". Check " + slug +
+      "/quizzes/index.json and the GitHub folder.",
+      true
+    );
+  }
 }
 
-// Convert question objects into a printable format
+async function initialize() {
+  message("Reading all five level catalogues...");
+
+  $("level").disabled = true;
+  $("quiz").disabled = true;
+
+  // All five levels stay visible, even when empty.
+  $("level").replaceChildren(
+    ...LEVELS.map(([slug, title]) =>
+      new Option(title, slug)
+    )
+  );
+
+  const results = await Promise.all(
+    LEVELS.map(async ([slug]) => {
+      try {
+        return {
+          slug,
+          ...(await discoverLevel(slug))
+        };
+      } catch (error) {
+        return {
+          slug,
+          quizzes: [],
+          problems: [error.message]
+        };
+      }
+    })
+  );
+
+  let total = 0;
+
+  for (const result of results) {
+    catalog.set(result.slug, result.quizzes);
+    total += result.quizzes.length;
+
+    if (result.problems.length) {
+      console.warn(
+        "Discovery warnings for " + result.slug,
+        result.problems
+      );
+    }
+  }
+
+  $("level").disabled = false;
+  $("quiz").disabled = false;
+
+  $("level").value = "beginner";
+  changeLevel();
+
+  const activeLevels = results.filter(
+    result => result.quizzes.length > 0
+  ).length;
+
+  if (total === 0) {
+    message(
+      "No quiz banks were discovered. Check the " +
+      "index.json files, folder names and GitHub connection.",
+      true
+    );
+  } else {
+    const currentCount =
+      catalog.get("beginner")?.length || 0;
+
+    message(
+      "Discovered " + total +
+      " quiz bank(s) across " +
+      activeLevels +
+      " level(s). Beginner: " +
+      currentCount +
+      " quiz(es). All five levels are selectable."
+    );
+  }
+}
+
 function normalizeQuestion(q) {
   if (typeof q === "string") {
     return {
@@ -588,7 +694,9 @@ function normalizeQuestion(q) {
     };
   }
 
-  if (!q || typeof q !== "object") return null;
+  if (!q || typeof q !== "object") {
+    return null;
+  }
 
   const prompt =
     q.question ||
@@ -598,13 +706,24 @@ function normalizeQuestion(q) {
     q.sentence ||
     q.stem;
 
-  if (typeof prompt !== "string" || !prompt.trim()) {
+  if (
+    typeof prompt !== "string" ||
+    !prompt.trim()
+  ) {
     return null;
   }
 
-  let options = q.options || q.choices || q.answers || [];
+  let options =
+    q.options ||
+    q.choices ||
+    q.answers ||
+    [];
 
-  if (!Array.isArray(options) && typeof options === "object") {
+  if (
+    options &&
+    !Array.isArray(options) &&
+    typeof options === "object"
+  ) {
     options = Object.values(options);
   }
 
@@ -612,7 +731,10 @@ function normalizeQuestion(q) {
     ? options.map(value =>
         typeof value === "string"
           ? value
-          : value?.text || value?.label || value?.value || ""
+          : value?.text ||
+            value?.label ||
+            value?.value ||
+            ""
       ).filter(Boolean)
     : [];
 
@@ -624,7 +746,10 @@ function normalizeQuestion(q) {
     q.key ??
     "";
 
-  if (typeof answer === "number" && options.length) {
+  if (
+    typeof answer === "number" &&
+    options.length
+  ) {
     answer = options[answer] ?? String(answer);
   }
 
@@ -633,7 +758,9 @@ function normalizeQuestion(q) {
     /^[A-D]$/i.test(answer) &&
     options.length
   ) {
-    const index = answer.toUpperCase().charCodeAt(0) - 65;
+    const index =
+      answer.toUpperCase().charCodeAt(0) - 65;
+
     answer = options[index] || answer;
   }
 
@@ -644,12 +771,13 @@ function normalizeQuestion(q) {
   };
 }
 
-// Shuffle without changing the original question bank
 function randomSample(array, count) {
   const copy = [...array];
 
   for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(
+      Math.random() * (i + 1)
+    );
 
     [copy[i], copy[j]] = [copy[j], copy[i]];
   }
@@ -659,27 +787,35 @@ function randomSample(array, count) {
 
 function addElement(tag, text, parent, className) {
   const element = document.createElement(tag);
+
   element.textContent = text;
 
-  if (className) element.className = className;
+  if (className) {
+    element.className = className;
+  }
 
   parent.append(element);
   return element;
 }
 
-// Build printable worksheet
 function renderWorksheet() {
   const level = $("level").value;
   const quizIndex = Number($("quiz").value);
-  const quiz = catalog.get(level)[quizIndex];
+  const quiz = catalog.get(level)?.[quizIndex];
+
+  if (!quiz || !selection.length) {
+    return;
+  }
 
   $("sheetTitle").textContent = quiz.label;
 
   const levelName =
-    LEVELS.find(item => item[0] === level)?.[1] || level;
+    LEVELS.find(item => item[0] === level)?.[1] ||
+    level;
 
   $("sheetSub").textContent =
-    levelName + " · " + selection.length + " questions";
+    levelName + " · " +
+    selection.length + " questions";
 
   $("maxScore").textContent = selection.length;
 
@@ -688,7 +824,10 @@ function renderWorksheet() {
 
   selection.forEach((question, index) => {
     const wrapper = addElement(
-      "div", "", $("questions"), "question"
+      "div",
+      "",
+      $("questions"),
+      "question"
     );
 
     addElement(
@@ -699,23 +838,30 @@ function renderWorksheet() {
 
     if (question.options.length) {
       const options = addElement(
-        "div", "", wrapper, "options"
+        "div",
+        "",
+        wrapper,
+        "options"
       );
 
-      question.options.forEach((option, optionIndex) => {
-        addElement(
-          "div",
-          String.fromCharCode(65 + optionIndex) + ". " + option,
-          options
-        );
-      });
+      question.options.forEach(
+        (option, optionIndex) => {
+          addElement(
+            "div",
+            String.fromCharCode(65 + optionIndex) +
+              ". " + option,
+            options
+          );
+        }
+      );
     } else {
       addElement("div", "", wrapper, "line");
     }
 
     addElement(
       "div",
-      (index + 1) + ". " + (question.answer || "—"),
+      (index + 1) + ". " +
+        (question.answer || "—"),
       $("answers")
     );
   });
@@ -730,48 +876,18 @@ function renderWorksheet() {
   $("reshuffle").disabled = false;
 }
 
-// Load the selected JSON question bank
-async function generateWorksheet() {
-  const level = $("level").value;
-  const quiz = catalog.get(level)?.[Number($("quiz").value)];
-
-  if (!quiz) return;
-
-  $("generate").disabled = true;
-  message("Loading " + quiz.path + "...");
-
-  try {
-    const data = await getJSON(quiz.path);
-
-    bank = extractQuestions(data)
-      .map(normalizeQuestion)
-      .filter(Boolean);
-
-    if (!bank.length) {
-      throw new Error(
-        "No supported questions found in " + quiz.path
-      );
-    }
-
-    reshuffle();
-
-    message(
-      "Loaded " + bank.length +
-      " questions from " + quiz.path
-    );
-  } catch (error) {
-    message(error.message, true);
-    $("sheet").classList.add("hidden");
-    $("print").disabled = true;
-    $("reshuffle").disabled = true;
-  } finally {
-    $("generate").disabled = false;
-  }
-}
-
-// Generate a new random set
 function reshuffle() {
   if (!bank.length) return;
+
+  // Prevent reusing questions from another quiz.
+  const level = $("level").value;
+  const quiz = catalog.get(level)?.[
+    Number($("quiz").value)
+  ];
+
+  if (!quiz || quiz.path !== loadedQuizPath) {
+    return;
+  }
 
   const count = Math.min(
     Number($("count").value),
@@ -782,15 +898,108 @@ function reshuffle() {
   renderWorksheet();
 }
 
-// Events
-$("level").addEventListener("change", changeLevel);
+async function generateWorksheet() {
+  const level = $("level").value;
+  const quiz = catalog.get(level)?.[
+    Number($("quiz").value)
+  ];
 
-$("quiz").addEventListener("change", () => {
-  bank = [];
-  $("sheet").classList.add("hidden");
-  $("print").disabled = true;
-  $("reshuffle").disabled = true;
-});
+  if (!quiz) return;
+
+  const currentRequest = ++requestNumber;
+
+  clearWorksheet();
+  $("generate").disabled = true;
+
+  message(
+    "Loading question bank: " + quiz.path
+  );
+
+  try {
+    const data = await getJSON(quiz.path);
+
+    if (currentRequest !== requestNumber) {
+      return;
+    }
+
+    const questions = extractQuestions(data)
+      .map(normalizeQuestion)
+      .filter(Boolean);
+
+    if (!questions.length) {
+      throw new Error(
+        "No supported questions found in " +
+        quiz.path +
+        ". Check the questions array and prompt fields."
+      );
+    }
+
+    bank = questions;
+    loadedQuizPath = quiz.path;
+
+    reshuffle();
+
+    message(
+      "Successfully loaded " +
+      bank.length +
+      " questions from " +
+      quiz.path
+    );
+  } catch (error) {
+    if (currentRequest !== requestNumber) {
+      return;
+    }
+
+    clearWorksheet();
+
+    message(
+      "Question bank error: " +
+      error.message,
+      true
+    );
+  } finally {
+    if (currentRequest === requestNumber) {
+      $("generate").disabled = false;
+    }
+  }
+}
+
+$("level").addEventListener(
+  "change",
+  changeLevel
+);
+
+$("quiz").addEventListener(
+  "change",
+  () => {
+    requestNumber++;
+    clearWorksheet();
+
+    const level = $("level").value;
+    const quizzes = catalog.get(level) || [];
+
+    const selected = $("quiz").value;
+
+    $("generate").disabled =
+      selected === "" ||
+      !quizzes[Number(selected)];
+
+    message(
+      $("generate").disabled
+        ? "Select a quiz."
+        : "Ready to generate a worksheet."
+    );
+  }
+);
+
+$("count").addEventListener(
+  "change",
+  () => {
+    if (bank.length) {
+      reshuffle();
+    }
+  }
+);
 
 $("generate").addEventListener(
   "click",
@@ -807,14 +1016,16 @@ $("print").addEventListener(
   () => window.print()
 );
 
-$("answerKey").addEventListener("change", () => {
-  $("key").classList.toggle(
-    "hidden",
-    !$("answerKey").checked
-  );
-});
+$("answerKey").addEventListener(
+  "change",
+  () => {
+    $("key").classList.toggle(
+      "hidden",
+      !$("answerKey").checked
+    );
+  }
+);
 
-// Start automatically
 initialize();
 </script>
 
