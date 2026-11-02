@@ -1,0 +1,113 @@
+      "id": "bd-055",
+      "type": "died",
+      "prompt": "Nikola Tesla ___ (die) in 1943.",
+      "answer": "died",
+      "points": 1
+    },
+    {
+      "id": "bd-056",
+      "type": "mixed",
+      "prompt": "Elvis Presley ___ (live) in Tupelo as a child.",
+      "answer": "lived",
+      "points": 1
+    },
+    {
+      "id": "bd-057",
+      "type": "mixed",
+      "prompt": "His family ___ (move) to Memphis in 1948.",
+      "answer": "moved",
+      "points": 1
+    },
+    {
+      "id": "bd-058",
+      "type": "mixed",
+      "prompt": "Elvis ___ (love) music when he was young.",
+      "answer": "loved",
+      "points": 1
+    },
+    {
+      "id": "bd-059",
+      "type": "mixed",
+      "prompt": "He ___ (finish) school in 1953.",
+      "answer": "finished",
+      "points": 1
+    },
+    {
+      "id": "bd-060",
+      "type": "mixed",
+      "prompt": "He ___ (work) in different jobs before he became famous.",
+      "answer": "worked",
+      "points": 1
+    },
+    {
+      "id": "bd-061",
+      "type": "mixed",
+      "prompt": "Elvis ___ (become) a famous singer.",
+      "answer": "became",
+      "points": 1
+    },
+    {
+      "id": "bd-062",
+      "type": "mixed",
+      "prompt": "Marie Curie ___ (study) science in Paris.",
+      "answer": "studied",
+      "points": 1
+    },
+    {
+      "id": "bd-063",
+      "type": "mixed",
+      "prompt": "Albert Einstein ___ (work) as a scientist.",
+      "answer": "worked",
+      "points": 1
+    },
+    {
+      "id": "bd-064",
+      "type": "mixed",
+      "prompt": "Mozart ___ (write) music when he was a child.",
+      "answer": "wrote",
+      "points": 1
+    },
+    {
+      "id": "bd-065",
+      "type": "mixed",
+      "prompt": "Frida Kahlo ___ (paint) many self-portraits.",
+      "answer": "painted",
+      "points": 1
+    },
+    {
+      "id": "bd-066",
+      "type": "mixed",
+      "prompt": "Nelson Mandela ___ (become) president in 1994.",
+      "answer": "became",
+      "points": 1
+    },
+    {
+      "id": "bd-067",
+      "type": "mixed",
+      "prompt": "Jane Austen ___ (write) novels.",
+      "answer": "wrote",
+      "points": 1
+    },
+    {
+      "id": "bd-068",
+      "type": "mixed",
+      "prompt": "Charlie Chaplin ___ (make) silent films.",
+      "answer": "made",
+      "points": 1
+    },
+    {
+      "id": "bd-069",
+      "type": "mixed",
+      "prompt": "Walt Disney ___ (create) Mickey Mouse with Ub Iwerks.",
+      "answer": "created",
+      "points": 1
+    },
+    {
+      "id": "bd-070",
+      "type": "mixed",
+      "prompt": "Shakespeare ___ (write) plays and poems.",
+      "answer": "wrote",
+      "points": 1
+    }
+  ]
+}
