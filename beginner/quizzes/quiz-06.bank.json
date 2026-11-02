@@ -1,128 +1,78 @@
-      "id": "bg-06-058",
-      "type": "choose-correct",
-      "prompt": "Do you like ___ computer games?",
-      "options": [
-        "play",
-        "playing"
-      ],
-      "answer": "playing"
-    },
-    {
-      "id": "bg-06-059",
-      "type": "choose-correct",
-      "prompt": "My little sister ___ count to one hundred.",
-      "options": [
-        "can",
-        "cans"
-      ],
-      "answer": "can"
-    },
-    {
-      "id": "bg-06-060",
-      "type": "choose-correct",
-      "prompt": "Would they like ___ us for dinner?",
-      "options": [
-        "join",
-        "to join"
-      ],
-      "answer": "to join"
-    },
-    {
-      "id": "bg-06-061",
-      "type": "choose-correct",
-      "prompt": "She ___ to work in a hospital.",
-      "options": [
-        "would like",
-        "would likes"
-      ],
-      "answer": "would like"
-    },
-    {
-      "id": "bg-06-062",
-      "type": "choose-correct",
-      "prompt": "I ___ like watching the news.",
-      "options": [
-        "don't",
-        "doesn't"
-      ],
-      "answer": "don't"
-    },
-    {
-      "id": "bg-06-063",
-      "type": "choose-correct",
-      "prompt": "We like ___ new places.",
-      "options": [
-        "explore",
-        "exploring"
-      ],
-      "answer": "exploring"
-    },
-    {
-      "id": "bg-06-064",
-      "type": "choose-correct",
-      "prompt": "___ your parents speak Russian?",
-      "options": [
-        "Can",
-        "Cans"
-      ],
-      "answer": "Can"
-    },
-    {
-      "id": "bg-06-065",
-      "type": "choose-correct",
-      "prompt": "Would you like ___ something to eat?",
-      "options": [
-        "order",
-        "to order"
-      ],
-      "answer": "to order"
-    },
-    {
-      "id": "bg-06-066",
-      "type": "choose-correct",
-      "prompt": "He ___ to buy a bicycle.",
-      "options": [
-        "would like",
-        "would likes"
-      ],
-      "answer": "would like"
-    },
-    {
-      "id": "bg-06-067",
-      "type": "choose-correct",
-      "prompt": "My cousin ___ like spicy food.",
-      "options": [
-        "doesn't",
-        "don't"
-      ],
-      "answer": "doesn't"
-    },
-    {
-      "id": "bg-06-068",
-      "type": "choose-correct",
-      "prompt": "Does he like ___ to music?",
-      "options": [
-        "listen",
-        "listening"
-      ],
-      "answer": "listening"
-    },
-    {
-      "id": "bg-06-069",
-      "type": "choose-correct",
-      "prompt": "I ___ play chess, but I'm not very good.",
-      "options": [
-        "can",
-        "cans"
-      ],
-      "answer": "can"
-    },
-    {
-      "id": "bg-06-070",
-      "type": "choose-correct",
-      "prompt": "Would you like ___ a film tonight?",
-      "options": [
-        "watch",
-        "to watch"
-      ],
-      "answer": "to watch"
+
+{
+  "title": "Likes, Would Like & Can — Choose the Correct Words",
+  "level": "beginner",
+  "category": "Grammar",
+  "questions": [
+    {"id":"bl-001","type":"choose-correct","prompt":"My father ___ to buy a computer.","options":["likes","would like"],"answer":"would like"},
+    {"id":"bl-002","type":"choose-correct","prompt":"She ___ dogs.","options":["doesn't like","don't like"],"answer":"doesn't like"},
+    {"id":"bl-003","type":"choose-correct","prompt":"Do they like ___?","options":["swim","swimming"],"answer":"swimming"},
+    {"id":"bl-004","type":"choose-correct","prompt":"I am sorry, I ___ speak German.","options":["does","can't"],"answer":"can't"},
+    {"id":"bl-005","type":"choose-correct","prompt":"___ you want a drink? — Yes, please!","options":["Do","Would"],"answer":"Would"},
+    {"id":"bl-006","type":"choose-correct","prompt":"My sister ___ listening to music.","options":["like","likes"],"answer":"likes"},
+    {"id":"bl-007","type":"choose-correct","prompt":"I would like ___ a new phone.","options":["buy","to buy"],"answer":"to buy"},
+    {"id":"bl-008","type":"choose-correct","prompt":"We ___ playing football after school.","options":["like","likes"],"answer":"like"},
+    {"id":"bl-009","type":"choose-correct","prompt":"He ___ drive a car because he is only twelve.","options":["can","can't"],"answer":"can't"},
+    {"id":"bl-010","type":"choose-correct","prompt":"Would you like ___ coffee?","options":["some","to"],"answer":"some"},
+    {"id":"bl-011","type":"choose-correct","prompt":"She doesn't like ___ early.","options":["get up","getting up"],"answer":"getting up"},
+    {"id":"bl-012","type":"choose-correct","prompt":"My brother ___ play the guitar very well.","options":["can","cans"],"answer":"can"},
+    {"id":"bl-013","type":"choose-correct","prompt":"They would like ___ to the cinema tonight.","options":["go","to go"],"answer":"to go"},
+    {"id":"bl-014","type":"choose-correct","prompt":"___ your mother like cooking?","options":["Do","Does"],"answer":"Does"},
+    {"id":"bl-015","type":"choose-correct","prompt":"I ___ like to visit Japan one day.","options":["would","am"],"answer":"would"},
+    {"id":"bl-016","type":"choose-correct","prompt":"My friends ___ watching films.","options":["enjoy","enjoys"],"answer":"enjoy"},
+    {"id":"bl-017","type":"choose-correct","prompt":"Can your sister ___ English?","options":["speak","speaks"],"answer":"speak"},
+    {"id":"bl-018","type":"choose-correct","prompt":"He would like ___ a doctor.","options":["be","to be"],"answer":"to be"},
+    {"id":"bl-019","type":"choose-correct","prompt":"I don't like ___ in cold water.","options":["swim","swimming"],"answer":"swimming"},
+    {"id":"bl-020","type":"choose-correct","prompt":"___ you like chocolate?","options":["Do","Does"],"answer":"Do"},
+    {"id":"bl-021","type":"choose-correct","prompt":"My grandmother ___ cook delicious meals.","options":["can","cans"],"answer":"can"},
+    {"id":"bl-022","type":"choose-correct","prompt":"Would you like ___ with us?","options":["come","to come"],"answer":"to come"},
+    {"id":"bl-023","type":"choose-correct","prompt":"She ___ like watching horror films.","options":["doesn't","don't"],"answer":"doesn't"},
+    {"id":"bl-024","type":"choose-correct","prompt":"We would like ___ a bigger house.","options":["have","to have"],"answer":"to have"},
+    {"id":"bl-025","type":"choose-correct","prompt":"My father likes ___ newspapers.","options":["reading","read"],"answer":"reading"},
+    {"id":"bl-026","type":"choose-correct","prompt":"___ he swim? — Yes, he can.","options":["Can","Does"],"answer":"Can"},
+    {"id":"bl-027","type":"choose-correct","prompt":"I would like ___ orange juice, please.","options":["some","to"],"answer":"some"},
+    {"id":"bl-028","type":"choose-correct","prompt":"They ___ like doing homework.","options":["doesn't","don't"],"answer":"don't"},
+    {"id":"bl-029","type":"choose-correct","prompt":"She can ___ very fast.","options":["run","runs"],"answer":"run"},
+    {"id":"bl-030","type":"choose-correct","prompt":"Would your parents like ___ us tomorrow?","options":["visit","to visit"],"answer":"to visit"},
+    {"id":"bl-031","type":"choose-correct","prompt":"My cousin ___ playing computer games.","options":["like","likes"],"answer":"likes"},
+    {"id":"bl-032","type":"choose-correct","prompt":"I ___ play tennis, but I can play football.","options":["can't","don't"],"answer":"can't"},
+    {"id":"bl-033","type":"choose-correct","prompt":"What would you like ___ for dinner?","options":["eat","to eat"],"answer":"to eat"},
+    {"id":"bl-034","type":"choose-correct","prompt":"Does she like ___?","options":["dance","dancing"],"answer":"dancing"},
+    {"id":"bl-035","type":"choose-correct","prompt":"We ___ like spicy food.","options":["don't","doesn't"],"answer":"don't"},
+    {"id":"bl-036","type":"choose-correct","prompt":"My little brother ___ ride a bicycle yet.","options":["can't","doesn't"],"answer":"can't"},
+    {"id":"bl-037","type":"choose-correct","prompt":"I'd like ___ a ticket, please.","options":["buy","to buy"],"answer":"to buy"},
+    {"id":"bl-038","type":"choose-correct","prompt":"___ they like learning English?","options":["Do","Does"],"answer":"Do"},
+    {"id":"bl-039","type":"choose-correct","prompt":"My teacher can ___ three languages.","options":["speak","speaking"],"answer":"speak"},
+    {"id":"bl-040","type":"choose-correct","prompt":"She would like ___ in London.","options":["live","to live"],"answer":"to live"},
+    {"id":"bl-041","type":"choose-correct","prompt":"I like ___ photographs when I travel.","options":["taking","take"],"answer":"taking"},
+    {"id":"bl-042","type":"choose-correct","prompt":"He ___ like getting up late.","options":["don't","doesn't"],"answer":"doesn't"},
+    {"id":"bl-043","type":"choose-correct","prompt":"Can you ___ me with my homework?","options":["help","to help"],"answer":"help"},
+    {"id":"bl-044","type":"choose-correct","prompt":"We would like ___ a picnic this weekend.","options":["have","to have"],"answer":"to have"},
+    {"id":"bl-045","type":"choose-correct","prompt":"My parents ___ going for walks.","options":["like","likes"],"answer":"like"},
+    {"id":"bl-046","type":"choose-correct","prompt":"___ your brother play basketball? — Yes, he can.","options":["Can","Is"],"answer":"Can"},
+    {"id":"bl-047","type":"choose-correct","prompt":"Would you like ___ tea?","options":["a","some"],"answer":"some"},
+    {"id":"bl-048","type":"choose-correct","prompt":"She likes ___ books before bed.","options":["read","reading"],"answer":"reading"},
+    {"id":"bl-049","type":"choose-correct","prompt":"They ___ speak French, but they can speak English.","options":["can't","aren't"],"answer":"can't"},
+    {"id":"bl-050","type":"choose-correct","prompt":"I would like ___ my grandparents next week.","options":["to visit","visiting"],"answer":"to visit"},
+    {"id":"bl-051","type":"choose-correct","prompt":"Does your father ___ football?","options":["like","likes"],"answer":"like"},
+    {"id":"bl-052","type":"choose-correct","prompt":"My sister can ___ beautiful pictures.","options":["draw","draws"],"answer":"draw"},
+    {"id":"bl-053","type":"choose-correct","prompt":"We don't like ___ on crowded buses.","options":["travel","travelling"],"answer":"travelling"},
+    {"id":"bl-054","type":"choose-correct","prompt":"Would she like ___ us for lunch?","options":["join","to join"],"answer":"to join"},
+    {"id":"bl-055","type":"choose-correct","prompt":"He ___ like eating vegetables.","options":["doesn't","isn't"],"answer":"doesn't"},
+    {"id":"bl-056","type":"choose-correct","prompt":"Can they ___ a song in English?","options":["sing","singing"],"answer":"sing"},
+    {"id":"bl-057","type":"choose-correct","prompt":"I would like ___ a glass of water.","options":["to","to have"],"answer":"to have"},
+    {"id":"bl-058","type":"choose-correct","prompt":"My friends like ___ to the gym.","options":["going","go"],"answer":"going"},
+    {"id":"bl-059","type":"choose-correct","prompt":"She ___ play the piano very well.","options":["can","is"],"answer":"can"},
+    {"id":"bl-060","type":"choose-correct","prompt":"Would you like ___ a film tonight?","options":["watch","to watch"],"answer":"to watch"},
+    {"id":"bl-061","type":"choose-correct","prompt":"___ your classmates like playing volleyball?","options":["Do","Does"],"answer":"Do"},
+    {"id":"bl-062","type":"choose-correct","prompt":"I can't ___ this word.","options":["understand","understanding"],"answer":"understand"},
+    {"id":"bl-063","type":"choose-correct","prompt":"He would like ___ a new bicycle.","options":["to get","getting"],"answer":"to get"},
+    {"id":"bl-064","type":"choose-correct","prompt":"My mother likes ___ in the garden.","options":["working","work"],"answer":"working"},
+    {"id":"bl-065","type":"choose-correct","prompt":"We ___ like watching television in the morning.","options":["don't","doesn't"],"answer":"don't"},
+    {"id":"bl-066","type":"choose-correct","prompt":"Can your parents ___ a computer?","options":["use","using"],"answer":"use"},
+    {"id":"bl-067","type":"choose-correct","prompt":"I'd like ___ some new shoes.","options":["to buy","buying"],"answer":"to buy"},
+    {"id":"bl-068","type":"choose-correct","prompt":"Does he like ___ to music?","options":["listen","listening"],"answer":"listening"},
+    {"id":"bl-069","type":"choose-correct","prompt":"My little sister ___ read English books yet.","options":["can't","doesn't"],"answer":"can't"},
+    {"id":"bl-070","type":"choose-correct","prompt":"Would you like ___ a sandwich?","options":["have","to have"],"answer":"to have"}
+  ]
+}
