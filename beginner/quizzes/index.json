@@ -1,3 +1,4 @@
+
 [
   {
     "id": "beginner-001",
@@ -14,6 +15,15 @@
     "level": "beginner",
     "file": "quiz-02.html",
     "bank": "quiz-02.bank.json",
+    "questionCount": 70
+  },
+  {
+    "id": "beginner-003",
+    "title": "Past Simple — Was Born / Died",
+    "category": "Grammar",
+    "level": "beginner",
+    "file": "quiz-03.html",
+    "bank": "quiz-03.bank.json",
     "questionCount": 70
   }
 ]
