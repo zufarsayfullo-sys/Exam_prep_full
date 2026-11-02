@@ -70,5 +70,14 @@
   "file": "quiz-08.html",
   "bank": "quiz-08.bank.json",
   "questionCount": 70
+  },
+  {
+  "id": "beginner-009",
+  "title": "Can / Can't — Complete the Sentences",
+  "category": "Grammar",
+  "level": "beginner",
+  "file": "quiz-09.html",
+  "bank": "quiz-09.bank.json",
+  "questionCount": 70
   }
 ]
