@@ -113,6 +113,19 @@ async function loadLevel(slug) {
       else invalid++;
     }
     const quizzes = [...unique.values()].sort((a,b) => a.path.localeCompare(b.path, undefined, {numeric:true}));
+    // Resolve descriptive titles from each bank when index.json only provides filenames.
+    // A missing/invalid bank must NOT remove the quiz from the dropdown.
+    await Promise.all(quizzes.map(async quiz => {
+      try {
+        const data = await getJSON(quiz.path);
+        const title = data && typeof data === "object"
+          ? (data.title || data.quiz_title || data.name)
+          : null;
+        if (typeof title === "string" && title.trim()) quiz.label = title.trim();
+      } catch (error) {
+        console.warn("Quiz title unavailable:", quiz.path, error.message);
+      }
+    }));
     catalog.set(slug, quizzes);
     problems.set(slug, invalid ? invalid + " catalogue entry/entries lack a valid JSON bank filename." : "");
   } catch (error) {
