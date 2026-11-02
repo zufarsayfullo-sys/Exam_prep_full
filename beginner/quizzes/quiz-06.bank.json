@@ -1,0 +1,128 @@
+      "id": "bg-06-058",
+      "type": "choose-correct",
+      "prompt": "Do you like ___ computer games?",
+      "options": [
+        "play",
+        "playing"
+      ],
+      "answer": "playing"
+    },
+    {
+      "id": "bg-06-059",
+      "type": "choose-correct",
+      "prompt": "My little sister ___ count to one hundred.",
+      "options": [
+        "can",
+        "cans"
+      ],
+      "answer": "can"
+    },
+    {
+      "id": "bg-06-060",
+      "type": "choose-correct",
+      "prompt": "Would they like ___ us for dinner?",
+      "options": [
+        "join",
+        "to join"
+      ],
+      "answer": "to join"
+    },
+    {
+      "id": "bg-06-061",
+      "type": "choose-correct",
+      "prompt": "She ___ to work in a hospital.",
+      "options": [
+        "would like",
+        "would likes"
+      ],
+      "answer": "would like"
+    },
+    {
+      "id": "bg-06-062",
+      "type": "choose-correct",
+      "prompt": "I ___ like watching the news.",
+      "options": [
+        "don't",
+        "doesn't"
+      ],
+      "answer": "don't"
+    },
+    {
+      "id": "bg-06-063",
+      "type": "choose-correct",
+      "prompt": "We like ___ new places.",
+      "options": [
+        "explore",
+        "exploring"
+      ],
+      "answer": "exploring"
+    },
+    {
+      "id": "bg-06-064",
+      "type": "choose-correct",
+      "prompt": "___ your parents speak Russian?",
+      "options": [
+        "Can",
+        "Cans"
+      ],
+      "answer": "Can"
+    },
+    {
+      "id": "bg-06-065",
+      "type": "choose-correct",
+      "prompt": "Would you like ___ something to eat?",
+      "options": [
+        "order",
+        "to order"
+      ],
+      "answer": "to order"
+    },
+    {
+      "id": "bg-06-066",
+      "type": "choose-correct",
+      "prompt": "He ___ to buy a bicycle.",
+      "options": [
+        "would like",
+        "would likes"
+      ],
+      "answer": "would like"
+    },
+    {
+      "id": "bg-06-067",
+      "type": "choose-correct",
+      "prompt": "My cousin ___ like spicy food.",
+      "options": [
+        "doesn't",
+        "don't"
+      ],
+      "answer": "doesn't"
+    },
+    {
+      "id": "bg-06-068",
+      "type": "choose-correct",
+      "prompt": "Does he like ___ to music?",
+      "options": [
+        "listen",
+        "listening"
+      ],
+      "answer": "listening"
+    },
+    {
+      "id": "bg-06-069",
+      "type": "choose-correct",
+      "prompt": "I ___ play chess, but I'm not very good.",
+      "options": [
+        "can",
+        "cans"
+      ],
+      "answer": "can"
+    },
+    {
+      "id": "bg-06-070",
+      "type": "choose-correct",
+      "prompt": "Would you like ___ a film tonight?",
+      "options": [
+        "watch",
+        "to watch"
+      ],
+      "answer": "to watch"
