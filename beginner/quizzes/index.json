@@ -43,5 +43,14 @@
   "file": "quiz-05.html",
   "bank": "quiz-05.bank.json",
   "questionCount": 70
+  },
+  {
+  "id": "beginner-006",
+  "title": "Likes, Would Like & Can — Choose the Correct Words",
+  "category": "Grammar",
+  "level": "beginner",
+  "file": "quiz-06.html",
+  "bank": "quiz-06.bank.json",
+  "questionCount": 70
   }
 ]
