@@ -52,5 +52,14 @@
   "file": "quiz-06.html",
   "bank": "quiz-06.bank.json",
   "questionCount": 70
+  },
+  {
+  "id": "beginner-007",
+  "title": "Irregular Verbs — Past Simple",
+  "category": "Grammar",
+  "level": "beginner",
+  "file": "quiz-07.html",
+  "bank": "quiz-07.bank.json",
+  "questionCount": 70
   }
 ]
