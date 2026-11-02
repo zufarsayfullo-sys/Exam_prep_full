@@ -88,5 +88,14 @@
   "file": "quiz-10.html",
   "bank": "quiz-10.bank.json",
   "questionCount": 70
+  },
+  {
+  "id": "beginner-011",
+  "title": "Vocabulary Meanings — Choose the Correct Answer",
+  "category": "Vocabulary",
+  "level": "beginner",
+  "file": "quiz-11.html",
+  "bank": "quiz-11.bank.json",
+  "questionCount": 70
   }
 ]
