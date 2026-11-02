@@ -6,63 +6,157 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Quiz 05 | ExamPrep Studio</title>
 <style>
-:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#f6f7ff;color:#202044}
-*{box-sizing:border-box}
-body{margin:0}
-.wrap{max-width:920px;margin:auto;padding:16px}
-.brand{font-size:24px;font-weight:800;margin:10px 0 25px}
-.brand span{color:#7138e5}
-.card{background:white;border:1px solid #e6e4f5;border-radius:22px;padding:clamp(20px,5vw,34px);box-shadow:0 12px 36px #16164c0b;margin-bottom:20px}
-h1{font-size:clamp(26px,5vw,36px);margin:8px 0 12px}
-h2{font-size:22px}
-.muted{color:#69718a;line-height:1.6}
-.tag{display:inline-block;background:#eee9ff;color:#6d36d9;padding:7px 12px;border-radius:24px;font-weight:700;font-size:13px}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-button{border:0;border-radius:12px;background:#7138e5;color:white;font:inherit;font-weight:700;padding:13px 20px;cursor:pointer;min-height:48px}
-button.alt{background:#f0eaff;color:#6832cb}
-button:disabled{opacity:.45;cursor:default}
-input{font:inherit;border:1px solid #d9d9ef;border-radius:12px;padding:14px;width:100%;margin:8px 0 12px;min-height:50px}
-.hidden{display:none!important}
-.question{background:#f3efff;padding:23px;border-radius:16px;font-size:clamp(18px,4.5vw,22px);font-weight:700;margin:20px 0;line-height:1.6;overflow-wrap:anywhere}
-.progress{height:9px;background:#eae6fa;border-radius:20px;overflow:hidden}
-.progress div{background:#7138e5;height:100%}
-.choices{display:grid;gap:12px;margin:18px 0}
-.choice{width:100%;text-align:left;background:white;color:#202044;border:2px solid #ded9ef;border-radius:14px;padding:17px;font-size:18px}
-.choice.chosen{background:#eee8ff;border-color:#7138e5;color:#5725bc}
-.choice:focus-visible{outline:3px solid #7138e5;outline-offset:2px}
-table{width:100%;border-collapse:collapse}
-td,th{text-align:left;border-bottom:1px solid #eee;padding:12px}
-.review{padding:12px 0;border-bottom:1px solid #eee}
-.good{color:#087e43}
-.bad{color:#bd3348}
-#notice{color:#ba273f;min-height:22px;white-space:pre-wrap}
-a{color:#6832cb;overflow-wrap:anywhere}
-@media(max-width:600px){
-.card{padding:18px 15px;border-radius:17px}
-.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
-.actions button{width:100%;padding:13px 8px}
-#home button,#joinBtn{width:100%}
-#quiz .actions{position:sticky;bottom:0;background:white;padding:10px 0 4px;z-index:2}
+:root {
+  font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+  background:#f6f7ff;
+  color:#202044;
+}
+* {box-sizing:border-box}
+body {margin:0}
+.wrap {max-width:920px;margin:auto;padding:16px}
+.brand {font-size:24px;font-weight:800;margin:10px 0 25px}
+.brand span {color:#7138e5}
+.card {
+  background:#fff;
+  border:1px solid #e6e4f5;
+  border-radius:22px;
+  padding:clamp(20px,5vw,34px);
+  box-shadow:0 12px 36px #16164c0b;
+  margin-bottom:20px;
+}
+h1 {font-size:clamp(26px,5vw,36px);margin:8px 0 12px}
+h2 {font-size:22px}
+.muted {color:#69718a;line-height:1.6}
+.tag {
+  display:inline-block;
+  background:#eee9ff;
+  color:#6d36d9;
+  padding:7px 12px;
+  border-radius:24px;
+  font-weight:700;
+  font-size:13px;
+}
+.actions {display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+button {
+  border:0;
+  border-radius:12px;
+  background:#7138e5;
+  color:#fff;
+  font:inherit;
+  font-weight:700;
+  padding:13px 20px;
+  cursor:pointer;
+  min-height:48px;
+}
+button.alt {background:#f0eaff;color:#6832cb}
+button:disabled {opacity:.45;cursor:default}
+input {
+  font:inherit;
+  border:1px solid #d9d9ef;
+  border-radius:12px;
+  padding:14px;
+  width:100%;
+  margin:8px 0 12px;
+  min-height:50px;
+}
+input:focus {outline:2px solid #7138e5;outline-offset:1px}
+label {font-weight:650}
+.hidden {display:none!important}
+.question {
+  background:#f3efff;
+  padding:23px;
+  border-radius:16px;
+  font-size:clamp(18px,4.5vw,22px);
+  font-weight:700;
+  margin:20px 0;
+  line-height:1.6;
+  overflow-wrap:anywhere;
+}
+.progress {
+  height:9px;
+  background:#eae6fa;
+  border-radius:20px;
+  overflow:hidden;
+}
+.progress div {background:#7138e5;height:100%}
+.choices {display:grid;gap:12px;margin:18px 0}
+.choice {
+  width:100%;
+  text-align:left;
+  background:#fff;
+  color:#202044;
+  border:2px solid #ded9ef;
+  border-radius:14px;
+  padding:17px;
+  font-size:18px;
+}
+.choice.chosen {
+  background:#eee8ff;
+  border-color:#7138e5;
+  color:#5725bc;
+}
+.choice:focus-visible {
+  outline:3px solid #7138e5;
+  outline-offset:2px;
+}
+table {width:100%;border-collapse:collapse}
+td,th {text-align:left;border-bottom:1px solid #eee;padding:12px}
+.review {padding:12px 0;border-bottom:1px solid #eee}
+.good {color:#087e43}
+.bad {color:#bd3348}
+#notice {
+  color:#ba273f;
+  min-height:22px;
+  white-space:pre-wrap;
+}
+a {color:#6832cb;overflow-wrap:anywhere}
+@media(max-width:600px) {
+  .card {padding:18px 15px;border-radius:17px}
+  .actions {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .actions button {width:100%;padding:13px 8px}
+  #home button,#joinBtn {width:100%}
+  #quiz .actions {
+    position:sticky;
+    bottom:0;
+    background:#fff;
+    padding:10px 0 4px;
+    z-index:2;
+  }
 }
 </style>
 </head>
+
 <body>
 <main class="wrap">
+
 <div class="brand">✦ ExamPrep <span>Studio</span></div>
 
 <section class="card" id="home">
   <span class="tag">Beginner · Grammar</span>
   <h1>Going to — Choose the Correct Words</h1>
-  <p class="muted">70 questions · 10 randomly selected · Pass mark 80%</p>
+  <p class="muted">
+    70 questions · 10 randomly selected · Pass mark 80%
+  </p>
   <button id="create" disabled>Loading question bank...</button>
-  <p class="muted">Students join from student.html. Start when everyone is ready.</p>
+  <p class="muted">
+    Students join from student.html.
+    Start the session when everyone is ready.
+  </p>
 </section>
 
 <section class="card hidden" id="teacher">
   <span class="tag">Teacher live session</span>
   <h1>Going to — Choose the Correct Words</h1>
   <p>Session code: <strong id="code"></strong></p>
-  <p>Student Board: <a href="../../student.html" target="_blank" rel="noopener">Open student.html</a></p>
+  <p>
+    Student Board:
+    <a href="../../student.html" target="_blank" rel="noopener">
+      Open student.html
+    </a>
+  </p>
   <p id="count"></p>
   <div class="actions">
     <button id="start">Start Quiz</button>
@@ -70,7 +164,9 @@ a{color:#6832cb;overflow-wrap:anywhere}
   </div>
   <h2>Live leaderboard</h2>
   <table>
-    <thead><tr><th>Student</th><th>Score</th></tr></thead>
+    <thead>
+      <tr><th>Student</th><th>Score</th></tr>
+    </thead>
     <tbody id="leader"></tbody>
   </table>
 </section>
@@ -79,13 +175,19 @@ a{color:#6832cb;overflow-wrap:anywhere}
   <span class="tag">Student joining</span>
   <h1>Going to — Choose the Correct Words</h1>
   <label for="name">Full name</label>
-  <input id="name" maxlength="80" placeholder="Enter your name">
+  <input
+    id="name"
+    maxlength="80"
+    placeholder="Enter your name"
+  >
   <button id="joinBtn">Join Session</button>
 </section>
 
 <section class="card hidden" id="waiting">
   <h1>You're in!</h1>
-  <p class="muted">Wait for your teacher to start the quiz.</p>
+  <p class="muted">
+    Wait for your teacher to start the quiz.
+  </p>
 </section>
 
 <section class="card hidden" id="quiz">
@@ -94,9 +196,15 @@ a{color:#6832cb;overflow-wrap:anywhere}
   <div class="progress"><div id="fill"></div></div>
   <div class="question" id="prompt"></div>
   <strong>Choose one answer</strong>
-  <input id="answer" type="hidden">
-  <div id="choices" class="choices" role="group" aria-label="Choose one answer"></div>
-  <p class="muted">Tap the correct option to complete the sentence.</p>
+  <div
+    id="choices"
+    class="choices"
+    role="group"
+    aria-label="Answer choices"
+  ></div>
+  <p class="muted">
+    Tap the correct option to complete the sentence.
+  </p>
   <div class="actions">
     <button class="alt" id="prev">Previous</button>
     <button id="next">Next</button>
@@ -107,132 +215,191 @@ a{color:#6832cb;overflow-wrap:anywhere}
   <span class="tag">Your result</span>
   <h1 id="score"></h1>
   <p id="outcome"></p>
-  <button class="alt" id="toggleReview">Review answers</button>
+  <button class="alt" id="toggleReview">
+    Review answers
+  </button>
   <div class="hidden" id="review"></div>
 </section>
 
 <p id="notice" role="status"></p>
+
 </main>
 
 <script>
 "use strict";
 
-const URL_BASE="https://dfepopppcggzecdxexeh.supabase.co";
-const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
+/* SAME SUPABASE CONNECTION AS QUIZ 04 */
 
-const QUIZ_TITLE="Going to — Choose the Correct Words";
-const QUIZ_PATH="beginner/quizzes/quiz-05.html";
-const BANK_FILE="quiz-05.bank.json";
-const QUESTION_COUNT=10;
-const PASS_MARK=80;
+const URL_BASE =
+  "https://dfepopppcggzecdxexeh.supabase.co";
 
-const TEACHER_KEY="eps2_quiz05_teacher";
-const PLAYER_KEY="eps2_quiz05_player";
-const PROGRESS_PREFIX="eps2_quiz05_progress_";
+const PUBLIC_KEY =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
 
-const $=id=>document.getElementById(id);
-const views=["home","teacher","join","waiting","quiz","result"];
-const query=new URLSearchParams(location.search);
+const QUIZ_TITLE =
+  "Going to — Choose the Correct Words";
 
-let BANK=[];
-let code="";
-let teacherToken="";
-let playerId="";
-let selected=[];
-let answers={};
-let index=0;
-let submitted=false;
-let busy=false;
-let polling=false;
-let quizStarted=false;
-let sessionClosed=false;
+const QUIZ_PATH =
+  "beginner/quizzes/quiz-05.html";
 
-function show(id){
-  views.forEach(v=>$(v).classList.toggle("hidden",v!==id));
+const BANK_FILE = "quiz-05.bank.json";
+
+const QUESTION_COUNT = 10;
+const PASS_MARK = 80;
+
+/*
+  IMPORTANT:
+  These two keys are IDENTICAL to Quiz 04.
+  Do not change them to quiz-specific keys.
+*/
+const TEACHER_KEY = "eps2_teacher";
+const PLAYER_KEY = "eps2_player";
+
+/* Progress is quiz-specific. */
+const PROGRESS_PREFIX = "eps2_quiz05_progress_";
+
+const $ = id => document.getElementById(id);
+
+const views = [
+  "home",
+  "teacher",
+  "join",
+  "waiting",
+  "quiz",
+  "result"
+];
+
+const query = new URLSearchParams(location.search);
+
+let BANK = [];
+let code = "";
+let teacherToken = "";
+let playerId = "";
+let selected = [];
+let answers = {};
+let index = 0;
+let submitted = false;
+let busy = false;
+let polling = false;
+let quizStarted = false;
+let sessionClosed = false;
+
+/* VIEW HELPERS */
+
+function show(id) {
+  views.forEach(view => {
+    $(view).classList.toggle("hidden",view !== id);
+  });
 }
 
-function notice(message){
-  $("notice").textContent=message||"";
+function notice(message) {
+  $("notice").textContent = message || "";
 }
 
-function readStorage(key){
-  try{
-    const value=sessionStorage.getItem(key);
-    return value?JSON.parse(value):null;
-  }catch{return null;}
+/* STORAGE */
+
+function readStorage(key) {
+  try {
+    const value = sessionStorage.getItem(key);
+    return value ? JSON.parse(value) : null;
+  } catch {
+    return null;
+  }
 }
 
-function writeStorage(key,value){
-  try{sessionStorage.setItem(key,JSON.stringify(value));}
-  catch{}
+function writeStorage(key,value) {
+  try {
+    sessionStorage.setItem(key,JSON.stringify(value));
+  } catch {}
 }
 
-function removeStorage(key){
-  try{sessionStorage.removeItem(key);}
-  catch{}
+function removeStorage(key) {
+  try {
+    sessionStorage.removeItem(key);
+  } catch {}
 }
 
-function progressKey(){
-  return PROGRESS_PREFIX+code+"_"+playerId;
+function progressKey() {
+  return PROGRESS_PREFIX + code + "_" + playerId;
 }
 
-function normalize(value){
-  return String(value||"")
+/* ANSWER CHECKING */
+
+function normalize(value) {
+  return String(value || "")
     .toLowerCase()
     .replace(/[’‘`]/g,"'")
     .replace(/\s+/g," ")
     .trim();
 }
 
-function isCorrect(q,answer){
-  return normalize(q.answer)===normalize(answer);
+function isCorrect(q,answer) {
+  return normalize(q.answer) === normalize(answer);
 }
 
-function validateBank(data){
-  const questions=Array.isArray(data)?data:data?.questions;
+/* QUESTION BANK VALIDATION */
 
-  if(!Array.isArray(questions)){
+function validateBank(data) {
+  const questions = Array.isArray(data)
+    ? data
+    : data?.questions;
+
+  if (!Array.isArray(questions)) {
     throw Error("Invalid question bank format.");
   }
 
-  if(questions.length!==70){
-    throw Error("Expected 70 questions, found "+questions.length);
+  if (questions.length !== 70) {
+    throw Error(
+      "Expected 70 questions, found " + questions.length
+    );
   }
 
-  const ids=new Set();
-  const prompts=new Set();
+  const ids = new Set();
+  const prompts = new Set();
 
-  for(const q of questions){
-    if(!q||
-      typeof q.id!=="string"||
-      typeof q.prompt!=="string"||
-      typeof q.answer!=="string"||
-      !q.id.trim()||
-      !q.prompt.trim()||
-      !q.answer.trim()){
+  for (const q of questions) {
+    if (
+      !q ||
+      typeof q.id !== "string" ||
+      typeof q.prompt !== "string" ||
+      typeof q.answer !== "string" ||
+      !q.id.trim() ||
+      !q.prompt.trim() ||
+      !q.answer.trim()
+    ) {
       throw Error("A question contains invalid fields.");
     }
 
-    if(ids.has(q.id)){
-      throw Error("Duplicate question ID: "+q.id);
+    if (ids.has(q.id)) {
+      throw Error("Duplicate question ID: " + q.id);
     }
 
     ids.add(q.id);
 
-    if(q.type!=="choose-correct"||
-      !Array.isArray(q.options)||
-      q.options.length!==2||
-      q.options.some(x=>typeof x!=="string"||!x.trim())||
-      normalize(q.options[0])===normalize(q.options[1])||
-      !q.options.some(x=>normalize(x)===normalize(q.answer))||
-      !q.prompt.includes("___")){
-      throw Error("Invalid answer choices: "+q.id);
+    if (
+      q.type !== "choose-correct" ||
+      !Array.isArray(q.options) ||
+      q.options.length !== 2 ||
+      q.options.some(
+        option =>
+          typeof option !== "string" ||
+          !option.trim()
+      ) ||
+      normalize(q.options[0]) ===
+        normalize(q.options[1]) ||
+      !q.options.some(
+        option =>
+          normalize(option) === normalize(q.answer)
+      ) ||
+      !q.prompt.includes("___")
+    ) {
+      throw Error("Invalid answer choices: " + q.id);
     }
 
-    const key=normalize(q.prompt);
+    const key = normalize(q.prompt);
 
-    if(prompts.has(key)){
-      throw Error("Duplicate question: "+q.id);
+    if (prompts.has(key)) {
+      throw Error("Duplicate question: " + q.id);
     }
 
     prompts.add(key);
@@ -241,149 +408,217 @@ function validateBank(data){
   return questions;
 }
 
-async function loadBank(){
-  try{
-    const response=await fetch(BANK_FILE,{cache:"no-store"});
+async function loadBank() {
+  try {
+    const response = await fetch(BANK_FILE,{
+      cache:"no-store"
+    });
 
-    if(!response.ok){
-      throw Error("Question bank HTTP "+response.status);
+    if (!response.ok) {
+      throw Error(
+        "Question bank HTTP " + response.status
+      );
     }
 
-    BANK=validateBank(await response.json());
-    $("create").disabled=false;
-    $("create").textContent="Create Live Session";
+    BANK = validateBank(await response.json());
+
+    $("create").disabled = false;
+    $("create").textContent =
+      "Create Live Session";
+
     return true;
-  }catch(error){
-    BANK=[];
-    $("create").disabled=true;
-    notice("Question bank error: "+error.message);
+  } catch(error) {
+    BANK = [];
+    $("create").disabled = true;
+    notice("Question bank error: " + error.message);
     return false;
   }
 }
 
-async function rpc(fn,data={}){
-  const response=await fetch(
-    URL_BASE+"/rest/v1/rpc/"+fn,
+/* SAME SUPABASE RPC PATTERN AS QUIZ 04 */
+
+async function rpc(fn,data={}) {
+  const response = await fetch(
+    URL_BASE + "/rest/v1/rpc/" + fn,
     {
       method:"POST",
       headers:{
         apikey:PUBLIC_KEY,
-        Authorization:"Bearer "+PUBLIC_KEY,
+        Authorization:"Bearer " + PUBLIC_KEY,
         "Content-Type":"application/json"
       },
       body:JSON.stringify(data)
     }
   );
 
-  const raw=await response.text();
+  const raw = await response.text();
   let result;
 
-  try{result=raw?JSON.parse(raw):null;}
-  catch{result=raw;}
+  try {
+    result = raw ? JSON.parse(raw) : null;
+  } catch {
+    result = raw;
+  }
 
-  if(!response.ok){
-    throw Error(result?.message||result?.hint||String(result)||"Supabase request failed");
+  if (!response.ok) {
+    throw Error(
+      result?.message ||
+      result?.hint ||
+      String(result) ||
+      "Supabase request failed"
+    );
   }
 
   return result;
 }
 
-async function run(fn){
-  if(busy)return;
-  busy=true;
+async function run(fn) {
+  if (busy) return;
+
+  busy = true;
   notice("");
 
-  try{await fn();}
-  catch(error){notice(error.message||String(error));}
-  finally{busy=false;}
+  try {
+    await fn();
+  } catch(error) {
+    notice(error.message || String(error));
+  } finally {
+    busy = false;
+  }
 }
 
-function shuffle(items){
-  const result=[...items];
+/* RANDOM QUESTION SELECTION */
 
-  for(let i=result.length-1;i>0;i--){
-    const random=crypto.getRandomValues(new Uint32Array(1))[0];
-    const j=random%(i+1);
-    [result[i],result[j]]=[result[j],result[i]];
+function shuffle(items) {
+  const result = [...items];
+
+  for (let i=result.length-1;i>0;i--) {
+    const random = crypto.getRandomValues(
+      new Uint32Array(1)
+    )[0];
+
+    const j = random % (i+1);
+
+    [result[i],result[j]] =
+      [result[j],result[i]];
   }
 
   return result;
 }
 
-function choose(){
-  if(BANK.length!==70){
+function choose() {
+  if (BANK.length !== 70) {
     throw Error("Question bank is not ready.");
   }
 
-  const result=shuffle(BANK).slice(0,QUESTION_COUNT);
+  const shuffled = shuffle(BANK);
+  const seen = new Set();
+  const result = [];
 
-  if(result.length!==QUESTION_COUNT||
-     new Set(result.map(q=>normalize(q.prompt))).size!==QUESTION_COUNT){
-    throw Error("Could not select 10 different questions.");
+  for (const q of shuffled) {
+    const key = normalize(q.prompt);
+
+    if (seen.has(key)) continue;
+
+    seen.add(key);
+    result.push(q);
+
+    if (result.length === QUESTION_COUNT) {
+      break;
+    }
+  }
+
+  if (result.length !== QUESTION_COUNT) {
+    throw Error(
+      "Could not select 10 different questions."
+    );
   }
 
   return result;
 }
 
-function sessionCode(){
-  const chars="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+function sessionCode() {
+  const chars =
+    "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 
   return Array.from(
     crypto.getRandomValues(new Uint8Array(8)),
-    value=>chars[value%chars.length]
+    value => chars[value % chars.length]
   ).join("");
 }
 
-function saveProgress(){
-  if(!code||!playerId||!selected.length)return;
+/* PROGRESS SAVING */
+
+function saveProgress() {
+  if (
+    !code ||
+    !playerId ||
+    !selected.length
+  ) return;
 
   writeStorage(progressKey(),{
-    questionIds:selected.map(q=>q.id),
+    questionIds:selected.map(q => q.id),
     answers,
     index,
     submitted
   });
 }
 
-function restoreProgress(){
-  const saved=readStorage(progressKey());
+function restoreProgress() {
+  const saved = readStorage(progressKey());
 
-  if(!saved||!Array.isArray(saved.questionIds)||
-     saved.questionIds.length!==QUESTION_COUNT){
+  if (
+    !saved ||
+    !Array.isArray(saved.questionIds) ||
+    saved.questionIds.length !== QUESTION_COUNT
+  ) {
     return false;
   }
 
-  const questions=saved.questionIds.map(
-    id=>BANK.find(q=>q.id===id)
+  const questions = saved.questionIds.map(
+    id => BANK.find(q => q.id === id)
   );
 
-  if(questions.some(q=>!q)||
-     new Set(saved.questionIds).size!==QUESTION_COUNT||
-     new Set(questions.map(q=>normalize(q.prompt))).size!==QUESTION_COUNT){
+  if (
+    questions.some(q => !q) ||
+    new Set(saved.questionIds).size !== QUESTION_COUNT ||
+    new Set(
+      questions.map(q => normalize(q.prompt))
+    ).size !== QUESTION_COUNT
+  ) {
     return false;
   }
 
-  selected=questions;
-  answers=saved.answers&&typeof saved.answers==="object"&&!Array.isArray(saved.answers)
-    ?saved.answers:{};
+  selected = questions;
 
-  index=Number.isInteger(saved.index)
-    ?Math.max(0,Math.min(saved.index,QUESTION_COUNT-1))
-    :0;
+  answers =
+    saved.answers &&
+    typeof saved.answers === "object" &&
+    !Array.isArray(saved.answers)
+      ? saved.answers
+      : {};
 
-  submitted=saved.submitted===true;
+  index = Number.isInteger(saved.index)
+    ? Math.max(
+        0,
+        Math.min(saved.index,QUESTION_COUNT-1)
+      )
+    : 0;
+
+  submitted = saved.submitted === true;
+
   return true;
 }
 
-/* TEACHER SESSION */
+/* TEACHER: CREATE SESSION */
 
-$("create").onclick=()=>run(async()=>{
-  if(BANK.length!==70){
+$("create").onclick = () => run(async()=>{
+  if (BANK.length !== 70) {
     throw Error("Question bank is not loaded.");
   }
 
-  const newToken=crypto.randomUUID();
-  const newCode=sessionCode();
+  const newToken = crypto.randomUUID();
+  const newCode = sessionCode();
 
   await rpc("eps2_create",{
     p_code:newCode,
@@ -397,53 +632,86 @@ $("create").onclick=()=>run(async()=>{
     p_path:QUIZ_PATH
   });
 
-  code=newCode;
-  teacherToken=newToken;
-  sessionClosed=false;
+  code = newCode;
+  teacherToken = newToken;
+  sessionClosed = false;
 
-  writeStorage(TEACHER_KEY,{code,teacherToken});
-  $("code").textContent=code;
+  writeStorage(TEACHER_KEY,{
+    code,
+    teacherToken
+  });
+
+  $("code").textContent = code;
+
   show("teacher");
 
   await poll(true);
 });
 
-/* STUDENT JOIN */
+/* STUDENT: JOIN SESSION */
 
-$("joinBtn").onclick=()=>run(async()=>{
-  const name=$("name").value.trim();
-  const joinCode=query.get("join")||"";
+$("joinBtn").onclick = () => run(async()=>{
+  const name = $("name").value.trim();
+  const joinCode = query.get("join") || "";
 
-  if(!name)throw Error("Please enter your name.");
-  if(!joinCode)throw Error("Session code is missing.");
+  if (!name) {
+    throw Error("Please enter your full name.");
+  }
 
-  const result=await rpc("eps2_join",{
+  if (!joinCode) {
+    throw Error("Session code is missing.");
+  }
+
+  /*
+    Prevent another join when the student
+    already has a registration for this code.
+  */
+  const existing = readStorage(PLAYER_KEY);
+
+  if (
+    existing &&
+    existing.code === joinCode &&
+    existing.playerId
+  ) {
+    code = existing.code;
+    playerId = existing.playerId;
+    show("waiting");
+    await poll(true);
+    return;
+  }
+
+  const result = await rpc("eps2_join",{
     p_code:joinCode,
     p_name:name
   });
 
-  if(!result?.player_id){
+  if (!result?.player_id) {
     throw Error("Student ID was not returned.");
   }
 
-  code=joinCode;
-  playerId=result.player_id;
-  selected=[];
-  answers={};
-  index=0;
-  submitted=false;
-  quizStarted=false;
-  sessionClosed=false;
+  code = joinCode;
+  playerId = result.player_id;
 
-  writeStorage(PLAYER_KEY,{code,playerId});
+  selected = [];
+  answers = {};
+  index = 0;
+  submitted = false;
+  quizStarted = false;
+  sessionClosed = false;
+
+  writeStorage(PLAYER_KEY,{
+    code,
+    playerId
+  });
+
   show("waiting");
 
   await poll(true);
 });
 
-/* TEACHER CONTROLS */
+/* TEACHER: START */
 
-$("start").onclick=()=>run(async()=>{
+$("start").onclick = () => run(async()=>{
   await rpc("eps2_start",{
     p_code:code,
     p_token:teacherToken
@@ -452,65 +720,83 @@ $("start").onclick=()=>run(async()=>{
   await poll(true);
 });
 
-$("end").onclick=()=>run(async()=>{
-  if(!confirm("End this live session?"))return;
+/* TEACHER: END */
+
+$("end").onclick = () => run(async()=>{
+  if (!confirm("End this live session?")) {
+    return;
+  }
 
   await rpc("eps2_end",{
     p_code:code,
     p_token:teacherToken
   });
 
-  sessionClosed=true;
+  sessionClosed = true;
+
   removeStorage(TEACHER_KEY);
-  teacherToken="";
-  code="";
+
+  teacherToken = "";
+  code = "";
 
   show("home");
   notice("Session ended.");
 });
 
-/* QUESTION DISPLAY */
+/* DISPLAY QUESTION */
 
-function render(){
-  const q=selected[index];
+function render() {
+  const q = selected[index];
 
-  if(!q){
-    notice("Question unavailable. Please reload.");
+  if (!q) {
+    notice(
+      "Question unavailable. Please reload the quiz."
+    );
     return;
   }
 
-  $("counter").textContent=
+  $("counter").textContent =
     `Question ${index+1} of ${selected.length}`;
 
-  $("fill").style.width=
-    ((index+1)/selected.length*100)+"%";
+  $("fill").style.width =
+    ((index+1)/selected.length*100) + "%";
 
-  $("prompt").textContent=q.prompt;
-  $("answer").value=answers[q.id]||"";
+  $("prompt").textContent = q.prompt;
 
-  const choices=$("choices");
+  const choices = $("choices");
   choices.replaceChildren();
 
-  q.options.forEach(option=>{
-    const button=document.createElement("button");
-    button.type="button";
+  q.options.forEach(option => {
+    const button = document.createElement("button");
+    button.type = "button";
 
-    const chosen=normalize(answers[q.id])===normalize(option);
-    button.className="choice"+(chosen?" chosen":"");
-    button.textContent=option;
-    button.setAttribute("aria-pressed",String(chosen));
+    const chosen =
+      normalize(answers[q.id]) === normalize(option);
 
-    button.onclick=()=>{
-      if(submitted)return;
+    button.className =
+      "choice" + (chosen ? " chosen" : "");
 
-      answers[q.id]=option;
-      $("answer").value=option;
+    button.textContent = option;
+
+    button.setAttribute(
+      "aria-pressed",
+      String(chosen)
+    );
+
+    button.onclick = () => {
+      if (submitted) return;
+
+      answers[q.id] = option;
       saveProgress();
 
-      choices.querySelectorAll("button").forEach(b=>{
-        const active=b===button;
+      choices.querySelectorAll("button").forEach(b => {
+        const active = b === button;
+
         b.classList.toggle("chosen",active);
-        b.setAttribute("aria-pressed",String(active));
+        b.setAttribute(
+          "aria-pressed",
+          String(active)
+        );
       });
 
       notice("");
@@ -519,57 +805,62 @@ function render(){
     choices.append(button);
   });
 
-  $("prev").disabled=index===0;
-  $("next").textContent=
-    index===selected.length-1?"Submit Answers":"Next";
+  $("prev").disabled = index === 0;
+
+  $("next").textContent =
+    index === selected.length-1
+      ? "Submit Answers"
+      : "Next";
 }
 
-function saveAnswer(){
-  const q=selected[index];
-  if(!q||submitted)return;
-  answers[q.id]=$("answer").value.trim();
-  saveProgress();
-}
+/* PREVIOUS QUESTION */
 
-$("prev").onclick=()=>{
-  if(submitted||!selected.length)return;
+$("prev").onclick = () => {
+  if (submitted || !selected.length) {
+    return;
+  }
 
-  saveAnswer();
-
-  if(index>0){
+  if (index > 0) {
     index--;
     saveProgress();
     render();
   }
 };
 
-$("next").onclick=()=>run(async()=>{
-  if(submitted)return;
+/* NEXT QUESTION / SUBMIT */
 
-  if(!selected[index]){
+$("next").onclick = () => run(async()=>{
+  if (submitted) return;
+
+  const q = selected[index];
+
+  if (!q) {
     throw Error("Question unavailable.");
   }
 
-  saveAnswer();
-
-  if(!answers[selected[index].id]){
-    throw Error("Please choose one answer before continuing.");
+  if (!answers[q.id]) {
+    throw Error(
+      "Please choose one answer before continuing."
+    );
   }
 
-  if(index<selected.length-1){
+  if (index < selected.length-1) {
     index++;
     saveProgress();
     render();
     return;
   }
 
-  if(!confirm("Submit your 10 answers?"))return;
+  if (!confirm("Submit your 10 answers?")) {
+    return;
+  }
 
-  const correct=selected.filter(
-    q=>isCorrect(q,answers[q.id])
+  const correct = selected.filter(
+    question =>
+      isCorrect(question,answers[question.id])
   ).length;
 
-  const score=correct*10;
+  const score = correct * 10;
 
   await rpc("eps2_submit",{
     p_code:code,
@@ -577,179 +868,224 @@ $("next").onclick=()=>run(async()=>{
     p_score:score
   });
 
-  submitted=true;
+  submitted = true;
   saveProgress();
+
   displayResult(score);
 });
 
 /* RESULTS */
 
-function displayResult(score){
-  quizStarted=false;
+function displayResult(score) {
+  quizStarted = false;
   show("result");
 
-  $("score").textContent=
+  $("score").textContent =
     `${score}% · ${score/10}/10 correct`;
 
-  $("outcome").textContent=
-    score>=PASS_MARK
-      ?"Passed!"
-      :"Below 80% — your result was saved for extra support.";
+  $("outcome").textContent =
+    score >= PASS_MARK
+      ? "Passed!"
+      : "Below 80% — your result was saved for extra support.";
 
-  const review=$("review");
+  const review = $("review");
   review.replaceChildren();
 
-  selected.forEach(q=>{
-    const item=document.createElement("div");
-    item.className="review";
+  selected.forEach(q => {
+    const item = document.createElement("div");
+    item.className = "review";
 
-    const question=document.createElement("strong");
-    question.textContent=q.prompt;
+    const question = document.createElement("strong");
+    question.textContent = q.prompt;
 
-    const answer=document.createElement("p");
-    answer.textContent="Your answer: "+(answers[q.id]||"—");
+    const answer = document.createElement("p");
+    answer.textContent =
+      "Your answer: " + (answers[q.id] || "—");
 
-    const feedback=document.createElement("p");
-    const correct=isCorrect(q,answers[q.id]);
+    const feedback = document.createElement("p");
+    const correct = isCorrect(q,answers[q.id]);
 
-    feedback.className=correct?"good":"bad";
-    feedback.textContent=correct
-      ?"✓ Correct"
-      :"Correct answer: "+q.answer;
+    feedback.className = correct
+      ? "good"
+      : "bad";
+
+    feedback.textContent = correct
+      ? "✓ Correct"
+      : "Correct answer: " + q.answer;
 
     item.append(question,answer,feedback);
     review.append(item);
   });
 }
 
-$("toggleReview").onclick=()=>{
+$("toggleReview").onclick = () => {
   $("review").classList.toggle("hidden");
 };
 
-/* LIVE POLLING — DOES NOT RESET QUESTIONS */
+/* LIVE SESSION POLLING */
 
-async function poll(force=false){
-  if(!code||sessionClosed||polling||(!force&&busy))return;
+async function poll(force=false) {
+  if (
+    !code ||
+    sessionClosed ||
+    polling ||
+    (!force && busy)
+  ) {
+    return;
+  }
 
-  polling=true;
+  polling = true;
 
-  try{
-    const state=await rpc("eps2_state",{
+  try {
+    const state = await rpc("eps2_state",{
       p_code:code,
-      p_token:teacherToken||null,
-      p_player:playerId||null
+      p_token:teacherToken || null,
+      p_player:playerId || null
     });
 
-    if(teacherToken){
-      const players=Array.isArray(state.players)
-        ?state.players:[];
+    if (teacherToken) {
+      const players = Array.isArray(state.players)
+        ? state.players
+        : [];
 
-      $("count").textContent=
+      $("count").textContent =
         `${players.length} student(s) · ${state.status}`;
 
-      $("start").disabled=state.status!=="waiting";
-      $("end").disabled=state.status!=="active";
+      $("start").disabled =
+        state.status !== "waiting";
 
-      const leaderboard=$("leader");
+      $("end").disabled =
+        state.status !== "active";
+
+      const leaderboard = $("leader");
       leaderboard.replaceChildren();
 
-      players.forEach((player,i)=>{
-        const row=document.createElement("tr");
-        const name=document.createElement("td");
-        const score=document.createElement("td");
+      players.forEach((player,i) => {
+        const row = document.createElement("tr");
+        const name = document.createElement("td");
+        const score = document.createElement("td");
 
-        name.textContent=`${i+1}. ${player.name}`;
-        score.textContent=player.completed
-          ?player.score+"%"
-          :"—";
+        name.textContent = `${i+1}. ${player.name}`;
+
+        score.textContent = player.completed
+          ? player.score + "%"
+          : "—";
 
         row.append(name,score);
         leaderboard.append(row);
       });
 
-    }else if(playerId){
+    } else if (playerId) {
 
-      if(state.status==="active"&&!submitted){
-
-        if(BANK.length!==70){
-          const loaded=await loadBank();
-          if(!loaded)return;
+      if (
+        state.status === "active" &&
+        !submitted
+      ) {
+        if (BANK.length !== 70) {
+          const loaded = await loadBank();
+          if (!loaded) return;
         }
 
-        if(!selected.length){
-          if(!restoreProgress()){
-            selected=choose();
-            index=0;
-            answers={};
+        if (!selected.length) {
+          if (!restoreProgress()) {
+            selected = choose();
+            index = 0;
+            answers = {};
             saveProgress();
           }
         }
 
-        // Display once only.
-        // Polling must never reset the current question.
-        if(!quizStarted){
-          quizStarted=true;
+        /*
+          Render only when entering the quiz.
+          Polling must not reset the answer
+          or repeat the current question.
+        */
+        if (!quizStarted) {
+          quizStarted = true;
           show("quiz");
           render();
         }
       }
 
-      if(state.status==="completed"&&!submitted){
-        sessionClosed=true;
+      if (
+        state.status === "completed" &&
+        !submitted
+      ) {
+        sessionClosed = true;
         notice("Teacher ended the session.");
 
-        if(!quizStarted){
+        if (!quizStarted) {
           show("waiting");
         }
       }
     }
 
-  }catch(error){
-    notice(error.message||String(error));
-  }finally{
-    polling=false;
+  } catch(error) {
+    notice(error.message || String(error));
+  } finally {
+    polling = false;
   }
 }
 
-/* SESSION RESTORATION */
+/* RESTORE EXISTING SESSION */
 
-function restoreSession(){
-  if(query.has("join")){
-    const saved=readStorage(PLAYER_KEY);
-    const requestedCode=query.get("join");
+function restoreSession() {
+  if (query.has("join")) {
+    const saved = readStorage(PLAYER_KEY);
+    const requestedCode = query.get("join");
 
-    if(saved&&saved.code===requestedCode&&saved.playerId){
-      code=saved.code;
-      playerId=saved.playerId;
+    /*
+      The shared PLAYER_KEY matches Quiz 04
+      and the existing student registration.
+    */
+    if (
+      saved &&
+      saved.code === requestedCode &&
+      saved.playerId
+    ) {
+      code = saved.code;
+      playerId = saved.playerId;
+
       show("waiting");
-    }else{
+    } else {
       show("join");
     }
 
-  }else{
-    const saved=readStorage(TEACHER_KEY);
+  } else {
+    const saved = readStorage(TEACHER_KEY);
 
-    if(saved&&saved.code&&saved.teacherToken){
-      code=saved.code;
-      teacherToken=saved.teacherToken;
-      $("code").textContent=code;
+    if (
+      saved &&
+      saved.code &&
+      saved.teacherToken
+    ) {
+      code = saved.code;
+      teacherToken = saved.teacherToken;
+
+      $("code").textContent = code;
       show("teacher");
     }
   }
 }
 
-async function initialize(){
+/* INITIALIZATION */
+
+async function initialize() {
   restoreSession();
 
-  const loaded=await loadBank();
-  if(!loaded)return;
+  const loaded = await loadBank();
 
-  if(playerId){
+  if (!loaded) return;
+
+  if (playerId) {
     restoreProgress();
 
-    if(submitted&&selected.length===QUESTION_COUNT){
-      const correct=selected.filter(
-        q=>isCorrect(q,answers[q.id])
+    if (
+      submitted &&
+      selected.length === QUESTION_COUNT
+    ) {
+      const correct = selected.filter(
+        q => isCorrect(q,answers[q.id])
       ).length;
 
       displayResult(correct*10);
@@ -757,18 +1093,27 @@ async function initialize(){
     }
   }
 
-  if(code&&!submitted){
+  if (code && !submitted) {
     await poll(true);
   }
 }
 
 initialize();
 
-setInterval(()=>{
-  if(code&&!submitted&&!sessionClosed){
+/*
+  Check session status every 3 seconds.
+  Never re-render an active question.
+*/
+setInterval(() => {
+  if (
+    code &&
+    !submitted &&
+    !sessionClosed
+  ) {
     poll();
   }
 },3000);
+
 </script>
 </body>
 </html>
