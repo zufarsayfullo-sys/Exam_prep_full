@@ -25,5 +25,15 @@
     "file": "quiz-03.html",
     "bank": "quiz-03.bank.json",
     "questionCount": 70
+  },
+  {
+  "id": "beginner-004",
+  "title": "Put the Words in Order",
+  "category": "Grammar",
+  "level": "beginner",
+  "file": "quiz-04.html",
+  "bank": "quiz-04.bank.json",
+  "questionCount": 70
   }
+
 ]
