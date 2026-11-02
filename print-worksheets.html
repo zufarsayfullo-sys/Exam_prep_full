@@ -1,286 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Print Worksheets | ExamPrep Studio</title>
-
 <style>
-:root {
-  font-family: Inter, Arial, sans-serif;
-  color: #172554;
-  background: #f5f7fc;
-}
-* { box-sizing: border-box; }
-body { margin: 0; }
-
-header {
-  background: #172554;
-  color: white;
-  padding: 28px max(20px, calc((100% - 1050px)/2));
-}
-header h1 { margin: 10px 0; font-size: 30px; }
-header p { color: #cbd5e1; margin: 0; }
-
-main {
-  max-width: 1050px;
-  margin: 28px auto;
-  padding: 0 18px;
-}
-
-.panel {
-  background: white;
-  border: 1px solid #e2e8f0;
-  border-radius: 18px;
-  padding: 24px;
-  margin-bottom: 20px;
-}
-
-.controls {
-  display: grid;
-  grid-template-columns: 1fr 1fr 145px;
-  gap: 14px;
-}
-
-label {
-  display: block;
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-select {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  background: white;
-  font: inherit;
-}
-
-button {
-  background: #4f46e5;
-  color: white;
-  border: 0;
-  border-radius: 10px;
-  padding: 12px 16px;
-  font: inherit;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-button:disabled {
-  opacity: .5;
-  cursor: not-allowed;
-}
-
-.secondary {
-  background: #eef2ff;
-  color: #3730a3;
-}
-
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 18px;
-  align-items: center;
-}
-
-.status {
-  font-size: 13px;
-  color: #475569;
-  margin: 14px 0 0;
-  line-height: 1.6;
-}
-
-.error { color: #b91c1c; }
-.hidden { display: none !important; }
-
-.sheet {
-  background: white;
-  color: #111827;
-  border: 1px solid #e2e8f0;
-  border-radius: 15px;
-  padding: 32px;
-}
-
-.sheet h2 {
-  text-align: center;
-  margin: 0 0 8px;
-}
-
-.subtitle {
-  text-align: center;
-  color: #475569;
-  margin-bottom: 25px;
-}
-
-.student-fields {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.question {
-  break-inside: avoid;
-  margin-bottom: 22px;
-  line-height: 1.6;
-}
-
-.options {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 7px 18px;
-  margin: 10px 0 0 22px;
-}
-
-.line {
-  border-bottom: 1px dotted #9ca3af;
-  height: 24px;
-  margin: 8px 0 0 22px;
-}
-
-.key {
-  margin-top: 28px;
-  border-top: 2px dashed #94a3b8;
-  padding-top: 18px;
-}
-
-.key-list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  font-size: 13px;
-}
-
-footer {
-  text-align: center;
-  color: #64748b;
-  font-size: 12px;
-  padding: 20px;
-}
-
-@media (max-width: 650px) {
-  .controls { grid-template-columns: 1fr; }
-  .sheet { padding: 18px; }
-  .options { grid-template-columns: 1fr; }
-  .student-fields { display: block; }
-  .student-fields div { margin-bottom: 10px; }
-  .key-list { grid-template-columns: repeat(2, 1fr); }
-}
-
-@page {
-  size: A4;
-  margin: 15mm;
-}
-
-@media print {
-  header, .panel, footer { display: none !important; }
-  body { background: white; }
-  .sheet {
-    border: 0;
-    border-radius: 0;
-    padding: 0;
-  }
-  .key { break-before: page; }
-  .question { margin-bottom: 16px; }
-}
+:root{font-family:Inter,Arial,sans-serif;color:#172554;background:#f5f7fc}*{box-sizing:border-box}body{margin:0}
+header{background:#172554;color:white;padding:28px max(20px,calc((100% - 1050px)/2))}header h1{margin:10px 0;font-size:30px}header p{color:#cbd5e1;margin:0}
+main{max-width:1050px;margin:28px auto;padding:0 18px}.panel{background:white;border:1px solid #e2e8f0;border-radius:18px;padding:24px;margin-bottom:20px}
+.controls{display:grid;grid-template-columns:1fr 1fr 145px;gap:14px}label{display:block;font-size:13px;font-weight:700;margin-bottom:8px}
+select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;background:white;font:inherit}
+button{background:#4f46e5;color:white;border:0;border-radius:10px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}
+.secondary{background:#eef2ff;color:#3730a3}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;align-items:center}
+.status{font-size:13px;color:#475569;margin:14px 0 0;line-height:1.6;white-space:pre-line}.error{color:#b91c1c}.hidden{display:none!important}
+.sheet{background:white;color:#111827;border:1px solid #e2e8f0;border-radius:15px;padding:32px}.sheet h2{text-align:center;margin:0 0 8px}
+.subtitle{text-align:center;color:#475569;margin-bottom:25px}.student-fields{display:flex;justify-content:space-between;gap:15px;margin-bottom:25px}
+.question{break-inside:avoid;margin-bottom:22px;line-height:1.6}.options{display:grid;grid-template-columns:1fr 1fr;gap:7px 18px;margin:10px 0 0 22px}
+.line{border-bottom:1px dotted #9ca3af;height:24px;margin:8px 0 0 22px}.key{margin-top:28px;border-top:2px dashed #94a3b8;padding-top:18px}
+.key-list{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;font-size:13px}footer{text-align:center;color:#64748b;font-size:12px;padding:20px}
+@media(max-width:650px){.controls{grid-template-columns:1fr}.sheet{padding:18px}.options{grid-template-columns:1fr}.student-fields{display:block}.student-fields div{margin-bottom:10px}.key-list{grid-template-columns:repeat(2,1fr)}}
+@page{size:A4;margin:15mm}@media print{header,.panel,footer{display:none!important}body{background:white}.sheet{border:0;border-radius:0;padding:0}.key{break-before:page}.question{margin-bottom:16px}}
 </style>
 </head>
-
 <body>
-
-<header>
-  <strong>✦ ExamPrep Studio</strong>
-  <h1>Print Worksheets</h1>
-  <p>Automatically discover quiz banks and create printable worksheets.</p>
-</header>
-
+<header><strong>✦ ExamPrep Studio</strong><h1>Print Worksheets</h1><p>Create printable worksheets from registered quiz banks.</p></header>
 <main>
 <section class="panel">
   <div class="controls">
-
-    <div>
-      <label for="level">Level</label>
-      <select id="level">
-        <option value="">Loading levels...</option>
-      </select>
-    </div>
-
-    <div>
-      <label for="quiz">Quiz</label>
-      <select id="quiz">
-        <option value="">Choose a level</option>
-      </select>
-    </div>
-
-    <div>
-      <label for="count">Questions</label>
-      <select id="count">
-        <option value="10">10</option>
-        <option value="15">15</option>
-        <option value="20">20</option>
-      </select>
-    </div>
-
+    <div><label for="level">Level</label><select id="level" disabled><option>Loading levels...</option></select></div>
+    <div><label for="quiz">Quiz</label><select id="quiz" disabled><option value="">Choose a level</option></select></div>
+    <div><label for="count">Questions</label><select id="count"><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></div>
   </div>
-
   <div class="actions">
-    <button id="generate" disabled>
-      Generate worksheet
-    </button>
-
-    <button id="reshuffle" class="secondary" disabled>
-      New random set
-    </button>
-
-    <button id="print" class="secondary" disabled>
-      Print
-    </button>
-
-    <label style="display:flex;align-items:center;gap:8px;margin:0 0 0 auto">
-      <input type="checkbox" id="answerKey" checked>
-      Include answer key
-    </label>
+    <button id="generate" disabled>Generate worksheet</button>
+    <button id="reshuffle" class="secondary" disabled>New random set</button>
+    <button id="print" class="secondary" disabled>Print</button>
+    <label style="display:flex;align-items:center;gap:8px;margin:0 0 0 auto"><input type="checkbox" id="answerKey" checked>Include answer key</label>
   </div>
-
-  <p id="status" class="status">
-    Loading quiz catalogues...
-  </p>
+  <p id="status" class="status" role="status" aria-live="polite">Loading quiz catalogues...</p>
 </section>
-
 <article id="sheet" class="sheet hidden">
-  <h2 id="sheetTitle"></h2>
-  <p id="sheetSub" class="subtitle"></p>
-
-  <div class="student-fields">
-    <div>Name: ______________________</div>
-    <div>Date: ______________</div>
-    <div>Score: ____ / <span id="maxScore"></span></div>
-  </div>
-
+  <h2 id="sheetTitle"></h2><p id="sheetSub" class="subtitle"></p>
+  <div class="student-fields"><div>Name: ______________________</div><div>Date: ______________</div><div>Score: ____ / <span id="maxScore"></span></div></div>
   <div id="questions"></div>
-
-  <section id="key" class="key">
-    <h3>Answer Key</h3>
-    <div id="answers" class="key-list"></div>
-  </section>
+  <section id="key" class="key"><h3>Answer Key</h3><div id="answers" class="key-list"></div></section>
 </article>
 </main>
-
-<footer>
-  ExamPrep Studio · Universal Worksheet Generator
-</footer>
-
+<footer>ExamPrep Studio · Universal Worksheet Generator</footer>
 <script>
 "use strict";
-
-const REPO = "zufarsayfullo-sys/Exam_prep_full";
-const BRANCH = "main";
-
 const LEVELS = [
   ["beginner", "Beginner"],
   ["elementary", "Elementary"],
@@ -288,746 +56,209 @@ const LEVELS = [
   ["inter", "Intermediate"],
   ["upper-inter", "Upper-Intermediate"]
 ];
-
 const $ = id => document.getElementById(id);
-
 const catalog = new Map();
-
+const problems = new Map();
 let bank = [];
 let selection = [];
-let loadedQuizPath = "";
-let requestNumber = 0;
-
-function message(text, error = false) {
+let loadedPath = "";
+let generationId = 0;
+function message(text, isError = false) {
   $("status").textContent = text;
-  $("status").classList.toggle("error", error);
+  $("status").classList.toggle("error", isError);
 }
-
 async function getJSON(path) {
-  const response = await fetch(path, {
-    cache: "no-store"
-  });
-
-  if (!response.ok) {
-    throw new Error(
-      "HTTP " + response.status + ": " + path
-    );
-  }
-
+  let response;
   try {
-    return await response.json();
+    response = await fetch(path, {cache:"no-store"});
   } catch (error) {
-    throw new Error(
-      "Invalid JSON syntax in " + path +
-      ". Check the file for extra characters, commas or brackets."
-    );
+    throw new Error("Network error loading " + path + ": " + error.message);
   }
+  if (!response.ok) throw new Error("HTTP " + response.status + " loading " + path);
+  try { return await response.json(); }
+  catch (error) { throw new Error("Invalid JSON in " + path + ": " + error.message); }
 }
-
-function extractQuestions(data) {
-  if (Array.isArray(data)) return data;
-
-  if (!data || typeof data !== "object") {
-    return [];
+function getEntries(index) {
+  if (Array.isArray(index)) return index;
+  for (const field of ["quizzes", "items", "entries", "data"]) {
+    if (Array.isArray(index?.[field])) return index[field];
   }
-
-  for (const key of [
-    "questions",
-    "bank",
-    "items",
-    "data",
-    "questionBank",
-    "question_bank"
-  ]) {
-    if (Array.isArray(data[key])) {
-      return data[key];
-    }
-  }
-
-  for (const value of Object.values(data)) {
-    if (
-      Array.isArray(value) &&
-      value.some(q =>
-        q &&
-        typeof q === "object" &&
-        (q.question || q.prompt || q.text || q.q)
-      )
-    ) {
-      return value;
-    }
-  }
-
-  return [];
+  throw new Error("Catalogue must be a JSON array or contain a quizzes array");
 }
-
-function getIndexEntries(index) {
-  if (Array.isArray(index)) {
-    return index;
-  }
-
-  if (index && typeof index === "object") {
-    for (const key of [
-      "quizzes",
-      "items",
-      "entries",
-      "data"
-    ]) {
-      if (Array.isArray(index[key])) {
-        return index[key];
-      }
-    }
-  }
-
-  throw new Error(
-    "The quiz catalogue must contain an array."
-  );
-}
-
-function bankPath(slug, filename) {
-  if (
-    typeof filename !== "string" ||
-    !filename.trim()
-  ) {
-    return null;
-  }
-
-  let name = filename.trim();
-
-  if (name.startsWith(slug + "/quizzes/")) {
-    name = name.slice((slug + "/quizzes/").length);
-  } else if (name.startsWith("quizzes/")) {
-    name = name.slice("quizzes/".length);
-  } else if (name.startsWith(slug + "/")) {
-    name = name.slice((slug + "/").length);
-  }
-
-  // Only permit a JSON filename in this level's quiz folder.
-  if (
-    !/^[a-zA-Z0-9_-]+\.json$/.test(name) ||
-    name.toLowerCase() === "index.json"
-  ) {
-    return null;
-  }
-
-  return slug + "/quizzes/" + name;
-}
-
-function entryToQuiz(slug, entry) {
-  if (
-    typeof entry !== "string" &&
-    (!entry || typeof entry !== "object")
-  ) {
-    return null;
-  }
-
-  const item = typeof entry === "string"
-    ? { bank: entry }
-    : entry;
-
-  let filename =
-    item.bank ||
-    item.bank_file ||
-    item.bankFile ||
-    item.questions_file ||
-    item.questionsFile ||
-    item.json ||
-    item.path ||
-    "";
-
-  // If only an HTML filename is registered,
-  // infer the corresponding question-bank filename.
-  if (!filename && typeof item.file === "string") {
-    filename = item.file;
-  }
-
-  if (/\.html$/i.test(filename)) {
-    filename = filename.replace(/\.html$/i, ".bank.json");
-  }
-
-  const path = bankPath(slug, filename);
-
-  if (!path) return null;
-
-  const fallbackTitle = path
-    .split("/")
-    .pop()
-    .replace(/\.bank\.json$/i, "")
-    .replace(/\.json$/i, "")
-    .replace(/[-_]/g, " ");
-
+function resolveBank(slug, item) {
+  if (typeof item === "string") item = {bank:item};
+  if (!item || typeof item !== "object") return null;
+  let name = item.bank || item.bank_file || item.bankFile || item.questions_file || item.questionsFile || item.json || item.path || item.file;
+  if (typeof name !== "string") return null;
+  name = name.trim();
+  if (/\.html$/i.test(name)) name = name.replace(/\.html$/i, ".bank.json");
+  const prefix = slug + "/quizzes/";
+  if (name.startsWith(prefix)) name = name.slice(prefix.length);
+  else if (name.startsWith("quizzes/")) name = name.slice(8);
+  if (!/^[a-z0-9_-]+\.json$/i.test(name) || name.toLowerCase() === "index.json") return null;
   return {
-    path,
-    label:
-      item.title ||
-      item.name ||
-      item.label ||
-      fallbackTitle
+    path: prefix + name,
+    label: item.title || item.name || item.label || name.replace(/\.bank\.json$/i, "").replace(/\.json$/i, "").replace(/[-_]/g, " ")
   };
 }
-
-async function discoverFromGitHub(slug) {
-  const url =
-    "https://api.github.com/repos/" +
-    REPO +
-    "/contents/" +
-    slug +
-    "/quizzes?ref=" +
-    encodeURIComponent(BRANCH);
-
-  const response = await fetch(url, {
-    headers: {
-      Accept: "application/vnd.github+json"
-    },
-    cache: "no-store"
-  });
-
-  if (!response.ok) {
-    throw new Error(
-      "GitHub folder lookup failed: HTTP " +
-      response.status
-    );
-  }
-
-  const files = await response.json();
-
-  if (!Array.isArray(files)) {
-    throw new Error("Unexpected GitHub folder response.");
-  }
-
-  return files
-    .filter(file =>
-      file.type === "file" &&
-      /\.bank\.json$/i.test(file.name)
-    )
-    .map(file => ({
-      path: slug + "/quizzes/" + file.name,
-      label: file.name
-        .replace(/\.bank\.json$/i, "")
-        .replace(/[-_]/g, " ")
-    }));
-}
-
-async function discoverLevel(slug) {
-  const found = new Map();
-  const problems = [];
-
-  function add(quiz) {
-    if (!quiz) return;
-
-    if (!found.has(quiz.path)) {
-      found.set(quiz.path, quiz);
-    }
-  }
-
-  // First use the same index.json catalogue
-  // structure used by the Teacher quiz selector.
+async function loadLevel(slug) {
+  const path = slug + "/quizzes/index.json";
   try {
-    const index = await getJSON(
-      slug + "/quizzes/index.json"
-    );
-
-    const entries = getIndexEntries(index);
-
+    const entries = getEntries(await getJSON(path));
+    const unique = new Map();
+    let invalid = 0;
     for (const entry of entries) {
-      add(entryToQuiz(slug, entry));
+      const quiz = resolveBank(slug, entry);
+      if (quiz) unique.set(quiz.path, quiz);
+      else invalid++;
     }
+    const quizzes = [...unique.values()].sort((a,b) => a.path.localeCompare(b.path, undefined, {numeric:true}));
+    catalog.set(slug, quizzes);
+    problems.set(slug, invalid ? invalid + " catalogue entry/entries lack a valid JSON bank filename." : "");
   } catch (error) {
-    problems.push(
-      "Catalogue: " + error.message
-    );
+    catalog.set(slug, []);
+    problems.set(slug, error.message);
   }
-
-  // Discover banks not yet registered in index.json.
-  // This also provides a fallback if the index fails.
-  try {
-    const files = await discoverFromGitHub(slug);
-
-    for (const quiz of files) {
-      add(quiz);
-    }
-  } catch (error) {
-    problems.push(
-      "Folder discovery: " + error.message
-    );
-  }
-
-  const quizzes = [...found.values()].sort(
-    (a, b) =>
-      a.path.localeCompare(b.path, undefined, {
-        numeric: true
-      })
-  );
-
-  return { quizzes, problems };
 }
-
-function clearWorksheet() {
+function resetSheet() {
   bank = [];
   selection = [];
-  loadedQuizPath = "";
-
+  loadedPath = "";
   $("sheet").classList.add("hidden");
   $("generate").disabled = true;
   $("reshuffle").disabled = true;
   $("print").disabled = true;
 }
-
 function changeLevel() {
-  requestNumber++;
-  clearWorksheet();
-
+  generationId++;
+  resetSheet();
   const slug = $("level").value;
   const quizzes = catalog.get(slug) || [];
-
-  $("quiz").replaceChildren(
-    new Option(
-      quizzes.length
-        ? "Select quiz"
-        : "No quizzes registered",
-      ""
-    ),
-    ...quizzes.map((quiz, index) =>
-      new Option(quiz.label, String(index))
-    )
-  );
-
-  if (quizzes.length) {
-    $("quiz").value = "0";
-    $("generate").disabled = false;
-
-    message(
-      "Found " + quizzes.length +
-      " quiz(es) in " + slug +
-      ". Select a quiz and generate a worksheet."
-    );
-  } else {
-    message(
-      "No quiz banks were discovered for " + slug +
-      ". Check " + slug +
-      "/quizzes/index.json and the GitHub folder.",
-      true
-    );
-  }
+  $("quiz").replaceChildren(new Option(quizzes.length ? "Select quiz" : "No quizzes registered", ""), ...quizzes.map((quiz,i) => new Option(quiz.label, String(i))));
+  $("quiz").value = quizzes.length ? "0" : "";
+  $("generate").disabled = !quizzes.length;
+  const issue = problems.get(slug);
+  if (issue) message("Catalogue issue for " + slug + ": " + issue, true);
+  else if (quizzes.length) message(quizzes.length + " registered quiz(es) in " + slug + ". Select a quiz to generate a worksheet.");
+  else message("No quizzes listed in " + slug + "/quizzes/index.json. Add quiz entries to this catalogue.", true);
 }
-
 async function initialize() {
-  message("Reading all five level catalogues...");
-
-  $("level").disabled = true;
-  $("quiz").disabled = true;
-
-  // All five levels stay visible, even when empty.
-  $("level").replaceChildren(
-    ...LEVELS.map(([slug, title]) =>
-      new Option(title, slug)
-    )
-  );
-
-  const results = await Promise.all(
-    LEVELS.map(async ([slug]) => {
-      try {
-        return {
-          slug,
-          ...(await discoverLevel(slug))
-        };
-      } catch (error) {
-        return {
-          slug,
-          quizzes: [],
-          problems: [error.message]
-        };
-      }
-    })
-  );
-
-  let total = 0;
-
-  for (const result of results) {
-    catalog.set(result.slug, result.quizzes);
-    total += result.quizzes.length;
-
-    if (result.problems.length) {
-      console.warn(
-        "Discovery warnings for " + result.slug,
-        result.problems
-      );
-    }
-  }
-
+  $("level").replaceChildren(...LEVELS.map(([slug,label]) => new Option(label,slug)));
+  await Promise.all(LEVELS.map(([slug]) => loadLevel(slug)));
   $("level").disabled = false;
   $("quiz").disabled = false;
-
   $("level").value = "beginner";
   changeLevel();
-
-  const activeLevels = results.filter(
-    result => result.quizzes.length > 0
-  ).length;
-
-  if (total === 0) {
-    message(
-      "No quiz banks were discovered. Check the " +
-      "index.json files, folder names and GitHub connection.",
-      true
-    );
-  } else {
-    const currentCount =
-      catalog.get("beginner")?.length || 0;
-
-    message(
-      "Discovered " + total +
-      " quiz bank(s) across " +
-      activeLevels +
-      " level(s). Beginner: " +
-      currentCount +
-      " quiz(es). All five levels are selectable."
-    );
-  }
+  const total = LEVELS.reduce((sum,[slug]) => sum + (catalog.get(slug)?.length || 0), 0);
+  const errors = LEVELS.filter(([slug]) => problems.get(slug));
+  if (errors.length) console.warn("Catalogue diagnostics:", errors.map(([slug]) => ({level:slug, issue:problems.get(slug)})));
+  console.info("Registered quiz total:", total);
 }
-
+function extractQuestions(data) {
+  if (Array.isArray(data)) return data;
+  if (!data || typeof data !== "object") return [];
+  for (const key of ["questions","bank","items","data","questionBank","question_bank"]) {
+    if (Array.isArray(data[key])) return data[key];
+  }
+  for (const value of Object.values(data)) {
+    if (Array.isArray(value) && value.some(q => q && typeof q === "object" && (q.prompt || q.question || q.text || q.q))) return value;
+  }
+  return [];
+}
 function normalizeQuestion(q) {
-  if (typeof q === "string") {
-    return {
-      prompt: q,
-      options: [],
-      answer: ""
-    };
-  }
-
-  if (!q || typeof q !== "object") {
-    return null;
-  }
-
-  const prompt =
-    q.question ||
-    q.prompt ||
-    q.text ||
-    q.q ||
-    q.sentence ||
-    q.stem;
-
-  if (
-    typeof prompt !== "string" ||
-    !prompt.trim()
-  ) {
-    return null;
-  }
-
-  let options =
-    q.options ||
-    q.choices ||
-    q.answers ||
-    [];
-
-  if (
-    options &&
-    !Array.isArray(options) &&
-    typeof options === "object"
-  ) {
-    options = Object.values(options);
-  }
-
-  options = Array.isArray(options)
-    ? options.map(value =>
-        typeof value === "string"
-          ? value
-          : value?.text ||
-            value?.label ||
-            value?.value ||
-            ""
-      ).filter(Boolean)
-    : [];
-
-  let answer =
-    q.correctAnswer ??
-    q.correct_answer ??
-    q.correct ??
-    q.answer ??
-    q.key ??
-    "";
-
-  if (
-    typeof answer === "number" &&
-    options.length
-  ) {
-    answer = options[answer] ?? String(answer);
-  }
-
-  if (
-    typeof answer === "string" &&
-    /^[A-D]$/i.test(answer) &&
-    options.length
-  ) {
-    const index =
-      answer.toUpperCase().charCodeAt(0) - 65;
-
-    answer = options[index] || answer;
-  }
-
-  return {
-    prompt,
-    options,
-    answer: String(answer)
-  };
+  if (typeof q === "string") return {prompt:q, options:[], answer:""};
+  if (!q || typeof q !== "object") return null;
+  const prompt = q.question || q.prompt || q.text || q.q || q.sentence || q.stem;
+  if (typeof prompt !== "string" || !prompt.trim()) return null;
+  let options = q.options || q.choices || q.answers || [];
+  if (options && !Array.isArray(options) && typeof options === "object") options = Object.values(options);
+  options = Array.isArray(options) ? options.map(v => typeof v === "string" ? v : v?.text || v?.label || v?.value || "").filter(Boolean) : [];
+  let answer = q.correctAnswer ?? q.correct_answer ?? q.correct ?? q.answer ?? q.key ?? "";
+  if (typeof answer === "number" && options.length) answer = options[answer] ?? String(answer);
+  if (typeof answer === "string" && /^[A-D]$/i.test(answer) && options.length) answer = options[answer.toUpperCase().charCodeAt(0)-65] || answer;
+  return {prompt, options, answer:String(answer)};
 }
-
 function randomSample(array, count) {
   const copy = [...array];
-
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(
-      Math.random() * (i + 1)
-    );
-
-    [copy[i], copy[j]] = [copy[j], copy[i]];
+  for (let i=copy.length-1; i>0; i--) {
+    const j = Math.floor(Math.random()*(i+1));
+    [copy[i],copy[j]] = [copy[j],copy[i]];
   }
-
-  return copy.slice(0, count);
+  return copy.slice(0,count);
 }
-
-function addElement(tag, text, parent, className) {
+function addElement(tag, value, parent, className) {
   const element = document.createElement(tag);
-
-  element.textContent = text;
-
-  if (className) {
-    element.className = className;
-  }
-
+  element.textContent = value;
+  if (className) element.className = className;
   parent.append(element);
   return element;
 }
-
 function renderWorksheet() {
-  const level = $("level").value;
-  const quizIndex = Number($("quiz").value);
-  const quiz = catalog.get(level)?.[quizIndex];
-
-  if (!quiz || !selection.length) {
-    return;
-  }
-
+  const slug = $("level").value;
+  const quiz = catalog.get(slug)?.[Number($("quiz").value)];
+  if (!quiz || quiz.path !== loadedPath || !selection.length) return;
   $("sheetTitle").textContent = quiz.label;
-
-  const levelName =
-    LEVELS.find(item => item[0] === level)?.[1] ||
-    level;
-
-  $("sheetSub").textContent =
-    levelName + " · " +
-    selection.length + " questions";
-
+  $("sheetSub").textContent = (LEVELS.find(([key])=>key===slug)?.[1] || slug) + " · " + selection.length + " questions";
   $("maxScore").textContent = selection.length;
-
   $("questions").replaceChildren();
   $("answers").replaceChildren();
-
-  selection.forEach((question, index) => {
-    const wrapper = addElement(
-      "div",
-      "",
-      $("questions"),
-      "question"
-    );
-
-    addElement(
-      "strong",
-      (index + 1) + ". " + question.prompt,
-      wrapper
-    );
-
-    if (question.options.length) {
-      const options = addElement(
-        "div",
-        "",
-        wrapper,
-        "options"
-      );
-
-      question.options.forEach(
-        (option, optionIndex) => {
-          addElement(
-            "div",
-            String.fromCharCode(65 + optionIndex) +
-              ". " + option,
-            options
-          );
-        }
-      );
-    } else {
-      addElement("div", "", wrapper, "line");
-    }
-
-    addElement(
-      "div",
-      (index + 1) + ". " +
-        (question.answer || "—"),
-      $("answers")
-    );
+  selection.forEach((q,i) => {
+    const wrap = addElement("div","",$("questions"),"question");
+    addElement("strong",(i+1)+". "+q.prompt,wrap);
+    if (q.options.length) {
+      const opts = addElement("div","",wrap,"options");
+      q.options.forEach((option,j) => addElement("div",String.fromCharCode(65+j)+". "+option,opts));
+    } else addElement("div","",wrap,"line");
+    addElement("div",(i+1)+". "+(q.answer || "—"),$("answers"));
   });
-
-  $("key").classList.toggle(
-    "hidden",
-    !$("answerKey").checked
-  );
-
+  $("key").classList.toggle("hidden",!$("answerKey").checked);
   $("sheet").classList.remove("hidden");
   $("print").disabled = false;
   $("reshuffle").disabled = false;
 }
-
 function reshuffle() {
-  if (!bank.length) return;
-
-  // Prevent reusing questions from another quiz.
-  const level = $("level").value;
-  const quiz = catalog.get(level)?.[
-    Number($("quiz").value)
-  ];
-
-  if (!quiz || quiz.path !== loadedQuizPath) {
-    return;
-  }
-
-  const count = Math.min(
-    Number($("count").value),
-    bank.length
-  );
-
-  selection = randomSample(bank, count);
+  const quiz = catalog.get($("level").value)?.[Number($("quiz").value)];
+  if (!bank.length || !quiz || quiz.path !== loadedPath) return;
+  selection = randomSample(bank, Math.min(Number($("count").value),bank.length));
   renderWorksheet();
 }
-
 async function generateWorksheet() {
-  const level = $("level").value;
-  const quiz = catalog.get(level)?.[
-    Number($("quiz").value)
-  ];
-
+  const quiz = catalog.get($("level").value)?.[Number($("quiz").value)];
   if (!quiz) return;
-
-  const currentRequest = ++requestNumber;
-
-  clearWorksheet();
-  $("generate").disabled = true;
-
-  message(
-    "Loading question bank: " + quiz.path
-  );
-
+  const current = ++generationId;
+  resetSheet();
+  message("Loading " + quiz.path + "...");
   try {
     const data = await getJSON(quiz.path);
-
-    if (currentRequest !== requestNumber) {
-      return;
-    }
-
-    const questions = extractQuestions(data)
-      .map(normalizeQuestion)
-      .filter(Boolean);
-
-    if (!questions.length) {
-      throw new Error(
-        "No supported questions found in " +
-        quiz.path +
-        ". Check the questions array and prompt fields."
-      );
-    }
-
+    if (current !== generationId) return;
+    const questions = extractQuestions(data).map(normalizeQuestion).filter(Boolean);
+    if (!questions.length) throw new Error("No supported questions found in " + quiz.path);
     bank = questions;
-    loadedQuizPath = quiz.path;
-
+    loadedPath = quiz.path;
     reshuffle();
-
-    message(
-      "Successfully loaded " +
-      bank.length +
-      " questions from " +
-      quiz.path
-    );
+    message("Loaded " + bank.length + " questions from " + quiz.path);
   } catch (error) {
-    if (currentRequest !== requestNumber) {
-      return;
-    }
-
-    clearWorksheet();
-
-    message(
-      "Question bank error: " +
-      error.message,
-      true
-    );
+    if (current !== generationId) return;
+    resetSheet();
+    message("Question bank error: " + error.message,true);
   } finally {
-    if (currentRequest === requestNumber) {
-      $("generate").disabled = false;
-    }
+    if (current === generationId) $("generate").disabled = false;
   }
 }
-
-$("level").addEventListener(
-  "change",
-  changeLevel
-);
-
-$("quiz").addEventListener(
-  "change",
-  () => {
-    requestNumber++;
-    clearWorksheet();
-
-    const level = $("level").value;
-    const quizzes = catalog.get(level) || [];
-
-    const selected = $("quiz").value;
-
-    $("generate").disabled =
-      selected === "" ||
-      !quizzes[Number(selected)];
-
-    message(
-      $("generate").disabled
-        ? "Select a quiz."
-        : "Ready to generate a worksheet."
-    );
-  }
-);
-
-$("count").addEventListener(
-  "change",
-  () => {
-    if (bank.length) {
-      reshuffle();
-    }
-  }
-);
-
-$("generate").addEventListener(
-  "click",
-  generateWorksheet
-);
-
-$("reshuffle").addEventListener(
-  "click",
-  reshuffle
-);
-
-$("print").addEventListener(
-  "click",
-  () => window.print()
-);
-
-$("answerKey").addEventListener(
-  "change",
-  () => {
-    $("key").classList.toggle(
-      "hidden",
-      !$("answerKey").checked
-    );
-  }
-);
-
+$("level").addEventListener("change",changeLevel);
+$("quiz").addEventListener("change",() => {
+  generationId++;
+  resetSheet();
+  const selected = $("quiz").value;
+  $("generate").disabled = selected === "" || !catalog.get($("level").value)?.[Number(selected)];
+  message($("generate").disabled ? "Select a quiz." : "Ready to generate a worksheet.");
+});
+$("count").addEventListener("change",() => {if (bank.length) reshuffle();});
+$("generate").addEventListener("click",generateWorksheet);
+$("reshuffle").addEventListener("click",reshuffle);
+$("print").addEventListener("click",()=>window.print());
+$("answerKey").addEventListener("change",()=>$("key").classList.toggle("hidden",!$("answerKey").checked));
 initialize();
 </script>
-
 </body>
 </html>
