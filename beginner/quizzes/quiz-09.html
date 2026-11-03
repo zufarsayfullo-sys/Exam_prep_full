@@ -5,99 +5,193 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Quiz 09 | ExamPrep Studio</title>
+
 <style>
-:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#f6f7ff;color:#202044}
+:root{
+  font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+  background:#f6f7ff;
+  color:#202044;
+}
 *{box-sizing:border-box}
 body{margin:0}
 .wrap{max-width:920px;margin:auto;padding:16px}
 .brand{font-size:24px;font-weight:800;margin:10px 0 25px}
 .brand span{color:#7138e5}
-.card{background:white;border:1px solid #e6e4f5;border-radius:22px;padding:clamp(20px,5vw,34px);box-shadow:0 12px 36px #16164c0b;margin-bottom:20px}
+.card{
+  background:white;
+  border:1px solid #e6e4f5;
+  border-radius:22px;
+  padding:clamp(20px,5vw,34px);
+  box-shadow:0 12px 36px #16164c0b;
+  margin-bottom:20px;
+}
 h1{font-size:clamp(26px,5vw,36px);margin:8px 0 12px}
 h2{font-size:22px}
 .muted{color:#69718a;line-height:1.6}
-.tag{display:inline-block;background:#eee9ff;color:#6d36d9;padding:7px 12px;border-radius:24px;font-weight:700;font-size:13px}
+.tag{
+  display:inline-block;
+  background:#eee9ff;
+  color:#6d36d9;
+  padding:7px 12px;
+  border-radius:24px;
+  font-weight:700;
+  font-size:13px;
+}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-button{border:0;border-radius:12px;background:#7138e5;color:white;font:inherit;font-weight:700;padding:13px 20px;cursor:pointer;min-height:48px}
+button{
+  border:0;
+  border-radius:12px;
+  background:#7138e5;
+  color:white;
+  font:inherit;
+  font-weight:700;
+  padding:13px 20px;
+  cursor:pointer;
+  min-height:48px;
+}
 button.alt{background:#f0eaff;color:#6832cb}
 button:disabled{opacity:.45;cursor:default}
-input{font:inherit;border:1px solid #d9d9ef;border-radius:12px;padding:14px;width:100%;margin:8px 0 12px;min-height:50px}
 .hidden{display:none!important}
-.question{background:#f3efff;padding:23px;border-radius:16px;font-size:clamp(18px,4.5vw,22px);font-weight:700;margin:20px 0;line-height:1.6;overflow-wrap:anywhere}
-.progress{height:9px;background:#eae6fa;border-radius:20px;overflow:hidden}
+.question{
+  background:#f3efff;
+  padding:23px;
+  border-radius:16px;
+  font-size:clamp(18px,4.5vw,22px);
+  font-weight:700;
+  margin:20px 0;
+  line-height:1.6;
+  overflow-wrap:anywhere;
+}
+.progress{
+  height:9px;
+  background:#eae6fa;
+  border-radius:20px;
+  overflow:hidden;
+}
 .progress div{background:#7138e5;height:100%}
 .choices{display:grid;gap:12px;margin:18px 0}
-.choice{width:100%;text-align:left;background:white;color:#202044;border:2px solid #ded9ef;border-radius:14px;padding:17px;font-size:18px}
-.choice.chosen{background:#eee8ff;border-color:#7138e5;color:#5725bc}
-.choice:focus-visible{outline:3px solid #7138e5;outline-offset:2px}
+.choice{
+  width:100%;
+  text-align:left;
+  background:white;
+  color:#202044;
+  border:2px solid #ded9ef;
+  border-radius:14px;
+  padding:17px;
+  font-size:18px;
+}
+.choice.chosen{
+  background:#eee8ff;
+  border-color:#7138e5;
+  color:#5725bc;
+}
+.choice:focus-visible{
+  outline:3px solid #7138e5;
+  outline-offset:2px;
+}
 table{width:100%;border-collapse:collapse}
 td,th{text-align:left;border-bottom:1px solid #eee;padding:12px}
 .review{padding:12px 0;border-bottom:1px solid #eee}
 .good{color:#087e43}
 .bad{color:#bd3348}
-#notice{color:#ba273f;min-height:22px;white-space:pre-wrap}
+#notice{
+  color:#ba273f;
+  min-height:22px;
+  white-space:pre-wrap;
+}
 a{color:#6832cb}
 @media(max-width:600px){
-.card{padding:18px 15px;border-radius:17px}
-.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
-.actions button{width:100%;padding:13px 8px}
-#home button,#joinBtn{width:100%}
-#quiz .actions{position:sticky;bottom:0;background:white;padding:10px 0 4px;z-index:2}
+  .card{padding:18px 15px;border-radius:17px}
+  .actions{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .actions button{width:100%;padding:13px 8px}
+  #home button{width:100%}
+  #quiz .actions{
+    position:sticky;
+    bottom:0;
+    background:white;
+    padding:10px 0 4px;
+    z-index:2;
+  }
 }
 </style>
 </head>
+
 <body>
 <main class="wrap">
+
 <div class="brand">✦ ExamPrep <span>Studio</span></div>
 
 <section class="card" id="home">
   <span class="tag">Beginner · Grammar</span>
   <h1>Can / Can't — Complete the Sentences</h1>
-  <p class="muted">70 questions · 10 randomly selected · Pass mark 80%</p>
+  <p class="muted">
+    70 questions · 10 randomly selected · Pass mark 80%
+  </p>
   <button id="create" disabled>Loading question bank...</button>
-  <p class="muted">Students join from student.html. Start when everyone is ready.</p>
+  <p class="muted">
+    Students join from student.html. Start when everyone is ready.
+  </p>
 </section>
 
 <section class="card hidden" id="teacher">
   <span class="tag">Teacher live session</span>
   <h1>Can / Can't — Complete the Sentences</h1>
   <p>Session code: <strong id="code"></strong></p>
-  <p>Student Board:
-    <a href="../../student.html" target="_blank" rel="noopener">Open student.html</a>
+  <p>
+    Student Board:
+    <a href="../../student.html" target="_blank" rel="noopener">
+      Open student.html
+    </a>
   </p>
   <p id="count"></p>
+
   <div class="actions">
     <button id="start">Start Quiz</button>
     <button id="end" class="alt">End Session</button>
   </div>
+
   <h2>Live leaderboard</h2>
   <table>
-    <thead><tr><th>Student</th><th>Score</th></tr></thead>
+    <thead>
+      <tr><th>Student</th><th>Score</th></tr>
+    </thead>
     <tbody id="leader"></tbody>
   </table>
 </section>
 
-<section class="card hidden" id="join">
-  <span class="tag">Student joining</span>
-  <h1>Can / Can't — Complete the Sentences</h1>
-  <label for="name">Full name</label>
-  <input id="name" maxlength="80" placeholder="Enter your name">
-  <button id="joinBtn">Join Session</button>
-</section>
-
 <section class="card hidden" id="waiting">
   <h1>You're in!</h1>
-  <p class="muted">Wait for your teacher to start the quiz.</p>
+  <p class="muted">
+    Wait for your teacher to start the quiz.
+  </p>
 </section>
 
 <section class="card hidden" id="quiz">
   <span class="tag" id="counter"></span>
   <h2>Complete the sentences with can or can't.</h2>
-  <div class="progress"><div id="fill"></div></div>
+
+  <div class="progress">
+    <div id="fill"></div>
+  </div>
+
   <div class="question" id="prompt"></div>
+
   <strong>Choose one answer</strong>
-  <div id="choices" class="choices" role="group" aria-label="Answer choices"></div>
-  <p class="muted">Tap can or can't to complete the sentence.</p>
+
+  <div
+    id="choices"
+    class="choices"
+    role="group"
+    aria-label="Answer choices">
+  </div>
+
+  <p class="muted">
+    Tap can or can't to complete the sentence.
+  </p>
+
   <div class="actions">
     <button class="alt" id="prev">Previous</button>
     <button id="next">Next</button>
@@ -113,12 +207,14 @@ a{color:#6832cb}
 </section>
 
 <p id="notice" role="status"></p>
+
 </main>
 
 <script>
 "use strict";
 
 const URL_BASE="https://dfepopppcggzecdxexeh.supabase.co";
+
 const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
 
 const QUIZ_TITLE="Can / Can’t — Complete the Sentences";
@@ -127,15 +223,12 @@ const BANK_FILE="quiz-09.bank.json";
 const QUESTION_COUNT=10;
 const PASS_MARK=80;
 
-// Same shared registration keys as student.html
 const TEACHER_KEY="eps2_teacher";
 const PLAYER_KEY="eps2_player";
-
-// Quiz-specific progress
 const PROGRESS_PREFIX="eps2_quiz09_progress_";
 
 const $=id=>document.getElementById(id);
-const views=["home","teacher","join","waiting","quiz","result"];
+const views=["home","teacher","waiting","quiz","result"];
 const query=new URLSearchParams(location.search);
 
 let BANK=[];
@@ -152,7 +245,9 @@ let quizStarted=false;
 let sessionClosed=false;
 
 function show(id){
-  views.forEach(v=>$(v).classList.toggle("hidden",v!==id));
+  views.forEach(v=>{
+    $(v).classList.toggle("hidden",v!==id);
+  });
 }
 
 function notice(message){
@@ -163,17 +258,21 @@ function readStorage(key){
   try{
     const value=sessionStorage.getItem(key);
     return value?JSON.parse(value):null;
-  }catch{return null;}
+  }catch{
+    return null;
+  }
 }
 
 function writeStorage(key,value){
-  try{sessionStorage.setItem(key,JSON.stringify(value));}
-  catch{}
+  try{
+    sessionStorage.setItem(key,JSON.stringify(value));
+  }catch{}
 }
 
 function removeStorage(key){
-  try{sessionStorage.removeItem(key);}
-  catch{}
+  try{
+    sessionStorage.removeItem(key);
+  }catch{}
 }
 
 function progressKey(){
@@ -200,7 +299,9 @@ function validateBank(data){
   }
 
   if(questions.length!==70){
-    throw Error("Expected 70 questions, found "+questions.length);
+    throw Error(
+      "Expected 70 questions, found "+questions.length
+    );
   }
 
   const ids=new Set();
@@ -228,15 +329,20 @@ function validateBank(data){
       q.type!=="choose-correct"||
       !Array.isArray(q.options)||
       q.options.length!==2||
-      q.options.some(x=>typeof x!=="string"||!x.trim())||
+      q.options.some(
+        x=>typeof x!=="string"||!x.trim()
+      )||
       normalize(q.options[0])===normalize(q.options[1])||
-      !q.options.some(x=>normalize(x)===normalize(q.answer))||
+      !q.options.some(
+        x=>normalize(x)===normalize(q.answer)
+      )||
       !q.prompt.includes("___")
     ){
       throw Error("Invalid choices: "+q.id);
     }
 
     const key=normalize(q.prompt);
+
     if(prompts.has(key)){
       throw Error("Duplicate prompt: "+q.id);
     }
@@ -248,25 +354,33 @@ function validateBank(data){
 
 async function loadBank(){
   try{
-    const response=await fetch(BANK_FILE,{cache:"no-store"});
+    const response=await fetch(BANK_FILE,{
+      cache:"no-store"
+    });
 
     if(!response.ok){
-      throw Error("Question bank HTTP "+response.status);
+      throw Error(
+        "Question bank HTTP "+response.status
+      );
     }
 
     BANK=validateBank(await response.json());
+
     $("create").disabled=false;
     $("create").textContent="Create Live Session";
+    notice("");
+
     return true;
+
   }catch(error){
     BANK=[];
     $("create").disabled=true;
+    $("create").textContent="Question bank unavailable";
     notice("Question bank error: "+error.message);
     return false;
   }
 }
 
-// Preserve the existing Supabase RPC contract
 async function rpc(fn,data={}){
   const response=await fetch(
     URL_BASE+"/rest/v1/rpc/"+fn,
@@ -284,8 +398,11 @@ async function rpc(fn,data={}){
   const raw=await response.text();
   let result;
 
-  try{result=raw?JSON.parse(raw):null;}
-  catch{result=raw;}
+  try{
+    result=raw?JSON.parse(raw):null;
+  }catch{
+    result=raw;
+  }
 
   if(!response.ok){
     throw Error(
@@ -301,21 +418,32 @@ async function rpc(fn,data={}){
 
 async function run(fn){
   if(busy)return;
+
   busy=true;
   notice("");
 
-  try{await fn();}
-  catch(error){notice(error.message||String(error));}
-  finally{busy=false;}
+  try{
+    await fn();
+  }catch(error){
+    notice(error.message||String(error));
+  }finally{
+    busy=false;
+  }
 }
 
 function shuffle(items){
   const result=[...items];
 
   for(let i=result.length-1;i>0;i--){
-    const random=crypto.getRandomValues(new Uint32Array(1))[0];
+    const random=crypto.getRandomValues(
+      new Uint32Array(1)
+    )[0];
+
     const j=random%(i+1);
-    [result[i],result[j]]=[result[j],result[i]];
+
+    [result[i],result[j]]=[
+      result[j],result[i]
+    ];
   }
 
   return result;
@@ -341,7 +469,9 @@ function choose(){
   }
 
   if(result.length!==QUESTION_COUNT){
-    throw Error("Could not select 10 different questions.");
+    throw Error(
+      "Could not select 10 different questions."
+    );
   }
 
   return result;
@@ -361,7 +491,9 @@ function saveProgress(){
 
   writeStorage(progressKey(),{
     questionIds:selected.map(q=>q.id),
-    answers,index,submitted
+    answers,
+    index,
+    submitted
   });
 }
 
@@ -383,7 +515,9 @@ function restoreProgress(){
   if(
     questions.some(q=>!q)||
     new Set(saved.questionIds).size!==QUESTION_COUNT||
-    new Set(questions.map(q=>normalize(q.prompt))).size!==QUESTION_COUNT
+    new Set(
+      questions.map(q=>normalize(q.prompt))
+    ).size!==QUESTION_COUNT
   ){
     return false;
   }
@@ -397,14 +531,18 @@ function restoreProgress(){
   )?saved.answers:{};
 
   index=Number.isInteger(saved.index)
-    ?Math.max(0,Math.min(saved.index,QUESTION_COUNT-1))
+    ?Math.max(
+        0,
+        Math.min(saved.index,QUESTION_COUNT-1)
+      )
     :0;
 
   submitted=saved.submitted===true;
+
   return true;
 }
 
-// Teacher creates the live session
+// Teacher creates live session
 $("create").onclick=()=>run(async()=>{
   if(BANK.length!==70){
     throw Error("Question bank is not loaded.");
@@ -429,68 +567,28 @@ $("create").onclick=()=>run(async()=>{
   teacherToken=newToken;
   sessionClosed=false;
 
-  writeStorage(TEACHER_KEY,{code,teacherToken});
+  writeStorage(TEACHER_KEY,{
+    code,
+    teacherToken
+  });
+
   $("code").textContent=code;
   show("teacher");
 
   await poll(true);
 });
 
-// Student joins only if not already registered
-$("joinBtn").onclick=()=>run(async()=>{
-  const joinCode=query.get("join")||"";
-  const existing=readStorage(PLAYER_KEY);
-
-  if(
-    existing&&
-    existing.code===joinCode&&
-    existing.playerId
-  ){
-    code=existing.code;
-    playerId=existing.playerId;
-    show("waiting");
-    await poll(true);
-    return;
-  }
-
-  const name=$("name").value.trim();
-
-  if(!name)throw Error("Please enter your full name.");
-  if(!joinCode)throw Error("Session code is missing.");
-
-  const result=await rpc("eps2_join",{
-    p_code:joinCode,
-    p_name:name
-  });
-
-  if(!result?.player_id){
-    throw Error("Student ID was not returned.");
-  }
-
-  code=joinCode;
-  playerId=result.player_id;
-  selected=[];
-  answers={};
-  index=0;
-  submitted=false;
-  quizStarted=false;
-  sessionClosed=false;
-
-  writeStorage(PLAYER_KEY,{code,playerId});
-  show("waiting");
-  await poll(true);
-});
-
-// Teacher starts
+// Teacher starts quiz
 $("start").onclick=()=>run(async()=>{
   await rpc("eps2_start",{
     p_code:code,
     p_token:teacherToken
   });
+
   await poll(true);
 });
 
-// Teacher ends
+// Teacher ends session
 $("end").onclick=()=>run(async()=>{
   if(!confirm("End this live session?"))return;
 
@@ -501,6 +599,7 @@ $("end").onclick=()=>run(async()=>{
 
   sessionClosed=true;
   removeStorage(TEACHER_KEY);
+
   teacherToken="";
   code="";
 
@@ -534,9 +633,14 @@ function render(){
     const chosen=
       normalize(answers[q.id])===normalize(option);
 
-    button.className="choice"+(chosen?" chosen":"");
+    button.className=
+      "choice"+(chosen?" chosen":"");
+
     button.textContent=option;
-    button.setAttribute("aria-pressed",String(chosen));
+    button.setAttribute(
+      "aria-pressed",
+      String(chosen)
+    );
 
     button.onclick=()=>{
       if(submitted)return;
@@ -546,8 +650,12 @@ function render(){
 
       choices.querySelectorAll("button").forEach(b=>{
         const active=b===button;
+
         b.classList.toggle("chosen",active);
-        b.setAttribute("aria-pressed",String(active));
+        b.setAttribute(
+          "aria-pressed",
+          String(active)
+        );
       });
 
       notice("");
@@ -557,6 +665,7 @@ function render(){
   });
 
   $("prev").disabled=index===0;
+
   $("next").textContent=
     index===selected.length-1
       ?"Submit Answers"
@@ -573,14 +682,20 @@ $("prev").onclick=()=>{
   }
 };
 
+// FIXED: Next and Submit handler
 $("next").onclick=()=>run(async()=>{
   if(submitted)return;
 
   const q=selected[index];
-  if(!q)throw Error("Question unavailable.");
+
+  if(!q){
+    throw Error("Question unavailable.");
+  }
 
   if(!answers[q.id]){
-    throw Error("Please choose one answer before continuing.");
+    throw Error(
+      "Please choose one answer before continuing."
+    );
   }
 
   if(index<selected.length-1){
@@ -593,7 +708,10 @@ $("next").onclick=()=>run(async()=>{
   if(!confirm("Submit your 10 answers?"))return;
 
   const correct=selected.filter(
-    question=>isCorrect(question,answers[question.id])
+    question=>isCorrect(
+      question,
+      answers[question.id]
+    )
   ).length;
 
   const score=correct*10;
@@ -607,7 +725,7 @@ $("next").onclick=()=>run(async()=>{
   submitted=true;
   saveProgress();
   displayResult(score);
-};
+});
 
 function displayResult(score){
   quizStarted=false;
@@ -636,14 +754,23 @@ function displayResult(score){
       "Your answer: "+(answers[q.id]||"—");
 
     const feedback=document.createElement("p");
-    const correct=isCorrect(q,answers[q.id]);
+    const correct=isCorrect(
+      q,
+      answers[q.id]
+    );
 
     feedback.className=correct?"good":"bad";
+
     feedback.textContent=correct
       ?"✓ Correct"
       :"Correct answer: "+q.answer;
 
-    item.append(question,answer,feedback);
+    item.append(
+      question,
+      answer,
+      feedback
+    );
+
     review.append(item);
   });
 }
@@ -652,7 +779,7 @@ $("toggleReview").onclick=()=>{
   $("review").classList.toggle("hidden");
 };
 
-// Live polling: do not redraw the current question
+// Live polling
 async function poll(force=false){
   if(
     !code||
@@ -672,13 +799,17 @@ async function poll(force=false){
 
     if(teacherToken){
       const players=Array.isArray(state.players)
-        ?state.players:[];
+        ?state.players
+        :[];
 
       $("count").textContent=
         `${players.length} student(s) · ${state.status}`;
 
-      $("start").disabled=state.status!=="waiting";
-      $("end").disabled=state.status!=="active";
+      $("start").disabled=
+        state.status!=="waiting";
+
+      $("end").disabled=
+        state.status!=="active";
 
       const leaderboard=$("leader");
       leaderboard.replaceChildren();
@@ -688,7 +819,9 @@ async function poll(force=false){
         const name=document.createElement("td");
         const score=document.createElement("td");
 
-        name.textContent=`${i+1}. ${player.name}`;
+        name.textContent=
+          `${i+1}. ${player.name}`;
+
         score.textContent=player.completed
           ?player.score+"%"
           :"—";
@@ -698,7 +831,9 @@ async function poll(force=false){
       });
 
     }else if(playerId){
+
       if(state.status==="active"&&!submitted){
+
         if(BANK.length!==70){
           const loaded=await loadBank();
           if(!loaded)return;
@@ -724,7 +859,9 @@ async function poll(force=false){
         sessionClosed=true;
         notice("Teacher ended the session.");
 
-        if(!quizStarted)show("waiting");
+        if(!quizStarted){
+          show("waiting");
+        }
       }
     }
 
@@ -735,7 +872,7 @@ async function poll(force=false){
   }
 }
 
-// Recognize registration from student.html
+// Restore student identity from student.html
 function restoreSession(){
   if(query.has("join")){
     const saved=readStorage(PLAYER_KEY);
@@ -750,8 +887,12 @@ function restoreSession(){
       playerId=saved.playerId;
       show("waiting");
     }else{
-      show("join");
+      show("waiting");
+      notice(
+        "Student session not found. Please return to the Student Board and join the session there."
+      );
     }
+
   }else{
     const saved=readStorage(TEACHER_KEY);
 
@@ -762,6 +903,7 @@ function restoreSession(){
     ){
       code=saved.code;
       teacherToken=saved.teacherToken;
+
       $("code").textContent=code;
       show("teacher");
     }
@@ -777,7 +919,10 @@ async function initialize(){
   if(playerId){
     restoreProgress();
 
-    if(submitted&&selected.length===QUESTION_COUNT){
+    if(
+      submitted&&
+      selected.length===QUESTION_COUNT
+    ){
       const correct=selected.filter(
         q=>isCorrect(q,answers[q.id])
       ).length;
@@ -799,6 +944,7 @@ setInterval(()=>{
     poll();
   }
 },3000);
+
 </script>
 </body>
 </html>
