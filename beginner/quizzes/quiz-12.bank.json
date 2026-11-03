@@ -1,0 +1,427 @@
+{
+  "title": "Past Simple — Change the Verbs",
+  "level": "beginner",
+  "category": "Grammar",
+  "questions": [
+    {
+      "id": "bp-001",
+      "type": "fill-blank",
+      "prompt": "Elvis Presley ___ (be) born in 1935.",
+      "answer": "was"
+    },
+    {
+      "id": "bp-002",
+      "type": "fill-blank",
+      "prompt": "He ___ (live) with his parents in Mississippi.",
+      "answer": "lived"
+    },
+    {
+      "id": "bp-003",
+      "type": "fill-blank",
+      "prompt": "His family ___ (go) to Memphis in 1948.",
+      "answer": "went"
+    },
+    {
+      "id": "bp-004",
+      "type": "fill-blank",
+      "prompt": "His father ___ (want) to find a job.",
+      "answer": "wanted"
+    },
+    {
+      "id": "bp-005",
+      "type": "fill-blank",
+      "prompt": "Elvis ___ (not like) his new school.",
+      "answer": "didn't like"
+    },
+    {
+      "id": "bp-006",
+      "type": "fill-blank",
+      "prompt": "He ___ (love) music.",
+      "answer": "loved"
+    },
+    {
+      "id": "bp-007",
+      "type": "fill-blank",
+      "prompt": "He ___ (finish) school in 1953.",
+      "answer": "finished"
+    },
+    {
+      "id": "bp-008",
+      "type": "fill-blank",
+      "prompt": "He ___ (work) in different jobs.",
+      "answer": "worked"
+    },
+    {
+      "id": "bp-009",
+      "type": "fill-blank",
+      "prompt": "Elvis ___ (come) to RCA Records in 1955.",
+      "answer": "came"
+    },
+    {
+      "id": "bp-010",
+      "type": "fill-blank",
+      "prompt": "He ___ (be) famous for his music.",
+      "answer": "was"
+    },
+    {
+      "id": "bp-011",
+      "type": "fill-blank",
+      "prompt": "I ___ (visit) my grandparents last Sunday.",
+      "answer": "visited"
+    },
+    {
+      "id": "bp-012",
+      "type": "fill-blank",
+      "prompt": "She ___ (buy) a new coat yesterday.",
+      "answer": "bought"
+    },
+    {
+      "id": "bp-013",
+      "type": "fill-blank",
+      "prompt": "We ___ (watch) a film last night.",
+      "answer": "watched"
+    },
+    {
+      "id": "bp-014",
+      "type": "fill-blank",
+      "prompt": "They ___ (eat) pizza for dinner.",
+      "answer": "ate"
+    },
+    {
+      "id": "bp-015",
+      "type": "fill-blank",
+      "prompt": "My brother ___ (play) tennis on Saturday.",
+      "answer": "played"
+    },
+    {
+      "id": "bp-016",
+      "type": "fill-blank",
+      "prompt": "The children ___ (be) tired after school.",
+      "answer": "were"
+    },
+    {
+      "id": "bp-017",
+      "type": "fill-blank",
+      "prompt": "I ___ (not see) the message yesterday.",
+      "answer": "didn't see"
+    },
+    {
+      "id": "bp-018",
+      "type": "fill-blank",
+      "prompt": "He ___ (take) the bus to work.",
+      "answer": "took"
+    },
+    {
+      "id": "bp-019",
+      "type": "fill-blank",
+      "prompt": "We ___ (study) English last night.",
+      "answer": "studied"
+    },
+    {
+      "id": "bp-020",
+      "type": "fill-blank",
+      "prompt": "She ___ (make) a cake for her mother.",
+      "answer": "made"
+    },
+    {
+      "id": "bp-021",
+      "type": "fill-blank",
+      "prompt": "The train ___ (arrive) at six o’clock.",
+      "answer": "arrived"
+    },
+    {
+      "id": "bp-022",
+      "type": "fill-blank",
+      "prompt": "My parents ___ (travel) to Bukhara last year.",
+      "answer": "travelled"
+    },
+    {
+      "id": "bp-023",
+      "type": "fill-blank",
+      "prompt": "I ___ (drink) a glass of water.",
+      "answer": "drank"
+    },
+    {
+      "id": "bp-024",
+      "type": "fill-blank",
+      "prompt": "He ___ (not go) to the party.",
+      "answer": "didn't go"
+    },
+    {
+      "id": "bp-025",
+      "type": "fill-blank",
+      "prompt": "We ___ (have) breakfast at eight.",
+      "answer": "had"
+    },
+    {
+      "id": "bp-026",
+      "type": "fill-blank",
+      "prompt": "She ___ (write) an email yesterday.",
+      "answer": "wrote"
+    },
+    {
+      "id": "bp-027",
+      "type": "fill-blank",
+      "prompt": "They ___ (clean) the classroom.",
+      "answer": "cleaned"
+    },
+    {
+      "id": "bp-028",
+      "type": "fill-blank",
+      "prompt": "My sister ___ (find) her keys.",
+      "answer": "found"
+    },
+    {
+      "id": "bp-029",
+      "type": "fill-blank",
+      "prompt": "I ___ (get) up early this morning.",
+      "answer": "got"
+    },
+    {
+      "id": "bp-030",
+      "type": "fill-blank",
+      "prompt": "The teacher ___ (ask) a question.",
+      "answer": "asked"
+    },
+    {
+      "id": "bp-031",
+      "type": "fill-blank",
+      "prompt": "He ___ (break) his pencil yesterday.",
+      "answer": "broke"
+    },
+    {
+      "id": "bp-032",
+      "type": "fill-blank",
+      "prompt": "We ___ (not watch) television last night.",
+      "answer": "didn't watch"
+    },
+    {
+      "id": "bp-033",
+      "type": "fill-blank",
+      "prompt": "The baby ___ (cry) during the night.",
+      "answer": "cried"
+    },
+    {
+      "id": "bp-034",
+      "type": "fill-blank",
+      "prompt": "I ___ (meet) my friend at the café.",
+      "answer": "met"
+    },
+    {
+      "id": "bp-035",
+      "type": "fill-blank",
+      "prompt": "She ___ (open) the window.",
+      "answer": "opened"
+    },
+    {
+      "id": "bp-036",
+      "type": "fill-blank",
+      "prompt": "They ___ (leave) home at seven.",
+      "answer": "left"
+    },
+    {
+      "id": "bp-037",
+      "type": "fill-blank",
+      "prompt": "My father ___ (cook) dinner yesterday.",
+      "answer": "cooked"
+    },
+    {
+      "id": "bp-038",
+      "type": "fill-blank",
+      "prompt": "The students ___ (do) their homework.",
+      "answer": "did"
+    },
+    {
+      "id": "bp-039",
+      "type": "fill-blank",
+      "prompt": "I ___ (lose) my notebook last week.",
+      "answer": "lost"
+    },
+    {
+      "id": "bp-040",
+      "type": "fill-blank",
+      "prompt": "He ___ (carry) the bags upstairs.",
+      "answer": "carried"
+    },
+    {
+      "id": "bp-041",
+      "type": "fill-blank",
+      "prompt": "We ___ (not be) late for class.",
+      "answer": "weren't"
+    },
+    {
+      "id": "bp-042",
+      "type": "fill-blank",
+      "prompt": "She ___ (send) a letter to her cousin.",
+      "answer": "sent"
+    },
+    {
+      "id": "bp-043",
+      "type": "fill-blank",
+      "prompt": "I ___ (walk) to school yesterday.",
+      "answer": "walked"
+    },
+    {
+      "id": "bp-044",
+      "type": "fill-blank",
+      "prompt": "They ___ (swim) in the lake last summer.",
+      "answer": "swam"
+    },
+    {
+      "id": "bp-045",
+      "type": "fill-blank",
+      "prompt": "He ___ (stop) the car near the shop.",
+      "answer": "stopped"
+    },
+    {
+      "id": "bp-046",
+      "type": "fill-blank",
+      "prompt": "My mother ___ (teach) English many years ago.",
+      "answer": "taught"
+    },
+    {
+      "id": "bp-047",
+      "type": "fill-blank",
+      "prompt": "We ___ (visit) the museum on Friday.",
+      "answer": "visited"
+    },
+    {
+      "id": "bp-048",
+      "type": "fill-blank",
+      "prompt": "I ___ (not understand) the question.",
+      "answer": "didn't understand"
+    },
+    {
+      "id": "bp-049",
+      "type": "fill-blank",
+      "prompt": "She ___ (wear) a blue dress yesterday.",
+      "answer": "wore"
+    },
+    {
+      "id": "bp-050",
+      "type": "fill-blank",
+      "prompt": "The children ___ (dance) at the party.",
+      "answer": "danced"
+    },
+    {
+      "id": "bp-051",
+      "type": "fill-blank",
+      "prompt": "He ___ (run) to catch the bus.",
+      "answer": "ran"
+    },
+    {
+      "id": "bp-052",
+      "type": "fill-blank",
+      "prompt": "I ___ (not have) enough money yesterday.",
+      "answer": "didn't have"
+    },
+    {
+      "id": "bp-053",
+      "type": "fill-blank",
+      "prompt": "We ___ (listen) to music after dinner.",
+      "answer": "listened"
+    },
+    {
+      "id": "bp-054",
+      "type": "fill-blank",
+      "prompt": "My aunt ___ (give) me a present.",
+      "answer": "gave"
+    },
+    {
+      "id": "bp-055",
+      "type": "fill-blank",
+      "prompt": "They ___ (build) a small house.",
+      "answer": "built"
+    },
+    {
+      "id": "bp-056",
+      "type": "fill-blank",
+      "prompt": "She ___ (phone) her friend last night.",
+      "answer": "phoned"
+    },
+    {
+      "id": "bp-057",
+      "type": "fill-blank",
+      "prompt": "I ___ (read) a short story yesterday.",
+      "answer": "read"
+    },
+    {
+      "id": "bp-058",
+      "type": "fill-blank",
+      "prompt": "He ___ (not finish) his homework.",
+      "answer": "didn't finish"
+    },
+    {
+      "id": "bp-059",
+      "type": "fill-blank",
+      "prompt": "The shop ___ (close) at nine last night.",
+      "answer": "closed"
+    },
+    {
+      "id": "bp-060",
+      "type": "fill-blank",
+      "prompt": "We ___ (see) a beautiful bird in the park.",
+      "answer": "saw"
+    },
+    {
+      "id": "bp-061",
+      "type": "fill-blank",
+      "prompt": "My friends ___ (be) at the cinema yesterday.",
+      "answer": "were"
+    },
+    {
+      "id": "bp-062",
+      "type": "fill-blank",
+      "prompt": "She ___ (choose) a red bag.",
+      "answer": "chose"
+    },
+    {
+      "id": "bp-063",
+      "type": "fill-blank",
+      "prompt": "I ___ (help) my neighbour on Sunday.",
+      "answer": "helped"
+    },
+    {
+      "id": "bp-064",
+      "type": "fill-blank",
+      "prompt": "They ___ (not buy) any tickets.",
+      "answer": "didn't buy"
+    },
+    {
+      "id": "bp-065",
+      "type": "fill-blank",
+      "prompt": "He ___ (sleep) for nine hours.",
+      "answer": "slept"
+    },
+    {
+      "id": "bp-066",
+      "type": "fill-blank",
+      "prompt": "We ___ (enjoy) the concert last weekend.",
+      "answer": "enjoyed"
+    },
+    {
+      "id": "bp-067",
+      "type": "fill-blank",
+      "prompt": "The dog ___ (catch) the ball.",
+      "answer": "caught"
+    },
+    {
+      "id": "bp-068",
+      "type": "fill-blank",
+      "prompt": "I ___ (not be) at home last night.",
+      "answer": "wasn't"
+    },
+    {
+      "id": "bp-069",
+      "type": "fill-blank",
+      "prompt": "She ___ (start) a new job in April.",
+      "answer": "started"
+    },
+    {
+      "id": "bp-070",
+      "type": "fill-blank",
+      "prompt": "They ___ (fly) to Istanbul last month.",
+      "answer": "flew"
+    }
+  ]
+}
