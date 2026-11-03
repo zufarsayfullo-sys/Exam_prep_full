@@ -106,5 +106,14 @@
   "file": "quiz-12.html",
   "bank": "quiz-12.bank.json",
   "questionCount": 70
+  },
+  {
+  "id": "beginner-013",
+  "title": "There Is / There Are — Options",
+  "category": "Grammar",
+  "level": "beginner",
+  "file": "quiz-13.html",
+  "bank": "quiz-13.bank.json",
+  "questionCount": 70
   }
 ]
