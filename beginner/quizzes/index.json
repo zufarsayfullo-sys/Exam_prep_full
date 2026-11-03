@@ -97,5 +97,14 @@
   "file": "quiz-11.html",
   "bank": "quiz-11.bank.json",
   "questionCount": 70
+  },
+  {
+  "id": "beginner-012",
+  "title": "Past Simple — Change the Verbs",
+  "category": "Grammar",
+  "level": "beginner",
+  "file": "quiz-12.html",
+  "bank": "quiz-12.bank.json",
+  "questionCount": 70
   }
 ]
