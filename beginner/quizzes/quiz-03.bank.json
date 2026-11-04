@@ -433,18 +433,3 @@
       "prompt":"On 24 February 1955, Steve Jobs ___.","answer":"was born"
     }
   ]
-}
-</CodeBlock>
-3. Catalogue entry for beginner/quizzes/index.json
-Replace your existing Quiz 03 entry with this object, rather than adding a duplicate.
-
-<CodeBlock language="json" editable>
-{
-  "id": "beginner-003",
-  "title": "Past Simple — Was Born / Died",
-  "category": "Grammar",
-  "level": "beginner",
-  "file": "quiz-03.html",
-  "bank": "quiz-03.bank.json",
-  "questionCount": 70
-}
