@@ -6,43 +6,90 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Quiz 07 | ExamPrep Studio</title>
 <style>
-:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#f6f7ff;color:#202044}
+:root{
+  font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+  background:#f6f7ff;color:#202044
+}
 *{box-sizing:border-box}
 body{margin:0}
 .wrap{max-width:920px;margin:auto;padding:16px}
 .brand{font-size:24px;font-weight:800;margin:10px 0 25px}
 .brand span{color:#7138e5}
-.card{background:white;border:1px solid #e6e4f5;border-radius:22px;padding:clamp(20px,5vw,34px);box-shadow:0 12px 36px #16164c0b;margin-bottom:20px}
+.card{
+  background:white;border:1px solid #e6e4f5;
+  border-radius:22px;padding:clamp(20px,5vw,34px);
+  box-shadow:0 12px 36px #16164c0b;
+  margin-bottom:20px
+}
 h1{font-size:clamp(26px,5vw,36px);margin:8px 0 12px}
 h2{font-size:22px}
 .muted{color:#69718a;line-height:1.6}
-.tag{display:inline-block;background:#eee9ff;color:#6d36d9;padding:7px 12px;border-radius:24px;font-weight:700;font-size:13px}
+.tag{
+  display:inline-block;background:#eee9ff;color:#6d36d9;
+  padding:7px 12px;border-radius:24px;
+  font-weight:700;font-size:13px
+}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-button{border:0;border-radius:12px;background:#7138e5;color:white;font:inherit;font-weight:700;padding:13px 20px;cursor:pointer;min-height:48px}
+button{
+  border:0;border-radius:12px;background:#7138e5;
+  color:white;font:inherit;font-weight:700;
+  padding:13px 20px;cursor:pointer;min-height:48px
+}
 button.alt{background:#f0eaff;color:#6832cb}
 button:disabled{opacity:.45;cursor:default}
-input{font:inherit;border:1px solid #d9d9ef;border-radius:12px;padding:14px;width:100%;margin:8px 0 12px;min-height:50px}
 .hidden{display:none!important}
-.question{background:#f3efff;padding:23px;border-radius:16px;font-size:clamp(18px,4.5vw,22px);font-weight:700;margin:20px 0;line-height:1.6;overflow-wrap:anywhere}
-.progress{height:9px;background:#eae6fa;border-radius:20px;overflow:hidden}
-.progress div{background:#7138e5;height:100%}
-.choices{display:grid;gap:12px;margin:18px 0}
-.choice{width:100%;text-align:left;background:white;color:#202044;border:2px solid #ded9ef;border-radius:14px;padding:17px;font-size:18px}
-.choice.chosen{background:#eee8ff;border-color:#7138e5;color:#5725bc}
-.choice:focus-visible{outline:3px solid #7138e5;outline-offset:2px}
+.progress{
+  height:9px;background:#eae6fa;
+  border-radius:20px;overflow:hidden;margin:18px 0
+}
+.progress div{height:100%;background:#7138e5;width:0}
+.verb-panel{
+  background:#f3efff;border-radius:18px;
+  padding:clamp(20px,5vw,35px);margin:24px 0
+}
+.verb-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr);
+  gap:14px;align-items:center
+}
+.verb-col{min-width:0}
+.verb-label{
+  font-size:12px;font-weight:800;color:#69718a;
+  letter-spacing:.04em;margin-bottom:12px
+}
+.verb{
+  font-size:clamp(29px,6vw,44px);
+  font-weight:800;overflow-wrap:anywhere
+}
+.arrow{font-size:25px;text-align:center;color:#7138e5}
+.answer{
+  width:100%;min-height:56px;
+  border:2px solid #c8b8f5;border-radius:12px;
+  padding:10px;font:inherit;font-size:22px;
+  color:#202044;background:white;text-align:center
+}
+.answer:focus{
+  outline:3px solid #dacdff;
+  border-color:#7138e5
+}
 table{width:100%;border-collapse:collapse}
 td,th{text-align:left;border-bottom:1px solid #eee;padding:12px}
-.review{padding:12px 0;border-bottom:1px solid #eee}
+.review{padding:14px 0;border-bottom:1px solid #eee}
 .good{color:#087e43}
 .bad{color:#bd3348}
 #notice{color:#ba273f;min-height:22px;white-space:pre-wrap}
 a{color:#6832cb}
 @media(max-width:600px){
-.card{padding:18px 15px;border-radius:17px}
-.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
-.actions button{width:100%;padding:13px 8px}
-#home button,#joinBtn{width:100%}
-#quiz .actions{position:sticky;bottom:0;background:white;padding:10px 0 4px;z-index:2}
+  .card{padding:18px 15px;border-radius:17px}
+  .actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .actions button{width:100%;padding:13px 8px}
+  #home button{width:100%}
+  #quiz .actions{
+    position:sticky;bottom:0;background:white;
+    padding:10px 0 4px;z-index:2
+  }
+  .verb-grid{gap:7px;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr)}
+  .answer{font-size:18px;padding:8px}
+  .verb-label{font-size:10px}
 }
 </style>
 </head>
@@ -53,17 +100,25 @@ a{color:#6832cb}
 <section class="card" id="home">
   <span class="tag">Beginner · Grammar</span>
   <h1>Irregular Verbs — Past Simple</h1>
-  <p class="muted">70 questions · 10 randomly selected · Pass mark 80%</p>
+  <p class="muted">
+    70 verbs · 10 randomly selected · Pass mark 80%
+  </p>
   <button id="create" disabled>Loading question bank...</button>
-  <p class="muted">Students join from student.html. Start when everyone is ready.</p>
+  <p class="muted">
+    Students join through student.html.
+    Start when everyone is ready.
+  </p>
 </section>
 
 <section class="card hidden" id="teacher">
   <span class="tag">Teacher live session</span>
   <h1>Irregular Verbs — Past Simple</h1>
   <p>Session code: <strong id="code"></strong></p>
-  <p>Student Board:
-    <a href="../../student.html" target="_blank" rel="noopener">Open student.html</a>
+  <p>
+    Student Board:
+    <a href="../../student.html" target="_blank" rel="noopener">
+      Open student.html
+    </a>
   </p>
   <p id="count"></p>
   <div class="actions">
@@ -72,17 +127,20 @@ a{color:#6832cb}
   </div>
   <h2>Live leaderboard</h2>
   <table>
-    <thead><tr><th>Student</th><th>Score</th></tr></thead>
+    <thead>
+      <tr><th>Student</th><th>Score</th></tr>
+    </thead>
     <tbody id="leader"></tbody>
   </table>
 </section>
 
 <section class="card hidden" id="join">
-  <span class="tag">Student joining</span>
-  <h1>Irregular Verbs — Past Simple</h1>
-  <label for="name">Full name</label>
-  <input id="name" maxlength="80" placeholder="Enter your name">
-  <button id="joinBtn">Join Session</button>
+  <h1>Join through the Student Board</h1>
+  <p class="muted">
+    Register once on student.html.
+    You will not be asked for your name again here.
+  </p>
+  <a href="../../student.html">Return to Student Board</a>
 </section>
 
 <section class="card hidden" id="waiting">
@@ -92,12 +150,40 @@ a{color:#6832cb}
 
 <section class="card hidden" id="quiz">
   <span class="tag" id="counter"></span>
-  <h2>Choose the correct past simple form.</h2>
+  <h2>Write the Past Simple form (V2).</h2>
+  <p class="muted">
+    Look at the base form (V1) and type its past simple form.
+  </p>
   <div class="progress"><div id="fill"></div></div>
-  <div class="question" id="prompt"></div>
-  <strong>Choose one answer</strong>
-  <div id="choices" class="choices" role="group" aria-label="Answer choices"></div>
-  <p class="muted">Tap the correct option to complete the sentence.</p>
+
+  <div class="verb-panel">
+    <div class="verb-grid">
+      <div class="verb-col">
+        <div class="verb-label">BASE FORM (V1)</div>
+        <div class="verb" id="baseVerb"></div>
+      </div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="verb-col">
+        <label class="verb-label" for="answerInput">
+          PAST SIMPLE (V2)
+        </label>
+        <input
+          id="answerInput"
+          class="answer"
+          type="text"
+          placeholder="Type V2"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          maxlength="40"
+        >
+      </div>
+    </div>
+  </div>
+
+  <p class="muted">
+    Write only the verb. Capital letters do not matter.
+  </p>
   <div class="actions">
     <button class="alt" id="prev">Previous</button>
     <button id="next">Next</button>
@@ -112,13 +198,12 @@ a{color:#6832cb}
   <div class="hidden" id="review"></div>
 </section>
 
-<p id="notice" role="status"></p>
+<p id="notice" role="status" aria-live="polite"></p>
 </main>
 
 <script>
 "use strict";
 
-/* Existing Supabase connection and RPC contract */
 const URL_BASE="https://dfepopppcggzecdxexeh.supabase.co";
 const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
 
@@ -128,12 +213,9 @@ const BANK_FILE="quiz-07.bank.json";
 const QUESTION_COUNT=10;
 const PASS_MARK=80;
 
-/* Shared keys: recognize registration from student.html */
 const TEACHER_KEY="eps2_teacher";
 const PLAYER_KEY="eps2_player";
-
-/* Quiz-specific progress */
-const PROGRESS_PREFIX="eps2_quiz07_progress_";
+const PROGRESS_PREFIX="eps2_quiz07_v2_progress_";
 
 const $=id=>document.getElementById(id);
 const views=["home","teacher","join","waiting","quiz","result"];
@@ -151,6 +233,7 @@ let busy=false;
 let polling=false;
 let quizStarted=false;
 let sessionClosed=false;
+let bankLoading=null;
 
 function show(id){
   views.forEach(v=>$(v).classList.toggle("hidden",v!==id));
@@ -176,9 +259,8 @@ function writeStorage(key,value){
 }
 
 function removeStorage(key){
-  try{
-    sessionStorage.removeItem(key);
-  }catch{}
+  try{sessionStorage.removeItem(key);}
+  catch{}
 }
 
 function progressKey(){
@@ -186,18 +268,23 @@ function progressKey(){
 }
 
 function normalize(value){
-  return String(value||"")
+  return String(value??"")
     .toLowerCase()
-    .replace(/[’‘`]/g,"'")
-    .replace(/\s+/g," ")
-    .trim();
+    .trim()
+    .replace(/\s+/g," ");
 }
 
-function isCorrect(question,answer){
-  return normalize(question.answer)===normalize(answer);
+function acceptedAnswers(q){
+  return [q.answer,...(q.alternatives||[])];
 }
 
-/* Validate all 70 questions before allowing a session */
+function isCorrect(q,answer){
+  const student=normalize(answer);
+  return acceptedAnswers(q).some(
+    correct=>normalize(correct)===student
+  );
+}
+
 function validateBank(data){
   const questions=Array.isArray(data)?data:data?.questions;
 
@@ -210,84 +297,87 @@ function validateBank(data){
   }
 
   const ids=new Set();
-  const prompts=new Set();
+  const verbs=new Set();
 
   for(const q of questions){
     if(
       !q||
+      q.type!=="verb-form"||
       typeof q.id!=="string"||
       typeof q.prompt!=="string"||
       typeof q.answer!=="string"||
       !q.id.trim()||
       !q.prompt.trim()||
-      !q.answer.trim()
+      !q.answer.trim()||
+      (q.alternatives!==undefined&&(
+        !Array.isArray(q.alternatives)||
+        q.alternatives.some(
+          a=>typeof a!=="string"||!a.trim()
+        )
+      ))
     ){
-      throw Error("A question contains invalid fields.");
+      throw Error("Invalid question: "+(q?.id||"unknown"));
     }
 
     if(ids.has(q.id)){
-      throw Error("Duplicate question ID: "+q.id);
+      throw Error("Duplicate ID: "+q.id);
     }
     ids.add(q.id);
 
-    if(
-      q.type!=="choose-correct"||
-      !Array.isArray(q.options)||
-      q.options.length!==2||
-      q.options.some(x=>typeof x!=="string"||!x.trim())||
-      normalize(q.options[0])===normalize(q.options[1])||
-      !q.options.some(x=>normalize(x)===normalize(q.answer))||
-      !q.prompt.includes("___")
-    ){
-      throw Error("Invalid answer choices: "+q.id);
+    const verb=normalize(q.prompt);
+    if(verbs.has(verb)){
+      throw Error("Duplicate base verb: "+q.prompt);
     }
-
-    const key=normalize(q.prompt);
-
-    if(prompts.has(key)){
-      throw Error("Duplicate question: "+q.id);
-    }
-
-    prompts.add(key);
+    verbs.add(verb);
   }
 
   return questions;
 }
 
 async function loadBank(){
-  try{
-    const response=await fetch(BANK_FILE,{cache:"no-store"});
+  if(BANK.length===70)return true;
+  if(bankLoading)return bankLoading;
 
-    if(!response.ok){
-      throw Error("Question bank HTTP "+response.status);
+  bankLoading=(async()=>{
+    try{
+      const response=await fetch(BANK_FILE,{cache:"no-store"});
+
+      if(!response.ok){
+        throw Error("Question bank HTTP "+response.status);
+      }
+
+      BANK=validateBank(await response.json());
+      $("create").disabled=false;
+      $("create").textContent="Create Live Session";
+      notice("");
+      return true;
+    }catch(error){
+      BANK=[];
+      $("create").disabled=true;
+      $("create").textContent="Question bank unavailable";
+      notice("Question bank error: "+error.message);
+      return false;
     }
+  })();
 
-    BANK=validateBank(await response.json());
-    $("create").disabled=false;
-    $("create").textContent="Create Live Session";
-    return true;
-  }catch(error){
-    BANK=[];
-    $("create").disabled=true;
-    notice("Question bank error: "+error.message);
-    return false;
+  try{
+    return await bankLoading;
+  }finally{
+    bankLoading=null;
   }
 }
 
-/* Supabase functions: names and parameters unchanged */
+// Existing Supabase RPC contract: unchanged.
 async function rpc(fn,data={}){
-  const response=await fetch(
-    URL_BASE+"/rest/v1/rpc/"+fn,
-    {
-      method:"POST",
-      headers:{
-        apikey:PUBLIC_KEY,
-        Authorization:"Bearer "+PUBLIC_KEY,
-        "Content-Type":"application/json"
-      },
-      body:JSON.stringify(data)
-    }
-  );
+  const response=await fetch(URL_BASE+"/rest/v1/rpc/"+fn,{
+    method:"POST",
+    headers:{
+      apikey:PUBLIC_KEY,
+      Authorization:"Bearer "+PUBLIC_KEY,
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(data)
+  });
 
   const raw=await response.text();
   let result;
@@ -336,31 +426,11 @@ function shuffle(items){
   return result;
 }
 
-/* Select ten distinct question texts */
 function choose(){
   if(BANK.length!==70){
     throw Error("Question bank is not ready.");
   }
-
-  const result=[];
-  const seen=new Set();
-
-  for(const q of shuffle(BANK)){
-    const key=normalize(q.prompt);
-
-    if(seen.has(key))continue;
-
-    seen.add(key);
-    result.push(q);
-
-    if(result.length===QUESTION_COUNT)break;
-  }
-
-  if(result.length!==QUESTION_COUNT){
-    throw Error("Could not select 10 different questions.");
-  }
-
-  return result;
+  return shuffle(BANK).slice(0,QUESTION_COUNT);
 }
 
 function sessionCode(){
@@ -372,7 +442,6 @@ function sessionCode(){
   ).join("");
 }
 
-/* Save the selected questions and student answers */
 function saveProgress(){
   if(!code||!playerId||!selected.length)return;
 
@@ -401,13 +470,13 @@ function restoreProgress(){
 
   if(
     questions.some(q=>!q)||
-    new Set(saved.questionIds).size!==QUESTION_COUNT||
-    new Set(questions.map(q=>normalize(q.prompt))).size!==QUESTION_COUNT
+    new Set(saved.questionIds).size!==QUESTION_COUNT
   ){
     return false;
   }
 
   selected=questions;
+
   answers=(
     saved.answers&&
     typeof saved.answers==="object"&&
@@ -422,7 +491,7 @@ function restoreProgress(){
   return true;
 }
 
-/* Teacher creates and publishes the quiz */
+// Teacher creates a live session.
 $("create").onclick=()=>run(async()=>{
   if(BANK.length!==70){
     throw Error("Question bank is not loaded.");
@@ -454,62 +523,16 @@ $("create").onclick=()=>run(async()=>{
   await poll(true);
 });
 
-/* Student joins only if not already registered */
-$("joinBtn").onclick=()=>run(async()=>{
-  const joinCode=query.get("join")||"";
-  const existing=readStorage(PLAYER_KEY);
-
-  if(
-    existing&&
-    existing.code===joinCode&&
-    existing.playerId
-  ){
-    code=existing.code;
-    playerId=existing.playerId;
-    show("waiting");
-    await poll(true);
-    return;
-  }
-
-  const name=$("name").value.trim();
-
-  if(!name)throw Error("Please enter your full name.");
-  if(!joinCode)throw Error("Session code is missing.");
-
-  const result=await rpc("eps2_join",{
-    p_code:joinCode,
-    p_name:name
-  });
-
-  if(!result?.player_id){
-    throw Error("Student ID was not returned.");
-  }
-
-  code=joinCode;
-  playerId=result.player_id;
-  selected=[];
-  answers={};
-  index=0;
-  submitted=false;
-  quizStarted=false;
-  sessionClosed=false;
-
-  writeStorage(PLAYER_KEY,{code,playerId});
-  show("waiting");
-  await poll(true);
-});
-
-/* Teacher starts the session */
+// Teacher starts the quiz.
 $("start").onclick=()=>run(async()=>{
   await rpc("eps2_start",{
     p_code:code,
     p_token:teacherToken
   });
-
   await poll(true);
 });
 
-/* Teacher ends the session */
+// Teacher ends the session.
 $("end").onclick=()=>run(async()=>{
   if(!confirm("End this live session?"))return;
 
@@ -522,17 +545,23 @@ $("end").onclick=()=>run(async()=>{
   removeStorage(TEACHER_KEY);
   teacherToken="";
   code="";
-
   show("home");
   notice("Session ended.");
 });
 
-/* Show one question at a time */
+function saveCurrentAnswer(){
+  const q=selected[index];
+  if(!q)return;
+
+  answers[q.id]=$("answerInput").value;
+  saveProgress();
+}
+
 function render(){
   const q=selected[index];
 
   if(!q){
-    notice("Question unavailable. Please reload the quiz.");
+    notice("Question unavailable. Please reload.");
     return;
   }
 
@@ -542,51 +571,33 @@ function render(){
   $("fill").style.width=
     ((index+1)/selected.length*100)+"%";
 
-  $("prompt").textContent=q.prompt;
-
-  const choices=$("choices");
-  choices.replaceChildren();
-
-  q.options.forEach(option=>{
-    const button=document.createElement("button");
-    button.type="button";
-
-    const chosen=
-      normalize(answers[q.id])===normalize(option);
-
-    button.className="choice"+(chosen?" chosen":"");
-    button.textContent=option;
-    button.setAttribute("aria-pressed",String(chosen));
-
-    button.onclick=()=>{
-      if(submitted)return;
-
-      answers[q.id]=option;
-      saveProgress();
-
-      choices.querySelectorAll("button").forEach(b=>{
-        const active=b===button;
-        b.classList.toggle("chosen",active);
-        b.setAttribute("aria-pressed",String(active));
-      });
-
-      notice("");
-    };
-
-    choices.append(button);
-  });
+  $("baseVerb").textContent=q.prompt;
+  $("answerInput").value=answers[q.id]||"";
 
   $("prev").disabled=index===0;
-
   $("next").textContent=
     index===selected.length-1
       ?"Submit Answers"
       :"Next";
 }
 
-/* Previous question */
+$("answerInput").addEventListener("input",()=>{
+  if(!selected[index]||submitted)return;
+  saveCurrentAnswer();
+  notice("");
+});
+
+$("answerInput").addEventListener("keydown",event=>{
+  if(event.key==="Enter"){
+    event.preventDefault();
+    $("next").click();
+  }
+});
+
 $("prev").onclick=()=>{
   if(submitted||!selected.length)return;
+
+  saveCurrentAnswer();
 
   if(index>0){
     index--;
@@ -595,18 +606,16 @@ $("prev").onclick=()=>{
   }
 };
 
-/* Next question and score submission */
 $("next").onclick=()=>run(async()=>{
   if(submitted)return;
 
   const q=selected[index];
+  if(!q)throw Error("Question unavailable.");
 
-  if(!q){
-    throw Error("Question unavailable.");
-  }
+  saveCurrentAnswer();
 
-  if(!answers[q.id]){
-    throw Error("Please choose one answer before continuing.");
+  if(!normalize(answers[q.id])){
+    throw Error("Please write the past simple form.");
   }
 
   if(index<selected.length-1){
@@ -635,7 +644,6 @@ $("next").onclick=()=>run(async()=>{
   displayResult(score);
 });
 
-/* Result and review */
 function displayResult(score){
   quizStarted=false;
   show("result");
@@ -655,12 +663,12 @@ function displayResult(score){
     const item=document.createElement("div");
     item.className="review";
 
-    const question=document.createElement("strong");
-    question.textContent=q.prompt;
+    const verb=document.createElement("strong");
+    verb.textContent="V1: "+q.prompt;
 
     const answer=document.createElement("p");
     answer.textContent=
-      "Your answer: "+(answers[q.id]||"—");
+      "Your V2: "+(answers[q.id]||"—");
 
     const feedback=document.createElement("p");
     const correct=isCorrect(q,answers[q.id]);
@@ -668,9 +676,9 @@ function displayResult(score){
     feedback.className=correct?"good":"bad";
     feedback.textContent=correct
       ?"✓ Correct"
-      :"Correct answer: "+q.answer;
+      :"Correct V2: "+acceptedAnswers(q).join(" / ");
 
-    item.append(question,answer,feedback);
+    item.append(verb,answer,feedback);
     review.append(item);
   });
 }
@@ -679,7 +687,7 @@ $("toggleReview").onclick=()=>{
   $("review").classList.toggle("hidden");
 };
 
-/* Poll without redrawing active questions */
+// Live polling does not redraw an active question.
 async function poll(force=false){
   if(
     !code||
@@ -705,7 +713,7 @@ async function poll(force=false){
         `${players.length} student(s) · ${state.status}`;
 
       $("start").disabled=state.status!=="waiting";
-      $("end").disabled=state.status!=="active";
+      $("end").disabled=state.status==="completed";
 
       const leaderboard=$("leader");
       leaderboard.replaceChildren();
@@ -740,7 +748,6 @@ async function poll(force=false){
           }
         }
 
-        /* Render only once when the quiz starts */
         if(!quizStarted){
           quizStarted=true;
           show("quiz");
@@ -751,13 +758,9 @@ async function poll(force=false){
       if(state.status==="completed"&&!submitted){
         sessionClosed=true;
         notice("Teacher ended the session.");
-
-        if(!quizStarted){
-          show("waiting");
-        }
+        if(!quizStarted)show("waiting");
       }
     }
-
   }catch(error){
     notice(error.message||String(error));
   }finally{
@@ -765,7 +768,8 @@ async function poll(force=false){
   }
 }
 
-/* Recognize students registered by student.html */
+// Student registration happens ONLY in student.html.
+// This quiz never asks for a name or calls eps2_join.
 function restoreSession(){
   if(query.has("join")){
     const saved=readStorage(PLAYER_KEY);
@@ -781,8 +785,8 @@ function restoreSession(){
       show("waiting");
     }else{
       show("join");
+      notice("Please register through the Student Board first.");
     }
-
   }else{
     const saved=readStorage(TEACHER_KEY);
 
