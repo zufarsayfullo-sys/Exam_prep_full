@@ -1,498 +1,450 @@
-
 {
   "title": "Past Simple — Was Born / Died",
   "level": "beginner",
   "category": "Grammar",
   "questions": [
     {
-      "id": "bd-001",
-      "type": "born",
-      "prompt": "Elvis Presley ___ (be born) in Mississippi in 1935.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-001","type":"fill-blank",
+      "person":"Marie Curie","role":"Scientist",
+      "born":"7 November 1867","died":"4 July 1934",
+      "prompt":"Marie Curie ___ on 7 November 1867.","answer":"was born"
     },
     {
-      "id": "bd-002",
-      "type": "died",
-      "prompt": "Elvis Presley ___ (die) in 1977.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-002","type":"fill-blank",
+      "person":"Marie Curie","role":"Scientist",
+      "born":"7 November 1867","died":"4 July 1934",
+      "prompt":"Marie Curie ___ in 1934.","answer":"died"
     },
     {
-      "id": "bd-003",
-      "type": "born",
-      "prompt": "Albert Einstein ___ (be born) in Germany in 1879.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-003","type":"fill-blank",
+      "person":"Marie Curie","role":"Scientist",
+      "born":"7 November 1867","died":"4 July 1934",
+      "prompt":"The scientist Marie Curie ___ in 1867.","answer":"was born"
     },
     {
-      "id": "bd-004",
-      "type": "died",
-      "prompt": "Albert Einstein ___ (die) in 1955.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-004","type":"fill-blank",
+      "person":"Marie Curie","role":"Scientist",
+      "born":"7 November 1867","died":"4 July 1934",
+      "prompt":"On 4 July 1934, Marie Curie ___.","answer":"died"
     },
     {
-      "id": "bd-005",
-      "type": "born",
-      "prompt": "Marie Curie ___ (be born) in Poland in 1867.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-005","type":"fill-blank",
+      "person":"Marie Curie","role":"Scientist",
+      "born":"7 November 1867","died":"4 July 1934",
+      "prompt":"Marie Curie ___ in November 1867.","answer":"was born"
     },
     {
-      "id": "bd-006",
-      "type": "died",
-      "prompt": "Marie Curie ___ (die) in 1934.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-006","type":"fill-blank",
+      "person":"Marie Curie","role":"Scientist",
+      "born":"7 November 1867","died":"4 July 1934",
+      "prompt":"In July 1934, Marie Curie ___.","answer":"died"
     },
     {
-      "id": "bd-007",
-      "type": "born",
-      "prompt": "William Shakespeare ___ (be born) in England in 1564.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-007","type":"fill-blank",
+      "person":"Marie Curie","role":"Scientist",
+      "born":"7 November 1867","died":"4 July 1934",
+      "prompt":"On 7 November 1867, Marie Curie ___.","answer":"was born"
     },
-    {
-      "id": "bd-008",
-      "type": "died",
-      "prompt": "William Shakespeare ___ (die) in 1616.",
-      "answer": "died",
-      "points": 1
+
+{
+      "id":"bg-03-008","type":"fill-blank",
+      "person":"Vincent van Gogh","role":"Painter",
+      "born":"30 March 1853","died":"29 July 1890",
+      "prompt":"Vincent van Gogh ___ on 30 March 1853.","answer":"was born"
     },
     {
-      "id": "bd-009",
-      "type": "born",
-      "prompt": "Leonardo da Vinci ___ (be born) in Italy in 1452.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-009","type":"fill-blank",
+      "person":"Vincent van Gogh","role":"Painter",
+      "born":"30 March 1853","died":"29 July 1890",
+      "prompt":"Vincent van Gogh ___ in 1890.","answer":"died"
     },
     {
-      "id": "bd-010",
-      "type": "died",
-      "prompt": "Leonardo da Vinci ___ (die) in France in 1519.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-010","type":"fill-blank",
+      "person":"Vincent van Gogh","role":"Painter",
+      "born":"30 March 1853","died":"29 July 1890",
+      "prompt":"The painter Vincent van Gogh ___ in 1853.","answer":"was born"
     },
     {
-      "id": "bd-011",
-      "type": "born",
-      "prompt": "Michael Jackson ___ (be born) in 1958.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-011","type":"fill-blank",
+      "person":"Vincent van Gogh","role":"Painter",
+      "born":"30 March 1853","died":"29 July 1890",
+      "prompt":"On 29 July 1890, Vincent van Gogh ___.","answer":"died"
     },
     {
-      "id": "bd-012",
-      "type": "died",
-      "prompt": "Michael Jackson ___ (die) in 2009.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-012","type":"fill-blank",
+      "person":"Vincent van Gogh","role":"Painter",
+      "born":"30 March 1853","died":"29 July 1890",
+      "prompt":"Vincent van Gogh ___ in March 1853.","answer":"was born"
     },
     {
-      "id": "bd-013",
-      "type": "born",
-      "prompt": "Princess Diana ___ (be born) in 1961.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-013","type":"fill-blank",
+      "person":"Vincent van Gogh","role":"Painter",
+      "born":"30 March 1853","died":"29 July 1890",
+      "prompt":"In July 1890, Vincent van Gogh ___.","answer":"died"
     },
     {
-      "id": "bd-014",
-      "type": "died",
-      "prompt": "Princess Diana ___ (die) in 1997.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-014","type":"fill-blank",
+      "person":"Vincent van Gogh","role":"Painter",
+      "born":"30 March 1853","died":"29 July 1890",
+      "prompt":"On 30 March 1853, Vincent van Gogh ___.","answer":"was born"
     },
-    {
-      "id": "bd-015",
-      "type": "born",
-      "prompt": "Steve Jobs ___ (be born) in 1955.",
-      "answer": "was born",
-      "points": 1
+
+{
+      "id":"bg-03-015","type":"fill-blank",
+      "person":"Muhammad Ali","role":"Boxer",
+      "born":"17 January 1942","died":"3 June 2016",
+      "prompt":"Muhammad Ali ___ on 17 January 1942.","answer":"was born"
     },
     {
-      "id": "bd-016",
-      "type": "died",
-      "prompt": "Steve Jobs ___ (die) in 2011.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-016","type":"fill-blank",
+      "person":"Muhammad Ali","role":"Boxer",
+      "born":"17 January 1942","died":"3 June 2016",
+      "prompt":"Muhammad Ali ___ in 2016.","answer":"died"
     },
     {
-      "id": "bd-017",
-      "type": "born",
-      "prompt": "Nelson Mandela ___ (be born) in South Africa in 1918.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-017","type":"fill-blank",
+      "person":"Muhammad Ali","role":"Boxer",
+      "born":"17 January 1942","died":"3 June 2016",
+      "prompt":"The boxer Muhammad Ali ___ in 1942.","answer":"was born"
     },
     {
-      "id": "bd-018",
-      "type": "died",
-      "prompt": "Nelson Mandela ___ (die) in 2013.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-018","type":"fill-blank",
+      "person":"Muhammad Ali","role":"Boxer",
+      "born":"17 January 1942","died":"3 June 2016",
+      "prompt":"On 3 June 2016, Muhammad Ali ___.","answer":"died"
     },
     {
-      "id": "bd-019",
-      "type": "born",
-      "prompt": "Queen Elizabeth II ___ (be born) in 1926.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-019","type":"fill-blank",
+      "person":"Muhammad Ali","role":"Boxer",
+      "born":"17 January 1942","died":"3 June 2016",
+      "prompt":"Muhammad Ali ___ in January 1942.","answer":"was born"
     },
     {
-      "id": "bd-020",
-      "type": "died",
-      "prompt": "Queen Elizabeth II ___ (die) in 2022.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-020","type":"fill-blank",
+      "person":"Muhammad Ali","role":"Boxer",
+      "born":"17 January 1942","died":"3 June 2016",
+      "prompt":"In June 2016, Muhammad Ali ___.","answer":"died"
     },
     {
-      "id": "bd-021",
-      "type": "born",
-      "prompt": "Isaac Newton ___ (be born) in England in 1643.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-021","type":"fill-blank",
+      "person":"Muhammad Ali","role":"Boxer",
+      "born":"17 January 1942","died":"3 June 2016",
+      "prompt":"On 17 January 1942, Muhammad Ali ___.","answer":"was born"
     },
-    {
-      "id": "bd-022",
-      "type": "died",
-      "prompt": "Isaac Newton ___ (die) in 1727.",
-      "answer": "died",
-      "points": 1
+
+{
+      "id":"bg-03-022","type":"fill-blank",
+      "person":"Mother Teresa","role":"Nun",
+      "born":"26 August 1910","died":"5 September 1997",
+      "prompt":"Mother Teresa ___ on 26 August 1910.","answer":"was born"
     },
     {
-      "id": "bd-023",
-      "type": "born",
-      "prompt": "Charles Darwin ___ (be born) in 1809.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-023","type":"fill-blank",
+      "person":"Mother Teresa","role":"Nun",
+      "born":"26 August 1910","died":"5 September 1997",
+      "prompt":"Mother Teresa ___ in 1997.","answer":"died"
     },
     {
-      "id": "bd-024",
-      "type": "died",
-      "prompt": "Charles Darwin ___ (die) in 1882.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-024","type":"fill-blank",
+      "person":"Mother Teresa","role":"Nun",
+      "born":"26 August 1910","died":"5 September 1997",
+      "prompt":"The nun Mother Teresa ___ in 1910.","answer":"was born"
     },
     {
-      "id": "bd-025",
-      "type": "born",
-      "prompt": "Ludwig van Beethoven ___ (be born) in 1770.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-025","type":"fill-blank",
+      "person":"Mother Teresa","role":"Nun",
+      "born":"26 August 1910","died":"5 September 1997",
+      "prompt":"On 5 September 1997, Mother Teresa ___.","answer":"died"
     },
     {
-      "id": "bd-026",
-      "type": "died",
-      "prompt": "Ludwig van Beethoven ___ (die) in 1827.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-026","type":"fill-blank",
+      "person":"Mother Teresa","role":"Nun",
+      "born":"26 August 1910","died":"5 September 1997",
+      "prompt":"Mother Teresa ___ in August 1910.","answer":"was born"
     },
     {
-      "id": "bd-027",
-      "type": "born",
-      "prompt": "Wolfgang Amadeus Mozart ___ (be born) in 1756.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-027","type":"fill-blank",
+      "person":"Mother Teresa","role":"Nun",
+      "born":"26 August 1910","died":"5 September 1997",
+      "prompt":"In September 1997, Mother Teresa ___.","answer":"died"
     },
     {
-      "id": "bd-028",
-      "type": "died",
-      "prompt": "Wolfgang Amadeus Mozart ___ (die) in 1791.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-028","type":"fill-blank",
+      "person":"Mother Teresa","role":"Nun",
+      "born":"26 August 1910","died":"5 September 1997",
+      "prompt":"On 26 August 1910, Mother Teresa ___.","answer":"was born"
     },
-    {
-      "id": "bd-029",
-      "type": "born",
-      "prompt": "Frida Kahlo ___ (be born) in Mexico in 1907.",
-      "answer": "was born",
-      "points": 1
+
+{
+      "id":"bg-03-029","type":"fill-blank",
+      "person":"Nelson Mandela","role":"President",
+      "born":"18 July 1918","died":"5 December 2013",
+      "prompt":"Nelson Mandela ___ on 18 July 1918.","answer":"was born"
     },
     {
-      "id": "bd-030",
-      "type": "died",
-      "prompt": "Frida Kahlo ___ (die) in 1954.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-030","type":"fill-blank",
+      "person":"Nelson Mandela","role":"President",
+      "born":"18 July 1918","died":"5 December 2013",
+      "prompt":"Nelson Mandela ___ in 2013.","answer":"died"
     },
     {
-      "id": "bd-031",
-      "type": "born",
-      "prompt": "Vincent van Gogh ___ (be born) in 1853.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-031","type":"fill-blank",
+      "person":"Nelson Mandela","role":"President",
+      "born":"18 July 1918","died":"5 December 2013",
+      "prompt":"The president Nelson Mandela ___ in 1918.","answer":"was born"
     },
     {
-      "id": "bd-032",
-      "type": "died",
-      "prompt": "Vincent van Gogh ___ (die) in 1890.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-032","type":"fill-blank",
+      "person":"Nelson Mandela","role":"President",
+      "born":"18 July 1918","died":"5 December 2013",
+      "prompt":"On 5 December 2013, Nelson Mandela ___.","answer":"died"
     },
     {
-      "id": "bd-033",
-      "type": "born",
-      "prompt": "Pablo Picasso ___ (be born) in Spain in 1881.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-033","type":"fill-blank",
+      "person":"Nelson Mandela","role":"President",
+      "born":"18 July 1918","died":"5 December 2013",
+      "prompt":"Nelson Mandela ___ in July 1918.","answer":"was born"
     },
     {
-      "id": "bd-034",
-      "type": "died",
-      "prompt": "Pablo Picasso ___ (die) in 1973.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-034","type":"fill-blank",
+      "person":"Nelson Mandela","role":"President",
+      "born":"18 July 1918","died":"5 December 2013",
+      "prompt":"In December 2013, Nelson Mandela ___.","answer":"died"
     },
     {
-      "id": "bd-035",
-      "type": "born",
-      "prompt": "Walt Disney ___ (be born) in 1901.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-035","type":"fill-blank",
+      "person":"Nelson Mandela","role":"President",
+      "born":"18 July 1918","died":"5 December 2013",
+      "prompt":"On 18 July 1918, Nelson Mandela ___.","answer":"was born"
     },
-    {
-      "id": "bd-036",
-      "type": "died",
-      "prompt": "Walt Disney ___ (die) in 1966.",
-      "answer": "died",
-      "points": 1
+
+{
+      "id":"bg-03-036","type":"fill-blank",
+      "person":"Albert Einstein","role":"Physicist",
+      "born":"14 March 1879","died":"18 April 1955",
+      "prompt":"Albert Einstein ___ on 14 March 1879.","answer":"was born"
     },
     {
-      "id": "bd-037",
-      "type": "born",
-      "prompt": "Charlie Chaplin ___ (be born) in London in 1889.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-037","type":"fill-blank",
+      "person":"Albert Einstein","role":"Physicist",
+      "born":"14 March 1879","died":"18 April 1955",
+      "prompt":"Albert Einstein ___ in 1955.","answer":"died"
     },
     {
-      "id": "bd-038",
-      "type": "died",
-      "prompt": "Charlie Chaplin ___ (die) in 1977.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-038","type":"fill-blank",
+      "person":"Albert Einstein","role":"Physicist",
+      "born":"14 March 1879","died":"18 April 1955",
+      "prompt":"The physicist Albert Einstein ___ in 1879.","answer":"was born"
     },
     {
-      "id": "bd-039",
-      "type": "born",
-      "prompt": "Martin Luther King Jr. ___ (be born) in 1929.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-039","type":"fill-blank",
+      "person":"Albert Einstein","role":"Physicist",
+      "born":"14 March 1879","died":"18 April 1955",
+      "prompt":"On 18 April 1955, Albert Einstein ___.","answer":"died"
     },
     {
-      "id": "bd-040",
-      "type": "died",
-      "prompt": "Martin Luther King Jr. ___ (die) in 1968.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-040","type":"fill-blank",
+      "person":"Albert Einstein","role":"Physicist",
+      "born":"14 March 1879","died":"18 April 1955",
+      "prompt":"Albert Einstein ___ in March 1879.","answer":"was born"
     },
     {
-      "id": "bd-041",
-      "type": "born",
-      "prompt": "Abraham Lincoln ___ (be born) in 1809.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-041","type":"fill-blank",
+      "person":"Albert Einstein","role":"Physicist",
+      "born":"14 March 1879","died":"18 April 1955",
+      "prompt":"In April 1955, Albert Einstein ___.","answer":"died"
     },
     {
-      "id": "bd-042",
-      "type": "died",
-      "prompt": "Abraham Lincoln ___ (die) in 1865.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-042","type":"fill-blank",
+      "person":"Albert Einstein","role":"Physicist",
+      "born":"14 March 1879","died":"18 April 1955",
+      "prompt":"On 14 March 1879, Albert Einstein ___.","answer":"was born"
     },
-    {
-      "id": "bd-043",
-      "type": "born",
-      "prompt": "George Washington ___ (be born) in 1732.",
-      "answer": "was born",
-      "points": 1
+
+{
+      "id":"bg-03-043","type":"fill-blank",
+      "person":"Elvis Presley","role":"Singer",
+      "born":"8 January 1935","died":"16 August 1977",
+      "prompt":"Elvis Presley ___ on 8 January 1935.","answer":"was born"
     },
     {
-      "id": "bd-044",
-      "type": "died",
-      "prompt": "George Washington ___ (die) in 1799.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-044","type":"fill-blank",
+      "person":"Elvis Presley","role":"Singer",
+      "born":"8 January 1935","died":"16 August 1977",
+      "prompt":"Elvis Presley ___ in 1977.","answer":"died"
     },
     {
-      "id": "bd-045",
-      "type": "born",
-      "prompt": "Napoleon Bonaparte ___ (be born) in 1769.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-045","type":"fill-blank",
+      "person":"Elvis Presley","role":"Singer",
+      "born":"8 January 1935","died":"16 August 1977",
+      "prompt":"The singer Elvis Presley ___ in 1935.","answer":"was born"
     },
     {
-      "id": "bd-046",
-      "type": "died",
-      "prompt": "Napoleon Bonaparte ___ (die) in 1821.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-046","type":"fill-blank",
+      "person":"Elvis Presley","role":"Singer",
+      "born":"8 January 1935","died":"16 August 1977",
+      "prompt":"On 16 August 1977, Elvis Presley ___.","answer":"died"
     },
     {
-      "id": "bd-047",
-      "type": "born",
-      "prompt": "Florence Nightingale ___ (be born) in 1820.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-047","type":"fill-blank",
+      "person":"Elvis Presley","role":"Singer",
+      "born":"8 January 1935","died":"16 August 1977",
+      "prompt":"Elvis Presley ___ in January 1935.","answer":"was born"
     },
     {
-      "id": "bd-048",
-      "type": "died",
-      "prompt": "Florence Nightingale ___ (die) in 1910.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-048","type":"fill-blank",
+      "person":"Elvis Presley","role":"Singer",
+      "born":"8 January 1935","died":"16 August 1977",
+      "prompt":"In August 1977, Elvis Presley ___.","answer":"died"
     },
     {
-      "id": "bd-049",
-      "type": "born",
-      "prompt": "Agatha Christie ___ (be born) in England in 1890.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-049","type":"fill-blank",
+      "person":"Elvis Presley","role":"Singer",
+      "born":"8 January 1935","died":"16 August 1977",
+      "prompt":"On 8 January 1935, Elvis Presley ___.","answer":"was born"
     },
-    {
-      "id": "bd-050",
-      "type": "died",
-      "prompt": "Agatha Christie ___ (die) in 1976.",
-      "answer": "died",
-      "points": 1
+
+{
+      "id":"bg-03-050","type":"fill-blank",
+      "person":"Michael Jackson","role":"Singer",
+      "born":"29 August 1958","died":"25 June 2009",
+      "prompt":"Michael Jackson ___ on 29 August 1958.","answer":"was born"
     },
     {
-      "id": "bd-051",
-      "type": "born",
-      "prompt": "J. R. R. Tolkien ___ (be born) in 1892.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-051","type":"fill-blank",
+      "person":"Michael Jackson","role":"Singer",
+      "born":"29 August 1958","died":"25 June 2009",
+      "prompt":"Michael Jackson ___ in 2009.","answer":"died"
     },
     {
-      "id": "bd-052",
-      "type": "died",
-      "prompt": "J. R. R. Tolkien ___ (die) in 1973.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-052","type":"fill-blank",
+      "person":"Michael Jackson","role":"Singer",
+      "born":"29 August 1958","died":"25 June 2009",
+      "prompt":"The singer Michael Jackson ___ in 1958.","answer":"was born"
     },
     {
-      "id": "bd-053",
-      "type": "born",
-      "prompt": "Anne Frank ___ (be born) in Germany in 1929.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-053","type":"fill-blank",
+      "person":"Michael Jackson","role":"Singer",
+      "born":"29 August 1958","died":"25 June 2009",
+      "prompt":"On 25 June 2009, Michael Jackson ___.","answer":"died"
     },
     {
-      "id": "bd-054",
-      "type": "died",
-      "prompt": "Anne Frank ___ (die) in 1945.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-054","type":"fill-blank",
+      "person":"Michael Jackson","role":"Singer",
+      "born":"29 August 1958","died":"25 June 2009",
+      "prompt":"Michael Jackson ___ in August 1958.","answer":"was born"
     },
     {
-      "id": "bd-055",
-      "type": "born",
-      "prompt": "Mahatma Gandhi ___ (be born) in India in 1869.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-055","type":"fill-blank",
+      "person":"Michael Jackson","role":"Singer",
+      "born":"29 August 1958","died":"25 June 2009",
+      "prompt":"In June 2009, Michael Jackson ___.","answer":"died"
     },
     {
-      "id": "bd-056",
-      "type": "died",
-      "prompt": "Mahatma Gandhi ___ (die) in 1948.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-056","type":"fill-blank",
+      "person":"Michael Jackson","role":"Singer",
+      "born":"29 August 1958","died":"25 June 2009",
+      "prompt":"On 29 August 1958, Michael Jackson ___.","answer":"was born"
     },
-    {
-      "id": "bd-057",
-      "type": "born",
-      "prompt": "Mother Teresa ___ (be born) in 1910.",
-      "answer": "was born",
-      "points": 1
+
+{
+      "id":"bg-03-057","type":"fill-blank",
+      "person":"Princess Diana","role":"Member of the British royal family",
+      "born":"1 July 1961","died":"31 August 1997",
+      "prompt":"Princess Diana ___ on 1 July 1961.","answer":"was born"
     },
     {
-      "id": "bd-058",
-      "type": "died",
-      "prompt": "Mother Teresa ___ (die) in 1997.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-058","type":"fill-blank",
+      "person":"Princess Diana","role":"Member of the British royal family",
+      "born":"1 July 1961","died":"31 August 1997",
+      "prompt":"Princess Diana ___ in 1997.","answer":"died"
     },
     {
-      "id": "bd-059",
-      "type": "born",
-      "prompt": "Alan Turing ___ (be born) in 1912.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-059","type":"fill-blank",
+      "person":"Princess Diana","role":"Member of the British royal family",
+      "born":"1 July 1961","died":"31 August 1997",
+      "prompt":"The famous Princess Diana ___ in 1961.","answer":"was born"
     },
     {
-      "id": "bd-060",
-      "type": "died",
-      "prompt": "Alan Turing ___ (die) in 1954.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-060","type":"fill-blank",
+      "person":"Princess Diana","role":"Member of the British royal family",
+      "born":"1 July 1961","died":"31 August 1997",
+      "prompt":"On 31 August 1997, Princess Diana ___.","answer":"died"
     },
     {
-      "id": "bd-061",
-      "type": "born",
-      "prompt": "Stephen Hawking ___ (be born) in 1942.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-061","type":"fill-blank",
+      "person":"Princess Diana","role":"Member of the British royal family",
+      "born":"1 July 1961","died":"31 August 1997",
+      "prompt":"Princess Diana ___ in July 1961.","answer":"was born"
     },
     {
-      "id": "bd-062",
-      "type": "died",
-      "prompt": "Stephen Hawking ___ (die) in 2018.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-062","type":"fill-blank",
+      "person":"Princess Diana","role":"Member of the British royal family",
+      "born":"1 July 1961","died":"31 August 1997",
+      "prompt":"In August 1997, Princess Diana ___.","answer":"died"
     },
     {
-      "id": "bd-063",
-      "type": "born",
-      "prompt": "Bruce Lee ___ (be born) in 1940.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-063","type":"fill-blank",
+      "person":"Princess Diana","role":"Member of the British royal family",
+      "born":"1 July 1961","died":"31 August 1997",
+      "prompt":"On 1 July 1961, Princess Diana ___.","answer":"was born"
     },
-    {
-      "id": "bd-064",
-      "type": "died",
-      "prompt": "Bruce Lee ___ (die) in 1973.",
-      "answer": "died",
-      "points": 1
+
+{
+      "id":"bg-03-064","type":"fill-blank",
+      "person":"Steve Jobs","role":"Businessman",
+      "born":"24 February 1955","died":"5 October 2011",
+      "prompt":"Steve Jobs ___ on 24 February 1955.","answer":"was born"
     },
     {
-      "id": "bd-065",
-      "type": "born",
-      "prompt": "Freddie Mercury ___ (be born) in 1946.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-065","type":"fill-blank",
+      "person":"Steve Jobs","role":"Businessman",
+      "born":"24 February 1955","died":"5 October 2011",
+      "prompt":"Steve Jobs ___ in 2011.","answer":"died"
     },
     {
-      "id": "bd-066",
-      "type": "died",
-      "prompt": "Freddie Mercury ___ (die) in 1991.",
-      "answer": "died",
-      "points": 1
+      "id":"bg-03-066","type":"fill-blank",
+      "person":"Steve Jobs","role":"Businessman",
+      "born":"24 February 1955","died":"5 October 2011",
+      "prompt":"The businessman Steve Jobs ___ in 1955.","answer":"was born"
     },
     {
-      "id": "bd-067",
-      "type": "born",
-      "prompt": "Cristiano Ronaldo ___ (be born) in 1985.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-067","type":"fill-blank",
+      "person":"Steve Jobs","role":"Businessman",
+      "born":"24 February 1955","died":"5 October 2011",
+      "prompt":"On 5 October 2011, Steve Jobs ___.","answer":"died"
     },
     {
-      "id": "bd-068",
-      "type": "born",
-      "prompt": "Lionel Messi ___ (be born) in 1987.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-068","type":"fill-blank",
+      "person":"Steve Jobs","role":"Businessman",
+      "born":"24 February 1955","died":"5 October 2011",
+      "prompt":"Steve Jobs ___ in February 1955.","answer":"was born"
     },
     {
-      "id": "bd-069",
-      "type": "born",
-      "prompt": "Adele ___ (be born) in London in 1988.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-069","type":"fill-blank",
+      "person":"Steve Jobs","role":"Businessman",
+      "born":"24 February 1955","died":"5 October 2011",
+      "prompt":"In October 2011, Steve Jobs ___.","answer":"died"
     },
     {
-      "id": "bd-070",
-      "type": "born",
-      "prompt": "Taylor Swift ___ (be born) in 1989.",
-      "answer": "was born",
-      "points": 1
+      "id":"bg-03-070","type":"fill-blank",
+      "person":"Steve Jobs","role":"Businessman",
+      "born":"24 February 1955","died":"5 October 2011",
+      "prompt":"On 24 February 1955, Steve Jobs ___.","answer":"was born"
     }
   ]
+}
+</CodeBlock>
+3. Catalogue entry for beginner/quizzes/index.json
+Replace your existing Quiz 03 entry with this object, rather than adding a duplicate.
+
+<CodeBlock language="json" editable>
+{
+  "id": "beginner-003",
+  "title": "Past Simple — Was Born / Died",
+  "category": "Grammar",
+  "level": "beginner",
+  "file": "quiz-03.html",
+  "bank": "quiz-03.bank.json",
+  "questionCount": 70
 }
