@@ -8,5 +8,11 @@
   "file": "quiz-01.html",
   "bank": "quiz-01.bank.json",
   "questionCount": 70
-}
+},
+  {
+      "id": "quiz-02",
+      "title": "Past Simple — Wh- Questions",
+      "path": "quiz-02.html",
+      "bank": "quiz-02.bank.json"
+  }
 ]
