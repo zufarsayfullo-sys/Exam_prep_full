@@ -6,65 +6,161 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Elementary Quiz 01 | ExamPrep Studio</title>
 <style>
-:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#f6f7ff;color:#202044}
+:root{
+  font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+  background:#f6f7ff;
+  color:#202044;
+}
 *{box-sizing:border-box}
 body{margin:0}
 .wrap{max-width:920px;margin:auto;padding:16px}
 .brand{font-size:24px;font-weight:800;margin:10px 0 25px}
 .brand span{color:#7138e5}
-.card{background:white;border:1px solid #e6e4f5;border-radius:22px;padding:clamp(20px,5vw,34px);box-shadow:0 12px 36px #16164c0b;margin-bottom:20px}
+.card{
+  background:white;
+  border:1px solid #e6e4f5;
+  border-radius:22px;
+  padding:clamp(20px,5vw,34px);
+  box-shadow:0 12px 36px #16164c0b;
+  margin-bottom:20px;
+}
 h1{font-size:clamp(26px,5vw,36px);margin:8px 0 12px}
 h2{font-size:22px}
 .muted{color:#69718a;line-height:1.6}
-.tag{display:inline-block;background:#eee9ff;color:#6d36d9;padding:7px 12px;border-radius:24px;font-weight:700;font-size:13px}
+.tag{
+  display:inline-block;
+  background:#eee9ff;
+  color:#6d36d9;
+  padding:7px 12px;
+  border-radius:24px;
+  font-weight:700;
+  font-size:13px;
+}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-button{border:0;border-radius:12px;background:#7138e5;color:white;font:inherit;font-weight:700;padding:13px 20px;cursor:pointer;min-height:48px}
+button{
+  border:0;
+  border-radius:12px;
+  background:#7138e5;
+  color:white;
+  font:inherit;
+  font-weight:700;
+  padding:13px 20px;
+  cursor:pointer;
+  min-height:48px;
+}
 button.alt{background:#f0eaff;color:#6832cb}
 button:disabled{opacity:.45;cursor:default}
 .hidden{display:none!important}
-.progress{height:9px;background:#eae6fa;border-radius:20px;overflow:hidden;margin:16px 0}
+.progress{
+  height:9px;
+  background:#eae6fa;
+  border-radius:20px;
+  overflow:hidden;
+  margin:16px 0;
+}
 .progress div{height:100%;background:#7138e5;width:0}
-.wordbank{background:#f3efff;padding:18px;border-radius:16px;margin:20px 0}
-.words{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}
-.word{background:white;border:1px solid #dcd1fb;border-radius:9px;padding:8px 15px;font-weight:700}
-.question{font-size:clamp(18px,4vw,23px);font-weight:600;line-height:2.8;margin:22px 0;overflow-wrap:anywhere}
-.answer{display:inline-block;vertical-align:middle;width:clamp(150px,38vw,210px);min-height:48px;border:2px solid #c8b8f5;border-radius:10px;padding:9px 12px;font:inherit;font-size:18px;text-align:center;background:white;color:#202044;margin:0 5px}
-.answer:focus{outline:3px solid #dacdff;border-color:#7138e5}
+.wordbank{
+  background:#f3efff;
+  padding:18px;
+  border-radius:16px;
+  margin:20px 0;
+}
+.words{
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+.word{
+  background:white;
+  border:1px solid #dcd1fb;
+  border-radius:9px;
+  padding:8px 15px;
+  font-weight:700;
+}
+.question{
+  font-size:clamp(18px,4vw,23px);
+  font-weight:600;
+  line-height:2.8;
+  margin:22px 0;
+  overflow-wrap:anywhere;
+}
+.answer{
+  display:inline-block;
+  vertical-align:middle;
+  width:clamp(150px,38vw,210px);
+  min-height:48px;
+  border:2px solid #c8b8f5;
+  border-radius:10px;
+  padding:9px 12px;
+  font:inherit;
+  font-size:18px;
+  text-align:center;
+  background:white;
+  color:#202044;
+  margin:0 5px;
+}
+.answer:focus{
+  outline:3px solid #dacdff;
+  border-color:#7138e5;
+}
 table{width:100%;border-collapse:collapse}
 td,th{text-align:left;border-bottom:1px solid #eee;padding:12px}
 .review{padding:14px 0;border-bottom:1px solid #eee}
 .good{color:#087e43}
 .bad{color:#bd3348}
-#notice{color:#ba273f;min-height:22px;white-space:pre-wrap}
+#notice{
+  color:#ba273f;
+  min-height:22px;
+  white-space:pre-wrap;
+}
 a{color:#6832cb}
 @media(max-width:600px){
-.card{padding:18px 15px;border-radius:17px}
-.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
-.actions button{width:100%;padding:13px 8px}
-#home button{width:100%}
-#quiz .actions{position:sticky;bottom:0;background:white;padding:10px 0 4px;z-index:2}
-.question{line-height:2.6}
+  .card{padding:18px 15px;border-radius:17px}
+  .actions{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .actions button{width:100%;padding:13px 8px}
+  #home button{width:100%}
+  #quiz .actions{
+    position:sticky;
+    bottom:0;
+    background:white;
+    padding:10px 0 4px;
+    z-index:2;
+  }
+  .question{line-height:2.6}
 }
 </style>
 </head>
 <body>
 <main class="wrap">
+
 <div class="brand">✦ ExamPrep <span>Studio</span></div>
 
 <section class="card" id="home">
   <span class="tag">Elementary · Grammar</span>
   <h1>Past Simple — Negative Form</h1>
-  <p class="muted">70 questions · 10 randomly selected · Pass mark 80%</p>
+  <p class="muted">
+    70 questions · 10 randomly selected · Pass mark 80%
+  </p>
   <button id="create" disabled>Loading question bank...</button>
-  <p class="muted">Students join through student.html. Start when everyone is ready.</p>
+  <p class="muted">
+    Students join through student.html.
+    Start when everyone is ready.
+  </p>
 </section>
 
 <section class="card hidden" id="teacher">
   <span class="tag">Teacher live session</span>
   <h1>Past Simple — Negative Form</h1>
   <p>Session code: <strong id="code"></strong></p>
-  <p>Student Board:
-    <a href="../../student.html" target="_blank" rel="noopener">Open student.html</a>
+  <p>
+    Student Board:
+    <a href="../../student.html" target="_blank" rel="noopener">
+      Open student.html
+    </a>
   </p>
   <p id="count"></p>
   <div class="actions">
@@ -73,14 +169,22 @@ a{color:#6832cb}
   </div>
   <h2>Live leaderboard</h2>
   <table>
-    <thead><tr><th>Student</th><th>Score</th></tr></thead>
+    <thead>
+      <tr>
+        <th>Student</th>
+        <th>Score</th>
+      </tr>
+    </thead>
     <tbody id="leader"></tbody>
   </table>
 </section>
 
 <section class="card hidden" id="join">
   <h1>Join through the Student Board</h1>
-  <p class="muted">Register once on student.html. You do not need to enter your name again in this quiz.</p>
+  <p class="muted">
+    Register once on student.html.
+    You do not need to enter your name again.
+  </p>
   <a href="../../student.html">Return to Student Board</a>
 </section>
 
@@ -92,16 +196,22 @@ a{color:#6832cb}
 <section class="card hidden" id="quiz">
   <span class="tag" id="counter"></span>
   <h2>Complete the sentence.</h2>
-  <p class="muted">Write the past simple negative form of the correct verb.</p>
+  <p class="muted">
+    Choose the correct verb and write its Past Simple negative form.
+  </p>
   <div class="progress"><div id="fill"></div></div>
 
   <div class="wordbank">
-    <strong>Use the verb from the box.</strong>
+    <strong>Choose a verb from the box.</strong>
     <div id="words" class="words"></div>
   </div>
 
   <div class="question" id="sentence"></div>
-  <p class="muted">Write only the missing words. Both "didn't" and "did not" are accepted.</p>
+
+  <p class="muted">
+    Write only the missing words.
+    Both "didn't" and "did not" are accepted.
+  </p>
 
   <div class="actions">
     <button class="alt" id="prev">Previous</button>
@@ -123,8 +233,8 @@ a{color:#6832cb}
 <script>
 "use strict";
 
-// Correct Supabase configuration
 const URL_BASE="https://dfepopppcggzecdxexeh.supabase.co";
+
 const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
 
 const QUIZ_TITLE="Past Simple — Negative Form";
@@ -132,6 +242,7 @@ const QUIZ_PATH="elementary/quizzes/quiz-01.html";
 const BANK_FILE="quiz-01.bank.json";
 const QUESTION_COUNT=10;
 const PASS_MARK=80;
+const OPTION_COUNT=5;
 
 const TEACHER_KEY="eps2_teacher";
 const PLAYER_KEY="eps2_player";
@@ -171,8 +282,9 @@ function writeStorage(key,value){
 }
 
 function removeStorage(key){
-  try{sessionStorage.removeItem(key);}
-  catch{}
+  try{
+    sessionStorage.removeItem(key);
+  }catch{}
 }
 
 function progressKey(){
@@ -211,6 +323,7 @@ function validateBank(data){
 
   const ids=new Set();
   const prompts=new Set();
+  const verbs=new Set();
 
   for(const q of questions){
     if(
@@ -239,6 +352,12 @@ function validateBank(data){
       throw Error("Duplicate prompt: "+q.id);
     }
     prompts.add(key);
+
+    verbs.add(normalize(q.verb));
+  }
+
+  if(verbs.size<OPTION_COUNT){
+    throw Error("The question bank needs at least five different verbs.");
   }
 
   return questions;
@@ -276,7 +395,6 @@ async function loadBank(){
   }
 }
 
-// Existing Supabase RPC names and parameters.
 async function rpc(fn,data={}){
   const response=await fetch(URL_BASE+"/rest/v1/rpc/"+fn,{
     method:"POST",
@@ -350,12 +468,50 @@ function sessionCode(){
   ).join("");
 }
 
+/*
+  Generate five options for each question.
+  One is the correct verb, and four are distractors
+  selected from the existing 70-question bank.
+
+  Options are stored with the student's progress so
+  they do not change when navigating or reloading.
+*/
+let optionSets={};
+
+function makeOptions(q){
+  const correct=normalize(q.verb);
+
+  const available=[...new Set(
+    BANK.map(item=>normalize(item.verb))
+  )].filter(verb=>verb!==correct);
+
+  const distractors=shuffle(available).slice(0,OPTION_COUNT-1);
+
+  return shuffle([correct,...distractors]);
+}
+
+function ensureOptions(){
+  selected.forEach(q=>{
+    if(
+      !Array.isArray(optionSets[q.id])||
+      optionSets[q.id].length!==OPTION_COUNT||
+      new Set(optionSets[q.id]).size!==OPTION_COUNT||
+      !optionSets[q.id].includes(normalize(q.verb))
+    ){
+      optionSets[q.id]=makeOptions(q);
+    }
+  });
+}
+
 function saveProgress(){
   if(!code||!playerId||!selected.length)return;
 
   writeStorage(progressKey(),{
     questionIds:selected.map(q=>q.id),
-    answers,index,submitted
+    answers,
+    index,
+    submitted,
+    optionSets
   });
 }
 
@@ -394,10 +550,17 @@ function restoreProgress(){
     :0;
 
   submitted=saved.submitted===true;
+
+  optionSets=(
+    saved.optionSets&&
+    typeof saved.optionSets==="object"&&
+    !Array.isArray(saved.optionSets)
+  )?saved.optionSets:{};
+
+  ensureOptions();
   return true;
 }
 
-// Teacher creates a live session.
 $("create").onclick=()=>run(async()=>{
   if(BANK.length!==70){
     throw Error("Question bank is not loaded.");
@@ -429,7 +592,6 @@ $("create").onclick=()=>run(async()=>{
   await poll(true);
 });
 
-// Teacher starts the quiz.
 $("start").onclick=()=>run(async()=>{
   await rpc("eps2_start",{
     p_code:code,
@@ -438,7 +600,6 @@ $("start").onclick=()=>run(async()=>{
   await poll(true);
 });
 
-// Teacher ends the session.
 $("end").onclick=()=>run(async()=>{
   if(!confirm("End this live session?"))return;
 
@@ -478,18 +639,28 @@ function render(){
   $("fill").style.width=
     ((index+1)/selected.length*100)+"%";
 
+  // Show five verb options.
   const words=$("words");
   words.replaceChildren();
 
-  const word=document.createElement("span");
-  word.className="word";
-  word.textContent=q.verb;
-  words.append(word);
+  if(!optionSets[q.id]){
+    optionSets[q.id]=makeOptions(q);
+    saveProgress();
+  }
 
+  optionSets[q.id].forEach(verb=>{
+    const word=document.createElement("span");
+    word.className="word";
+    word.textContent=verb;
+    words.append(word);
+  });
+
+  // Keep the input INSIDE the sentence.
   const sentence=$("sentence");
   sentence.replaceChildren();
 
   const parts=q.prompt.split("___");
+
   const before=document.createTextNode(parts[0]);
   const after=document.createTextNode(parts[1]);
 
@@ -606,6 +777,10 @@ function displayResult(score){
     answer.textContent=
       "Your answer: "+(answers[q.id]||"—");
 
+    const options=document.createElement("p");
+    options.textContent=
+      "Verb options: "+(optionSets[q.id]||[]).join(" · ");
+
     const feedback=document.createElement("p");
     const correct=isCorrect(q,answers[q.id]);
 
@@ -614,7 +789,7 @@ function displayResult(score){
       ?"✓ Correct"
       :"Correct answer: "+q.answer;
 
-    item.append(question,answer,feedback);
+    item.append(question,options,answer,feedback);
     review.append(item);
   });
 }
@@ -623,7 +798,6 @@ $("toggleReview").onclick=()=>{
   $("review").classList.toggle("hidden");
 };
 
-// Live polling does not redraw the current question.
 async function poll(force=false){
   if(
     !code||
@@ -680,6 +854,8 @@ async function poll(force=false){
             selected=choose();
             index=0;
             answers={};
+            optionSets={};
+            ensureOptions();
             saveProgress();
           }
         }
@@ -704,8 +880,8 @@ async function poll(force=false){
   }
 }
 
-// Student registration happens ONLY in student.html.
-// This quiz never asks for a name or calls eps2_join.
+// Student identity comes from student.html.
+// No name field and no eps2_join call.
 function restoreSession(){
   if(query.has("join")){
     const saved=readStorage(PLAYER_KEY);
