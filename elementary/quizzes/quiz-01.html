@@ -123,8 +123,9 @@ a{color:#6832cb}
 <script>
 "use strict";
 
+// Correct Supabase configuration
 const URL_BASE="https://dfepopppcggzecdxexeh.supabase.co";
-const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkZmVwb3BwcGNnZ3plY2R4ZXhlaCIsInJvbGUiOiJhbm9uIiwiaWF0IjoxNzkzNTA4OTg3LCJleHAiOjIxMDkwNDI5ODd9.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
+const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
 
 const QUIZ_TITLE="Past Simple — Negative Form";
 const QUIZ_PATH="elementary/quizzes/quiz-01.html";
@@ -622,7 +623,7 @@ $("toggleReview").onclick=()=>{
   $("review").classList.toggle("hidden");
 };
 
-// Polling does not redraw the current question.
+// Live polling does not redraw the current question.
 async function poll(force=false){
   if(
     !code||
@@ -703,8 +704,8 @@ async function poll(force=false){
   }
 }
 
-// Student identity is provided by student.html.
-// No name field. No eps2_join call.
+// Student registration happens ONLY in student.html.
+// This quiz never asks for a name or calls eps2_join.
 function restoreSession(){
   if(query.has("join")){
     const saved=readStorage(PLAYER_KEY);
