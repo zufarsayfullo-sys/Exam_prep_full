@@ -101,7 +101,7 @@ a{color:#6832cb}
   <span class="tag">Beginner · Grammar</span>
   <h1>Irregular Verbs — Past Simple</h1>
   <p class="muted">
-    70 verbs · 10 randomly selected · Pass mark 80%
+    33 textbook verbs · 10 randomly selected · Pass mark 80%
   </p>
   <button id="create" disabled>Loading question bank...</button>
   <p class="muted">
@@ -210,6 +210,7 @@ const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsI
 const QUIZ_TITLE="Irregular Verbs — Past Simple";
 const QUIZ_PATH="beginner/quizzes/quiz-07.html";
 const BANK_FILE="quiz-07.bank.json";
+const BANK_SIZE=33;
 const QUESTION_COUNT=10;
 const PASS_MARK=80;
 
@@ -292,10 +293,16 @@ function validateBank(data){
     throw Error("Invalid question bank format.");
   }
 
-  if(questions.length!==70){
-    throw Error("Expected 70 questions, found "+questions.length);
+  if(questions.length!==BANK_SIZE){
+    throw Error("Expected 33 textbook verbs, found "+questions.length);
   }
 
+  const textbookVerbs=new Set([
+    "be","break","buy","can","come","do","drink","drive","eat",
+    "fall","forget","get","give","go","have","know","learn",
+    "leave","lose","meet","read","ride","run","say","sit",
+    "sleep","speak","take","teach","tell","think","wear","write"
+  ]);
   const ids=new Set();
   const verbs=new Set();
 
@@ -325,17 +332,23 @@ function validateBank(data){
     ids.add(q.id);
 
     const verb=normalize(q.prompt);
+    if(!textbookVerbs.has(verb)){
+      throw Error("Verb not in textbook list: "+q.prompt);
+    }
     if(verbs.has(verb)){
       throw Error("Duplicate base verb: "+q.prompt);
     }
     verbs.add(verb);
   }
 
+  if(verbs.size!==textbookVerbs.size){
+    throw Error("The bank must include all 33 textbook verbs.");
+  }
   return questions;
 }
 
 async function loadBank(){
-  if(BANK.length===70)return true;
+  if(BANK.length===BANK_SIZE)return true;
   if(bankLoading)return bankLoading;
 
   bankLoading=(async()=>{
@@ -427,7 +440,7 @@ function shuffle(items){
 }
 
 function choose(){
-  if(BANK.length!==70){
+  if(BANK.length!==BANK_SIZE){
     throw Error("Question bank is not ready.");
   }
   return shuffle(BANK).slice(0,QUESTION_COUNT);
@@ -493,7 +506,7 @@ function restoreProgress(){
 
 // Teacher creates a live session.
 $("create").onclick=()=>run(async()=>{
-  if(BANK.length!==70){
+  if(BANK.length!==BANK_SIZE){
     throw Error("Question bank is not loaded.");
   }
 
@@ -734,7 +747,7 @@ async function poll(force=false){
 
     }else if(playerId){
       if(state.status==="active"&&!submitted){
-        if(BANK.length!==70){
+        if(BANK.length!==BANK_SIZE){
           const loaded=await loadBank();
           if(!loaded)return;
         }
