@@ -30,5 +30,13 @@
   "bank": "quiz-04.bank.json",
   "category": "Grammar",
   "level": "elementary"
+},
+  {
+  "id": "quiz-05",
+  "title": "Be Going To — Future Plans",
+  "path": "quiz-05.html",
+  "bank": "quiz-05.bank.json",
+  "category": "Grammar",
+  "level": "elementary"
 }
 ]
