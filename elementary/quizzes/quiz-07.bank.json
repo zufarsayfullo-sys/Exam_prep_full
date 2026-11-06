@@ -3,76 +3,583 @@
   "level": "elementary",
   "category": "Grammar",
   "questions": [
-    {"id":"el-07-001","type":"fill-blank","form":"present-perfect","prompt":"A: ___ a music festival?","cue":"you / ever / visit","answer":"Have you ever visited"},
-    {"id":"el-07-002","type":"fill-blank","form":"past-simple","prompt":"B: Yes, I have. I ___ to Sydney last year, and there was an international music festival.","cue":"I / go","answer":"went","alternatives":["I went"]},
-    {"id":"el-07-003","type":"fill-blank","form":"present-perfect","prompt":"A: ___ the news about Rosa?","cue":"you / get","answer":"Have you got"},
-    {"id":"el-07-004","type":"fill-blank","form":"past-simple","prompt":"B: No, what ___ this time?","cue":"happen","answer":"happened"},
-    {"id":"el-07-005","type":"fill-blank","form":"past-simple","prompt":"A: Well, yesterday she ___ her exams with excellent marks.","cue":"she / pass","answer":"passed","alternatives":["she passed"]},
-
-{"id":"el-07-006","type":"fill-blank","form":"present-perfect","prompt":"I ___ my homework already.","cue":"finish","answer":"have finished","alternatives":["I've finished"]},
-{"id":"el-07-007","type":"fill-blank","form":"present-perfect","prompt":"She ___ to London twice.","cue":"be","answer":"has been","alternatives":["she has been"]},
-{"id":"el-07-008","type":"fill-blank","form":"present-perfect","prompt":"___ sushi before?","cue":"you / ever / eat","answer":"Have you ever eaten"},
-{"id":"el-07-009","type":"fill-blank","form":"present-perfect","prompt":"We ___ that film three times.","cue":"see","answer":"have seen","alternatives":["we have seen"]},
-{"id":"el-07-010","type":"fill-blank","form":"present-perfect","prompt":"He ___ his keys, so he can't open the door.","cue":"lose","answer":"has lost","alternatives":["he has lost"]},
-{"id":"el-07-011","type":"fill-blank","form":"present-perfect","prompt":"They ___ their grandparents this week.","cue":"visit","answer":"have visited"},
-{"id":"el-07-012","type":"fill-blank","form":"present-perfect","prompt":"I ___ never ___ a horse.","cue":"ride","answer":"have never ridden","alternatives":["I've never ridden"]},
-{"id":"el-07-013","type":"fill-blank","form":"present-perfect","prompt":"My sister ___ a new bicycle recently.","cue":"buy","answer":"has bought"},
-{"id":"el-07-014","type":"fill-blank","form":"present-perfect","prompt":"___ your room yet?","cue":"you / clean","answer":"Have you cleaned"},
-{"id":"el-07-015","type":"fill-blank","form":"present-perfect","prompt":"We ___ here for three years.","cue":"live","answer":"have lived"},
-{"id":"el-07-016","type":"fill-blank","form":"present-perfect","prompt":"Tom ___ his lunch already.","cue":"eat","answer":"has eaten"},
-{"id":"el-07-017","type":"fill-blank","form":"present-perfect","prompt":"I ___ that book before.","cue":"read","answer":"have read"},
-{"id":"el-07-018","type":"fill-blank","form":"present-perfect","prompt":"She ___ her best friend since Monday.","cue":"not / see","answer":"has not seen","alternatives":["hasn't seen"]},
-{"id":"el-07-019","type":"fill-blank","form":"present-perfect","prompt":"___ your parents yet?","cue":"you / call","answer":"Have you called"},
-{"id":"el-07-020","type":"fill-blank","form":"present-perfect","prompt":"The children ___ their homework.","cue":"finish","answer":"have finished"},
-{"id":"el-07-021","type":"fill-blank","form":"present-perfect","prompt":"My father ___ his phone, so he needs a new one.","cue":"break","answer":"has broken"},
-{"id":"el-07-022","type":"fill-blank","form":"present-perfect","prompt":"I ___ never ___ to Japan.","cue":"be","answer":"have never been","alternatives":["I've never been"]},
-{"id":"el-07-023","type":"fill-blank","form":"present-perfect","prompt":"___ this song before?","cue":"you / hear","answer":"Have you heard"},
-{"id":"el-07-024","type":"fill-blank","form":"present-perfect","prompt":"She ___ English since she was ten.","cue":"study","answer":"has studied"},
-{"id":"el-07-025","type":"fill-blank","form":"present-perfect","prompt":"We ___ already ___ the kitchen.","cue":"clean","answer":"have already cleaned"},
-{"id":"el-07-026","type":"fill-blank","form":"present-perfect","prompt":"He ___ his breakfast yet.","cue":"not / have","answer":"has not had","alternatives":["hasn't had"]},
-{"id":"el-07-027","type":"fill-blank","form":"present-perfect","prompt":"___ the new teacher yet?","cue":"you / meet","answer":"Have you met"},
-{"id":"el-07-028","type":"fill-blank","form":"present-perfect","prompt":"My friends ___ to the cinema this month.","cue":"go","answer":"have been","alternatives":["have gone"]},
-{"id":"el-07-029","type":"fill-blank","form":"present-perfect","prompt":"I ___ my glasses, and now I can't find them.","cue":"lose","answer":"have lost"},
-{"id":"el-07-030","type":"fill-blank","form":"present-perfect","prompt":"She ___ never ___ a plane.","cue":"fly","answer":"has never flown"},
-{"id":"el-07-031","type":"fill-blank","form":"present-perfect","prompt":"They ___ in this house since 2020.","cue":"live","answer":"have lived"},
-{"id":"el-07-032","type":"fill-blank","form":"present-perfect","prompt":"___ your project yet?","cue":"you / complete","answer":"Have you completed"},
-{"id":"el-07-033","type":"fill-blank","form":"present-perfect","prompt":"My brother ___ just ___ home.","cue":"come","answer":"has just come"},
-{"id":"el-07-034","type":"fill-blank","form":"present-perfect","prompt":"I ___ my teacher an email today.","cue":"send","answer":"have sent"},
-{"id":"el-07-035","type":"fill-blank","form":"present-perfect","prompt":"She ___ three books this month.","cue":"read","answer":"has read"},
-{"id":"el-07-036","type":"fill-blank","form":"present-perfect","prompt":"We ___ never ___ this game before.","cue":"play","answer":"have never played"},
-{"id":"el-07-037","type":"fill-blank","form":"present-perfect","prompt":"___ your sister ever ___ a prize?","cue":"win","answer":"Has your sister ever won"},
-{"id":"el-07-038","type":"fill-blank","form":"present-perfect","prompt":"I ___ my bag, so I can go now.","cue":"pack","answer":"have packed"},
-{"id":"el-07-039","type":"fill-blank","form":"past-simple","prompt":"I ___ football yesterday.","cue":"play","answer":"played"},
-    {"id":"el-07-040","type":"fill-blank","form":"past-simple","prompt":"She ___ to school late last Monday.","cue":"go","answer":"went"},
-    {"id":"el-07-041","type":"fill-blank","form":"past-simple","prompt":"We ___ a film last night.","cue":"watch","answer":"watched"},
-    {"id":"el-07-042","type":"fill-blank","form":"past-simple","prompt":"He ___ a new phone two weeks ago.","cue":"buy","answer":"bought"},
-    {"id":"el-07-043","type":"fill-blank","form":"past-simple","prompt":"They ___ their grandparents last weekend.","cue":"visit","answer":"visited"},
-    {"id":"el-07-044","type":"fill-blank","form":"past-simple","prompt":"___ to the park yesterday?","cue":"you / go","answer":"Did you go"},
-    {"id":"el-07-045","type":"fill-blank","form":"past-simple","prompt":"My mother ___ dinner at six yesterday.","cue":"cook","answer":"cooked"},
-    {"id":"el-07-046","type":"fill-blank","form":"past-simple","prompt":"I ___ my homework after school yesterday.","cue":"finish","answer":"finished"},
-    {"id":"el-07-047","type":"fill-blank","form":"past-simple","prompt":"Tom ___ his bike last Saturday.","cue":"ride","answer":"rode"},
-    {"id":"el-07-048","type":"fill-blank","form":"past-simple","prompt":"We ___ in Tashkent in 2022.","cue":"live","answer":"lived"},
-    {"id":"el-07-049","type":"fill-blank","form":"past-simple","prompt":"She ___ her friend at the cafe yesterday.","cue":"meet","answer":"met"},
-    {"id":"el-07-050","type":"fill-blank","form":"past-simple","prompt":"The children ___ a cake last Sunday.","cue":"make","answer":"made"},
-    {"id":"el-07-051","type":"fill-blank","form":"past-simple","prompt":"I ___ my keys yesterday morning.","cue":"lose","answer":"lost"},
-    {"id":"el-07-052","type":"fill-blank","form":"past-simple","prompt":"___ English last night?","cue":"you / study","answer":"Did you study"},
-    {"id":"el-07-053","type":"fill-blank","form":"past-simple","prompt":"My father ___ home at eight last night.","cue":"come","answer":"came"},
-    {"id":"el-07-054","type":"fill-blank","form":"past-simple","prompt":"We ___ lunch at a restaurant yesterday.","cue":"have","answer":"had"},
-    {"id":"el-07-055","type":"fill-blank","form":"past-simple","prompt":"He ___ his room last weekend.","cue":"clean","answer":"cleaned"},
-    {"id":"el-07-056","type":"fill-blank","form":"past-simple","prompt":"They ___ to Bukhara last summer.","cue":"travel","answer":"travelled","alternatives":["traveled"]},
-    {"id":"el-07-057","type":"fill-blank","form":"past-simple","prompt":"I ___ a letter to my friend last week.","cue":"write","answer":"wrote"},
-    {"id":"el-07-058","type":"fill-blank","form":"past-simple","prompt":"She ___ a beautiful dress at the party yesterday.","cue":"wear","answer":"wore"},
-    {"id":"el-07-059","type":"fill-blank","form":"past-simple","prompt":"___ the match on TV last night?","cue":"you / see","answer":"Did you see"},
-    {"id":"el-07-060","type":"fill-blank","form":"past-simple","prompt":"We ___ to music yesterday evening.","cue":"listen","answer":"listened"},
-    {"id":"el-07-061","type":"fill-blank","form":"past-simple","prompt":"My brother ___ his leg last year.","cue":"break","answer":"broke"},
-    {"id":"el-07-062","type":"fill-blank","form":"past-simple","prompt":"I ___ breakfast at seven this morning.","cue":"eat","answer":"ate"},
-    {"id":"el-07-063","type":"fill-blank","form":"past-simple","prompt":"She ___ the bus to work yesterday.","cue":"take","answer":"took"},
-    {"id":"el-07-064","type":"fill-blank","form":"past-simple","prompt":"They ___ a new house in 2021.","cue":"buy","answer":"bought"},
-    {"id":"el-07-065","type":"fill-blank","form":"past-simple","prompt":"We ___ the museum two days ago.","cue":"visit","answer":"visited"},
-    {"id":"el-07-066","type":"fill-blank","form":"past-simple","prompt":"He ___ his teacher a question yesterday.","cue":"ask","answer":"asked"},
-    {"id":"el-07-067","type":"fill-blank","form":"past-simple","prompt":"I ___ my friend at the station last night.","cue":"see","answer":"saw"},
-    {"id":"el-07-068","type":"fill-blank","form":"past-simple","prompt":"The lesson ___ at nine yesterday.","cue":"start","answer":"started"},
-    {"id":"el-07-069","type":"fill-blank","form":"past-simple","prompt":"She ___ her homework before dinner yesterday.","cue":"do","answer":"did"},
-    {"id":"el-07-070","type":"fill-blank","form":"past-simple","prompt":"___ your grandmother last Sunday?","cue":"you / call","answer":"Did you call"}
+    {
+      "id": "el-07-001",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "A: ___ a music festival?",
+      "cue": "you / ever / visit",
+      "answer": "Have you ever visited"
+    },
+    {
+      "id": "el-07-002",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "B: Yes, I have. I ___ to Sydney last year, and there was an international music festival.",
+      "cue": "go",
+      "answer": "went"
+    },
+    {
+      "id": "el-07-003",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "A: ___ the news about Rosa?",
+      "cue": "you / get",
+      "answer": "Have you got"
+    },
+    {
+      "id": "el-07-004",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "B: No, what ___ this time?",
+      "cue": "happen",
+      "answer": "happened"
+    },
+    {
+      "id": "el-07-005",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "A: Well, yesterday she ___ her exams with excellent marks.",
+      "cue": "pass",
+      "answer": "passed"
+    },
+    {
+      "id": "el-07-006",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "I ___ my homework already.",
+      "cue": "finish",
+      "answer": "have finished",
+      "alternatives": [
+        "I've finished"
+      ]
+    },
+    {
+      "id": "el-07-007",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "She ___ to London twice.",
+      "cue": "be",
+      "answer": "has been"
+    },
+    {
+      "id": "el-07-008",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "___ sushi before?",
+      "cue": "you / ever / eat",
+      "answer": "Have you ever eaten"
+    },
+    {
+      "id": "el-07-009",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "We ___ that film three times.",
+      "cue": "see",
+      "answer": "have seen"
+    },
+    {
+      "id": "el-07-010",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "He ___ his keys, so he can't open the door.",
+      "cue": "lose",
+      "answer": "has lost"
+    },
+    {
+      "id": "el-07-011",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "They ___ their grandparents this week.",
+      "cue": "visit",
+      "answer": "have visited"
+    },
+    {
+      "id": "el-07-012",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "I ___ a horse.",
+      "cue": "ride",
+      "answer": "have never ridden",
+      "alternatives": [
+        "I've never ridden"
+      ]
+    },
+    {
+      "id": "el-07-013",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "My sister ___ a new bicycle recently.",
+      "cue": "buy",
+      "answer": "has bought"
+    },
+    {
+      "id": "el-07-014",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "___ your room yet?",
+      "cue": "you / clean",
+      "answer": "Have you cleaned"
+    },
+    {
+      "id": "el-07-015",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "We ___ here for three years.",
+      "cue": "live",
+      "answer": "have lived"
+    },
+    {
+      "id": "el-07-016",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "Tom ___ his lunch already.",
+      "cue": "eat",
+      "answer": "has eaten"
+    },
+    {
+      "id": "el-07-017",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "I ___ that book before.",
+      "cue": "read",
+      "answer": "have read"
+    },
+    {
+      "id": "el-07-018",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "She ___ her best friend since Monday.",
+      "cue": "not / see",
+      "answer": "has not seen",
+      "alternatives": [
+        "hasn't seen"
+      ]
+    },
+    {
+      "id": "el-07-019",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "___ your parents yet?",
+      "cue": "you / call",
+      "answer": "Have you called"
+    },
+    {
+      "id": "el-07-020",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "The children ___ their homework.",
+      "cue": "finish",
+      "answer": "have finished"
+    },
+    {
+      "id": "el-07-021",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "My father ___ his phone, so he needs a new one.",
+      "cue": "break",
+      "answer": "has broken"
+    },
+    {
+      "id": "el-07-022",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "I ___ to Japan.",
+      "cue": "be",
+      "answer": "have never been",
+      "alternatives": [
+        "I've never been"
+      ]
+    },
+    {
+      "id": "el-07-023",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "___ this song before?",
+      "cue": "you / hear",
+      "answer": "Have you heard"
+    },
+    {
+      "id": "el-07-024",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "She ___ English since she was ten.",
+      "cue": "study",
+      "answer": "has studied"
+    },
+    {
+      "id": "el-07-025",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "We ___ the kitchen.",
+      "cue": "clean",
+      "answer": "have already cleaned"
+    },
+    {
+      "id": "el-07-026",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "He ___ his breakfast yet.",
+      "cue": "not / have",
+      "answer": "has not had",
+      "alternatives": [
+        "hasn't had"
+      ]
+    },
+    {
+      "id": "el-07-027",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "___ the new teacher yet?",
+      "cue": "you / meet",
+      "answer": "Have you met"
+    },
+    {
+      "id": "el-07-028",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "My friends ___ to the cinema this month.",
+      "cue": "be",
+      "answer": "have been"
+    },
+    {
+      "id": "el-07-029",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "I ___ my glasses, and now I can't find them.",
+      "cue": "lose",
+      "answer": "have lost"
+    },
+    {
+      "id": "el-07-030",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "She ___ a plane.",
+      "cue": "fly",
+      "answer": "has never flown"
+    },
+    {
+      "id": "el-07-031",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "They ___ in this house since 2020.",
+      "cue": "live",
+      "answer": "have lived"
+    },
+    {
+      "id": "el-07-032",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "___ your project yet?",
+      "cue": "you / complete",
+      "answer": "Have you completed"
+    },
+    {
+      "id": "el-07-033",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "My brother ___ home.",
+      "cue": "come",
+      "answer": "has just come"
+    },
+    {
+      "id": "el-07-034",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "I ___ my teacher an email today.",
+      "cue": "send",
+      "answer": "have sent"
+    },
+    {
+      "id": "el-07-035",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "She ___ three books this month.",
+      "cue": "read",
+      "answer": "has read"
+    },
+    {
+      "id": "el-07-036",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "We ___ this game before.",
+      "cue": "play",
+      "answer": "have never played"
+    },
+    {
+      "id": "el-07-037",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "___ a prize?",
+      "cue": "your sister / ever / win",
+      "answer": "Has your sister ever won"
+    },
+    {
+      "id": "el-07-038",
+      "type": "fill-blank",
+      "form": "present-perfect",
+      "prompt": "I ___ my bag, so I can go now.",
+      "cue": "pack",
+      "answer": "have packed"
+    },
+    {
+      "id": "el-07-039",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "I ___ football yesterday.",
+      "cue": "play",
+      "answer": "played"
+    },
+    {
+      "id": "el-07-040",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "She ___ to school late last Monday.",
+      "cue": "go",
+      "answer": "went"
+    },
+    {
+      "id": "el-07-041",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "We ___ a film last night.",
+      "cue": "watch",
+      "answer": "watched"
+    },
+    {
+      "id": "el-07-042",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "He ___ a new phone two weeks ago.",
+      "cue": "buy",
+      "answer": "bought"
+    },
+    {
+      "id": "el-07-043",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "They ___ their grandparents last weekend.",
+      "cue": "visit",
+      "answer": "visited"
+    },
+    {
+      "id": "el-07-044",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "___ to the park yesterday?",
+      "cue": "you / go",
+      "answer": "Did you go"
+    },
+    {
+      "id": "el-07-045",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "My mother ___ dinner at six yesterday.",
+      "cue": "cook",
+      "answer": "cooked"
+    },
+    {
+      "id": "el-07-046",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "I ___ my homework after school yesterday.",
+      "cue": "finish",
+      "answer": "finished"
+    },
+    {
+      "id": "el-07-047",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "Tom ___ his bike last Saturday.",
+      "cue": "ride",
+      "answer": "rode"
+    },
+    {
+      "id": "el-07-048",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "We ___ in Tashkent in 2022.",
+      "cue": "live",
+      "answer": "lived"
+    },
+    {
+      "id": "el-07-049",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "She ___ her friend at the cafe yesterday.",
+      "cue": "meet",
+      "answer": "met"
+    },
+    {
+      "id": "el-07-050",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "The children ___ a cake last Sunday.",
+      "cue": "make",
+      "answer": "made"
+    },
+    {
+      "id": "el-07-051",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "I ___ my keys yesterday morning.",
+      "cue": "lose",
+      "answer": "lost"
+    },
+    {
+      "id": "el-07-052",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "___ English last night?",
+      "cue": "you / study",
+      "answer": "Did you study"
+    },
+    {
+      "id": "el-07-053",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "My father ___ home at eight last night.",
+      "cue": "come",
+      "answer": "came"
+    },
+    {
+      "id": "el-07-054",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "We ___ lunch at a restaurant yesterday.",
+      "cue": "have",
+      "answer": "had"
+    },
+    {
+      "id": "el-07-055",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "He ___ his room last weekend.",
+      "cue": "clean",
+      "answer": "cleaned"
+    },
+    {
+      "id": "el-07-056",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "They ___ to Bukhara last summer.",
+      "cue": "travel",
+      "answer": "travelled",
+      "alternatives": [
+        "traveled"
+      ]
+    },
+    {
+      "id": "el-07-057",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "I ___ a letter to my friend last week.",
+      "cue": "write",
+      "answer": "wrote"
+    },
+    {
+      "id": "el-07-058",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "She ___ a beautiful dress at the party yesterday.",
+      "cue": "wear",
+      "answer": "wore"
+    },
+    {
+      "id": "el-07-059",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "___ the match on TV last night?",
+      "cue": "you / see",
+      "answer": "Did you see"
+    },
+    {
+      "id": "el-07-060",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "We ___ to music yesterday evening.",
+      "cue": "listen",
+      "answer": "listened"
+    },
+    {
+      "id": "el-07-061",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "My brother ___ his leg last year.",
+      "cue": "break",
+      "answer": "broke"
+    },
+    {
+      "id": "el-07-062",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "I ___ breakfast at seven this morning.",
+      "cue": "eat",
+      "answer": "ate"
+    },
+    {
+      "id": "el-07-063",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "She ___ the bus to work yesterday.",
+      "cue": "take",
+      "answer": "took"
+    },
+    {
+      "id": "el-07-064",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "They ___ a new house in 2021.",
+      "cue": "buy",
+      "answer": "bought"
+    },
+    {
+      "id": "el-07-065",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "We ___ the museum two days ago.",
+      "cue": "visit",
+      "answer": "visited"
+    },
+    {
+      "id": "el-07-066",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "He ___ his teacher a question yesterday.",
+      "cue": "ask",
+      "answer": "asked"
+    },
+    {
+      "id": "el-07-067",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "I ___ my friend at the station last night.",
+      "cue": "see",
+      "answer": "saw"
+    },
+    {
+      "id": "el-07-068",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "The lesson ___ at nine yesterday.",
+      "cue": "start",
+      "answer": "started"
+    },
+    {
+      "id": "el-07-069",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "She ___ her homework before dinner yesterday.",
+      "cue": "do",
+      "answer": "did"
+    },
+    {
+      "id": "el-07-070",
+      "type": "fill-blank",
+      "form": "past-simple",
+      "prompt": "___ your grandmother last Sunday?",
+      "cue": "you / call",
+      "answer": "Did you call"
+    }
   ]
 }
