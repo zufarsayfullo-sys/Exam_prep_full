@@ -42,7 +42,6 @@
 {"id":"el-07-036","type":"fill-blank","form":"present-perfect","prompt":"We ___ never ___ this game before.","cue":"play","answer":"have never played"},
 {"id":"el-07-037","type":"fill-blank","form":"present-perfect","prompt":"___ your sister ever ___ a prize?","cue":"win","answer":"Has your sister ever won"},
 {"id":"el-07-038","type":"fill-blank","form":"present-perfect","prompt":"I ___ my bag, so I can go now.","cue":"pack","answer":"have packed"},
-
 {"id":"el-07-039","type":"fill-blank","form":"past-simple","prompt":"I ___ football yesterday.","cue":"play","answer":"played"},
     {"id":"el-07-040","type":"fill-blank","form":"past-simple","prompt":"She ___ to school late last Monday.","cue":"go","answer":"went"},
     {"id":"el-07-041","type":"fill-blank","form":"past-simple","prompt":"We ___ a film last night.","cue":"watch","answer":"watched"},
@@ -77,15 +76,3 @@
     {"id":"el-07-070","type":"fill-blank","form":"past-simple","prompt":"___ your grandmother last Sunday?","cue":"you / call","answer":"Did you call"}
   ]
 }
-</CodeBlock>
-3. Important corrections to the JSON bank
-Seven questions above contain two blank markers, whereas the HTML expects exactly one. Before uploading, replace those seven question objects with the corrected versions below. This keeps one answer field inside each sentence.
-
-<CodeBlock language="json" editable>
-{"id":"el-07-012","type":"fill-blank","form":"present-perfect","prompt":"I ___ a horse.","cue":"never / ride","answer":"have never ridden","alternatives":["I've never ridden"]}
-{"id":"el-07-022","type":"fill-blank","form":"present-perfect","prompt":"I ___ to Japan.","cue":"never / be","answer":"have never been","alternatives":["I've never been"]}
-{"id":"el-07-025","type":"fill-blank","form":"present-perfect","prompt":"We ___ the kitchen.","cue":"already / clean","answer":"have already cleaned"}
-{"id":"el-07-030","type":"fill-blank","form":"present-perfect","prompt":"She ___ a plane.","cue":"never / fly","answer":"has never flown"}
-{"id":"el-07-033","type":"fill-blank","form":"present-perfect","prompt":"My brother ___ home.","cue":"just / come","answer":"has just come"}
-{"id":"el-07-036","type":"fill-blank","form":"present-perfect","prompt":"We ___ this game before.","cue":"never / play","answer":"have never played"}
-{"id":"el-07-037","type":"fill-blank","form":"present-perfect","prompt":"___ a prize?","cue":"your sister / ever / win","answer":"Has your sister ever won"}
