@@ -14,5 +14,13 @@
       "title": "Past Simple — Wh- Questions",
       "path": "quiz-02.html",
       "bank": "quiz-02.bank.json"
-  }
+  },
+  {
+  "id": "quiz-03",
+  "title": "Should / Shouldn't / Have To",
+  "path": "quiz-03.html",
+  "bank": "quiz-03.bank.json",
+  "category": "Grammar",
+  "level": "elementary"
+}
 ]
