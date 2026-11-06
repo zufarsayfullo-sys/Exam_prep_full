@@ -46,5 +46,13 @@
   "bank": "quiz-06.bank.json",
   "category": "Grammar",
   "level": "elementary"
+},
+  {
+  "id": "quiz-07",
+  "title": "Present Perfect vs Past Simple",
+  "path": "quiz-07.html",
+  "bank": "quiz-07.bank.json",
+  "category": "Grammar",
+  "level": "elementary"
 }
 ]
