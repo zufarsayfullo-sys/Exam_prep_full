@@ -54,5 +54,13 @@
   "bank": "quiz-07.bank.json",
   "category": "Grammar",
   "level": "elementary"
+},
+  {
+  "id": "quiz-08",
+  "title": "Present Perfect",
+  "path": "quiz-08.html",
+  "bank": "quiz-08.bank.json",
+  "category": "Grammar",
+  "level": "elementary"
 }
 ]
