@@ -38,5 +38,13 @@
   "bank": "quiz-05.bank.json",
   "category": "Grammar",
   "level": "elementary"
+},
+  {
+  "id": "quiz-06",
+  "title": "Comparatives & Superlatives",
+  "path": "quiz-06.html",
+  "bank": "quiz-06.bank.json",
+  "category": "Grammar",
+  "level": "elementary"
 }
 ]
