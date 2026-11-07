@@ -94,5 +94,12 @@
   "bank": "quiz-12.bank.json",
   "category": "Vocabulary",
   "level": "elementary"
+},
+  {
+  "id": "quiz-13",
+  "title": "Irregular Verbs — V2 & V3",
+  "category": "Grammar",
+  "path": "beginner/quizzes/quiz-13.html",
+  "bank": "beginner/quizzes/quiz-13.bank.json"
 }
 ]
