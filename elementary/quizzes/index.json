@@ -95,17 +95,21 @@
   "category": "Vocabulary",
   "level": "elementary"
 },
-  {
+  
+{
   "id": "quiz-13",
   "title": "Irregular Verbs — V2 & V3",
   "category": "Grammar",
-  "path": "beginner/quizzes/quiz-13.html",
-  "bank": "beginner/quizzes/quiz-13.bank.json"
+  "path": "quiz-13.html",
+  "bank": "quiz-13.bank.json",
+  "level": "elementary"
 },
-  {
+{
   "id": "quiz-14",
   "title": "Put the Words in Order — Phone Conversation",
   "category": "Grammar",
-  "path": "beginner/quizzes/quiz-14.html"
+  "path": "quiz-14.html",
+  "level": "elementary"
 }
+
 ]
