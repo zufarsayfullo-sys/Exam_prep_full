@@ -1,0 +1,777 @@
+{
+  "title": "Get / Take / Have",
+  "level": "elementary",
+  "category": "Vocabulary",
+  "questions": [
+    {
+      "id": "el-10-001",
+      "type": "choose-correct",
+      "prompt": "Mary used her new camera to ___ photos on holiday.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-002",
+      "type": "choose-correct",
+      "prompt": "I didn't ___ time to write a letter.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-003",
+      "type": "choose-correct",
+      "prompt": "You should ___ a shower before bedtime.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-004",
+      "type": "choose-correct",
+      "prompt": "I ___ a lot of emails every day.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-005",
+      "type": "choose-correct",
+      "prompt": "We always ___ a good time on holiday.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-006",
+      "type": "choose-correct",
+      "prompt": "Please ___ photos of the mountains with your camera.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-007",
+      "type": "choose-correct",
+      "prompt": "I usually ___ a shower in the morning.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-008",
+      "type": "choose-correct",
+      "prompt": "I often ___ text messages from my sister.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-009",
+      "type": "choose-correct",
+      "prompt": "We want to ___ fun at the party.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-010",
+      "type": "choose-correct",
+      "prompt": "It can ___ a long time to learn a new language.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-011",
+      "type": "choose-correct",
+      "prompt": "My phone is off, so I cannot ___ any text messages now.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-012",
+      "type": "choose-correct",
+      "prompt": "Let's ___ some photos in front of the school.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-013",
+      "type": "choose-correct",
+      "prompt": "Did you ___ a good time at the concert?",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-014",
+      "type": "choose-correct",
+      "prompt": "It doesn't ___ a long time to walk to my house.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-015",
+      "type": "choose-correct",
+      "prompt": "I always ___ emails from my English teacher.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-016",
+      "type": "choose-correct",
+      "prompt": "Don't forget to ___ a shower after football.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-017",
+      "type": "choose-correct",
+      "prompt": "Can you ___ a photo of me and my brother?",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-018",
+      "type": "choose-correct",
+      "prompt": "I didn't ___ any emails yesterday.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-019",
+      "type": "choose-correct",
+      "prompt": "We usually ___ lunch together at school.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-020",
+      "type": "choose-correct",
+      "prompt": "The journey will ___ a long time because the road is busy.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-021",
+      "type": "choose-correct",
+      "prompt": "I want to ___ photos of the flowers in our garden.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-022",
+      "type": "choose-correct",
+      "prompt": "Do you ___ many text messages from your friends?",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-023",
+      "type": "choose-correct",
+      "prompt": "Let's ___ dinner at seven o'clock.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-024",
+      "type": "choose-correct",
+      "prompt": "It shouldn't ___ a long time to finish this easy exercise.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-025",
+      "type": "choose-correct",
+      "prompt": "We always ___ fun when we play games together.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-026",
+      "type": "choose-correct",
+      "prompt": "My parents often ___ emails from their friends.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-027",
+      "type": "choose-correct",
+      "prompt": "Please ___ some photos of our classroom.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-028",
+      "type": "choose-correct",
+      "prompt": "I need to ___ a shower before I go out.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-029",
+      "type": "choose-correct",
+      "prompt": "It will ___ a long time to paint the whole house.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-030",
+      "type": "choose-correct",
+      "prompt": "I usually ___ a text message from my mum after school.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-031",
+      "type": "choose-correct",
+      "prompt": "We hope to ___ a good time at the festival.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-032",
+      "type": "choose-correct",
+      "prompt": "My uncle likes to ___ photos of birds.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-033",
+      "type": "choose-correct",
+      "prompt": "Do you ___ emails on your phone or computer?",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-034",
+      "type": "choose-correct",
+      "prompt": "Let's ___ lunch at home today.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-035",
+      "type": "choose-correct",
+      "prompt": "This test won't ___ a long time.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-036",
+      "type": "choose-correct",
+      "prompt": "We can ___ photos with my new phone.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-037",
+      "type": "choose-correct",
+      "prompt": "I don't ___ many text messages during lessons.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-038",
+      "type": "choose-correct",
+      "prompt": "My family likes to ___ dinner together.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-039",
+      "type": "choose-correct",
+      "prompt": "It may ___ a long time to get to the airport.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-040",
+      "type": "choose-correct",
+      "prompt": "We always ___ a good time when we visit our grandparents.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-041",
+      "type": "choose-correct",
+      "prompt": "I sometimes ___ emails from my cousins in Korea.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-042",
+      "type": "choose-correct",
+      "prompt": "Could you ___ a photo of our family, please?",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-043",
+      "type": "choose-correct",
+      "prompt": "We usually ___ lunch at half past twelve.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-044",
+      "type": "choose-correct",
+      "prompt": "Does it ___ a long time to travel by train?",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-045",
+      "type": "choose-correct",
+      "prompt": "I often ___ text messages about my English lessons.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-046",
+      "type": "choose-correct",
+      "prompt": "You can ___ a shower after swimming.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-047",
+      "type": "choose-correct",
+      "prompt": "I want to ___ photos of my new puppy.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-048",
+      "type": "choose-correct",
+      "prompt": "I usually ___ emails about school events.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-049",
+      "type": "choose-correct",
+      "prompt": "The children always ___ fun at the playground.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-050",
+      "type": "choose-correct",
+      "prompt": "It can ___ a long time to clean a big classroom.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-051",
+      "type": "choose-correct",
+      "prompt": "I ___ text messages from my best friend every weekend.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-052",
+      "type": "choose-correct",
+      "prompt": "Let's ___ some photos before we leave.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-053",
+      "type": "choose-correct",
+      "prompt": "We always ___ dinner after our evening walk.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-054",
+      "type": "choose-correct",
+      "prompt": "It doesn't ___ a long time to make a sandwich.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-055",
+      "type": "choose-correct",
+      "prompt": "My dad often ___ emails from his colleagues.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-056",
+      "type": "choose-correct",
+      "prompt": "We hope you ___ a good time at our party.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-057",
+      "type": "choose-correct",
+      "prompt": "Tourists often ___ photos of this old building.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-058",
+      "type": "choose-correct",
+      "prompt": "Do you ___ text messages every morning?",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-059",
+      "type": "choose-correct",
+      "prompt": "We sometimes ___ lunch in the school garden.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-060",
+      "type": "choose-correct",
+      "prompt": "It might ___ a long time to find the correct answer.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-061",
+      "type": "choose-correct",
+      "prompt": "I often ___ emails with information about my classes.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-062",
+      "type": "choose-correct",
+      "prompt": "Please ___ photos of the animals at the zoo.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-063",
+      "type": "choose-correct",
+      "prompt": "My brother likes to ___ a shower before breakfast.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-064",
+      "type": "choose-correct",
+      "prompt": "It will ___ a long time to read this big book.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-065",
+      "type": "choose-correct",
+      "prompt": "I always ___ a text message when my friend arrives.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-066",
+      "type": "choose-correct",
+      "prompt": "We want to ___ fun during our school trip.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-067",
+      "type": "choose-correct",
+      "prompt": "My sister loves to ___ photos of her friends.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "el-10-068",
+      "type": "choose-correct",
+      "prompt": "I don't ___ any emails on Sundays.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "get"
+    },
+    {
+      "id": "el-10-069",
+      "type": "choose-correct",
+      "prompt": "We usually ___ dinner at home on Fridays.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "el-10-070",
+      "type": "choose-correct",
+      "prompt": "It shouldn't ___ a long time to answer ten questions.",
+      "options": [
+        "get",
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    }
+  ]
+}
