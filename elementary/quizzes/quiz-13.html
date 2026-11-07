@@ -1,0 +1,884 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beginner Quiz 13 | ExamPrep Studio</title>
+<style>
+:root{
+  font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+  background:#f6f7ff;color:#202044
+}
+*{box-sizing:border-box}
+body{margin:0}
+.wrap{max-width:920px;margin:auto;padding:16px}
+.brand{font-size:24px;font-weight:800;margin:10px 0 25px}
+.brand span{color:#7138e5}
+.card{
+  background:white;border:1px solid #e6e4f5;
+  border-radius:22px;padding:clamp(20px,5vw,34px);
+  box-shadow:0 12px 36px #16164c0b;
+  margin-bottom:20px
+}
+h1{font-size:clamp(26px,5vw,36px);margin:8px 0 12px}
+h2{font-size:22px}
+.muted{color:#69718a;line-height:1.6}
+.tag{
+  display:inline-block;background:#eee9ff;color:#6d36d9;
+  padding:7px 12px;border-radius:24px;
+  font-weight:700;font-size:13px
+}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+button{
+  border:0;border-radius:12px;background:#7138e5;
+  color:white;font:inherit;font-weight:700;
+  padding:13px 20px;cursor:pointer;min-height:48px
+}
+button.alt{background:#f0eaff;color:#6832cb}
+button:disabled{opacity:.45;cursor:default}
+.hidden{display:none!important}
+.progress{
+  height:9px;background:#eae6fa;
+  border-radius:20px;overflow:hidden;margin:18px 0
+}
+.progress div{height:100%;background:#7138e5;width:0}
+.verb-row{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;margin:24px 0
+}
+.verb-col{min-width:0}
+.verb-label{
+  display:block;font-size:13px;font-weight:700;
+  color:#69718a;margin-bottom:9px
+}
+.verb-fixed,.verb-input{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;min-width:0;height:58px;
+  border-radius:12px;font:inherit;font-size:19px;
+  font-weight:700;text-align:center
+}
+.verb-fixed{background:#f3efff;color:#202044;padding:8px}
+.verb-input{
+  border:2px solid #c8b8f5;background:white;
+  color:#202044;padding:8px
+}
+.verb-input:focus{
+  outline:3px solid #dacdff;border-color:#7138e5
+}
+table{width:100%;border-collapse:collapse}
+td,th{text-align:left;border-bottom:1px solid #eee;padding:12px}
+.review{padding:14px 0;border-bottom:1px solid #eee}
+.good{color:#087e43}
+.bad{color:#bd3348}
+#notice{color:#ba273f;min-height:22px;white-space:pre-wrap}
+a{color:#6832cb}
+@media(max-width:600px){
+  .card{padding:18px 15px;border-radius:17px}
+  .actions{
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+  .actions button{width:100%;padding:13px 8px}
+  #home button{width:100%}
+  #quiz .actions{
+    position:sticky;bottom:0;background:white;
+    padding:10px 0 4px;z-index:2
+  }
+  .verb-row{gap:6px}
+  .verb-label{font-size:11px}
+  .verb-fixed,.verb-input{
+    height:52px;font-size:15px;padding:5px
+  }
+  .verb-input::placeholder{font-size:13px}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="brand">✦ ExamPrep <span>Studio</span></div>
+
+<section class="card" id="home">
+  <span class="tag">Beginner · Grammar</span>
+  <h1>Irregular Verbs — V2 &amp; V3</h1>
+  <p class="muted">
+    70 bank entries · 10 randomly selected verbs ·
+    Pass mark 80%
+  </p>
+  <button id="create" disabled>Loading question bank...</button>
+  <p class="muted">
+    Students join through student.html.
+    Start when everyone is ready.
+  </p>
+</section>
+
+<section class="card hidden" id="teacher">
+  <span class="tag">Teacher live session</span>
+  <h1>Irregular Verbs — V2 &amp; V3</h1>
+  <p>Session code: <strong id="code"></strong></p>
+  <p>
+    Student Board:
+    <a href="../../student.html" target="_blank" rel="noopener">
+      Open student.html
+    </a>
+  </p>
+  <p id="count"></p>
+  <div class="actions">
+    <button id="start">Start Quiz</button>
+    <button id="end" class="alt">End Session</button>
+  </div>
+  <h2>Live leaderboard</h2>
+  <table>
+    <thead>
+      <tr><th>Student</th><th>Score</th></tr>
+    </thead>
+    <tbody id="leader"></tbody>
+  </table>
+</section>
+
+<section class="card hidden" id="join">
+  <h1>Join through the Student Board</h1>
+  <p class="muted">
+    Register once on student.html.
+    You do not need to enter your name again.
+  </p>
+  <a href="../../student.html">Return to Student Board</a>
+</section>
+
+<section class="card hidden" id="waiting">
+  <h1>You're in!</h1>
+  <p class="muted">Wait for your teacher to start the quiz.</p>
+</section>
+
+<section class="card hidden" id="quiz">
+  <span class="tag" id="counter"></span>
+  <h2>Write the second and third forms.</h2>
+  <p class="muted">
+    Complete both spaces. Each correct form is worth 5 points.
+  </p>
+  <div class="progress"><div id="fill"></div></div>
+
+  <div class="verb-row">
+    <div class="verb-col">
+      <label class="verb-label">V1 · Infinitive</label>
+      <div class="verb-fixed" id="infinitive"></div>
+    </div>
+    <div class="verb-col">
+      <label class="verb-label" for="v2">V2 · Past Simple</label>
+      <input
+        id="v2" class="verb-input" type="text"
+        placeholder="Type V2" autocomplete="off"
+        autocapitalize="off" spellcheck="false"
+        maxlength="35"
+      >
+    </div>
+    <div class="verb-col">
+      <label class="verb-label" for="v3">V3 · Past Participle</label>
+      <input
+        id="v3" class="verb-input" type="text"
+        placeholder="Type V3" autocomplete="off"
+        autocapitalize="off" spellcheck="false"
+        maxlength="35"
+      >
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="alt" id="prev">Previous</button>
+    <button id="next">Next</button>
+  </div>
+</section>
+
+<section class="card hidden" id="result">
+  <span class="tag">Your result</span>
+  <h1 id="score"></h1>
+  <p id="outcome"></p>
+  <button class="alt" id="toggleReview">Review answers</button>
+  <div class="hidden" id="review"></div>
+</section>
+
+<p id="notice" role="status" aria-live="polite"></p>
+</main>
+
+<script>
+"use strict";
+
+const URL_BASE="https://dfepopppcggzecdxexeh.supabase.co";
+const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
+
+const QUIZ_TITLE="Irregular Verbs — V2 & V3";
+const QUIZ_PATH="beginner/quizzes/quiz-13.html";
+const BANK_FILE="quiz-13.bank.json";
+const QUESTION_COUNT=10;
+const PASS_MARK=80;
+
+const TEACHER_KEY="eps2_teacher";
+const PLAYER_KEY="eps2_player";
+const PROGRESS_PREFIX="eps2_beginner_quiz13_progress_";
+
+const $=id=>document.getElementById(id);
+const views=["home","teacher","join","waiting","quiz","result"];
+const query=new URLSearchParams(location.search);
+
+let BANK=[];
+let code="",teacherToken="",playerId="";
+let selected=[],answers={},index=0,submitted=false;
+let busy=false,polling=false,quizStarted=false,sessionClosed=false;
+let bankLoading=null;
+
+function show(id){
+  views.forEach(v=>$(v).classList.toggle("hidden",v!==id));
+}
+
+function notice(message){
+  $("notice").textContent=message||"";
+}
+
+function readStorage(key){
+  try{
+    const value=sessionStorage.getItem(key);
+    return value?JSON.parse(value):null;
+  }catch{
+    return null;
+  }
+}
+
+function writeStorage(key,value){
+  try{
+    sessionStorage.setItem(key,JSON.stringify(value));
+  }catch{}
+}
+
+function removeStorage(key){
+  try{sessionStorage.removeItem(key);}
+  catch{}
+}
+
+function progressKey(){
+  return PROGRESS_PREFIX+code+"_"+playerId;
+}
+
+function normalize(value){
+  return String(value??"")
+    .toLowerCase()
+    .replace(/[’‘`]/g,"'")
+    .replace(/\s+/g," ")
+    .trim();
+}
+
+function acceptedForms(question,form){
+  const main=form==="v2"?question.v2:question.v3;
+  const extra=form==="v2"
+    ?question.v2Alternatives
+    :question.v3Alternatives;
+
+  return [main,...(Array.isArray(extra)?extra:[])];
+}
+
+function isFormCorrect(question,form,value){
+  return acceptedForms(question,form).some(
+    candidate=>normalize(candidate)===normalize(value)
+  );
+}
+
+function scoreAnswers(){
+  let points=0;
+
+  selected.forEach(question=>{
+    const answer=answers[question.id]||{};
+
+    if(isFormCorrect(question,"v2",answer.v2))points+=5;
+    if(isFormCorrect(question,"v3",answer.v3))points+=5;
+  });
+
+  return points;
+}
+
+function validateBank(data){
+  const questions=Array.isArray(data)?data:data?.questions;
+
+  if(!Array.isArray(questions)){
+    throw Error("Invalid question bank format.");
+  }
+
+  if(questions.length!==70){
+    throw Error("Expected 70 questions, found "+questions.length);
+  }
+
+  const ids=new Set();
+  const verbs=new Set();
+
+  for(const q of questions){
+    if(
+      !q||
+      q.type!=="verb-forms"||
+      typeof q.id!=="string"||
+      typeof q.prompt!=="string"||
+      typeof q.v2!=="string"||
+      typeof q.v3!=="string"||
+      !q.id.trim()||
+      !q.prompt.trim()||
+      !q.v2.trim()||
+      !q.v3.trim()
+    ){
+      throw Error("Invalid question: "+(q?.id||"unknown"));
+    }
+
+    for(const key of ["v2Alternatives","v3Alternatives"]){
+      if(
+        q[key]!==undefined&&
+        (!Array.isArray(q[key])||
+          q[key].some(x=>typeof x!=="string"||!x.trim()))
+      ){
+        throw Error("Invalid alternatives: "+q.id);
+      }
+    }
+
+    if(ids.has(q.id)){
+      throw Error("Duplicate ID: "+q.id);
+    }
+
+    ids.add(q.id);
+    verbs.add(normalize(q.prompt));
+  }
+
+  if(verbs.size<QUESTION_COUNT){
+    throw Error("Not enough distinct verbs for 10 questions.");
+  }
+
+  return questions;
+}
+
+async function loadBank(){
+  if(BANK.length===70)return true;
+  if(bankLoading)return bankLoading;
+
+  bankLoading=(async()=>{
+    try{
+      const response=await fetch(BANK_FILE,{cache:"no-store"});
+
+      if(!response.ok){
+        throw Error("Question bank HTTP "+response.status);
+      }
+
+      BANK=validateBank(await response.json());
+      $("create").disabled=false;
+      $("create").textContent="Create Live Session";
+      notice("");
+      return true;
+    }catch(error){
+      BANK=[];
+      $("create").disabled=true;
+      $("create").textContent="Question bank unavailable";
+      notice("Question bank error: "+error.message);
+      return false;
+    }
+  })();
+
+  try{
+    return await bankLoading;
+  }finally{
+    bankLoading=null;
+  }
+}
+
+// Existing Supabase RPC contract: unchanged.
+async function rpc(fn,data={}){
+  const response=await fetch(URL_BASE+"/rest/v1/rpc/"+fn,{
+    method:"POST",
+    headers:{
+      apikey:PUBLIC_KEY,
+      Authorization:"Bearer "+PUBLIC_KEY,
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(data)
+  });
+
+  const raw=await response.text();
+  let result;
+
+  try{
+    result=raw?JSON.parse(raw):null;
+  }catch{
+    result=raw;
+  }
+
+  if(!response.ok){
+    throw Error(
+      result?.message||
+      result?.hint||
+      (typeof result==="string"?result:"")||
+      "Supabase request failed (HTTP "+response.status+")"
+    );
+  }
+
+  return result;
+}
+
+async function run(fn){
+  if(busy)return;
+  busy=true;
+  notice("");
+
+  try{
+    await fn();
+  }catch(error){
+    notice(error.message||String(error));
+  }finally{
+    busy=false;
+  }
+}
+
+function shuffle(items){
+  const result=[...items];
+
+  for(let i=result.length-1;i>0;i--){
+    const random=crypto.getRandomValues(new Uint32Array(1))[0];
+    const j=random%(i+1);
+    [result[i],result[j]]=[result[j],result[i]];
+  }
+
+  return result;
+}
+
+// Avoid repeating the same infinitive in one attempt.
+function choose(){
+  if(BANK.length!==70){
+    throw Error("Question bank is not ready.");
+  }
+
+  const chosen=[];
+  const used=new Set();
+
+  for(const q of shuffle(BANK)){
+    const verb=normalize(q.prompt);
+    if(used.has(verb))continue;
+
+    used.add(verb);
+    chosen.push(q);
+
+    if(chosen.length===QUESTION_COUNT)break;
+  }
+
+  if(chosen.length!==QUESTION_COUNT){
+    throw Error("Could not select 10 different verbs.");
+  }
+
+  return chosen;
+}
+
+function sessionCode(){
+  const chars="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+
+  return Array.from(
+    crypto.getRandomValues(new Uint8Array(8)),
+    value=>chars[value%chars.length]
+  ).join("");
+}
+
+function saveProgress(){
+  if(!code||!playerId||!selected.length)return;
+
+  writeStorage(progressKey(),{
+    questionIds:selected.map(q=>q.id),
+    answers,index,submitted
+  });
+}
+
+function restoreProgress(){
+  const saved=readStorage(progressKey());
+
+  if(
+    !saved||
+    !Array.isArray(saved.questionIds)||
+    saved.questionIds.length!==QUESTION_COUNT
+  ){
+    return false;
+  }
+
+  const questions=saved.questionIds.map(
+    id=>BANK.find(q=>q.id===id)
+  );
+
+  if(
+    questions.some(q=>!q)||
+    new Set(saved.questionIds).size!==QUESTION_COUNT||
+    new Set(questions.map(q=>normalize(q.prompt))).size
+      !==QUESTION_COUNT
+  ){
+    return false;
+  }
+
+  selected=questions;
+
+  answers=(
+    saved.answers&&
+    typeof saved.answers==="object"&&
+    !Array.isArray(saved.answers)
+  )?saved.answers:{};
+
+  index=Number.isInteger(saved.index)
+    ?Math.max(0,Math.min(saved.index,QUESTION_COUNT-1))
+    :0;
+
+  submitted=saved.submitted===true;
+  return true;
+}
+
+$("create").onclick=()=>run(async()=>{
+  if(BANK.length!==70){
+    throw Error("Question bank is not loaded.");
+  }
+
+  const newToken=crypto.randomUUID();
+  const newCode=sessionCode();
+
+  await rpc("eps2_create",{
+    p_code:newCode,
+    p_token:newToken
+  });
+
+  await rpc("eps2_publish",{
+    p_code:newCode,
+    p_token:newToken,
+    p_title:QUIZ_TITLE,
+    p_path:QUIZ_PATH
+  });
+
+  code=newCode;
+  teacherToken=newToken;
+  sessionClosed=false;
+
+  writeStorage(TEACHER_KEY,{code,teacherToken});
+  $("code").textContent=code;
+  show("teacher");
+
+  await poll(true);
+});
+
+$("start").onclick=()=>run(async()=>{
+  await rpc("eps2_start",{
+    p_code:code,
+    p_token:teacherToken
+  });
+
+  await poll(true);
+});
+
+$("end").onclick=()=>run(async()=>{
+  if(!confirm("End this live session?"))return;
+
+  await rpc("eps2_end",{
+    p_code:code,
+    p_token:teacherToken
+  });
+
+  sessionClosed=true;
+  removeStorage(TEACHER_KEY);
+  teacherToken="";
+  code="";
+  show("home");
+  notice("Session ended.");
+});
+
+function saveCurrentAnswer(){
+  const q=selected[index];
+  if(!q)return;
+
+  answers[q.id]={
+    v2:$("v2").value,
+    v3:$("v3").value
+  };
+
+  saveProgress();
+}
+
+function render(){
+  const q=selected[index];
+
+  if(!q){
+    notice("Question unavailable. Please reload.");
+    return;
+  }
+
+  $("counter").textContent=
+    `Question ${index+1} of ${selected.length}`;
+
+  $("fill").style.width=
+    ((index+1)/selected.length*100)+"%";
+
+  $("infinitive").textContent=q.prompt;
+
+  const answer=answers[q.id]||{};
+  $("v2").value=answer.v2||"";
+  $("v3").value=answer.v3||"";
+
+  $("prev").disabled=index===0;
+  $("next").textContent=
+    index===selected.length-1?"Submit Answers":"Next";
+}
+
+["v2","v3"].forEach(id=>{
+  $(id).addEventListener("input",()=>{
+    if(!submitted){
+      saveCurrentAnswer();
+      notice("");
+    }
+  });
+
+  $(id).addEventListener("keydown",event=>{
+    if(event.key==="Enter"){
+      event.preventDefault();
+      if(id==="v2"){
+        $("v3").focus();
+      }else{
+        $("next").click();
+      }
+    }
+  });
+});
+
+$("prev").onclick=()=>{
+  if(submitted||!selected.length)return;
+
+  saveCurrentAnswer();
+
+  if(index>0){
+    index--;
+    saveProgress();
+    render();
+  }
+};
+
+$("next").onclick=()=>run(async()=>{
+  if(submitted)return;
+
+  const q=selected[index];
+  if(!q)throw Error("Question unavailable.");
+
+  saveCurrentAnswer();
+  const answer=answers[q.id]||{};
+
+  if(!normalize(answer.v2)||!normalize(answer.v3)){
+    throw Error("Please complete both V2 and V3.");
+  }
+
+  if(index<selected.length-1){
+    index++;
+    saveProgress();
+    render();
+    return;
+  }
+
+  if(!confirm("Submit your 10 answers?"))return;
+
+  const score=scoreAnswers();
+
+  await rpc("eps2_submit",{
+    p_code:code,
+    p_player:playerId,
+    p_score:score
+  });
+
+  submitted=true;
+  saveProgress();
+  displayResult(score);
+});
+
+function displayResult(score){
+  quizStarted=false;
+  show("result");
+
+  $("score").textContent=score+"%";
+
+  $("outcome").textContent=
+    score>=PASS_MARK
+      ?"Passed!"
+      :"Below 80% — your result was saved for extra support.";
+
+  const review=$("review");
+  review.replaceChildren();
+  review.classList.add("hidden");
+
+  selected.forEach(q=>{
+    const answer=answers[q.id]||{};
+    const item=document.createElement("div");
+    item.className="review";
+
+    const heading=document.createElement("strong");
+    heading.textContent="V1: "+q.prompt;
+
+    const v2=document.createElement("p");
+    const v3=document.createElement("p");
+
+    const correctV2=isFormCorrect(q,"v2",answer.v2);
+    const correctV3=isFormCorrect(q,"v3",answer.v3);
+
+    v2.className=correctV2?"good":"bad";
+    v3.className=correctV3?"good":"bad";
+
+    v2.textContent=
+      "V2: "+(answer.v2||"—")+
+      (correctV2?" ✓":" ✗  Correct: "+
+        acceptedForms(q,"v2").join(" / "));
+
+    v3.textContent=
+      "V3: "+(answer.v3||"—")+
+      (correctV3?" ✓":" ✗  Correct: "+
+        acceptedForms(q,"v3").join(" / "));
+
+    item.append(heading,v2,v3);
+    review.append(item);
+  });
+}
+
+$("toggleReview").onclick=()=>{
+  $("review").classList.toggle("hidden");
+};
+
+// Poll without redrawing answers while students type.
+async function poll(force=false){
+  if(
+    !code||
+    sessionClosed||
+    polling||
+    (!force&&busy)
+  )return;
+
+  polling=true;
+
+  try{
+    const state=await rpc("eps2_state",{
+      p_code:code,
+      p_token:teacherToken||null,
+      p_player:playerId||null
+    });
+
+    if(teacherToken){
+      const players=Array.isArray(state.players)
+        ?state.players:[];
+
+      $("count").textContent=
+        `${players.length} student(s) · ${state.status}`;
+
+      $("start").disabled=state.status!=="waiting";
+      $("end").disabled=state.status==="completed";
+
+      const leaderboard=$("leader");
+      leaderboard.replaceChildren();
+
+      players.forEach((player,i)=>{
+        const row=document.createElement("tr");
+        const name=document.createElement("td");
+        const score=document.createElement("td");
+
+        name.textContent=`${i+1}. ${player.name}`;
+        score.textContent=player.completed
+          ?player.score+"%"
+          :"—";
+
+        row.append(name,score);
+        leaderboard.append(row);
+      });
+
+    }else if(playerId){
+      if(state.status==="active"&&!submitted){
+        if(BANK.length!==70){
+          const loaded=await loadBank();
+          if(!loaded)return;
+        }
+
+        if(!selected.length){
+          if(!restoreProgress()){
+            selected=choose();
+            index=0;
+            answers={};
+            saveProgress();
+          }
+        }
+
+        if(!quizStarted){
+          quizStarted=true;
+          show("quiz");
+          render();
+        }
+      }
+
+      if(state.status==="completed"&&!submitted){
+        sessionClosed=true;
+        quizStarted=false;
+        show("waiting");
+        notice("Teacher ended the session.");
+      }
+    }
+  }catch(error){
+    notice(error.message||String(error));
+  }finally{
+    polling=false;
+  }
+}
+
+// Student identity comes only from student.html.
+// Do not call eps2_join here.
+function restoreSession(){
+  if(query.has("join")){
+    const saved=readStorage(PLAYER_KEY);
+    const requestedCode=query.get("join");
+
+    if(
+      saved&&
+      saved.code===requestedCode&&
+      saved.playerId
+    ){
+      code=saved.code;
+      playerId=saved.playerId;
+      show("waiting");
+    }else{
+      show("join");
+      notice("Please register through the Student Board first.");
+    }
+  }else{
+    const saved=readStorage(TEACHER_KEY);
+
+    if(
+      saved&&
+      saved.code&&
+      saved.teacherToken
+    ){
+      code=saved.code;
+      teacherToken=saved.teacherToken;
+      $("code").textContent=code;
+      show("teacher");
+    }
+  }
+}
+
+async function initialize(){
+  restoreSession();
+
+  const loaded=await loadBank();
+  if(!loaded)return;
+
+  if(playerId){
+    restoreProgress();
+
+    if(submitted&&selected.length===QUESTION_COUNT){
+      displayResult(scoreAnswers());
+      return;
+    }
+  }
+
+  if(code&&!submitted){
+    await poll(true);
+  }
+}
+
+initialize();
+
+setInterval(()=>{
+  if(code&&!submitted&&!sessionClosed){
+    poll();
+  }
+},3000);
+</script>
+</body>
+</html>
