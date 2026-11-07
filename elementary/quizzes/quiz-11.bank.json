@@ -1,0 +1,666 @@
+{
+  "title": "Saying Numbers — Write in Words",
+  "level": "elementary",
+  "category": "Vocabulary",
+  "questions": [
+    {
+      "id": "el-11-001",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "¾",
+      "answer": "three-quarters",
+      "alternatives": [
+        "three quarters"
+      ]
+    },
+    {
+      "id": "el-11-002",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "¼",
+      "answer": "a quarter",
+      "alternatives": [
+        "one quarter"
+      ]
+    },
+    {
+      "id": "el-11-003",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅓",
+      "answer": "a third",
+      "alternatives": [
+        "one third"
+      ]
+    },
+    {
+      "id": "el-11-004",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "½",
+      "answer": "a half",
+      "alternatives": [
+        "one half"
+      ]
+    },
+    {
+      "id": "el-11-005",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅔",
+      "answer": "two-thirds",
+      "alternatives": [
+        "two thirds"
+      ]
+    },
+    {
+      "id": "el-11-006",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅖",
+      "answer": "two-fifths",
+      "alternatives": [
+        "two fifths"
+      ]
+    },
+    {
+      "id": "el-11-007",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅗",
+      "answer": "three-fifths",
+      "alternatives": [
+        "three fifths"
+      ]
+    },
+    {
+      "id": "el-11-008",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅘",
+      "answer": "four-fifths",
+      "alternatives": [
+        "four fifths"
+      ]
+    },
+    {
+      "id": "el-11-009",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅛",
+      "answer": "one-eighth",
+      "alternatives": [
+        "an eighth",
+        "one eighth"
+      ]
+    },
+    {
+      "id": "el-11-010",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅜",
+      "answer": "three-eighths",
+      "alternatives": [
+        "three eighths"
+      ]
+    },
+    {
+      "id": "el-11-011",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅝",
+      "answer": "five-eighths",
+      "alternatives": [
+        "five eighths"
+      ]
+    },
+    {
+      "id": "el-11-012",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅞",
+      "answer": "seven-eighths",
+      "alternatives": [
+        "seven eighths"
+      ]
+    },
+    {
+      "id": "el-11-013",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅙",
+      "answer": "one-sixth",
+      "alternatives": [
+        "a sixth",
+        "one sixth"
+      ]
+    },
+    {
+      "id": "el-11-014",
+      "type": "number-words",
+      "category": "Fractions",
+      "prompt": "⅚",
+      "answer": "five-sixths",
+      "alternatives": [
+        "five sixths"
+      ]
+    },
+    {
+      "id": "el-11-015",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "15%",
+      "answer": "fifteen per cent",
+      "alternatives": [
+        "fifteen percent"
+      ]
+    },
+    {
+      "id": "el-11-016",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "47%",
+      "answer": "forty-seven per cent",
+      "alternatives": [
+        "forty-seven percent"
+      ]
+    },
+    {
+      "id": "el-11-017",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "4.7%",
+      "answer": "four point seven per cent",
+      "alternatives": [
+        "four point seven percent"
+      ]
+    },
+    {
+      "id": "el-11-018",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "20%",
+      "answer": "twenty per cent",
+      "alternatives": [
+        "twenty percent"
+      ]
+    },
+    {
+      "id": "el-11-019",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "5%",
+      "answer": "five per cent",
+      "alternatives": [
+        "five percent"
+      ]
+    },
+    {
+      "id": "el-11-020",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "50%",
+      "answer": "fifty per cent",
+      "alternatives": [
+        "fifty percent"
+      ]
+    },
+    {
+      "id": "el-11-021",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "75%",
+      "answer": "seventy-five per cent",
+      "alternatives": [
+        "seventy-five percent"
+      ]
+    },
+    {
+      "id": "el-11-022",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "100%",
+      "answer": "one hundred per cent",
+      "alternatives": [
+        "one hundred percent",
+        "a hundred percent"
+      ]
+    },
+    {
+      "id": "el-11-023",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "12%",
+      "answer": "twelve per cent",
+      "alternatives": [
+        "twelve percent"
+      ]
+    },
+    {
+      "id": "el-11-024",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "30%",
+      "answer": "thirty per cent",
+      "alternatives": [
+        "thirty percent"
+      ]
+    },
+    {
+      "id": "el-11-025",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "62%",
+      "answer": "sixty-two per cent",
+      "alternatives": [
+        "sixty-two percent"
+      ]
+    },
+    {
+      "id": "el-11-026",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "9.5%",
+      "answer": "nine point five per cent",
+      "alternatives": [
+        "nine point five percent"
+      ]
+    },
+    {
+      "id": "el-11-027",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "0.5%",
+      "answer": "nought point five per cent",
+      "alternatives": [
+        "zero point five per cent",
+        "oh point five per cent"
+      ]
+    },
+    {
+      "id": "el-11-028",
+      "type": "number-words",
+      "category": "Percentages",
+      "prompt": "99%",
+      "answer": "ninety-nine per cent",
+      "alternatives": [
+        "ninety-nine percent"
+      ]
+    },
+    {
+      "id": "el-11-029",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "1.75",
+      "answer": "one point seven five"
+    },
+    {
+      "id": "el-11-030",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "0.8",
+      "answer": "nought point eight",
+      "alternatives": [
+        "zero point eight",
+        "oh point eight"
+      ]
+    },
+    {
+      "id": "el-11-031",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "2.89",
+      "answer": "two point eight nine"
+    },
+    {
+      "id": "el-11-032",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "0.3",
+      "answer": "nought point three",
+      "alternatives": [
+        "zero point three",
+        "oh point three"
+      ]
+    },
+    {
+      "id": "el-11-033",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "4.5",
+      "answer": "four point five"
+    },
+    {
+      "id": "el-11-034",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "3.14",
+      "answer": "three point one four"
+    },
+    {
+      "id": "el-11-035",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "0.25",
+      "answer": "nought point two five",
+      "alternatives": [
+        "zero point two five",
+        "oh point two five"
+      ]
+    },
+    {
+      "id": "el-11-036",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "6.02",
+      "answer": "six point nought two",
+      "alternatives": [
+        "six point zero two",
+        "six point oh two"
+      ]
+    },
+    {
+      "id": "el-11-037",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "10.5",
+      "answer": "ten point five"
+    },
+    {
+      "id": "el-11-038",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "7.99",
+      "answer": "seven point nine nine"
+    },
+    {
+      "id": "el-11-039",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "0.09",
+      "answer": "nought point nought nine",
+      "alternatives": [
+        "zero point zero nine",
+        "oh point oh nine",
+        "zero point oh nine"
+      ]
+    },
+    {
+      "id": "el-11-040",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "12.34",
+      "answer": "twelve point three four"
+    },
+    {
+      "id": "el-11-041",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "8.6",
+      "answer": "eight point six"
+    },
+    {
+      "id": "el-11-042",
+      "type": "number-words",
+      "category": "Decimals",
+      "prompt": "5.01",
+      "answer": "five point nought one",
+      "alternatives": [
+        "five point zero one",
+        "five point oh one"
+      ]
+    },
+    {
+      "id": "el-11-043",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "21°C",
+      "answer": "twenty-one degrees Celsius",
+      "alternatives": [
+        "twenty-one degrees centigrade"
+      ]
+    },
+    {
+      "id": "el-11-044",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "22°C",
+      "answer": "twenty-two degrees Celsius",
+      "alternatives": [
+        "twenty-two degrees centigrade"
+      ]
+    },
+    {
+      "id": "el-11-045",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "-7°C",
+      "answer": "minus seven degrees Celsius",
+      "alternatives": [
+        "minus seven",
+        "minus seven degrees centigrade"
+      ]
+    },
+    {
+      "id": "el-11-046",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "0°C",
+      "answer": "nought degrees Celsius",
+      "alternatives": [
+        "zero degrees Celsius"
+      ]
+    },
+    {
+      "id": "el-11-047",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "5°C",
+      "answer": "five degrees Celsius"
+    },
+    {
+      "id": "el-11-048",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "10°C",
+      "answer": "ten degrees Celsius"
+    },
+    {
+      "id": "el-11-049",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "18°C",
+      "answer": "eighteen degrees Celsius"
+    },
+    {
+      "id": "el-11-050",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "30°C",
+      "answer": "thirty degrees Celsius"
+    },
+    {
+      "id": "el-11-051",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "-2°C",
+      "answer": "minus two degrees Celsius",
+      "alternatives": [
+        "minus two"
+      ]
+    },
+    {
+      "id": "el-11-052",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "-10°C",
+      "answer": "minus ten degrees Celsius",
+      "alternatives": [
+        "minus ten"
+      ]
+    },
+    {
+      "id": "el-11-053",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "35°C",
+      "answer": "thirty-five degrees Celsius"
+    },
+    {
+      "id": "el-11-054",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "12°C",
+      "answer": "twelve degrees Celsius"
+    },
+    {
+      "id": "el-11-055",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "25°C",
+      "answer": "twenty-five degrees Celsius"
+    },
+    {
+      "id": "el-11-056",
+      "type": "number-words",
+      "category": "Temperatures",
+      "prompt": "-5°C",
+      "answer": "minus five degrees Celsius",
+      "alternatives": [
+        "minus five"
+      ]
+    },
+    {
+      "id": "el-11-057",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "1,900,000",
+      "answer": "one million nine hundred thousand"
+    },
+    {
+      "id": "el-11-058",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "01/09 (DD/MM)",
+      "answer": "the first of September",
+      "alternatives": [
+        "first of September",
+        "September the first"
+      ]
+    },
+    {
+      "id": "el-11-059",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "26/03 (DD/MM)",
+      "answer": "the twenty-sixth of March",
+      "alternatives": [
+        "twenty-sixth of March",
+        "March the twenty-sixth"
+      ]
+    },
+    {
+      "id": "el-11-060",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "05/01 (DD/MM)",
+      "answer": "the fifth of January",
+      "alternatives": [
+        "fifth of January",
+        "January the fifth"
+      ]
+    },
+    {
+      "id": "el-11-061",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "14/02 (DD/MM)",
+      "answer": "the fourteenth of February",
+      "alternatives": [
+        "fourteenth of February",
+        "February the fourteenth"
+      ]
+    },
+    {
+      "id": "el-11-062",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "21/06 (DD/MM)",
+      "answer": "the twenty-first of June",
+      "alternatives": [
+        "twenty-first of June",
+        "June the twenty-first"
+      ]
+    },
+    {
+      "id": "el-11-063",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "03/12 (DD/MM)",
+      "answer": "the third of December",
+      "alternatives": [
+        "third of December",
+        "December the third"
+      ]
+    },
+    {
+      "id": "el-11-064",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "10/10 (DD/MM)",
+      "answer": "the tenth of October",
+      "alternatives": [
+        "tenth of October",
+        "October the tenth"
+      ]
+    },
+    {
+      "id": "el-11-065",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "1,000",
+      "answer": "one thousand"
+    },
+    {
+      "id": "el-11-066",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "10,000",
+      "answer": "ten thousand"
+    },
+    {
+      "id": "el-11-067",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "100,000",
+      "answer": "one hundred thousand",
+      "alternatives": [
+        "a hundred thousand"
+      ]
+    },
+    {
+      "id": "el-11-068",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "250,000",
+      "answer": "two hundred and fifty thousand",
+      "alternatives": [
+        "two hundred fifty thousand"
+      ]
+    },
+    {
+      "id": "el-11-069",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "1,000,000",
+      "answer": "one million"
+    },
+    {
+      "id": "el-11-070",
+      "type": "number-words",
+      "category": "Dates and large numbers",
+      "prompt": "2,500,000",
+      "answer": "two million five hundred thousand"
+    }
+  ]
+}
