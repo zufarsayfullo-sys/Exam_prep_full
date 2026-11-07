@@ -86,5 +86,13 @@
   "bank": "quiz-11.bank.json",
   "category": "Vocabulary",
   "level": "elementary"
+},
+  {
+  "id": "quiz-12",
+  "title": "Weather Vocabulary — Choose the Correct Word",
+  "path": "quiz-12.html",
+  "bank": "quiz-12.bank.json",
+  "category": "Vocabulary",
+  "level": "elementary"
 }
 ]
