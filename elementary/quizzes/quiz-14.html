@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beginner Quiz 14 | ExamPrep Studio</title>
+<title>Elementary Quiz 14 | ExamPrep Studio</title>
 <style>
 :root{
   font-family:system-ui,-apple-system,Segoe UI,sans-serif;
@@ -163,7 +163,7 @@ a{color:#6832cb}
 <div class="brand">✦ ExamPrep <span>Studio</span></div>
 
 <section class="card" id="home">
-  <span class="tag">Beginner · Grammar</span>
+  <span class="tag">Elementary · Grammar</span>
   <h1>Put the Words in Order</h1>
   <p class="muted">
     Complete the phone conversation.
@@ -263,13 +263,13 @@ const URL_BASE="https://dfepopppcggzecdxexeh.supabase.co";
 const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
 
 const QUIZ_TITLE="Put the Words in Order — Phone Conversation";
-const QUIZ_PATH="beginner/quizzes/quiz-14.html";
+const QUIZ_PATH="elementary/quizzes/quiz-14.html";
 const QUESTION_COUNT=5;
 const PASS_MARK=80;
 
 const TEACHER_KEY="eps2_teacher";
 const PLAYER_KEY="eps2_player";
-const PROGRESS_PREFIX="eps2_beginner_quiz14_progress_";
+const PROGRESS_PREFIX="eps2_elementary_quiz14_progress_";
 
 const $=id=>document.getElementById(id);
 const views=["home","teacher","join","waiting","quiz","result"];
@@ -278,7 +278,7 @@ const query=new URLSearchParams(location.search);
 // Fixed textbook exercise. No external question bank.
 const QUESTIONS=[
   {
-    id:"bg-14-001",
+    id:"el-14-001",
     words:["speak","I","to","could"],
     answer:"Could I speak to",
     before:[
@@ -289,7 +289,7 @@ const QUESTIONS=[
     suffix:" the manager, please?"
   },
   {
-    id:"bg-14-002",
+    id:"el-14-002",
     words:["not","he's","I'm","at his office","afraid"],
     answer:"I'm afraid he's not at his office",
     before:[
@@ -301,7 +301,7 @@ const QUESTIONS=[
     suffix:" now."
   },
   {
-    id:"bg-14-003",
+    id:"el-14-003",
     words:["you","ask","could"],
     answer:"Could you ask",
     before:[
@@ -312,7 +312,7 @@ const QUESTIONS=[
     suffix:" him to call me back, please?"
   },
   {
-    id:"bg-14-004",
+    id:"el-14-004",
     words:["write down","I","your number","could"],
     answer:"Could I write down your number",
     before:[
@@ -323,7 +323,7 @@ const QUESTIONS=[
     suffix:", please?"
   },
   {
-    id:"bg-14-005",
+    id:"el-14-005",
     words:["call","later","you"],
     answer:"call you later",
     before:[
@@ -332,7 +332,7 @@ const QUESTIONS=[
     ],
     speaker:"A",
     prefix:"Thank you. I'll ask him to ",
-    suffix:" on this morning."
+    suffix:" this morning."
   }
 ];
 
