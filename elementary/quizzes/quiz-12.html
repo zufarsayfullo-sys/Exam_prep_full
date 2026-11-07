@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elementary Quiz 12 | ExamPrep Studio</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#f6f7ff;color:#202044}
+*{box-sizing:border-box}
+body{margin:0}
+.wrap{max-width:920px;margin:auto;padding:16px}
+.brand{font-size:24px;font-weight:800;margin:10px 0 25px}
+.brand span{color:#7138e5}
+.card{background:white;border:1px solid #e6e4f5;border-radius:22px;padding:clamp(20px,5vw,34px);box-shadow:0 12px 36px #16164c0b;margin-bottom:20px}
+h1{font-size:clamp(26px,5vw,36px);margin:8px 0 12px}
+h2{font-size:22px}
+.muted{color:#69718a;line-height:1.6}
+.tag{display:inline-block;background:#eee9ff;color:#6d36d9;padding:7px 12px;border-radius:24px;font-weight:700;font-size:13px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+button{border:0;border-radius:12px;background:#7138e5;color:white;font:inherit;font-weight:700;padding:13px 20px;cursor:pointer;min-height:48px}
+button.alt{background:#f0eaff;color:#6832cb}
+button:disabled{opacity:.45;cursor:default}
+.hidden{display:none!important}
+.progress{height:9px;background:#eae6fa;border-radius:20px;overflow:hidden;margin:16px 0}
+.progress div{height:100%;background:#7138e5;width:0}
+.question{font-size:clamp(18px,4vw,23px);font-weight:600;line-height:2.3;margin:22px 0;overflow-wrap:anywhere}
+.blank{display:inline-block;min-width:100px;border-bottom:2px solid #7138e5;color:#7138e5;text-align:center;padding:0 6px;line-height:1.5}
+.choices{display:grid;gap:12px;margin:18px 0}
+.choice{width:100%;text-align:left;background:white;color:#202044;border:2px solid #ded9ef;border-radius:14px;padding:15px;font-size:18px}
+.choice.chosen{background:#eee8ff;border-color:#7138e5;color:#5725bc}
+.choice:focus-visible{outline:3px solid #7138e5;outline-offset:2px}
+table{width:100%;border-collapse:collapse}
+td,th{text-align:left;border-bottom:1px solid #eee;padding:12px}
+.review{padding:14px 0;border-bottom:1px solid #eee}
+.good{color:#087e43}
+.bad{color:#bd3348}
+#notice{color:#ba273f;min-height:22px;white-space:pre-wrap}
+a{color:#6832cb}
+@media(max-width:600px){
+.card{padding:18px 15px;border-radius:17px}
+.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.actions button{width:100%;padding:13px 8px}
+#home button{width:100%}
+#quiz .actions{position:sticky;bottom:0;background:white;padding:10px 0 4px;z-index:2}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="brand">✦ ExamPrep <span>Studio</span></div>
+
+<section class="card" id="home">
+<span class="tag">Elementary · Vocabulary</span>
+<h1>Weather Vocabulary — Choose the Correct Word</h1>
+<p class="muted">70 questions · 10 randomly selected · Pass mark 80%</p>
+<button id="create" disabled>Loading question bank...</button>
+<p class="muted">Students join through student.html. Start when everyone is ready.</p>
+</section>
+
+<section class="card hidden" id="teacher">
+<span class="tag">Teacher live session</span>
+<h1>Weather Vocabulary</h1>
+<p>Session code: <strong id="code"></strong></p>
+<p>Student Board: <a href="../../student.html" target="_blank" rel="noopener">Open student.html</a></p>
+<p id="count"></p>
+<div class="actions">
+<button id="start">Start Quiz</button>
+<button class="alt" id="end">End Session</button>
+</div>
+<h2>Live leaderboard</h2>
+<table>
+<thead><tr><th>Student</th><th>Score</th></tr></thead>
+<tbody id="leader"></tbody>
+</table>
+</section>
+
+<section class="card hidden" id="join">
+<h1>Join through the Student Board</h1>
+<p class="muted">Register once on student.html. You do not need to enter your name again.</p>
+<a href="../../student.html">Return to Student Board</a>
+</section>
+
+<section class="card hidden" id="waiting">
+<h1>You're in!</h1>
+<p class="muted">Wait for your teacher to start the quiz.</p>
+</section>
+
+<section class="card hidden" id="quiz">
+<span class="tag" id="counter"></span>
+<h2>Choose the correct word.</h2>
+<p class="muted">Read the sentence and select A or B. Your choice appears in the space inside the sentence.</p>
+<div class="progress"><div id="fill"></div></div>
+<div class="question" id="sentence"></div>
+<div class="choices" id="choices" role="group" aria-label="Answer choices"></div>
+<div class="actions">
+<button class="alt" id="prev">Previous</button>
+<button id="next">Next</button>
+</div>
+</section>
+
+<section class="card hidden" id="result">
+<span class="tag">Your result</span>
+<h1 id="score"></h1>
+<p id="outcome"></p>
+<button class="alt" id="toggleReview">Review answers</button>
+<div class="hidden" id="review"></div>
+</section>
+
+<p id="notice" role="status" aria-live="polite"></p>
+</main>
+
+<script>
+"use strict";
+
+const URL_BASE="https://dfepopppcggzecdxexeh.supabase.co";
+const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
+
+const QUIZ_TITLE="Weather Vocabulary — Choose the Correct Word";
+const QUIZ_PATH="elementary/quizzes/quiz-12.html";
+const BANK_FILE="quiz-12.bank.json";
+const QUESTION_COUNT=10;
+const PASS_MARK=80;
+
+const TEACHER_KEY="eps2_teacher";
+const PLAYER_KEY="eps2_player";
+const PROGRESS_PREFIX="eps2_elementary_quiz12_progress_";
+
+const $=id=>document.getElementById(id);
+const views=["home","teacher","join","waiting","quiz","result"];
+const query=new URLSearchParams(location.search);
+
+let BANK=[];
+let code="",teacherToken="",playerId="";
+let selected=[],answers={},optionOrders={},index=0;
+let submitted=false,busy=false,polling=false;
+let quizStarted=false,sessionClosed=false,bankLoading=null;
+
+function show(id){
+  views.forEach(v=>$(v).classList.toggle("hidden",v!==id));
+}
+
+function notice(message){
+  $("notice").textContent=message||"";
+}
+
+function readStorage(key){
+  try{return JSON.parse(sessionStorage.getItem(key)||"null");}
+  catch{return null;}
+}
+
+function writeStorage(key,value){
+  try{sessionStorage.setItem(key,JSON.stringify(value));}
+  catch{}
+}
+
+function removeStorage(key){
+  try{sessionStorage.removeItem(key);}
+  catch{}
+}
+
+function progressKey(){
+  return PROGRESS_PREFIX+code+"_"+playerId;
+}
+
+function normalize(value){
+  return String(value??"")
+    .toLowerCase()
+    .replace(/[’‘`]/g,"'")
+    .replace(/\s+/g," ")
+    .trim();
+}
+
+function isCorrect(q,value){
+  return normalize(q.answer)===normalize(value);
+}
+
+function validateBank(data){
+  const questions=Array.isArray(data)?data:data?.questions;
+
+  if(!Array.isArray(questions)||questions.length!==70){
+    throw Error("Expected exactly 70 questions.");
+  }
+
+  const ids=new Set();
+  const prompts=new Set();
+
+  for(const q of questions){
+    if(
+      !q||
+      q.type!=="choose-correct"||
+      typeof q.id!=="string"||
+      typeof q.prompt!=="string"||
+      typeof q.answer!=="string"||
+      !Array.isArray(q.options)||
+      q.options.length!==2||
+      q.options.some(x=>typeof x!=="string"||!x.trim())||
+      q.prompt.split("___").length!==2||
+      !q.options.some(x=>normalize(x)===normalize(q.answer))||
+      normalize(q.options[0])===normalize(q.options[1])
+    ){
+      throw Error("Invalid question: "+(q?.id||"unknown"));
+    }
+
+    if(ids.has(q.id)||prompts.has(normalize(q.prompt))){
+      throw Error("Duplicate question: "+q.id);
+    }
+
+    ids.add(q.id);
+    prompts.add(normalize(q.prompt));
+  }
+
+  return questions;
+}
+
+async function loadBank(){
+  if(BANK.length===70)return true;
+  if(bankLoading)return bankLoading;
+
+  bankLoading=(async()=>{
+    try{
+      const response=await fetch(BANK_FILE,{cache:"no-store"});
+      if(!response.ok){
+        throw Error("Question bank HTTP "+response.status);
+      }
+
+      BANK=validateBank(await response.json());
+      $("create").disabled=false;
+      $("create").textContent="Create Live Session";
+      notice("");
+      return true;
+    }catch(error){
+      BANK=[];
+      $("create").disabled=true;
+      $("create").textContent="Question bank unavailable";
+      notice("Question bank error: "+error.message);
+      return false;
+    }
+  })();
+
+  try{return await bankLoading;}
+  finally{bankLoading=null;}
+}
+
+async function rpc(fn,data={}){
+  const response=await fetch(URL_BASE+"/rest/v1/rpc/"+fn,{
+    method:"POST",
+    headers:{
+      apikey:PUBLIC_KEY,
+      Authorization:"Bearer "+PUBLIC_KEY,
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(data)
+  });
+
+  const raw=await response.text();
+  let result;
+
+  try{result=raw?JSON.parse(raw):null;}
+  catch{result=raw;}
+
+  if(!response.ok){
+    throw Error(
+      result?.message||
+      result?.hint||
+      (typeof result==="string"?result:"Supabase request failed")
+    );
+  }
+
+  return result;
+}
+
+async function run(fn){
+  if(busy)return;
+  busy=true;
+  notice("");
+
+  try{await fn();}
+  catch(error){notice(error.message||String(error));}
+  finally{busy=false;}
+}
+
+function shuffle(items){
+  const a=[...items];
+
+  for(let i=a.length-1;i>0;i--){
+    const bytes=crypto.getRandomValues(new Uint32Array(1));
+    const j=bytes[0]%(i+1);
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+
+  return a;
+}
+
+function choose(){
+  if(BANK.length!==70){
+    throw Error("Question bank not ready.");
+  }
+  return shuffle(BANK).slice(0,QUESTION_COUNT);
+}
+
+function sessionCode(){
+  const chars="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  return Array.from(
+    crypto.getRandomValues(new Uint8Array(8)),
+    x=>chars[x%chars.length]
+  ).join("");
+}
+
+function saveProgress(){
+  if(!code||!playerId||!selected.length)return;
+
+  writeStorage(progressKey(),{
+    questionIds:selected.map(q=>q.id),
+    answers,
+    optionOrders,
+    index,
+    submitted
+  });
+}
+
+function restoreProgress(){
+  const saved=readStorage(progressKey());
+
+  if(
+    !saved||
+    !Array.isArray(saved.questionIds)||
+    saved.questionIds.length!==QUESTION_COUNT||
+    new Set(saved.questionIds).size!==QUESTION_COUNT
+  ){
+    return false;
+  }
+
+  const questions=saved.questionIds.map(
+    id=>BANK.find(q=>q.id===id)
+  );
+
+  if(questions.some(q=>!q))return false;
+
+  selected=questions;
+
+  answers=(
+    saved.answers&&
+    typeof saved.answers==="object"&&
+    !Array.isArray(saved.answers)
+  )?saved.answers:{};
+
+  optionOrders=(
+    saved.optionOrders&&
+    typeof saved.optionOrders==="object"&&
+    !Array.isArray(saved.optionOrders)
+  )?saved.optionOrders:{};
+
+  index=Number.isInteger(saved.index)
+    ?Math.max(0,Math.min(saved.index,QUESTION_COUNT-1))
+    :0;
+
+  submitted=saved.submitted===true;
+  return true;
+}
+
+$("create").onclick=()=>run(async()=>{
+  if(BANK.length!==70){
+    throw Error("Question bank is not loaded.");
+  }
+
+  const newToken=crypto.randomUUID();
+  const newCode=sessionCode();
+
+  await rpc("eps2_create",{
+    p_code:newCode,
+    p_token:newToken
+  });
+
+  await rpc("eps2_publish",{
+    p_code:newCode,
+    p_token:newToken,
+    p_title:QUIZ_TITLE,
+    p_path:QUIZ_PATH
+  });
+
+  code=newCode;
+  teacherToken=newToken;
+  sessionClosed=false;
+
+  writeStorage(TEACHER_KEY,{code,teacherToken});
+  $("code").textContent=code;
+  show("teacher");
+
+  await poll(true);
+});
+
+$("start").onclick=()=>run(async()=>{
+  await rpc("eps2_start",{
+    p_code:code,
+    p_token:teacherToken
+  });
+
+  await poll(true);
+});
+
+$("end").onclick=()=>run(async()=>{
+  if(!confirm("End this live session?"))return;
+
+  await rpc("eps2_end",{
+    p_code:code,
+    p_token:teacherToken
+  });
+
+  sessionClosed=true;
+  removeStorage(TEACHER_KEY);
+  teacherToken="";
+  code="";
+  show("home");
+  notice("Session ended.");
+});
+
+function render(){
+  const q=selected[index];
+
+  if(!q){
+    notice("Question unavailable. Please reload.");
+    return;
+  }
+
+  $("counter").textContent=
+    `Question ${index+1} of ${selected.length}`;
+
+  $("fill").style.width=
+    ((index+1)/selected.length*100)+"%";
+
+  const sentence=$("sentence");
+  const parts=q.prompt.split("___");
+  const blank=document.createElement("span");
+
+  blank.className="blank";
+  blank.textContent=answers[q.id]||"_____";
+
+  sentence.replaceChildren(
+    document.createTextNode(parts[0]),
+    blank,
+    document.createTextNode(parts[1])
+  );
+
+  if(
+    !Array.isArray(optionOrders[q.id])||
+    optionOrders[q.id].length!==2||
+    !q.options.every(x=>optionOrders[q.id].includes(x))
+  ){
+    optionOrders[q.id]=shuffle(q.options);
+    saveProgress();
+  }
+
+  const choices=$("choices");
+  choices.replaceChildren();
+
+  optionOrders[q.id].forEach((option,i)=>{
+    const button=document.createElement("button");
+    button.type="button";
+
+    button.className="choice"+(
+      normalize(answers[q.id])===normalize(option)
+        ?" chosen":""
+    );
+
+    button.textContent=(i===0?"A. ":"B. ")+option;
+
+    button.setAttribute(
+      "aria-pressed",
+      String(normalize(answers[q.id])===normalize(option))
+    );
+
+    button.onclick=()=>{
+      if(submitted)return;
+      answers[q.id]=option;
+      saveProgress();
+      render();
+      notice("");
+    };
+
+    choices.append(button);
+  });
+
+  $("prev").disabled=index===0;
+  $("next").textContent=
+    index===selected.length-1?"Submit Answers":"Next";
+}
+
+$("prev").onclick=()=>{
+  if(submitted||!selected.length)return;
+
+  if(index>0){
+    index--;
+    saveProgress();
+    render();
+  }
+};
+
+$("next").onclick=()=>run(async()=>{
+  if(submitted)return;
+
+  const q=selected[index];
+  if(!q)throw Error("Question unavailable.");
+
+  if(!answers[q.id]){
+    throw Error("Please choose A or B before continuing.");
+  }
+
+  if(index<selected.length-1){
+    index++;
+    saveProgress();
+    render();
+    return;
+  }
+
+  if(!confirm("Submit your 10 answers?"))return;
+
+  const correct=selected.filter(
+    q=>isCorrect(q,answers[q.id])
+  ).length;
+
+  const score=correct*10;
+
+  await rpc("eps2_submit",{
+    p_code:code,
+    p_player:playerId,
+    p_score:score
+  });
+
+  submitted=true;
+  saveProgress();
+  displayResult(score);
+});
+
+function displayResult(score){
+  quizStarted=false;
+  show("result");
+
+  $("score").textContent=
+    `${score}% · ${score/10}/10 correct`;
+
+  $("outcome").textContent=
+    score>=PASS_MARK
+      ?"Passed!"
+      :"Below 80% — your result was saved for extra support.";
+
+  const review=$("review");
+  review.replaceChildren();
+
+  selected.forEach(q=>{
+    const item=document.createElement("div");
+    item.className="review";
+
+    const question=document.createElement("strong");
+    question.textContent=q.prompt.replace(
+      "___",
+      answers[q.id]||"_____"
+    );
+
+    const answer=document.createElement("p");
+    answer.textContent="Your answer: "+(answers[q.id]||"—");
+
+    const feedback=document.createElement("p");
+    const correct=isCorrect(q,answers[q.id]);
+
+    feedback.className=correct?"good":"bad";
+    feedback.textContent=correct
+      ?"✓ Correct"
+      :"Correct answer: "+q.answer;
+
+    item.append(question,answer,feedback);
+    review.append(item);
+  });
+}
+
+$("toggleReview").onclick=()=>{
+  $("review").classList.toggle("hidden");
+};
+
+async function poll(force=false){
+  if(
+    !code||
+    sessionClosed||
+    polling||
+    (!force&&busy)
+  )return;
+
+  polling=true;
+
+  try{
+    const state=await rpc("eps2_state",{
+      p_code:code,
+      p_token:teacherToken||null,
+      p_player:playerId||null
+    });
+
+    if(teacherToken){
+      const players=Array.isArray(state.players)
+        ?state.players:[];
+
+      $("count").textContent=
+        `${players.length} student(s) · ${state.status}`;
+
+      $("start").disabled=state.status!=="waiting";
+      $("end").disabled=state.status==="completed";
+
+      const leaderboard=$("leader");
+      leaderboard.replaceChildren();
+
+      players.forEach((player,i)=>{
+        const row=document.createElement("tr");
+        const name=document.createElement("td");
+        const score=document.createElement("td");
+
+        name.textContent=`${i+1}. ${player.name}`;
+        score.textContent=player.completed
+          ?player.score+"%"
+          :"—";
+
+        row.append(name,score);
+        leaderboard.append(row);
+      });
+
+    }else if(playerId){
+      if(state.status==="active"&&!submitted){
+        if(BANK.length!==70&&!await loadBank())return;
+
+        if(!selected.length){
+          if(!restoreProgress()){
+            selected=choose();
+            index=0;
+            answers={};
+            optionOrders={};
+            saveProgress();
+          }
+        }
+
+        if(!quizStarted){
+          quizStarted=true;
+          show("quiz");
+          render();
+        }
+      }
+
+      if(state.status==="completed"&&!submitted){
+        sessionClosed=true;
+        notice("Teacher ended the session.");
+        if(!quizStarted)show("waiting");
+      }
+    }
+
+  }catch(error){
+    notice(error.message||String(error));
+  }finally{
+    polling=false;
+  }
+}
+
+function restoreSession(){
+  if(query.has("join")){
+    const saved=readStorage(PLAYER_KEY);
+    const requestedCode=query.get("join");
+
+    if(
+      saved&&
+      saved.code===requestedCode&&
+      saved.playerId
+    ){
+      code=saved.code;
+      playerId=saved.playerId;
+      show("waiting");
+    }else{
+      show("join");
+      notice("Please register through the Student Board first.");
+    }
+
+  }else{
+    const saved=readStorage(TEACHER_KEY);
+
+    if(
+      saved&&
+      saved.code&&
+      saved.teacherToken
+    ){
+      code=saved.code;
+      teacherToken=saved.teacherToken;
+      $("code").textContent=code;
+      show("teacher");
+    }
+  }
+}
+
+async function initialize(){
+  restoreSession();
+
+  if(!await loadBank())return;
+
+  if(playerId){
+    restoreProgress();
+
+    if(submitted&&selected.length===QUESTION_COUNT){
+      const correct=selected.filter(
+        q=>isCorrect(q,answers[q.id])
+      ).length;
+
+      displayResult(correct*10);
+      return;
+    }
+  }
+
+  if(code&&!submitted){
+    await poll(true);
+  }
+}
+
+initialize();
+
+setInterval(()=>{
+  if(code&&!submitted&&!sessionClosed){
+    poll();
+  }
+},3000);
+</script>
+</body>
+</html>
