@@ -70,5 +70,13 @@
   "bank": "quiz-09.bank.json",
   "category": "Vocabulary",
   "level": "elementary"
+},
+  {
+  "id": "quiz-10",
+  "title": "Get / Take / Have",
+  "path": "quiz-10.html",
+  "bank": "quiz-10.bank.json",
+  "category": "Vocabulary",
+  "level": "elementary"
 }
 ]
