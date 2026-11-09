@@ -22,5 +22,13 @@
     "path": "quiz-03.html",
     "bank": "quiz-03.bank.json",
     "level": "pre-intermediate"
+  },
+   {
+    "id": "quiz-04",
+    "title": "Future Time Clauses — If / When / Before / After / As Soon As / Until",
+    "category": "Grammar",
+    "path": "quiz-04.html",
+    "bank": "quiz-04.bank.json",
+    "level": "pre-intermediate"
   }
 ]
