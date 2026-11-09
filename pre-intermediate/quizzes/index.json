@@ -1,11 +1,10 @@
 [
-    {
-      "id": "quiz-01",
-      "title": "Future Predictions — Will / Won't / Might / Might Not",
-      "category": "Grammar",
-      "path": "quiz-01.html",
-      "bank": "quiz-01.bank.json",
-      "level": "pre-intermediate"
-    }
-  ]
-}
+  {
+    "id": "quiz-01",
+    "title": "Future Predictions — Will / Won't / Might / Might Not",
+    "category": "Grammar",
+    "path": "quiz-01.html",
+    "bank": "quiz-01.bank.json",
+    "level": "pre-intermediate"
+  }
+]
