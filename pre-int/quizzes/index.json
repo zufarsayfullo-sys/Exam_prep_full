@@ -78,5 +78,13 @@
   "path": "quiz-10.html",
   "bank": "quiz-10.bank.json",
   "level": "pre-intermediate"
+},
+  {
+  "id": "quiz-11",
+  "title": "Verb + Preposition — Choose the Verb",
+  "category": "Vocabulary",
+  "path": "quiz-11.html",
+  "bank": "quiz-11.bank.json",
+  "level": "pre-intermediate"
 }
 ]
