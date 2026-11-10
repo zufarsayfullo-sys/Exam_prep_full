@@ -1,0 +1,777 @@
+{
+  "title": "Phrasal Verbs — Everyday English",
+  "level": "pre-intermediate",
+  "category": "Vocabulary",
+  "questions": [
+    {
+      "id": "pi-12-001",
+      "type": "choose-correct",
+      "prompt": "I want to ___ swimming this summer.",
+      "options": [
+        "find out",
+        "put down",
+        "take up"
+      ],
+      "answer": "take up"
+    },
+    {
+      "id": "pi-12-002",
+      "type": "choose-correct",
+      "prompt": "My sister wants to ___ painting as a hobby.",
+      "options": [
+        "take up",
+        "put down",
+        "find out"
+      ],
+      "answer": "take up"
+    },
+    {
+      "id": "pi-12-003",
+      "type": "choose-correct",
+      "prompt": "You can ___ tennis at our sports club.",
+      "options": [
+        "find out",
+        "put down",
+        "take up"
+      ],
+      "answer": "take up"
+    },
+    {
+      "id": "pi-12-004",
+      "type": "choose-correct",
+      "prompt": "He decided to ___ running to get fit.",
+      "options": [
+        "find out",
+        "put down",
+        "take up"
+      ],
+      "answer": "take up"
+    },
+    {
+      "id": "pi-12-005",
+      "type": "choose-correct",
+      "prompt": "I would like to ___ dancing next year.",
+      "options": [
+        "find out",
+        "put down",
+        "take up"
+      ],
+      "answer": "take up"
+    },
+    {
+      "id": "pi-12-006",
+      "type": "choose-correct",
+      "prompt": "My dad wants to ___ cycling at weekends.",
+      "options": [
+        "find out",
+        "take up",
+        "put down"
+      ],
+      "answer": "take up"
+    },
+    {
+      "id": "pi-12-007",
+      "type": "choose-correct",
+      "prompt": "She plans to ___ yoga after work.",
+      "options": [
+        "put down",
+        "find out",
+        "take up"
+      ],
+      "answer": "take up"
+    },
+    {
+      "id": "pi-12-008",
+      "type": "choose-correct",
+      "prompt": "Why not ___ a new sport this year?",
+      "options": [
+        "find out",
+        "put down",
+        "take up"
+      ],
+      "answer": "take up"
+    },
+    {
+      "id": "pi-12-009",
+      "type": "choose-correct",
+      "prompt": "I want to ___ photography in my free time.",
+      "options": [
+        "put down",
+        "take up",
+        "find out"
+      ],
+      "answer": "take up"
+    },
+    {
+      "id": "pi-12-010",
+      "type": "choose-correct",
+      "prompt": "My mum wants to ___ a small shop.",
+      "options": [
+        "give up",
+        "set up",
+        "grow up"
+      ],
+      "answer": "set up"
+    },
+    {
+      "id": "pi-12-011",
+      "type": "choose-correct",
+      "prompt": "They plan to ___ a new school club.",
+      "options": [
+        "grow up",
+        "give up",
+        "set up"
+      ],
+      "answer": "set up"
+    },
+    {
+      "id": "pi-12-012",
+      "type": "choose-correct",
+      "prompt": "We need to ___ the tent before it gets dark.",
+      "options": [
+        "grow up",
+        "set up",
+        "give up"
+      ],
+      "answer": "set up"
+    },
+    {
+      "id": "pi-12-013",
+      "type": "choose-correct",
+      "prompt": "My brother wants to ___ his own business.",
+      "options": [
+        "set up",
+        "give up",
+        "grow up"
+      ],
+      "answer": "set up"
+    },
+    {
+      "id": "pi-12-014",
+      "type": "choose-correct",
+      "prompt": "Can you help me ___ this new computer?",
+      "options": [
+        "give up",
+        "set up",
+        "grow up"
+      ],
+      "answer": "set up"
+    },
+    {
+      "id": "pi-12-015",
+      "type": "choose-correct",
+      "prompt": "Our teacher will ___ a study group.",
+      "options": [
+        "give up",
+        "grow up",
+        "set up"
+      ],
+      "answer": "set up"
+    },
+    {
+      "id": "pi-12-016",
+      "type": "choose-correct",
+      "prompt": "They want to ___ a café near the station.",
+      "options": [
+        "set up",
+        "grow up",
+        "give up"
+      ],
+      "answer": "set up"
+    },
+    {
+      "id": "pi-12-017",
+      "type": "choose-correct",
+      "prompt": "We will ___ the tables for the party.",
+      "options": [
+        "set up",
+        "grow up",
+        "give up"
+      ],
+      "answer": "set up"
+    },
+    {
+      "id": "pi-12-018",
+      "type": "choose-correct",
+      "prompt": "She hopes to ___ an online shop.",
+      "options": [
+        "give up",
+        "set up",
+        "grow up"
+      ],
+      "answer": "set up"
+    },
+    {
+      "id": "pi-12-019",
+      "type": "choose-correct",
+      "prompt": "I want to ___ what time the train leaves.",
+      "options": [
+        "find out",
+        "put on",
+        "take up"
+      ],
+      "answer": "find out"
+    },
+    {
+      "id": "pi-12-020",
+      "type": "choose-correct",
+      "prompt": "Please ___ how much the ticket costs.",
+      "options": [
+        "find out",
+        "take up",
+        "put on"
+      ],
+      "answer": "find out"
+    },
+    {
+      "id": "pi-12-021",
+      "type": "choose-correct",
+      "prompt": "Can you ___ where the library is?",
+      "options": [
+        "put on",
+        "take up",
+        "find out"
+      ],
+      "answer": "find out"
+    },
+    {
+      "id": "pi-12-022",
+      "type": "choose-correct",
+      "prompt": "I need to ___ when the film starts.",
+      "options": [
+        "put on",
+        "take up",
+        "find out"
+      ],
+      "answer": "find out"
+    },
+    {
+      "id": "pi-12-023",
+      "type": "choose-correct",
+      "prompt": "Let’s ___ who won the game.",
+      "options": [
+        "find out",
+        "put on",
+        "take up"
+      ],
+      "answer": "find out"
+    },
+    {
+      "id": "pi-12-024",
+      "type": "choose-correct",
+      "prompt": "Ask at the office to ___ when the test is.",
+      "options": [
+        "put on",
+        "take up",
+        "find out"
+      ],
+      "answer": "find out"
+    },
+    {
+      "id": "pi-12-025",
+      "type": "choose-correct",
+      "prompt": "I want to ___ more about this course.",
+      "options": [
+        "put on",
+        "take up",
+        "find out"
+      ],
+      "answer": "find out"
+    },
+    {
+      "id": "pi-12-026",
+      "type": "choose-correct",
+      "prompt": "Can you ___ why the bus is late?",
+      "options": [
+        "put on",
+        "find out",
+        "take up"
+      ],
+      "answer": "find out"
+    },
+    {
+      "id": "pi-12-027",
+      "type": "choose-correct",
+      "prompt": "We should ___ if the shop is open.",
+      "options": [
+        "find out",
+        "put on",
+        "take up"
+      ],
+      "answer": "find out"
+    },
+    {
+      "id": "pi-12-028",
+      "type": "choose-correct",
+      "prompt": "This bag is heavy. Please ___ it for a minute.",
+      "options": [
+        "put down",
+        "find out",
+        "grow up"
+      ],
+      "answer": "put down"
+    },
+    {
+      "id": "pi-12-029",
+      "type": "choose-correct",
+      "prompt": "Please ___ your phone and listen to me.",
+      "options": [
+        "put down",
+        "find out",
+        "grow up"
+      ],
+      "answer": "put down"
+    },
+    {
+      "id": "pi-12-030",
+      "type": "choose-correct",
+      "prompt": "The box is heavy. You can ___ it here.",
+      "options": [
+        "find out",
+        "grow up",
+        "put down"
+      ],
+      "answer": "put down"
+    },
+    {
+      "id": "pi-12-031",
+      "type": "choose-correct",
+      "prompt": "Can you ___ those books on the table?",
+      "options": [
+        "grow up",
+        "put down",
+        "find out"
+      ],
+      "answer": "put down"
+    },
+    {
+      "id": "pi-12-032",
+      "type": "choose-correct",
+      "prompt": "Please ___ your cup before you run.",
+      "options": [
+        "grow up",
+        "find out",
+        "put down"
+      ],
+      "answer": "put down"
+    },
+    {
+      "id": "pi-12-033",
+      "type": "choose-correct",
+      "prompt": "The baby is sleeping. ___ the toy quietly.",
+      "options": [
+        "put down",
+        "grow up",
+        "find out"
+      ],
+      "answer": "put down"
+    },
+    {
+      "id": "pi-12-034",
+      "type": "choose-correct",
+      "prompt": "You can ___ your suitcase by the door.",
+      "options": [
+        "find out",
+        "grow up",
+        "put down"
+      ],
+      "answer": "put down"
+    },
+    {
+      "id": "pi-12-035",
+      "type": "choose-correct",
+      "prompt": "Please ___ the plates on the kitchen table.",
+      "options": [
+        "grow up",
+        "put down",
+        "find out"
+      ],
+      "answer": "put down"
+    },
+    {
+      "id": "pi-12-036",
+      "type": "choose-correct",
+      "prompt": "Before you leave, ___ the bag on the chair.",
+      "options": [
+        "put down",
+        "grow up",
+        "find out"
+      ],
+      "answer": "put down"
+    },
+    {
+      "id": "pi-12-037",
+      "type": "choose-correct",
+      "prompt": "Learning English is hard, but do not ___.",
+      "options": [
+        "set up",
+        "give up",
+        "put on"
+      ],
+      "answer": "give up"
+    },
+    {
+      "id": "pi-12-038",
+      "type": "choose-correct",
+      "prompt": "Keep trying. You should not ___.",
+      "options": [
+        "set up",
+        "put on",
+        "give up"
+      ],
+      "answer": "give up"
+    },
+    {
+      "id": "pi-12-039",
+      "type": "choose-correct",
+      "prompt": "He wants to ___ smoking because it is bad for him.",
+      "options": [
+        "set up",
+        "give up",
+        "put on"
+      ],
+      "answer": "give up"
+    },
+    {
+      "id": "pi-12-040",
+      "type": "choose-correct",
+      "prompt": "She decided to ___ eating sweets every day.",
+      "options": [
+        "give up",
+        "set up",
+        "put on"
+      ],
+      "answer": "give up"
+    },
+    {
+      "id": "pi-12-041",
+      "type": "choose-correct",
+      "prompt": "The puzzle is difficult, but I will not ___.",
+      "options": [
+        "put on",
+        "give up",
+        "set up"
+      ],
+      "answer": "give up"
+    },
+    {
+      "id": "pi-12-042",
+      "type": "choose-correct",
+      "prompt": "Please do not ___ after one bad test.",
+      "options": [
+        "give up",
+        "set up",
+        "put on"
+      ],
+      "answer": "give up"
+    },
+    {
+      "id": "pi-12-043",
+      "type": "choose-correct",
+      "prompt": "I tried to learn guitar, but I did not want to ___.",
+      "options": [
+        "put on",
+        "give up",
+        "set up"
+      ],
+      "answer": "give up"
+    },
+    {
+      "id": "pi-12-044",
+      "type": "choose-correct",
+      "prompt": "He was tired, but he refused to ___.",
+      "options": [
+        "give up",
+        "set up",
+        "put on"
+      ],
+      "answer": "give up"
+    },
+    {
+      "id": "pi-12-045",
+      "type": "choose-correct",
+      "prompt": "Do not ___ on your dream of becoming a doctor.",
+      "options": [
+        "set up",
+        "put on",
+        "give up"
+      ],
+      "answer": "give up"
+    },
+    {
+      "id": "pi-12-046",
+      "type": "choose-correct",
+      "prompt": "I want to be a pilot when I ___.",
+      "options": [
+        "put down",
+        "grow up",
+        "find out"
+      ],
+      "answer": "grow up"
+    },
+    {
+      "id": "pi-12-047",
+      "type": "choose-correct",
+      "prompt": "Children ___ quickly.",
+      "options": [
+        "grow up",
+        "find out",
+        "put down"
+      ],
+      "answer": "grow up"
+    },
+    {
+      "id": "pi-12-048",
+      "type": "choose-correct",
+      "prompt": "When I ___, I want to live near the sea.",
+      "options": [
+        "put down",
+        "find out",
+        "grow up"
+      ],
+      "answer": "grow up"
+    },
+    {
+      "id": "pi-12-049",
+      "type": "choose-correct",
+      "prompt": "My little sister says, “I want to be a teacher when I ___.”",
+      "options": [
+        "put down",
+        "grow up",
+        "find out"
+      ],
+      "answer": "grow up"
+    },
+    {
+      "id": "pi-12-050",
+      "type": "choose-correct",
+      "prompt": "Where did you ___ as a child?",
+      "options": [
+        "find out",
+        "put down",
+        "grow up"
+      ],
+      "answer": "grow up"
+    },
+    {
+      "id": "pi-12-051",
+      "type": "choose-correct",
+      "prompt": "Many children ___ in small villages.",
+      "options": [
+        "find out",
+        "grow up",
+        "put down"
+      ],
+      "answer": "grow up"
+    },
+    {
+      "id": "pi-12-052",
+      "type": "choose-correct",
+      "prompt": "I hope my children ___ happy and healthy.",
+      "options": [
+        "grow up",
+        "put down",
+        "find out"
+      ],
+      "answer": "grow up"
+    },
+    {
+      "id": "pi-12-053",
+      "type": "choose-correct",
+      "prompt": "These children will ___ in London with their family.",
+      "options": [
+        "grow up",
+        "put down",
+        "find out"
+      ],
+      "answer": "grow up"
+    },
+    {
+      "id": "pi-12-054",
+      "type": "choose-correct",
+      "prompt": "When they ___, they want to travel the world.",
+      "options": [
+        "grow up",
+        "find out",
+        "put down"
+      ],
+      "answer": "grow up"
+    },
+    {
+      "id": "pi-12-055",
+      "type": "choose-correct",
+      "prompt": "The lesson is not finished. Please ___ working.",
+      "options": [
+        "carry on",
+        "put on",
+        "set up"
+      ],
+      "answer": "carry on"
+    },
+    {
+      "id": "pi-12-056",
+      "type": "choose-correct",
+      "prompt": "It started to rain, but we decided to ___ walking.",
+      "options": [
+        "set up",
+        "carry on",
+        "put on"
+      ],
+      "answer": "carry on"
+    },
+    {
+      "id": "pi-12-057",
+      "type": "choose-correct",
+      "prompt": "Please ___ reading. I am listening.",
+      "options": [
+        "set up",
+        "carry on",
+        "put on"
+      ],
+      "answer": "carry on"
+    },
+    {
+      "id": "pi-12-058",
+      "type": "choose-correct",
+      "prompt": "Even when the work is hard, you should ___.",
+      "options": [
+        "set up",
+        "put on",
+        "carry on"
+      ],
+      "answer": "carry on"
+    },
+    {
+      "id": "pi-12-059",
+      "type": "choose-correct",
+      "prompt": "The teacher said we could ___ with the exercise.",
+      "options": [
+        "carry on",
+        "set up",
+        "put on"
+      ],
+      "answer": "carry on"
+    },
+    {
+      "id": "pi-12-060",
+      "type": "choose-correct",
+      "prompt": "We were tired, but we decided to ___ playing.",
+      "options": [
+        "carry on",
+        "set up",
+        "put on"
+      ],
+      "answer": "carry on"
+    },
+    {
+      "id": "pi-12-061",
+      "type": "choose-correct",
+      "prompt": "Please ___ with your story.",
+      "options": [
+        "put on",
+        "set up",
+        "carry on"
+      ],
+      "answer": "carry on"
+    },
+    {
+      "id": "pi-12-062",
+      "type": "choose-correct",
+      "prompt": "He stopped for water, then decided to ___ running.",
+      "options": [
+        "carry on",
+        "put on",
+        "set up"
+      ],
+      "answer": "carry on"
+    },
+    {
+      "id": "pi-12-063",
+      "type": "choose-correct",
+      "prompt": "It is cold outside. Please ___ your coat.",
+      "options": [
+        "put on",
+        "find out",
+        "give up"
+      ],
+      "answer": "put on"
+    },
+    {
+      "id": "pi-12-064",
+      "type": "choose-correct",
+      "prompt": "You should ___ your shoes before going out.",
+      "options": [
+        "give up",
+        "put on",
+        "find out"
+      ],
+      "answer": "put on"
+    },
+    {
+      "id": "pi-12-065",
+      "type": "choose-correct",
+      "prompt": "The sun is bright. ___ your sunglasses.",
+      "options": [
+        "find out",
+        "put on",
+        "give up"
+      ],
+      "answer": "put on"
+    },
+    {
+      "id": "pi-12-066",
+      "type": "choose-correct",
+      "prompt": "I always ___ a jacket in winter.",
+      "options": [
+        "find out",
+        "give up",
+        "put on"
+      ],
+      "answer": "put on"
+    },
+    {
+      "id": "pi-12-067",
+      "type": "choose-correct",
+      "prompt": "It is raining. Please ___ your raincoat.",
+      "options": [
+        "put on",
+        "find out",
+        "give up"
+      ],
+      "answer": "put on"
+    },
+    {
+      "id": "pi-12-068",
+      "type": "choose-correct",
+      "prompt": "She wants to ___ her new dress for the party.",
+      "options": [
+        "give up",
+        "put on",
+        "find out"
+      ],
+      "answer": "put on"
+    },
+    {
+      "id": "pi-12-069",
+      "type": "choose-correct",
+      "prompt": "Before the game, ___ your sports shoes.",
+      "options": [
+        "give up",
+        "find out",
+        "put on"
+      ],
+      "answer": "put on"
+    },
+    {
+      "id": "pi-12-070",
+      "type": "choose-correct",
+      "prompt": "It is sunny. Do not forget to ___ your hat.",
+      "options": [
+        "find out",
+        "put on",
+        "give up"
+      ],
+      "answer": "put on"
+    }
+  ]
+}
