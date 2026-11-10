@@ -1,0 +1,917 @@
+{
+  "title": "Jobs and Success — Vocabulary",
+  "level": "pre-intermediate",
+  "category": "Vocabulary",
+  "questions": [
+    {
+      "id": "pi-14-001",
+      "type": "choose-correct",
+      "prompt": "My aunt is a ___. She works in a science lab.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-002",
+      "type": "choose-correct",
+      "prompt": "A ___ studies the world and tries to understand it.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-003",
+      "type": "choose-correct",
+      "prompt": "The ___ is doing an experiment at school.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-004",
+      "type": "choose-correct",
+      "prompt": "He wants to become a ___ because he loves science.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-005",
+      "type": "choose-correct",
+      "prompt": "The ___ wears a white coat in the laboratory.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-006",
+      "type": "choose-correct",
+      "prompt": "A ___ can study plants, animals, or space.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-007",
+      "type": "choose-correct",
+      "prompt": "The ___ discovered something new about the stars.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-008",
+      "type": "choose-correct",
+      "prompt": "My uncle works as a ___ at a university.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-009",
+      "type": "choose-correct",
+      "prompt": "The ___ is testing a new medicine.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-010",
+      "type": "choose-correct",
+      "prompt": "Our teacher invited a ___ to talk about space.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-011",
+      "type": "choose-correct",
+      "prompt": "The ___ uses a microscope to look at tiny things.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-012",
+      "type": "choose-correct",
+      "prompt": "She is a ___ who studies the weather.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-013",
+      "type": "choose-correct",
+      "prompt": "That ___ has worked in a laboratory for ten years.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-014",
+      "type": "choose-correct",
+      "prompt": "The ___ wrote a book about her experiments.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "scientist"
+    },
+    {
+      "id": "pi-14-015",
+      "type": "choose-correct",
+      "prompt": "Reading books can help you improve your ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-016",
+      "type": "choose-correct",
+      "prompt": "He has a lot of ___ about computers.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-017",
+      "type": "choose-correct",
+      "prompt": "I want to increase my ___ of English grammar.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-018",
+      "type": "choose-correct",
+      "prompt": "She has good ___ of the local area.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-019",
+      "type": "choose-correct",
+      "prompt": "Our teacher shared her ___ with the class.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-020",
+      "type": "choose-correct",
+      "prompt": "You need some ___ of maths for this job.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-021",
+      "type": "choose-correct",
+      "prompt": "His ___ of history is very good.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-022",
+      "type": "choose-correct",
+      "prompt": "I have little ___ of how cars work.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-023",
+      "type": "choose-correct",
+      "prompt": "Watching this video will improve your ___ of science.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-024",
+      "type": "choose-correct",
+      "prompt": "Students come to school to gain ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-025",
+      "type": "choose-correct",
+      "prompt": "He has a lot of ___ about healthy food.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-026",
+      "type": "choose-correct",
+      "prompt": "She used her ___ of French to help the tourists.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-027",
+      "type": "choose-correct",
+      "prompt": "The course gave me useful ___ about computers.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-028",
+      "type": "choose-correct",
+      "prompt": "I need more ___ of this subject before the test.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "knowledge"
+    },
+    {
+      "id": "pi-14-029",
+      "type": "choose-correct",
+      "prompt": "After finishing school, she started looking for ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-030",
+      "type": "choose-correct",
+      "prompt": "He found ___ at a local hotel.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-031",
+      "type": "choose-correct",
+      "prompt": "The company offers ___ to young people.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-032",
+      "type": "choose-correct",
+      "prompt": "She is looking for full-time ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-033",
+      "type": "choose-correct",
+      "prompt": "There are more opportunities for ___ in big cities.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-034",
+      "type": "choose-correct",
+      "prompt": "He hopes to find ___ after his course.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-035",
+      "type": "choose-correct",
+      "prompt": "The new factory will provide ___ for local people.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-036",
+      "type": "choose-correct",
+      "prompt": "She went to an office that helps people find ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-037",
+      "type": "choose-correct",
+      "prompt": "He is searching for ___ because he needs a job.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-038",
+      "type": "choose-correct",
+      "prompt": "This training can help people find ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-039",
+      "type": "choose-correct",
+      "prompt": "After six months without a job, he finally found ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-040",
+      "type": "choose-correct",
+      "prompt": "The government wants to create more ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-041",
+      "type": "choose-correct",
+      "prompt": "The college helps students prepare for ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-042",
+      "type": "choose-correct",
+      "prompt": "Finding ___ can be difficult without experience.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "employment"
+    },
+    {
+      "id": "pi-14-043",
+      "type": "choose-correct",
+      "prompt": "Winning the school competition was one of her biggest ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-044",
+      "type": "choose-correct",
+      "prompt": "He is proud of his ___ at work.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-045",
+      "type": "choose-correct",
+      "prompt": "Her teacher praised her ___ in English.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-046",
+      "type": "choose-correct",
+      "prompt": "The team celebrated its ___ after the match.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-047",
+      "type": "choose-correct",
+      "prompt": "Passing all my exams was one of my best ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-048",
+      "type": "choose-correct",
+      "prompt": "She wrote a list of her ___ for her job interview.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-049",
+      "type": "choose-correct",
+      "prompt": "His parents are proud of his ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-050",
+      "type": "choose-correct",
+      "prompt": "The school gave prizes for students’ ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-051",
+      "type": "choose-correct",
+      "prompt": "Learning to swim was one of his personal ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-052",
+      "type": "choose-correct",
+      "prompt": "Her ___ include winning two gold medals.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-053",
+      "type": "choose-correct",
+      "prompt": "He talked about his ___ during the interview.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-054",
+      "type": "choose-correct",
+      "prompt": "The manager thanked the workers for their ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-055",
+      "type": "choose-correct",
+      "prompt": "Finishing the project was one of our main ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-056",
+      "type": "choose-correct",
+      "prompt": "The students showed their ___ at the end of the year.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "achievements"
+    },
+    {
+      "id": "pi-14-057",
+      "type": "choose-correct",
+      "prompt": "Everyone has strengths and ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-058",
+      "type": "choose-correct",
+      "prompt": "In the interview, she talked about her ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-059",
+      "type": "choose-correct",
+      "prompt": "He knows his ___ and wants to improve.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-060",
+      "type": "choose-correct",
+      "prompt": "One of my ___ is speaking in front of people.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-061",
+      "type": "choose-correct",
+      "prompt": "Our teacher helps us work on our ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-062",
+      "type": "choose-correct",
+      "prompt": "She is honest about her ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-063",
+      "type": "choose-correct",
+      "prompt": "You should understand your ___ as well as your strengths.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-064",
+      "type": "choose-correct",
+      "prompt": "His main ___ are spelling and pronunciation.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-065",
+      "type": "choose-correct",
+      "prompt": "The coach asked the players to identify their ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-066",
+      "type": "choose-correct",
+      "prompt": "I am trying to improve my ___ in maths.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-067",
+      "type": "choose-correct",
+      "prompt": "We discussed the strengths and ___ of our plan.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-068",
+      "type": "choose-correct",
+      "prompt": "He wrote down his ___ before the interview.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-069",
+      "type": "choose-correct",
+      "prompt": "Being late is one of her biggest ___.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    },
+    {
+      "id": "pi-14-070",
+      "type": "choose-correct",
+      "prompt": "The teacher asked us to think about our ___ and improve.",
+      "options": [
+        "achievements",
+        "scientist",
+        "knowledge",
+        "employment",
+        "weaknesses"
+      ],
+      "answer": "weaknesses"
+    }
+  ]
+}
