@@ -1,0 +1,653 @@
+{
+  "title": "Make or Do — Common Expressions",
+  "level": "pre-intermediate",
+  "category": "Vocabulary",
+  "wordBank": [
+    "money",
+    "decision",
+    "nothing",
+    "mistake",
+    "course",
+    "mess",
+    "call",
+    "friends",
+    "homework",
+    "meal",
+    "exam",
+    "something",
+    "housework",
+    "noise"
+  ],
+  "questions": [
+    {
+      "id": "pi-10-001",
+      "type": "typed-double-gap",
+      "prompt": "My uncle ___ a lot of ___ at his new job.",
+      "answer": [
+        "makes",
+        "money"
+      ]
+    },
+    {
+      "id": "pi-10-002",
+      "type": "typed-double-gap",
+      "prompt": "Last year, her business ___ a lot of ___.",
+      "answer": [
+        "made",
+        "money"
+      ]
+    },
+    {
+      "id": "pi-10-003",
+      "type": "typed-double-gap",
+      "prompt": "She wants to ___ a lot of ___ when she grows up.",
+      "answer": [
+        "make",
+        "money"
+      ]
+    },
+    {
+      "id": "pi-10-004",
+      "type": "typed-double-gap",
+      "prompt": "He has ___ a lot of ___ this month.",
+      "answer": [
+        "made",
+        "money"
+      ]
+    },
+    {
+      "id": "pi-10-005",
+      "type": "typed-double-gap",
+      "prompt": "Good doctors can ___ a lot of ___.",
+      "answer": [
+        "make",
+        "money"
+      ]
+    },
+    {
+      "id": "pi-10-006",
+      "type": "typed-double-gap",
+      "prompt": "We need to ___ a ___ before Friday.",
+      "answer": [
+        "make",
+        "decision"
+      ]
+    },
+    {
+      "id": "pi-10-007",
+      "type": "typed-double-gap",
+      "prompt": "Yesterday, I ___ a ___ about my future.",
+      "answer": [
+        "made",
+        "decision"
+      ]
+    },
+    {
+      "id": "pi-10-008",
+      "type": "typed-double-gap",
+      "prompt": "She has ___ a ___ about which school to attend.",
+      "answer": [
+        "made",
+        "decision"
+      ]
+    },
+    {
+      "id": "pi-10-009",
+      "type": "typed-double-gap",
+      "prompt": "Please ___ a ___ now; we are late.",
+      "answer": [
+        "make",
+        "decision"
+      ]
+    },
+    {
+      "id": "pi-10-010",
+      "type": "typed-double-gap",
+      "prompt": "My parents usually ___ a ___ together.",
+      "answer": [
+        "make",
+        "decision"
+      ]
+    },
+    {
+      "id": "pi-10-011",
+      "type": "typed-double-gap",
+      "prompt": "I stayed home and ___ ___ all day yesterday.",
+      "answer": [
+        "did",
+        "nothing"
+      ]
+    },
+    {
+      "id": "pi-10-012",
+      "type": "typed-double-gap",
+      "prompt": "There is no work today, so I can ___ ___.",
+      "answer": [
+        "do",
+        "nothing"
+      ]
+    },
+    {
+      "id": "pi-10-013",
+      "type": "typed-double-gap",
+      "prompt": "He has ___ ___ since breakfast.",
+      "answer": [
+        "done",
+        "nothing"
+      ]
+    },
+    {
+      "id": "pi-10-014",
+      "type": "typed-double-gap",
+      "prompt": "On Sundays, we sometimes ___ ___ and just relax.",
+      "answer": [
+        "do",
+        "nothing"
+      ]
+    },
+    {
+      "id": "pi-10-015",
+      "type": "typed-double-gap",
+      "prompt": "She was tired, so she ___ ___ after school.",
+      "answer": [
+        "did",
+        "nothing"
+      ]
+    },
+    {
+      "id": "pi-10-016",
+      "type": "typed-double-gap",
+      "prompt": "I ___ a ___ in my English test yesterday.",
+      "answer": [
+        "made",
+        "mistake"
+      ]
+    },
+    {
+      "id": "pi-10-017",
+      "type": "typed-double-gap",
+      "prompt": "Please check your work so you do not ___ a ___.",
+      "answer": [
+        "make",
+        "mistake"
+      ]
+    },
+    {
+      "id": "pi-10-018",
+      "type": "typed-double-gap",
+      "prompt": "He has ___ a ___ in this sentence.",
+      "answer": [
+        "made",
+        "mistake"
+      ]
+    },
+    {
+      "id": "pi-10-019",
+      "type": "typed-double-gap",
+      "prompt": "Sometimes students ___ a ___ when they are nervous.",
+      "answer": [
+        "make",
+        "mistake"
+      ]
+    },
+    {
+      "id": "pi-10-020",
+      "type": "typed-double-gap",
+      "prompt": "I think she ___ a ___ when she wrote my name.",
+      "answer": [
+        "made",
+        "mistake"
+      ]
+    },
+    {
+      "id": "pi-10-021",
+      "type": "typed-double-gap",
+      "prompt": "My sister is going to ___ a ___ at college next year.",
+      "answer": [
+        "do",
+        "course"
+      ]
+    },
+    {
+      "id": "pi-10-022",
+      "type": "typed-double-gap",
+      "prompt": "Last summer, I ___ a ___ in photography.",
+      "answer": [
+        "did",
+        "course"
+      ]
+    },
+    {
+      "id": "pi-10-023",
+      "type": "typed-double-gap",
+      "prompt": "He has ___ a ___ in computer skills.",
+      "answer": [
+        "done",
+        "course"
+      ]
+    },
+    {
+      "id": "pi-10-024",
+      "type": "typed-double-gap",
+      "prompt": "You can ___ a ___ online from home.",
+      "answer": [
+        "do",
+        "course"
+      ]
+    },
+    {
+      "id": "pi-10-025",
+      "type": "typed-double-gap",
+      "prompt": "My friend wants to ___ a ___ in cooking.",
+      "answer": [
+        "do",
+        "course"
+      ]
+    },
+    {
+      "id": "pi-10-026",
+      "type": "typed-double-gap",
+      "prompt": "The children ___ a ___ in the kitchen yesterday.",
+      "answer": [
+        "made",
+        "mess"
+      ]
+    },
+    {
+      "id": "pi-10-027",
+      "type": "typed-double-gap",
+      "prompt": "Please do not ___ a ___ in your room.",
+      "answer": [
+        "make",
+        "mess"
+      ]
+    },
+    {
+      "id": "pi-10-028",
+      "type": "typed-double-gap",
+      "prompt": "I have ___ a ___ while cooking dinner.",
+      "answer": [
+        "made",
+        "mess"
+      ]
+    },
+    {
+      "id": "pi-10-029",
+      "type": "typed-double-gap",
+      "prompt": "My little brother often ___ a ___ with his toys.",
+      "answer": [
+        "makes",
+        "mess"
+      ]
+    },
+    {
+      "id": "pi-10-030",
+      "type": "typed-double-gap",
+      "prompt": "We ___ a ___ when we painted the wall last week.",
+      "answer": [
+        "made",
+        "mess"
+      ]
+    },
+    {
+      "id": "pi-10-031",
+      "type": "typed-double-gap",
+      "prompt": "I need to ___ a phone ___ to my mother.",
+      "answer": [
+        "make",
+        "call"
+      ]
+    },
+    {
+      "id": "pi-10-032",
+      "type": "typed-double-gap",
+      "prompt": "Yesterday, she ___ a phone ___ to the doctor.",
+      "answer": [
+        "made",
+        "call"
+      ]
+    },
+    {
+      "id": "pi-10-033",
+      "type": "typed-double-gap",
+      "prompt": "He has ___ a phone ___ about his new job.",
+      "answer": [
+        "made",
+        "call"
+      ]
+    },
+    {
+      "id": "pi-10-034",
+      "type": "typed-double-gap",
+      "prompt": "I usually ___ a phone ___ before I leave work.",
+      "answer": [
+        "make",
+        "call"
+      ]
+    },
+    {
+      "id": "pi-10-035",
+      "type": "typed-double-gap",
+      "prompt": "Can you ___ a phone ___ to the hotel?",
+      "answer": [
+        "make",
+        "call"
+      ]
+    },
+    {
+      "id": "pi-10-036",
+      "type": "typed-double-gap",
+      "prompt": "It is easy to ___ ___ at summer camp.",
+      "answer": [
+        "make",
+        "friends"
+      ]
+    },
+    {
+      "id": "pi-10-037",
+      "type": "typed-double-gap",
+      "prompt": "She ___ ___ when she started her new school.",
+      "answer": [
+        "made",
+        "friends"
+      ]
+    },
+    {
+      "id": "pi-10-038",
+      "type": "typed-double-gap",
+      "prompt": "He has ___ ___ in his English class.",
+      "answer": [
+        "made",
+        "friends"
+      ]
+    },
+    {
+      "id": "pi-10-039",
+      "type": "typed-double-gap",
+      "prompt": "Children often ___ ___ at the playground.",
+      "answer": [
+        "make",
+        "friends"
+      ]
+    },
+    {
+      "id": "pi-10-040",
+      "type": "typed-double-gap",
+      "prompt": "I hope to ___ ___ at university next year.",
+      "answer": [
+        "make",
+        "friends"
+      ]
+    },
+    {
+      "id": "pi-10-041",
+      "type": "typed-double-gap",
+      "prompt": "I always ___ my ___ after dinner.",
+      "answer": [
+        "do",
+        "homework"
+      ]
+    },
+    {
+      "id": "pi-10-042",
+      "type": "typed-double-gap",
+      "prompt": "She ___ her ___ before going out yesterday.",
+      "answer": [
+        "did",
+        "homework"
+      ]
+    },
+    {
+      "id": "pi-10-043",
+      "type": "typed-double-gap",
+      "prompt": "He has already ___ his ___ for tomorrow.",
+      "answer": [
+        "done",
+        "homework"
+      ]
+    },
+    {
+      "id": "pi-10-044",
+      "type": "typed-double-gap",
+      "prompt": "Please ___ your ___ before you watch TV.",
+      "answer": [
+        "do",
+        "homework"
+      ]
+    },
+    {
+      "id": "pi-10-045",
+      "type": "typed-double-gap",
+      "prompt": "My sister usually ___ her ___ in the library.",
+      "answer": [
+        "does",
+        "homework"
+      ]
+    },
+    {
+      "id": "pi-10-046",
+      "type": "typed-double-gap",
+      "prompt": "My father often ___ a ___ for the family.",
+      "answer": [
+        "makes",
+        "meal"
+      ]
+    },
+    {
+      "id": "pi-10-047",
+      "type": "typed-double-gap",
+      "prompt": "I ___ a ___ for my friends last night.",
+      "answer": [
+        "made",
+        "meal"
+      ]
+    },
+    {
+      "id": "pi-10-048",
+      "type": "typed-double-gap",
+      "prompt": "She wants to ___ a ___ for her parents.",
+      "answer": [
+        "make",
+        "meal"
+      ]
+    },
+    {
+      "id": "pi-10-049",
+      "type": "typed-double-gap",
+      "prompt": "We have ___ a ___ together this evening.",
+      "answer": [
+        "made",
+        "meal"
+      ]
+    },
+    {
+      "id": "pi-10-050",
+      "type": "typed-double-gap",
+      "prompt": "Can you ___ a ___ with the food in the fridge?",
+      "answer": [
+        "make",
+        "meal"
+      ]
+    },
+    {
+      "id": "pi-10-051",
+      "type": "typed-double-gap",
+      "prompt": "We have to ___ an ___ on Friday.",
+      "answer": [
+        "do",
+        "exam"
+      ]
+    },
+    {
+      "id": "pi-10-052",
+      "type": "typed-double-gap",
+      "prompt": "I ___ an ___ in English yesterday.",
+      "answer": [
+        "did",
+        "exam"
+      ]
+    },
+    {
+      "id": "pi-10-053",
+      "type": "typed-double-gap",
+      "prompt": "She has ___ an ___ at school today.",
+      "answer": [
+        "done",
+        "exam"
+      ]
+    },
+    {
+      "id": "pi-10-054",
+      "type": "typed-double-gap",
+      "prompt": "He is going to ___ an ___ next week.",
+      "answer": [
+        "do",
+        "exam"
+      ]
+    },
+    {
+      "id": "pi-10-055",
+      "type": "typed-double-gap",
+      "prompt": "Students usually ___ an ___ at the end of the course.",
+      "answer": [
+        "do",
+        "exam"
+      ]
+    },
+    {
+      "id": "pi-10-056",
+      "type": "typed-double-gap",
+      "prompt": "I am bored. I want to ___ ___ interesting.",
+      "answer": [
+        "do",
+        "something"
+      ]
+    },
+    {
+      "id": "pi-10-057",
+      "type": "typed-double-gap",
+      "prompt": "We ___ ___ fun together last weekend.",
+      "answer": [
+        "did",
+        "something"
+      ]
+    },
+    {
+      "id": "pi-10-058",
+      "type": "typed-double-gap",
+      "prompt": "She has ___ ___ useful for her family today.",
+      "answer": [
+        "done",
+        "something"
+      ]
+    },
+    {
+      "id": "pi-10-059",
+      "type": "typed-double-gap",
+      "prompt": "You should ___ ___ about the problem.",
+      "answer": [
+        "do",
+        "something"
+      ]
+    },
+    {
+      "id": "pi-10-060",
+      "type": "typed-double-gap",
+      "prompt": "He always tries to ___ ___ kind for other people.",
+      "answer": [
+        "do",
+        "something"
+      ]
+    },
+    {
+      "id": "pi-10-061",
+      "type": "typed-double-gap",
+      "prompt": "I usually ___ the ___ on Saturday.",
+      "answer": [
+        "do",
+        "housework"
+      ]
+    },
+    {
+      "id": "pi-10-062",
+      "type": "typed-double-gap",
+      "prompt": "My brother ___ the ___ yesterday morning.",
+      "answer": [
+        "did",
+        "housework"
+      ]
+    },
+    {
+      "id": "pi-10-063",
+      "type": "typed-double-gap",
+      "prompt": "She has already ___ the ___ today.",
+      "answer": [
+        "done",
+        "housework"
+      ]
+    },
+    {
+      "id": "pi-10-064",
+      "type": "typed-double-gap",
+      "prompt": "We need to ___ the ___ before our guests arrive.",
+      "answer": [
+        "do",
+        "housework"
+      ]
+    },
+    {
+      "id": "pi-10-065",
+      "type": "typed-double-gap",
+      "prompt": "My father often ___ the ___ after work.",
+      "answer": [
+        "does",
+        "housework"
+      ]
+    },
+    {
+      "id": "pi-10-066",
+      "type": "typed-double-gap",
+      "prompt": "Please do not ___ ___ while the baby is sleeping.",
+      "answer": [
+        "make",
+        "noise"
+      ]
+    },
+    {
+      "id": "pi-10-067",
+      "type": "typed-double-gap",
+      "prompt": "The children ___ ___ during the film yesterday.",
+      "answer": [
+        "made",
+        "noise"
+      ]
+    },
+    {
+      "id": "pi-10-068",
+      "type": "typed-double-gap",
+      "prompt": "My neighbours often ___ ___ late at night.",
+      "answer": [
+        "make",
+        "noise"
+      ]
+    },
+    {
+      "id": "pi-10-069",
+      "type": "typed-double-gap",
+      "prompt": "The dog has ___ ___ all morning.",
+      "answer": [
+        "made",
+        "noise"
+      ]
+    },
+    {
+      "id": "pi-10-070",
+      "type": "typed-double-gap",
+      "prompt": "Try not to ___ ___ in the library.",
+      "answer": [
+        "make",
+        "noise"
+      ]
+    }
+  ]
+}
