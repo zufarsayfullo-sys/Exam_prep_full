@@ -102,5 +102,13 @@
   "path": "quiz-13.html",
   "bank": "quiz-13.bank.json",
   "level": "pre-intermediate"
+},
+  {
+  "id": "quiz-14",
+  "title": "Jobs and Success — Vocabulary",
+  "category": "Vocabulary",
+  "path": "quiz-14.html",
+  "bank": "quiz-14.bank.json",
+  "level": "pre-intermediate"
 }
 ]
