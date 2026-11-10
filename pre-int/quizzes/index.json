@@ -62,5 +62,13 @@
   "path": "quiz-08.html",
   "bank": "quiz-08.bank.json",
   "level": "pre-intermediate"
+},
+  {
+  "id": "quiz-09",
+  "title": "Transport Vocabulary — Word Bank",
+  "category": "Vocabulary",
+  "path": "quiz-09.html",
+  "bank": "quiz-09.bank.json",
+  "level": "pre-intermediate"
 }
 ]
