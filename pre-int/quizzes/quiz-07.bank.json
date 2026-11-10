@@ -1,0 +1,497 @@
+{
+  "title": "Used To — Past Habits and States",
+  "level": "pre-intermediate",
+  "category": "Grammar",
+  "questions": [
+    {
+      "id": "pi-07-001",
+      "type": "typed-used-to",
+      "prompt": "Computers ___ as small and light as they are now.",
+      "verb": "not be",
+      "answer": "didn't use to be"
+    },
+    {
+      "id": "pi-07-002",
+      "type": "typed-used-to",
+      "prompt": "Early computers were large and heavy, and people ___ them around.",
+      "verb": "carry",
+      "answer": "used to carry"
+    },
+    {
+      "id": "pi-07-003",
+      "type": "typed-used-to",
+      "prompt": "___ one of those old computers when you were younger?",
+      "verb": "you / use",
+      "answer": "Did you use to use"
+    },
+    {
+      "id": "pi-07-004",
+      "type": "typed-used-to",
+      "prompt": "Before email, people ___ letters to friends abroad.",
+      "verb": "write",
+      "answer": "used to write"
+    },
+    {
+      "id": "pi-07-005",
+      "type": "typed-used-to",
+      "prompt": "Before smartphones, people ___ their friends on large old-fashioned phones.",
+      "verb": "phone",
+      "answer": "used to phone"
+    },
+    {
+      "id": "pi-07-006",
+      "type": "typed-used-to",
+      "prompt": "When I was six, I ___ cartoons every morning.",
+      "verb": "watch",
+      "answer": "used to watch"
+    },
+    {
+      "id": "pi-07-007",
+      "type": "typed-used-to",
+      "prompt": "My grandfather ___ to school on foot when he was young.",
+      "verb": "walk",
+      "answer": "used to walk"
+    },
+    {
+      "id": "pi-07-008",
+      "type": "typed-used-to",
+      "prompt": "Before she moved, Maria ___ near the sea.",
+      "verb": "live",
+      "answer": "used to live"
+    },
+    {
+      "id": "pi-07-009",
+      "type": "typed-used-to",
+      "prompt": "As a child, Ben ___ toy cars.",
+      "verb": "collect",
+      "answer": "used to collect"
+    },
+    {
+      "id": "pi-07-010",
+      "type": "typed-used-to",
+      "prompt": "In the past, my parents ___ the newspaper every morning.",
+      "verb": "read",
+      "answer": "used to read"
+    },
+    {
+      "id": "pi-07-011",
+      "type": "typed-used-to",
+      "prompt": "When we lived in the countryside, we ___ fresh milk from a farm.",
+      "verb": "buy",
+      "answer": "used to buy"
+    },
+    {
+      "id": "pi-07-012",
+      "type": "typed-used-to",
+      "prompt": "Years ago, this building ___ a cinema.",
+      "verb": "be",
+      "answer": "used to be"
+    },
+    {
+      "id": "pi-07-013",
+      "type": "typed-used-to",
+      "prompt": "When he was a teenager, Sam ___ the guitar in a band.",
+      "verb": "play",
+      "answer": "used to play"
+    },
+    {
+      "id": "pi-07-014",
+      "type": "typed-used-to",
+      "prompt": "Before moving to the city, I ___ vegetables in my garden.",
+      "verb": "grow",
+      "answer": "used to grow"
+    },
+    {
+      "id": "pi-07-015",
+      "type": "typed-used-to",
+      "prompt": "At primary school, we ___ uniforms every day.",
+      "verb": "wear",
+      "answer": "used to wear"
+    },
+    {
+      "id": "pi-07-016",
+      "type": "typed-used-to",
+      "prompt": "My aunt ___ in a hospital before she retired.",
+      "verb": "work",
+      "answer": "used to work"
+    },
+    {
+      "id": "pi-07-017",
+      "type": "typed-used-to",
+      "prompt": "When I was younger, I ___ afraid of dogs.",
+      "verb": "be",
+      "answer": "used to be"
+    },
+    {
+      "id": "pi-07-018",
+      "type": "typed-used-to",
+      "prompt": "Before online maps, travellers ___ paper maps.",
+      "verb": "use",
+      "answer": "used to use"
+    },
+    {
+      "id": "pi-07-019",
+      "type": "typed-used-to",
+      "prompt": "As children, we ___ hide-and-seek after school.",
+      "verb": "play",
+      "answer": "used to play"
+    },
+    {
+      "id": "pi-07-020",
+      "type": "typed-used-to",
+      "prompt": "In the old days, people ___ photos on film cameras.",
+      "verb": "take",
+      "answer": "used to take"
+    },
+    {
+      "id": "pi-07-021",
+      "type": "typed-used-to",
+      "prompt": "Before he got his car, Ali ___ the bus to work.",
+      "verb": "take",
+      "answer": "used to take"
+    },
+    {
+      "id": "pi-07-022",
+      "type": "typed-used-to",
+      "prompt": "At university, I ___ in the library every evening.",
+      "verb": "study",
+      "answer": "used to study"
+    },
+    {
+      "id": "pi-07-023",
+      "type": "typed-used-to",
+      "prompt": "When they lived in Italy, they ___ pasta almost every day.",
+      "verb": "eat",
+      "answer": "used to eat"
+    },
+    {
+      "id": "pi-07-024",
+      "type": "typed-used-to",
+      "prompt": "As a teenager, my sister ___ long hair.",
+      "verb": "have",
+      "answer": "used to have"
+    },
+    {
+      "id": "pi-07-025",
+      "type": "typed-used-to",
+      "prompt": "Before moving abroad, our neighbours ___ next door to us.",
+      "verb": "live",
+      "answer": "used to live"
+    },
+    {
+      "id": "pi-07-026",
+      "type": "typed-used-to",
+      "prompt": "When I was a child, I ___ swimming every Saturday.",
+      "verb": "go",
+      "answer": "used to go"
+    },
+    {
+      "id": "pi-07-027",
+      "type": "typed-used-to",
+      "prompt": "Before the new road was built, drivers ___ through the village.",
+      "verb": "travel",
+      "answer": "used to travel"
+    },
+    {
+      "id": "pi-07-028",
+      "type": "typed-used-to",
+      "prompt": "Years ago, my father ___ a bicycle to work.",
+      "verb": "ride",
+      "answer": "used to ride"
+    },
+    {
+      "id": "pi-07-029",
+      "type": "typed-used-to",
+      "prompt": "When she was small, Ella ___ fairy tales before bed.",
+      "verb": "enjoy",
+      "answer": "used to enjoy"
+    },
+    {
+      "id": "pi-07-030",
+      "type": "typed-used-to",
+      "prompt": "Before we bought a dishwasher, we ___ the dishes by hand.",
+      "verb": "wash",
+      "answer": "used to wash"
+    },
+    {
+      "id": "pi-07-031",
+      "type": "typed-used-to",
+      "prompt": "Before he learned to swim, Tom ___ into the deep end of the pool.",
+      "verb": "not go",
+      "answer": "didn't use to go"
+    },
+    {
+      "id": "pi-07-032",
+      "type": "typed-used-to",
+      "prompt": "When I was little, I ___ coffee, but I drink it now.",
+      "verb": "not drink",
+      "answer": "didn't use to drink"
+    },
+    {
+      "id": "pi-07-033",
+      "type": "typed-used-to",
+      "prompt": "Before the new bridge opened, buses ___ across the river here.",
+      "verb": "not travel",
+      "answer": "didn't use to travel"
+    },
+    {
+      "id": "pi-07-034",
+      "type": "typed-used-to",
+      "prompt": "She ___ glasses when she was younger, but she wears them now.",
+      "verb": "not wear",
+      "answer": "didn't use to wear"
+    },
+    {
+      "id": "pi-07-035",
+      "type": "typed-used-to",
+      "prompt": "We ___ a television at home when I was a child.",
+      "verb": "not have",
+      "answer": "didn't use to have"
+    },
+    {
+      "id": "pi-07-036",
+      "type": "typed-used-to",
+      "prompt": "Before I got a smartphone, I ___ messages on the internet.",
+      "verb": "not send",
+      "answer": "didn't use to send"
+    },
+    {
+      "id": "pi-07-037",
+      "type": "typed-used-to",
+      "prompt": "He ___ spicy food as a child, but he loves it now.",
+      "verb": "not like",
+      "answer": "didn't use to like"
+    },
+    {
+      "id": "pi-07-038",
+      "type": "typed-used-to",
+      "prompt": "My grandparents ___ online when they were young.",
+      "verb": "not shop",
+      "answer": "didn't use to shop"
+    },
+    {
+      "id": "pi-07-039",
+      "type": "typed-used-to",
+      "prompt": "Before the town built a library, children ___ books there.",
+      "verb": "not borrow",
+      "answer": "didn't use to borrow"
+    },
+    {
+      "id": "pi-07-040",
+      "type": "typed-used-to",
+      "prompt": "When she was at school, Mia ___ up early on Sundays.",
+      "verb": "not get",
+      "answer": "didn't use to get"
+    },
+    {
+      "id": "pi-07-041",
+      "type": "typed-used-to",
+      "prompt": "Before we adopted a dog, we ___ for walks every evening.",
+      "verb": "not go",
+      "answer": "didn't use to go"
+    },
+    {
+      "id": "pi-07-042",
+      "type": "typed-used-to",
+      "prompt": "In the past, this shop ___ on Sundays, but it does now.",
+      "verb": "not open",
+      "answer": "didn't use to open"
+    },
+    {
+      "id": "pi-07-043",
+      "type": "typed-used-to",
+      "prompt": "When he was younger, Paul ___ vegetables, but he eats them now.",
+      "verb": "not eat",
+      "answer": "didn't use to eat"
+    },
+    {
+      "id": "pi-07-044",
+      "type": "typed-used-to",
+      "prompt": "Before she took lessons, Anna ___ English at home.",
+      "verb": "not speak",
+      "answer": "didn't use to speak"
+    },
+    {
+      "id": "pi-07-045",
+      "type": "typed-used-to",
+      "prompt": "As a child, I ___ the news, but I watch it every night now.",
+      "verb": "not watch",
+      "answer": "didn't use to watch"
+    },
+    {
+      "id": "pi-07-046",
+      "type": "typed-used-to",
+      "prompt": "Years ago, our school ___ computers in every classroom.",
+      "verb": "not have",
+      "answer": "didn't use to have"
+    },
+    {
+      "id": "pi-07-047",
+      "type": "typed-used-to",
+      "prompt": "Before the railway was built, trains ___ in this town.",
+      "verb": "not stop",
+      "answer": "didn't use to stop"
+    },
+    {
+      "id": "pi-07-048",
+      "type": "typed-used-to",
+      "prompt": "My brother ___ football when he was little, but he plays every week now.",
+      "verb": "not play",
+      "answer": "didn't use to play"
+    },
+    {
+      "id": "pi-07-049",
+      "type": "typed-used-to",
+      "prompt": "Before he became a chef, Leo ___ much at home.",
+      "verb": "not cook",
+      "answer": "didn't use to cook"
+    },
+    {
+      "id": "pi-07-050",
+      "type": "typed-used-to",
+      "prompt": "When we lived in the mountains, we ___ the beach very often.",
+      "verb": "not visit",
+      "answer": "didn't use to visit"
+    },
+    {
+      "id": "pi-07-051",
+      "type": "typed-used-to",
+      "prompt": "___ football after school when you were a child?",
+      "verb": "you / play",
+      "answer": "Did you use to play"
+    },
+    {
+      "id": "pi-07-052",
+      "type": "typed-used-to",
+      "prompt": "___ near the station before she moved?",
+      "verb": "she / live",
+      "answer": "Did she use to live"
+    },
+    {
+      "id": "pi-07-053",
+      "type": "typed-used-to",
+      "prompt": "___ your grandfather work on a farm?",
+      "verb": "your grandfather / work",
+      "answer": "Did your grandfather use to work"
+    },
+    {
+      "id": "pi-07-054",
+      "type": "typed-used-to",
+      "prompt": "___ long hair when you were younger?",
+      "verb": "you / have",
+      "answer": "Did you use to have"
+    },
+    {
+      "id": "pi-07-055",
+      "type": "typed-used-to",
+      "prompt": "___ the bus to school in primary school?",
+      "verb": "they / take",
+      "answer": "Did they use to take"
+    },
+    {
+      "id": "pi-07-056",
+      "type": "typed-used-to",
+      "prompt": "___ cartoons on Saturday mornings as a child?",
+      "verb": "he / watch",
+      "answer": "Did he use to watch"
+    },
+    {
+      "id": "pi-07-057",
+      "type": "typed-used-to",
+      "prompt": "___ a uniform at your old school?",
+      "verb": "you / wear",
+      "answer": "Did you use to wear"
+    },
+    {
+      "id": "pi-07-058",
+      "type": "typed-used-to",
+      "prompt": "___ in a band when she was at university?",
+      "verb": "she / sing",
+      "answer": "Did she use to sing"
+    },
+    {
+      "id": "pi-07-059",
+      "type": "typed-used-to",
+      "prompt": "___ in this park before the new houses were built?",
+      "verb": "children / play",
+      "answer": "Did children use to play"
+    },
+    {
+      "id": "pi-07-060",
+      "type": "typed-used-to",
+      "prompt": "___ a lot of books when you were younger?",
+      "verb": "you / read",
+      "answer": "Did you use to read"
+    },
+    {
+      "id": "pi-07-061",
+      "type": "typed-used-to",
+      "prompt": "___ in London before moving to Manchester?",
+      "verb": "your parents / live",
+      "answer": "Did your parents use to live"
+    },
+    {
+      "id": "pi-07-062",
+      "type": "typed-used-to",
+      "prompt": "___ to work by bicycle before he bought a car?",
+      "verb": "he / go",
+      "answer": "Did he use to go"
+    },
+    {
+      "id": "pi-07-063",
+      "type": "typed-used-to",
+      "prompt": "___ at the local market every weekend?",
+      "verb": "your family / shop",
+      "answer": "Did your family use to shop"
+    },
+    {
+      "id": "pi-07-064",
+      "type": "typed-used-to",
+      "prompt": "___ tea with breakfast when she was a child?",
+      "verb": "she / drink",
+      "answer": "Did she use to drink"
+    },
+    {
+      "id": "pi-07-065",
+      "type": "typed-used-to",
+      "prompt": "___ together after dinner when you were young?",
+      "verb": "you / eat",
+      "answer": "Did you use to eat"
+    },
+    {
+      "id": "pi-07-066",
+      "type": "typed-used-to",
+      "prompt": "___ in a small apartment before they bought a house?",
+      "verb": "they / live",
+      "answer": "Did they use to live"
+    },
+    {
+      "id": "pi-07-067",
+      "type": "typed-used-to",
+      "prompt": "___ your homework at the kitchen table as a child?",
+      "verb": "you / do",
+      "answer": "Did you use to do"
+    },
+    {
+      "id": "pi-07-068",
+      "type": "typed-used-to",
+      "prompt": "___ to the cinema every Friday when you were teenagers?",
+      "verb": "you and your friends / go",
+      "answer": "Did you and your friends use to go"
+    },
+    {
+      "id": "pi-07-069",
+      "type": "typed-used-to",
+      "prompt": "___ a lot of letters before email became popular?",
+      "verb": "people / write",
+      "answer": "Did people use to write"
+    },
+    {
+      "id": "pi-07-070",
+      "type": "typed-used-to",
+      "prompt": "___ afraid of the dark when he was little?",
+      "verb": "your brother / be",
+      "answer": "Did your brother use to be"
+    }
+  ]
+}
