@@ -1,0 +1,497 @@
+{
+  "title": "Passive Voice — Present and Past Simple",
+  "level": "pre-intermediate",
+  "category": "Grammar",
+  "questions": [
+    {
+      "id": "pi-05-001",
+      "type": "typed-passive",
+      "prompt": "Coffee ___ in many countries around the world.",
+      "verb": "grow",
+      "answer": "is grown"
+    },
+    {
+      "id": "pi-05-002",
+      "type": "typed-passive",
+      "prompt": "Millions of cups of coffee ___ every day.",
+      "verb": "drink",
+      "answer": "are drunk"
+    },
+    {
+      "id": "pi-05-003",
+      "type": "typed-passive",
+      "prompt": "The first telephone ___ in 1876.",
+      "verb": "invent",
+      "answer": "was invented"
+    },
+    {
+      "id": "pi-05-004",
+      "type": "typed-passive",
+      "prompt": "English ___ in many countries.",
+      "verb": "speak",
+      "answer": "is spoken"
+    },
+    {
+      "id": "pi-05-005",
+      "type": "typed-passive",
+      "prompt": "This bridge ___ in 1998.",
+      "verb": "build",
+      "answer": "was built"
+    },
+    {
+      "id": "pi-05-006",
+      "type": "typed-passive",
+      "prompt": "These cars ___ in Germany.",
+      "verb": "make",
+      "answer": "are made"
+    },
+    {
+      "id": "pi-05-007",
+      "type": "typed-passive",
+      "prompt": "The classroom ___ every afternoon.",
+      "verb": "clean",
+      "answer": "is cleaned"
+    },
+    {
+      "id": "pi-05-008",
+      "type": "typed-passive",
+      "prompt": "The windows ___ last weekend.",
+      "verb": "wash",
+      "answer": "were washed"
+    },
+    {
+      "id": "pi-05-009",
+      "type": "typed-passive",
+      "prompt": "The letter ___ yesterday morning.",
+      "verb": "send",
+      "answer": "was sent"
+    },
+    {
+      "id": "pi-05-010",
+      "type": "typed-passive",
+      "prompt": "The emails ___ every Monday.",
+      "verb": "check",
+      "answer": "are checked"
+    },
+    {
+      "id": "pi-05-011",
+      "type": "typed-passive",
+      "prompt": "The museum ___ in 2005.",
+      "verb": "open",
+      "answer": "was opened"
+    },
+    {
+      "id": "pi-05-012",
+      "type": "typed-passive",
+      "prompt": "The books ___ to the library last Friday.",
+      "verb": "return",
+      "answer": "were returned"
+    },
+    {
+      "id": "pi-05-013",
+      "type": "typed-passive",
+      "prompt": "The cake ___ by my mother yesterday.",
+      "verb": "bake",
+      "answer": "was baked"
+    },
+    {
+      "id": "pi-05-014",
+      "type": "typed-passive",
+      "prompt": "These shoes ___ in Italy.",
+      "verb": "produce",
+      "answer": "are produced"
+    },
+    {
+      "id": "pi-05-015",
+      "type": "typed-passive",
+      "prompt": "The road ___ last summer.",
+      "verb": "repair",
+      "answer": "was repaired"
+    },
+    {
+      "id": "pi-05-016",
+      "type": "typed-passive",
+      "prompt": "The flowers ___ twice a week.",
+      "verb": "water",
+      "answer": "are watered"
+    },
+    {
+      "id": "pi-05-017",
+      "type": "typed-passive",
+      "prompt": "The homework ___ by the teacher every Friday.",
+      "verb": "mark",
+      "answer": "is marked"
+    },
+    {
+      "id": "pi-05-018",
+      "type": "typed-passive",
+      "prompt": "The documents ___ yesterday afternoon.",
+      "verb": "print",
+      "answer": "were printed"
+    },
+    {
+      "id": "pi-05-019",
+      "type": "typed-passive",
+      "prompt": "The picture ___ by a famous artist in 1902.",
+      "verb": "paint",
+      "answer": "was painted"
+    },
+    {
+      "id": "pi-05-020",
+      "type": "typed-passive",
+      "prompt": "The doors ___ at nine o’clock every morning.",
+      "verb": "open",
+      "answer": "are opened"
+    },
+    {
+      "id": "pi-05-021",
+      "type": "typed-passive",
+      "prompt": "The computers ___ every evening.",
+      "verb": "switch off",
+      "answer": "are switched off"
+    },
+    {
+      "id": "pi-05-022",
+      "type": "typed-passive",
+      "prompt": "The old stadium ___ in 1980.",
+      "verb": "build",
+      "answer": "was built"
+    },
+    {
+      "id": "pi-05-023",
+      "type": "typed-passive",
+      "prompt": "This song ___ on the radio every day.",
+      "verb": "play",
+      "answer": "is played"
+    },
+    {
+      "id": "pi-05-024",
+      "type": "typed-passive",
+      "prompt": "The tickets ___ online last night.",
+      "verb": "buy",
+      "answer": "were bought"
+    },
+    {
+      "id": "pi-05-025",
+      "type": "typed-passive",
+      "prompt": "The dinner ___ at seven o’clock every evening.",
+      "verb": "serve",
+      "answer": "is served"
+    },
+    {
+      "id": "pi-05-026",
+      "type": "typed-passive",
+      "prompt": "The message ___ to all parents yesterday.",
+      "verb": "send",
+      "answer": "was sent"
+    },
+    {
+      "id": "pi-05-027",
+      "type": "typed-passive",
+      "prompt": "The bicycles ___ in this factory.",
+      "verb": "assemble",
+      "answer": "are assembled"
+    },
+    {
+      "id": "pi-05-028",
+      "type": "typed-passive",
+      "prompt": "The school trip ___ last month.",
+      "verb": "organise",
+      "answer": "was organised"
+    },
+    {
+      "id": "pi-05-029",
+      "type": "typed-passive",
+      "prompt": "The photographs ___ during the ceremony yesterday.",
+      "verb": "take",
+      "answer": "were taken"
+    },
+    {
+      "id": "pi-05-030",
+      "type": "typed-passive",
+      "prompt": "The room ___ every morning before class.",
+      "verb": "tidy",
+      "answer": "is tidied"
+    },
+    {
+      "id": "pi-05-031",
+      "type": "typed-passive",
+      "prompt": "The city walls ___ hundreds of years ago.",
+      "verb": "construct",
+      "answer": "were constructed"
+    },
+    {
+      "id": "pi-05-032",
+      "type": "typed-passive",
+      "prompt": "The parcel ___ this morning.",
+      "verb": "deliver",
+      "answer": "was delivered"
+    },
+    {
+      "id": "pi-05-033",
+      "type": "typed-passive",
+      "prompt": "The newspapers ___ early every morning.",
+      "verb": "deliver",
+      "answer": "are delivered"
+    },
+    {
+      "id": "pi-05-034",
+      "type": "typed-passive",
+      "prompt": "The questions ___ by the students yesterday.",
+      "verb": "answer",
+      "answer": "were answered"
+    },
+    {
+      "id": "pi-05-035",
+      "type": "typed-passive",
+      "prompt": "The hotel rooms ___ every day.",
+      "verb": "clean",
+      "answer": "are cleaned"
+    },
+    {
+      "id": "pi-05-036",
+      "type": "typed-passive",
+      "prompt": "The new hospital ___ in 2016.",
+      "verb": "open",
+      "answer": "was opened"
+    },
+    {
+      "id": "pi-05-037",
+      "type": "typed-passive",
+      "prompt": "The apples ___ in autumn every year.",
+      "verb": "pick",
+      "answer": "are picked"
+    },
+    {
+      "id": "pi-05-038",
+      "type": "typed-passive",
+      "prompt": "The invitations ___ last Tuesday.",
+      "verb": "post",
+      "answer": "were posted"
+    },
+    {
+      "id": "pi-05-039",
+      "type": "typed-passive",
+      "prompt": "The school uniforms ___ by local companies.",
+      "verb": "make",
+      "answer": "are made"
+    },
+    {
+      "id": "pi-05-040",
+      "type": "typed-passive",
+      "prompt": "The lights ___ at ten o’clock last night.",
+      "verb": "turn off",
+      "answer": "were turned off"
+    },
+    {
+      "id": "pi-05-041",
+      "type": "typed-passive",
+      "prompt": "The report ___ by the manager yesterday.",
+      "verb": "write",
+      "answer": "was written"
+    },
+    {
+      "id": "pi-05-042",
+      "type": "typed-passive",
+      "prompt": "The streets ___ every morning.",
+      "verb": "sweep",
+      "answer": "are swept"
+    },
+    {
+      "id": "pi-05-043",
+      "type": "typed-passive",
+      "prompt": "The walls ___ blue last weekend.",
+      "verb": "paint",
+      "answer": "were painted"
+    },
+    {
+      "id": "pi-05-044",
+      "type": "typed-passive",
+      "prompt": "The lessons ___ in English at this school.",
+      "verb": "teach",
+      "answer": "are taught"
+    },
+    {
+      "id": "pi-05-045",
+      "type": "typed-passive",
+      "prompt": "The computer ___ by a technician yesterday.",
+      "verb": "fix",
+      "answer": "was fixed"
+    },
+    {
+      "id": "pi-05-046",
+      "type": "typed-passive",
+      "prompt": "The tables ___ after every meal.",
+      "verb": "wipe",
+      "answer": "are wiped"
+    },
+    {
+      "id": "pi-05-047",
+      "type": "typed-passive",
+      "prompt": "The first film ___ in the town cinema in 1930.",
+      "verb": "show",
+      "answer": "was shown"
+    },
+    {
+      "id": "pi-05-048",
+      "type": "typed-passive",
+      "prompt": "The plants ___ by the gardener every day.",
+      "verb": "water",
+      "answer": "are watered"
+    },
+    {
+      "id": "pi-05-049",
+      "type": "typed-passive",
+      "prompt": "The results ___ on the school website yesterday.",
+      "verb": "publish",
+      "answer": "were published"
+    },
+    {
+      "id": "pi-05-050",
+      "type": "typed-passive",
+      "prompt": "The food ___ in the school kitchen every morning.",
+      "verb": "prepare",
+      "answer": "is prepared"
+    },
+    {
+      "id": "pi-05-051",
+      "type": "typed-passive",
+      "prompt": "The old trees ___ last winter.",
+      "verb": "cut down",
+      "answer": "were cut down"
+    },
+    {
+      "id": "pi-05-052",
+      "type": "typed-passive",
+      "prompt": "The rubbish ___ every Tuesday.",
+      "verb": "collect",
+      "answer": "is collected"
+    },
+    {
+      "id": "pi-05-053",
+      "type": "typed-passive",
+      "prompt": "The classroom posters ___ by students last week.",
+      "verb": "design",
+      "answer": "were designed"
+    },
+    {
+      "id": "pi-05-054",
+      "type": "typed-passive",
+      "prompt": "The bicycles ___ outside the school every day.",
+      "verb": "park",
+      "answer": "are parked"
+    },
+    {
+      "id": "pi-05-055",
+      "type": "typed-passive",
+      "prompt": "The package ___ at the wrong address yesterday.",
+      "verb": "leave",
+      "answer": "was left"
+    },
+    {
+      "id": "pi-05-056",
+      "type": "typed-passive",
+      "prompt": "The football match ___ on television last night.",
+      "verb": "show",
+      "answer": "was shown"
+    },
+    {
+      "id": "pi-05-057",
+      "type": "typed-passive",
+      "prompt": "The library books ___ by hundreds of students every month.",
+      "verb": "borrow",
+      "answer": "are borrowed"
+    },
+    {
+      "id": "pi-05-058",
+      "type": "typed-passive",
+      "prompt": "The meeting ___ by the director yesterday.",
+      "verb": "cancel",
+      "answer": "was cancelled"
+    },
+    {
+      "id": "pi-05-059",
+      "type": "typed-passive",
+      "prompt": "The vegetables ___ at the market every morning.",
+      "verb": "sell",
+      "answer": "are sold"
+    },
+    {
+      "id": "pi-05-060",
+      "type": "typed-passive",
+      "prompt": "The broken chair ___ last Saturday.",
+      "verb": "repair",
+      "answer": "was repaired"
+    },
+    {
+      "id": "pi-05-061",
+      "type": "typed-passive",
+      "prompt": "The train tickets ___ at the station every day.",
+      "verb": "sell",
+      "answer": "are sold"
+    },
+    {
+      "id": "pi-05-062",
+      "type": "typed-passive",
+      "prompt": "The windows ___ during the storm last night.",
+      "verb": "break",
+      "answer": "were broken"
+    },
+    {
+      "id": "pi-05-063",
+      "type": "typed-passive",
+      "prompt": "The school gates ___ at eight o’clock every morning.",
+      "verb": "unlock",
+      "answer": "are unlocked"
+    },
+    {
+      "id": "pi-05-064",
+      "type": "typed-passive",
+      "prompt": "The film ___ by millions of people last year.",
+      "verb": "watch",
+      "answer": "was watched"
+    },
+    {
+      "id": "pi-05-065",
+      "type": "typed-passive",
+      "prompt": "The homework instructions ___ at the start of every lesson.",
+      "verb": "explain",
+      "answer": "are explained"
+    },
+    {
+      "id": "pi-05-066",
+      "type": "typed-passive",
+      "prompt": "The new rules ___ last September.",
+      "verb": "introduce",
+      "answer": "were introduced"
+    },
+    {
+      "id": "pi-05-067",
+      "type": "typed-passive",
+      "prompt": "The bread ___ fresh every morning.",
+      "verb": "bake",
+      "answer": "is baked"
+    },
+    {
+      "id": "pi-05-068",
+      "type": "typed-passive",
+      "prompt": "The painting ___ from the museum in 2012.",
+      "verb": "steal",
+      "answer": "was stolen"
+    },
+    {
+      "id": "pi-05-069",
+      "type": "typed-passive",
+      "prompt": "The classrooms ___ after school every day.",
+      "verb": "lock",
+      "answer": "are locked"
+    },
+    {
+      "id": "pi-05-070",
+      "type": "typed-passive",
+      "prompt": "The prize ___ to the winner yesterday.",
+      "verb": "give",
+      "answer": "was given"
+    }
+  ]
+}
