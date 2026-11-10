@@ -30,5 +30,13 @@
     "path": "quiz-04.html",
     "bank": "quiz-04.bank.json",
     "level": "pre-intermediate"
-  }
+  },
+  {
+  "id": "quiz-05",
+  "title": "Passive Voice — Present and Past Simple",
+  "category": "Grammar",
+  "path": "quiz-05.html",
+  "bank": "quiz-05.bank.json",
+  "level": "pre-intermediate"
+}
 ]
