@@ -1,0 +1,427 @@
+{
+  "title": "Present Perfect Simple — For / Since",
+  "level": "pre-intermediate",
+  "category": "Grammar",
+  "questions": [
+    {
+      "id": "pi-08-001",
+      "type": "typed-sentence",
+      "prompt": "I / be a professor at City University / six years",
+      "answer": "I have been a professor at City University for six years."
+    },
+    {
+      "id": "pi-08-002",
+      "type": "typed-sentence",
+      "prompt": "Ria / want to work in New York / she left college",
+      "answer": "Ria has wanted to work in New York since she left college."
+    },
+    {
+      "id": "pi-08-003",
+      "type": "typed-sentence",
+      "prompt": "Piotr / not have a job / he had an accident at work",
+      "answer": "Piotr hasn't had a job since he had an accident at work."
+    },
+    {
+      "id": "pi-08-004",
+      "type": "typed-sentence",
+      "prompt": "Tomas / work with a new boss / a week",
+      "answer": "Tomas has worked with a new boss for a week."
+    },
+    {
+      "id": "pi-08-005",
+      "type": "typed-sentence",
+      "prompt": "Eleni / live in Greece / she was a teenager",
+      "answer": "Eleni has lived in Greece since she was a teenager."
+    },
+    {
+      "id": "pi-08-006",
+      "type": "typed-sentence",
+      "prompt": "I / know my best friend / ten years",
+      "answer": "I have known my best friend for ten years."
+    },
+    {
+      "id": "pi-08-007",
+      "type": "typed-sentence",
+      "prompt": "She / own this bicycle / last summer",
+      "answer": "She has owned this bicycle since last summer."
+    },
+    {
+      "id": "pi-08-008",
+      "type": "typed-sentence",
+      "prompt": "We / live in this apartment / 2020",
+      "answer": "We have lived in this apartment since 2020."
+    },
+    {
+      "id": "pi-08-009",
+      "type": "typed-sentence",
+      "prompt": "He / be interested in science / childhood",
+      "answer": "He has been interested in science since childhood."
+    },
+    {
+      "id": "pi-08-010",
+      "type": "typed-sentence",
+      "prompt": "They / work at the hospital / three months",
+      "answer": "They have worked at the hospital for three months."
+    },
+    {
+      "id": "pi-08-011",
+      "type": "typed-sentence",
+      "prompt": "My brother / have this laptop / two years",
+      "answer": "My brother has had this laptop for two years."
+    },
+    {
+      "id": "pi-08-012",
+      "type": "typed-sentence",
+      "prompt": "Anna / study French / September",
+      "answer": "Anna has studied French since September."
+    },
+    {
+      "id": "pi-08-013",
+      "type": "typed-sentence",
+      "prompt": "We / not see our cousins / last Christmas",
+      "answer": "We haven't seen our cousins since last Christmas."
+    },
+    {
+      "id": "pi-08-014",
+      "type": "typed-sentence",
+      "prompt": "I / not eat chocolate / three weeks",
+      "answer": "I haven't eaten chocolate for three weeks."
+    },
+    {
+      "id": "pi-08-015",
+      "type": "typed-sentence",
+      "prompt": "My parents / be married / twenty years",
+      "answer": "My parents have been married for twenty years."
+    },
+    {
+      "id": "pi-08-016",
+      "type": "typed-sentence",
+      "prompt": "Leo / play the guitar / he was twelve",
+      "answer": "Leo has played the guitar since he was twelve."
+    },
+    {
+      "id": "pi-08-017",
+      "type": "typed-sentence",
+      "prompt": "Our teacher / teach English / fifteen years",
+      "answer": "Our teacher has taught English for fifteen years."
+    },
+    {
+      "id": "pi-08-018",
+      "type": "typed-sentence",
+      "prompt": "The shop / be closed / Monday",
+      "answer": "The shop has been closed since Monday."
+    },
+    {
+      "id": "pi-08-019",
+      "type": "typed-sentence",
+      "prompt": "We / not go to the cinema / months",
+      "answer": "We haven't gone to the cinema for months."
+    },
+    {
+      "id": "pi-08-020",
+      "type": "typed-sentence",
+      "prompt": "Mia / wear glasses / primary school",
+      "answer": "Mia has worn glasses since primary school."
+    },
+    {
+      "id": "pi-08-021",
+      "type": "typed-sentence",
+      "prompt": "I / have a headache / this morning",
+      "answer": "I have had a headache since this morning."
+    },
+    {
+      "id": "pi-08-022",
+      "type": "typed-sentence",
+      "prompt": "They / be friends / they met at university",
+      "answer": "They have been friends since they met at university."
+    },
+    {
+      "id": "pi-08-023",
+      "type": "typed-sentence",
+      "prompt": "He / not drive a car / his accident",
+      "answer": "He hasn't driven a car since his accident."
+    },
+    {
+      "id": "pi-08-024",
+      "type": "typed-sentence",
+      "prompt": "We / wait for the bus / half an hour",
+      "answer": "We have waited for the bus for half an hour."
+    },
+    {
+      "id": "pi-08-025",
+      "type": "typed-sentence",
+      "prompt": "Sara / love classical music / she was a child",
+      "answer": "Sara has loved classical music since she was a child."
+    },
+    {
+      "id": "pi-08-026",
+      "type": "typed-sentence",
+      "prompt": "My uncle / run his business / 2015",
+      "answer": "My uncle has run his business since 2015."
+    },
+    {
+      "id": "pi-08-027",
+      "type": "typed-sentence",
+      "prompt": "I / not drink coffee / two days",
+      "answer": "I haven't drunk coffee for two days."
+    },
+    {
+      "id": "pi-08-028",
+      "type": "typed-sentence",
+      "prompt": "The children / be awake / six o’clock",
+      "answer": "The children have been awake since six o’clock."
+    },
+    {
+      "id": "pi-08-029",
+      "type": "typed-sentence",
+      "prompt": "Ben / work from home / the pandemic began",
+      "answer": "Ben has worked from home since the pandemic began."
+    },
+    {
+      "id": "pi-08-030",
+      "type": "typed-sentence",
+      "prompt": "We / have our dog / four years",
+      "answer": "We have had our dog for four years."
+    },
+    {
+      "id": "pi-08-031",
+      "type": "typed-sentence",
+      "prompt": "She / not speak to her neighbour / last week",
+      "answer": "She hasn't spoken to her neighbour since last week."
+    },
+    {
+      "id": "pi-08-032",
+      "type": "typed-sentence",
+      "prompt": "My sister / collect stamps / five years",
+      "answer": "My sister has collected stamps for five years."
+    },
+    {
+      "id": "pi-08-033",
+      "type": "typed-sentence",
+      "prompt": "I / not visit my hometown / 2022",
+      "answer": "I haven't visited my hometown since 2022."
+    },
+    {
+      "id": "pi-08-034",
+      "type": "typed-sentence",
+      "prompt": "They / live near the sea / last April",
+      "answer": "They have lived near the sea since last April."
+    },
+    {
+      "id": "pi-08-035",
+      "type": "typed-sentence",
+      "prompt": "The museum / be open / nine o’clock",
+      "answer": "The museum has been open since nine o’clock."
+    },
+    {
+      "id": "pi-08-036",
+      "type": "typed-sentence",
+      "prompt": "We / study together / the start of the course",
+      "answer": "We have studied together since the start of the course."
+    },
+    {
+      "id": "pi-08-037",
+      "type": "typed-sentence",
+      "prompt": "David / have a cold / four days",
+      "answer": "David has had a cold for four days."
+    },
+    {
+      "id": "pi-08-038",
+      "type": "typed-sentence",
+      "prompt": "I / not use my old phone / a year",
+      "answer": "I haven't used my old phone for a year."
+    },
+    {
+      "id": "pi-08-039",
+      "type": "typed-sentence",
+      "prompt": "My grandparents / live in that house / 1980",
+      "answer": "My grandparents have lived in that house since 1980."
+    },
+    {
+      "id": "pi-08-040",
+      "type": "typed-sentence",
+      "prompt": "Nina / be a vegetarian / three years",
+      "answer": "Nina has been a vegetarian for three years."
+    },
+    {
+      "id": "pi-08-041",
+      "type": "typed-sentence",
+      "prompt": "Our team / practise every Saturday / January",
+      "answer": "Our team has practised every Saturday since January."
+    },
+    {
+      "id": "pi-08-042",
+      "type": "typed-sentence",
+      "prompt": "We / not receive any letters / last month",
+      "answer": "We haven't received any letters since last month."
+    },
+    {
+      "id": "pi-08-043",
+      "type": "typed-sentence",
+      "prompt": "He / know the answer / the beginning of the lesson",
+      "answer": "He has known the answer since the beginning of the lesson."
+    },
+    {
+      "id": "pi-08-044",
+      "type": "typed-sentence",
+      "prompt": "I / work on this project / two weeks",
+      "answer": "I have worked on this project for two weeks."
+    },
+    {
+      "id": "pi-08-045",
+      "type": "typed-sentence",
+      "prompt": "The family / own this restaurant / 2008",
+      "answer": "The family has owned this restaurant since 2008."
+    },
+    {
+      "id": "pi-08-046",
+      "type": "typed-sentence",
+      "prompt": "Emma / not play tennis / six months",
+      "answer": "Emma hasn't played tennis for six months."
+    },
+    {
+      "id": "pi-08-047",
+      "type": "typed-sentence",
+      "prompt": "They / be on holiday / Friday",
+      "answer": "They have been on holiday since Friday."
+    },
+    {
+      "id": "pi-08-048",
+      "type": "typed-sentence",
+      "prompt": "I / keep a diary / I started secondary school",
+      "answer": "I have kept a diary since I started secondary school."
+    },
+    {
+      "id": "pi-08-049",
+      "type": "typed-sentence",
+      "prompt": "My dad / use the same computer / seven years",
+      "answer": "My dad has used the same computer for seven years."
+    },
+    {
+      "id": "pi-08-050",
+      "type": "typed-sentence",
+      "prompt": "We / not have a maths lesson / Tuesday",
+      "answer": "We haven't had a maths lesson since Tuesday."
+    },
+    {
+      "id": "pi-08-051",
+      "type": "typed-sentence",
+      "prompt": "Olivia / live alone / she moved to London",
+      "answer": "Olivia has lived alone since she moved to London."
+    },
+    {
+      "id": "pi-08-052",
+      "type": "typed-sentence",
+      "prompt": "The baby / sleep / two hours",
+      "answer": "The baby has slept for two hours."
+    },
+    {
+      "id": "pi-08-053",
+      "type": "typed-sentence",
+      "prompt": "I / not hear from Max / last weekend",
+      "answer": "I haven't heard from Max since last weekend."
+    },
+    {
+      "id": "pi-08-054",
+      "type": "typed-sentence",
+      "prompt": "The library / be busy / lunchtime",
+      "answer": "The library has been busy since lunchtime."
+    },
+    {
+      "id": "pi-08-055",
+      "type": "typed-sentence",
+      "prompt": "They / practise their presentation / an hour",
+      "answer": "They have practised their presentation for an hour."
+    },
+    {
+      "id": "pi-08-056",
+      "type": "typed-sentence",
+      "prompt": "My cousin / work as a nurse / 2019",
+      "answer": "My cousin has worked as a nurse since 2019."
+    },
+    {
+      "id": "pi-08-057",
+      "type": "typed-sentence",
+      "prompt": "We / not travel abroad / three years",
+      "answer": "We haven't travelled abroad for three years."
+    },
+    {
+      "id": "pi-08-058",
+      "type": "typed-sentence",
+      "prompt": "Alex / have his driving licence / last June",
+      "answer": "Alex has had his driving licence since last June."
+    },
+    {
+      "id": "pi-08-059",
+      "type": "typed-sentence",
+      "prompt": "I / be a member of this club / four months",
+      "answer": "I have been a member of this club for four months."
+    },
+    {
+      "id": "pi-08-060",
+      "type": "typed-sentence",
+      "prompt": "She / not buy new clothes / January",
+      "answer": "She hasn't bought new clothes since January."
+    },
+    {
+      "id": "pi-08-061",
+      "type": "typed-sentence",
+      "prompt": "Our neighbours / have two cats / a long time",
+      "answer": "Our neighbours have had two cats for a long time."
+    },
+    {
+      "id": "pi-08-062",
+      "type": "typed-sentence",
+      "prompt": "The students / prepare for the exam / three weeks",
+      "answer": "The students have prepared for the exam for three weeks."
+    },
+    {
+      "id": "pi-08-063",
+      "type": "typed-sentence",
+      "prompt": "He / not visit the dentist / last year",
+      "answer": "He hasn't visited the dentist since last year."
+    },
+    {
+      "id": "pi-08-064",
+      "type": "typed-sentence",
+      "prompt": "I / enjoy detective stories / I was young",
+      "answer": "I have enjoyed detective stories since I was young."
+    },
+    {
+      "id": "pi-08-065",
+      "type": "typed-sentence",
+      "prompt": "We / be in this queue / twenty minutes",
+      "answer": "We have been in this queue for twenty minutes."
+    },
+    {
+      "id": "pi-08-066",
+      "type": "typed-sentence",
+      "prompt": "Lily / not eat meat / she turned sixteen",
+      "answer": "Lily hasn't eaten meat since she turned sixteen."
+    },
+    {
+      "id": "pi-08-067",
+      "type": "typed-sentence",
+      "prompt": "My friends / play chess together / several years",
+      "answer": "My friends have played chess together for several years."
+    },
+    {
+      "id": "pi-08-068",
+      "type": "typed-sentence",
+      "prompt": "The school / offer online classes / 2021",
+      "answer": "The school has offered online classes since 2021."
+    },
+    {
+      "id": "pi-08-069",
+      "type": "typed-sentence",
+      "prompt": "I / not watch television / a week",
+      "answer": "I haven't watched television for a week."
+    },
+    {
+      "id": "pi-08-070",
+      "type": "typed-sentence",
+      "prompt": "Peter / be interested in photography / he got his first camera",
+      "answer": "Peter has been interested in photography since he got his first camera."
+    }
+  ]
+}
