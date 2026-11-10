@@ -1,0 +1,707 @@
+{
+  "title": "Second Conditional — If + Past Simple / Would + Base Verb",
+  "level": "pre-intermediate",
+  "category": "Grammar",
+  "questions": [
+    {
+      "id": "pi-06-001",
+      "type": "typed-two-blanks",
+      "prompt": "If I ___ more money, I ___ such long hours.",
+      "verbs": "earn / not work",
+      "answers": [
+        "earned",
+        "wouldn't work"
+      ]
+    },
+    {
+      "id": "pi-06-002",
+      "type": "typed-two-blanks",
+      "prompt": "Jan ___ to dance classes if he ___ more free time.",
+      "verbs": "go / have",
+      "answers": [
+        "would go",
+        "had"
+      ]
+    },
+    {
+      "id": "pi-06-003",
+      "type": "typed-two-blanks",
+      "prompt": "If Kazumi ___ time, she ___ to work every day.",
+      "verbs": "have / not have to drive",
+      "answers": [
+        "had",
+        "wouldn't have to drive"
+      ]
+    },
+    {
+      "id": "pi-06-004",
+      "type": "typed-two-blanks",
+      "prompt": "If you ___ to another country, ___ you miss your family?",
+      "verbs": "move / miss",
+      "answers": [
+        "moved",
+        "would"
+      ]
+    },
+    {
+      "id": "pi-06-005",
+      "type": "typed-two-blanks",
+      "prompt": "If people ___ so clever, there ___ so many advances in science.",
+      "verbs": "not be / not be",
+      "answers": [
+        "weren't",
+        "wouldn't be"
+      ]
+    },
+    {
+      "id": "pi-06-006",
+      "type": "typed-two-blanks",
+      "prompt": "If I ___ a car, I ___ to work.",
+      "verbs": "have / drive",
+      "answers": [
+        "had",
+        "would drive"
+      ]
+    },
+    {
+      "id": "pi-06-007",
+      "type": "typed-two-blanks",
+      "prompt": "If she ___ French, she ___ in Paris.",
+      "verbs": "speak / work",
+      "answers": [
+        "spoke",
+        "would work"
+      ]
+    },
+    {
+      "id": "pi-06-008",
+      "type": "typed-two-blanks",
+      "prompt": "We ___ outside if it ___ raining.",
+      "verbs": "eat / stop",
+      "answers": [
+        "would eat",
+        "stopped"
+      ]
+    },
+    {
+      "id": "pi-06-009",
+      "type": "typed-two-blanks",
+      "prompt": "If they ___ nearer, we ___ them more often.",
+      "verbs": "live / visit",
+      "answers": [
+        "lived",
+        "would visit"
+      ]
+    },
+    {
+      "id": "pi-06-010",
+      "type": "typed-two-blanks",
+      "prompt": "If he ___ harder, he ___ better grades.",
+      "verbs": "study / get",
+      "answers": [
+        "studied",
+        "would get"
+      ]
+    },
+    {
+      "id": "pi-06-011",
+      "type": "typed-two-blanks",
+      "prompt": "I ___ a new laptop if I ___ enough money.",
+      "verbs": "buy / have",
+      "answers": [
+        "would buy",
+        "had"
+      ]
+    },
+    {
+      "id": "pi-06-012",
+      "type": "typed-two-blanks",
+      "prompt": "If you ___ earlier, you ___ the bus.",
+      "verbs": "leave / catch",
+      "answers": [
+        "left",
+        "would catch"
+      ]
+    },
+    {
+      "id": "pi-06-013",
+      "type": "typed-two-blanks",
+      "prompt": "If we ___ a bigger kitchen, we ___ more often.",
+      "verbs": "have / cook",
+      "answers": [
+        "had",
+        "would cook"
+      ]
+    },
+    {
+      "id": "pi-06-014",
+      "type": "typed-two-blanks",
+      "prompt": "She ___ happier if she ___ a different job.",
+      "verbs": "be / find",
+      "answers": [
+        "would be",
+        "found"
+      ]
+    },
+    {
+      "id": "pi-06-015",
+      "type": "typed-two-blanks",
+      "prompt": "If I ___ the answer, I ___ you.",
+      "verbs": "know / tell",
+      "answers": [
+        "knew",
+        "would tell"
+      ]
+    },
+    {
+      "id": "pi-06-016",
+      "type": "typed-two-blanks",
+      "prompt": "If he ___ a bike, he ___ to school.",
+      "verbs": "have / cycle",
+      "answers": [
+        "had",
+        "would cycle"
+      ]
+    },
+    {
+      "id": "pi-06-017",
+      "type": "typed-two-blanks",
+      "prompt": "We ___ more time together if we ___ closer.",
+      "verbs": "spend / live",
+      "answers": [
+        "would spend",
+        "lived"
+      ]
+    },
+    {
+      "id": "pi-06-018",
+      "type": "typed-two-blanks",
+      "prompt": "If it ___ sunny, we ___ to the beach.",
+      "verbs": "be / go",
+      "answers": [
+        "were",
+        "would go"
+      ]
+    },
+    {
+      "id": "pi-06-019",
+      "type": "typed-two-blanks",
+      "prompt": "If my brother ___ taller, he ___ basketball better.",
+      "verbs": "be / play",
+      "answers": [
+        "were",
+        "would play"
+      ]
+    },
+    {
+      "id": "pi-06-020",
+      "type": "typed-two-blanks",
+      "prompt": "I ___ more books if I ___ less television.",
+      "verbs": "read / watch",
+      "answers": [
+        "would read",
+        "watched"
+      ]
+    },
+    {
+      "id": "pi-06-021",
+      "type": "typed-two-blanks",
+      "prompt": "If you ___ the instructions, you ___ fewer mistakes.",
+      "verbs": "follow / make",
+      "answers": [
+        "followed",
+        "would make"
+      ]
+    },
+    {
+      "id": "pi-06-022",
+      "type": "typed-two-blanks",
+      "prompt": "They ___ the match if they ___ more carefully.",
+      "verbs": "win / play",
+      "answers": [
+        "would win",
+        "played"
+      ]
+    },
+    {
+      "id": "pi-06-023",
+      "type": "typed-two-blanks",
+      "prompt": "If we ___ a garden, we ___ vegetables.",
+      "verbs": "have / grow",
+      "answers": [
+        "had",
+        "would grow"
+      ]
+    },
+    {
+      "id": "pi-06-024",
+      "type": "typed-two-blanks",
+      "prompt": "If Maria ___ a passport, she ___ abroad.",
+      "verbs": "have / travel",
+      "answers": [
+        "had",
+        "would travel"
+      ]
+    },
+    {
+      "id": "pi-06-025",
+      "type": "typed-two-blanks",
+      "prompt": "I ___ a dog if my apartment ___ bigger.",
+      "verbs": "get / be",
+      "answers": [
+        "would get",
+        "were"
+      ]
+    },
+    {
+      "id": "pi-06-026",
+      "type": "typed-two-blanks",
+      "prompt": "If he ___ less coffee, he ___ better at night.",
+      "verbs": "drink / sleep",
+      "answers": [
+        "drank",
+        "would sleep"
+      ]
+    },
+    {
+      "id": "pi-06-027",
+      "type": "typed-two-blanks",
+      "prompt": "If I ___ the manager, I ___ the schedule.",
+      "verbs": "be / change",
+      "answers": [
+        "were",
+        "would change"
+      ]
+    },
+    {
+      "id": "pi-06-028",
+      "type": "typed-two-blanks",
+      "prompt": "She ___ a new phone if hers ___ working.",
+      "verbs": "need / stop",
+      "answers": [
+        "would need",
+        "stopped"
+      ]
+    },
+    {
+      "id": "pi-06-029",
+      "type": "typed-two-blanks",
+      "prompt": "If you ___ me, I ___ you with your homework.",
+      "verbs": "ask / help",
+      "answers": [
+        "asked",
+        "would help"
+      ]
+    },
+    {
+      "id": "pi-06-030",
+      "type": "typed-two-blanks",
+      "prompt": "If we ___ more money, we ___ a bigger house.",
+      "verbs": "save / buy",
+      "answers": [
+        "saved",
+        "would buy"
+      ]
+    },
+    {
+      "id": "pi-06-031",
+      "type": "typed-two-blanks",
+      "prompt": "He ___ healthier if he ___ more exercise.",
+      "verbs": "be / do",
+      "answers": [
+        "would be",
+        "did"
+      ]
+    },
+    {
+      "id": "pi-06-032",
+      "type": "typed-two-blanks",
+      "prompt": "If the shop ___ earlier, I ___ there before work.",
+      "verbs": "open / go",
+      "answers": [
+        "opened",
+        "would go"
+      ]
+    },
+    {
+      "id": "pi-06-033",
+      "type": "typed-two-blanks",
+      "prompt": "If they ___ a map, they ___ lost.",
+      "verbs": "have / not get",
+      "answers": [
+        "had",
+        "wouldn't get"
+      ]
+    },
+    {
+      "id": "pi-06-034",
+      "type": "typed-two-blanks",
+      "prompt": "I ___ you if I ___ your number.",
+      "verbs": "call / know",
+      "answers": [
+        "would call",
+        "knew"
+      ]
+    },
+    {
+      "id": "pi-06-035",
+      "type": "typed-two-blanks",
+      "prompt": "If she ___ more confident, she ___ in class.",
+      "verbs": "feel / speak",
+      "answers": [
+        "felt",
+        "would speak"
+      ]
+    },
+    {
+      "id": "pi-06-036",
+      "type": "typed-two-blanks",
+      "prompt": "If I ___ free on Saturday, I ___ you.",
+      "verbs": "be / visit",
+      "answers": [
+        "were",
+        "would visit"
+      ]
+    },
+    {
+      "id": "pi-06-037",
+      "type": "typed-two-blanks",
+      "prompt": "We ___ a picnic if the weather ___ better.",
+      "verbs": "have / be",
+      "answers": [
+        "would have",
+        "were"
+      ]
+    },
+    {
+      "id": "pi-06-038",
+      "type": "typed-two-blanks",
+      "prompt": "If he ___ his keys, he ___ inside.",
+      "verbs": "find / get",
+      "answers": [
+        "found",
+        "would get"
+      ]
+    },
+    {
+      "id": "pi-06-039",
+      "type": "typed-two-blanks",
+      "prompt": "If I ___ more patient, I ___ so easily.",
+      "verbs": "be / not get angry",
+      "answers": [
+        "were",
+        "wouldn't get angry"
+      ]
+    },
+    {
+      "id": "pi-06-040",
+      "type": "typed-two-blanks",
+      "prompt": "She ___ the exam if she ___ regularly.",
+      "verbs": "pass / study",
+      "answers": [
+        "would pass",
+        "studied"
+      ]
+    },
+    {
+      "id": "pi-06-041",
+      "type": "typed-two-blanks",
+      "prompt": "If you ___ less sugar, your tea ___ healthier.",
+      "verbs": "use / be",
+      "answers": [
+        "used",
+        "would be"
+      ]
+    },
+    {
+      "id": "pi-06-042",
+      "type": "typed-two-blanks",
+      "prompt": "If we ___ in the countryside, we ___ more fresh air.",
+      "verbs": "live / breathe",
+      "answers": [
+        "lived",
+        "would breathe"
+      ]
+    },
+    {
+      "id": "pi-06-043",
+      "type": "typed-two-blanks",
+      "prompt": "I ___ that jacket if it ___ cheaper.",
+      "verbs": "buy / be",
+      "answers": [
+        "would buy",
+        "were"
+      ]
+    },
+    {
+      "id": "pi-06-044",
+      "type": "typed-two-blanks",
+      "prompt": "If he ___ a camera, he ___ more photos.",
+      "verbs": "have / take",
+      "answers": [
+        "had",
+        "would take"
+      ]
+    },
+    {
+      "id": "pi-06-045",
+      "type": "typed-two-blanks",
+      "prompt": "They ___ the train if tickets ___ less expensive.",
+      "verbs": "take / be",
+      "answers": [
+        "would take",
+        "were"
+      ]
+    },
+    {
+      "id": "pi-06-046",
+      "type": "typed-two-blanks",
+      "prompt": "If I ___ a famous actor, I ___ in films.",
+      "verbs": "be / act",
+      "answers": [
+        "were",
+        "would act"
+      ]
+    },
+    {
+      "id": "pi-06-047",
+      "type": "typed-two-blanks",
+      "prompt": "If you ___ more vegetables, you ___ healthier.",
+      "verbs": "eat / be",
+      "answers": [
+        "ate",
+        "would be"
+      ]
+    },
+    {
+      "id": "pi-06-048",
+      "type": "typed-two-blanks",
+      "prompt": "We ___ a larger classroom if we ___ more students.",
+      "verbs": "need / have",
+      "answers": [
+        "would need",
+        "had"
+      ]
+    },
+    {
+      "id": "pi-06-049",
+      "type": "typed-two-blanks",
+      "prompt": "If she ___ earlier, she ___ late for class.",
+      "verbs": "wake up / not be",
+      "answers": [
+        "woke up",
+        "wouldn't be"
+      ]
+    },
+    {
+      "id": "pi-06-050",
+      "type": "typed-two-blanks",
+      "prompt": "If I ___ a lot of money, I ___ to charity.",
+      "verbs": "earn / donate",
+      "answers": [
+        "earned",
+        "would donate"
+      ]
+    },
+    {
+      "id": "pi-06-051",
+      "type": "typed-two-blanks",
+      "prompt": "He ___ the guitar if he ___ less busy.",
+      "verbs": "learn / be",
+      "answers": [
+        "would learn",
+        "were"
+      ]
+    },
+    {
+      "id": "pi-06-052",
+      "type": "typed-two-blanks",
+      "prompt": "If we ___ a dishwasher, we ___ less time washing dishes.",
+      "verbs": "have / spend",
+      "answers": [
+        "had",
+        "would spend"
+      ]
+    },
+    {
+      "id": "pi-06-053",
+      "type": "typed-two-blanks",
+      "prompt": "I ___ that film if I ___ the time.",
+      "verbs": "watch / have",
+      "answers": [
+        "would watch",
+        "had"
+      ]
+    },
+    {
+      "id": "pi-06-054",
+      "type": "typed-two-blanks",
+      "prompt": "If she ___ a bicycle, she ___ to the park.",
+      "verbs": "own / ride",
+      "answers": [
+        "owned",
+        "would ride"
+      ]
+    },
+    {
+      "id": "pi-06-055",
+      "type": "typed-two-blanks",
+      "prompt": "If the library ___ open later, I ___ there after dinner.",
+      "verbs": "stay / study",
+      "answers": [
+        "stayed",
+        "would study"
+      ]
+    },
+    {
+      "id": "pi-06-056",
+      "type": "typed-two-blanks",
+      "prompt": "We ___ less electricity if we ___ off the lights.",
+      "verbs": "use / turn",
+      "answers": [
+        "would use",
+        "turned"
+      ]
+    },
+    {
+      "id": "pi-06-057",
+      "type": "typed-two-blanks",
+      "prompt": "If you ___ a new language, you ___ more people.",
+      "verbs": "learn / meet",
+      "answers": [
+        "learned",
+        "would meet"
+      ]
+    },
+    {
+      "id": "pi-06-058",
+      "type": "typed-two-blanks",
+      "prompt": "He ___ less stressed if he ___ more breaks.",
+      "verbs": "feel / take",
+      "answers": [
+        "would feel",
+        "took"
+      ]
+    },
+    {
+      "id": "pi-06-059",
+      "type": "typed-two-blanks",
+      "prompt": "If I ___ a chef, I ___ delicious meals every day.",
+      "verbs": "be / prepare",
+      "answers": [
+        "were",
+        "would prepare"
+      ]
+    },
+    {
+      "id": "pi-06-060",
+      "type": "typed-two-blanks",
+      "prompt": "If she ___ more water, she ___ less thirsty.",
+      "verbs": "drink / feel",
+      "answers": [
+        "drank",
+        "would feel"
+      ]
+    },
+    {
+      "id": "pi-06-061",
+      "type": "typed-two-blanks",
+      "prompt": "They ___ a taxi if the buses ___ running.",
+      "verbs": "take / stop",
+      "answers": [
+        "would take",
+        "stopped"
+      ]
+    },
+    {
+      "id": "pi-06-062",
+      "type": "typed-two-blanks",
+      "prompt": "If I ___ my own business, I ___ my own hours.",
+      "verbs": "start / choose",
+      "answers": [
+        "started",
+        "would choose"
+      ]
+    },
+    {
+      "id": "pi-06-063",
+      "type": "typed-two-blanks",
+      "prompt": "We ___ the museum if we ___ in that city.",
+      "verbs": "visit / live",
+      "answers": [
+        "would visit",
+        "lived"
+      ]
+    },
+    {
+      "id": "pi-06-064",
+      "type": "typed-two-blanks",
+      "prompt": "If he ___ a better computer, he ___ faster.",
+      "verbs": "have / work",
+      "answers": [
+        "had",
+        "would work"
+      ]
+    },
+    {
+      "id": "pi-06-065",
+      "type": "typed-two-blanks",
+      "prompt": "She ___ the truth if she ___ what happened.",
+      "verbs": "tell / know",
+      "answers": [
+        "would tell",
+        "knew"
+      ]
+    },
+    {
+      "id": "pi-06-066",
+      "type": "typed-two-blanks",
+      "prompt": "If we ___ the tickets now, we ___ money.",
+      "verbs": "buy / save",
+      "answers": [
+        "bought",
+        "would save"
+      ]
+    },
+    {
+      "id": "pi-06-067",
+      "type": "typed-two-blanks",
+      "prompt": "I ___ more relaxed if I ___ fewer exams.",
+      "verbs": "feel / have",
+      "answers": [
+        "would feel",
+        "had"
+      ]
+    },
+    {
+      "id": "pi-06-068",
+      "type": "typed-two-blanks",
+      "prompt": "If they ___ English every day, they ___ more fluent.",
+      "verbs": "practise / become",
+      "answers": [
+        "practised",
+        "would become"
+      ]
+    },
+    {
+      "id": "pi-06-069",
+      "type": "typed-two-blanks",
+      "prompt": "You ___ the view if you ___ on the top floor.",
+      "verbs": "enjoy / live",
+      "answers": [
+        "would enjoy",
+        "lived"
+      ]
+    },
+    {
+      "id": "pi-06-070",
+      "type": "typed-two-blanks",
+      "prompt": "If he ___ a helmet, he ___ safer on his bike.",
+      "verbs": "wear / be",
+      "answers": [
+        "wore",
+        "would be"
+      ]
+    }
+  ]
+}
