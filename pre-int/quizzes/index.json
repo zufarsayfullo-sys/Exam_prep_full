@@ -86,5 +86,14 @@
   "path": "quiz-11.html",
   "bank": "quiz-11.bank.json",
   "level": "pre-intermediate"
-}
+},
+ {
+  "id": "quiz-12",
+  "title": "Phrasal Verbs — Everyday English",
+  "category": "Vocabulary",
+  "path": "quiz-12.html",
+  "bank": "quiz-12.bank.json",
+  "level": "pre-intermediate"
+},
+
 ]
