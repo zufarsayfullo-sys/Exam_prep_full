@@ -1,0 +1,442 @@
+{
+  "title": "Transport Vocabulary — Word Bank",
+  "level": "pre-intermediate",
+  "category": "Vocabulary",
+  "wordBank": [
+    "public transport",
+    "crowded",
+    "main roads",
+    "cycle lanes",
+    "convenient",
+    "greener",
+    "fuel",
+    "pollution",
+    "bus fares",
+    "bus pass",
+    "traffic jams",
+    "reliable",
+    "book in advance"
+  ],
+  "questions": [
+    {
+      "id": "pi-09-001",
+      "type": "typed-gap",
+      "prompt": "To reduce the number of cars, the city wants more people to use ___ .",
+      "answer": "public transport"
+    },
+    {
+      "id": "pi-09-002",
+      "type": "typed-gap",
+      "prompt": "Buses and trains are types of ___ .",
+      "answer": "public transport"
+    },
+    {
+      "id": "pi-09-003",
+      "type": "typed-gap",
+      "prompt": "I take ___ to college because I do not own a car.",
+      "answer": "public transport"
+    },
+    {
+      "id": "pi-09-004",
+      "type": "typed-gap",
+      "prompt": "The council is investing in ___ so fewer people need to drive.",
+      "answer": "public transport"
+    },
+    {
+      "id": "pi-09-005",
+      "type": "typed-gap",
+      "prompt": "People without cars often depend on ___ to get to work.",
+      "answer": "public transport"
+    },
+    {
+      "id": "pi-09-006",
+      "type": "typed-gap",
+      "prompt": "Using ___ can help reduce the number of vehicles on the road.",
+      "answer": "public transport"
+    },
+    {
+      "id": "pi-09-007",
+      "type": "typed-gap",
+      "prompt": "The bus was so ___ that I had to stand all the way home.",
+      "answer": "crowded"
+    },
+    {
+      "id": "pi-09-008",
+      "type": "typed-gap",
+      "prompt": "During rush hour, the trains are usually very ___ .",
+      "answer": "crowded"
+    },
+    {
+      "id": "pi-09-009",
+      "type": "typed-gap",
+      "prompt": "There were no empty seats because the carriage was ___ .",
+      "answer": "crowded"
+    },
+    {
+      "id": "pi-09-010",
+      "type": "typed-gap",
+      "prompt": "I avoid the 8 a.m. bus because it is always ___ .",
+      "answer": "crowded"
+    },
+    {
+      "id": "pi-09-011",
+      "type": "typed-gap",
+      "prompt": "The platform became ___ when three trains were delayed.",
+      "answer": "crowded"
+    },
+    {
+      "id": "pi-09-012",
+      "type": "typed-gap",
+      "prompt": "The coach was ___ with passengers returning from the festival.",
+      "answer": "crowded"
+    },
+    {
+      "id": "pi-09-013",
+      "type": "typed-gap",
+      "prompt": "The ___ through the city centre are busy every morning.",
+      "answer": "main roads"
+    },
+    {
+      "id": "pi-09-014",
+      "type": "typed-gap",
+      "prompt": "Lorries usually travel on the ___ rather than narrow residential streets.",
+      "answer": "main roads"
+    },
+    {
+      "id": "pi-09-015",
+      "type": "typed-gap",
+      "prompt": "The council repaired the ___ before the holiday season.",
+      "answer": "main roads"
+    },
+    {
+      "id": "pi-09-016",
+      "type": "typed-gap",
+      "prompt": "During the parade, the police closed several ___ .",
+      "answer": "main roads"
+    },
+    {
+      "id": "pi-09-017",
+      "type": "typed-gap",
+      "prompt": "There are traffic lights at most junctions on the ___ .",
+      "answer": "main roads"
+    },
+    {
+      "id": "pi-09-018",
+      "type": "typed-gap",
+      "prompt": "Cyclists often avoid the ___ because of heavy traffic.",
+      "answer": "main roads"
+    },
+    {
+      "id": "pi-09-019",
+      "type": "typed-gap",
+      "prompt": "The council painted new ___ to make cycling safer.",
+      "answer": "cycle lanes"
+    },
+    {
+      "id": "pi-09-020",
+      "type": "typed-gap",
+      "prompt": "Bicycles can travel separately from cars in the new ___ .",
+      "answer": "cycle lanes"
+    },
+    {
+      "id": "pi-09-021",
+      "type": "typed-gap",
+      "prompt": "Our town needs more ___ so children can ride safely.",
+      "answer": "cycle lanes"
+    },
+    {
+      "id": "pi-09-022",
+      "type": "typed-gap",
+      "prompt": "Drivers must not park their cars in the ___ .",
+      "answer": "cycle lanes"
+    },
+    {
+      "id": "pi-09-023",
+      "type": "typed-gap",
+      "prompt": "The ___ along the river are marked with bicycle symbols.",
+      "answer": "cycle lanes"
+    },
+    {
+      "id": "pi-09-024",
+      "type": "typed-gap",
+      "prompt": "The city has built protected ___ on several busy streets.",
+      "answer": "cycle lanes"
+    },
+    {
+      "id": "pi-09-025",
+      "type": "typed-gap",
+      "prompt": "The bus stop is outside my house, so travelling by bus is very ___ .",
+      "answer": "convenient"
+    },
+    {
+      "id": "pi-09-026",
+      "type": "typed-gap",
+      "prompt": "Buying tickets on your phone is more ___ than waiting in a queue.",
+      "answer": "convenient"
+    },
+    {
+      "id": "pi-09-027",
+      "type": "typed-gap",
+      "prompt": "The station is close to the office, which makes the train a ___ option.",
+      "answer": "convenient"
+    },
+    {
+      "id": "pi-09-028",
+      "type": "typed-gap",
+      "prompt": "There is a direct bus to the airport, so it is quite ___ .",
+      "answer": "convenient"
+    },
+    {
+      "id": "pi-09-029",
+      "type": "typed-gap",
+      "prompt": "A monthly ticket is ___ because you do not have to buy one every day.",
+      "answer": "convenient"
+    },
+    {
+      "id": "pi-09-030",
+      "type": "typed-gap",
+      "prompt": "The timetable is ___ for students because buses run after evening classes.",
+      "answer": "convenient"
+    },
+    {
+      "id": "pi-09-031",
+      "type": "typed-gap",
+      "prompt": "Electric buses are ___ than old diesel buses because they produce less pollution.",
+      "answer": "greener"
+    },
+    {
+      "id": "pi-09-032",
+      "type": "typed-gap",
+      "prompt": "The city wants to become ___ by encouraging people to cycle.",
+      "answer": "greener"
+    },
+    {
+      "id": "pi-09-033",
+      "type": "typed-gap",
+      "prompt": "Taking a train instead of driving alone is often a ___ choice.",
+      "answer": "greener"
+    },
+    {
+      "id": "pi-09-034",
+      "type": "typed-gap",
+      "prompt": "The company is replacing its old vehicles with ___ ones.",
+      "answer": "greener"
+    },
+    {
+      "id": "pi-09-035",
+      "type": "typed-gap",
+      "prompt": "Walking to school is a ___ alternative to going by car.",
+      "answer": "greener"
+    },
+    {
+      "id": "pi-09-036",
+      "type": "typed-gap",
+      "prompt": "Cars need ___ to run, unless they are fully electric.",
+      "answer": "fuel"
+    },
+    {
+      "id": "pi-09-037",
+      "type": "typed-gap",
+      "prompt": "The driver stopped at a petrol station to buy ___ .",
+      "answer": "fuel"
+    },
+    {
+      "id": "pi-09-038",
+      "type": "typed-gap",
+      "prompt": "Rising ___ prices have made driving more expensive.",
+      "answer": "fuel"
+    },
+    {
+      "id": "pi-09-039",
+      "type": "typed-gap",
+      "prompt": "This new engine uses less ___ than the old one.",
+      "answer": "fuel"
+    },
+    {
+      "id": "pi-09-040",
+      "type": "typed-gap",
+      "prompt": "The bus company wants to reduce its ___ consumption.",
+      "answer": "fuel"
+    },
+    {
+      "id": "pi-09-041",
+      "type": "typed-gap",
+      "prompt": "Heavy traffic causes air ___ in the city centre.",
+      "answer": "pollution"
+    },
+    {
+      "id": "pi-09-042",
+      "type": "typed-gap",
+      "prompt": "Electric buses can help reduce ___ from vehicle exhaust.",
+      "answer": "pollution"
+    },
+    {
+      "id": "pi-09-043",
+      "type": "typed-gap",
+      "prompt": "The government is introducing rules to cut ___ near schools.",
+      "answer": "pollution"
+    },
+    {
+      "id": "pi-09-044",
+      "type": "typed-gap",
+      "prompt": "People living beside busy roads often worry about air ___ .",
+      "answer": "pollution"
+    },
+    {
+      "id": "pi-09-045",
+      "type": "typed-gap",
+      "prompt": "Fewer cars could mean less noise and air ___ .",
+      "answer": "pollution"
+    },
+    {
+      "id": "pi-09-046",
+      "type": "typed-gap",
+      "prompt": "The city reduced ___ so more people could afford to travel by bus.",
+      "answer": "bus fares"
+    },
+    {
+      "id": "pi-09-047",
+      "type": "typed-gap",
+      "prompt": "Students complained when ___ increased again.",
+      "answer": "bus fares"
+    },
+    {
+      "id": "pi-09-048",
+      "type": "typed-gap",
+      "prompt": "Monthly discounts can make ___ cheaper for regular passengers.",
+      "answer": "bus fares"
+    },
+    {
+      "id": "pi-09-049",
+      "type": "typed-gap",
+      "prompt": "The company publishes its ___ on a noticeboard at every station.",
+      "answer": "bus fares"
+    },
+    {
+      "id": "pi-09-050",
+      "type": "typed-gap",
+      "prompt": "High ___ discourage some families from using local buses.",
+      "answer": "bus fares"
+    },
+    {
+      "id": "pi-09-051",
+      "type": "typed-gap",
+      "prompt": "I show my ___ to the driver instead of buying a ticket each time.",
+      "answer": "bus pass"
+    },
+    {
+      "id": "pi-09-052",
+      "type": "typed-gap",
+      "prompt": "My grandmother has a free ___ for local journeys.",
+      "answer": "bus pass"
+    },
+    {
+      "id": "pi-09-053",
+      "type": "typed-gap",
+      "prompt": "Students can apply for a discounted ___ at the transport office.",
+      "answer": "bus pass"
+    },
+    {
+      "id": "pi-09-054",
+      "type": "typed-gap",
+      "prompt": "With a monthly ___ , I can take the bus as often as I need.",
+      "answer": "bus pass"
+    },
+    {
+      "id": "pi-09-055",
+      "type": "typed-gap",
+      "prompt": "He lost his ___ and had to pay for a single ticket.",
+      "answer": "bus pass"
+    },
+    {
+      "id": "pi-09-056",
+      "type": "typed-gap",
+      "prompt": "There are serious ___ on the motorway during rush hour.",
+      "answer": "traffic jams"
+    },
+    {
+      "id": "pi-09-057",
+      "type": "typed-gap",
+      "prompt": "We left early to avoid the ___ near the stadium.",
+      "answer": "traffic jams"
+    },
+    {
+      "id": "pi-09-058",
+      "type": "typed-gap",
+      "prompt": "Roadworks have caused long ___ throughout the city.",
+      "answer": "traffic jams"
+    },
+    {
+      "id": "pi-09-059",
+      "type": "typed-gap",
+      "prompt": "Many drivers get frustrated when they are stuck in ___ .",
+      "answer": "traffic jams"
+    },
+    {
+      "id": "pi-09-060",
+      "type": "typed-gap",
+      "prompt": "The new bypass is intended to reduce ___ in the town centre.",
+      "answer": "traffic jams"
+    },
+    {
+      "id": "pi-09-061",
+      "type": "typed-gap",
+      "prompt": "The trains are ___ ; they almost always arrive on time.",
+      "answer": "reliable"
+    },
+    {
+      "id": "pi-09-062",
+      "type": "typed-gap",
+      "prompt": "I prefer this bus company because its service is ___ .",
+      "answer": "reliable"
+    },
+    {
+      "id": "pi-09-063",
+      "type": "typed-gap",
+      "prompt": "A ___ train service is important for people who commute daily.",
+      "answer": "reliable"
+    },
+    {
+      "id": "pi-09-064",
+      "type": "typed-gap",
+      "prompt": "The airport shuttle is ___ and rarely runs late.",
+      "answer": "reliable"
+    },
+    {
+      "id": "pi-09-065",
+      "type": "typed-gap",
+      "prompt": "Our old bus service was not very ___ , but it has improved.",
+      "answer": "reliable"
+    },
+    {
+      "id": "pi-09-066",
+      "type": "typed-gap",
+      "prompt": "You can save money on train tickets if you ___ .",
+      "answer": "book in advance"
+    },
+    {
+      "id": "pi-09-067",
+      "type": "typed-gap",
+      "prompt": "Tickets often sell out, so it is wise to ___ .",
+      "answer": "book in advance"
+    },
+    {
+      "id": "pi-09-068",
+      "type": "typed-gap",
+      "prompt": "To get a seat on the holiday coach, you should ___ .",
+      "answer": "book in advance"
+    },
+    {
+      "id": "pi-09-069",
+      "type": "typed-gap",
+      "prompt": "If you want cheaper rail fares, try to ___ .",
+      "answer": "book in advance"
+    },
+    {
+      "id": "pi-09-070",
+      "type": "typed-gap",
+      "prompt": "During the festival, passengers are advised to ___ .",
+      "answer": "book in advance"
+    }
+  ]
+}
