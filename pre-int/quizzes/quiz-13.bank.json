@@ -1,0 +1,777 @@
+{
+  "title": "Linking Words — Contrast",
+  "level": "pre-intermediate",
+  "category": "Grammar",
+  "questions": [
+    {
+      "id": "pi-13-001",
+      "type": "choose-correct",
+      "prompt": "I was tired. ___, I finished my homework.",
+      "options": [
+        "However",
+        "Despite",
+        "Although"
+      ],
+      "answer": "However"
+    },
+    {
+      "id": "pi-13-002",
+      "type": "choose-correct",
+      "prompt": "It was raining. ___, we went for a walk.",
+      "options": [
+        "Although",
+        "Despite",
+        "However"
+      ],
+      "answer": "However"
+    },
+    {
+      "id": "pi-13-003",
+      "type": "choose-correct",
+      "prompt": "The bag was expensive. ___, I bought it.",
+      "options": [
+        "However",
+        "Although",
+        "Despite"
+      ],
+      "answer": "However"
+    },
+    {
+      "id": "pi-13-004",
+      "type": "choose-correct",
+      "prompt": "The test was difficult. ___, Mia passed it.",
+      "options": [
+        "However",
+        "Despite",
+        "Although"
+      ],
+      "answer": "However"
+    },
+    {
+      "id": "pi-13-005",
+      "type": "choose-correct",
+      "prompt": "He is very young. ___, he is a good cook.",
+      "options": [
+        "Although",
+        "However",
+        "Despite"
+      ],
+      "answer": "However"
+    },
+    {
+      "id": "pi-13-006",
+      "type": "choose-correct",
+      "prompt": "I do not like cold weather. ___, I enjoy skiing.",
+      "options": [
+        "Although",
+        "Despite",
+        "However"
+      ],
+      "answer": "However"
+    },
+    {
+      "id": "pi-13-007",
+      "type": "choose-correct",
+      "prompt": "The shop was busy. ___, we found what we needed.",
+      "options": [
+        "Despite",
+        "Although",
+        "However"
+      ],
+      "answer": "However"
+    },
+    {
+      "id": "pi-13-008",
+      "type": "choose-correct",
+      "prompt": "My phone is old. ___, it still works well.",
+      "options": [
+        "However",
+        "Despite",
+        "Although"
+      ],
+      "answer": "However"
+    },
+    {
+      "id": "pi-13-009",
+      "type": "choose-correct",
+      "prompt": "We arrived late. ___, the film had not started.",
+      "options": [
+        "However",
+        "Although",
+        "Despite"
+      ],
+      "answer": "However"
+    },
+    {
+      "id": "pi-13-010",
+      "type": "choose-correct",
+      "prompt": "She was nervous. ___, she spoke clearly.",
+      "options": [
+        "However",
+        "Although",
+        "Despite"
+      ],
+      "answer": "However"
+    },
+    {
+      "id": "pi-13-011",
+      "type": "choose-correct",
+      "prompt": "I did not take the bus. ___, I walked to school.",
+      "options": [
+        "Instead",
+        "Although",
+        "Despite"
+      ],
+      "answer": "Instead"
+    },
+    {
+      "id": "pi-13-012",
+      "type": "choose-correct",
+      "prompt": "We did not eat at a restaurant. ___, we cooked at home.",
+      "options": [
+        "Despite",
+        "Instead",
+        "Although"
+      ],
+      "answer": "Instead"
+    },
+    {
+      "id": "pi-13-013",
+      "type": "choose-correct",
+      "prompt": "He did not buy a new phone. ___, he repaired his old one.",
+      "options": [
+        "Despite",
+        "Instead",
+        "Although"
+      ],
+      "answer": "Instead"
+    },
+    {
+      "id": "pi-13-014",
+      "type": "choose-correct",
+      "prompt": "I did not watch TV. ___, I read a book.",
+      "options": [
+        "Despite",
+        "Instead",
+        "Although"
+      ],
+      "answer": "Instead"
+    },
+    {
+      "id": "pi-13-015",
+      "type": "choose-correct",
+      "prompt": "They did not go to the beach. ___, they visited a museum.",
+      "options": [
+        "Although",
+        "Despite",
+        "Instead"
+      ],
+      "answer": "Instead"
+    },
+    {
+      "id": "pi-13-016",
+      "type": "choose-correct",
+      "prompt": "She did not drink coffee. ___, she had tea.",
+      "options": [
+        "Instead",
+        "Although",
+        "Despite"
+      ],
+      "answer": "Instead"
+    },
+    {
+      "id": "pi-13-017",
+      "type": "choose-correct",
+      "prompt": "We did not play football. ___, we played basketball.",
+      "options": [
+        "Although",
+        "Instead",
+        "Despite"
+      ],
+      "answer": "Instead"
+    },
+    {
+      "id": "pi-13-018",
+      "type": "choose-correct",
+      "prompt": "I did not call him. ___, I sent a message.",
+      "options": [
+        "Despite",
+        "Although",
+        "Instead"
+      ],
+      "answer": "Instead"
+    },
+    {
+      "id": "pi-13-019",
+      "type": "choose-correct",
+      "prompt": "He did not drive to work. ___, he cycled.",
+      "options": [
+        "Although",
+        "Instead",
+        "Despite"
+      ],
+      "answer": "Instead"
+    },
+    {
+      "id": "pi-13-020",
+      "type": "choose-correct",
+      "prompt": "We did not stay inside. ___, we went for a walk.",
+      "options": [
+        "Instead",
+        "Although",
+        "Despite"
+      ],
+      "answer": "Instead"
+    },
+    {
+      "id": "pi-13-021",
+      "type": "choose-correct",
+      "prompt": "I wanted to go swimming, ___ the pool was closed.",
+      "options": [
+        "however",
+        "but",
+        "despite"
+      ],
+      "answer": "but"
+    },
+    {
+      "id": "pi-13-022",
+      "type": "choose-correct",
+      "prompt": "She likes tea, ___ she does not like coffee.",
+      "options": [
+        "despite",
+        "but",
+        "however"
+      ],
+      "answer": "but"
+    },
+    {
+      "id": "pi-13-023",
+      "type": "choose-correct",
+      "prompt": "The bus was late, ___ I still got to school on time.",
+      "options": [
+        "despite",
+        "but",
+        "however"
+      ],
+      "answer": "but"
+    },
+    {
+      "id": "pi-13-024",
+      "type": "choose-correct",
+      "prompt": "He studied hard, ___ he did not pass the test.",
+      "options": [
+        "but",
+        "despite",
+        "however"
+      ],
+      "answer": "but"
+    },
+    {
+      "id": "pi-13-025",
+      "type": "choose-correct",
+      "prompt": "I have a bike, ___ I usually walk to work.",
+      "options": [
+        "but",
+        "however",
+        "despite"
+      ],
+      "answer": "but"
+    },
+    {
+      "id": "pi-13-026",
+      "type": "choose-correct",
+      "prompt": "The room is small, ___ it is very comfortable.",
+      "options": [
+        "despite",
+        "however",
+        "but"
+      ],
+      "answer": "but"
+    },
+    {
+      "id": "pi-13-027",
+      "type": "choose-correct",
+      "prompt": "We wanted pizza, ___ the restaurant only had pasta.",
+      "options": [
+        "but",
+        "however",
+        "despite"
+      ],
+      "answer": "but"
+    },
+    {
+      "id": "pi-13-028",
+      "type": "choose-correct",
+      "prompt": "My brother is tall, ___ I am quite short.",
+      "options": [
+        "but",
+        "however",
+        "despite"
+      ],
+      "answer": "but"
+    },
+    {
+      "id": "pi-13-029",
+      "type": "choose-correct",
+      "prompt": "It was sunny, ___ the wind was very cold.",
+      "options": [
+        "however",
+        "despite",
+        "but"
+      ],
+      "answer": "but"
+    },
+    {
+      "id": "pi-13-030",
+      "type": "choose-correct",
+      "prompt": "I called Anna, ___ she did not answer.",
+      "options": [
+        "however",
+        "despite",
+        "but"
+      ],
+      "answer": "but"
+    },
+    {
+      "id": "pi-13-031",
+      "type": "choose-correct",
+      "prompt": "___ I was tired, I went to the gym.",
+      "options": [
+        "Although",
+        "However",
+        "Despite"
+      ],
+      "answer": "Although"
+    },
+    {
+      "id": "pi-13-032",
+      "type": "choose-correct",
+      "prompt": "___ it was cold, we played outside.",
+      "options": [
+        "However",
+        "Although",
+        "Despite"
+      ],
+      "answer": "Although"
+    },
+    {
+      "id": "pi-13-033",
+      "type": "choose-correct",
+      "prompt": "___ she was busy, she helped me.",
+      "options": [
+        "Despite",
+        "However",
+        "Although"
+      ],
+      "answer": "Although"
+    },
+    {
+      "id": "pi-13-034",
+      "type": "choose-correct",
+      "prompt": "___ he had little money, he bought a gift.",
+      "options": [
+        "Although",
+        "Despite",
+        "However"
+      ],
+      "answer": "Although"
+    },
+    {
+      "id": "pi-13-035",
+      "type": "choose-correct",
+      "prompt": "___ the film was long, I enjoyed it.",
+      "options": [
+        "Although",
+        "Despite",
+        "However"
+      ],
+      "answer": "Although"
+    },
+    {
+      "id": "pi-13-036",
+      "type": "choose-correct",
+      "prompt": "___ I do not like fish, I tried some.",
+      "options": [
+        "Although",
+        "However",
+        "Despite"
+      ],
+      "answer": "Although"
+    },
+    {
+      "id": "pi-13-037",
+      "type": "choose-correct",
+      "prompt": "___ it was late, the children were awake.",
+      "options": [
+        "Despite",
+        "Although",
+        "However"
+      ],
+      "answer": "Although"
+    },
+    {
+      "id": "pi-13-038",
+      "type": "choose-correct",
+      "prompt": "___ he was ill, he went to work.",
+      "options": [
+        "Despite",
+        "Although",
+        "However"
+      ],
+      "answer": "Although"
+    },
+    {
+      "id": "pi-13-039",
+      "type": "choose-correct",
+      "prompt": "___ we were hungry, we waited for dinner.",
+      "options": [
+        "However",
+        "Although",
+        "Despite"
+      ],
+      "answer": "Although"
+    },
+    {
+      "id": "pi-13-040",
+      "type": "choose-correct",
+      "prompt": "___ the train was crowded, we found seats.",
+      "options": [
+        "Although",
+        "However",
+        "Despite"
+      ],
+      "answer": "Although"
+    },
+    {
+      "id": "pi-13-041",
+      "type": "choose-correct",
+      "prompt": "___ it was raining heavily, we went out.",
+      "options": [
+        "However",
+        "In spite of",
+        "Even though"
+      ],
+      "answer": "Even though"
+    },
+    {
+      "id": "pi-13-042",
+      "type": "choose-correct",
+      "prompt": "___ she felt very tired, she finished the race.",
+      "options": [
+        "Even though",
+        "However",
+        "In spite of"
+      ],
+      "answer": "Even though"
+    },
+    {
+      "id": "pi-13-043",
+      "type": "choose-correct",
+      "prompt": "___ he was afraid, he tried the new activity.",
+      "options": [
+        "In spite of",
+        "However",
+        "Even though"
+      ],
+      "answer": "Even though"
+    },
+    {
+      "id": "pi-13-044",
+      "type": "choose-correct",
+      "prompt": "___ the exam was hard, Ali got a good mark.",
+      "options": [
+        "In spite of",
+        "Even though",
+        "However"
+      ],
+      "answer": "Even though"
+    },
+    {
+      "id": "pi-13-045",
+      "type": "choose-correct",
+      "prompt": "___ they were late, the teacher let them in.",
+      "options": [
+        "However",
+        "Even though",
+        "In spite of"
+      ],
+      "answer": "Even though"
+    },
+    {
+      "id": "pi-13-046",
+      "type": "choose-correct",
+      "prompt": "___ I had a headache, I went to the meeting.",
+      "options": [
+        "Even though",
+        "However",
+        "In spite of"
+      ],
+      "answer": "Even though"
+    },
+    {
+      "id": "pi-13-047",
+      "type": "choose-correct",
+      "prompt": "___ the road was icy, the bus arrived safely.",
+      "options": [
+        "However",
+        "In spite of",
+        "Even though"
+      ],
+      "answer": "Even though"
+    },
+    {
+      "id": "pi-13-048",
+      "type": "choose-correct",
+      "prompt": "___ her shoes were old, she wore them again.",
+      "options": [
+        "However",
+        "Even though",
+        "In spite of"
+      ],
+      "answer": "Even though"
+    },
+    {
+      "id": "pi-13-049",
+      "type": "choose-correct",
+      "prompt": "___ he did not know anyone, he went to the party.",
+      "options": [
+        "Even though",
+        "In spite of",
+        "However"
+      ],
+      "answer": "Even though"
+    },
+    {
+      "id": "pi-13-050",
+      "type": "choose-correct",
+      "prompt": "___ it was very hot, we played tennis.",
+      "options": [
+        "In spite of",
+        "However",
+        "Even though"
+      ],
+      "answer": "Even though"
+    },
+    {
+      "id": "pi-13-051",
+      "type": "choose-correct",
+      "prompt": "___ the rain, we went for a walk.",
+      "options": [
+        "Although",
+        "Even though",
+        "Despite"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "id": "pi-13-052",
+      "type": "choose-correct",
+      "prompt": "___ the cold weather, we played football.",
+      "options": [
+        "Although",
+        "Even though",
+        "Despite"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "id": "pi-13-053",
+      "type": "choose-correct",
+      "prompt": "___ feeling tired, she finished her homework.",
+      "options": [
+        "Despite",
+        "Although",
+        "Even though"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "id": "pi-13-054",
+      "type": "choose-correct",
+      "prompt": "___ the noise, I slept well.",
+      "options": [
+        "Despite",
+        "Although",
+        "Even though"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "id": "pi-13-055",
+      "type": "choose-correct",
+      "prompt": "___ the traffic, we arrived on time.",
+      "options": [
+        "Despite",
+        "Even though",
+        "Although"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "id": "pi-13-056",
+      "type": "choose-correct",
+      "prompt": "___ having a cold, he went to school.",
+      "options": [
+        "Although",
+        "Even though",
+        "Despite"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "id": "pi-13-057",
+      "type": "choose-correct",
+      "prompt": "___ the high price, they bought the tickets.",
+      "options": [
+        "Although",
+        "Even though",
+        "Despite"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "id": "pi-13-058",
+      "type": "choose-correct",
+      "prompt": "___ the long journey, we were not tired.",
+      "options": [
+        "Even though",
+        "Despite",
+        "Although"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "id": "pi-13-059",
+      "type": "choose-correct",
+      "prompt": "___ his fear, he went on the ride.",
+      "options": [
+        "Despite",
+        "Although",
+        "Even though"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "id": "pi-13-060",
+      "type": "choose-correct",
+      "prompt": "___ losing the first game, our team won the match.",
+      "options": [
+        "Even though",
+        "Although",
+        "Despite"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "id": "pi-13-061",
+      "type": "choose-correct",
+      "prompt": "___ the strong wind, we went cycling.",
+      "options": [
+        "Even though",
+        "Although",
+        "In spite of"
+      ],
+      "answer": "In spite of"
+    },
+    {
+      "id": "pi-13-062",
+      "type": "choose-correct",
+      "prompt": "___ being nervous, she gave a good speech.",
+      "options": [
+        "Although",
+        "Even though",
+        "In spite of"
+      ],
+      "answer": "In spite of"
+    },
+    {
+      "id": "pi-13-063",
+      "type": "choose-correct",
+      "prompt": "___ the bad weather, the flight was on time.",
+      "options": [
+        "Although",
+        "Even though",
+        "In spite of"
+      ],
+      "answer": "In spite of"
+    },
+    {
+      "id": "pi-13-064",
+      "type": "choose-correct",
+      "prompt": "___ the small kitchen, they cooked a big meal.",
+      "options": [
+        "In spite of",
+        "Although",
+        "Even though"
+      ],
+      "answer": "In spite of"
+    },
+    {
+      "id": "pi-13-065",
+      "type": "choose-correct",
+      "prompt": "___ having little time, I finished the task.",
+      "options": [
+        "Although",
+        "Even though",
+        "In spite of"
+      ],
+      "answer": "In spite of"
+    },
+    {
+      "id": "pi-13-066",
+      "type": "choose-correct",
+      "prompt": "___ the heavy traffic, Dad got home early.",
+      "options": [
+        "Even though",
+        "Although",
+        "In spite of"
+      ],
+      "answer": "In spite of"
+    },
+    {
+      "id": "pi-13-067",
+      "type": "choose-correct",
+      "prompt": "___ the difficult questions, we passed the test.",
+      "options": [
+        "In spite of",
+        "Even though",
+        "Although"
+      ],
+      "answer": "In spite of"
+    },
+    {
+      "id": "pi-13-068",
+      "type": "choose-correct",
+      "prompt": "___ his injured foot, he walked to the shop.",
+      "options": [
+        "In spite of",
+        "Even though",
+        "Although"
+      ],
+      "answer": "In spite of"
+    },
+    {
+      "id": "pi-13-069",
+      "type": "choose-correct",
+      "prompt": "___ the loud music, the baby slept.",
+      "options": [
+        "Although",
+        "In spite of",
+        "Even though"
+      ],
+      "answer": "In spite of"
+    },
+    {
+      "id": "pi-13-070",
+      "type": "choose-correct",
+      "prompt": "___ working all day, Mum made dinner.",
+      "options": [
+        "In spite of",
+        "Although",
+        "Even though"
+      ],
+      "answer": "In spite of"
+    }
+  ]
+}
