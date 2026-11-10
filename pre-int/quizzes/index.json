@@ -46,5 +46,13 @@
     "path": "quiz-06.html",
     "bank": "quiz-06.bank.json",
     "level": "pre-intermediate"
+  },
+  {
+    "id": "quiz-07",
+    "title": "Used To — Past Habits and States",
+    "category": "Grammar",
+    "path": "quiz-07.html",
+    "bank": "quiz-07.bank.json",
+    "level": "pre-intermediate"
   }
 ]
