@@ -70,5 +70,13 @@
   "path": "quiz-09.html",
   "bank": "quiz-09.bank.json",
   "level": "pre-intermediate"
+},
+  {
+  "id": "quiz-10",
+  "title": "Make or Do — Common Expressions",
+  "category": "Vocabulary",
+  "path": "quiz-10.html",
+  "bank": "quiz-10.bank.json",
+  "level": "pre-intermediate"
 }
 ]
