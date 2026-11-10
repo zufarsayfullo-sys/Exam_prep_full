@@ -1,0 +1,777 @@
+{
+  "title": "Verb + Preposition — Choose the Verb",
+  "level": "pre-intermediate",
+  "category": "Vocabulary",
+  "questions": [
+    {
+      "id": "pi-11-001",
+      "type": "choose-correct",
+      "prompt": "This cake ___ of flour, eggs and sugar.",
+      "options": [
+        "consists",
+        "depends",
+        "belongs"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-002",
+      "type": "choose-correct",
+      "prompt": "Our class ___ of twenty students.",
+      "options": [
+        "consists",
+        "belongs",
+        "happens"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-003",
+      "type": "choose-correct",
+      "prompt": "The meal ___ of rice, chicken and vegetables.",
+      "options": [
+        "depends",
+        "belongs",
+        "consists"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-004",
+      "type": "choose-correct",
+      "prompt": "The team ___ of eleven players.",
+      "options": [
+        "belongs",
+        "consists",
+        "happens"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-005",
+      "type": "choose-correct",
+      "prompt": "This book ___ of ten short stories.",
+      "options": [
+        "belongs",
+        "consists",
+        "depends"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-006",
+      "type": "choose-correct",
+      "prompt": "The test ___ of twenty questions.",
+      "options": [
+        "belongs",
+        "consists",
+        "happens"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-007",
+      "type": "choose-correct",
+      "prompt": "The breakfast ___ of bread, cheese and tea.",
+      "options": [
+        "belongs",
+        "consists",
+        "depends"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-008",
+      "type": "choose-correct",
+      "prompt": "The group ___ of five friends.",
+      "options": [
+        "belongs",
+        "depends",
+        "consists"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-009",
+      "type": "choose-correct",
+      "prompt": "The course ___ of six lessons.",
+      "options": [
+        "consists",
+        "belongs",
+        "happens"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-010",
+      "type": "choose-correct",
+      "prompt": "The salad ___ of tomatoes, onions and cucumbers.",
+      "options": [
+        "consists",
+        "depends",
+        "belongs"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-011",
+      "type": "choose-correct",
+      "prompt": "Our family ___ of four people.",
+      "options": [
+        "consists",
+        "belongs",
+        "depends"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-012",
+      "type": "choose-correct",
+      "prompt": "The game ___ of three rounds.",
+      "options": [
+        "consists",
+        "happens",
+        "belongs"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-013",
+      "type": "choose-correct",
+      "prompt": "The club ___ of students from different schools.",
+      "options": [
+        "depends",
+        "consists",
+        "belongs"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-014",
+      "type": "choose-correct",
+      "prompt": "The lunch ___ of soup and a sandwich.",
+      "options": [
+        "belongs",
+        "consists",
+        "happens"
+      ],
+      "answer": "consists"
+    },
+    {
+      "id": "pi-11-015",
+      "type": "choose-correct",
+      "prompt": "Can you ___ of a good name for our cat?",
+      "options": [
+        "depend",
+        "think",
+        "consist"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-016",
+      "type": "choose-correct",
+      "prompt": "I cannot ___ of his phone number.",
+      "options": [
+        "think",
+        "depend",
+        "belong"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-017",
+      "type": "choose-correct",
+      "prompt": "Try to ___ of an answer to this question.",
+      "options": [
+        "belong",
+        "consist",
+        "think"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-018",
+      "type": "choose-correct",
+      "prompt": "Can you ___ of a place to eat?",
+      "options": [
+        "happen",
+        "depend",
+        "think"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-019",
+      "type": "choose-correct",
+      "prompt": "I need to ___ of a birthday present for Mum.",
+      "options": [
+        "consist",
+        "think",
+        "belong"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-020",
+      "type": "choose-correct",
+      "prompt": "Please ___ of three animals that live in water.",
+      "options": [
+        "depend",
+        "consist",
+        "think"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-021",
+      "type": "choose-correct",
+      "prompt": "Can you ___ of a good film to watch?",
+      "options": [
+        "happen",
+        "think",
+        "belong"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-022",
+      "type": "choose-correct",
+      "prompt": "I cannot ___ of anything to say.",
+      "options": [
+        "think",
+        "depend",
+        "consist"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-023",
+      "type": "choose-correct",
+      "prompt": "Let me ___ of a way to help you.",
+      "options": [
+        "think",
+        "happen",
+        "belong"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-024",
+      "type": "choose-correct",
+      "prompt": "Can you ___ of a word that starts with B?",
+      "options": [
+        "depend",
+        "think",
+        "consist"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-025",
+      "type": "choose-correct",
+      "prompt": "Try to ___ of something fun to do.",
+      "options": [
+        "belong",
+        "happen",
+        "think"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-026",
+      "type": "choose-correct",
+      "prompt": "I can ___ of two reasons to stay home.",
+      "options": [
+        "consist",
+        "depend",
+        "think"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-027",
+      "type": "choose-correct",
+      "prompt": "Can you ___ of a good question to ask?",
+      "options": [
+        "belong",
+        "happen",
+        "think"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-028",
+      "type": "choose-correct",
+      "prompt": "I am trying to ___ of her last name.",
+      "options": [
+        "depend",
+        "think",
+        "consist"
+      ],
+      "answer": "think"
+    },
+    {
+      "id": "pi-11-029",
+      "type": "choose-correct",
+      "prompt": "You can ___ on me if you need help.",
+      "options": [
+        "belong",
+        "think",
+        "depend"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-030",
+      "type": "choose-correct",
+      "prompt": "I ___ on the bus to get to school every day.",
+      "options": [
+        "think",
+        "depend",
+        "consist"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-031",
+      "type": "choose-correct",
+      "prompt": "Small children ___ on their parents for food.",
+      "options": [
+        "think",
+        "depend",
+        "happen"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-032",
+      "type": "choose-correct",
+      "prompt": "We can ___ on our teacher to explain the lesson.",
+      "options": [
+        "think",
+        "depend",
+        "belong"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-033",
+      "type": "choose-correct",
+      "prompt": "I ___ on my alarm clock to wake me up.",
+      "options": [
+        "depend",
+        "consist",
+        "think"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-034",
+      "type": "choose-correct",
+      "prompt": "You can ___ on Sara. She always keeps her promises.",
+      "options": [
+        "think",
+        "depend",
+        "belong"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-035",
+      "type": "choose-correct",
+      "prompt": "We ___ on the internet to study online.",
+      "options": [
+        "depend",
+        "think",
+        "happen"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-036",
+      "type": "choose-correct",
+      "prompt": "My little brother ___ on me when he needs help.",
+      "options": [
+        "belongs",
+        "depends",
+        "thinks"
+      ],
+      "answer": "depends"
+    },
+    {
+      "id": "pi-11-037",
+      "type": "choose-correct",
+      "prompt": "Many people ___ on buses to travel to work.",
+      "options": [
+        "depend",
+        "consist",
+        "think"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-038",
+      "type": "choose-correct",
+      "prompt": "I can ___ on my best friend when I feel sad.",
+      "options": [
+        "depend",
+        "think",
+        "belong"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-039",
+      "type": "choose-correct",
+      "prompt": "The baby ___ on her parents for everything.",
+      "options": [
+        "belongs",
+        "depends",
+        "thinks"
+      ],
+      "answer": "depends"
+    },
+    {
+      "id": "pi-11-040",
+      "type": "choose-correct",
+      "prompt": "Our school ___ on electricity for its computers.",
+      "options": [
+        "depends",
+        "thinks",
+        "happens"
+      ],
+      "answer": "depends"
+    },
+    {
+      "id": "pi-11-041",
+      "type": "choose-correct",
+      "prompt": "You can ___ on this train. It usually arrives on time.",
+      "options": [
+        "think",
+        "belong",
+        "depend"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-042",
+      "type": "choose-correct",
+      "prompt": "We ___ on our coach to teach us new skills.",
+      "options": [
+        "depend",
+        "consist",
+        "think"
+      ],
+      "answer": "depend"
+    },
+    {
+      "id": "pi-11-043",
+      "type": "choose-correct",
+      "prompt": "What ___ to your phone? The screen is broken.",
+      "options": [
+        "happened",
+        "belonged",
+        "consisted"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-044",
+      "type": "choose-correct",
+      "prompt": "What ___ to your hand? It looks painful.",
+      "options": [
+        "happened",
+        "depended",
+        "belonged"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-045",
+      "type": "choose-correct",
+      "prompt": "What ___ to the window? It is broken.",
+      "options": [
+        "belonged",
+        "consisted",
+        "happened"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-046",
+      "type": "choose-correct",
+      "prompt": "What ___ to your bike? Why is it broken?",
+      "options": [
+        "belonged",
+        "depended",
+        "happened"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-047",
+      "type": "choose-correct",
+      "prompt": "What ___ to the lights? They suddenly went off.",
+      "options": [
+        "happened",
+        "belonged",
+        "consisted"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-048",
+      "type": "choose-correct",
+      "prompt": "What ___ to your bag? It is all wet.",
+      "options": [
+        "happened",
+        "depended",
+        "belonged"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-049",
+      "type": "choose-correct",
+      "prompt": "What ___ to your shoes? They are covered in mud.",
+      "options": [
+        "consisted",
+        "belonged",
+        "happened"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-050",
+      "type": "choose-correct",
+      "prompt": "What ___ to the TV? It stopped working.",
+      "options": [
+        "belonged",
+        "depended",
+        "happened"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-051",
+      "type": "choose-correct",
+      "prompt": "What ___ to your glasses? One side is broken.",
+      "options": [
+        "happened",
+        "belonged",
+        "consisted"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-052",
+      "type": "choose-correct",
+      "prompt": "What ___ to the cake? Half of it is missing.",
+      "options": [
+        "happened",
+        "depended",
+        "belonged"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-053",
+      "type": "choose-correct",
+      "prompt": "What ___ to your jacket? There is a big hole in it.",
+      "options": [
+        "belonged",
+        "consisted",
+        "happened"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-054",
+      "type": "choose-correct",
+      "prompt": "What ___ to the car? It will not start.",
+      "options": [
+        "belonged",
+        "happened",
+        "depended"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-055",
+      "type": "choose-correct",
+      "prompt": "What ___ to your homework? The pages are wet.",
+      "options": [
+        "consisted",
+        "happened",
+        "belonged"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-056",
+      "type": "choose-correct",
+      "prompt": "What ___ to the door? It will not open.",
+      "options": [
+        "happened",
+        "belonged",
+        "depended"
+      ],
+      "answer": "happened"
+    },
+    {
+      "id": "pi-11-057",
+      "type": "choose-correct",
+      "prompt": "These keys ___ to my father.",
+      "options": [
+        "happen",
+        "depend",
+        "belong"
+      ],
+      "answer": "belong"
+    },
+    {
+      "id": "pi-11-058",
+      "type": "choose-correct",
+      "prompt": "This pen does not ___ to me. It is yours.",
+      "options": [
+        "belong",
+        "happen",
+        "depend"
+      ],
+      "answer": "belong"
+    },
+    {
+      "id": "pi-11-059",
+      "type": "choose-correct",
+      "prompt": "That blue bike ___ to my sister.",
+      "options": [
+        "belongs",
+        "happens",
+        "depends"
+      ],
+      "answer": "belongs"
+    },
+    {
+      "id": "pi-11-060",
+      "type": "choose-correct",
+      "prompt": "These books ___ to our teacher.",
+      "options": [
+        "depend",
+        "belong",
+        "happen"
+      ],
+      "answer": "belong"
+    },
+    {
+      "id": "pi-11-061",
+      "type": "choose-correct",
+      "prompt": "This phone ___ to Ali.",
+      "options": [
+        "happens",
+        "depends",
+        "belongs"
+      ],
+      "answer": "belongs"
+    },
+    {
+      "id": "pi-11-062",
+      "type": "choose-correct",
+      "prompt": "Those shoes ___ to my brother.",
+      "options": [
+        "depend",
+        "happen",
+        "belong"
+      ],
+      "answer": "belong"
+    },
+    {
+      "id": "pi-11-063",
+      "type": "choose-correct",
+      "prompt": "Does this coat ___ to you?",
+      "options": [
+        "depend",
+        "happen",
+        "belong"
+      ],
+      "answer": "belong"
+    },
+    {
+      "id": "pi-11-064",
+      "type": "choose-correct",
+      "prompt": "The red car ___ to my uncle.",
+      "options": [
+        "happens",
+        "belongs",
+        "depends"
+      ],
+      "answer": "belongs"
+    },
+    {
+      "id": "pi-11-065",
+      "type": "choose-correct",
+      "prompt": "These toys ___ to the children.",
+      "options": [
+        "happen",
+        "depend",
+        "belong"
+      ],
+      "answer": "belong"
+    },
+    {
+      "id": "pi-11-066",
+      "type": "choose-correct",
+      "prompt": "That house ___ to my grandparents.",
+      "options": [
+        "belongs",
+        "happens",
+        "depends"
+      ],
+      "answer": "belongs"
+    },
+    {
+      "id": "pi-11-067",
+      "type": "choose-correct",
+      "prompt": "Does this notebook ___ to Sara?",
+      "options": [
+        "depend",
+        "belong",
+        "happen"
+      ],
+      "answer": "belong"
+    },
+    {
+      "id": "pi-11-068",
+      "type": "choose-correct",
+      "prompt": "These bags ___ to the students.",
+      "options": [
+        "depend",
+        "belong",
+        "happen"
+      ],
+      "answer": "belong"
+    },
+    {
+      "id": "pi-11-069",
+      "type": "choose-correct",
+      "prompt": "The black umbrella ___ to my mum.",
+      "options": [
+        "happens",
+        "belongs",
+        "depends"
+      ],
+      "answer": "belongs"
+    },
+    {
+      "id": "pi-11-070",
+      "type": "choose-correct",
+      "prompt": "Those football boots ___ to my cousin.",
+      "options": [
+        "happen",
+        "depend",
+        "belong"
+      ],
+      "answer": "belong"
+    }
+  ]
+}
