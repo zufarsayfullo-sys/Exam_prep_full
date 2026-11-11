@@ -1,0 +1,568 @@
+{
+  "title": "Passive Voice — Sentence Transformations",
+  "level": "intermediate",
+  "category": "Grammar",
+  "instructions": "Complete the second sentence using the passive form. Keep the same meaning.",
+  "questions": [
+    {
+      "id": "int-03-001",
+      "type": "passive-fill",
+      "original": "The school organizes sports competitions every term.",
+      "before": "Sports competitions",
+      "answer": "are organized",
+      "after": "every term."
+    },
+    {
+      "id": "int-03-002",
+      "type": "passive-fill",
+      "original": "The chef prepares fresh meals every day.",
+      "before": "Fresh meals",
+      "answer": "are prepared",
+      "after": "every day."
+    },
+    {
+      "id": "int-03-003",
+      "type": "passive-fill",
+      "original": "The company sells these laptops online.",
+      "before": "These laptops",
+      "answer": "are sold",
+      "after": "online."
+    },
+    {
+      "id": "int-03-004",
+      "type": "passive-fill",
+      "original": "The library lends books to students.",
+      "before": "Books",
+      "answer": "are lent",
+      "after": "to students."
+    },
+    {
+      "id": "int-03-005",
+      "type": "passive-fill",
+      "original": "The factory makes school uniforms in this town.",
+      "before": "School uniforms",
+      "answer": "are made",
+      "after": "in this town."
+    },
+    {
+      "id": "int-03-006",
+      "type": "passive-fill",
+      "original": "The teacher checks our homework every Friday.",
+      "before": "Our homework",
+      "answer": "is checked",
+      "after": "every Friday."
+    },
+    {
+      "id": "int-03-007",
+      "type": "passive-fill",
+      "original": "The shop delivers orders within two days.",
+      "before": "Orders",
+      "answer": "are delivered",
+      "after": "within two days."
+    },
+    {
+      "id": "int-03-008",
+      "type": "passive-fill",
+      "original": "The museum displays old photographs in the main hall.",
+      "before": "Old photographs",
+      "answer": "are displayed",
+      "after": "in the main hall."
+    },
+    {
+      "id": "int-03-009",
+      "type": "passive-fill",
+      "original": "The hotel serves breakfast from seven o’clock.",
+      "before": "Breakfast",
+      "answer": "is served",
+      "after": "from seven o’clock."
+    },
+    {
+      "id": "int-03-010",
+      "type": "passive-fill",
+      "original": "The team updates the website every week.",
+      "before": "The website",
+      "answer": "is updated",
+      "after": "every week."
+    },
+    {
+      "id": "int-03-011",
+      "type": "passive-fill",
+      "original": "The farmer grows tomatoes in this area.",
+      "before": "Tomatoes",
+      "answer": "are grown",
+      "after": "in this area."
+    },
+    {
+      "id": "int-03-012",
+      "type": "passive-fill",
+      "original": "The office prints tickets at the entrance.",
+      "before": "Tickets",
+      "answer": "are printed",
+      "after": "at the entrance."
+    },
+    {
+      "id": "int-03-013",
+      "type": "passive-fill",
+      "original": "The school teaches English in every class.",
+      "before": "English",
+      "answer": "is taught",
+      "after": "in every class."
+    },
+    {
+      "id": "int-03-014",
+      "type": "passive-fill",
+      "original": "The club holds meetings on Mondays.",
+      "before": "Meetings",
+      "answer": "are held",
+      "after": "on Mondays."
+    },
+    {
+      "id": "int-03-015",
+      "type": "passive-fill",
+      "original": "The workers repaired the bridge last year.",
+      "before": "The bridge",
+      "answer": "was repaired",
+      "after": "last year."
+    },
+    {
+      "id": "int-03-016",
+      "type": "passive-fill",
+      "original": "The police found the missing bag yesterday.",
+      "before": "The missing bag",
+      "answer": "was found",
+      "after": "yesterday."
+    },
+    {
+      "id": "int-03-017",
+      "type": "passive-fill",
+      "original": "The teacher explained the rules before the game.",
+      "before": "The rules",
+      "answer": "were explained",
+      "after": "before the game."
+    },
+    {
+      "id": "int-03-018",
+      "type": "passive-fill",
+      "original": "A local artist painted this picture in 2018.",
+      "before": "This picture",
+      "answer": "was painted",
+      "after": "in 2018."
+    },
+    {
+      "id": "int-03-019",
+      "type": "passive-fill",
+      "original": "The school opened a new library last month.",
+      "before": "A new library",
+      "answer": "was opened",
+      "after": "last month."
+    },
+    {
+      "id": "int-03-020",
+      "type": "passive-fill",
+      "original": "The students cleaned the classroom after lunch.",
+      "before": "The classroom",
+      "answer": "was cleaned",
+      "after": "after lunch."
+    },
+    {
+      "id": "int-03-021",
+      "type": "passive-fill",
+      "original": "The company hired three new workers in June.",
+      "before": "Three new workers",
+      "answer": "were hired",
+      "after": "in June."
+    },
+    {
+      "id": "int-03-022",
+      "type": "passive-fill",
+      "original": "The manager sent the emails yesterday morning.",
+      "before": "The emails",
+      "answer": "were sent",
+      "after": "yesterday morning."
+    },
+    {
+      "id": "int-03-023",
+      "type": "passive-fill",
+      "original": "The builders finished the road last week.",
+      "before": "The road",
+      "answer": "was finished",
+      "after": "last week."
+    },
+    {
+      "id": "int-03-024",
+      "type": "passive-fill",
+      "original": "The guide showed us the old castle.",
+      "before": "We",
+      "answer": "were shown",
+      "after": "the old castle by the guide."
+    },
+    {
+      "id": "int-03-025",
+      "type": "passive-fill",
+      "original": "The doctor examined the patient yesterday.",
+      "before": "The patient",
+      "answer": "was examined",
+      "after": "yesterday."
+    },
+    {
+      "id": "int-03-026",
+      "type": "passive-fill",
+      "original": "The team won the match on Saturday.",
+      "before": "The match",
+      "answer": "was won",
+      "after": "by the team on Saturday."
+    },
+    {
+      "id": "int-03-027",
+      "type": "passive-fill",
+      "original": "The council built a playground near our school.",
+      "before": "A playground",
+      "answer": "was built",
+      "after": "near our school."
+    },
+    {
+      "id": "int-03-028",
+      "type": "passive-fill",
+      "original": "The shop closed its main entrance yesterday.",
+      "before": "The main entrance",
+      "answer": "was closed",
+      "after": "yesterday."
+    },
+    {
+      "id": "int-03-029",
+      "type": "passive-fill",
+      "original": "The workers are painting the classrooms now.",
+      "before": "The classrooms",
+      "answer": "are being painted",
+      "after": "now."
+    },
+    {
+      "id": "int-03-030",
+      "type": "passive-fill",
+      "original": "The city is building a new hospital.",
+      "before": "A new hospital",
+      "answer": "is being built",
+      "after": "in the city."
+    },
+    {
+      "id": "int-03-031",
+      "type": "passive-fill",
+      "original": "The teacher is checking the tests at the moment.",
+      "before": "The tests",
+      "answer": "are being checked",
+      "after": "at the moment."
+    },
+    {
+      "id": "int-03-032",
+      "type": "passive-fill",
+      "original": "The company is developing a new app.",
+      "before": "A new app",
+      "answer": "is being developed",
+      "after": "by the company."
+    },
+    {
+      "id": "int-03-033",
+      "type": "passive-fill",
+      "original": "The staff are preparing the meeting room.",
+      "before": "The meeting room",
+      "answer": "is being prepared",
+      "after": "by the staff."
+    },
+    {
+      "id": "int-03-034",
+      "type": "passive-fill",
+      "original": "The workers are repairing the lift today.",
+      "before": "The lift",
+      "answer": "is being repaired",
+      "after": "today."
+    },
+    {
+      "id": "int-03-035",
+      "type": "passive-fill",
+      "original": "The school is organizing a concert this week.",
+      "before": "A concert",
+      "answer": "is being organized",
+      "after": "by the school this week."
+    },
+    {
+      "id": "int-03-036",
+      "type": "passive-fill",
+      "original": "The chef is cooking dinner right now.",
+      "before": "Dinner",
+      "answer": "is being cooked",
+      "after": "right now."
+    },
+    {
+      "id": "int-03-037",
+      "type": "passive-fill",
+      "original": "The council is improving the local park.",
+      "before": "The local park",
+      "answer": "is being improved",
+      "after": "by the council."
+    },
+    {
+      "id": "int-03-038",
+      "type": "passive-fill",
+      "original": "The volunteers are collecting old clothes.",
+      "before": "Old clothes",
+      "answer": "are being collected",
+      "after": "by the volunteers."
+    },
+    {
+      "id": "int-03-039",
+      "type": "passive-fill",
+      "original": "The mechanic is fixing my bike.",
+      "before": "My bike",
+      "answer": "is being fixed",
+      "after": "by the mechanic."
+    },
+    {
+      "id": "int-03-040",
+      "type": "passive-fill",
+      "original": "The workers are cleaning the windows now.",
+      "before": "The windows",
+      "answer": "are being cleaned",
+      "after": "now."
+    },
+    {
+      "id": "int-03-041",
+      "type": "passive-fill",
+      "original": "The team is updating the school website.",
+      "before": "The school website",
+      "answer": "is being updated",
+      "after": "by the team."
+    },
+    {
+      "id": "int-03-042",
+      "type": "passive-fill",
+      "original": "The police are interviewing two witnesses.",
+      "before": "Two witnesses",
+      "answer": "are being interviewed",
+      "after": "by the police."
+    },
+    {
+      "id": "int-03-043",
+      "type": "passive-fill",
+      "original": "The company has launched a new app for students.",
+      "before": "A new app",
+      "answer": "has been launched",
+      "after": "for students."
+    },
+    {
+      "id": "int-03-044",
+      "type": "passive-fill",
+      "original": "The teacher has marked all the essays.",
+      "before": "All the essays",
+      "answer": "have been marked",
+      "after": "by the teacher."
+    },
+    {
+      "id": "int-03-045",
+      "type": "passive-fill",
+      "original": "The workers have repaired the road.",
+      "before": "The road",
+      "answer": "has been repaired",
+      "after": "by the workers."
+    },
+    {
+      "id": "int-03-046",
+      "type": "passive-fill",
+      "original": "The school has bought new computers.",
+      "before": "New computers",
+      "answer": "have been bought",
+      "after": "by the school."
+    },
+    {
+      "id": "int-03-047",
+      "type": "passive-fill",
+      "original": "The manager has changed the timetable.",
+      "before": "The timetable",
+      "answer": "has been changed",
+      "after": "by the manager."
+    },
+    {
+      "id": "int-03-048",
+      "type": "passive-fill",
+      "original": "The team has finished the project.",
+      "before": "The project",
+      "answer": "has been finished",
+      "after": "by the team."
+    },
+    {
+      "id": "int-03-049",
+      "type": "passive-fill",
+      "original": "The council has opened a new sports centre.",
+      "before": "A new sports centre",
+      "answer": "has been opened",
+      "after": "by the council."
+    },
+    {
+      "id": "int-03-050",
+      "type": "passive-fill",
+      "original": "The students have cleaned the hall.",
+      "before": "The hall",
+      "answer": "has been cleaned",
+      "after": "by the students."
+    },
+    {
+      "id": "int-03-051",
+      "type": "passive-fill",
+      "original": "The shop has reduced the prices.",
+      "before": "The prices",
+      "answer": "have been reduced",
+      "after": "by the shop."
+    },
+    {
+      "id": "int-03-052",
+      "type": "passive-fill",
+      "original": "The company has sent the invitations.",
+      "before": "The invitations",
+      "answer": "have been sent",
+      "after": "by the company."
+    },
+    {
+      "id": "int-03-053",
+      "type": "passive-fill",
+      "original": "The police have found the stolen car.",
+      "before": "The stolen car",
+      "answer": "has been found",
+      "after": "by the police."
+    },
+    {
+      "id": "int-03-054",
+      "type": "passive-fill",
+      "original": "The library has added more books.",
+      "before": "More books",
+      "answer": "have been added",
+      "after": "to the library."
+    },
+    {
+      "id": "int-03-055",
+      "type": "passive-fill",
+      "original": "The organizers have cancelled the event.",
+      "before": "The event",
+      "answer": "has been cancelled",
+      "after": "by the organizers."
+    },
+    {
+      "id": "int-03-056",
+      "type": "passive-fill",
+      "original": "The university has announced the exam dates.",
+      "before": "The exam dates",
+      "answer": "have been announced",
+      "after": "by the university."
+    },
+    {
+      "id": "int-03-057",
+      "type": "passive-fill",
+      "original": "The school will publish the results tomorrow.",
+      "before": "The results",
+      "answer": "will be published",
+      "after": "tomorrow."
+    },
+    {
+      "id": "int-03-058",
+      "type": "passive-fill",
+      "original": "The company will open a new office next year.",
+      "before": "A new office",
+      "answer": "will be opened",
+      "after": "next year."
+    },
+    {
+      "id": "int-03-059",
+      "type": "passive-fill",
+      "original": "The teacher will explain the task later.",
+      "before": "The task",
+      "answer": "will be explained",
+      "after": "later."
+    },
+    {
+      "id": "int-03-060",
+      "type": "passive-fill",
+      "original": "The council will repair the bridge next month.",
+      "before": "The bridge",
+      "answer": "will be repaired",
+      "after": "next month."
+    },
+    {
+      "id": "int-03-061",
+      "type": "passive-fill",
+      "original": "The shop will deliver your order on Friday.",
+      "before": "Your order",
+      "answer": "will be delivered",
+      "after": "on Friday."
+    },
+    {
+      "id": "int-03-062",
+      "type": "passive-fill",
+      "original": "The workers will paint the walls next week.",
+      "before": "The walls",
+      "answer": "will be painted",
+      "after": "next week."
+    },
+    {
+      "id": "int-03-063",
+      "type": "passive-fill",
+      "original": "The school will invite the parents to the meeting.",
+      "before": "The parents",
+      "answer": "will be invited",
+      "after": "to the meeting."
+    },
+    {
+      "id": "int-03-064",
+      "type": "passive-fill",
+      "original": "The company will hire more staff in summer.",
+      "before": "More staff",
+      "answer": "will be hired",
+      "after": "in summer."
+    },
+    {
+      "id": "int-03-065",
+      "type": "passive-fill",
+      "original": "The organizers will announce the winner tonight.",
+      "before": "The winner",
+      "answer": "will be announced",
+      "after": "tonight."
+    },
+    {
+      "id": "int-03-066",
+      "type": "passive-fill",
+      "original": "The team will complete the work by Monday.",
+      "before": "The work",
+      "answer": "will be completed",
+      "after": "by Monday."
+    },
+    {
+      "id": "int-03-067",
+      "type": "passive-fill",
+      "original": "The hotel will prepare breakfast at seven.",
+      "before": "Breakfast",
+      "answer": "will be prepared",
+      "after": "at seven."
+    },
+    {
+      "id": "int-03-068",
+      "type": "passive-fill",
+      "original": "The council will build a new bus stop.",
+      "before": "A new bus stop",
+      "answer": "will be built",
+      "after": "by the council."
+    },
+    {
+      "id": "int-03-069",
+      "type": "passive-fill",
+      "original": "The school will replace the old desks.",
+      "before": "The old desks",
+      "answer": "will be replaced",
+      "after": "by the school."
+    },
+    {
+      "id": "int-03-070",
+      "type": "passive-fill",
+      "original": "The company will send the tickets by email.",
+      "before": "The tickets",
+      "answer": "will be sent",
+      "after": "by email."
+    }
+  ]
+}
