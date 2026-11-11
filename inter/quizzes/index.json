@@ -14,5 +14,13 @@
     "path": "quiz-02.html",
     "bank": "quiz-02.bank.json",
     "level": "intermediate"
+  },
+  {
+    "id": "quiz-03",
+    "title": "Passive Voice — Sentence Transformations",
+    "category": "Grammar",
+    "path": "quiz-03.html",
+    "bank": "quiz-03.bank.json",
+    "level": "intermediate"
   }
 ]
