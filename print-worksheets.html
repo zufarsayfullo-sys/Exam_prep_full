@@ -209,7 +209,7 @@ function normalizeQuestion(q) {
   let answer = q.correctAnswer ?? q.correct_answer ?? q.correct ?? q.answer ?? q.key ?? q.expected ?? q.acceptedAnswers?.[0] ?? "";
   if (typeof answer === "number" && options.length) answer = options[answer] ?? String(answer);
   if (typeof answer === "string" && /^[A-D]$/i.test(answer) && options.length) answer = options[answer.toUpperCase().charCodeAt(0)-65] || answer;
-  return {prompt, options, answer:String(answer), transformation, source, before, after, reply:pick(q.reply,q.response,q.contextReply,q.context_reply)};
+  return {prompt, options, answer:String(answer), transformation, source, before, after, reply:pick(q.reply,q.response,q.contextReply,q.context_reply), verb:pick(q.verb,q.baseVerb,q.base_verb)};
 }
 function randomSample(array, count) {
   const copy = [...array];
@@ -245,6 +245,7 @@ function renderWorksheet() {
       if (q.after) addElement("span"," "+q.after,second);
     } else {
       addElement("strong",(i+1)+". "+q.prompt,wrap);
+      if (q.verb) addElement("span"," ("+q.verb+")",wrap,"verb-hint");
       if (q.reply) addElement("div","Reply: "+q.reply,wrap,"context-reply");
       if (q.options.length) {
         const opts = addElement("div","",wrap,"options");
