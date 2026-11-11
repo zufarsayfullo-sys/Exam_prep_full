@@ -1,0 +1,847 @@
+{
+  "title": "First Conditional: If / Unless / Will / Won’t",
+  "level": "intermediate",
+  "category": "Grammar",
+  "questions": [
+    {
+      "id": "int-02-001",
+      "type": "multiple-choice",
+      "prompt": "If we miss the last bus, we ___ get home by bus tonight.",
+      "options": [
+        "if",
+        "unless",
+        "won't",
+        "will"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-002",
+      "type": "multiple-choice",
+      "prompt": "If the train is on time, we ___ reach the city by noon.",
+      "options": [
+        "unless",
+        "won't",
+        "if",
+        "will"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-003",
+      "type": "multiple-choice",
+      "prompt": "They will play outside ___ the weather gets warmer.",
+      "options": [
+        "if",
+        "won't",
+        "will",
+        "unless"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-004",
+      "type": "multiple-choice",
+      "prompt": "I will send you the file ___ I find it.",
+      "options": [
+        "if",
+        "won't",
+        "unless",
+        "will"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-005",
+      "type": "multiple-choice",
+      "prompt": "If he does not bring his ID, he ___ be allowed to enter.",
+      "options": [
+        "won't",
+        "will",
+        "if",
+        "unless"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-006",
+      "type": "multiple-choice",
+      "prompt": "If it keeps raining, we ___ play football in the park.",
+      "options": [
+        "won't",
+        "if",
+        "will",
+        "unless"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-007",
+      "type": "multiple-choice",
+      "prompt": "If you ask the teacher, she ___ explain the exercise.",
+      "options": [
+        "if",
+        "will",
+        "won't",
+        "unless"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-008",
+      "type": "multiple-choice",
+      "prompt": "If we book our tickets today, we ___ get better seats.",
+      "options": [
+        "unless",
+        "won't",
+        "will",
+        "if"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-009",
+      "type": "multiple-choice",
+      "prompt": "He will lose his place in the queue ___ he comes back soon.",
+      "options": [
+        "unless",
+        "if",
+        "won't",
+        "will"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-010",
+      "type": "multiple-choice",
+      "prompt": "I will cook dinner ___ you buy the vegetables.",
+      "options": [
+        "won't",
+        "unless",
+        "if",
+        "will"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-011",
+      "type": "multiple-choice",
+      "prompt": "You cannot enter the building ___ you have a ticket.",
+      "options": [
+        "won't",
+        "if",
+        "will",
+        "unless"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-012",
+      "type": "multiple-choice",
+      "prompt": "If the shop is open, I ___ buy some bread.",
+      "options": [
+        "unless",
+        "won't",
+        "will",
+        "if"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-013",
+      "type": "multiple-choice",
+      "prompt": "If I lose my ticket, I ___ be allowed into the concert.",
+      "options": [
+        "if",
+        "unless",
+        "won't",
+        "will"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-014",
+      "type": "multiple-choice",
+      "prompt": "She will take the job ___ the salary is good.",
+      "options": [
+        "will",
+        "won't",
+        "if",
+        "unless"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-015",
+      "type": "multiple-choice",
+      "prompt": "If the weather is nice tomorrow, we ___ have lunch outside.",
+      "options": [
+        "won't",
+        "if",
+        "unless",
+        "will"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-016",
+      "type": "multiple-choice",
+      "prompt": "You will not pass the test ___ you study.",
+      "options": [
+        "if",
+        "won't",
+        "will",
+        "unless"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-017",
+      "type": "multiple-choice",
+      "prompt": "I will lend you my notes ___ you need them.",
+      "options": [
+        "unless",
+        "won't",
+        "if",
+        "will"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-018",
+      "type": "multiple-choice",
+      "prompt": "He will join the course ___ there are places available.",
+      "options": [
+        "unless",
+        "won't",
+        "will",
+        "if"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-019",
+      "type": "multiple-choice",
+      "prompt": "If you drink enough water, you ___ feel better.",
+      "options": [
+        "won't",
+        "if",
+        "will",
+        "unless"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-020",
+      "type": "multiple-choice",
+      "prompt": "We will order pizza ___ everyone agrees.",
+      "options": [
+        "if",
+        "unless",
+        "will",
+        "won't"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-021",
+      "type": "multiple-choice",
+      "prompt": "If the internet stops working, we ___ be able to watch the video online.",
+      "options": [
+        "unless",
+        "if",
+        "won't",
+        "will"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-022",
+      "type": "multiple-choice",
+      "prompt": "You will understand the story better ___ you read it again.",
+      "options": [
+        "if",
+        "won't",
+        "will",
+        "unless"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-023",
+      "type": "multiple-choice",
+      "prompt": "They will cancel the picnic ___ the weather improves.",
+      "options": [
+        "if",
+        "will",
+        "unless",
+        "won't"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-024",
+      "type": "multiple-choice",
+      "prompt": "We will not catch the train ___ we leave immediately.",
+      "options": [
+        "if",
+        "will",
+        "unless",
+        "won't"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-025",
+      "type": "multiple-choice",
+      "prompt": "If she misses the deadline, the teacher ___ accept her work.",
+      "options": [
+        "won't",
+        "unless",
+        "if",
+        "will"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-026",
+      "type": "multiple-choice",
+      "prompt": "If you show me the photo, I ___ recognise the person.",
+      "options": [
+        "if",
+        "won't",
+        "will",
+        "unless"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-027",
+      "type": "multiple-choice",
+      "prompt": "If they arrive after the doors close, they ___ get into the cinema.",
+      "options": [
+        "if",
+        "will",
+        "won't",
+        "unless"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-028",
+      "type": "multiple-choice",
+      "prompt": "If you invite Sara, she ___ be happy to come.",
+      "options": [
+        "will",
+        "won't",
+        "unless",
+        "if"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-029",
+      "type": "multiple-choice",
+      "prompt": "If we do not leave now, we ___ catch the eight o’clock train.",
+      "options": [
+        "if",
+        "will",
+        "won't",
+        "unless"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-030",
+      "type": "multiple-choice",
+      "prompt": "If she takes the earlier bus, she ___ get to school on time.",
+      "options": [
+        "unless",
+        "if",
+        "won't",
+        "will"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-031",
+      "type": "multiple-choice",
+      "prompt": "If she finishes work early, she ___ join us for dinner.",
+      "options": [
+        "will",
+        "unless",
+        "if",
+        "won't"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-032",
+      "type": "multiple-choice",
+      "prompt": "If he does not study, he ___ pass the exam.",
+      "options": [
+        "if",
+        "will",
+        "won't",
+        "unless"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-033",
+      "type": "multiple-choice",
+      "prompt": "If I save enough money, I ___ buy a new laptop.",
+      "options": [
+        "if",
+        "unless",
+        "won't",
+        "will"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-034",
+      "type": "multiple-choice",
+      "prompt": "If the battery is empty, the camera ___ turn on.",
+      "options": [
+        "will",
+        "unless",
+        "if",
+        "won't"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-035",
+      "type": "multiple-choice",
+      "prompt": "If you do not wear a coat, you ___ stay warm outside.",
+      "options": [
+        "will",
+        "won't",
+        "unless",
+        "if"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-036",
+      "type": "multiple-choice",
+      "prompt": "You will not understand the film ___ you turn on the subtitles.",
+      "options": [
+        "unless",
+        "will",
+        "won't",
+        "if"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-037",
+      "type": "multiple-choice",
+      "prompt": "If the café is closed, we ___ be able to buy coffee there.",
+      "options": [
+        "will",
+        "if",
+        "won't",
+        "unless"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-038",
+      "type": "multiple-choice",
+      "prompt": "If you give me five minutes, I ___ help you with the bags.",
+      "options": [
+        "won't",
+        "will",
+        "unless",
+        "if"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-039",
+      "type": "multiple-choice",
+      "prompt": "If she does not know the address, she ___ find the house easily.",
+      "options": [
+        "unless",
+        "will",
+        "won't",
+        "if"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-040",
+      "type": "multiple-choice",
+      "prompt": "You will not find the answer ___ you read the question carefully.",
+      "options": [
+        "will",
+        "won't",
+        "unless",
+        "if"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-041",
+      "type": "multiple-choice",
+      "prompt": "If you do not water this plant, it ___ grow well.",
+      "options": [
+        "if",
+        "won't",
+        "unless",
+        "will"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-042",
+      "type": "multiple-choice",
+      "prompt": "We cannot start the game ___ everyone is here.",
+      "options": [
+        "won't",
+        "if",
+        "will",
+        "unless"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-043",
+      "type": "multiple-choice",
+      "prompt": "I will not buy the shoes ___ they are on sale.",
+      "options": [
+        "won't",
+        "if",
+        "unless",
+        "will"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-044",
+      "type": "multiple-choice",
+      "prompt": "You will get a discount ___ you show your student card.",
+      "options": [
+        "if",
+        "won't",
+        "will",
+        "unless"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-045",
+      "type": "multiple-choice",
+      "prompt": "If you send me the address, I ___ find the place.",
+      "options": [
+        "won't",
+        "will",
+        "if",
+        "unless"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-046",
+      "type": "multiple-choice",
+      "prompt": "If you do not charge your phone, it ___ work tomorrow.",
+      "options": [
+        "will",
+        "unless",
+        "won't",
+        "if"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-047",
+      "type": "multiple-choice",
+      "prompt": "If he studies for the test, he ___ feel more confident.",
+      "options": [
+        "if",
+        "won't",
+        "will",
+        "unless"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-048",
+      "type": "multiple-choice",
+      "prompt": "If they leave at seven, they ___ arrive before nine.",
+      "options": [
+        "unless",
+        "if",
+        "won't",
+        "will"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-049",
+      "type": "multiple-choice",
+      "prompt": "They will visit us ___ they have time this weekend.",
+      "options": [
+        "won't",
+        "will",
+        "unless",
+        "if"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-050",
+      "type": "multiple-choice",
+      "prompt": "If you practise every day, you ___ improve your English.",
+      "options": [
+        "will",
+        "unless",
+        "won't",
+        "if"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-051",
+      "type": "multiple-choice",
+      "prompt": "You will not improve your pronunciation ___ you practise regularly.",
+      "options": [
+        "won't",
+        "will",
+        "if",
+        "unless"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-052",
+      "type": "multiple-choice",
+      "prompt": "The flowers will die ___ someone waters them.",
+      "options": [
+        "will",
+        "if",
+        "unless",
+        "won't"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-053",
+      "type": "multiple-choice",
+      "prompt": "She will buy the jacket ___ it fits her well.",
+      "options": [
+        "if",
+        "won't",
+        "will",
+        "unless"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-054",
+      "type": "multiple-choice",
+      "prompt": "She will be late ___ she leaves now.",
+      "options": [
+        "if",
+        "will",
+        "won't",
+        "unless"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-055",
+      "type": "multiple-choice",
+      "prompt": "We will have the meeting online ___ the office is closed.",
+      "options": [
+        "won't",
+        "unless",
+        "if",
+        "will"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-056",
+      "type": "multiple-choice",
+      "prompt": "If you do not read the instructions, you ___ understand the task properly.",
+      "options": [
+        "unless",
+        "if",
+        "will",
+        "won't"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-057",
+      "type": "multiple-choice",
+      "prompt": "The food will get cold ___ we eat it soon.",
+      "options": [
+        "if",
+        "unless",
+        "will",
+        "won't"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-058",
+      "type": "multiple-choice",
+      "prompt": "I will help you carry the boxes ___ you ask me.",
+      "options": [
+        "unless",
+        "if",
+        "won't",
+        "will"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-059",
+      "type": "multiple-choice",
+      "prompt": "I will meet you at the station ___ your train arrives on time.",
+      "options": [
+        "if",
+        "unless",
+        "won't",
+        "will"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-060",
+      "type": "multiple-choice",
+      "prompt": "We will not finish the project today ___ someone helps us.",
+      "options": [
+        "if",
+        "will",
+        "won't",
+        "unless"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-061",
+      "type": "multiple-choice",
+      "prompt": "I will call you ___ I finish my homework.",
+      "options": [
+        "unless",
+        "will",
+        "if",
+        "won't"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-062",
+      "type": "multiple-choice",
+      "prompt": "We will go for a walk ___ the rain stops.",
+      "options": [
+        "if",
+        "unless",
+        "will",
+        "won't"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-063",
+      "type": "multiple-choice",
+      "prompt": "He will take a taxi ___ the buses stop running.",
+      "options": [
+        "won't",
+        "unless",
+        "will",
+        "if"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-064",
+      "type": "multiple-choice",
+      "prompt": "You will miss the bus ___ you hurry.",
+      "options": [
+        "will",
+        "unless",
+        "if",
+        "won't"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-065",
+      "type": "multiple-choice",
+      "prompt": "If you forget your password, you ___ be able to log in.",
+      "options": [
+        "won't",
+        "unless",
+        "if",
+        "will"
+      ],
+      "answer": "won't"
+    },
+    {
+      "id": "int-02-066",
+      "type": "multiple-choice",
+      "prompt": "If I have a free weekend, I ___ visit my grandparents.",
+      "options": [
+        "unless",
+        "won't",
+        "will",
+        "if"
+      ],
+      "answer": "will"
+    },
+    {
+      "id": "int-02-067",
+      "type": "multiple-choice",
+      "prompt": "She cannot join the class ___ she registers first.",
+      "options": [
+        "if",
+        "won't",
+        "will",
+        "unless"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-068",
+      "type": "multiple-choice",
+      "prompt": "Your phone will run out of power ___ you charge it.",
+      "options": [
+        "if",
+        "will",
+        "unless",
+        "won't"
+      ],
+      "answer": "unless"
+    },
+    {
+      "id": "int-02-069",
+      "type": "multiple-choice",
+      "prompt": "You can borrow my bike ___ you return it tonight.",
+      "options": [
+        "won't",
+        "unless",
+        "will",
+        "if"
+      ],
+      "answer": "if"
+    },
+    {
+      "id": "int-02-070",
+      "type": "multiple-choice",
+      "prompt": "If the team works together, it ___ finish the project faster.",
+      "options": [
+        "won't",
+        "if",
+        "unless",
+        "will"
+      ],
+      "answer": "will"
+    }
+  ]
+}
