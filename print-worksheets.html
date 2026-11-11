@@ -21,6 +21,8 @@ button{background:#4f46e5;color:white;border:0;border-radius:10px;padding:12px 1
 @media(max-width:650px){.controls{grid-template-columns:1fr}.sheet{padding:18px}.options{grid-template-columns:1fr}.student-fields{display:block}.student-fields div{margin-bottom:10px}.key-list{grid-template-columns:repeat(2,1fr)}}
 @page{size:A4;margin:15mm}@media print{header,.panel,footer{display:none!important}body{background:white}.sheet{border:0;border-radius:0;padding:0}.key{break-before:page}.question{margin-bottom:16px}}
 .passive-sentence{margin:9px 0 0 20px;line-height:2.1}.inline-blank{display:inline-block;min-width:165px;white-space:nowrap;letter-spacing:0.3px;color:#334155}@media print{.passive-sentence{break-inside:avoid}.inline-blank{color:#111827}}
+.context-reply{margin:8px 0 4px 22px;font-size:15px;line-height:1.5;color:#334155;break-inside:avoid}
+@media print{.context-reply{color:#111827}}
 </style>
 </head>
 <body>
@@ -207,7 +209,7 @@ function normalizeQuestion(q) {
   let answer = q.correctAnswer ?? q.correct_answer ?? q.correct ?? q.answer ?? q.key ?? q.expected ?? q.acceptedAnswers?.[0] ?? "";
   if (typeof answer === "number" && options.length) answer = options[answer] ?? String(answer);
   if (typeof answer === "string" && /^[A-D]$/i.test(answer) && options.length) answer = options[answer.toUpperCase().charCodeAt(0)-65] || answer;
-  return {prompt, options, answer:String(answer), transformation, source, before, after};
+  return {prompt, options, answer:String(answer), transformation, source, before, after, reply:pick(q.reply,q.response,q.contextReply,q.context_reply)};
 }
 function randomSample(array, count) {
   const copy = [...array];
@@ -243,10 +245,11 @@ function renderWorksheet() {
       if (q.after) addElement("span"," "+q.after,second);
     } else {
       addElement("strong",(i+1)+". "+q.prompt,wrap);
+      if (q.reply) addElement("div","Reply: "+q.reply,wrap,"context-reply");
       if (q.options.length) {
         const opts = addElement("div","",wrap,"options");
         q.options.forEach((option,j) => addElement("div",String.fromCharCode(65+j)+". "+option,opts));
-      } else addElement("div","",wrap,"line");
+      } else if (!q.prompt.includes("___") && !q.reply) addElement("div","",wrap,"line");
     }
     addElement("div",(i+1)+". "+(q.answer || "—"),$("answers"));
   });
