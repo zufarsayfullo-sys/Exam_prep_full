@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Intermediate Quiz 09 | ExamPrep Studio</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#f6f7ff;color:#202044}*{box-sizing:border-box}body{margin:0}.wrap{max-width:920px;margin:auto;padding:16px}.brand{font-size:24px;font-weight:800;margin:12px 0 25px}.brand span{color:#7138e5}.card{background:white;border:1px solid #e6e4f5;border-radius:22px;padding:clamp(20px,5vw,34px);box-shadow:0 12px 36px #16164c0b;margin-bottom:20px}h1{font-size:clamp(25px,5vw,36px);margin:10px 0}h2{font-size:22px}.muted{color:#69718a;line-height:1.6}.tag{display:inline-block;background:#eee9ff;color:#6d36d9;padding:7px 12px;border-radius:24px;font-weight:700;font-size:13px}button{border:0;border-radius:12px;background:#7138e5;color:white;font:inherit;font-weight:700;padding:13px 20px;cursor:pointer;min-height:48px}button.alt{background:#f0eaff;color:#6832cb}button:disabled{opacity:.45;cursor:default}.hidden{display:none!important}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.progress{height:9px;background:#eae6fa;border-radius:20px;overflow:hidden;margin:20px 0}.progress div{height:100%;background:#7138e5;width:0}.given{margin-bottom:18px;font-size:19px;line-height:1.5}.question{background:#f3efff;padding:25px;border-radius:16px;font-size:clamp(19px,4.5vw,24px);font-weight:600;line-height:2.2;margin:22px 0;overflow-wrap:anywhere}.answer{display:inline-block;vertical-align:middle;width:clamp(110px,28vw,160px);max-width:100%;padding:9px 12px;border:1px solid #c7b9ee;border-bottom:3px solid #7138e5;border-radius:9px;background:#fff;color:#202044;font:inherit;font-size:18px;font-weight:500;line-height:1.4}.wordbank{background:#fff;border:1px solid #d9d2ee;border-radius:14px;padding:16px;margin:14px 0}.banktitle{font-size:12px;font-weight:800;color:#69718a;letter-spacing:.07em;margin-bottom:12px}.bankitems{display:flex;gap:8px;flex-wrap:wrap}.bankchip{padding:7px 11px;background:#f1eff8;border-radius:8px;font-size:14px;font-weight:600;color:#343151}.question span{white-space:pre-wrap}.answer:focus{outline:2px solid #7138e5;outline-offset:2px}.hint{font-size:16px;font-weight:500;color:#66617b}table{width:100%;border-collapse:collapse}td,th{text-align:left;border-bottom:1px solid #eee;padding:12px}.review{padding:14px 0;border-bottom:1px solid #eee}.good{color:#087e43}.bad{color:#bd3348}#notice{color:#ba273f;min-height:22px;white-space:pre-wrap}a{color:#6832cb}@media(max-width:600px){.card{padding:18px 15px;border-radius:17px}.question{padding:17px;line-height:2.1}.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.actions button{width:100%;padding:13px 8px}#home button{width:100%}#quiz .actions{position:sticky;bottom:0;background:white;padding:10px 0 4px;z-index:2}}
+.choices{display:grid;gap:10px;margin-top:18px}.choice{display:flex;align-items:center;gap:12px;background:white;border:1px solid #d9d2ee;border-radius:12px;padding:12px 14px;cursor:pointer;font-size:18px;font-weight:500;line-height:1.4}.choice:has(input:checked){border-color:#7138e5;background:#f5f0ff}.choice input{width:20px;height:20px;accent-color:#7138e5;flex-shrink:0}
+/* Final leaderboard only — all existing quiz styles remain unchanged. */
+.final-heading{text-align:center;margin-bottom:22px}.final-heading .cup{font-size:42px}.final-heading p{color:#69718a;margin:7px 0}.podium{display:flex;align-items:flex-end;justify-content:center;gap:12px;background:#f8f7fd;border-radius:18px;padding:25px 12px 0;min-height:240px}.podium-place{flex:1;max-width:180px;min-width:0;text-align:center}.podium-name{font-weight:800;overflow-wrap:anywhere;font-size:clamp(12px,2.5vw,17px)}.podium-score{font-weight:800;color:#087e43;margin:5px 0}.podium-medal{font-size:28px}.podium-block{display:flex;align-items:center;justify-content:center;color:white;font-weight:900;font-size:30px;border-radius:12px 12px 0 0}.podium-block.first{height:112px;background:#d6a83f}.podium-block.second{height:83px;background:#94a3b8}.podium-block.third{height:60px;background:#b77b54}.final-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0 26px}.final-stat{background:#f5f5fb;border-radius:13px;padding:15px 8px;text-align:center}.final-stat strong{display:block;font-size:26px}.final-stat small{color:#69718a}.final-stat.pass strong{color:#087e43}.final-stat.fail strong{color:#bd3348}.final-list{display:grid;gap:9px}.final-person{display:flex;align-items:center;gap:12px;padding:14px;border-radius:12px;border:1px solid transparent}.final-person.passed{background:#eaf8f0;border-color:#bde8ce}.final-person.failed{background:#fff0f1;border-color:#f1c2c9}.final-person.pending{background:#f4f4f8;border-color:#e3e3eb}.final-rank{min-width:30px;font-weight:800;color:#5b6174}.final-info{flex:1;min-width:0}.final-info strong{display:block;overflow-wrap:anywhere}.final-info small{font-weight:700}.final-person.passed small,.final-person.passed .final-percent{color:#087e43}.final-person.failed small,.final-person.failed .final-percent{color:#bd3348}.final-person.pending small,.final-person.pending .final-percent{color:#69718a}.final-percent{font-weight:900;font-size:20px;white-space:nowrap}.final-empty{text-align:center;color:#69718a;padding:20px}.final-footer{margin-top:20px;color:#69718a;font-size:14px}@media(max-width:600px){.podium{gap:6px;padding:16px 7px 0}.podium-name{font-size:12px}.podium-medal{font-size:23px}.final-person{padding:11px;gap:8px}.final-percent{font-size:17px}}
+
+.sentence-line{font-size:clamp(18px,3vw,23px);font-weight:650;line-height:2.35;overflow-wrap:normal}.sentence-line .answer{width:clamp(180px,34vw,275px);margin:3px 4px;max-width:100%;font-size:18px}.given{font-size:17px;font-weight:500;line-height:1.6;padding-bottom:16px;border-bottom:1px solid #e0d8f3}.given .hint{display:block;font-size:12px;font-weight:800;letter-spacing:.04em}.print-only{display:none}.print-item{break-inside:avoid;page-break-inside:avoid;margin:0 0 15px;line-height:1.5}.print-result{margin-left:20px;padding-top:3px}.printing-bank #printSheet{display:block}
+@media print{ @page{size:A4;margin:15mm}body{background:white!important;color:black!important;font-family:Arial,sans-serif!important}.wrap{max-width:none;padding:0}.printing-bank .wrap>*:not(#printSheet){display:none!important}.printing-bank #printSheet{display:block!important;font-size:11pt}.printing-bank #printSheet h1{font-size:18pt}.printing-bank #printSheet p{font-size:10pt}.printing-bank .print-item{margin-bottom:13px}body:not(.printing-bank) .brand,body:not(.printing-bank) button,body:not(.printing-bank) #notice,body:not(.printing-bank) .actions,body:not(.printing-bank) .progress{display:none!important}body:not(.printing-bank) .card{box-shadow:none;border:0;padding:0}body:not(.printing-bank) .question{background:white;border:1px solid #ddd;color:black}body:not(.printing-bank) .answer{border:0;border-bottom:1px solid black;border-radius:0;background:white;color:black;min-width:180px}body:not(.printing-bank) .hidden{display:none!important}body:not(.printing-bank) .final-person{print-color-adjust:exact;-webkit-print-color-adjust:exact} }
+.reading-passage{background:#fff;border:1px solid #ddd5f1;border-radius:12px;padding:16px;font-size:16px;font-weight:400;line-height:1.65;margin-bottom:20px}.reading-passage p{margin:8px 0 0}.print-passage{break-inside:avoid;page-break-inside:avoid;margin:22px 0 12px}.print-passage h2{font-size:14pt;margin:0 0 8px}.print-passage p{line-height:1.5;margin:0 0 12px;font-size:10.5pt}.sentence-line .answer{width:clamp(195px,36vw,310px)}
+.reported-input{display:block;width:100%;min-height:85px;padding:12px 14px;border:2px solid #c7b9ee;border-radius:12px;font:inherit;font-size:17px;font-weight:500;line-height:1.5;resize:vertical;margin-top:14px;background:white;color:#202044}.reported-input:focus{outline:2px solid #7138e5;outline-offset:2px}@media print{.reported-input{border:0;border-bottom:1px solid black;min-height:55px}}
+</style>
+</head>
+<body><main class="wrap">
+<div class="brand">✦ ExamPrep <span>Studio</span></div>
+<section class="card" id="home"><span class="tag">Intermediate · Vocabulary</span><h1>Appearance — Vocabulary in Context</h1><p class="muted">Complete each sentence using a word from the vocabulary bank. Type your answer directly in the blank.</p><p class="muted">70 questions · 10 randomly selected · Pass mark 80%</p><button id="create" disabled>Loading question bank...</button><p class="muted">Students join through student.html. Start the session when everyone is ready.</p></section>
+<section class="card hidden" id="teacher"><span class="tag">Teacher live session</span><h1>Appearance — Vocabulary in Context</h1><p>Session code: <strong id="code"></strong></p><p>Student Board: <a href="../../student.html" target="_blank" rel="noopener">Open student.html</a></p><p id="count"></p><div class="actions"><button id="start">Start Quiz</button><button id="end" class="alt">End Session</button></div><h2>Live leaderboard</h2><table><thead><tr><th>Student</th><th>Score</th></tr></thead><tbody id="leader"></tbody></table></section>
+<section class="card hidden" id="finalLeaderboard"><div class="final-heading"><div class="cup" aria-hidden="true">🏆</div><h1>Final Leaderboard</h1><p>Intermediate · Appearance — Vocabulary in Context</p></div><div id="finalPodium" class="podium hidden"></div><div id="finalEmpty" class="final-empty hidden">No completed student results yet.</div><div class="final-stats"><div class="final-stat"><strong id="finalTotal">0</strong><small>Students</small></div><div class="final-stat pass"><strong id="finalPassed">0</strong><small>Passed</small></div><div class="final-stat fail"><strong id="finalFailed">0</strong><small>Failed</small></div></div><h2>All Student Results</h2><div id="finalList" class="final-list"></div><p class="final-footer">Green = passed (80% or higher). Red = failed (below 80%).</p></section>
+<section class="card hidden" id="join"><h1>Join through the Student Board</h1><p class="muted">Register once on student.html. You don't need to enter your name again.</p><a href="../../student.html">Return to Student Board</a></section>
+<section class="card hidden" id="waiting"><h1>You're in!</h1><p class="muted">Wait for your teacher to start the quiz.</p></section>
+<section class="card hidden" id="quiz"><span class="tag" id="counter"></span><h2>Complete the sentence</h2><p class="muted">Complete each sentence using a word from the vocabulary bank. Type your answer directly in the blank.</p><div class="progress"><div id="fill"></div></div><div class="question" id="prompt"></div><div class="actions"><button class="alt" id="prev">Previous</button><button id="next">Next</button></div></section>
+<section class="card hidden" id="result"><span class="tag">Your result</span><h1 id="score"></h1><p id="outcome"></p><button class="alt" id="toggleReview">Review answers</button><div class="hidden" id="review"></div></section>
+<section id="printSheet" class="print-only"></section><p id="notice" role="status" aria-live="polite"></p>
+</main>
+<script>
+"use strict";
+const URL_BASE="https://dfepopppcggzecdxexeh.supabase.co";
+const PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
+const QUIZ_TITLE="Appearance — Vocabulary in Context";
+const QUIZ_PATH="inter/quizzes/quiz-10.html";
+const BANK_FILE="quiz-10.bank.json";
+const QUESTION_COUNT=10,PASS_MARK=80;
+const TEACHER_KEY="eps2_teacher",PLAYER_KEY="eps2_player",PROGRESS_PREFIX="eps2_intermediate_quiz10_progress_";
+const $=id=>document.getElementById(id);
+const views=["home","teacher","finalLeaderboard","join","waiting","quiz","result"];
+const query=new URLSearchParams(location.search);
+let BANK=[],code="",teacherToken="",playerId="",selected=[],answers={},index=0,submitted=false,busy=false,polling=false,quizStarted=false,sessionClosed=false,bankLoading=null;
+function show(id){views.forEach(v=>$(v).classList.toggle("hidden",v!==id));}
+function notice(message){$("notice").textContent=message||"";}
+function readStorage(key){try{const s=sessionStorage.getItem(key);return s?JSON.parse(s):null;}catch{return null;}}
+function writeStorage(key,value){try{sessionStorage.setItem(key,JSON.stringify(value));}catch{}}
+function removeStorage(key){try{sessionStorage.removeItem(key);}catch{}}
+function progressKey(){return PROGRESS_PREFIX+code+"_"+playerId;}
+function normalize(value){return String(value??"").normalize("NFKC").toLowerCase().replace(/[’‘`]/g,"'").replace(/\b(has|have) not\b/g,"$1n't").replace(/[^\p{L}\p{N}'\s]/gu,"").replace(/\s+/g," ").trim();}
+function isCorrect(q,answer){return typeof answer==="string"&&q.acceptedAnswers.some(a=>normalize(a)===normalize(answer));}
+function validateBank(data){
+ const questions=Array.isArray(data)?data:data?.questions;
+ if(!Array.isArray(questions)||questions.length!==70)throw Error("Expected 70 questions.");
+ const ids=new Set();
+ for(const q of questions){
+  if(!q||typeof q.id!=="string"||q.type!=="vocabulary-gap"||typeof q.prompt!=="string"||typeof q.before!=="string"||typeof q.after!=="string"||typeof q.answer!=="string"||!Array.isArray(q.acceptedAnswers)||!q.acceptedAnswers.includes(q.answer)||ids.has(q.id))throw Error("Invalid question: "+(q?.id||"unknown"));
+  ids.add(q.id);
+ }
+ return questions;
+}
+async function loadBank(){
+ if(BANK.length===70)return true;
+ if(bankLoading)return bankLoading;
+ bankLoading=(async()=>{
+  try{const response=await fetch(BANK_FILE,{cache:"no-store"});if(!response.ok)throw Error("Question bank HTTP "+response.status);const data=await response.json();BANK=validateBank(data);$("create").disabled=false;$("create").textContent="Create Live Session";notice("");return true;}
+  catch(error){BANK=[];$("create").disabled=true;$("create").textContent="Question bank unavailable";notice("Question bank error: "+error.message);return false;}
+ })();
+ try{return await bankLoading;}finally{bankLoading=null;}
+}
+async function rpc(fn,data={}){
+ const response=await fetch(URL_BASE+"/rest/v1/rpc/"+fn,{method:"POST",headers:{apikey:PUBLIC_KEY,Authorization:"Bearer "+PUBLIC_KEY,"Content-Type":"application/json"},body:JSON.stringify(data)});
+ const raw=await response.text();let result;try{result=raw?JSON.parse(raw):null;}catch{result=raw;}
+ if(!response.ok)throw Error(result?.message||result?.hint||String(result)||"Supabase request failed");
+ return result;
+}
+async function run(fn){if(busy)return;busy=true;notice("");try{await fn();}catch(error){notice(error.message||String(error));}finally{busy=false;}}
+function shuffle(items){const result=[...items];for(let i=result.length-1;i>0;i--){const r=crypto.getRandomValues(new Uint32Array(1))[0],j=r%(i+1);[result[i],result[j]]=[result[j],result[i]];}return result;}
+function choose(){
+ if(BANK.length!==70)throw Error("Question bank is not ready.");
+ return shuffle(BANK).slice(0,QUESTION_COUNT);
+}
+function sessionCode(){const chars="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";return Array.from(crypto.getRandomValues(new Uint8Array(8)),v=>chars[v%chars.length]).join("");}
+function saveProgress(){if(!code||!playerId||!selected.length)return;writeStorage(progressKey(),{questionIds:selected.map(q=>q.id),answers,index,submitted});}
+function restoreProgress(){
+ const saved=readStorage(progressKey());if(!saved||!Array.isArray(saved.questionIds)||saved.questionIds.length!==QUESTION_COUNT)return false;
+ const questions=saved.questionIds.map(id=>BANK.find(q=>q.id===id));if(questions.some(q=>!q)||new Set(saved.questionIds).size!==QUESTION_COUNT)return false;
+ selected=questions;answers=saved.answers&&typeof saved.answers==="object"&&!Array.isArray(saved.answers)?saved.answers:{};
+ index=Number.isInteger(saved.index)?Math.max(0,Math.min(saved.index,QUESTION_COUNT-1)):0;submitted=saved.submitted===true;return true;
+}
+$("create").onclick=()=>run(async()=>{
+ if(BANK.length!==70)throw Error("Question bank is not loaded.");
+ const newToken=crypto.randomUUID(),newCode=sessionCode();
+ await rpc("eps2_create",{p_code:newCode,p_token:newToken});
+ await rpc("eps2_publish",{p_code:newCode,p_token:newToken,p_title:QUIZ_TITLE,p_path:QUIZ_PATH});
+ code=newCode;teacherToken=newToken;sessionClosed=false;writeStorage(TEACHER_KEY,{code,teacherToken});$("code").textContent=code;show("teacher");await poll(true);
+});
+$("start").onclick=()=>run(async()=>{await rpc("eps2_start",{p_code:code,p_token:teacherToken});await poll(true);});
+$("end").onclick=()=>run(async()=>{
+ if(!confirm("End this live session?"))return;
+ // Capture the authoritative student scores before ending the session.
+ const snapshot=await rpc("eps2_state",{p_code:code,p_token:teacherToken,p_player:null});
+ await rpc("eps2_end",{p_code:code,p_token:teacherToken});
+ sessionClosed=true;removeStorage(TEACHER_KEY);teacherToken="";code="";
+ renderFinalLeaderboard(Array.isArray(snapshot?.players)?snapshot.players:[]);
+ show("finalLeaderboard");notice("");
+});
+
+function renderFinalLeaderboard(players){
+ // Only the final teacher-facing presentation changes; score values come from eps2_state.
+ const ranked=players.map((p,i)=>({name:String(p.name||"Student"),score:p.completed&&Number.isFinite(Number(p.score))?Number(p.score):null,order:i}));
+ ranked.sort((a,b)=>(b.score??-1)-(a.score??-1)||a.order-b.order);
+ const finished=ranked.filter(p=>p.score!==null),passed=finished.filter(p=>p.score>=PASS_MARK).length;
+ $("finalTotal").textContent=String(ranked.length);
+ $("finalPassed").textContent=String(passed);
+ $("finalFailed").textContent=String(finished.length-passed);
+ const podium=$("finalPodium"),empty=$("finalEmpty"),list=$("finalList");
+ podium.replaceChildren();list.replaceChildren();
+ podium.classList.toggle("hidden",finished.length===0);
+ empty.classList.toggle("hidden",finished.length!==0);
+ // Display the first three finishers in podium order: second, first, third.
+ for(const [place,medal,cls] of [[1,"🥈","second"],[0,"🥇","first"],[2,"🥉","third"]]){
+  const p=finished[place];if(!p)continue;
+  const slot=document.createElement("div");slot.className="podium-place";
+  const m=document.createElement("div");m.className="podium-medal";m.textContent=medal;
+  const n=document.createElement("div");n.className="podium-name";n.textContent=p.name;
+  const sc=document.createElement("div");sc.className="podium-score";sc.textContent=p.score+"%";
+  const block=document.createElement("div");block.className="podium-block "+cls;block.textContent=String(place+1);
+  slot.append(m,n,sc,block);podium.append(slot);
+ }
+ ranked.forEach((p,i)=>{
+  const row=document.createElement("div");row.className="final-person "+(p.score===null?"pending":p.score>=PASS_MARK?"passed":"failed");
+  const rank=document.createElement("span");rank.className="final-rank";rank.textContent=String(i+1)+".";
+  const info=document.createElement("div");info.className="final-info";
+  const name=document.createElement("strong");name.textContent=p.name;
+  const status=document.createElement("small");status.textContent=p.score===null?"Not submitted":p.score>=PASS_MARK?"✓ Passed":"✕ Failed";
+  info.append(name,status);
+  const score=document.createElement("span");score.className="final-percent";score.textContent=p.score===null?"—":p.score+"%";
+  row.append(rank,info,score);list.append(row);
+ });
+}
+function render(){
+ const q=selected[index];if(!q){notice("Question unavailable. Please reload.");return;}
+ $("counter").textContent=`Question ${index+1} of ${selected.length}`;
+ $("fill").style.width=((index+1)/selected.length*100)+"%";
+ const prompt=$("prompt");prompt.replaceChildren();
+ const bankBox=document.createElement("div");bankBox.className="wordbank";
+ const bankTitle=document.createElement("div");bankTitle.className="banktitle";bankTitle.textContent="VOCABULARY BANK";bankBox.append(bankTitle);
+ const bankItems=document.createElement("div");bankItems.className="bankitems";
+ ["bald", "dyed", "elderly", "eyelashes", "fringe", "moustache", "overweight", "shape", "shoulder", "slim"].forEach(word=>{const chip=document.createElement("span");chip.className="bankchip";chip.textContent=word;bankItems.append(chip);});bankBox.append(bankItems);prompt.append(bankBox);
+ const sentence=document.createElement("div");sentence.className="sentence-line";
+ const before=document.createElement("span");before.textContent=q.before;
+ const input=document.createElement("input");input.type="text";input.className="answer";input.placeholder="Your answer";input.setAttribute("aria-label","Missing appearance word");input.value=answers[q.id]||"";
+ input.addEventListener("input",()=>{answers[q.id]=input.value;saveProgress();notice("");});
+ const after=document.createElement("span");after.textContent=q.after;
+ sentence.append(before,input,after);prompt.append(sentence);
+ $("prev").disabled=index===0;$("next").textContent=index===selected.length-1?"Submit Answers":"Next";
+}
+$("prev").onclick=()=>{if(submitted||!selected.length)return;if(index>0){index--;saveProgress();render();}};
+$("next").onclick=()=>run(async()=>{
+ if(submitted)return;const q=selected[index];if(!q)throw Error("Question unavailable.");
+ if(!String(answers[q.id]||"").trim())throw Error("Please complete the sentence before continuing.");
+ if(index<selected.length-1){index++;saveProgress();render();return;}
+ if(!confirm("Submit your 10 answers?"))return;
+ const correct=selected.filter(q=>isCorrect(q,answers[q.id])).length,score=correct*10;
+ await rpc("eps2_submit",{p_code:code,p_player:playerId,p_score:score});submitted=true;saveProgress();displayResult(score);
+});
+function displayResult(score){
+ quizStarted=false;show("result");$("score").textContent=`${score}% · ${score/10}/10 correct`;
+ $("outcome").textContent=score>=PASS_MARK?"Passed!":"Below 80% — your result was saved for extra support.";
+ const review=$("review");review.replaceChildren();review.classList.add("hidden");
+ selected.forEach(q=>{
+  const item=document.createElement("div");item.className="review";
+  const heading=document.createElement("strong");heading.textContent=q.prompt;
+  const response=document.createElement("p");response.textContent="Your answer: "+(answers[q.id]||"—");
+  const feedback=document.createElement("p"),correct=isCorrect(q,answers[q.id]);feedback.className=correct?"good":"bad";feedback.textContent=correct?"✓ Correct — "+q.answer:"Correct answer: "+q.answer;
+  item.append(heading,response,feedback);review.append(item);
+ });
+}
+$("toggleReview").onclick=()=>$("review").classList.toggle("hidden");
+async function poll(force=false){
+ if(!code||sessionClosed||polling||(!force&&busy))return;polling=true;
+ try{
+  const state=await rpc("eps2_state",{p_code:code,p_token:teacherToken||null,p_player:playerId||null});
+  if(teacherToken){
+   const players=Array.isArray(state.players)?state.players:[];
+   $("count").textContent=`${players.length} student(s) · ${state.status}`;
+   $("start").disabled=state.status!=="waiting";$("end").disabled=state.status==="completed";
+   const leader=$("leader");leader.replaceChildren();
+   players.forEach((player,i)=>{const row=document.createElement("tr"),name=document.createElement("td"),score=document.createElement("td");name.textContent=`${i+1}. ${player.name}`;score.textContent=player.completed?player.score+"%":"—";row.append(name,score);leader.append(row);});
+  }else if(playerId){
+   if(state.status==="active"&&!submitted){
+    if(BANK.length!==70){const loaded=await loadBank();if(!loaded)return;}
+    if(!selected.length){if(!restoreProgress()){selected=choose();index=0;answers={};saveProgress();}}
+    if(!quizStarted){quizStarted=true;show("quiz");render();}
+   }
+   if(state.status==="completed"&&!submitted){sessionClosed=true;notice("Teacher ended the session.");if(!quizStarted)show("waiting");}
+  }
+ }catch(error){notice(error.message||String(error));}finally{polling=false;}
+}
+function restoreSession(){
+ if(query.has("join")){
+  const saved=readStorage(PLAYER_KEY),requestedCode=query.get("join");
+  if(saved&&saved.code===requestedCode&&saved.playerId){code=saved.code;playerId=saved.playerId;show("waiting");}
+  else{show("join");notice("Please register through the Student Board first.");}
+ }else{
+  const saved=readStorage(TEACHER_KEY);
+  if(saved&&saved.code&&saved.teacherToken){code=saved.code;teacherToken=saved.teacherToken;$("code").textContent=code;show("teacher");}
+ }
+}
+async function initialize(){
+ restoreSession();const loaded=await loadBank();if(!loaded)return;
+ if(playerId){restoreProgress();if(submitted&&selected.length===QUESTION_COUNT){displayResult(selected.filter(q=>isCorrect(q,answers[q.id])).length*10);return;}}
+ if(code&&!submitted)await poll(true);
+}
+function printWorksheet(withAnswers){
+ if(BANK.length!==70){notice("Question bank is not loaded.");return;}
+ const sheet=$("printSheet");sheet.replaceChildren();
+ const heading=document.createElement("h1");heading.textContent=withAnswers?"Quiz 10 — Appearance | Answer Key":"Quiz 10 — Appearance | Worksheet";sheet.append(heading);
+ const subtitle=document.createElement("p");subtitle.textContent=withAnswers?"Teacher copy — all 70 answers":"Name: _______________________   Date: ____________   Complete the sentences using the word bank.";sheet.append(subtitle);
+ const words=document.createElement("p");words.textContent="Word bank: bald · dyed · elderly · eyelashes · fringe · moustache · overweight · shape · shoulder · slim";sheet.append(words);
+ BANK.forEach((q,i)=>{
+  const item=document.createElement("div");item.className="print-item";
+  const line=document.createElement("div");line.textContent=(i+1)+". "+q.before+(withAnswers?q.answer:"____________________________")+q.after;item.append(line);
+  sheet.append(item);
+ });
+ document.body.classList.add("printing-bank");window.print();
+}
+window.addEventListener("afterprint",()=>document.body.classList.remove("printing-bank"));
+
+
+initialize();setInterval(()=>{if(code&&!submitted&&!sessionClosed)poll();},3000);
+</script></body></html>
