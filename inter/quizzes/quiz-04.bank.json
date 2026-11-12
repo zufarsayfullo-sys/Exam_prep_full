@@ -1,0 +1,34 @@
+[
+  {
+    "id": "quiz-01",
+    "title": "Direct and Indirect Questions",
+    "category": "Grammar",
+    "path": "quiz-01.html",
+    "bank": "quiz-01.bank.json",
+    "level": "intermediate"
+  },
+  {
+    "id": "quiz-02",
+    "title": "First Conditional: If / Unless / Will / Won’t",
+    "category": "Grammar",
+    "path": "quiz-02.html",
+    "bank": "quiz-02.bank.json",
+    "level": "intermediate"
+  },
+  {
+    "id": "quiz-03",
+    "title": "Passive Voice — Sentence Transformations",
+    "category": "Grammar",
+    "path": "quiz-03.html",
+    "bank": "quiz-03.bank.json",
+    "level": "intermediate"
+  },
+  {
+    "id": "quiz-04",
+    "title": "Comparisons — Sentence Transformations",
+    "category": "Grammar",
+    "path": "quiz-04.html",
+    "bank": "quiz-04.bank.json",
+    "level": "intermediate"
+  }
+]
