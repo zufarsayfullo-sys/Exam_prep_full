@@ -46,5 +46,45 @@
     "path": "quiz-06.html",
     "bank": "quiz-06.bank.json",
     "level": "intermediate"
+  },
+  {
+    "id": "quiz-07",
+    "title": "Reported Speech — Questions",
+    "category": "Grammar",
+    "path": "quiz-07.html",
+    "bank": "quiz-07.bank.json",
+    "level": "intermediate"
+  },
+  {
+    "id": "quiz-08",
+    "title": "Jobs and Employment — Vocabulary in Context",
+    "category": "Vocabulary",
+    "path": "quiz-08.html",
+    "bank": "quiz-08.bank.json",
+    "level": "intermediate"
+  },
+  {
+    "id": "quiz-09",
+    "title": "Prefixes — in-, over-, mis-, re-",
+    "category": "Vocabulary",
+    "path": "quiz-09.html",
+    "bank": "quiz-09.bank.json",
+    "level": "intermediate"
+  },
+  {
+    "id": "quiz-10",
+    "title": "Appearance — Vocabulary in Context",
+    "category": "Vocabulary",
+    "path": "quiz-10.html",
+    "bank": "quiz-10.bank.json",
+    "level": "intermediate"
+  },
+  {
+    "id": "quiz-11",
+    "title": "Have or Take — Collocations",
+    "category": "Vocabulary",
+    "path": "quiz-11.html",
+    "bank": "quiz-11.bank.json",
+    "level": "intermediate"
   }
 ]
