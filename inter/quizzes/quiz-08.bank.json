@@ -1,0 +1,867 @@
+{
+  "title": "Jobs and Employment — Vocabulary in Context",
+  "level": "intermediate",
+  "category": "Vocabulary",
+  "instructions": "Complete each sentence using the correct word or phrase from the word bank.",
+  "wordBank": [
+    "career prospects",
+    "job satisfaction",
+    "occupation",
+    "promotion",
+    "qualification",
+    "(make) redundant",
+    "rent-free accommodation",
+    "salary",
+    "sick/holiday pay",
+    "unemployed",
+    "working conditions",
+    "working hours"
+  ],
+  "questions": [
+    {
+      "id": "int-08-001",
+      "type": "vocabulary-gap",
+      "prompt": "Completing an internship can improve your ___ after graduation.",
+      "before": "Completing an internship can improve your ",
+      "after": " after graduation.",
+      "answer": "career prospects",
+      "acceptedAnswers": [
+        "career prospects"
+      ],
+      "word": "career prospects"
+    },
+    {
+      "id": "int-08-002",
+      "type": "vocabulary-gap",
+      "prompt": "Feeling appreciated at work can increase ___.",
+      "before": "Feeling appreciated at work can increase ",
+      "after": ".",
+      "answer": "job satisfaction",
+      "acceptedAnswers": [
+        "job satisfaction"
+      ],
+      "word": "job satisfaction"
+    },
+    {
+      "id": "int-08-003",
+      "type": "vocabulary-gap",
+      "prompt": "The application form asks you to state your current ___.",
+      "before": "The application form asks you to state your current ",
+      "after": ".",
+      "answer": "occupation",
+      "acceptedAnswers": [
+        "occupation"
+      ],
+      "word": "occupation"
+    },
+    {
+      "id": "int-08-004",
+      "type": "vocabulary-gap",
+      "prompt": "After three years of excellent performance, she received a ___.",
+      "before": "After three years of excellent performance, she received a ",
+      "after": ".",
+      "answer": "promotion",
+      "acceptedAnswers": [
+        "promotion"
+      ],
+      "word": "promotion"
+    },
+    {
+      "id": "int-08-005",
+      "type": "vocabulary-gap",
+      "prompt": "This position requires a professional ___ in accounting.",
+      "before": "This position requires a professional ",
+      "after": " in accounting.",
+      "answer": "qualification",
+      "acceptedAnswers": [
+        "qualification"
+      ],
+      "word": "qualification"
+    },
+    {
+      "id": "int-08-006",
+      "type": "vocabulary-gap",
+      "prompt": "When the factory closed, fifty employees were ___.",
+      "before": "When the factory closed, fifty employees were ",
+      "after": ".",
+      "answer": "made redundant",
+      "acceptedAnswers": [
+        "made redundant",
+        "redundant"
+      ],
+      "word": "made redundant"
+    },
+    {
+      "id": "int-08-007",
+      "type": "vocabulary-gap",
+      "prompt": "The remote hotel offers its staff ___ as part of the contract.",
+      "before": "The remote hotel offers its staff ",
+      "after": " as part of the contract.",
+      "answer": "rent-free accommodation",
+      "acceptedAnswers": [
+        "rent-free accommodation"
+      ],
+      "word": "rent-free accommodation"
+    },
+    {
+      "id": "int-08-008",
+      "type": "vocabulary-gap",
+      "prompt": "Her monthly ___ is paid directly into her bank account.",
+      "before": "Her monthly ",
+      "after": " is paid directly into her bank account.",
+      "answer": "salary",
+      "acceptedAnswers": [
+        "salary"
+      ],
+      "word": "salary"
+    },
+    {
+      "id": "int-08-009",
+      "type": "vocabulary-gap",
+      "prompt": "The contract includes ___ when employees are too ill to work.",
+      "before": "The contract includes ",
+      "after": " when employees are too ill to work.",
+      "answer": "sick pay",
+      "acceptedAnswers": [
+        "sick pay"
+      ],
+      "word": "sick pay"
+    },
+    {
+      "id": "int-08-010",
+      "type": "vocabulary-gap",
+      "prompt": "Workers receive ___ while taking their annual leave.",
+      "before": "Workers receive ",
+      "after": " while taking their annual leave.",
+      "answer": "holiday pay",
+      "acceptedAnswers": [
+        "holiday pay"
+      ],
+      "word": "holiday pay"
+    },
+    {
+      "id": "int-08-011",
+      "type": "vocabulary-gap",
+      "prompt": "After the shop closed, he was ___ for several months.",
+      "before": "After the shop closed, he was ",
+      "after": " for several months.",
+      "answer": "unemployed",
+      "acceptedAnswers": [
+        "unemployed"
+      ],
+      "word": "unemployed"
+    },
+    {
+      "id": "int-08-012",
+      "type": "vocabulary-gap",
+      "prompt": "The union demanded safer ___ in the factory.",
+      "before": "The union demanded safer ",
+      "after": " in the factory.",
+      "answer": "working conditions",
+      "acceptedAnswers": [
+        "working conditions"
+      ],
+      "word": "working conditions"
+    },
+    {
+      "id": "int-08-013",
+      "type": "vocabulary-gap",
+      "prompt": "Her ___ are from nine in the morning until five in the afternoon.",
+      "before": "Her ",
+      "after": " are from nine in the morning until five in the afternoon.",
+      "answer": "working hours",
+      "acceptedAnswers": [
+        "working hours"
+      ],
+      "word": "working hours"
+    },
+    {
+      "id": "int-08-014",
+      "type": "vocabulary-gap",
+      "prompt": "Many graduates move abroad because their ___ are better there.",
+      "before": "Many graduates move abroad because their ",
+      "after": " are better there.",
+      "answer": "career prospects",
+      "acceptedAnswers": [
+        "career prospects"
+      ],
+      "word": "career prospects"
+    },
+    {
+      "id": "int-08-015",
+      "type": "vocabulary-gap",
+      "prompt": "A high salary does not always guarantee ___.",
+      "before": "A high salary does not always guarantee ",
+      "after": ".",
+      "answer": "job satisfaction",
+      "acceptedAnswers": [
+        "job satisfaction"
+      ],
+      "word": "job satisfaction"
+    },
+    {
+      "id": "int-08-016",
+      "type": "vocabulary-gap",
+      "prompt": "When asked about his ___, he said he was an electrician.",
+      "before": "When asked about his ",
+      "after": ", he said he was an electrician.",
+      "answer": "occupation",
+      "acceptedAnswers": [
+        "occupation"
+      ],
+      "word": "occupation"
+    },
+    {
+      "id": "int-08-017",
+      "type": "vocabulary-gap",
+      "prompt": "He hopes to earn a ___ to team leader next year.",
+      "before": "He hopes to earn a ",
+      "after": " to team leader next year.",
+      "answer": "promotion",
+      "acceptedAnswers": [
+        "promotion"
+      ],
+      "word": "promotion"
+    },
+    {
+      "id": "int-08-018",
+      "type": "vocabulary-gap",
+      "prompt": "She gained a teaching ___ after completing the course.",
+      "before": "She gained a teaching ",
+      "after": " after completing the course.",
+      "answer": "qualification",
+      "acceptedAnswers": [
+        "qualification"
+      ],
+      "word": "qualification"
+    },
+    {
+      "id": "int-08-019",
+      "type": "vocabulary-gap",
+      "prompt": "He was ___ after his department was shut down.",
+      "before": "He was ",
+      "after": " after his department was shut down.",
+      "answer": "made redundant",
+      "acceptedAnswers": [
+        "made redundant",
+        "redundant"
+      ],
+      "word": "made redundant"
+    },
+    {
+      "id": "int-08-020",
+      "type": "vocabulary-gap",
+      "prompt": "Because the employer provides ___, she spends very little on housing.",
+      "before": "Because the employer provides ",
+      "after": ", she spends very little on housing.",
+      "answer": "rent-free accommodation",
+      "acceptedAnswers": [
+        "rent-free accommodation"
+      ],
+      "word": "rent-free accommodation"
+    },
+    {
+      "id": "int-08-021",
+      "type": "vocabulary-gap",
+      "prompt": "He negotiated a higher ___ before signing the contract.",
+      "before": "He negotiated a higher ",
+      "after": " before signing the contract.",
+      "answer": "salary",
+      "acceptedAnswers": [
+        "salary"
+      ],
+      "word": "salary"
+    },
+    {
+      "id": "int-08-022",
+      "type": "vocabulary-gap",
+      "prompt": "Without ___, some workers cannot afford to stay home when ill.",
+      "before": "Without ",
+      "after": ", some workers cannot afford to stay home when ill.",
+      "answer": "sick pay",
+      "acceptedAnswers": [
+        "sick pay"
+      ],
+      "word": "sick pay"
+    },
+    {
+      "id": "int-08-023",
+      "type": "vocabulary-gap",
+      "prompt": "She asked whether the temporary contract included ___.",
+      "before": "She asked whether the temporary contract included ",
+      "after": ".",
+      "answer": "holiday pay",
+      "acceptedAnswers": [
+        "holiday pay"
+      ],
+      "word": "holiday pay"
+    },
+    {
+      "id": "int-08-024",
+      "type": "vocabulary-gap",
+      "prompt": "She has been ___ since losing her position in June.",
+      "before": "She has been ",
+      "after": " since losing her position in June.",
+      "answer": "unemployed",
+      "acceptedAnswers": [
+        "unemployed"
+      ],
+      "word": "unemployed"
+    },
+    {
+      "id": "int-08-025",
+      "type": "vocabulary-gap",
+      "prompt": "Poor lighting and excessive noise made the ___ unpleasant.",
+      "before": "Poor lighting and excessive noise made the ",
+      "after": " unpleasant.",
+      "answer": "working conditions",
+      "acceptedAnswers": [
+        "working conditions"
+      ],
+      "word": "working conditions"
+    },
+    {
+      "id": "int-08-026",
+      "type": "vocabulary-gap",
+      "prompt": "The contract clearly states the employee’s ___.",
+      "before": "The contract clearly states the employee’s ",
+      "after": ".",
+      "answer": "working hours",
+      "acceptedAnswers": [
+        "working hours"
+      ],
+      "word": "working hours"
+    },
+    {
+      "id": "int-08-027",
+      "type": "vocabulary-gap",
+      "prompt": "A company with clear promotion pathways offers excellent ___.",
+      "before": "A company with clear promotion pathways offers excellent ",
+      "after": ".",
+      "answer": "career prospects",
+      "acceptedAnswers": [
+        "career prospects"
+      ],
+      "word": "career prospects"
+    },
+    {
+      "id": "int-08-028",
+      "type": "vocabulary-gap",
+      "prompt": "The survey asked employees to rate their level of ___.",
+      "before": "The survey asked employees to rate their level of ",
+      "after": ".",
+      "answer": "job satisfaction",
+      "acceptedAnswers": [
+        "job satisfaction"
+      ],
+      "word": "job satisfaction"
+    },
+    {
+      "id": "int-08-029",
+      "type": "vocabulary-gap",
+      "prompt": "Teaching is a demanding but rewarding ___.",
+      "before": "Teaching is a demanding but rewarding ",
+      "after": ".",
+      "answer": "occupation",
+      "acceptedAnswers": [
+        "occupation"
+      ],
+      "word": "occupation"
+    },
+    {
+      "id": "int-08-030",
+      "type": "vocabulary-gap",
+      "prompt": "Her recent ___ came with greater responsibility.",
+      "before": "Her recent ",
+      "after": " came with greater responsibility.",
+      "answer": "promotion",
+      "acceptedAnswers": [
+        "promotion"
+      ],
+      "word": "promotion"
+    },
+    {
+      "id": "int-08-031",
+      "type": "vocabulary-gap",
+      "prompt": "A relevant ___ may help you secure an interview.",
+      "before": "A relevant ",
+      "after": " may help you secure an interview.",
+      "answer": "qualification",
+      "acceptedAnswers": [
+        "qualification"
+      ],
+      "word": "qualification"
+    },
+    {
+      "id": "int-08-032",
+      "type": "vocabulary-gap",
+      "prompt": "Several workers were ___ during the company restructuring.",
+      "before": "Several workers were ",
+      "after": " during the company restructuring.",
+      "answer": "made redundant",
+      "acceptedAnswers": [
+        "made redundant",
+        "redundant"
+      ],
+      "word": "made redundant"
+    },
+    {
+      "id": "int-08-033",
+      "type": "vocabulary-gap",
+      "prompt": "The job includes meals and ___ for seasonal workers.",
+      "before": "The job includes meals and ",
+      "after": " for seasonal workers.",
+      "answer": "rent-free accommodation",
+      "acceptedAnswers": [
+        "rent-free accommodation"
+      ],
+      "word": "rent-free accommodation"
+    },
+    {
+      "id": "int-08-034",
+      "type": "vocabulary-gap",
+      "prompt": "The advertised annual ___ is competitive for the industry.",
+      "before": "The advertised annual ",
+      "after": " is competitive for the industry.",
+      "answer": "salary",
+      "acceptedAnswers": [
+        "salary"
+      ],
+      "word": "salary"
+    },
+    {
+      "id": "int-08-035",
+      "type": "vocabulary-gap",
+      "prompt": "She checked whether the new job offered ___.",
+      "before": "She checked whether the new job offered ",
+      "after": ".",
+      "answer": "sick pay",
+      "acceptedAnswers": [
+        "sick pay"
+      ],
+      "word": "sick pay"
+    },
+    {
+      "id": "int-08-036",
+      "type": "vocabulary-gap",
+      "prompt": "The benefits package offers pension contributions and ___.",
+      "before": "The benefits package offers pension contributions and ",
+      "after": ".",
+      "answer": "holiday pay",
+      "acceptedAnswers": [
+        "holiday pay"
+      ],
+      "word": "holiday pay"
+    },
+    {
+      "id": "int-08-037",
+      "type": "vocabulary-gap",
+      "prompt": "The government introduced training programmes for ___ adults.",
+      "before": "The government introduced training programmes for ",
+      "after": " adults.",
+      "answer": "unemployed",
+      "acceptedAnswers": [
+        "unemployed"
+      ],
+      "word": "unemployed"
+    },
+    {
+      "id": "int-08-038",
+      "type": "vocabulary-gap",
+      "prompt": "The inspection focused on health, safety and ___.",
+      "before": "The inspection focused on health, safety and ",
+      "after": ".",
+      "answer": "working conditions",
+      "acceptedAnswers": [
+        "working conditions"
+      ],
+      "word": "working conditions"
+    },
+    {
+      "id": "int-08-039",
+      "type": "vocabulary-gap",
+      "prompt": "He prefers flexible ___ so he can collect his children from school.",
+      "before": "He prefers flexible ",
+      "after": " so he can collect his children from school.",
+      "answer": "working hours",
+      "acceptedAnswers": [
+        "working hours"
+      ],
+      "word": "working hours"
+    },
+    {
+      "id": "int-08-040",
+      "type": "vocabulary-gap",
+      "prompt": "She considered the long-term ___ before accepting the position.",
+      "before": "She considered the long-term ",
+      "after": " before accepting the position.",
+      "answer": "career prospects",
+      "acceptedAnswers": [
+        "career prospects"
+      ],
+      "word": "career prospects"
+    },
+    {
+      "id": "int-08-041",
+      "type": "vocabulary-gap",
+      "prompt": "Flexible schedules may contribute to greater ___.",
+      "before": "Flexible schedules may contribute to greater ",
+      "after": ".",
+      "answer": "job satisfaction",
+      "acceptedAnswers": [
+        "job satisfaction"
+      ],
+      "word": "job satisfaction"
+    },
+    {
+      "id": "int-08-042",
+      "type": "vocabulary-gap",
+      "prompt": "The census collects information about each person’s ___.",
+      "before": "The census collects information about each person’s ",
+      "after": ".",
+      "answer": "occupation",
+      "acceptedAnswers": [
+        "occupation"
+      ],
+      "word": "occupation"
+    },
+    {
+      "id": "int-08-043",
+      "type": "vocabulary-gap",
+      "prompt": "The manager congratulated him on his ___.",
+      "before": "The manager congratulated him on his ",
+      "after": ".",
+      "answer": "promotion",
+      "acceptedAnswers": [
+        "promotion"
+      ],
+      "word": "promotion"
+    },
+    {
+      "id": "int-08-044",
+      "type": "vocabulary-gap",
+      "prompt": "He does not yet have the necessary ___ for this role.",
+      "before": "He does not yet have the necessary ",
+      "after": " for this role.",
+      "answer": "qualification",
+      "acceptedAnswers": [
+        "qualification"
+      ],
+      "word": "qualification"
+    },
+    {
+      "id": "int-08-045",
+      "type": "vocabulary-gap",
+      "prompt": "After the merger, some staff members were ___.",
+      "before": "After the merger, some staff members were ",
+      "after": ".",
+      "answer": "made redundant",
+      "acceptedAnswers": [
+        "made redundant",
+        "redundant"
+      ],
+      "word": "made redundant"
+    },
+    {
+      "id": "int-08-046",
+      "type": "vocabulary-gap",
+      "prompt": "They accepted the position partly because it came with ___.",
+      "before": "They accepted the position partly because it came with ",
+      "after": ".",
+      "answer": "rent-free accommodation",
+      "acceptedAnswers": [
+        "rent-free accommodation"
+      ],
+      "word": "rent-free accommodation"
+    },
+    {
+      "id": "int-08-047",
+      "type": "vocabulary-gap",
+      "prompt": "She asked whether the position offered a fixed ___.",
+      "before": "She asked whether the position offered a fixed ",
+      "after": ".",
+      "answer": "salary",
+      "acceptedAnswers": [
+        "salary"
+      ],
+      "word": "salary"
+    },
+    {
+      "id": "int-08-048",
+      "type": "vocabulary-gap",
+      "prompt": "The company provides two weeks of ___ each year.",
+      "before": "The company provides two weeks of ",
+      "after": " each year.",
+      "answer": "sick pay",
+      "acceptedAnswers": [
+        "sick pay"
+      ],
+      "word": "sick pay"
+    },
+    {
+      "id": "int-08-049",
+      "type": "vocabulary-gap",
+      "prompt": "He was surprised that the job did not provide any ___.",
+      "before": "He was surprised that the job did not provide any ",
+      "after": ".",
+      "answer": "holiday pay",
+      "acceptedAnswers": [
+        "holiday pay"
+      ],
+      "word": "holiday pay"
+    },
+    {
+      "id": "int-08-050",
+      "type": "vocabulary-gap",
+      "prompt": "He applied for dozens of jobs while he was ___.",
+      "before": "He applied for dozens of jobs while he was ",
+      "after": ".",
+      "answer": "unemployed",
+      "acceptedAnswers": [
+        "unemployed"
+      ],
+      "word": "unemployed"
+    },
+    {
+      "id": "int-08-051",
+      "type": "vocabulary-gap",
+      "prompt": "Employees complained about their ___ in the warehouse.",
+      "before": "Employees complained about their ",
+      "after": " in the warehouse.",
+      "answer": "working conditions",
+      "acceptedAnswers": [
+        "working conditions"
+      ],
+      "word": "working conditions"
+    },
+    {
+      "id": "int-08-052",
+      "type": "vocabulary-gap",
+      "prompt": "The company reduced ___ during the quiet season.",
+      "before": "The company reduced ",
+      "after": " during the quiet season.",
+      "answer": "working hours",
+      "acceptedAnswers": [
+        "working hours"
+      ],
+      "word": "working hours"
+    },
+    {
+      "id": "int-08-053",
+      "type": "vocabulary-gap",
+      "prompt": "Without further training, his ___ in that industry were limited.",
+      "before": "Without further training, his ",
+      "after": " in that industry were limited.",
+      "answer": "career prospects",
+      "acceptedAnswers": [
+        "career prospects"
+      ],
+      "word": "career prospects"
+    },
+    {
+      "id": "int-08-054",
+      "type": "vocabulary-gap",
+      "prompt": "She left her well-paid position because her ___ was low.",
+      "before": "She left her well-paid position because her ",
+      "after": " was low.",
+      "answer": "job satisfaction",
+      "acceptedAnswers": [
+        "job satisfaction"
+      ],
+      "word": "job satisfaction"
+    },
+    {
+      "id": "int-08-055",
+      "type": "vocabulary-gap",
+      "prompt": "Her father’s ___ involves repairing electrical equipment.",
+      "before": "Her father’s ",
+      "after": " involves repairing electrical equipment.",
+      "answer": "occupation",
+      "acceptedAnswers": [
+        "occupation"
+      ],
+      "word": "occupation"
+    },
+    {
+      "id": "int-08-056",
+      "type": "vocabulary-gap",
+      "prompt": "Staff who meet their targets may be considered for a ___.",
+      "before": "Staff who meet their targets may be considered for a ",
+      "after": ".",
+      "answer": "promotion",
+      "acceptedAnswers": [
+        "promotion"
+      ],
+      "word": "promotion"
+    },
+    {
+      "id": "int-08-057",
+      "type": "vocabulary-gap",
+      "prompt": "The employer asked to see proof of her ___.",
+      "before": "The employer asked to see proof of her ",
+      "after": ".",
+      "answer": "qualification",
+      "acceptedAnswers": [
+        "qualification"
+      ],
+      "word": "qualification"
+    },
+    {
+      "id": "int-08-058",
+      "type": "vocabulary-gap",
+      "prompt": "She had been ___ and began searching for a new job.",
+      "before": "She had been ",
+      "after": " and began searching for a new job.",
+      "answer": "made redundant",
+      "acceptedAnswers": [
+        "made redundant",
+        "redundant"
+      ],
+      "word": "made redundant"
+    },
+    {
+      "id": "int-08-059",
+      "type": "vocabulary-gap",
+      "prompt": "Employees living on site receive ___ throughout the summer.",
+      "before": "Employees living on site receive ",
+      "after": " throughout the summer.",
+      "answer": "rent-free accommodation",
+      "acceptedAnswers": [
+        "rent-free accommodation"
+      ],
+      "word": "rent-free accommodation"
+    },
+    {
+      "id": "int-08-060",
+      "type": "vocabulary-gap",
+      "prompt": "His ___ increased after he became a supervisor.",
+      "before": "His ",
+      "after": " increased after he became a supervisor.",
+      "answer": "salary",
+      "acceptedAnswers": [
+        "salary"
+      ],
+      "word": "salary"
+    },
+    {
+      "id": "int-08-061",
+      "type": "vocabulary-gap",
+      "prompt": "Employees should read the policy on ___ before accepting the job.",
+      "before": "Employees should read the policy on ",
+      "after": " before accepting the job.",
+      "answer": "sick pay",
+      "acceptedAnswers": [
+        "sick pay"
+      ],
+      "word": "sick pay"
+    },
+    {
+      "id": "int-08-062",
+      "type": "vocabulary-gap",
+      "prompt": "Before booking a trip, she checked her entitlement to ___.",
+      "before": "Before booking a trip, she checked her entitlement to ",
+      "after": ".",
+      "answer": "holiday pay",
+      "acceptedAnswers": [
+        "holiday pay"
+      ],
+      "word": "holiday pay"
+    },
+    {
+      "id": "int-08-063",
+      "type": "vocabulary-gap",
+      "prompt": "Many young people were ___ during the economic downturn.",
+      "before": "Many young people were ",
+      "after": " during the economic downturn.",
+      "answer": "unemployed",
+      "acceptedAnswers": [
+        "unemployed"
+      ],
+      "word": "unemployed"
+    },
+    {
+      "id": "int-08-064",
+      "type": "vocabulary-gap",
+      "prompt": "The company invested in equipment to improve ___.",
+      "before": "The company invested in equipment to improve ",
+      "after": ".",
+      "answer": "working conditions",
+      "acceptedAnswers": [
+        "working conditions"
+      ],
+      "word": "working conditions"
+    },
+    {
+      "id": "int-08-065",
+      "type": "vocabulary-gap",
+      "prompt": "Long ___ left her with little time for her family.",
+      "before": "Long ",
+      "after": " left her with little time for her family.",
+      "answer": "working hours",
+      "acceptedAnswers": [
+        "working hours"
+      ],
+      "word": "working hours"
+    },
+    {
+      "id": "int-08-066",
+      "type": "vocabulary-gap",
+      "prompt": "The careers adviser explained how qualifications could improve students’ ___.",
+      "before": "The careers adviser explained how qualifications could improve students’ ",
+      "after": ".",
+      "answer": "career prospects",
+      "acceptedAnswers": [
+        "career prospects"
+      ],
+      "word": "career prospects"
+    },
+    {
+      "id": "int-08-067",
+      "type": "vocabulary-gap",
+      "prompt": "Supportive managers can have a positive effect on ___.",
+      "before": "Supportive managers can have a positive effect on ",
+      "after": ".",
+      "answer": "job satisfaction",
+      "acceptedAnswers": [
+        "job satisfaction"
+      ],
+      "word": "job satisfaction"
+    },
+    {
+      "id": "int-08-068",
+      "type": "vocabulary-gap",
+      "prompt": "Please write your name, age and ___ in the spaces provided.",
+      "before": "Please write your name, age and ",
+      "after": " in the spaces provided.",
+      "answer": "occupation",
+      "acceptedAnswers": [
+        "occupation"
+      ],
+      "word": "occupation"
+    },
+    {
+      "id": "int-08-069",
+      "type": "vocabulary-gap",
+      "prompt": "She celebrated her ___ with her colleagues after work.",
+      "before": "She celebrated her ",
+      "after": " with her colleagues after work.",
+      "answer": "promotion",
+      "acceptedAnswers": [
+        "promotion"
+      ],
+      "word": "promotion"
+    },
+    {
+      "id": "int-08-070",
+      "type": "vocabulary-gap",
+      "prompt": "An additional ___ could make your application stronger.",
+      "before": "An additional ",
+      "after": " could make your application stronger.",
+      "answer": "qualification",
+      "acceptedAnswers": [
+        "qualification"
+      ],
+      "word": "qualification"
+    }
+  ]
+}
