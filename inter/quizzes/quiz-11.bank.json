@@ -1,0 +1,708 @@
+{
+  "title": "Have or Take — Collocations",
+  "level": "intermediate",
+  "category": "Vocabulary",
+  "instructions": "Choose have or take to complete each sentence.",
+  "questions": [
+    {
+      "id": "int-11-001",
+      "type": "multiple-choice",
+      "prompt": "You should ___ advantage of the free training course.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-002",
+      "type": "multiple-choice",
+      "prompt": "The company decided to ___ advantage of the new technology.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-003",
+      "type": "multiple-choice",
+      "prompt": "We must ___ advantage of this opportunity while it lasts.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-004",
+      "type": "multiple-choice",
+      "prompt": "She wants to ___ advantage of the early registration discount.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-005",
+      "type": "multiple-choice",
+      "prompt": "Could I ___ a word with you after the meeting?",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-006",
+      "type": "multiple-choice",
+      "prompt": "I need to ___ a word with my supervisor about my schedule.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-007",
+      "type": "multiple-choice",
+      "prompt": "May I ___ a word with the manager in private?",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-008",
+      "type": "multiple-choice",
+      "prompt": "Before you leave, can we ___ a word about tomorrow?",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-009",
+      "type": "multiple-choice",
+      "prompt": "I ___ a feeling that our team will win tonight.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-010",
+      "type": "multiple-choice",
+      "prompt": "She seems to ___ a feeling that something is wrong.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-011",
+      "type": "multiple-choice",
+      "prompt": "Do you ___ a feeling that we have met before?",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-012",
+      "type": "multiple-choice",
+      "prompt": "I ___ a feeling that the weather is about to change.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-013",
+      "type": "multiple-choice",
+      "prompt": "I do not ___ a clue where my keys are.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-014",
+      "type": "multiple-choice",
+      "prompt": "Does anyone ___ a clue how this machine works?",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-015",
+      "type": "multiple-choice",
+      "prompt": "I wish I could ___ a clue what he means.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-016",
+      "type": "multiple-choice",
+      "prompt": "They do not ___ a clue why the train is late.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-017",
+      "type": "multiple-choice",
+      "prompt": "You can ___ my word for it: this book is worth reading.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-018",
+      "type": "multiple-choice",
+      "prompt": "Please ___ my word for it; the restaurant is excellent.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-019",
+      "type": "multiple-choice",
+      "prompt": "If you do not believe me, ___ my word for it this time.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-020",
+      "type": "multiple-choice",
+      "prompt": "You should ___ my word for it that the route is safe.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-021",
+      "type": "multiple-choice",
+      "prompt": "The children ___ turns reading aloud in class.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-022",
+      "type": "multiple-choice",
+      "prompt": "We always ___ turns washing the dishes.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-023",
+      "type": "multiple-choice",
+      "prompt": "The two presenters will ___ turns answering questions.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-024",
+      "type": "multiple-choice",
+      "prompt": "Let us ___ turns driving on the long journey.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-025",
+      "type": "multiple-choice",
+      "prompt": "I need to ___ care of my younger sister tonight.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-026",
+      "type": "multiple-choice",
+      "prompt": "Who will ___ care of the plants while we are away?",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-027",
+      "type": "multiple-choice",
+      "prompt": "He promised to ___ care of the arrangements.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-028",
+      "type": "multiple-choice",
+      "prompt": "Please ___ care of your belongings on the train.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-029",
+      "type": "multiple-choice",
+      "prompt": "Do not ___ your friends for granted.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-030",
+      "type": "multiple-choice",
+      "prompt": "Some people ___ clean drinking water for granted.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-031",
+      "type": "multiple-choice",
+      "prompt": "We should never ___ our health for granted.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-032",
+      "type": "multiple-choice",
+      "prompt": "It is easy to ___ reliable internet access for granted.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-033",
+      "type": "multiple-choice",
+      "prompt": "The committee will ___ a decision by Friday.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-034",
+      "type": "multiple-choice",
+      "prompt": "We cannot ___ a decision without enough information.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-035",
+      "type": "multiple-choice",
+      "prompt": "The manager needs to ___ a decision about the budget.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-036",
+      "type": "multiple-choice",
+      "prompt": "It is time to ___ a decision about our next step.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-037",
+      "type": "multiple-choice",
+      "prompt": "Many learners ___ difficulty understanding fast speech.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-038",
+      "type": "multiple-choice",
+      "prompt": "Do you ___ difficulty remembering new vocabulary?",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-039",
+      "type": "multiple-choice",
+      "prompt": "Some people ___ difficulty sleeping after drinking coffee.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-040",
+      "type": "multiple-choice",
+      "prompt": "I often ___ difficulty finding a parking space here.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-041",
+      "type": "multiple-choice",
+      "prompt": "Would you like to ___ a go at solving this puzzle?",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-042",
+      "type": "multiple-choice",
+      "prompt": "Everyone should ___ a go at speaking in front of the class.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-043",
+      "type": "multiple-choice",
+      "prompt": "Why not ___ a go at making your own bread?",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-044",
+      "type": "multiple-choice",
+      "prompt": "She encouraged me to ___ a go at learning to swim.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-045",
+      "type": "multiple-choice",
+      "prompt": "Parents ___ a responsibility to keep their children safe.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-046",
+      "type": "multiple-choice",
+      "prompt": "Employers ___ a responsibility to provide safe equipment.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-047",
+      "type": "multiple-choice",
+      "prompt": "We all ___ a responsibility to protect the environment.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-048",
+      "type": "multiple-choice",
+      "prompt": "Teachers ___ a responsibility to treat students fairly.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-049",
+      "type": "multiple-choice",
+      "prompt": "This problem does not ___ anything to do with the weather.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-050",
+      "type": "multiple-choice",
+      "prompt": "My complaint does not ___ anything to do with your work.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-051",
+      "type": "multiple-choice",
+      "prompt": "The delay does not ___ anything to do with the new software.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-052",
+      "type": "multiple-choice",
+      "prompt": "Their argument does not ___ anything to do with the exam.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-053",
+      "type": "multiple-choice",
+      "prompt": "You should ___ your studies seriously this term.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-054",
+      "type": "multiple-choice",
+      "prompt": "The authorities must ___ these complaints seriously.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-055",
+      "type": "multiple-choice",
+      "prompt": "Please ___ the safety instructions seriously.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-056",
+      "type": "multiple-choice",
+      "prompt": "We need to ___ the risk of flooding seriously.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-057",
+      "type": "multiple-choice",
+      "prompt": "You should ___ notice of the warning signs.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-058",
+      "type": "multiple-choice",
+      "prompt": "Drivers must ___ notice of changes to the speed limit.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-059",
+      "type": "multiple-choice",
+      "prompt": "Please ___ notice of the updated timetable.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-060",
+      "type": "multiple-choice",
+      "prompt": "We need to ___ notice of what our customers say.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-061",
+      "type": "multiple-choice",
+      "prompt": "Some entrepreneurs are willing to ___ risks.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-062",
+      "type": "multiple-choice",
+      "prompt": "It is unwise to ___ unnecessary risks on icy roads.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-063",
+      "type": "multiple-choice",
+      "prompt": "Young athletes sometimes ___ risks to improve their performance.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-064",
+      "type": "multiple-choice",
+      "prompt": "You do not have to ___ risks to enjoy the activity.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-065",
+      "type": "multiple-choice",
+      "prompt": "I ___ difficulty concentrating when it is noisy.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-066",
+      "type": "multiple-choice",
+      "prompt": "They ___ difficulty finding affordable accommodation.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-067",
+      "type": "multiple-choice",
+      "prompt": "Many tourists ___ difficulty reading the local signs.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-068",
+      "type": "multiple-choice",
+      "prompt": "He tends to ___ difficulty following long instructions.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "have"
+    },
+    {
+      "id": "int-11-069",
+      "type": "multiple-choice",
+      "prompt": "Students can ___ advantage of the library after class.",
+      "options": [
+        "have",
+        "take"
+      ],
+      "answer": "take"
+    },
+    {
+      "id": "int-11-070",
+      "type": "multiple-choice",
+      "prompt": "Visitors should ___ advantage of the guided tour.",
+      "options": [
+        "take",
+        "have"
+      ],
+      "answer": "take"
+    }
+  ]
+}
