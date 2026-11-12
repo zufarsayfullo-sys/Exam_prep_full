@@ -1,0 +1,860 @@
+{
+  "title": "Appearance — Vocabulary in Context",
+  "level": "intermediate",
+  "category": "Vocabulary",
+  "instructions": "Complete each sentence with the correct word from the box.",
+  "wordBank": [
+    "bald",
+    "dyed",
+    "elderly",
+    "eyelashes",
+    "fringe",
+    "moustache",
+    "overweight",
+    "shape",
+    "shoulder",
+    "slim"
+  ],
+  "questions": [
+    {
+      "id": "int-10-001",
+      "type": "vocabulary-gap",
+      "prompt": "After years of losing his hair, my uncle is completely ___ now.",
+      "before": "After years of losing his hair, my uncle is completely ",
+      "after": " now.",
+      "answer": "bald",
+      "acceptedAnswers": [
+        "bald"
+      ],
+      "word": "bald"
+    },
+    {
+      "id": "int-10-002",
+      "type": "vocabulary-gap",
+      "prompt": "She ___ her hair bright red last weekend.",
+      "before": "She ",
+      "after": " her hair bright red last weekend.",
+      "answer": "dyed",
+      "acceptedAnswers": [
+        "dyed"
+      ],
+      "word": "dyed"
+    },
+    {
+      "id": "int-10-003",
+      "type": "vocabulary-gap",
+      "prompt": "The bus has special seats for ___ passengers.",
+      "before": "The bus has special seats for ",
+      "after": " passengers.",
+      "answer": "elderly",
+      "acceptedAnswers": [
+        "elderly"
+      ],
+      "word": "elderly"
+    },
+    {
+      "id": "int-10-004",
+      "type": "vocabulary-gap",
+      "prompt": "Helen has green eyes with long, dark ___ .",
+      "before": "Helen has green eyes with long, dark ",
+      "after": " .",
+      "answer": "eyelashes",
+      "acceptedAnswers": [
+        "eyelashes"
+      ],
+      "word": "eyelashes"
+    },
+    {
+      "id": "int-10-005",
+      "type": "vocabulary-gap",
+      "prompt": "Her ___ is so long that it covers her eyebrows.",
+      "before": "Her ",
+      "after": " is so long that it covers her eyebrows.",
+      "answer": "fringe",
+      "acceptedAnswers": [
+        "fringe"
+      ],
+      "word": "fringe"
+    },
+    {
+      "id": "int-10-006",
+      "type": "vocabulary-gap",
+      "prompt": "He wants to grow a ___ like his father.",
+      "before": "He wants to grow a ",
+      "after": " like his father.",
+      "answer": "moustache",
+      "acceptedAnswers": [
+        "moustache"
+      ],
+      "word": "moustache"
+    },
+    {
+      "id": "int-10-007",
+      "type": "vocabulary-gap",
+      "prompt": "Not playing sport and eating too much can make someone ___ .",
+      "before": "Not playing sport and eating too much can make someone ",
+      "after": " .",
+      "answer": "overweight",
+      "acceptedAnswers": [
+        "overweight"
+      ],
+      "word": "overweight"
+    },
+    {
+      "id": "int-10-008",
+      "type": "vocabulary-gap",
+      "prompt": "She goes swimming to stay in good ___ .",
+      "before": "She goes swimming to stay in good ",
+      "after": " .",
+      "answer": "shape",
+      "acceptedAnswers": [
+        "shape"
+      ],
+      "word": "shape"
+    },
+    {
+      "id": "int-10-009",
+      "type": "vocabulary-gap",
+      "prompt": "Her hair falls just below ___ length.",
+      "before": "Her hair falls just below ",
+      "after": " length.",
+      "answer": "shoulder",
+      "acceptedAnswers": [
+        "shoulder"
+      ],
+      "word": "shoulder"
+    },
+    {
+      "id": "int-10-010",
+      "type": "vocabulary-gap",
+      "prompt": "This dress is too tight, and I'm not ___ enough to wear it.",
+      "before": "This dress is too tight, and I'm not ",
+      "after": " enough to wear it.",
+      "answer": "slim",
+      "acceptedAnswers": [
+        "slim"
+      ],
+      "word": "slim"
+    },
+    {
+      "id": "int-10-011",
+      "type": "vocabulary-gap",
+      "prompt": "The actor shaved his head and appeared ___ in the film.",
+      "before": "The actor shaved his head and appeared ",
+      "after": " in the film.",
+      "answer": "bald",
+      "acceptedAnswers": [
+        "bald"
+      ],
+      "word": "bald"
+    },
+    {
+      "id": "int-10-012",
+      "type": "vocabulary-gap",
+      "prompt": "His hair is naturally brown, but he has ___ it black.",
+      "before": "His hair is naturally brown, but he has ",
+      "after": " it black.",
+      "answer": "dyed",
+      "acceptedAnswers": [
+        "dyed"
+      ],
+      "word": "dyed"
+    },
+    {
+      "id": "int-10-013",
+      "type": "vocabulary-gap",
+      "prompt": "Our neighbour is an ___ woman who lives alone.",
+      "before": "Our neighbour is an ",
+      "after": " woman who lives alone.",
+      "answer": "elderly",
+      "acceptedAnswers": [
+        "elderly"
+      ],
+      "word": "elderly"
+    },
+    {
+      "id": "int-10-014",
+      "type": "vocabulary-gap",
+      "prompt": "A tiny piece of dust got caught in my ___ .",
+      "before": "A tiny piece of dust got caught in my ",
+      "after": " .",
+      "answer": "eyelashes",
+      "acceptedAnswers": [
+        "eyelashes"
+      ],
+      "word": "eyelashes"
+    },
+    {
+      "id": "int-10-015",
+      "type": "vocabulary-gap",
+      "prompt": "I asked the hairdresser to trim my ___ .",
+      "before": "I asked the hairdresser to trim my ",
+      "after": " .",
+      "answer": "fringe",
+      "acceptedAnswers": [
+        "fringe"
+      ],
+      "word": "fringe"
+    },
+    {
+      "id": "int-10-016",
+      "type": "vocabulary-gap",
+      "prompt": "The detective had a thick black ___ above his upper lip.",
+      "before": "The detective had a thick black ",
+      "after": " above his upper lip.",
+      "answer": "moustache",
+      "acceptedAnswers": [
+        "moustache"
+      ],
+      "word": "moustache"
+    },
+    {
+      "id": "int-10-017",
+      "type": "vocabulary-gap",
+      "prompt": "The doctor told him he was slightly ___ .",
+      "before": "The doctor told him he was slightly ",
+      "after": " .",
+      "answer": "overweight",
+      "acceptedAnswers": [
+        "overweight"
+      ],
+      "word": "overweight"
+    },
+    {
+      "id": "int-10-018",
+      "type": "vocabulary-gap",
+      "prompt": "After months of training, he is finally in ___ .",
+      "before": "After months of training, he is finally in ",
+      "after": " .",
+      "answer": "shape",
+      "acceptedAnswers": [
+        "shape"
+      ],
+      "word": "shape"
+    },
+    {
+      "id": "int-10-019",
+      "type": "vocabulary-gap",
+      "prompt": "She cut her long hair to ___ length.",
+      "before": "She cut her long hair to ",
+      "after": " length.",
+      "answer": "shoulder",
+      "acceptedAnswers": [
+        "shoulder"
+      ],
+      "word": "shoulder"
+    },
+    {
+      "id": "int-10-020",
+      "type": "vocabulary-gap",
+      "prompt": "She has a tall, ___ figure.",
+      "before": "She has a tall, ",
+      "after": " figure.",
+      "answer": "slim",
+      "acceptedAnswers": [
+        "slim"
+      ],
+      "word": "slim"
+    },
+    {
+      "id": "int-10-021",
+      "type": "vocabulary-gap",
+      "prompt": "My grandfather has been ___ since his forties.",
+      "before": "My grandfather has been ",
+      "after": " since his forties.",
+      "answer": "bald",
+      "acceptedAnswers": [
+        "bald"
+      ],
+      "word": "bald"
+    },
+    {
+      "id": "int-10-022",
+      "type": "vocabulary-gap",
+      "prompt": "The singer arrived with freshly ___ blue hair.",
+      "before": "The singer arrived with freshly ",
+      "after": " blue hair.",
+      "answer": "dyed",
+      "acceptedAnswers": [
+        "dyed"
+      ],
+      "word": "dyed"
+    },
+    {
+      "id": "int-10-023",
+      "type": "vocabulary-gap",
+      "prompt": "The charity provides meals for ___ people.",
+      "before": "The charity provides meals for ",
+      "after": " people.",
+      "answer": "elderly",
+      "acceptedAnswers": [
+        "elderly"
+      ],
+      "word": "elderly"
+    },
+    {
+      "id": "int-10-024",
+      "type": "vocabulary-gap",
+      "prompt": "Her ___ are so long that she rarely uses mascara.",
+      "before": "Her ",
+      "after": " are so long that she rarely uses mascara.",
+      "answer": "eyelashes",
+      "acceptedAnswers": [
+        "eyelashes"
+      ],
+      "word": "eyelashes"
+    },
+    {
+      "id": "int-10-025",
+      "type": "vocabulary-gap",
+      "prompt": "She pushed her ___ away from her eyes.",
+      "before": "She pushed her ",
+      "after": " away from her eyes.",
+      "answer": "fringe",
+      "acceptedAnswers": [
+        "fringe"
+      ],
+      "word": "fringe"
+    },
+    {
+      "id": "int-10-026",
+      "type": "vocabulary-gap",
+      "prompt": "My uncle shaved off his ___ yesterday.",
+      "before": "My uncle shaved off his ",
+      "after": " yesterday.",
+      "answer": "moustache",
+      "acceptedAnswers": [
+        "moustache"
+      ],
+      "word": "moustache"
+    },
+    {
+      "id": "int-10-027",
+      "type": "vocabulary-gap",
+      "prompt": "She began exercising because she felt ___ .",
+      "before": "She began exercising because she felt ",
+      "after": " .",
+      "answer": "overweight",
+      "acceptedAnswers": [
+        "overweight"
+      ],
+      "word": "overweight"
+    },
+    {
+      "id": "int-10-028",
+      "type": "vocabulary-gap",
+      "prompt": "I want to get back into ___ before the race.",
+      "before": "I want to get back into ",
+      "after": " before the race.",
+      "answer": "shape",
+      "acceptedAnswers": [
+        "shape"
+      ],
+      "word": "shape"
+    },
+    {
+      "id": "int-10-029",
+      "type": "vocabulary-gap",
+      "prompt": "My aunt prefers ___-length hair because it is easy to manage.",
+      "before": "My aunt prefers ",
+      "after": "-length hair because it is easy to manage.",
+      "answer": "shoulder",
+      "acceptedAnswers": [
+        "shoulder"
+      ],
+      "word": "shoulder"
+    },
+    {
+      "id": "int-10-030",
+      "type": "vocabulary-gap",
+      "prompt": "My brother is naturally ___ despite eating large meals.",
+      "before": "My brother is naturally ",
+      "after": " despite eating large meals.",
+      "answer": "slim",
+      "acceptedAnswers": [
+        "slim"
+      ],
+      "word": "slim"
+    },
+    {
+      "id": "int-10-031",
+      "type": "vocabulary-gap",
+      "prompt": "He wears a cap because he feels shy about being ___ .",
+      "before": "He wears a cap because he feels shy about being ",
+      "after": " .",
+      "answer": "bald",
+      "acceptedAnswers": [
+        "bald"
+      ],
+      "word": "bald"
+    },
+    {
+      "id": "int-10-032",
+      "type": "vocabulary-gap",
+      "prompt": "I thought her hair was natural, but she told me it was ___ .",
+      "before": "I thought her hair was natural, but she told me it was ",
+      "after": " .",
+      "answer": "dyed",
+      "acceptedAnswers": [
+        "dyed"
+      ],
+      "word": "dyed"
+    },
+    {
+      "id": "int-10-033",
+      "type": "vocabulary-gap",
+      "prompt": "My ___ grandfather still walks every morning.",
+      "before": "My ",
+      "after": " grandfather still walks every morning.",
+      "answer": "elderly",
+      "acceptedAnswers": [
+        "elderly"
+      ],
+      "word": "elderly"
+    },
+    {
+      "id": "int-10-034",
+      "type": "vocabulary-gap",
+      "prompt": "He blinked rapidly, and his ___ brushed his glasses.",
+      "before": "He blinked rapidly, and his ",
+      "after": " brushed his glasses.",
+      "answer": "eyelashes",
+      "acceptedAnswers": [
+        "eyelashes"
+      ],
+      "word": "eyelashes"
+    },
+    {
+      "id": "int-10-035",
+      "type": "vocabulary-gap",
+      "prompt": "My brother used to have a straight ___ across his forehead.",
+      "before": "My brother used to have a straight ",
+      "after": " across his forehead.",
+      "answer": "fringe",
+      "acceptedAnswers": [
+        "fringe"
+      ],
+      "word": "fringe"
+    },
+    {
+      "id": "int-10-036",
+      "type": "vocabulary-gap",
+      "prompt": "The actor wore a fake ___ for the play.",
+      "before": "The actor wore a fake ",
+      "after": " for the play.",
+      "answer": "moustache",
+      "acceptedAnswers": [
+        "moustache"
+      ],
+      "word": "moustache"
+    },
+    {
+      "id": "int-10-037",
+      "type": "vocabulary-gap",
+      "prompt": "Some people become ___ when they stop being active.",
+      "before": "Some people become ",
+      "after": " when they stop being active.",
+      "answer": "overweight",
+      "acceptedAnswers": [
+        "overweight"
+      ],
+      "word": "overweight"
+    },
+    {
+      "id": "int-10-038",
+      "type": "vocabulary-gap",
+      "prompt": "Regular walking helps my parents keep in ___ .",
+      "before": "Regular walking helps my parents keep in ",
+      "after": " .",
+      "answer": "shape",
+      "acceptedAnswers": [
+        "shape"
+      ],
+      "word": "shape"
+    },
+    {
+      "id": "int-10-039",
+      "type": "vocabulary-gap",
+      "prompt": "He carried his bag over one ___ .",
+      "before": "He carried his bag over one ",
+      "after": " .",
+      "answer": "shoulder",
+      "acceptedAnswers": [
+        "shoulder"
+      ],
+      "word": "shoulder"
+    },
+    {
+      "id": "int-10-040",
+      "type": "vocabulary-gap",
+      "prompt": "The model looked ___ in a dark suit.",
+      "before": "The model looked ",
+      "after": " in a dark suit.",
+      "answer": "slim",
+      "acceptedAnswers": [
+        "slim"
+      ],
+      "word": "slim"
+    },
+    {
+      "id": "int-10-041",
+      "type": "vocabulary-gap",
+      "prompt": "The photograph shows a ___ man with a grey beard.",
+      "before": "The photograph shows a ",
+      "after": " man with a grey beard.",
+      "answer": "bald",
+      "acceptedAnswers": [
+        "bald"
+      ],
+      "word": "bald"
+    },
+    {
+      "id": "int-10-042",
+      "type": "vocabulary-gap",
+      "prompt": "Before the party, they ___ their hair purple.",
+      "before": "Before the party, they ",
+      "after": " their hair purple.",
+      "answer": "dyed",
+      "acceptedAnswers": [
+        "dyed"
+      ],
+      "word": "dyed"
+    },
+    {
+      "id": "int-10-043",
+      "type": "vocabulary-gap",
+      "prompt": "Please offer your seat to an ___ passenger.",
+      "before": "Please offer your seat to an ",
+      "after": " passenger.",
+      "answer": "elderly",
+      "acceptedAnswers": [
+        "elderly"
+      ],
+      "word": "elderly"
+    },
+    {
+      "id": "int-10-044",
+      "type": "vocabulary-gap",
+      "prompt": "The artist carefully drew the woman's ___ around her eyes.",
+      "before": "The artist carefully drew the woman's ",
+      "after": " around her eyes.",
+      "answer": "eyelashes",
+      "acceptedAnswers": [
+        "eyelashes"
+      ],
+      "word": "eyelashes"
+    },
+    {
+      "id": "int-10-045",
+      "type": "vocabulary-gap",
+      "prompt": "A short ___ can change the way your face looks.",
+      "before": "A short ",
+      "after": " can change the way your face looks.",
+      "answer": "fringe",
+      "acceptedAnswers": [
+        "fringe"
+      ],
+      "word": "fringe"
+    },
+    {
+      "id": "int-10-046",
+      "type": "vocabulary-gap",
+      "prompt": "He carefully trimmed his ___ before the interview.",
+      "before": "He carefully trimmed his ",
+      "after": " before the interview.",
+      "answer": "moustache",
+      "acceptedAnswers": [
+        "moustache"
+      ],
+      "word": "moustache"
+    },
+    {
+      "id": "int-10-047",
+      "type": "vocabulary-gap",
+      "prompt": "He was ___ as a teenager but is healthier now.",
+      "before": "He was ",
+      "after": " as a teenager but is healthier now.",
+      "answer": "overweight",
+      "acceptedAnswers": [
+        "overweight"
+      ],
+      "word": "overweight"
+    },
+    {
+      "id": "int-10-048",
+      "type": "vocabulary-gap",
+      "prompt": "The coach says the players are in excellent ___ .",
+      "before": "The coach says the players are in excellent ",
+      "after": " .",
+      "answer": "shape",
+      "acceptedAnswers": [
+        "shape"
+      ],
+      "word": "shape"
+    },
+    {
+      "id": "int-10-049",
+      "type": "vocabulary-gap",
+      "prompt": "She injured her left ___ while playing tennis.",
+      "before": "She injured her left ",
+      "after": " while playing tennis.",
+      "answer": "shoulder",
+      "acceptedAnswers": [
+        "shoulder"
+      ],
+      "word": "shoulder"
+    },
+    {
+      "id": "int-10-050",
+      "type": "vocabulary-gap",
+      "prompt": "He has a ___ build and narrow shoulders.",
+      "before": "He has a ",
+      "after": " build and narrow shoulders.",
+      "answer": "slim",
+      "acceptedAnswers": [
+        "slim"
+      ],
+      "word": "slim"
+    },
+    {
+      "id": "int-10-051",
+      "type": "vocabulary-gap",
+      "prompt": "Dad is going ___, but he doesn't mind.",
+      "before": "Dad is going ",
+      "after": ", but he doesn't mind.",
+      "answer": "bald",
+      "acceptedAnswers": [
+        "bald"
+      ],
+      "word": "bald"
+    },
+    {
+      "id": "int-10-052",
+      "type": "vocabulary-gap",
+      "prompt": "My sister has never ___ her hair before.",
+      "before": "My sister has never ",
+      "after": " her hair before.",
+      "answer": "dyed",
+      "acceptedAnswers": [
+        "dyed"
+      ],
+      "word": "dyed"
+    },
+    {
+      "id": "int-10-053",
+      "type": "vocabulary-gap",
+      "prompt": "The centre organises activities for ___ residents.",
+      "before": "The centre organises activities for ",
+      "after": " residents.",
+      "answer": "elderly",
+      "acceptedAnswers": [
+        "elderly"
+      ],
+      "word": "elderly"
+    },
+    {
+      "id": "int-10-054",
+      "type": "vocabulary-gap",
+      "prompt": "She closed her eyes, showing her thick ___ .",
+      "before": "She closed her eyes, showing her thick ",
+      "after": " .",
+      "answer": "eyelashes",
+      "acceptedAnswers": [
+        "eyelashes"
+      ],
+      "word": "eyelashes"
+    },
+    {
+      "id": "int-10-055",
+      "type": "vocabulary-gap",
+      "prompt": "His ___ kept falling over his eyes while he read.",
+      "before": "His ",
+      "after": " kept falling over his eyes while he read.",
+      "answer": "fringe",
+      "acceptedAnswers": [
+        "fringe"
+      ],
+      "word": "fringe"
+    },
+    {
+      "id": "int-10-056",
+      "type": "vocabulary-gap",
+      "prompt": "I hardly recognised him without his ___ .",
+      "before": "I hardly recognised him without his ",
+      "after": " .",
+      "answer": "moustache",
+      "acceptedAnswers": [
+        "moustache"
+      ],
+      "word": "moustache"
+    },
+    {
+      "id": "int-10-057",
+      "type": "vocabulary-gap",
+      "prompt": "Being ___ can increase the risk of certain health problems.",
+      "before": "Being ",
+      "after": " can increase the risk of certain health problems.",
+      "answer": "overweight",
+      "acceptedAnswers": [
+        "overweight"
+      ],
+      "word": "overweight"
+    },
+    {
+      "id": "int-10-058",
+      "type": "vocabulary-gap",
+      "prompt": "He was out of ___ after spending a year without exercise.",
+      "before": "He was out of ",
+      "after": " after spending a year without exercise.",
+      "answer": "shape",
+      "acceptedAnswers": [
+        "shape"
+      ],
+      "word": "shape"
+    },
+    {
+      "id": "int-10-059",
+      "type": "vocabulary-gap",
+      "prompt": "The little boy rested his head on his father's ___ .",
+      "before": "The little boy rested his head on his father's ",
+      "after": " .",
+      "answer": "shoulder",
+      "acceptedAnswers": [
+        "shoulder"
+      ],
+      "word": "shoulder"
+    },
+    {
+      "id": "int-10-060",
+      "type": "vocabulary-gap",
+      "prompt": "Her jeans are designed for people with a ___ waist.",
+      "before": "Her jeans are designed for people with a ",
+      "after": " waist.",
+      "answer": "slim",
+      "acceptedAnswers": [
+        "slim"
+      ],
+      "word": "slim"
+    },
+    {
+      "id": "int-10-061",
+      "type": "vocabulary-gap",
+      "prompt": "The barber cut his hair so short that he almost looked ___ .",
+      "before": "The barber cut his hair so short that he almost looked ",
+      "after": " .",
+      "answer": "bald",
+      "acceptedAnswers": [
+        "bald"
+      ],
+      "word": "bald"
+    },
+    {
+      "id": "int-10-062",
+      "type": "vocabulary-gap",
+      "prompt": "He ___ his hair to match his costume.",
+      "before": "He ",
+      "after": " his hair to match his costume.",
+      "answer": "dyed",
+      "acceptedAnswers": [
+        "dyed"
+      ],
+      "word": "dyed"
+    },
+    {
+      "id": "int-10-063",
+      "type": "vocabulary-gap",
+      "prompt": "An ___ couple moved into the house next door.",
+      "before": "An ",
+      "after": " couple moved into the house next door.",
+      "answer": "elderly",
+      "acceptedAnswers": [
+        "elderly"
+      ],
+      "word": "elderly"
+    },
+    {
+      "id": "int-10-064",
+      "type": "vocabulary-gap",
+      "prompt": "The baby has surprisingly long ___ .",
+      "before": "The baby has surprisingly long ",
+      "after": " .",
+      "answer": "eyelashes",
+      "acceptedAnswers": [
+        "eyelashes"
+      ],
+      "word": "eyelashes"
+    },
+    {
+      "id": "int-10-065",
+      "type": "vocabulary-gap",
+      "prompt": "She decided to grow out her ___ instead of cutting it.",
+      "before": "She decided to grow out her ",
+      "after": " instead of cutting it.",
+      "answer": "fringe",
+      "acceptedAnswers": [
+        "fringe"
+      ],
+      "word": "fringe"
+    },
+    {
+      "id": "int-10-066",
+      "type": "vocabulary-gap",
+      "prompt": "The waiter had a small ___ and a friendly smile.",
+      "before": "The waiter had a small ",
+      "after": " and a friendly smile.",
+      "answer": "moustache",
+      "acceptedAnswers": [
+        "moustache"
+      ],
+      "word": "moustache"
+    },
+    {
+      "id": "int-10-067",
+      "type": "vocabulary-gap",
+      "prompt": "The vet said our cat was ___ and needed smaller meals.",
+      "before": "The vet said our cat was ",
+      "after": " and needed smaller meals.",
+      "answer": "overweight",
+      "acceptedAnswers": [
+        "overweight"
+      ],
+      "word": "overweight"
+    },
+    {
+      "id": "int-10-068",
+      "type": "vocabulary-gap",
+      "prompt": "Yoga helps her stay in ___ and feel relaxed.",
+      "before": "Yoga helps her stay in ",
+      "after": " and feel relaxed.",
+      "answer": "shape",
+      "acceptedAnswers": [
+        "shape"
+      ],
+      "word": "shape"
+    },
+    {
+      "id": "int-10-069",
+      "type": "vocabulary-gap",
+      "prompt": "He tapped me on the ___ to get my attention.",
+      "before": "He tapped me on the ",
+      "after": " to get my attention.",
+      "answer": "shoulder",
+      "acceptedAnswers": [
+        "shoulder"
+      ],
+      "word": "shoulder"
+    },
+    {
+      "id": "int-10-070",
+      "type": "vocabulary-gap",
+      "prompt": "The actor remained ___ throughout his career.",
+      "before": "The actor remained ",
+      "after": " throughout his career.",
+      "answer": "slim",
+      "acceptedAnswers": [
+        "slim"
+      ],
+      "word": "slim"
+    }
+  ]
+}
