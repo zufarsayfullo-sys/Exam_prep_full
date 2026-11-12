@@ -22,5 +22,29 @@
     "path": "quiz-03.html",
     "bank": "quiz-03.bank.json",
     "level": "intermediate"
+  },
+  {
+    "id": "quiz-04",
+    "title": "Comparisons — Sentence Transformations",
+    "category": "Grammar",
+    "path": "quiz-04.html",
+    "bank": "quiz-04.bank.json",
+    "level": "intermediate"
+  },
+  {
+    "id": "quiz-05",
+    "title": "Should Have / Shouldn’t Have — Reading & Grammar",
+    "category": "Grammar",
+    "path": "quiz-05.html",
+    "bank": "quiz-05.bank.json",
+    "level": "intermediate"
+  },
+  {
+    "id": "quiz-06",
+    "title": "Third Conditional — Choose the Correct Ending",
+    "category": "Grammar",
+    "path": "quiz-06.html",
+    "bank": "quiz-06.bank.json",
+    "level": "intermediate"
   }
 ]
