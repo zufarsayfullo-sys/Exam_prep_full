@@ -1,0 +1,777 @@
+{
+  "title": "Third Conditional — Choose the Correct Ending",
+  "level": "intermediate",
+  "category": "Grammar",
+  "questions": [
+    {
+      "id": "int-06-001",
+      "type": "multiple-choice",
+      "prompt": "If I had set my alarm, ...",
+      "options": [
+        "I would have arrived on time.",
+        "I would arrived on time.",
+        "I would has arrived on time."
+      ],
+      "answer": "I would have arrived on time."
+    },
+    {
+      "id": "int-06-002",
+      "type": "multiple-choice",
+      "prompt": "She would not have missed the train ...",
+      "options": [
+        "if she has left home earlier.",
+        "if she would left home earlier.",
+        "if she had left home earlier."
+      ],
+      "answer": "if she had left home earlier."
+    },
+    {
+      "id": "int-06-003",
+      "type": "multiple-choice",
+      "prompt": "If we had checked the forecast, ...",
+      "options": [
+        "we would has taken umbrellas.",
+        "we would have taken umbrellas.",
+        "we would taken umbrellas."
+      ],
+      "answer": "we would have taken umbrellas."
+    },
+    {
+      "id": "int-06-004",
+      "type": "multiple-choice",
+      "prompt": "They might have won the match ...",
+      "options": [
+        "if they had practised more.",
+        "if they has practised more.",
+        "if they would practised more."
+      ],
+      "answer": "if they had practised more."
+    },
+    {
+      "id": "int-06-005",
+      "type": "multiple-choice",
+      "prompt": "If he had remembered his passport, ...",
+      "options": [
+        "he could boarded the plane.",
+        "he could has boarded the plane.",
+        "he could have boarded the plane."
+      ],
+      "answer": "he could have boarded the plane."
+    },
+    {
+      "id": "int-06-006",
+      "type": "multiple-choice",
+      "prompt": "If the driver had slowed down, ...",
+      "options": [
+        "he might has avoided the accident.",
+        "he might have avoided the accident.",
+        "he might avoided the accident."
+      ],
+      "answer": "he might have avoided the accident."
+    },
+    {
+      "id": "int-06-007",
+      "type": "multiple-choice",
+      "prompt": "We would have found the hotel ...",
+      "options": [
+        "if we had followed the directions.",
+        "if we has followed the directions.",
+        "if we would followed the directions."
+      ],
+      "answer": "if we had followed the directions."
+    },
+    {
+      "id": "int-06-008",
+      "type": "multiple-choice",
+      "prompt": "If the restaurant had been open, ...",
+      "options": [
+        "we would eaten there.",
+        "we would has eaten there.",
+        "we would have eaten there."
+      ],
+      "answer": "we would have eaten there."
+    },
+    {
+      "id": "int-06-009",
+      "type": "multiple-choice",
+      "prompt": "She could have finished the project ...",
+      "options": [
+        "if her computer would not crashed.",
+        "if her computer had not crashed.",
+        "if her computer has not crashed."
+      ],
+      "answer": "if her computer had not crashed."
+    },
+    {
+      "id": "int-06-010",
+      "type": "multiple-choice",
+      "prompt": "If you had told me about the problem, ...",
+      "options": [
+        "I would have helped you.",
+        "I would helped you.",
+        "I would has helped you."
+      ],
+      "answer": "I would have helped you."
+    },
+    {
+      "id": "int-06-011",
+      "type": "multiple-choice",
+      "prompt": "If the tickets had been cheaper, ...",
+      "options": [
+        "we would gone to the concert.",
+        "we would has gone to the concert.",
+        "we would have gone to the concert."
+      ],
+      "answer": "we would have gone to the concert."
+    },
+    {
+      "id": "int-06-012",
+      "type": "multiple-choice",
+      "prompt": "He would have passed the test ...",
+      "options": [
+        "if he would studied the vocabulary.",
+        "if he had studied the vocabulary.",
+        "if he has studied the vocabulary."
+      ],
+      "answer": "if he had studied the vocabulary."
+    },
+    {
+      "id": "int-06-013",
+      "type": "multiple-choice",
+      "prompt": "If they had booked earlier, ...",
+      "options": [
+        "they could have found a better room.",
+        "they could found a better room.",
+        "they could has found a better room."
+      ],
+      "answer": "they could have found a better room."
+    },
+    {
+      "id": "int-06-014",
+      "type": "multiple-choice",
+      "prompt": "The cake would not have burned ...",
+      "options": [
+        "if I has turned off the oven.",
+        "if I would turned off the oven.",
+        "if I had turned off the oven."
+      ],
+      "answer": "if I had turned off the oven."
+    },
+    {
+      "id": "int-06-015",
+      "type": "multiple-choice",
+      "prompt": "If we had brought a map, ...",
+      "options": [
+        "we might not has got lost.",
+        "we might not have got lost.",
+        "we might not got lost."
+      ],
+      "answer": "we might not have got lost."
+    },
+    {
+      "id": "int-06-016",
+      "type": "multiple-choice",
+      "prompt": "If I had known her address, ...",
+      "options": [
+        "I would have sent her an invitation.",
+        "I would sent her an invitation.",
+        "I would has sent her an invitation."
+      ],
+      "answer": "I would have sent her an invitation."
+    },
+    {
+      "id": "int-06-017",
+      "type": "multiple-choice",
+      "prompt": "They could have caught the bus ...",
+      "options": [
+        "if they has run faster.",
+        "if they would run faster.",
+        "if they had run faster."
+      ],
+      "answer": "if they had run faster."
+    },
+    {
+      "id": "int-06-018",
+      "type": "multiple-choice",
+      "prompt": "If the shop had not closed early, ...",
+      "options": [
+        "I would has bought the medicine.",
+        "I would have bought the medicine.",
+        "I would bought the medicine."
+      ],
+      "answer": "I would have bought the medicine."
+    },
+    {
+      "id": "int-06-019",
+      "type": "multiple-choice",
+      "prompt": "He would not have lost his wallet ...",
+      "options": [
+        "if he had kept it in his pocket.",
+        "if he has kept it in his pocket.",
+        "if he would kept it in his pocket."
+      ],
+      "answer": "if he had kept it in his pocket."
+    },
+    {
+      "id": "int-06-020",
+      "type": "multiple-choice",
+      "prompt": "If we had taken the earlier flight, ...",
+      "options": [
+        "we would reached home before dark.",
+        "we would has reached home before dark.",
+        "we would have reached home before dark."
+      ],
+      "answer": "we would have reached home before dark."
+    },
+    {
+      "id": "int-06-021",
+      "type": "multiple-choice",
+      "prompt": "If the teacher had explained it again, ...",
+      "options": [
+        "I might has understood the rule.",
+        "I might have understood the rule.",
+        "I might understood the rule."
+      ],
+      "answer": "I might have understood the rule."
+    },
+    {
+      "id": "int-06-022",
+      "type": "multiple-choice",
+      "prompt": "The students would have completed the task ...",
+      "options": [
+        "if they had had more time.",
+        "if they has has more time.",
+        "if they would would more time."
+      ],
+      "answer": "if they had had more time."
+    },
+    {
+      "id": "int-06-023",
+      "type": "multiple-choice",
+      "prompt": "If I had saved the document, ...",
+      "options": [
+        "I would not lost my work.",
+        "I would not has lost my work.",
+        "I would not have lost my work."
+      ],
+      "answer": "I would not have lost my work."
+    },
+    {
+      "id": "int-06-024",
+      "type": "multiple-choice",
+      "prompt": "She could have answered the question ...",
+      "options": [
+        "if she would read the chapter.",
+        "if she had read the chapter.",
+        "if she has read the chapter."
+      ],
+      "answer": "if she had read the chapter."
+    },
+    {
+      "id": "int-06-025",
+      "type": "multiple-choice",
+      "prompt": "If the library had been open, ...",
+      "options": [
+        "we would have studied there.",
+        "we would studied there.",
+        "we would has studied there."
+      ],
+      "answer": "we would have studied there."
+    },
+    {
+      "id": "int-06-026",
+      "type": "multiple-choice",
+      "prompt": "If we had watered the plants, ...",
+      "options": [
+        "they would not died.",
+        "they would not has died.",
+        "they would not have died."
+      ],
+      "answer": "they would not have died."
+    },
+    {
+      "id": "int-06-027",
+      "type": "multiple-choice",
+      "prompt": "He might have recovered sooner ...",
+      "options": [
+        "if he would rested properly.",
+        "if he had rested properly.",
+        "if he has rested properly."
+      ],
+      "answer": "if he had rested properly."
+    },
+    {
+      "id": "int-06-028",
+      "type": "multiple-choice",
+      "prompt": "If she had worn a coat, ...",
+      "options": [
+        "she would not have felt so cold.",
+        "she would not felt so cold.",
+        "she would not has felt so cold."
+      ],
+      "answer": "she would not have felt so cold."
+    },
+    {
+      "id": "int-06-029",
+      "type": "multiple-choice",
+      "prompt": "They would have avoided the traffic ...",
+      "options": [
+        "if they has left before rush hour.",
+        "if they would left before rush hour.",
+        "if they had left before rush hour."
+      ],
+      "answer": "if they had left before rush hour."
+    },
+    {
+      "id": "int-06-030",
+      "type": "multiple-choice",
+      "prompt": "If I had brought my glasses, ...",
+      "options": [
+        "I could has read the sign.",
+        "I could have read the sign.",
+        "I could read the sign."
+      ],
+      "answer": "I could have read the sign."
+    },
+    {
+      "id": "int-06-031",
+      "type": "multiple-choice",
+      "prompt": "If the team had defended better, ...",
+      "options": [
+        "they might have kept a clean sheet.",
+        "they might kept a clean sheet.",
+        "they might has kept a clean sheet."
+      ],
+      "answer": "they might have kept a clean sheet."
+    },
+    {
+      "id": "int-06-032",
+      "type": "multiple-choice",
+      "prompt": "She would have joined us ...",
+      "options": [
+        "if she has not been working.",
+        "if she would not been working.",
+        "if she had not been working."
+      ],
+      "answer": "if she had not been working."
+    },
+    {
+      "id": "int-06-033",
+      "type": "multiple-choice",
+      "prompt": "If the goalkeeper had saved the penalty, ...",
+      "options": [
+        "the match might has ended in a draw.",
+        "the match might have ended in a draw.",
+        "the match might ended in a draw."
+      ],
+      "answer": "the match might have ended in a draw."
+    },
+    {
+      "id": "int-06-034",
+      "type": "multiple-choice",
+      "prompt": "We could have played outside ...",
+      "options": [
+        "if it had not rained.",
+        "if it has not rained.",
+        "if it would not rained."
+      ],
+      "answer": "if it had not rained."
+    },
+    {
+      "id": "int-06-035",
+      "type": "multiple-choice",
+      "prompt": "If he had trained consistently, ...",
+      "options": [
+        "he would improved his stamina.",
+        "he would has improved his stamina.",
+        "he would have improved his stamina."
+      ],
+      "answer": "he would have improved his stamina."
+    },
+    {
+      "id": "int-06-036",
+      "type": "multiple-choice",
+      "prompt": "If the package had been sent on Monday, ...",
+      "options": [
+        "it would has arrived by Friday.",
+        "it would have arrived by Friday.",
+        "it would arrived by Friday."
+      ],
+      "answer": "it would have arrived by Friday."
+    },
+    {
+      "id": "int-06-037",
+      "type": "multiple-choice",
+      "prompt": "The mistake might have been noticed ...",
+      "options": [
+        "if someone had checked the report.",
+        "if someone has checked the report.",
+        "if someone would checked the report."
+      ],
+      "answer": "if someone had checked the report."
+    },
+    {
+      "id": "int-06-038",
+      "type": "multiple-choice",
+      "prompt": "If the window had been closed, ...",
+      "options": [
+        "the papers would not blown away.",
+        "the papers would not has blown away.",
+        "the papers would not have blown away."
+      ],
+      "answer": "the papers would not have blown away."
+    },
+    {
+      "id": "int-06-039",
+      "type": "multiple-choice",
+      "prompt": "The meeting could have been postponed ...",
+      "options": [
+        "if the manager would requested it.",
+        "if the manager had requested it.",
+        "if the manager has requested it."
+      ],
+      "answer": "if the manager had requested it."
+    },
+    {
+      "id": "int-06-040",
+      "type": "multiple-choice",
+      "prompt": "If the instructions had been clearer, ...",
+      "options": [
+        "the device might have been installed correctly.",
+        "the device might been installed correctly.",
+        "the device might has been installed correctly."
+      ],
+      "answer": "the device might have been installed correctly."
+    },
+    {
+      "id": "int-06-041",
+      "type": "multiple-choice",
+      "prompt": "If I had charged my phone, ...",
+      "options": [
+        "I could called you.",
+        "I could has called you.",
+        "I could have called you."
+      ],
+      "answer": "I could have called you."
+    },
+    {
+      "id": "int-06-042",
+      "type": "multiple-choice",
+      "prompt": "She would not have deleted the photo ...",
+      "options": [
+        "if she would known it was important.",
+        "if she had known it was important.",
+        "if she has known it was important."
+      ],
+      "answer": "if she had known it was important."
+    },
+    {
+      "id": "int-06-043",
+      "type": "multiple-choice",
+      "prompt": "If the internet had worked, ...",
+      "options": [
+        "we would have submitted the form.",
+        "we would submitted the form.",
+        "we would has submitted the form."
+      ],
+      "answer": "we would have submitted the form."
+    },
+    {
+      "id": "int-06-044",
+      "type": "multiple-choice",
+      "prompt": "He might have fixed the printer ...",
+      "options": [
+        "if he has read the manual.",
+        "if he would read the manual.",
+        "if he had read the manual."
+      ],
+      "answer": "if he had read the manual."
+    },
+    {
+      "id": "int-06-045",
+      "type": "multiple-choice",
+      "prompt": "If they had backed up the files, ...",
+      "options": [
+        "they would not has lost the data.",
+        "they would not have lost the data.",
+        "they would not lost the data."
+      ],
+      "answer": "they would not have lost the data."
+    },
+    {
+      "id": "int-06-046",
+      "type": "multiple-choice",
+      "prompt": "If I had accepted the offer, ...",
+      "options": [
+        "I would have moved to another city.",
+        "I would moved to another city.",
+        "I would has moved to another city."
+      ],
+      "answer": "I would have moved to another city."
+    },
+    {
+      "id": "int-06-047",
+      "type": "multiple-choice",
+      "prompt": "She could have earned more money ...",
+      "options": [
+        "if she has taken the extra shifts.",
+        "if she would taken the extra shifts.",
+        "if she had taken the extra shifts."
+      ],
+      "answer": "if she had taken the extra shifts."
+    },
+    {
+      "id": "int-06-048",
+      "type": "multiple-choice",
+      "prompt": "If the company had hired more staff, ...",
+      "options": [
+        "the project might has finished sooner.",
+        "the project might have finished sooner.",
+        "the project might finished sooner."
+      ],
+      "answer": "the project might have finished sooner."
+    },
+    {
+      "id": "int-06-049",
+      "type": "multiple-choice",
+      "prompt": "They would not have missed the deadline ...",
+      "options": [
+        "if they had planned the work carefully.",
+        "if they has planned the work carefully.",
+        "if they would planned the work carefully."
+      ],
+      "answer": "if they had planned the work carefully."
+    },
+    {
+      "id": "int-06-050",
+      "type": "multiple-choice",
+      "prompt": "If he had prepared for the interview, ...",
+      "options": [
+        "he might got the job.",
+        "he might has got the job.",
+        "he might have got the job."
+      ],
+      "answer": "he might have got the job."
+    },
+    {
+      "id": "int-06-051",
+      "type": "multiple-choice",
+      "prompt": "If we had reserved a table, ...",
+      "options": [
+        "we would not has waited outside.",
+        "we would not have waited outside.",
+        "we would not waited outside."
+      ],
+      "answer": "we would not have waited outside."
+    },
+    {
+      "id": "int-06-052",
+      "type": "multiple-choice",
+      "prompt": "The soup would have tasted better ...",
+      "options": [
+        "if I had added less salt.",
+        "if I has added less salt.",
+        "if I would added less salt."
+      ],
+      "answer": "if I had added less salt."
+    },
+    {
+      "id": "int-06-053",
+      "type": "multiple-choice",
+      "prompt": "If she had checked the ingredients, ...",
+      "options": [
+        "she would not used the wrong flour.",
+        "she would not has used the wrong flour.",
+        "she would not have used the wrong flour."
+      ],
+      "answer": "she would not have used the wrong flour."
+    },
+    {
+      "id": "int-06-054",
+      "type": "multiple-choice",
+      "prompt": "They could have eaten earlier ...",
+      "options": [
+        "if the food would been ready.",
+        "if the food had been ready.",
+        "if the food has been ready."
+      ],
+      "answer": "if the food had been ready."
+    },
+    {
+      "id": "int-06-055",
+      "type": "multiple-choice",
+      "prompt": "If he had followed the recipe, ...",
+      "options": [
+        "the bread might have risen properly.",
+        "the bread might risen properly.",
+        "the bread might has risen properly."
+      ],
+      "answer": "the bread might have risen properly."
+    },
+    {
+      "id": "int-06-056",
+      "type": "multiple-choice",
+      "prompt": "If the museum had opened earlier, ...",
+      "options": [
+        "we could seen every exhibition.",
+        "we could has seen every exhibition.",
+        "we could have seen every exhibition."
+      ],
+      "answer": "we could have seen every exhibition."
+    },
+    {
+      "id": "int-06-057",
+      "type": "multiple-choice",
+      "prompt": "They would have enjoyed the trip more ...",
+      "options": [
+        "if the weather would been better.",
+        "if the weather had been better.",
+        "if the weather has been better."
+      ],
+      "answer": "if the weather had been better."
+    },
+    {
+      "id": "int-06-058",
+      "type": "multiple-choice",
+      "prompt": "If I had packed lighter, ...",
+      "options": [
+        "I would not have struggled with my suitcase.",
+        "I would not struggled with my suitcase.",
+        "I would not has struggled with my suitcase."
+      ],
+      "answer": "I would not have struggled with my suitcase."
+    },
+    {
+      "id": "int-06-059",
+      "type": "multiple-choice",
+      "prompt": "She might have visited the castle ...",
+      "options": [
+        "if she has known it was nearby.",
+        "if she would known it was nearby.",
+        "if she had known it was nearby."
+      ],
+      "answer": "if she had known it was nearby."
+    },
+    {
+      "id": "int-06-060",
+      "type": "multiple-choice",
+      "prompt": "If we had taken the scenic route, ...",
+      "options": [
+        "we would has seen the mountains.",
+        "we would have seen the mountains.",
+        "we would seen the mountains."
+      ],
+      "answer": "we would have seen the mountains."
+    },
+    {
+      "id": "int-06-061",
+      "type": "multiple-choice",
+      "prompt": "If he had apologised, ...",
+      "options": [
+        "she might have forgiven him.",
+        "she might forgiven him.",
+        "she might has forgiven him."
+      ],
+      "answer": "she might have forgiven him."
+    },
+    {
+      "id": "int-06-062",
+      "type": "multiple-choice",
+      "prompt": "I would have remembered the appointment ...",
+      "options": [
+        "if you has reminded me.",
+        "if you would reminded me.",
+        "if you had reminded me."
+      ],
+      "answer": "if you had reminded me."
+    },
+    {
+      "id": "int-06-063",
+      "type": "multiple-choice",
+      "prompt": "If they had listened to each other, ...",
+      "options": [
+        "they could has resolved the argument.",
+        "they could have resolved the argument.",
+        "they could resolved the argument."
+      ],
+      "answer": "they could have resolved the argument."
+    },
+    {
+      "id": "int-06-064",
+      "type": "multiple-choice",
+      "prompt": "She would not have been upset ...",
+      "options": [
+        "if he had explained the delay.",
+        "if he has explained the delay.",
+        "if he would explained the delay."
+      ],
+      "answer": "if he had explained the delay."
+    },
+    {
+      "id": "int-06-065",
+      "type": "multiple-choice",
+      "prompt": "If I had kept my promise, ...",
+      "options": [
+        "my friend would trusted me.",
+        "my friend would has trusted me.",
+        "my friend would have trusted me."
+      ],
+      "answer": "my friend would have trusted me."
+    },
+    {
+      "id": "int-06-066",
+      "type": "multiple-choice",
+      "prompt": "If the police had arrived sooner, ...",
+      "options": [
+        "the thieves might has been caught.",
+        "the thieves might have been caught.",
+        "the thieves might been caught."
+      ],
+      "answer": "the thieves might have been caught."
+    },
+    {
+      "id": "int-06-067",
+      "type": "multiple-choice",
+      "prompt": "The house would not have been damaged ...",
+      "options": [
+        "if the storm had been less severe.",
+        "if the storm has been less severe.",
+        "if the storm would been less severe."
+      ],
+      "answer": "if the storm had been less severe."
+    },
+    {
+      "id": "int-06-068",
+      "type": "multiple-choice",
+      "prompt": "If the witnesses had spoken up, ...",
+      "options": [
+        "the truth could been discovered.",
+        "the truth could has been discovered.",
+        "the truth could have been discovered."
+      ],
+      "answer": "the truth could have been discovered."
+    },
+    {
+      "id": "int-06-069",
+      "type": "multiple-choice",
+      "prompt": "He might not have been injured ...",
+      "options": [
+        "if he would worn a helmet.",
+        "if he had worn a helmet.",
+        "if he has worn a helmet."
+      ],
+      "answer": "if he had worn a helmet."
+    },
+    {
+      "id": "int-06-070",
+      "type": "multiple-choice",
+      "prompt": "If the warning had been issued earlier, ...",
+      "options": [
+        "more people would have reached safety.",
+        "more people would reached safety.",
+        "more people would has reached safety."
+      ],
+      "answer": "more people would have reached safety."
+    }
+  ]
+}
