@@ -1,0 +1,745 @@
+{
+  "title": "Reported Speech — Questions",
+  "level": "intermediate",
+  "category": "Grammar",
+  "instructions": "Change the direct question into reported speech. Complete the sentence after the given opening.",
+  "questions": [
+    {
+      "id": "int-07-001",
+      "type": "reported-question",
+      "prompt": "Does Mr Smith like the new product?",
+      "opening": "The sales manager asked him",
+      "answer": "if Mr Smith liked the new product",
+      "acceptedAnswers": [
+        "if Mr Smith liked the new product",
+        "whether Mr Smith liked the new product"
+      ]
+    },
+    {
+      "id": "int-07-002",
+      "type": "reported-question",
+      "prompt": "Has the mechanic finished fixing the car?",
+      "opening": "She asked her husband",
+      "answer": "if the mechanic had finished fixing the car",
+      "acceptedAnswers": [
+        "if the mechanic had finished fixing the car",
+        "whether the mechanic had finished fixing the car"
+      ]
+    },
+    {
+      "id": "int-07-003",
+      "type": "reported-question",
+      "prompt": "Did the students take part in the conference yesterday?",
+      "opening": "The professor asked the students",
+      "answer": "if they had taken part in the conference the day before",
+      "acceptedAnswers": [
+        "if they had taken part in the conference the day before",
+        "whether they had taken part in the conference the day before"
+      ]
+    },
+    {
+      "id": "int-07-004",
+      "type": "reported-question",
+      "prompt": "What do critics think about these documentaries?",
+      "opening": "He asked us",
+      "answer": "what critics thought about those documentaries",
+      "acceptedAnswers": [
+        "what critics thought about those documentaries"
+      ]
+    },
+    {
+      "id": "int-07-005",
+      "type": "reported-question",
+      "prompt": "Which country are the freshmen going to travel to next year?",
+      "opening": "My friend asked me",
+      "answer": "which country the freshmen were going to travel to the following year",
+      "acceptedAnswers": [
+        "which country the freshmen were going to travel to the following year"
+      ]
+    },
+    {
+      "id": "int-07-006",
+      "type": "reported-question",
+      "prompt": "Do you work on Saturdays?",
+      "opening": "The interviewer asked Emma",
+      "answer": "if she worked on Saturdays",
+      "acceptedAnswers": [
+        "if she worked on Saturdays",
+        "whether she worked on Saturdays"
+      ]
+    },
+    {
+      "id": "int-07-007",
+      "type": "reported-question",
+      "prompt": "Are you feeling better today?",
+      "opening": "The nurse asked Ben",
+      "answer": "if he was feeling better that day",
+      "acceptedAnswers": [
+        "if he was feeling better that day",
+        "whether he was feeling better that day"
+      ]
+    },
+    {
+      "id": "int-07-008",
+      "type": "reported-question",
+      "prompt": "Did you lock the front door?",
+      "opening": "Mum asked Daniel",
+      "answer": "if he had locked the front door",
+      "acceptedAnswers": [
+        "if he had locked the front door",
+        "whether he had locked the front door"
+      ]
+    },
+    {
+      "id": "int-07-009",
+      "type": "reported-question",
+      "prompt": "Have you seen my glasses?",
+      "opening": "Sofia asked her brother",
+      "answer": "if he had seen her glasses",
+      "acceptedAnswers": [
+        "if he had seen her glasses",
+        "whether he had seen her glasses"
+      ]
+    },
+    {
+      "id": "int-07-010",
+      "type": "reported-question",
+      "prompt": "Can you speak French?",
+      "opening": "The receptionist asked Anna",
+      "answer": "if she could speak French",
+      "acceptedAnswers": [
+        "if she could speak French",
+        "whether she could speak French"
+      ]
+    },
+    {
+      "id": "int-07-011",
+      "type": "reported-question",
+      "prompt": "Where do you live?",
+      "opening": "The officer asked the witness",
+      "answer": "where the witness lived",
+      "acceptedAnswers": [
+        "where the witness lived"
+      ]
+    },
+    {
+      "id": "int-07-012",
+      "type": "reported-question",
+      "prompt": "Why are you laughing?",
+      "opening": "The teacher asked Oliver",
+      "answer": "why he was laughing",
+      "acceptedAnswers": [
+        "why he was laughing"
+      ]
+    },
+    {
+      "id": "int-07-013",
+      "type": "reported-question",
+      "prompt": "When did you arrive?",
+      "opening": "Nora asked Liam",
+      "answer": "when he had arrived",
+      "acceptedAnswers": [
+        "when he had arrived"
+      ]
+    },
+    {
+      "id": "int-07-014",
+      "type": "reported-question",
+      "prompt": "How long have you known Kate?",
+      "opening": "Ella asked Jack",
+      "answer": "how long he had known Kate",
+      "acceptedAnswers": [
+        "how long he had known Kate"
+      ]
+    },
+    {
+      "id": "int-07-015",
+      "type": "reported-question",
+      "prompt": "What will you do tomorrow?",
+      "opening": "Dad asked Mia",
+      "answer": "what she would do the following day",
+      "acceptedAnswers": [
+        "what she would do the following day"
+      ]
+    },
+    {
+      "id": "int-07-016",
+      "type": "reported-question",
+      "prompt": "Is the museum open on Mondays?",
+      "opening": "The tourist asked the guide",
+      "answer": "if the museum was open on Mondays",
+      "acceptedAnswers": [
+        "if the museum was open on Mondays",
+        "whether the museum was open on Mondays"
+      ]
+    },
+    {
+      "id": "int-07-017",
+      "type": "reported-question",
+      "prompt": "Were you at the meeting yesterday?",
+      "opening": "The manager asked Zoe",
+      "answer": "if she had been at the meeting the day before",
+      "acceptedAnswers": [
+        "if she had been at the meeting the day before",
+        "whether she had been at the meeting the day before"
+      ]
+    },
+    {
+      "id": "int-07-018",
+      "type": "reported-question",
+      "prompt": "Have they sent the invitations?",
+      "opening": "Maya asked her colleague",
+      "answer": "if they had sent the invitations",
+      "acceptedAnswers": [
+        "if they had sent the invitations",
+        "whether they had sent the invitations"
+      ]
+    },
+    {
+      "id": "int-07-019",
+      "type": "reported-question",
+      "prompt": "Will the train arrive on time?",
+      "opening": "The passenger asked the conductor",
+      "answer": "if the train would arrive on time",
+      "acceptedAnswers": [
+        "if the train would arrive on time",
+        "whether the train would arrive on time"
+      ]
+    },
+    {
+      "id": "int-07-020",
+      "type": "reported-question",
+      "prompt": "Could you hear the announcement?",
+      "opening": "The teacher asked Leo",
+      "answer": "if he could hear the announcement",
+      "acceptedAnswers": [
+        "if he could hear the announcement",
+        "whether he could hear the announcement"
+      ]
+    },
+    {
+      "id": "int-07-021",
+      "type": "reported-question",
+      "prompt": "Who wrote this article?",
+      "opening": "The editor asked the journalist",
+      "answer": "who had written that article",
+      "acceptedAnswers": [
+        "who had written that article"
+      ]
+    },
+    {
+      "id": "int-07-022",
+      "type": "reported-question",
+      "prompt": "Which bus goes to the airport?",
+      "opening": "The visitor asked the driver",
+      "answer": "which bus went to the airport",
+      "acceptedAnswers": [
+        "which bus went to the airport"
+      ]
+    },
+    {
+      "id": "int-07-023",
+      "type": "reported-question",
+      "prompt": "How much does the ticket cost?",
+      "opening": "The customer asked the clerk",
+      "answer": "how much the ticket cost",
+      "acceptedAnswers": [
+        "how much the ticket cost"
+      ]
+    },
+    {
+      "id": "int-07-024",
+      "type": "reported-question",
+      "prompt": "Where did you buy that coat?",
+      "opening": "Amir asked Layla",
+      "answer": "where she had bought that coat",
+      "acceptedAnswers": [
+        "where she had bought that coat"
+      ]
+    },
+    {
+      "id": "int-07-025",
+      "type": "reported-question",
+      "prompt": "Why have you changed your mind?",
+      "opening": "The coach asked Sam",
+      "answer": "why he had changed his mind",
+      "acceptedAnswers": [
+        "why he had changed his mind"
+      ]
+    },
+    {
+      "id": "int-07-026",
+      "type": "reported-question",
+      "prompt": "Do the children need any help?",
+      "opening": "The volunteer asked the teacher",
+      "answer": "if the children needed any help",
+      "acceptedAnswers": [
+        "if the children needed any help",
+        "whether the children needed any help"
+      ]
+    },
+    {
+      "id": "int-07-027",
+      "type": "reported-question",
+      "prompt": "Is your sister studying abroad?",
+      "opening": "Farida asked Omar",
+      "answer": "if his sister was studying abroad",
+      "acceptedAnswers": [
+        "if his sister was studying abroad",
+        "whether his sister was studying abroad"
+      ]
+    },
+    {
+      "id": "int-07-028",
+      "type": "reported-question",
+      "prompt": "Did you enjoy the concert last night?",
+      "opening": "Nina asked Eva",
+      "answer": "if she had enjoyed the concert the night before",
+      "acceptedAnswers": [
+        "if she had enjoyed the concert the night before",
+        "whether she had enjoyed the concert the night before"
+      ]
+    },
+    {
+      "id": "int-07-029",
+      "type": "reported-question",
+      "prompt": "Have you booked a table for tonight?",
+      "opening": "The host asked Daniel",
+      "answer": "if he had booked a table for that night",
+      "acceptedAnswers": [
+        "if he had booked a table for that night",
+        "whether he had booked a table for that night"
+      ]
+    },
+    {
+      "id": "int-07-030",
+      "type": "reported-question",
+      "prompt": "Would you prefer a window seat?",
+      "opening": "The agent asked Mrs Lee",
+      "answer": "if she would prefer a window seat",
+      "acceptedAnswers": [
+        "if she would prefer a window seat",
+        "whether she would prefer a window seat"
+      ]
+    },
+    {
+      "id": "int-07-031",
+      "type": "reported-question",
+      "prompt": "Where are they staying this week?",
+      "opening": "The coordinator asked us",
+      "answer": "where they were staying that week",
+      "acceptedAnswers": [
+        "where they were staying that week"
+      ]
+    },
+    {
+      "id": "int-07-032",
+      "type": "reported-question",
+      "prompt": "What time does the library close?",
+      "opening": "A student asked the librarian",
+      "answer": "what time the library closed",
+      "acceptedAnswers": [
+        "what time the library closed"
+      ]
+    },
+    {
+      "id": "int-07-033",
+      "type": "reported-question",
+      "prompt": "Who are you waiting for?",
+      "opening": "The guard asked Alex",
+      "answer": "who he was waiting for",
+      "acceptedAnswers": [
+        "who he was waiting for"
+      ]
+    },
+    {
+      "id": "int-07-034",
+      "type": "reported-question",
+      "prompt": "How did you solve the problem?",
+      "opening": "The tutor asked Sara",
+      "answer": "how she had solved the problem",
+      "acceptedAnswers": [
+        "how she had solved the problem"
+      ]
+    },
+    {
+      "id": "int-07-035",
+      "type": "reported-question",
+      "prompt": "When will the results be published?",
+      "opening": "The students asked the examiner",
+      "answer": "when the results would be published",
+      "acceptedAnswers": [
+        "when the results would be published"
+      ]
+    },
+    {
+      "id": "int-07-036",
+      "type": "reported-question",
+      "prompt": "Does your father drive to work?",
+      "opening": "Ben asked Chloe",
+      "answer": "if her father drove to work",
+      "acceptedAnswers": [
+        "if her father drove to work",
+        "whether her father drove to work"
+      ]
+    },
+    {
+      "id": "int-07-037",
+      "type": "reported-question",
+      "prompt": "Are the documents ready?",
+      "opening": "The director asked the assistant",
+      "answer": "if the documents were ready",
+      "acceptedAnswers": [
+        "if the documents were ready",
+        "whether the documents were ready"
+      ]
+    },
+    {
+      "id": "int-07-038",
+      "type": "reported-question",
+      "prompt": "Did they cancel the flight?",
+      "opening": "The traveller asked the airline employee",
+      "answer": "if they had cancelled the flight",
+      "acceptedAnswers": [
+        "if they had cancelled the flight",
+        "whether they had cancelled the flight"
+      ]
+    },
+    {
+      "id": "int-07-039",
+      "type": "reported-question",
+      "prompt": "Has your team completed the project?",
+      "opening": "The client asked Mr Brown",
+      "answer": "if his team had completed the project",
+      "acceptedAnswers": [
+        "if his team had completed the project",
+        "whether his team had completed the project"
+      ]
+    },
+    {
+      "id": "int-07-040",
+      "type": "reported-question",
+      "prompt": "Can the students use dictionaries?",
+      "opening": "A parent asked the teacher",
+      "answer": "if the students could use dictionaries",
+      "acceptedAnswers": [
+        "if the students could use dictionaries",
+        "whether the students could use dictionaries"
+      ]
+    },
+    {
+      "id": "int-07-041",
+      "type": "reported-question",
+      "prompt": "Why does the machine make that noise?",
+      "opening": "The apprentice asked the engineer",
+      "answer": "why the machine made that noise",
+      "acceptedAnswers": [
+        "why the machine made that noise"
+      ]
+    },
+    {
+      "id": "int-07-042",
+      "type": "reported-question",
+      "prompt": "What are you reading at the moment?",
+      "opening": "Hana asked Peter",
+      "answer": "what he was reading at that moment",
+      "acceptedAnswers": [
+        "what he was reading at that moment"
+      ]
+    },
+    {
+      "id": "int-07-043",
+      "type": "reported-question",
+      "prompt": "Where were you born?",
+      "opening": "The interviewer asked Fatima",
+      "answer": "where she had been born",
+      "acceptedAnswers": [
+        "where she had been born"
+      ]
+    },
+    {
+      "id": "int-07-044",
+      "type": "reported-question",
+      "prompt": "How many people attended the workshop?",
+      "opening": "The organiser asked us",
+      "answer": "how many people had attended the workshop",
+      "acceptedAnswers": [
+        "how many people had attended the workshop"
+      ]
+    },
+    {
+      "id": "int-07-045",
+      "type": "reported-question",
+      "prompt": "Which course will you choose next year?",
+      "opening": "The adviser asked Tim",
+      "answer": "which course he would choose the following year",
+      "acceptedAnswers": [
+        "which course he would choose the following year"
+      ]
+    },
+    {
+      "id": "int-07-046",
+      "type": "reported-question",
+      "prompt": "Is there a pharmacy near here?",
+      "opening": "The tourist asked a local resident",
+      "answer": "if there was a pharmacy near there",
+      "acceptedAnswers": [
+        "if there was a pharmacy near there",
+        "whether there was a pharmacy near there"
+      ]
+    },
+    {
+      "id": "int-07-047",
+      "type": "reported-question",
+      "prompt": "Were the children sleeping when you arrived?",
+      "opening": "The officer asked the babysitter",
+      "answer": "if the children had been sleeping when she arrived",
+      "acceptedAnswers": [
+        "if the children had been sleeping when she arrived",
+        "whether the children had been sleeping when she arrived"
+      ]
+    },
+    {
+      "id": "int-07-048",
+      "type": "reported-question",
+      "prompt": "Have you ever visited Japan?",
+      "opening": "Rita asked Paul",
+      "answer": "if he had ever visited Japan",
+      "acceptedAnswers": [
+        "if he had ever visited Japan",
+        "whether he had ever visited Japan"
+      ]
+    },
+    {
+      "id": "int-07-049",
+      "type": "reported-question",
+      "prompt": "Did your brother call you this morning?",
+      "opening": "Lena asked Mark",
+      "answer": "if his brother had called him that morning",
+      "acceptedAnswers": [
+        "if his brother had called him that morning",
+        "whether his brother had called him that morning"
+      ]
+    },
+    {
+      "id": "int-07-050",
+      "type": "reported-question",
+      "prompt": "Will you be working late tonight?",
+      "opening": "The supervisor asked Grace",
+      "answer": "if she would be working late that night",
+      "acceptedAnswers": [
+        "if she would be working late that night",
+        "whether she would be working late that night"
+      ]
+    },
+    {
+      "id": "int-07-051",
+      "type": "reported-question",
+      "prompt": "What did the doctor recommend?",
+      "opening": "Anna asked her mother",
+      "answer": "what the doctor had recommended",
+      "acceptedAnswers": [
+        "what the doctor had recommended"
+      ]
+    },
+    {
+      "id": "int-07-052",
+      "type": "reported-question",
+      "prompt": "Where have you put the spare key?",
+      "opening": "Dad asked Sophie",
+      "answer": "where she had put the spare key",
+      "acceptedAnswers": [
+        "where she had put the spare key"
+      ]
+    },
+    {
+      "id": "int-07-053",
+      "type": "reported-question",
+      "prompt": "How often do you exercise?",
+      "opening": "The trainer asked Yusuf",
+      "answer": "how often he exercised",
+      "acceptedAnswers": [
+        "how often he exercised"
+      ]
+    },
+    {
+      "id": "int-07-054",
+      "type": "reported-question",
+      "prompt": "Why were the lights off?",
+      "opening": "The neighbour asked us",
+      "answer": "why the lights had been off",
+      "acceptedAnswers": [
+        "why the lights had been off"
+      ]
+    },
+    {
+      "id": "int-07-055",
+      "type": "reported-question",
+      "prompt": "When are the guests arriving?",
+      "opening": "The host asked the receptionist",
+      "answer": "when the guests were arriving",
+      "acceptedAnswers": [
+        "when the guests were arriving"
+      ]
+    },
+    {
+      "id": "int-07-056",
+      "type": "reported-question",
+      "prompt": "Do you know the answer?",
+      "opening": "The teacher asked Harry",
+      "answer": "if he knew the answer",
+      "acceptedAnswers": [
+        "if he knew the answer",
+        "whether he knew the answer"
+      ]
+    },
+    {
+      "id": "int-07-057",
+      "type": "reported-question",
+      "prompt": "Is the road closed because of the snow?",
+      "opening": "The driver asked the police officer",
+      "answer": "if the road was closed because of the snow",
+      "acceptedAnswers": [
+        "if the road was closed because of the snow",
+        "whether the road was closed because of the snow"
+      ]
+    },
+    {
+      "id": "int-07-058",
+      "type": "reported-question",
+      "prompt": "Did you send the email yesterday?",
+      "opening": "The manager asked Priya",
+      "answer": "if she had sent the email the day before",
+      "acceptedAnswers": [
+        "if she had sent the email the day before",
+        "whether she had sent the email the day before"
+      ]
+    },
+    {
+      "id": "int-07-059",
+      "type": "reported-question",
+      "prompt": "Have you paid the electricity bill?",
+      "opening": "My flatmate asked me",
+      "answer": "if I had paid the electricity bill",
+      "acceptedAnswers": [
+        "if I had paid the electricity bill",
+        "whether I had paid the electricity bill"
+      ]
+    },
+    {
+      "id": "int-07-060",
+      "type": "reported-question",
+      "prompt": "May I leave the room early?",
+      "opening": "The pupil asked the teacher",
+      "answer": "if the pupil might leave the room early",
+      "acceptedAnswers": [
+        "if the pupil might leave the room early",
+        "whether the pupil might leave the room early"
+      ]
+    },
+    {
+      "id": "int-07-061",
+      "type": "reported-question",
+      "prompt": "What does this word mean?",
+      "opening": "The learner asked the tutor",
+      "answer": "what that word meant",
+      "acceptedAnswers": [
+        "what that word meant"
+      ]
+    },
+    {
+      "id": "int-07-062",
+      "type": "reported-question",
+      "prompt": "Where is your new office?",
+      "opening": "Owen asked Lucy",
+      "answer": "where her new office was",
+      "acceptedAnswers": [
+        "where her new office was"
+      ]
+    },
+    {
+      "id": "int-07-063",
+      "type": "reported-question",
+      "prompt": "Why did the meeting end early?",
+      "opening": "The journalist asked the spokesperson",
+      "answer": "why the meeting had ended early",
+      "acceptedAnswers": [
+        "why the meeting had ended early"
+      ]
+    },
+    {
+      "id": "int-07-064",
+      "type": "reported-question",
+      "prompt": "How long will the journey take?",
+      "opening": "The passenger asked the driver",
+      "answer": "how long the journey would take",
+      "acceptedAnswers": [
+        "how long the journey would take"
+      ]
+    },
+    {
+      "id": "int-07-065",
+      "type": "reported-question",
+      "prompt": "Who is responsible for this report?",
+      "opening": "The supervisor asked the team",
+      "answer": "who was responsible for that report",
+      "acceptedAnswers": [
+        "who was responsible for that report"
+      ]
+    },
+    {
+      "id": "int-07-066",
+      "type": "reported-question",
+      "prompt": "Are you going to apply for the scholarship?",
+      "opening": "The adviser asked Mina",
+      "answer": "if she was going to apply for the scholarship",
+      "acceptedAnswers": [
+        "if she was going to apply for the scholarship",
+        "whether she was going to apply for the scholarship"
+      ]
+    },
+    {
+      "id": "int-07-067",
+      "type": "reported-question",
+      "prompt": "Did the shop open at nine yesterday?",
+      "opening": "The customer asked the assistant",
+      "answer": "if the shop had opened at nine the day before",
+      "acceptedAnswers": [
+        "if the shop had opened at nine the day before",
+        "whether the shop had opened at nine the day before"
+      ]
+    },
+    {
+      "id": "int-07-068",
+      "type": "reported-question",
+      "prompt": "Have the visitors arrived yet?",
+      "opening": "The receptionist asked the security guard",
+      "answer": "if the visitors had arrived yet",
+      "acceptedAnswers": [
+        "if the visitors had arrived yet",
+        "whether the visitors had arrived yet"
+      ]
+    },
+    {
+      "id": "int-07-069",
+      "type": "reported-question",
+      "prompt": "Can you finish the task by Friday?",
+      "opening": "The manager asked Ahmed",
+      "answer": "if he could finish the task by Friday",
+      "acceptedAnswers": [
+        "if he could finish the task by Friday",
+        "whether he could finish the task by Friday"
+      ]
+    },
+    {
+      "id": "int-07-070",
+      "type": "reported-question",
+      "prompt": "Which film did you watch last weekend?",
+      "opening": "Julia asked Noah",
+      "answer": "which film he had watched the previous weekend",
+      "acceptedAnswers": [
+        "which film he had watched the previous weekend"
+      ]
+    }
+  ]
+}
