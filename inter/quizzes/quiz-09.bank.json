@@ -1,0 +1,855 @@
+{
+  "title": "Prefixes — in-, over-, mis-, re-",
+  "level": "intermediate",
+  "category": "Vocabulary",
+  "instructions": "Complete each sentence with the correct form of a word from the box. Use in-, over-, mis- or re-.",
+  "wordBank": [
+    "appear",
+    "arrange",
+    "convenient",
+    "spend",
+    "understand"
+  ],
+  "questions": [
+    {
+      "id": "int-09-001",
+      "type": "vocabulary-gap",
+      "prompt": "You must have ___ the directions. This is nowhere near the part of town where we are supposed to be.",
+      "before": "You must have ",
+      "after": " the directions. This is nowhere near the part of town where we are supposed to be.",
+      "answer": "misunderstood",
+      "acceptedAnswers": [
+        "misunderstood"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-002",
+      "type": "vocabulary-gap",
+      "prompt": "If you can’t make the meeting on Monday morning, you’ll just have to ___ it.",
+      "before": "If you can’t make the meeting on Monday morning, you’ll just have to ",
+      "after": " it.",
+      "answer": "rearrange",
+      "acceptedAnswers": [
+        "rearrange"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-003",
+      "type": "vocabulary-gap",
+      "prompt": "Our flight was cancelled due to bad weather, which was extremely ___.",
+      "before": "Our flight was cancelled due to bad weather, which was extremely ",
+      "after": ".",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-004",
+      "type": "vocabulary-gap",
+      "prompt": "After going missing in 1926, the writer Agatha Christie ___ ten days later at a hotel, using a different name.",
+      "before": "After going missing in 1926, the writer Agatha Christie ",
+      "after": " ten days later at a hotel, using a different name.",
+      "answer": "reappeared",
+      "acceptedAnswers": [
+        "reappeared"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-005",
+      "type": "vocabulary-gap",
+      "prompt": "Many people are guilty of ___ on things they don’t really need, like clothes or jewellery.",
+      "before": "Many people are guilty of ",
+      "after": " on things they don’t really need, like clothes or jewellery.",
+      "answer": "overspending",
+      "acceptedAnswers": [
+        "overspending"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-006",
+      "type": "vocabulary-gap",
+      "prompt": "I think you have ___ what I meant by the deadline.",
+      "before": "I think you have ",
+      "after": " what I meant by the deadline.",
+      "answer": "misunderstood",
+      "acceptedAnswers": [
+        "misunderstood"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-007",
+      "type": "vocabulary-gap",
+      "prompt": "We need to ___ the desks before the workshop starts.",
+      "before": "We need to ",
+      "after": " the desks before the workshop starts.",
+      "answer": "rearrange",
+      "acceptedAnswers": [
+        "rearrange"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-008",
+      "type": "vocabulary-gap",
+      "prompt": "The new bus timetable is very ___ for people who work late.",
+      "before": "The new bus timetable is very ",
+      "after": " for people who work late.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-009",
+      "type": "vocabulary-gap",
+      "prompt": "The sun began to ___ from behind the clouds.",
+      "before": "The sun began to ",
+      "after": " from behind the clouds.",
+      "answer": "reappear",
+      "acceptedAnswers": [
+        "reappear"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-010",
+      "type": "vocabulary-gap",
+      "prompt": "Try not to ___ when you go shopping this weekend.",
+      "before": "Try not to ",
+      "after": " when you go shopping this weekend.",
+      "answer": "overspend",
+      "acceptedAnswers": [
+        "overspend"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-011",
+      "type": "vocabulary-gap",
+      "prompt": "The customer ___ the instructions and ordered the wrong size.",
+      "before": "The customer ",
+      "after": " the instructions and ordered the wrong size.",
+      "answer": "misunderstood",
+      "acceptedAnswers": [
+        "misunderstood"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-012",
+      "type": "vocabulary-gap",
+      "prompt": "They ___ the furniture to make room for the guests.",
+      "before": "They ",
+      "after": " the furniture to make room for the guests.",
+      "answer": "rearranged",
+      "acceptedAnswers": [
+        "rearranged"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-013",
+      "type": "vocabulary-gap",
+      "prompt": "I know this is an ___ time to call, but I need your help.",
+      "before": "I know this is an ",
+      "after": " time to call, but I need your help.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-014",
+      "type": "vocabulary-gap",
+      "prompt": "The missing cat ___ at our door three days later.",
+      "before": "The missing cat ",
+      "after": " at our door three days later.",
+      "answer": "reappeared",
+      "acceptedAnswers": [
+        "reappeared"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-015",
+      "type": "vocabulary-gap",
+      "prompt": "We ___ on our holiday last summer and had to save afterwards.",
+      "before": "We ",
+      "after": " on our holiday last summer and had to save afterwards.",
+      "answer": "overspent",
+      "acceptedAnswers": [
+        "overspent"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-016",
+      "type": "vocabulary-gap",
+      "prompt": "Please don’t ___ my criticism as a personal attack.",
+      "before": "Please don’t ",
+      "after": " my criticism as a personal attack.",
+      "answer": "misunderstand",
+      "acceptedAnswers": [
+        "misunderstand"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-017",
+      "type": "vocabulary-gap",
+      "prompt": "Could you ___ your appointment for Thursday?",
+      "before": "Could you ",
+      "after": " your appointment for Thursday?",
+      "answer": "rearrange",
+      "acceptedAnswers": [
+        "rearrange"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-018",
+      "type": "vocabulary-gap",
+      "prompt": "It would be ___ to travel across town for a five-minute meeting.",
+      "before": "It would be ",
+      "after": " to travel across town for a five-minute meeting.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-019",
+      "type": "vocabulary-gap",
+      "prompt": "The actor ___ on television after a long break.",
+      "before": "The actor ",
+      "after": " on television after a long break.",
+      "answer": "reappeared",
+      "acceptedAnswers": [
+        "reappeared"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-020",
+      "type": "vocabulary-gap",
+      "prompt": "She often ___ on clothes when there is a sale.",
+      "before": "She often ",
+      "after": " on clothes when there is a sale.",
+      "answer": "overspends",
+      "acceptedAnswers": [
+        "overspends"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-021",
+      "type": "vocabulary-gap",
+      "prompt": "She often ___ jokes when they are translated literally.",
+      "before": "She often ",
+      "after": " jokes when they are translated literally.",
+      "answer": "misunderstands",
+      "acceptedAnswers": [
+        "misunderstands"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-022",
+      "type": "vocabulary-gap",
+      "prompt": "The teacher ___ the seating plan yesterday.",
+      "before": "The teacher ",
+      "after": " the seating plan yesterday.",
+      "answer": "rearranged",
+      "acceptedAnswers": [
+        "rearranged"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-023",
+      "type": "vocabulary-gap",
+      "prompt": "The hotel’s location was ___ because it was far from the station.",
+      "before": "The hotel’s location was ",
+      "after": " because it was far from the station.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-024",
+      "type": "vocabulary-gap",
+      "prompt": "The same error may ___ if we do not fix the software.",
+      "before": "The same error may ",
+      "after": " if we do not fix the software.",
+      "answer": "reappear",
+      "acceptedAnswers": [
+        "reappear"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-025",
+      "type": "vocabulary-gap",
+      "prompt": "The department has ___ its budget this year.",
+      "before": "The department has ",
+      "after": " its budget this year.",
+      "answer": "overspent",
+      "acceptedAnswers": [
+        "overspent"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-026",
+      "type": "vocabulary-gap",
+      "prompt": "We completely ___ the teacher’s explanation yesterday.",
+      "before": "We completely ",
+      "after": " the teacher’s explanation yesterday.",
+      "answer": "misunderstood",
+      "acceptedAnswers": [
+        "misunderstood"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-027",
+      "type": "vocabulary-gap",
+      "prompt": "I have already ___ my schedule to attend the conference.",
+      "before": "I have already ",
+      "after": " my schedule to attend the conference.",
+      "answer": "rearranged",
+      "acceptedAnswers": [
+        "rearranged"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-028",
+      "type": "vocabulary-gap",
+      "prompt": "The unexpected closure was particularly ___ for commuters.",
+      "before": "The unexpected closure was particularly ",
+      "after": " for commuters.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-029",
+      "type": "vocabulary-gap",
+      "prompt": "The rainbow ___ when the rain stopped for a moment.",
+      "before": "The rainbow ",
+      "after": " when the rain stopped for a moment.",
+      "answer": "reappeared",
+      "acceptedAnswers": [
+        "reappeared"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-030",
+      "type": "vocabulary-gap",
+      "prompt": "I regret ___ on a phone I barely use.",
+      "before": "I regret ",
+      "after": " on a phone I barely use.",
+      "answer": "overspending",
+      "acceptedAnswers": [
+        "overspending"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-031",
+      "type": "vocabulary-gap",
+      "prompt": "I’m afraid you have ___ the purpose of this meeting.",
+      "before": "I’m afraid you have ",
+      "after": " the purpose of this meeting.",
+      "answer": "misunderstood",
+      "acceptedAnswers": [
+        "misunderstood"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-032",
+      "type": "vocabulary-gap",
+      "prompt": "Please ___ these sentences into the correct order.",
+      "before": "Please ",
+      "after": " these sentences into the correct order.",
+      "answer": "rearrange",
+      "acceptedAnswers": [
+        "rearrange"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-033",
+      "type": "vocabulary-gap",
+      "prompt": "Having to print every form is rather ___ for students.",
+      "before": "Having to print every form is rather ",
+      "after": " for students.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-034",
+      "type": "vocabulary-gap",
+      "prompt": "She disappeared into the crowd and then ___ near the entrance.",
+      "before": "She disappeared into the crowd and then ",
+      "after": " near the entrance.",
+      "answer": "reappeared",
+      "acceptedAnswers": [
+        "reappeared"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-035",
+      "type": "vocabulary-gap",
+      "prompt": "They might ___ if they do not plan their expenses.",
+      "before": "They might ",
+      "after": " if they do not plan their expenses.",
+      "answer": "overspend",
+      "acceptedAnswers": [
+        "overspend"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-036",
+      "type": "vocabulary-gap",
+      "prompt": "He ___ the question and gave an irrelevant answer.",
+      "before": "He ",
+      "after": " the question and gave an irrelevant answer.",
+      "answer": "misunderstood",
+      "acceptedAnswers": [
+        "misunderstood"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-037",
+      "type": "vocabulary-gap",
+      "prompt": "The organizers had to ___ the programme after the speaker cancelled.",
+      "before": "The organizers had to ",
+      "after": " the programme after the speaker cancelled.",
+      "answer": "rearrange",
+      "acceptedAnswers": [
+        "rearrange"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-038",
+      "type": "vocabulary-gap",
+      "prompt": "The only available appointment was at an ___ hour.",
+      "before": "The only available appointment was at an ",
+      "after": " hour.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-039",
+      "type": "vocabulary-gap",
+      "prompt": "The problem has ___ despite our earlier repairs.",
+      "before": "The problem has ",
+      "after": " despite our earlier repairs.",
+      "answer": "reappeared",
+      "acceptedAnswers": [
+        "reappeared"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-040",
+      "type": "vocabulary-gap",
+      "prompt": "He ___ at the market and had no money left for lunch.",
+      "before": "He ",
+      "after": " at the market and had no money left for lunch.",
+      "answer": "overspent",
+      "acceptedAnswers": [
+        "overspent"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-041",
+      "type": "vocabulary-gap",
+      "prompt": "If you ___ the sign, you might take the wrong road.",
+      "before": "If you ",
+      "after": " the sign, you might take the wrong road.",
+      "answer": "misunderstand",
+      "acceptedAnswers": [
+        "misunderstand"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-042",
+      "type": "vocabulary-gap",
+      "prompt": "She ___ the books on the shelf by subject.",
+      "before": "She ",
+      "after": " the books on the shelf by subject.",
+      "answer": "rearranged",
+      "acceptedAnswers": [
+        "rearranged"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-043",
+      "type": "vocabulary-gap",
+      "prompt": "A broken lift can be extremely ___ for residents.",
+      "before": "A broken lift can be extremely ",
+      "after": " for residents.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-044",
+      "type": "vocabulary-gap",
+      "prompt": "The character will ___ in the final chapter.",
+      "before": "The character will ",
+      "after": " in the final chapter.",
+      "answer": "reappear",
+      "acceptedAnswers": [
+        "reappear"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-045",
+      "type": "vocabulary-gap",
+      "prompt": "It is easy to ___ when you use a credit card.",
+      "before": "It is easy to ",
+      "after": " when you use a credit card.",
+      "answer": "overspend",
+      "acceptedAnswers": [
+        "overspend"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-046",
+      "type": "vocabulary-gap",
+      "prompt": "The two colleagues ___ each other during the phone call.",
+      "before": "The two colleagues ",
+      "after": " each other during the phone call.",
+      "answer": "misunderstood",
+      "acceptedAnswers": [
+        "misunderstood"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-047",
+      "type": "vocabulary-gap",
+      "prompt": "We are ___ the tables for the group activity.",
+      "before": "We are ",
+      "after": " the tables for the group activity.",
+      "answer": "rearranging",
+      "acceptedAnswers": [
+        "rearranging"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-048",
+      "type": "vocabulary-gap",
+      "prompt": "It is ___ when the internet stops working during an exam.",
+      "before": "It is ",
+      "after": " when the internet stops working during an exam.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-049",
+      "type": "vocabulary-gap",
+      "prompt": "The old photographs ___ during the house renovation.",
+      "before": "The old photographs ",
+      "after": " during the house renovation.",
+      "answer": "reappeared",
+      "acceptedAnswers": [
+        "reappeared"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-050",
+      "type": "vocabulary-gap",
+      "prompt": "We must avoid ___ on unnecessary equipment.",
+      "before": "We must avoid ",
+      "after": " on unnecessary equipment.",
+      "answer": "overspending",
+      "acceptedAnswers": [
+        "overspending"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-051",
+      "type": "vocabulary-gap",
+      "prompt": "It is easy to ___ a short message without context.",
+      "before": "It is easy to ",
+      "after": " a short message without context.",
+      "answer": "misunderstand",
+      "acceptedAnswers": [
+        "misunderstand"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-052",
+      "type": "vocabulary-gap",
+      "prompt": "The manager asked us to ___ the interview times.",
+      "before": "The manager asked us to ",
+      "after": " the interview times.",
+      "answer": "rearrange",
+      "acceptedAnswers": [
+        "rearrange"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-053",
+      "type": "vocabulary-gap",
+      "prompt": "The change of venue was ___ for most participants.",
+      "before": "The change of venue was ",
+      "after": " for most participants.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-054",
+      "type": "vocabulary-gap",
+      "prompt": "The lights went out briefly before they ___ a few seconds later.",
+      "before": "The lights went out briefly before they ",
+      "after": " a few seconds later.",
+      "answer": "reappeared",
+      "acceptedAnswers": [
+        "reappeared"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-055",
+      "type": "vocabulary-gap",
+      "prompt": "The company ___ on advertising last quarter.",
+      "before": "The company ",
+      "after": " on advertising last quarter.",
+      "answer": "overspent",
+      "acceptedAnswers": [
+        "overspent"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-056",
+      "type": "vocabulary-gap",
+      "prompt": "The students had ___ the homework instructions.",
+      "before": "The students had ",
+      "after": " the homework instructions.",
+      "answer": "misunderstood",
+      "acceptedAnswers": [
+        "misunderstood"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-057",
+      "type": "vocabulary-gap",
+      "prompt": "They have ___ the rooms to create a larger workspace.",
+      "before": "They have ",
+      "after": " the rooms to create a larger workspace.",
+      "answer": "rearranged",
+      "acceptedAnswers": [
+        "rearranged"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-058",
+      "type": "vocabulary-gap",
+      "prompt": "This payment method is ___ for customers without a bank card.",
+      "before": "This payment method is ",
+      "after": " for customers without a bank card.",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-059",
+      "type": "vocabulary-gap",
+      "prompt": "We waited for the boat to ___ on the horizon.",
+      "before": "We waited for the boat to ",
+      "after": " on the horizon.",
+      "answer": "reappear",
+      "acceptedAnswers": [
+        "reappear"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-060",
+      "type": "vocabulary-gap",
+      "prompt": "My friends tend to ___ during the holiday season.",
+      "before": "My friends tend to ",
+      "after": " during the holiday season.",
+      "answer": "overspend",
+      "acceptedAnswers": [
+        "overspend"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-061",
+      "type": "vocabulary-gap",
+      "prompt": "She ___ his silence as a sign of agreement.",
+      "before": "She ",
+      "after": " his silence as a sign of agreement.",
+      "answer": "misunderstood",
+      "acceptedAnswers": [
+        "misunderstood"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-062",
+      "type": "vocabulary-gap",
+      "prompt": "I spent the afternoon ___ my files into folders.",
+      "before": "I spent the afternoon ",
+      "after": " my files into folders.",
+      "answer": "rearranging",
+      "acceptedAnswers": [
+        "rearranging"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-063",
+      "type": "vocabulary-gap",
+      "prompt": "The roadworks made the journey longer and more ___.",
+      "before": "The roadworks made the journey longer and more ",
+      "after": ".",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-064",
+      "type": "vocabulary-gap",
+      "prompt": "The familiar symbol ___ at the end of the film.",
+      "before": "The familiar symbol ",
+      "after": " at the end of the film.",
+      "answer": "reappeared",
+      "acceptedAnswers": [
+        "reappeared"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-065",
+      "type": "vocabulary-gap",
+      "prompt": "She admitted that she had ___ on her birthday party.",
+      "before": "She admitted that she had ",
+      "after": " on her birthday party.",
+      "answer": "overspent",
+      "acceptedAnswers": [
+        "overspent"
+      ],
+      "word": "overspend"
+    },
+    {
+      "id": "int-09-066",
+      "type": "vocabulary-gap",
+      "prompt": "I hope nobody will ___ what I am about to say.",
+      "before": "I hope nobody will ",
+      "after": " what I am about to say.",
+      "answer": "misunderstand",
+      "acceptedAnswers": [
+        "misunderstand"
+      ],
+      "word": "misunderstand"
+    },
+    {
+      "id": "int-09-067",
+      "type": "vocabulary-gap",
+      "prompt": "Can we ___ the delivery for a more convenient time?",
+      "before": "Can we ",
+      "after": " the delivery for a more convenient time?",
+      "answer": "rearrange",
+      "acceptedAnswers": [
+        "rearrange"
+      ],
+      "word": "rearrange"
+    },
+    {
+      "id": "int-09-068",
+      "type": "vocabulary-gap",
+      "prompt": "Would next Tuesday be ___ for you?",
+      "before": "Would next Tuesday be ",
+      "after": " for you?",
+      "answer": "inconvenient",
+      "acceptedAnswers": [
+        "inconvenient"
+      ],
+      "word": "inconvenient"
+    },
+    {
+      "id": "int-09-069",
+      "type": "vocabulary-gap",
+      "prompt": "After months of silence, his name suddenly ___ in the news.",
+      "before": "After months of silence, his name suddenly ",
+      "after": " in the news.",
+      "answer": "reappeared",
+      "acceptedAnswers": [
+        "reappeared"
+      ],
+      "word": "reappear"
+    },
+    {
+      "id": "int-09-070",
+      "type": "vocabulary-gap",
+      "prompt": "People who keep a budget are less likely to ___ each month.",
+      "before": "People who keep a budget are less likely to ",
+      "after": " each month.",
+      "answer": "overspend",
+      "acceptedAnswers": [
+        "overspend"
+      ],
+      "word": "overspend"
+    }
+  ]
+}
