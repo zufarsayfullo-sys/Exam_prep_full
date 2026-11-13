@@ -1,0 +1,850 @@
+{
+  "title": "Used to, Would & Be/Get Used to — Past Habits and Familiarity",
+  "level": "upper-intermediate",
+  "category": "Grammar",
+  "instructions": "Choose the correct expression to complete each sentence.",
+  "passMark": 80,
+  "questionsPerAttempt": 10,
+  "questions": [
+    {
+      "id": "upper-02-001",
+      "type": "multiple-choice",
+      "prompt": "Ellen ___ do any sports, but she’s begun to go swimming.",
+      "options": [
+        "didn’t use to",
+        "use to",
+        "was used to"
+      ],
+      "answer": "didn’t use to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-002",
+      "type": "multiple-choice",
+      "prompt": "Where ___ before your present job?",
+      "options": [
+        "you work",
+        "did you use to work",
+        "did you used to work"
+      ],
+      "answer": "did you use to work",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-003",
+      "type": "multiple-choice",
+      "prompt": "Anvar ___ everything being done on time, so it was a nasty shock when anyone was late.",
+      "options": [
+        "would",
+        "was used to",
+        "used to"
+      ],
+      "answer": "was used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-004",
+      "type": "multiple-choice",
+      "prompt": "My parents ___ with us at bedtime when we were little.",
+      "options": [
+        "are used to sitting",
+        "get used to sitting",
+        "would sit"
+      ],
+      "answer": "would sit",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-005",
+      "type": "multiple-choice",
+      "prompt": "I am not sure my granny is as fit and healthy as she ___ .",
+      "options": [
+        "used to be",
+        "was used to",
+        "would be"
+      ],
+      "answer": "used to be",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-006",
+      "type": "multiple-choice",
+      "prompt": "They ___ a day out at the seaside when they were younger.",
+      "options": [
+        "used to spend",
+        "spend",
+        "used to spending"
+      ],
+      "answer": "used to spend",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-007",
+      "type": "multiple-choice",
+      "prompt": "Living alone is a new experience for me, but I ___ it.",
+      "options": [
+        "am getting used to",
+        "used to",
+        "use to"
+      ],
+      "answer": "am getting used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-008",
+      "type": "multiple-choice",
+      "prompt": "You shouldn’t take the highway as it ___ at this time.",
+      "options": [
+        "used to be busy",
+        "is usually busy",
+        "would busy"
+      ],
+      "answer": "is usually busy",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-009",
+      "type": "multiple-choice",
+      "prompt": "When Nick was a university student, he ___ in a flat where it was nice and cosy.",
+      "options": [
+        "use to living",
+        "used to live",
+        "was getting used to live"
+      ],
+      "answer": "used to live",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-010",
+      "type": "multiple-choice",
+      "prompt": "Lobar ___ exercise for an hour a day at the moment.",
+      "options": [
+        "get used to doing",
+        "used to do",
+        "is getting used to doing"
+      ],
+      "answer": "is getting used to doing",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-011",
+      "type": "multiple-choice",
+      "prompt": "When I was a child, I ___ afraid of thunderstorms.",
+      "options": [
+        "would be",
+        "used to be",
+        "am used to being"
+      ],
+      "answer": "used to be",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-012",
+      "type": "multiple-choice",
+      "prompt": "My grandfather ___ a small grocery shop before he retired.",
+      "options": [
+        "would own",
+        "was used to own",
+        "used to own"
+      ],
+      "answer": "used to own",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-013",
+      "type": "multiple-choice",
+      "prompt": "There ___ a cinema on this street, but it closed years ago.",
+      "options": [
+        "used to be",
+        "would be",
+        "is used to being"
+      ],
+      "answer": "used to be",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-014",
+      "type": "multiple-choice",
+      "prompt": "She ___ very shy at school, but now she speaks confidently.",
+      "options": [
+        "is used to",
+        "would be",
+        "used to be"
+      ],
+      "answer": "used to be",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-015",
+      "type": "multiple-choice",
+      "prompt": "We ___ a dog when we lived in the countryside.",
+      "options": [
+        "would have",
+        "were used to have",
+        "used to have"
+      ],
+      "answer": "used to have",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-016",
+      "type": "multiple-choice",
+      "prompt": "I ___ spicy food, but now I really enjoy it.",
+      "options": [
+        "wasn't used to like",
+        "didn't used to like",
+        "didn't use to like"
+      ],
+      "answer": "didn't use to like",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-017",
+      "type": "multiple-choice",
+      "prompt": "He ___ long hair before he joined the army.",
+      "options": [
+        "would have",
+        "was used to have",
+        "used to have"
+      ],
+      "answer": "used to have",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-018",
+      "type": "multiple-choice",
+      "prompt": "My sister ___ in London, but she moved to Bristol.",
+      "options": [
+        "would live",
+        "used to live",
+        "is used to live"
+      ],
+      "answer": "used to live",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-019",
+      "type": "multiple-choice",
+      "prompt": "The village ___ much quieter before the new road was built.",
+      "options": [
+        "was used to being",
+        "used to be",
+        "would be"
+      ],
+      "answer": "used to be",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-020",
+      "type": "multiple-choice",
+      "prompt": "I ___ coffee, but now I drink two cups a day.",
+      "options": [
+        "didn't use to drink",
+        "wasn't used to drink",
+        "didn't used to drink"
+      ],
+      "answer": "didn't use to drink",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-021",
+      "type": "multiple-choice",
+      "prompt": "Every summer, we ___ our cousins by the sea.",
+      "options": [
+        "would visit",
+        "are used to visiting",
+        "get used to visit"
+      ],
+      "answer": "would visit",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-022",
+      "type": "multiple-choice",
+      "prompt": "When we were children, our teacher ___ us a story every Friday.",
+      "options": [
+        "is used to reading",
+        "would read",
+        "was used to read"
+      ],
+      "answer": "would read",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-023",
+      "type": "multiple-choice",
+      "prompt": "After dinner, Dad ___ us for a walk around the neighbourhood.",
+      "options": [
+        "would take",
+        "gets used to take",
+        "used to taking"
+      ],
+      "answer": "would take",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-024",
+      "type": "multiple-choice",
+      "prompt": "On cold evenings, Grandma ___ by the fire and knit.",
+      "options": [
+        "used to sitting",
+        "is used to sitting",
+        "would sit"
+      ],
+      "answer": "would sit",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-025",
+      "type": "multiple-choice",
+      "prompt": "Whenever it snowed, the children ___ snowmen in the garden.",
+      "options": [
+        "get used to building",
+        "would build",
+        "were used to build"
+      ],
+      "answer": "would build",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-026",
+      "type": "multiple-choice",
+      "prompt": "In the old days, neighbours ___ at the village square to talk.",
+      "options": [
+        "are used to gather",
+        "used to gathering",
+        "would gather"
+      ],
+      "answer": "would gather",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-027",
+      "type": "multiple-choice",
+      "prompt": "Every Sunday, my uncle ___ pancakes for the whole family.",
+      "options": [
+        "gets used to making",
+        "was used to make",
+        "would make"
+      ],
+      "answer": "would make",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-028",
+      "type": "multiple-choice",
+      "prompt": "After school, we ___ football until it got dark.",
+      "options": [
+        "used to playing",
+        "are used to play",
+        "would play"
+      ],
+      "answer": "would play",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-029",
+      "type": "multiple-choice",
+      "prompt": "During the holidays, my father ___ us fishing at sunrise.",
+      "options": [
+        "is used to take",
+        "used to taking",
+        "would take"
+      ],
+      "answer": "would take",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-030",
+      "type": "multiple-choice",
+      "prompt": "On her way home from work, she ___ at the bakery for fresh bread.",
+      "options": [
+        "was used to stop",
+        "gets used to stopping",
+        "would stop"
+      ],
+      "answer": "would stop",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-031",
+      "type": "multiple-choice",
+      "prompt": "After ten years in Finland, I ___ very cold winters.",
+      "options": [
+        "used to",
+        "am used to",
+        "would"
+      ],
+      "answer": "am used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-032",
+      "type": "multiple-choice",
+      "prompt": "She works night shifts, so she ___ sleeping during the day.",
+      "options": [
+        "is used to",
+        "would",
+        "used to"
+      ],
+      "answer": "is used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-033",
+      "type": "multiple-choice",
+      "prompt": "Our teacher ___ speaking in front of large groups.",
+      "options": [
+        "used to",
+        "would",
+        "is used to"
+      ],
+      "answer": "is used to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-034",
+      "type": "multiple-choice",
+      "prompt": "I have lived beside the railway for years, so I ___ the noise.",
+      "options": [
+        "would",
+        "am used to",
+        "used to"
+      ],
+      "answer": "am used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-035",
+      "type": "multiple-choice",
+      "prompt": "They have been cycling to work for years and ___ the early starts.",
+      "options": [
+        "used to",
+        "would",
+        "are used to"
+      ],
+      "answer": "are used to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-036",
+      "type": "multiple-choice",
+      "prompt": "My brother has worked in a restaurant for years, so he ___ standing all day.",
+      "options": [
+        "is used to",
+        "would",
+        "used to"
+      ],
+      "answer": "is used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-037",
+      "type": "multiple-choice",
+      "prompt": "She grew up near the sea and ___ strong winds.",
+      "options": [
+        "is used to",
+        "used to",
+        "would"
+      ],
+      "answer": "is used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-038",
+      "type": "multiple-choice",
+      "prompt": "After years of practice, he ___ performing on stage.",
+      "options": [
+        "used to",
+        "is used to",
+        "would"
+      ],
+      "answer": "is used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-039",
+      "type": "multiple-choice",
+      "prompt": "As an experienced pilot, she ___ flying through turbulence.",
+      "options": [
+        "is used to",
+        "would",
+        "used to"
+      ],
+      "answer": "is used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-040",
+      "type": "multiple-choice",
+      "prompt": "We have been living here for years, so we ___ the busy streets.",
+      "options": [
+        "would",
+        "used to",
+        "are used to"
+      ],
+      "answer": "are used to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-041",
+      "type": "multiple-choice",
+      "prompt": "I have just moved to Japan and ___ eating with chopsticks.",
+      "options": [
+        "used to",
+        "am getting used to",
+        "would"
+      ],
+      "answer": "am getting used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-042",
+      "type": "multiple-choice",
+      "prompt": "He started his new job last week and ___ the early mornings.",
+      "options": [
+        "is getting used to",
+        "would",
+        "used to"
+      ],
+      "answer": "is getting used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-043",
+      "type": "multiple-choice",
+      "prompt": "We moved to a smaller flat, and we ___ having less space.",
+      "options": [
+        "are getting used to",
+        "used to",
+        "would"
+      ],
+      "answer": "are getting used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-044",
+      "type": "multiple-choice",
+      "prompt": "She has recently started driving on the left and ___ it.",
+      "options": [
+        "used to",
+        "is getting used to",
+        "would"
+      ],
+      "answer": "is getting used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-045",
+      "type": "multiple-choice",
+      "prompt": "The new students ___ studying independently this semester.",
+      "options": [
+        "are getting used to",
+        "used to",
+        "would"
+      ],
+      "answer": "are getting used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-046",
+      "type": "multiple-choice",
+      "prompt": "After moving abroad, he ___ speaking a different language every day.",
+      "options": [
+        "used to",
+        "is getting used to",
+        "would"
+      ],
+      "answer": "is getting used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-047",
+      "type": "multiple-choice",
+      "prompt": "I have started wearing glasses, and I ___ them.",
+      "options": [
+        "used to",
+        "am getting used to",
+        "would"
+      ],
+      "answer": "am getting used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-048",
+      "type": "multiple-choice",
+      "prompt": "Since the office moved, we ___ the longer commute.",
+      "options": [
+        "would",
+        "used to",
+        "are getting used to"
+      ],
+      "answer": "are getting used to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-049",
+      "type": "multiple-choice",
+      "prompt": "She has recently become a manager and ___ making difficult decisions.",
+      "options": [
+        "is getting used to",
+        "would",
+        "used to"
+      ],
+      "answer": "is getting used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-050",
+      "type": "multiple-choice",
+      "prompt": "My parents have just bought a smartphone and ___ using its features.",
+      "options": [
+        "used to",
+        "would",
+        "are getting used to"
+      ],
+      "answer": "are getting used to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-051",
+      "type": "multiple-choice",
+      "prompt": "It took me months to ___ waking up at five in the morning.",
+      "options": [
+        "would",
+        "used to",
+        "get used to"
+      ],
+      "answer": "get used to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-052",
+      "type": "multiple-choice",
+      "prompt": "You'll soon ___ the new timetable.",
+      "options": [
+        "get used to",
+        "would",
+        "used to"
+      ],
+      "answer": "get used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-053",
+      "type": "multiple-choice",
+      "prompt": "How long did it take you to ___ living alone?",
+      "options": [
+        "used to",
+        "would",
+        "get used to"
+      ],
+      "answer": "get used to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-054",
+      "type": "multiple-choice",
+      "prompt": "She found it difficult to ___ the humid climate.",
+      "options": [
+        "would",
+        "get used to",
+        "used to"
+      ],
+      "answer": "get used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-055",
+      "type": "multiple-choice",
+      "prompt": "You need time to ___ working with a new team.",
+      "options": [
+        "get used to",
+        "would",
+        "used to"
+      ],
+      "answer": "get used to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-056",
+      "type": "multiple-choice",
+      "prompt": "I don't think I'll ever ___ the constant traffic noise.",
+      "options": [
+        "used to",
+        "would",
+        "get used to"
+      ],
+      "answer": "get used to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-057",
+      "type": "multiple-choice",
+      "prompt": "He is trying to ___ writing reports in English.",
+      "options": [
+        "used to",
+        "get used to",
+        "would"
+      ],
+      "answer": "get used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-058",
+      "type": "multiple-choice",
+      "prompt": "It was hard for the children to ___ their new school.",
+      "options": [
+        "would",
+        "get used to",
+        "used to"
+      ],
+      "answer": "get used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-059",
+      "type": "multiple-choice",
+      "prompt": "She couldn't ___ wearing a uniform every day.",
+      "options": [
+        "used to",
+        "get used to",
+        "would"
+      ],
+      "answer": "get used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-060",
+      "type": "multiple-choice",
+      "prompt": "With enough practice, you can ___ speaking to large audiences.",
+      "options": [
+        "would",
+        "get used to",
+        "used to"
+      ],
+      "answer": "get used to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-061",
+      "type": "multiple-choice",
+      "prompt": "Did you ___ walk to school when you were younger?",
+      "options": [
+        "use to",
+        "used to",
+        "using to"
+      ],
+      "answer": "use to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-062",
+      "type": "multiple-choice",
+      "prompt": "He didn't ___ enjoy reading, but now he loves it.",
+      "options": [
+        "be used to",
+        "use to",
+        "used to"
+      ],
+      "answer": "use to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-063",
+      "type": "multiple-choice",
+      "prompt": "Where did your family ___ live before moving here?",
+      "options": [
+        "using to",
+        "used to",
+        "use to"
+      ],
+      "answer": "use to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-064",
+      "type": "multiple-choice",
+      "prompt": "We didn't ___ have a computer at home.",
+      "options": [
+        "use to",
+        "used to",
+        "be used to"
+      ],
+      "answer": "use to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-065",
+      "type": "multiple-choice",
+      "prompt": "Did she ___ play the piano as a child?",
+      "options": [
+        "using to",
+        "used to",
+        "use to"
+      ],
+      "answer": "use to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-066",
+      "type": "multiple-choice",
+      "prompt": "I wasn't ___ working such long hours when I started.",
+      "options": [
+        "use to",
+        "would",
+        "used to"
+      ],
+      "answer": "used to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-02-067",
+      "type": "multiple-choice",
+      "prompt": "They are ___ to their new neighbourhood gradually.",
+      "options": [
+        "get used",
+        "getting used",
+        "used"
+      ],
+      "answer": "getting used",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-068",
+      "type": "multiple-choice",
+      "prompt": "She has finally ___ to driving in heavy traffic.",
+      "options": [
+        "would",
+        "got used",
+        "use"
+      ],
+      "answer": "got used",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-02-069",
+      "type": "multiple-choice",
+      "prompt": "I can't ___ to getting up so early.",
+      "options": [
+        "get used",
+        "used",
+        "would"
+      ],
+      "answer": "get used",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-02-070",
+      "type": "multiple-choice",
+      "prompt": "Are you ___ to working from home yet?",
+      "options": [
+        "use",
+        "used",
+        "would"
+      ],
+      "answer": "used",
+      "correctIndex": 1
+    }
+  ]
+}
