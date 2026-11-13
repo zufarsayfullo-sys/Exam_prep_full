@@ -1,0 +1,850 @@
+{
+  "title": "Modal Verbs — Obligation, Possibility and Deduction",
+  "level": "upper-intermediate",
+  "category": "Grammar",
+  "instructions": "Choose the correct modal verb or expression to complete each sentence.",
+  "passMark": 80,
+  "questionsPerAttempt": 10,
+  "questions": [
+    {
+      "id": "upper-01-001",
+      "type": "multiple-choice",
+      "prompt": "I _____ to be wrong, but I’m sure I saw Samira in town last night.",
+      "options": [
+        "must be",
+        "need be",
+        "could be"
+      ],
+      "answer": "could be",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-002",
+      "type": "multiple-choice",
+      "prompt": "If you want to be rich, you _____ get a good job and work hard.",
+      "options": [
+        "can",
+        "have to",
+        "may"
+      ],
+      "answer": "have to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-003",
+      "type": "multiple-choice",
+      "prompt": "_____ that be Gordon’s briefcase? He has one just like it.",
+      "options": [
+        "Could",
+        "Has to",
+        "Ought"
+      ],
+      "answer": "Could",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-004",
+      "type": "multiple-choice",
+      "prompt": "My sister really _____ pay more attention when people tell her their names.",
+      "options": [
+        "may to",
+        "can to",
+        "ought to"
+      ],
+      "answer": "ought to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-005",
+      "type": "multiple-choice",
+      "prompt": "You _____ bought so much food. I’d already prepared plenty.",
+      "options": [
+        "can’t have",
+        "needn’t have",
+        "mustn’t have"
+      ],
+      "answer": "needn’t have",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-006",
+      "type": "multiple-choice",
+      "prompt": "Our national team _____ win the championship this year, but it seems unlikely.",
+      "options": [
+        "could",
+        "needn’t",
+        "mustn’t"
+      ],
+      "answer": "could",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-007",
+      "type": "multiple-choice",
+      "prompt": "You _____ leave your luggage there. It will be taken away by security.",
+      "options": [
+        "don’t have to",
+        "needn’t",
+        "mustn’t"
+      ],
+      "answer": "mustn’t",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-008",
+      "type": "multiple-choice",
+      "prompt": "_____ I call you later? There’s something we need to discuss.",
+      "options": [
+        "Need",
+        "May",
+        "Must"
+      ],
+      "answer": "May",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-009",
+      "type": "multiple-choice",
+      "prompt": "You really _____ use the equipment without wearing safety glasses.",
+      "options": [
+        "mustn’t",
+        "needn’t",
+        "won’t"
+      ],
+      "answer": "mustn’t",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-010",
+      "type": "multiple-choice",
+      "prompt": "If I finish work reasonably early, I _____ have a barbecue later.",
+      "options": [
+        "mustn’t",
+        "need",
+        "might"
+      ],
+      "answer": "might",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-011",
+      "type": "multiple-choice",
+      "prompt": "You _____ wear a uniform at this school; it is compulsory.",
+      "options": [
+        "needn’t",
+        "must",
+        "might"
+      ],
+      "answer": "must",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-012",
+      "type": "multiple-choice",
+      "prompt": "Students _____ bring their own laptops; the school provides computers.",
+      "options": [
+        "don’t have to",
+        "mustn’t",
+        "can’t"
+      ],
+      "answer": "don’t have to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-013",
+      "type": "multiple-choice",
+      "prompt": "That _____ be Elena at the door. She is abroad this week.",
+      "options": [
+        "must",
+        "ought to",
+        "can’t"
+      ],
+      "answer": "can’t",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-014",
+      "type": "multiple-choice",
+      "prompt": "He _____ be exhausted after working a fourteen-hour shift.",
+      "options": [
+        "needn’t",
+        "must",
+        "can’t"
+      ],
+      "answer": "must",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-015",
+      "type": "multiple-choice",
+      "prompt": "We _____ leave now, or we will miss the last train.",
+      "options": [
+        "had better",
+        "might as well not",
+        "needn’t"
+      ],
+      "answer": "had better",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-016",
+      "type": "multiple-choice",
+      "prompt": "You _____ smoke in the laboratory under any circumstances.",
+      "options": [
+        "don’t have to",
+        "may",
+        "mustn’t"
+      ],
+      "answer": "mustn’t",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-017",
+      "type": "multiple-choice",
+      "prompt": "She _____ have forgotten the meeting; she always keeps a calendar.",
+      "options": [
+        "can’t",
+        "might",
+        "must"
+      ],
+      "answer": "might",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-018",
+      "type": "multiple-choice",
+      "prompt": "The lights are off and the door is locked. They _____ have gone home.",
+      "options": [
+        "must",
+        "needn’t",
+        "shouldn’t"
+      ],
+      "answer": "must",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-019",
+      "type": "multiple-choice",
+      "prompt": "You _____ tell anyone my password. It is confidential.",
+      "options": [
+        "needn’t",
+        "might",
+        "mustn’t"
+      ],
+      "answer": "mustn’t",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-020",
+      "type": "multiple-choice",
+      "prompt": "He _____ speak three languages fluently when he was only twelve.",
+      "options": [
+        "ought",
+        "could",
+        "must"
+      ],
+      "answer": "could",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-021",
+      "type": "multiple-choice",
+      "prompt": "I _____ finish the report yesterday because the server was down.",
+      "options": [
+        "couldn’t",
+        "mustn’t",
+        "needn’t"
+      ],
+      "answer": "couldn’t",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-022",
+      "type": "multiple-choice",
+      "prompt": "We _____ book tickets in advance; the concert sold out last time.",
+      "options": [
+        "can’t",
+        "needn’t",
+        "should"
+      ],
+      "answer": "should",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-023",
+      "type": "multiple-choice",
+      "prompt": "You _____ have checked the address before sending the parcel.",
+      "options": [
+        "can",
+        "should",
+        "may"
+      ],
+      "answer": "should",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-024",
+      "type": "multiple-choice",
+      "prompt": "She _____ have left her umbrella on the bus; it is not in her bag.",
+      "options": [
+        "might",
+        "mustn’t",
+        "needn’t"
+      ],
+      "answer": "might",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-025",
+      "type": "multiple-choice",
+      "prompt": "They _____ have taken the wrong turning; they arrived two hours late.",
+      "options": [
+        "can",
+        "ought",
+        "may"
+      ],
+      "answer": "may",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-026",
+      "type": "multiple-choice",
+      "prompt": "You _____ have told me about the delay. I waited for an hour.",
+      "options": [
+        "can",
+        "should",
+        "might"
+      ],
+      "answer": "should",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-027",
+      "type": "multiple-choice",
+      "prompt": "We _____ have rushed; the flight was delayed by three hours.",
+      "options": [
+        "needn’t",
+        "mustn’t",
+        "can’t"
+      ],
+      "answer": "needn’t",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-028",
+      "type": "multiple-choice",
+      "prompt": "He _____ have been at the meeting; I saw him there myself.",
+      "options": [
+        "can’t",
+        "needn’t",
+        "must"
+      ],
+      "answer": "must",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-029",
+      "type": "multiple-choice",
+      "prompt": "She _____ have stolen the money; she was in another city all day.",
+      "options": [
+        "should",
+        "can’t",
+        "must"
+      ],
+      "answer": "can’t",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-030",
+      "type": "multiple-choice",
+      "prompt": "I _____ have eaten so much cake. Now I feel sick.",
+      "options": [
+        "shouldn’t",
+        "couldn’t",
+        "needn’t"
+      ],
+      "answer": "shouldn’t",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-031",
+      "type": "multiple-choice",
+      "prompt": "You _____ be joking! Nobody would pay that much for a pen.",
+      "options": [
+        "need",
+        "may not",
+        "must"
+      ],
+      "answer": "must",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-032",
+      "type": "multiple-choice",
+      "prompt": "They _____ arrive late because of the heavy traffic.",
+      "options": [
+        "needn’t",
+        "may",
+        "mustn’t"
+      ],
+      "answer": "may",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-033",
+      "type": "multiple-choice",
+      "prompt": "You _____ ask for permission before entering the restricted area.",
+      "options": [
+        "have to",
+        "might",
+        "needn’t"
+      ],
+      "answer": "have to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-034",
+      "type": "multiple-choice",
+      "prompt": "Visitors _____ take photographs inside the museum; it is forbidden.",
+      "options": [
+        "don’t have to",
+        "might not",
+        "mustn’t"
+      ],
+      "answer": "mustn’t",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-035",
+      "type": "multiple-choice",
+      "prompt": "You _____ attend tomorrow’s optional seminar if you are busy.",
+      "options": [
+        "can’t",
+        "don’t have to",
+        "mustn’t"
+      ],
+      "answer": "don’t have to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-036",
+      "type": "multiple-choice",
+      "prompt": "The parcel _____ arrive tomorrow, although delivery is not guaranteed.",
+      "options": [
+        "might",
+        "must",
+        "has to"
+      ],
+      "answer": "might",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-037",
+      "type": "multiple-choice",
+      "prompt": "He _____ have misunderstood the instructions; his answers are completely unrelated.",
+      "options": [
+        "can’t",
+        "needn’t",
+        "must"
+      ],
+      "answer": "must",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-038",
+      "type": "multiple-choice",
+      "prompt": "We _____ have booked a taxi. The station was only a five-minute walk away.",
+      "options": [
+        "couldn’t",
+        "needn’t",
+        "mustn’t"
+      ],
+      "answer": "needn’t",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-039",
+      "type": "multiple-choice",
+      "prompt": "You _____ have driven so fast in the rain. It was dangerous.",
+      "options": [
+        "shouldn’t",
+        "needn’t",
+        "can’t"
+      ],
+      "answer": "shouldn’t",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-040",
+      "type": "multiple-choice",
+      "prompt": "I _____ be able to join you after my meeting, but I’m not sure.",
+      "options": [
+        "must",
+        "have to",
+        "might"
+      ],
+      "answer": "might",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-041",
+      "type": "multiple-choice",
+      "prompt": "She _____ be the new manager; I haven’t met her yet.",
+      "options": [
+        "needn’t",
+        "could",
+        "mustn’t"
+      ],
+      "answer": "could",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-042",
+      "type": "multiple-choice",
+      "prompt": "You _____ have a visa to enter the country; it is a legal requirement.",
+      "options": [
+        "must",
+        "might",
+        "can"
+      ],
+      "answer": "must",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-043",
+      "type": "multiple-choice",
+      "prompt": "You _____ pay for the meal; it is included in the ticket price.",
+      "options": [
+        "mustn’t",
+        "can’t",
+        "don’t have to"
+      ],
+      "answer": "don’t have to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-044",
+      "type": "multiple-choice",
+      "prompt": "He _____ have read the email, because he replied to it immediately.",
+      "options": [
+        "needn’t",
+        "must",
+        "can’t"
+      ],
+      "answer": "must",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-045",
+      "type": "multiple-choice",
+      "prompt": "I _____ have left my keys at the office. I cannot find them anywhere.",
+      "options": [
+        "may",
+        "mustn’t",
+        "needn’t"
+      ],
+      "answer": "may",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-046",
+      "type": "multiple-choice",
+      "prompt": "You _____ see a doctor if the pain continues.",
+      "options": [
+        "mustn’t",
+        "needn’t",
+        "should"
+      ],
+      "answer": "should",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-047",
+      "type": "multiple-choice",
+      "prompt": "They _____ have won the match, but they missed a penalty in the final minute.",
+      "options": [
+        "need",
+        "could",
+        "must"
+      ],
+      "answer": "could",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-048",
+      "type": "multiple-choice",
+      "prompt": "You _____ have bought another printer; the old one still works perfectly.",
+      "options": [
+        "needn’t",
+        "mustn’t",
+        "can’t"
+      ],
+      "answer": "needn’t",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-049",
+      "type": "multiple-choice",
+      "prompt": "She _____ be at least seventy; her grandson is already forty.",
+      "options": [
+        "can’t",
+        "needn’t",
+        "must"
+      ],
+      "answer": "must",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-050",
+      "type": "multiple-choice",
+      "prompt": "He _____ have been asleep when I called; he usually turns his phone off at night.",
+      "options": [
+        "needn’t",
+        "might",
+        "mustn’t"
+      ],
+      "answer": "might",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-051",
+      "type": "multiple-choice",
+      "prompt": "You _____ leave early today if you finish all your work.",
+      "options": [
+        "may",
+        "must",
+        "need"
+      ],
+      "answer": "may",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-052",
+      "type": "multiple-choice",
+      "prompt": "I _____ get up early tomorrow because my flight leaves at six.",
+      "options": [
+        "may",
+        "needn’t",
+        "have to"
+      ],
+      "answer": "have to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-053",
+      "type": "multiple-choice",
+      "prompt": "We _____ have warned them about the storm, but nobody thought to call.",
+      "options": [
+        "might",
+        "should",
+        "can"
+      ],
+      "answer": "should",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-054",
+      "type": "multiple-choice",
+      "prompt": "He _____ have completed the project alone; it would have taken a whole team.",
+      "options": [
+        "can’t",
+        "must",
+        "should"
+      ],
+      "answer": "can’t",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-055",
+      "type": "multiple-choice",
+      "prompt": "You _____ bring food into the exam room; the rules prohibit it.",
+      "options": [
+        "don’t have to",
+        "might not",
+        "mustn’t"
+      ],
+      "answer": "mustn’t",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-056",
+      "type": "multiple-choice",
+      "prompt": "The roads are icy, so drivers _____ take extra care.",
+      "options": [
+        "can’t",
+        "should",
+        "needn’t"
+      ],
+      "answer": "should",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-057",
+      "type": "multiple-choice",
+      "prompt": "She _____ have spent all her savings; she has just bought a new car and a house.",
+      "options": [
+        "may",
+        "can’t",
+        "needn’t"
+      ],
+      "answer": "may",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-058",
+      "type": "multiple-choice",
+      "prompt": "You _____ have sent the document twice; one copy was enough.",
+      "options": [
+        "mustn’t",
+        "couldn’t",
+        "needn’t"
+      ],
+      "answer": "needn’t",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-059",
+      "type": "multiple-choice",
+      "prompt": "They _____ have heard the announcement; the speakers were broken.",
+      "options": [
+        "should",
+        "can’t",
+        "must"
+      ],
+      "answer": "can’t",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-060",
+      "type": "multiple-choice",
+      "prompt": "I _____ have taken the earlier train, but I decided to sleep in.",
+      "options": [
+        "could",
+        "must",
+        "need"
+      ],
+      "answer": "could",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-061",
+      "type": "multiple-choice",
+      "prompt": "You _____ worry about the hotel; I have already booked it.",
+      "options": [
+        "mustn’t",
+        "can’t",
+        "needn’t"
+      ],
+      "answer": "needn’t",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-062",
+      "type": "multiple-choice",
+      "prompt": "We _____ have checked the weather forecast before setting off.",
+      "options": [
+        "can",
+        "should",
+        "may"
+      ],
+      "answer": "should",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-063",
+      "type": "multiple-choice",
+      "prompt": "He _____ be working late; his office light is still on.",
+      "options": [
+        "might",
+        "mustn’t",
+        "needn’t"
+      ],
+      "answer": "might",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-064",
+      "type": "multiple-choice",
+      "prompt": "You _____ submit your application by Friday; late forms are rejected.",
+      "options": [
+        "might",
+        "needn’t",
+        "must"
+      ],
+      "answer": "must",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-065",
+      "type": "multiple-choice",
+      "prompt": "They _____ have left without us; their car is still outside.",
+      "options": [
+        "ought to",
+        "can’t",
+        "must"
+      ],
+      "answer": "can’t",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-066",
+      "type": "multiple-choice",
+      "prompt": "I _____ have spoken to her so rudely. I regret it now.",
+      "options": [
+        "shouldn’t",
+        "couldn’t",
+        "needn’t"
+      ],
+      "answer": "shouldn’t",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-067",
+      "type": "multiple-choice",
+      "prompt": "She _____ be able to solve the problem if you explain it clearly.",
+      "options": [
+        "mustn’t",
+        "needn’t",
+        "might"
+      ],
+      "answer": "might",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-01-068",
+      "type": "multiple-choice",
+      "prompt": "You _____ carry your passport when travelling internationally; it is required.",
+      "options": [
+        "needn’t",
+        "must",
+        "might"
+      ],
+      "answer": "must",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-01-069",
+      "type": "multiple-choice",
+      "prompt": "He _____ have known about the surprise party; nobody told him.",
+      "options": [
+        "can’t",
+        "must",
+        "should"
+      ],
+      "answer": "can’t",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-01-070",
+      "type": "multiple-choice",
+      "prompt": "We _____ have paid for parking; it was free on Sundays.",
+      "options": [
+        "mustn’t",
+        "couldn’t",
+        "needn’t"
+      ],
+      "answer": "needn’t",
+      "correctIndex": 2
+    }
+  ]
+}
