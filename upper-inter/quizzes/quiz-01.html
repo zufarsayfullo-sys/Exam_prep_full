@@ -159,6 +159,7 @@ a {
   }
 }
 .choices{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}.choice{background:#f1edff;color:#5430a9;border:2px solid transparent;min-height:60px}.choice.chosen{border-color:#7138e5;background:#e3d8ff}@media(max-width:500px){.choices{grid-template-columns:1fr}}
+/* Final leaderboard only — all existing quiz styles remain unchanged. */
 </style>
 </head>
 <body>
@@ -206,6 +207,7 @@ a {
     <tbody id="leader"></tbody>
   </table>
 </section>
+<section class="card hidden" id="finalLeaderboard"><div class="final-heading"><div class="cup" aria-hidden="true">🏆</div><h1>Final Leaderboard</h1><p>Upper-Intermediate · Modal Verbs — Obligation, Possibility and Deduction</p></div><div id="finalPodium" class="podium hidden"></div><div id="finalEmpty" class="final-empty hidden">No completed student results yet.</div><div class="final-stats"><div class="final-stat"><strong id="finalTotal">0</strong><small>Students</small></div><div class="final-stat pass"><strong id="finalPassed">0</strong><small>Passed</small></div><div class="final-stat fail"><strong id="finalFailed">0</strong><small>Failed</small></div></div><h2>All Student Results</h2><div id="finalList" class="final-list"></div><p class="final-footer">Green = passed (80% or higher). Red = failed (below 80%).</p></section>
 <section class="card hidden" id="join">
   <span class="tag">Student joining</span>
   <h1>Modal Verbs — Obligation, Possibility and Deduction</h1>
@@ -271,6 +273,7 @@ const $ = id => document.getElementById(id);
 const views = [
   "home",
   "teacher",
+  "finalLeaderboard",
   "join",
   "waiting",
   "quiz",
@@ -609,20 +612,53 @@ $("start").onclick = () => run(async()=>{
   await poll(true);
 });
 $("end").onclick = () => run(async()=>{
-  if (!confirm("End this live session?")) {
-    return;
-  }
-  await rpc("eps2_end",{
-    p_code:code,
-    p_token:teacherToken
+  if (!confirm("End this live session?")) return;
+  // Capture authoritative scores before the session closes.
+  const snapshot = await rpc("eps2_state",{
+    p_code:code,p_token:teacherToken,p_player:null
   });
+  await rpc("eps2_end",{p_code:code,p_token:teacherToken});
   sessionClosed = true;
   removeStorage(TEACHER_KEY);
   teacherToken = "";
   code = "";
-  show("home");
-  notice("Session ended.");
+  renderFinalLeaderboard(Array.isArray(snapshot?.players)?snapshot.players:[]);
+  show("finalLeaderboard");
+  notice("");
 });
+function renderFinalLeaderboard(players){
+ // Only the final teacher-facing presentation changes; score values come from eps2_state.
+ const ranked=players.map((p,i)=>({name:String(p.name||"Student"),score:p.completed&&Number.isFinite(Number(p.score))?Number(p.score):null,order:i}));
+ ranked.sort((a,b)=>(b.score??-1)-(a.score??-1)||a.order-b.order);
+ const finished=ranked.filter(p=>p.score!==null),passed=finished.filter(p=>p.score>=PASS_MARK).length;
+ $("finalTotal").textContent=String(ranked.length);
+ $("finalPassed").textContent=String(passed);
+ $("finalFailed").textContent=String(finished.length-passed);
+ const podium=$("finalPodium"),empty=$("finalEmpty"),list=$("finalList");
+ podium.replaceChildren();list.replaceChildren();
+ podium.classList.toggle("hidden",finished.length===0);
+ empty.classList.toggle("hidden",finished.length!==0);
+ // Display the first three finishers in podium order: second, first, third.
+ for(const [place,medal,cls] of [[1,"🥈","second"],[0,"🥇","first"],[2,"🥉","third"]]){
+  const p=finished[place];if(!p)continue;
+  const slot=document.createElement("div");slot.className="podium-place";
+  const m=document.createElement("div");m.className="podium-medal";m.textContent=medal;
+  const n=document.createElement("div");n.className="podium-name";n.textContent=p.name;
+  const sc=document.createElement("div");sc.className="podium-score";sc.textContent=p.score+"%";
+  const block=document.createElement("div");block.className="podium-block "+cls;block.textContent=String(place+1);
+  slot.append(m,n,sc,block);podium.append(slot);
+ }
+ ranked.forEach((p,i)=>{
+  const row=document.createElement("div");row.className="final-person "+(p.score===null?"pending":p.score>=PASS_MARK?"passed":"failed");
+  const rank=document.createElement("span");rank.className="final-rank";rank.textContent=String(i+1)+".";
+  const info=document.createElement("div");info.className="final-info";
+  const name=document.createElement("strong");name.textContent=p.name;
+  const status=document.createElement("small");status.textContent=p.score===null?"Not submitted":p.score>=PASS_MARK?"✓ Passed":"✕ Failed";
+  info.append(name,status);
+  const score=document.createElement("span");score.className="final-percent";score.textContent=p.score===null?"—":p.score+"%";
+  row.append(rank,info,score);list.append(row);
+ });
+}
 function render() {
   const q = selected[index];
   if (!q) {
