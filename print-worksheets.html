@@ -21,8 +21,8 @@ button{background:#4f46e5;color:white;border:0;border-radius:10px;padding:12px 1
 @media(max-width:650px){.controls{grid-template-columns:1fr}.sheet{padding:18px}.options{grid-template-columns:1fr}.student-fields{display:block}.student-fields div{margin-bottom:10px}.key-list{grid-template-columns:repeat(2,1fr)}}
 @page{size:A4;margin:15mm}@media print{header,.panel,footer{display:none!important}body{background:white}.sheet{border:0;border-radius:0;padding:0}.key{break-before:page}.question{margin-bottom:16px}}
 .passive-sentence{margin:9px 0 0 20px;line-height:2.1}.inline-blank{display:inline-block;min-width:165px;white-space:nowrap;letter-spacing:0.3px;color:#334155}@media print{.passive-sentence{break-inside:avoid}.inline-blank{color:#111827}}
-.context-reply{margin:8px 0 4px 22px;font-size:15px;line-height:1.5;color:#334155;break-inside:avoid}
-@media print{.context-reply{color:#111827}}
+.worksheet-instructions{margin:0 0 17px;line-height:1.55;color:#334155}.word-bank{border:1px solid #cbd5e1;background:#f8fafc;padding:12px 16px;border-radius:8px;margin:0 0 22px;line-height:1.8}.word-bank strong{display:block;margin-bottom:3px}.passage-group{margin:0 0 26px}.passage-heading{margin:14px 0 8px;font-size:16px}.passage-text{line-height:1.65;margin:0 0 16px;white-space:pre-line}.reported-opening{margin:8px 0 0 20px;line-height:2}.context-reply{margin:8px 0 4px 22px;font-size:15px;line-height:1.5;color:#334155;break-inside:avoid}
+@media print{.context-reply,.worksheet-instructions{color:#111827}.word-bank{background:white}.passage-heading,.passage-text{break-after:avoid}.passage-group{break-inside:avoid-page}}
 </style>
 </head>
 <body>
@@ -45,6 +45,8 @@ button{background:#4f46e5;color:white;border:0;border-radius:10px;padding:12px 1
 <article id="sheet" class="sheet hidden">
   <h2 id="sheetTitle"></h2><p id="sheetSub" class="subtitle"></p>
   <div class="student-fields"><div>Name: ______________________</div><div>Date: ______________</div><div>Score: ____ / <span id="maxScore"></span></div></div>
+  <div id="worksheetInstructions"></div>
+  <div id="worksheetWordBank"></div>
   <div id="questions"></div>
   <section id="key" class="key"><h3>Answer Key</h3><div id="answers" class="key-list"></div></section>
 </article>
@@ -66,6 +68,7 @@ let bank = [];
 let selection = [];
 let loadedPath = "";
 let generationId = 0;
+let bankMeta = {};
 function message(text, isError = false) {
   $("status").textContent = text;
   $("status").classList.toggle("error", isError);
@@ -149,6 +152,7 @@ async function loadLevel(slug) {
 }
 function resetSheet() {
   bank = [];
+  bankMeta = {};
   selection = [];
   loadedPath = "";
   $("sheet").classList.add("hidden");
@@ -201,6 +205,11 @@ function normalizeQuestion(q) {
   const after = pick(q.after,q.suffix,q.end,q.sentenceAfter,q.sentence_after,q.passiveAfter,q.passive_after,q.passiveSuffix,q.passive_suffix,q.secondAfter,q.second_after);
   const rawPrompt = pick(q.question,q.prompt,q.text,q.q,q.sentence,q.stem);
   const transformation = !!(source && (before || after));
+  const type = pick(q.type);
+  const opening = pick(q.opening);
+  const passageId = pick(q.passage_id,q.passageId);
+  const passage = pick(q.passage,q.readingText,q.reading_text);
+  const passageTitle = pick(q.passage_title,q.passageTitle);
   const prompt = rawPrompt || source || (before + " ___ " + after).trim();
   if (!prompt) return null;
   let options = q.options || q.choices || q.answers || [];
@@ -209,7 +218,7 @@ function normalizeQuestion(q) {
   let answer = q.correctAnswer ?? q.correct_answer ?? q.correct ?? q.answer ?? q.key ?? q.expected ?? q.acceptedAnswers?.[0] ?? "";
   if (typeof answer === "number" && options.length) answer = options[answer] ?? String(answer);
   if (typeof answer === "string" && /^[A-D]$/i.test(answer) && options.length) answer = options[answer.toUpperCase().charCodeAt(0)-65] || answer;
-  return {prompt, options, answer:String(answer), transformation, source, before, after, reply:pick(q.reply,q.response,q.contextReply,q.context_reply), verb:pick(q.verb,q.baseVerb,q.base_verb)};
+  return {prompt, options, answer:String(answer), acceptedAnswers:Array.isArray(q.acceptedAnswers)?q.acceptedAnswers:[], type, opening, passageId, passage, passageTitle, transformation, source, before, after, reply:pick(q.reply,q.response,q.contextReply,q.context_reply), verb:pick(q.verb,q.baseVerb,q.base_verb)};
 }
 function randomSample(array, count) {
   const copy = [...array];
@@ -226,6 +235,38 @@ function addElement(tag, value, parent, className) {
   parent.append(element);
   return element;
 }
+function appendInlineSentence(parent, before, after, hint = "") {
+  const line = addElement("div","",parent,"passive-sentence");
+  if (before) addElement("span",before,line);
+  addElement("span","________________________",line,"inline-blank");
+  if (after) addElement("span",after,line);
+  if (hint) addElement("span"," ("+hint+")",line,"verb-hint");
+}
+function renderQuestion(q, i, parent) {
+  const wrap = addElement("div","",parent,"question");
+  if (q.type === "reported-question") {
+    addElement("strong",(i+1)+'. "'+q.prompt.replace(/^"|"$/g,"")+'"',wrap);
+    const line = addElement("div","",wrap,"reported-opening");
+    addElement("span",(q.opening || "")+" ",line);
+    addElement("span","________________________________________",line,"inline-blank");
+  } else if (q.type === "context-modal-fill") {
+    addElement("strong",(i+1)+".",wrap);
+    appendInlineSentence(wrap,q.before,q.after,q.verb);
+  } else if (q.transformation) {
+    addElement("strong",(i+1)+". "+q.source,wrap);
+    appendInlineSentence(wrap,q.before+ (q.before ? " " : ""),q.after ? " "+q.after : "");
+  } else {
+    addElement("strong",(i+1)+". "+q.prompt,wrap);
+    if (q.verb) addElement("span"," ("+q.verb+")",wrap,"verb-hint");
+    if (q.reply) addElement("div","Reply: "+q.reply,wrap,"context-reply");
+    if (q.options.length) {
+      const opts = addElement("div","",wrap,"options");
+      q.options.forEach((option,j) => addElement("div",String.fromCharCode(65+j)+". "+option,opts));
+    } else if (!q.prompt.includes("___") && !q.reply) addElement("div","",wrap,"line");
+  }
+  const variants = [q.answer,...q.acceptedAnswers.filter(a=>a && a!==q.answer)];
+  addElement("div",(i+1)+". "+(variants.filter(Boolean).join(" / ") || "—"),$("answers"));
+}
 function renderWorksheet() {
   const slug = $("level").value;
   const quiz = catalog.get(slug)?.[Number($("quiz").value)];
@@ -235,24 +276,30 @@ function renderWorksheet() {
   $("maxScore").textContent = selection.length;
   $("questions").replaceChildren();
   $("answers").replaceChildren();
+  $("worksheetInstructions").replaceChildren();
+  $("worksheetWordBank").replaceChildren();
+  if (bankMeta.instructions) addElement("p",bankMeta.instructions,$("worksheetInstructions"),"worksheet-instructions");
+  if (bankMeta.wordBank?.length) {
+    const box = addElement("div","",$("worksheetWordBank"),"word-bank");
+    addElement("strong","Word bank",box);
+    addElement("div",bankMeta.wordBank.join("  ·  "),box);
+  }
+  let previousPassage = null;
+  let group = null;
   selection.forEach((q,i) => {
-    const wrap = addElement("div","",$("questions"),"question");
-    if (q.transformation) {
-      addElement("strong",(i+1)+". "+q.source,wrap);
-      const second = addElement("div","",wrap,"passive-sentence");
-      if (q.before) addElement("span",q.before+" ",second);
-      addElement("span","____________________________",second,"inline-blank");
-      if (q.after) addElement("span"," "+q.after,second);
+    let parent = $("questions");
+    if (q.type === "context-modal-fill" && q.passageId) {
+      if (previousPassage !== q.passageId) {
+        group = addElement("section","",$("questions"),"passage-group");
+        if (q.passageTitle) addElement("h3",q.passageTitle,group,"passage-heading");
+        if (q.passage) addElement("p",q.passage,group,"passage-text");
+        previousPassage = q.passageId;
+      }
+      parent = group;
     } else {
-      addElement("strong",(i+1)+". "+q.prompt,wrap);
-      if (q.verb) addElement("span"," ("+q.verb+")",wrap,"verb-hint");
-      if (q.reply) addElement("div","Reply: "+q.reply,wrap,"context-reply");
-      if (q.options.length) {
-        const opts = addElement("div","",wrap,"options");
-        q.options.forEach((option,j) => addElement("div",String.fromCharCode(65+j)+". "+option,opts));
-      } else if (!q.prompt.includes("___") && !q.reply) addElement("div","",wrap,"line");
+      previousPassage = null;
     }
-    addElement("div",(i+1)+". "+(q.answer || "—"),$("answers"));
+    renderQuestion(q,i,parent);
   });
   $("key").classList.toggle("hidden",!$("answerKey").checked);
   $("sheet").classList.remove("hidden");
@@ -262,7 +309,22 @@ function renderWorksheet() {
 function reshuffle() {
   const quiz = catalog.get($("level").value)?.[Number($("quiz").value)];
   if (!bank.length || !quiz || quiz.path !== loadedPath) return;
-  selection = randomSample(bank, Math.min(Number($("count").value),bank.length));
+  const count = Math.min(Number($("count").value),bank.length);
+  if (bank.every(q=>q.type === "context-modal-fill" && q.passageId)) {
+    const groups = new Map();
+    for (const q of bank) {
+      if (!groups.has(q.passageId)) groups.set(q.passageId,[]);
+      groups.get(q.passageId).push(q);
+    }
+    const complete = [...groups.values()].filter(group=>group.length === 5);
+    if (complete.length && count % 5 === 0 && complete.length >= count / 5) {
+      selection = randomSample(complete,count/5).flat();
+    } else {
+      selection = randomSample(bank,count);
+    }
+  } else {
+    selection = randomSample(bank,count);
+  }
   renderWorksheet();
 }
 async function generateWorksheet() {
@@ -277,6 +339,7 @@ async function generateWorksheet() {
     const questions = extractQuestions(data).map(normalizeQuestion).filter(Boolean);
     if (!questions.length) throw new Error("No supported questions found in " + quiz.path + ". Check the question fields in this bank.");
     bank = questions;
+    bankMeta = {instructions:typeof data?.instructions === "string" ? data.instructions : "", wordBank:Array.isArray(data?.wordBank) ? data.wordBank.filter(v=>typeof v === "string") : []};
     loadedPath = quiz.path;
     reshuffle();
     message("Loaded " + bank.length + " questions from " + quiz.path);
