@@ -1,34 +1,638 @@
-[
-  {
-    "id": "quiz-01",
-    "title": "Direct and Indirect Questions",
-    "category": "Grammar",
-    "path": "quiz-01.html",
-    "bank": "quiz-01.bank.json",
-    "level": "intermediate"
-  },
-  {
-    "id": "quiz-02",
-    "title": "First Conditional: If / Unless / Will / Won’t",
-    "category": "Grammar",
-    "path": "quiz-02.html",
-    "bank": "quiz-02.bank.json",
-    "level": "intermediate"
-  },
-  {
-    "id": "quiz-03",
-    "title": "Passive Voice — Sentence Transformations",
-    "category": "Grammar",
-    "path": "quiz-03.html",
-    "bank": "quiz-03.bank.json",
-    "level": "intermediate"
-  },
-  {
-    "id": "quiz-04",
-    "title": "Comparisons — Sentence Transformations",
-    "category": "Grammar",
-    "path": "quiz-04.html",
-    "bank": "quiz-04.bank.json",
-    "level": "intermediate"
-  }
-]
+{
+  "title": "Comparisons — Sentence Transformations",
+  "level": "intermediate",
+  "category": "Grammar",
+  "instructions": "Complete the second sentence so that it has the same meaning as the first. Use the word in brackets.",
+  "questions": [
+    {
+      "id": "int-04-001",
+      "type": "comparison-fill",
+      "original": "The Amudarya isn't as long as the Syrdarya.",
+      "before": "The Syrdarya",
+      "after": "the Amudarya.",
+      "hint": "longer",
+      "answer": "is longer than"
+    },
+    {
+      "id": "int-04-002",
+      "type": "comparison-fill",
+      "original": "Both quality and quantity are equally important to the company.",
+      "before": "Quality",
+      "after": "quantity to the company.",
+      "hint": "just",
+      "answer": "is just as important as"
+    },
+    {
+      "id": "int-04-003",
+      "type": "comparison-fill",
+      "original": "Outdoor games are more useful than indoor games.",
+      "before": "Indoor games are",
+      "after": "outdoor games.",
+      "hint": "less",
+      "answer": "less useful than"
+    },
+    {
+      "id": "int-04-004",
+      "type": "comparison-fill",
+      "original": "My new smartphone is far better than my old one.",
+      "before": "My new smartphone",
+      "after": "my old one.",
+      "hint": "a lot",
+      "answer": "is a lot better than"
+    },
+    {
+      "id": "int-04-005",
+      "type": "comparison-fill",
+      "original": "Some online shops are less confident about their services than others.",
+      "before": "Some online shops",
+      "after": "others about their services.",
+      "hint": "as",
+      "answer": "are not as confident as"
+    },
+    {
+      "id": "int-04-006",
+      "type": "comparison-fill",
+      "original": "The train is faster than the bus.",
+      "before": "The bus",
+      "after": "the train.",
+      "hint": "slow",
+      "answer": "is slower than"
+    },
+    {
+      "id": "int-04-007",
+      "type": "comparison-fill",
+      "original": "This exam is easier than the previous one.",
+      "before": "The previous exam",
+      "after": "this one.",
+      "hint": "difficult",
+      "answer": "was more difficult than"
+    },
+    {
+      "id": "int-04-008",
+      "type": "comparison-fill",
+      "original": "No other student in the class is taller than Daniel.",
+      "before": "Daniel",
+      "after": "student in the class.",
+      "hint": "tallest",
+      "answer": "is the tallest"
+    },
+    {
+      "id": "int-04-009",
+      "type": "comparison-fill",
+      "original": "This restaurant is more expensive than the café.",
+      "before": "The café",
+      "after": "the restaurant.",
+      "hint": "less",
+      "answer": "is less expensive than"
+    },
+    {
+      "id": "int-04-010",
+      "type": "comparison-fill",
+      "original": "My bag is as heavy as yours.",
+      "before": "Your bag",
+      "after": "mine.",
+      "hint": "just",
+      "answer": "is just as heavy as"
+    },
+    {
+      "id": "int-04-011",
+      "type": "comparison-fill",
+      "original": "The blue jacket is cheaper than the black one.",
+      "before": "The black jacket",
+      "after": "the blue one.",
+      "hint": "expensive",
+      "answer": "is more expensive than"
+    },
+    {
+      "id": "int-04-012",
+      "type": "comparison-fill",
+      "original": "Her apartment is smaller than ours.",
+      "before": "Our apartment",
+      "after": "hers.",
+      "hint": "bigger",
+      "answer": "is bigger than"
+    },
+    {
+      "id": "int-04-013",
+      "type": "comparison-fill",
+      "original": "This route is not as safe as the main road.",
+      "before": "The main road",
+      "after": "this route.",
+      "hint": "safer",
+      "answer": "is safer than"
+    },
+    {
+      "id": "int-04-014",
+      "type": "comparison-fill",
+      "original": "This is the most interesting book I've read.",
+      "before": "I've never read",
+      "after": "this one.",
+      "hint": "more",
+      "answer": "a more interesting book than"
+    },
+    {
+      "id": "int-04-015",
+      "type": "comparison-fill",
+      "original": "The second film was less exciting than the first.",
+      "before": "The first film",
+      "after": "the second.",
+      "hint": "more",
+      "answer": "was more exciting than"
+    },
+    {
+      "id": "int-04-016",
+      "type": "comparison-fill",
+      "original": "My brother and I are the same height.",
+      "before": "I am",
+      "after": "my brother.",
+      "hint": "as",
+      "answer": "as tall as"
+    },
+    {
+      "id": "int-04-017",
+      "type": "comparison-fill",
+      "original": "London is more crowded than my hometown.",
+      "before": "My hometown",
+      "after": "London.",
+      "hint": "less",
+      "answer": "is less crowded than"
+    },
+    {
+      "id": "int-04-018",
+      "type": "comparison-fill",
+      "original": "This task takes more time than the last one.",
+      "before": "The last task",
+      "after": "this one.",
+      "hint": "less",
+      "answer": "takes less time than"
+    },
+    {
+      "id": "int-04-019",
+      "type": "comparison-fill",
+      "original": "She speaks English more fluently than I do.",
+      "before": "I don't speak English",
+      "after": "she does.",
+      "hint": "as",
+      "answer": "as fluently as"
+    },
+    {
+      "id": "int-04-020",
+      "type": "comparison-fill",
+      "original": "Nobody on the team runs faster than Aisha.",
+      "before": "Aisha",
+      "after": "runner on the team.",
+      "hint": "fastest",
+      "answer": "is the fastest"
+    },
+    {
+      "id": "int-04-021",
+      "type": "comparison-fill",
+      "original": "This computer is twice as expensive as that one.",
+      "before": "That computer",
+      "after": "this one.",
+      "hint": "half",
+      "answer": "costs half as much as"
+    },
+    {
+      "id": "int-04-022",
+      "type": "comparison-fill",
+      "original": "This room is much brighter than the kitchen.",
+      "before": "The kitchen",
+      "after": "this room.",
+      "hint": "darker",
+      "answer": "is much darker than"
+    },
+    {
+      "id": "int-04-023",
+      "type": "comparison-fill",
+      "original": "Their house is not as modern as ours.",
+      "before": "Our house",
+      "after": "theirs.",
+      "hint": "more",
+      "answer": "is more modern than"
+    },
+    {
+      "id": "int-04-024",
+      "type": "comparison-fill",
+      "original": "The red car is the fastest of the three.",
+      "before": "The other two cars",
+      "after": "the red one.",
+      "hint": "slower",
+      "answer": "are slower than"
+    },
+    {
+      "id": "int-04-025",
+      "type": "comparison-fill",
+      "original": "His first novel was better than his second.",
+      "before": "His second novel",
+      "after": "his first.",
+      "hint": "worse",
+      "answer": "was worse than"
+    },
+    {
+      "id": "int-04-026",
+      "type": "comparison-fill",
+      "original": "The north of the country is colder than the south.",
+      "before": "The south",
+      "after": "the north.",
+      "hint": "warmer",
+      "answer": "is warmer than"
+    },
+    {
+      "id": "int-04-027",
+      "type": "comparison-fill",
+      "original": "Maths is as challenging as physics for me.",
+      "before": "Physics is",
+      "after": "maths for me.",
+      "hint": "as",
+      "answer": "as challenging as"
+    },
+    {
+      "id": "int-04-028",
+      "type": "comparison-fill",
+      "original": "This year's festival was less popular than last year's.",
+      "before": "Last year's festival",
+      "after": "this year's.",
+      "hint": "more",
+      "answer": "was more popular than"
+    },
+    {
+      "id": "int-04-029",
+      "type": "comparison-fill",
+      "original": "I have never seen such a beautiful sunset.",
+      "before": "This is",
+      "after": "I've ever seen.",
+      "hint": "most",
+      "answer": "the most beautiful sunset"
+    },
+    {
+      "id": "int-04-030",
+      "type": "comparison-fill",
+      "original": "The new library is much larger than the old one.",
+      "before": "The old library",
+      "after": "the new one.",
+      "hint": "smaller",
+      "answer": "is much smaller than"
+    },
+    {
+      "id": "int-04-031",
+      "type": "comparison-fill",
+      "original": "The earlier train is not as convenient as the later one.",
+      "before": "The later train",
+      "after": "the earlier one.",
+      "hint": "more",
+      "answer": "is more convenient than"
+    },
+    {
+      "id": "int-04-032",
+      "type": "comparison-fill",
+      "original": "My sister works harder than I do.",
+      "before": "I don't work",
+      "after": "my sister.",
+      "hint": "as",
+      "answer": "as hard as"
+    },
+    {
+      "id": "int-04-033",
+      "type": "comparison-fill",
+      "original": "The city centre is noisier than the suburbs.",
+      "before": "The suburbs",
+      "after": "the city centre.",
+      "hint": "quieter",
+      "answer": "are quieter than"
+    },
+    {
+      "id": "int-04-034",
+      "type": "comparison-fill",
+      "original": "This laptop weighs less than my previous laptop.",
+      "before": "My previous laptop",
+      "after": "this one.",
+      "hint": "heavier",
+      "answer": "was heavier than"
+    },
+    {
+      "id": "int-04-035",
+      "type": "comparison-fill",
+      "original": "His answer was more accurate than mine.",
+      "before": "My answer",
+      "after": "his.",
+      "hint": "less",
+      "answer": "was less accurate than"
+    },
+    {
+      "id": "int-04-036",
+      "type": "comparison-fill",
+      "original": "This sofa is just as comfortable as the armchair.",
+      "before": "The armchair",
+      "after": "the sofa.",
+      "hint": "as",
+      "answer": "is as comfortable as"
+    },
+    {
+      "id": "int-04-037",
+      "type": "comparison-fill",
+      "original": "The second question is more complicated than the first.",
+      "before": "The first question",
+      "after": "the second.",
+      "hint": "simpler",
+      "answer": "is simpler than"
+    },
+    {
+      "id": "int-04-038",
+      "type": "comparison-fill",
+      "original": "Of all the hotels we visited, this one was the cheapest.",
+      "before": "No other hotel we visited",
+      "after": "this one.",
+      "hint": "as",
+      "answer": "was as cheap as"
+    },
+    {
+      "id": "int-04-039",
+      "type": "comparison-fill",
+      "original": "The journey home was shorter than the journey there.",
+      "before": "The journey there",
+      "after": "the journey home.",
+      "hint": "longer",
+      "answer": "was longer than"
+    },
+    {
+      "id": "int-04-040",
+      "type": "comparison-fill",
+      "original": "The new teacher explains things more clearly than the previous one.",
+      "before": "The previous teacher",
+      "after": "the new one.",
+      "hint": "less",
+      "answer": "explained things less clearly than"
+    },
+    {
+      "id": "int-04-041",
+      "type": "comparison-fill",
+      "original": "My coat is not as warm as yours.",
+      "before": "Your coat",
+      "after": "mine.",
+      "hint": "warmer",
+      "answer": "is warmer than"
+    },
+    {
+      "id": "int-04-042",
+      "type": "comparison-fill",
+      "original": "The mountain path is steeper than the road.",
+      "before": "The road",
+      "after": "the mountain path.",
+      "hint": "less",
+      "answer": "is less steep than"
+    },
+    {
+      "id": "int-04-043",
+      "type": "comparison-fill",
+      "original": "Nobody in the family is younger than Leo.",
+      "before": "Leo",
+      "after": "member of the family.",
+      "hint": "youngest",
+      "answer": "is the youngest"
+    },
+    {
+      "id": "int-04-044",
+      "type": "comparison-fill",
+      "original": "Our team performed better this week than last week.",
+      "before": "Last week our team performed",
+      "after": "this week.",
+      "hint": "worse",
+      "answer": "worse than"
+    },
+    {
+      "id": "int-04-045",
+      "type": "comparison-fill",
+      "original": "This chair is more comfortable than that stool.",
+      "before": "That stool",
+      "after": "this chair.",
+      "hint": "less",
+      "answer": "is less comfortable than"
+    },
+    {
+      "id": "int-04-046",
+      "type": "comparison-fill",
+      "original": "The river is not as deep here as it is upstream.",
+      "before": "The river is",
+      "after": "here.",
+      "hint": "deeper",
+      "answer": "deeper upstream than"
+    },
+    {
+      "id": "int-04-047",
+      "type": "comparison-fill",
+      "original": "The science museum is the most popular attraction in town.",
+      "before": "No other attraction in town",
+      "after": "the science museum.",
+      "hint": "as",
+      "answer": "is as popular as"
+    },
+    {
+      "id": "int-04-048",
+      "type": "comparison-fill",
+      "original": "Her new job is more demanding than her old one.",
+      "before": "Her old job",
+      "after": "her new one.",
+      "hint": "less",
+      "answer": "was less demanding than"
+    },
+    {
+      "id": "int-04-049",
+      "type": "comparison-fill",
+      "original": "This painting is worth more than the other one.",
+      "before": "The other painting",
+      "after": "this one.",
+      "hint": "less",
+      "answer": "is worth less than"
+    },
+    {
+      "id": "int-04-050",
+      "type": "comparison-fill",
+      "original": "I don't know anyone as patient as my grandmother.",
+      "before": "My grandmother is",
+      "after": "I know.",
+      "hint": "most",
+      "answer": "the most patient person"
+    },
+    {
+      "id": "int-04-051",
+      "type": "comparison-fill",
+      "original": "The journey by plane is quicker than the journey by train.",
+      "before": "Travelling by train",
+      "after": "travelling by plane.",
+      "hint": "slower",
+      "answer": "is slower than"
+    },
+    {
+      "id": "int-04-052",
+      "type": "comparison-fill",
+      "original": "This puzzle is a little harder than the previous one.",
+      "before": "The previous puzzle",
+      "after": "this one.",
+      "hint": "easier",
+      "answer": "was a little easier than"
+    },
+    {
+      "id": "int-04-053",
+      "type": "comparison-fill",
+      "original": "The library is quieter than the cafeteria.",
+      "before": "The cafeteria",
+      "after": "the library.",
+      "hint": "noisier",
+      "answer": "is noisier than"
+    },
+    {
+      "id": "int-04-054",
+      "type": "comparison-fill",
+      "original": "The first speaker was less persuasive than the second.",
+      "before": "The second speaker",
+      "after": "the first.",
+      "hint": "more",
+      "answer": "was more persuasive than"
+    },
+    {
+      "id": "int-04-055",
+      "type": "comparison-fill",
+      "original": "His handwriting is as neat as hers.",
+      "before": "Her handwriting",
+      "after": "his.",
+      "hint": "just",
+      "answer": "is just as neat as"
+    },
+    {
+      "id": "int-04-056",
+      "type": "comparison-fill",
+      "original": "This is the least expensive option available.",
+      "before": "Every other option available",
+      "after": "this one.",
+      "hint": "more",
+      "answer": "is more expensive than"
+    },
+    {
+      "id": "int-04-057",
+      "type": "comparison-fill",
+      "original": "The weather today is worse than yesterday.",
+      "before": "Yesterday's weather",
+      "after": "today's.",
+      "hint": "better",
+      "answer": "was better than"
+    },
+    {
+      "id": "int-04-058",
+      "type": "comparison-fill",
+      "original": "The second chapter is not as long as the first.",
+      "before": "The first chapter",
+      "after": "the second.",
+      "hint": "longer",
+      "answer": "is longer than"
+    },
+    {
+      "id": "int-04-059",
+      "type": "comparison-fill",
+      "original": "No one in our class is more creative than Mina.",
+      "before": "Mina",
+      "after": "student in our class.",
+      "hint": "most",
+      "answer": "is the most creative"
+    },
+    {
+      "id": "int-04-060",
+      "type": "comparison-fill",
+      "original": "This bicycle is considerably lighter than mine.",
+      "before": "My bicycle",
+      "after": "this one.",
+      "hint": "heavier",
+      "answer": "is considerably heavier than"
+    },
+    {
+      "id": "int-04-061",
+      "type": "comparison-fill",
+      "original": "The new bridge is wider than the old one.",
+      "before": "The old bridge",
+      "after": "the new one.",
+      "hint": "narrower",
+      "answer": "is narrower than"
+    },
+    {
+      "id": "int-04-062",
+      "type": "comparison-fill",
+      "original": "The local market is not as busy as the shopping mall.",
+      "before": "The shopping mall",
+      "after": "the local market.",
+      "hint": "busier",
+      "answer": "is busier than"
+    },
+    {
+      "id": "int-04-063",
+      "type": "comparison-fill",
+      "original": "I enjoyed the concert more than the play.",
+      "before": "I enjoyed the play",
+      "after": "the concert.",
+      "hint": "less",
+      "answer": "less than"
+    },
+    {
+      "id": "int-04-064",
+      "type": "comparison-fill",
+      "original": "This street is as narrow as the next one.",
+      "before": "The next street",
+      "after": "this one.",
+      "hint": "just",
+      "answer": "is just as narrow as"
+    },
+    {
+      "id": "int-04-065",
+      "type": "comparison-fill",
+      "original": "The last exercise was the most difficult in the book.",
+      "before": "No other exercise in the book",
+      "after": "the last one.",
+      "hint": "as",
+      "answer": "was as difficult as"
+    },
+    {
+      "id": "int-04-066",
+      "type": "comparison-fill",
+      "original": "The morning flight costs more than the evening flight.",
+      "before": "The evening flight",
+      "after": "the morning flight.",
+      "hint": "cheaper",
+      "answer": "is cheaper than"
+    },
+    {
+      "id": "int-04-067",
+      "type": "comparison-fill",
+      "original": "My new headphones are much better than my old ones.",
+      "before": "My old headphones",
+      "after": "my new ones.",
+      "hint": "worse",
+      "answer": "are much worse than"
+    },
+    {
+      "id": "int-04-068",
+      "type": "comparison-fill",
+      "original": "This town has fewer parks than the neighbouring city.",
+      "before": "The neighbouring city",
+      "after": "this town.",
+      "hint": "more",
+      "answer": "has more parks than"
+    },
+    {
+      "id": "int-04-069",
+      "type": "comparison-fill",
+      "original": "The blue suitcase is not as big as the red one.",
+      "before": "The red suitcase",
+      "after": "the blue one.",
+      "hint": "bigger",
+      "answer": "is bigger than"
+    },
+    {
+      "id": "int-04-070",
+      "type": "comparison-fill",
+      "original": "The final test was easier than we expected.",
+      "before": "The final test was",
+      "after": "we expected.",
+      "hint": "less",
+      "answer": "less difficult than"
+    }
+  ]
+}
