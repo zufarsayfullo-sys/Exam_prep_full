@@ -1,0 +1,1437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upper-Intermediate Quiz 06 | ExamPrep Studio</title>
+<style>
+:root {
+  font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+  background:#f6f7ff;
+  color:#202044;
+}
+* { box-sizing:border-box; }
+body { margin:0; }
+.wrap {
+  max-width:920px;
+  margin:auto;
+  padding:16px;
+}
+.brand {
+  font-size:24px;
+  font-weight:800;
+  margin:10px 0 25px;
+}
+.brand span { color:#7138e5; }
+.card {
+  background:#fff;
+  border:1px solid #e6e4f5;
+  border-radius:22px;
+  padding:clamp(20px,5vw,34px);
+  box-shadow:0 12px 36px #16164c0b;
+  margin-bottom:20px;
+}
+h1 {
+  font-size:clamp(26px,5vw,36px);
+  margin:8px 0 12px;
+}
+h2 { font-size:22px; }
+.muted {
+  color:#69718a;
+  line-height:1.6;
+}
+.tag {
+  display:inline-block;
+  background:#eee9ff;
+  color:#6d36d9;
+  padding:7px 12px;
+  border-radius:24px;
+  font-weight:700;
+  font-size:13px;
+}
+.actions {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+button {
+  border:0;
+  border-radius:12px;
+  background:#7138e5;
+  color:white;
+  font:inherit;
+  font-weight:700;
+  padding:13px 20px;
+  cursor:pointer;
+  min-height:48px;
+}
+button.alt {
+  background:#f0eaff;
+  color:#6832cb;
+}
+button:disabled {
+  opacity:.45;
+  cursor:default;
+}
+input {
+  font:inherit;
+  border:1px solid #d9d9ef;
+  border-radius:12px;
+  padding:14px;
+  width:100%;
+  margin:8px 0 12px;
+  min-height:50px;
+}
+input:focus {
+  outline:2px solid #7138e5;
+  outline-offset:1px;
+}
+label { font-weight:650; }
+.hidden { display:none!important; }
+.question {
+  background:#f3efff;
+  padding:23px;
+  border-radius:16px;
+  font-size:clamp(18px,4.5vw,22px);
+  font-weight:700;
+  margin:20px 0;
+  line-height:1.6;
+  overflow-wrap:anywhere;
+}
+.progress {
+  height:9px;
+  background:#eae6fa;
+  border-radius:20px;
+  overflow:hidden;
+}
+.progress div {
+  background:#7138e5;
+  height:100%;
+}
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+td,th {
+  text-align:left;
+  border-bottom:1px solid #eee;
+  padding:12px;
+}
+.review {
+  padding:12px 0;
+  border-bottom:1px solid #eee;
+}
+.good { color:#087e43; }
+.bad { color:#bd3348; }
+#notice {
+  color:#ba273f;
+  min-height:22px;
+  white-space:pre-wrap;
+}
+a {
+  color:#6832cb;
+  overflow-wrap:anywhere;
+}
+@media(max-width:600px) {
+  .card {
+    padding:18px 15px;
+    border-radius:17px;
+  }
+  .actions {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .actions button {
+    width:100%;
+    padding:13px 8px;
+  }
+  #home button,#joinBtn {
+    width:100%;
+  }
+  #quiz .actions {
+    position:sticky;
+    bottom:0;
+    background:white;
+    padding:10px 0 4px;
+    z-index:2;
+  }
+}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}.choice{background:#f1edff;color:#5430a9;border:2px solid transparent;min-height:60px}.choice.chosen{border-color:#7138e5;background:#e3d8ff}@media(max-width:500px){.choices{grid-template-columns:1fr}}
+/* Final leaderboard only — all existing quiz styles remain unchanged. */
+
+.dialogue{font-size:15px;line-height:1.8;color:#202747}
+.dialogue-line{display:grid;grid-template-columns:75px 1fr;gap:12px;margin:13px 0;align-items:start}
+.dialogue-speaker{font-weight:800;color:#6735cf}
+.dialogue-content{min-width:0}
+.dialogue-gap{display:inline-block;vertical-align:middle;width:min(100%,290px);max-width:100%;padding:9px 11px;min-height:42px;margin:3px 5px;border:1px solid #a7a0ce;border-radius:8px;background:#fff;font-size:15px}
+.dialogue-gap:focus{outline:2px solid #7138e5}
+.word-order{display:inline;color:#61588d;font-size:13px;font-style:italic;white-space:normal}
+@media(max-width:550px){.dialogue-line{grid-template-columns:1fr;gap:0}.dialogue-speaker{margin-top:5px}.dialogue-gap{width:100%;margin:5px 0}}
+@media print{.dialogue-gap{border-bottom:1px solid black;border-radius:0}}
+
+.noun-bank{background:#f4f1ff;border:1px solid #e4dcff;border-radius:16px;padding:16px;margin:18px 0 24px}
+.noun-bank strong{font-size:13px;color:#5d37af;text-transform:uppercase;letter-spacing:.05em}
+.noun-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.noun-chips span{background:white;border:1px solid #dcd4f3;border-radius:10px;padding:7px 12px;font-size:14px;font-weight:600}
+.noun-card{border:1px solid #e8e4f5;border-radius:16px;padding:18px;margin:12px 0;background:white}
+.noun-number{font-size:12px;font-weight:800;letter-spacing:.08em;color:#7138e5}
+.noun-sentence{font-size:17px;line-height:1.65;margin:12px 0 16px;font-weight:550}
+.noun-select{display:block;width:100%;border:1px solid #d9d9ef;border-radius:12px;padding:13px;font:inherit;background:white;color:#202044;min-height:48px}
+.noun-select:focus{outline:2px solid #7138e5;outline-offset:2px}
+@media(max-width:550px){.noun-card{padding:14px}.noun-sentence{font-size:16px}}
+
+.inline-line{display:flex;flex-wrap:wrap;align-items:center;gap:7px;line-height:2.3;margin-top:10px}.inline-gap{min-width:150px;flex:1 1 185px;max-width:310px;padding:12px;border:2px solid #b8a7f1;border-radius:10px;background:#faf8ff;font-size:16px}.inline-gap:focus{outline:3px solid #e7dcff}.noun-card{margin-bottom:16px}@media(max-width:550px){.inline-gap{width:100%;max-width:none;flex-basis:100%}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="brand">
+  ✦ ExamPrep <span>Studio</span>
+</div>
+<section class="card" id="home">
+  <span class="tag">Upper-Intermediate · Grammar</span>
+  <h1>Third Conditional — Sentence Transformations</h1>
+  <p class="muted">
+    70 transformations · 10 random per attempt · Pass mark 80% (8/10)
+  </p>
+  <p class="muted">Rewrite the original situation using the third conditional. Complete both gaps in the sentence.</p>
+  <button id="create" disabled>
+    Loading question bank...
+  </button>
+  <p class="muted">
+    Students join from student.html.
+    Start the session when everyone is ready.
+  </p>
+</section>
+<section class="card hidden" id="teacher">
+  <span class="tag">Teacher live session</span>
+  <h1>Third Conditional — Sentence Transformations</h1>
+  <p>Session code: <strong id="code"></strong></p>
+  <p>
+    Student Board:
+    <a href="../../student.html" target="_blank" rel="noopener">
+      Open student.html
+    </a>
+  </p>
+  <p id="count"></p>
+  <div class="actions">
+    <button id="start">Start Quiz</button>
+    <button id="end" class="alt">End Session</button>
+  </div>
+  <h2>Live leaderboard</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Student</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody id="leader"></tbody>
+  </table>
+</section>
+<section class="card hidden" id="finalLeaderboard"><div class="final-heading"><div class="cup" aria-hidden="true">🏆</div><h1>Final Leaderboard</h1><p>Upper-Intermediate · Third Conditional — Sentence Transformations</p></div><div id="finalPodium" class="podium hidden"></div><div id="finalEmpty" class="final-empty hidden">No completed student results yet.</div><div class="final-stats"><div class="final-stat"><strong id="finalTotal">0</strong><small>Students</small></div><div class="final-stat pass"><strong id="finalPassed">0</strong><small>Passed</small></div><div class="final-stat fail"><strong id="finalFailed">0</strong><small>Failed</small></div></div><h2>All Student Results</h2><div id="finalList" class="final-list"></div><p class="final-footer">Green = passed (80% or higher). Red = failed (below 80%).</p></section>
+<section class="card hidden" id="join">
+  <span class="tag">Student joining</span>
+  <h1>Third Conditional — Sentence Transformations</h1>
+  <label for="name">Full name</label>
+  <input
+    id="name"
+    maxlength="80"
+    placeholder="Enter your name"
+  >
+  <button id="joinBtn">Join Session</button>
+</section>
+<section class="card hidden" id="waiting">
+  <h1>You're in!</h1>
+  <p class="muted">
+    Wait for your teacher to start the quiz.
+  </p>
+</section>
+<section class="card hidden" id="quiz">
+  <span class="tag" id="counter"></span>
+  <h2>Complete the third conditional sentence.</h2>
+  <div class="progress">
+    <div id="fill"></div>
+  </div>
+  <p class="muted">Read the original situation (A), then complete both inline gaps in sentence (B).</p>
+  <div id="dialogue" class="noun-exercise"></div>
+  <input id="answer" type="hidden">
+  <div class="actions">
+    <button id="next">Submit all 10 answers</button>
+  </div>
+</section>
+<section class="card hidden" id="result">
+  <span class="tag">Your result</span>
+  <h1 id="score"></h1>
+  <p id="outcome"></p>
+  <button class="alt" id="toggleReview">
+    Review answers
+  </button>
+  <div class="hidden" id="review"></div>
+</section>
+<p id="notice" role="status"></p>
+</main>
+<script>
+"use strict";
+const URL_BASE =
+  "https://dfepopppcggzecdxexeh.supabase.co";
+const PUBLIC_KEY =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo";
+const QUIZ_TITLE = "Third Conditional — Sentence Transformations";
+const QUIZ_PATH = "upper-inter/quizzes/quiz-06.html";
+const BANK_FILE = "";
+const QUESTION_COUNT = 10;
+const PASS_MARK = 80;
+const TEACHER_KEY = "eps2_teacher";
+const PLAYER_KEY = "eps2_player";
+const PROGRESS_PREFIX = "eps2_upper_quiz06_progress_";
+const $ = id => document.getElementById(id);
+const views = [
+  "home",
+  "teacher",
+  "finalLeaderboard",
+  "join",
+  "waiting",
+  "quiz",
+  "result"
+];
+function show(id) {
+  views.forEach(view => {
+    $(view).classList.toggle("hidden", view !== id);
+  });
+}
+function notice(message) {
+  $("notice").textContent = message || "";
+}
+let BANK = [];
+let code = "";
+let teacherToken = "";
+let playerId = "";
+let selected = [];
+let answers = {};
+let index = 0;
+let submitted = false;
+let busy = false;
+let polling = false;
+let quizStarted = false;
+let sessionClosed = false;
+const query = new URLSearchParams(location.search);
+function readStorage(key) {
+  try {
+    const value = sessionStorage.getItem(key);
+    return value ? JSON.parse(value) : null;
+  } catch {
+    return null;
+  }
+}
+function writeStorage(key,value) {
+  try {
+    sessionStorage.setItem(key,JSON.stringify(value));
+  } catch {
+    // Continue without storage if unavailable.
+  }
+}
+function removeStorage(key) {
+  try {
+    sessionStorage.removeItem(key);
+  } catch {}
+}
+function progressKey() {
+  return PROGRESS_PREFIX + code + "_" + playerId;
+}
+function normalize(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[’‘`]/g,"'")
+    .replace(/[^a-z0-9'\s]/g," ")
+    .replace(/\s+/g," ")
+    .trim();
+}
+const EMBEDDED_QUESTIONS = [
+  {
+    "id": "upper-06-001",
+    "prompt": "They couldn’t reach the town because they ran out of petrol.",
+    "before": "If they ",
+    "middle": " out of petrol, ",
+    "after": " the town.",
+    "answer1": "hadn’t run",
+    "answer2": "could have reached"
+  },
+  {
+    "id": "upper-06-002",
+    "prompt": "The students couldn’t reach the town because they ran out of petrol.",
+    "before": "If the students ",
+    "middle": " out of petrol, ",
+    "after": " the town.",
+    "answer1": "hadn’t run",
+    "answer2": "could have reached"
+  },
+  {
+    "id": "upper-06-003",
+    "prompt": "They missed the train because they arrived late.",
+    "before": "If they ",
+    "middle": " on time, ",
+    "after": " the train.",
+    "answer1": "had arrived",
+    "answer2": "would have caught"
+  },
+  {
+    "id": "upper-06-004",
+    "prompt": "The students missed the train because they arrived late.",
+    "before": "If the students ",
+    "middle": " on time, ",
+    "after": " the train.",
+    "answer1": "had arrived",
+    "answer2": "would have caught"
+  },
+  {
+    "id": "upper-06-005",
+    "prompt": "They got wet because they forgot their umbrellas.",
+    "before": "If they ",
+    "middle": " their umbrellas, ",
+    "after": " wet.",
+    "answer1": "had brought",
+    "answer2": "wouldn’t have got"
+  },
+  {
+    "id": "upper-06-006",
+    "prompt": "The students got wet because they forgot their umbrellas.",
+    "before": "If the students ",
+    "middle": " their umbrellas, ",
+    "after": " wet.",
+    "answer1": "had brought",
+    "answer2": "wouldn’t have got"
+  },
+  {
+    "id": "upper-06-007",
+    "prompt": "They failed the exam because they didn’t revise.",
+    "before": "If they ",
+    "middle": " for the exam, ",
+    "after": " it.",
+    "answer1": "had revised",
+    "answer2": "might have passed"
+  },
+  {
+    "id": "upper-06-008",
+    "prompt": "The students failed the exam because they didn’t revise.",
+    "before": "If the students ",
+    "middle": " for the exam, ",
+    "after": " it.",
+    "answer1": "had revised",
+    "answer2": "might have passed"
+  },
+  {
+    "id": "upper-06-009",
+    "prompt": "They lost the match because they didn’t practise enough.",
+    "before": "If they ",
+    "middle": " more, ",
+    "after": " the match.",
+    "answer1": "had practised",
+    "answer2": "might have won"
+  },
+  {
+    "id": "upper-06-010",
+    "prompt": "The students lost the match because they didn’t practise enough.",
+    "before": "If the students ",
+    "middle": " more, ",
+    "after": " the match.",
+    "answer1": "had practised",
+    "answer2": "might have won"
+  },
+  {
+    "id": "upper-06-011",
+    "prompt": "They couldn’t enter because they forgot their tickets.",
+    "before": "If they ",
+    "middle": " their tickets, ",
+    "after": " the venue.",
+    "answer1": "had remembered",
+    "answer2": "could have entered"
+  },
+  {
+    "id": "upper-06-012",
+    "prompt": "The students couldn’t enter because they forgot their tickets.",
+    "before": "If the students ",
+    "middle": " their tickets, ",
+    "after": " the venue.",
+    "answer1": "had remembered",
+    "answer2": "could have entered"
+  },
+  {
+    "id": "upper-06-013",
+    "prompt": "They missed the flight because they left home too late.",
+    "before": "If they ",
+    "middle": " home earlier, ",
+    "after": " the flight.",
+    "answer1": "had left",
+    "answer2": "wouldn’t have missed"
+  },
+  {
+    "id": "upper-06-014",
+    "prompt": "The students missed the flight because they left home too late.",
+    "before": "If the students ",
+    "middle": " home earlier, ",
+    "after": " the flight.",
+    "answer1": "had left",
+    "answer2": "wouldn’t have missed"
+  },
+  {
+    "id": "upper-06-015",
+    "prompt": "They couldn’t finish the project because they started too late.",
+    "before": "If they ",
+    "middle": " earlier, ",
+    "after": " the project.",
+    "answer1": "had started",
+    "answer2": "could have finished"
+  },
+  {
+    "id": "upper-06-016",
+    "prompt": "The students couldn’t finish the project because they started too late.",
+    "before": "If the students ",
+    "middle": " earlier, ",
+    "after": " the project.",
+    "answer1": "had started",
+    "answer2": "could have finished"
+  },
+  {
+    "id": "upper-06-017",
+    "prompt": "They were late because they took the wrong bus.",
+    "before": "If they ",
+    "middle": " the correct bus, ",
+    "after": " on time.",
+    "answer1": "had taken",
+    "answer2": "would have arrived"
+  },
+  {
+    "id": "upper-06-018",
+    "prompt": "The students were late because they took the wrong bus.",
+    "before": "If the students ",
+    "middle": " the correct bus, ",
+    "after": " on time.",
+    "answer1": "had taken",
+    "answer2": "would have arrived"
+  },
+  {
+    "id": "upper-06-019",
+    "prompt": "They didn’t see the film because the cinema was full.",
+    "before": "If they ",
+    "middle": " tickets in advance, ",
+    "after": " the film.",
+    "answer1": "had booked",
+    "answer2": "could have seen"
+  },
+  {
+    "id": "upper-06-020",
+    "prompt": "The students didn’t see the film because the cinema was full.",
+    "before": "If the students ",
+    "middle": " tickets in advance, ",
+    "after": " the film.",
+    "answer1": "had booked",
+    "answer2": "could have seen"
+  },
+  {
+    "id": "upper-06-021",
+    "prompt": "They couldn’t call for help because their phones had no battery.",
+    "before": "If they ",
+    "middle": " their phones, ",
+    "after": " for help.",
+    "answer1": "had charged",
+    "answer2": "could have called"
+  },
+  {
+    "id": "upper-06-022",
+    "prompt": "The students couldn’t call for help because their phones had no battery.",
+    "before": "If the students ",
+    "middle": " their phones, ",
+    "after": " for help.",
+    "answer1": "had charged",
+    "answer2": "could have called"
+  },
+  {
+    "id": "upper-06-023",
+    "prompt": "They didn’t win the prize because they answered incorrectly.",
+    "before": "If they ",
+    "middle": " correctly, ",
+    "after": " the prize.",
+    "answer1": "had answered",
+    "answer2": "might have won"
+  },
+  {
+    "id": "upper-06-024",
+    "prompt": "The students didn’t win the prize because they answered incorrectly.",
+    "before": "If the students ",
+    "middle": " correctly, ",
+    "after": " the prize.",
+    "answer1": "had answered",
+    "answer2": "might have won"
+  },
+  {
+    "id": "upper-06-025",
+    "prompt": "They got lost because they didn’t use a map.",
+    "before": "If they ",
+    "middle": " a map, ",
+    "after": " lost.",
+    "answer1": "had used",
+    "answer2": "wouldn’t have got"
+  },
+  {
+    "id": "upper-06-026",
+    "prompt": "The students got lost because they didn’t use a map.",
+    "before": "If the students ",
+    "middle": " a map, ",
+    "after": " lost.",
+    "answer1": "had used",
+    "answer2": "wouldn’t have got"
+  },
+  {
+    "id": "upper-06-027",
+    "prompt": "They didn’t hear the announcement because they were talking.",
+    "before": "If they ",
+    "middle": " carefully, ",
+    "after": " the announcement.",
+    "answer1": "had listened",
+    "answer2": "would have heard"
+  },
+  {
+    "id": "upper-06-028",
+    "prompt": "The students didn’t hear the announcement because they were talking.",
+    "before": "If the students ",
+    "middle": " carefully, ",
+    "after": " the announcement.",
+    "answer1": "had listened",
+    "answer2": "would have heard"
+  },
+  {
+    "id": "upper-06-029",
+    "prompt": "They couldn’t buy the laptop because they hadn’t saved enough.",
+    "before": "If they ",
+    "middle": " enough money, ",
+    "after": " the laptop.",
+    "answer1": "had saved",
+    "answer2": "could have bought"
+  },
+  {
+    "id": "upper-06-030",
+    "prompt": "The students couldn’t buy the laptop because they hadn’t saved enough.",
+    "before": "If the students ",
+    "middle": " enough money, ",
+    "after": " the laptop.",
+    "answer1": "had saved",
+    "answer2": "could have bought"
+  },
+  {
+    "id": "upper-06-031",
+    "prompt": "They didn’t attend the concert because they were ill.",
+    "before": "If they ",
+    "middle": " well, ",
+    "after": " the concert.",
+    "answer1": "had been",
+    "answer2": "could have attended"
+  },
+  {
+    "id": "upper-06-032",
+    "prompt": "The students didn’t attend the concert because they were ill.",
+    "before": "If the students ",
+    "middle": " well, ",
+    "after": " the concert.",
+    "answer1": "had been",
+    "answer2": "could have attended"
+  },
+  {
+    "id": "upper-06-033",
+    "prompt": "They made mistakes because they rushed the work.",
+    "before": "If they ",
+    "middle": " more time, ",
+    "after": " the mistakes.",
+    "answer1": "had taken",
+    "answer2": "might have avoided"
+  },
+  {
+    "id": "upper-06-034",
+    "prompt": "The students made mistakes because they rushed the work.",
+    "before": "If the students ",
+    "middle": " more time, ",
+    "after": " the mistakes.",
+    "answer1": "had taken",
+    "answer2": "might have avoided"
+  },
+  {
+    "id": "upper-06-035",
+    "prompt": "They couldn’t open the door because they lost the key.",
+    "before": "If they ",
+    "middle": " the key safe, ",
+    "after": " the door.",
+    "answer1": "had kept",
+    "answer2": "could have opened"
+  },
+  {
+    "id": "upper-06-036",
+    "prompt": "The students couldn’t open the door because they lost the key.",
+    "before": "If the students ",
+    "middle": " the key safe, ",
+    "after": " the door.",
+    "answer1": "had kept",
+    "answer2": "could have opened"
+  },
+  {
+    "id": "upper-06-037",
+    "prompt": "They didn’t get the job because they were unprepared.",
+    "before": "If they ",
+    "middle": " for the interview, ",
+    "after": " the job.",
+    "answer1": "had prepared",
+    "answer2": "might have got"
+  },
+  {
+    "id": "upper-06-038",
+    "prompt": "The students didn’t get the job because they were unprepared.",
+    "before": "If the students ",
+    "middle": " for the interview, ",
+    "after": " the job.",
+    "answer1": "had prepared",
+    "answer2": "might have got"
+  },
+  {
+    "id": "upper-06-039",
+    "prompt": "They didn’t find the address because they wrote it down incorrectly.",
+    "before": "If they ",
+    "middle": " the address correctly, ",
+    "after": " the place.",
+    "answer1": "had written",
+    "answer2": "could have found"
+  },
+  {
+    "id": "upper-06-040",
+    "prompt": "The students didn’t find the address because they wrote it down incorrectly.",
+    "before": "If the students ",
+    "middle": " the address correctly, ",
+    "after": " the place.",
+    "answer1": "had written",
+    "answer2": "could have found"
+  },
+  {
+    "id": "upper-06-041",
+    "prompt": "They missed the meeting because they forgot the time.",
+    "before": "If they ",
+    "middle": " the time, ",
+    "after": " the meeting.",
+    "answer1": "had remembered",
+    "answer2": "wouldn’t have missed"
+  },
+  {
+    "id": "upper-06-042",
+    "prompt": "The students missed the meeting because they forgot the time.",
+    "before": "If the students ",
+    "middle": " the time, ",
+    "after": " the meeting.",
+    "answer1": "had remembered",
+    "answer2": "wouldn’t have missed"
+  },
+  {
+    "id": "upper-06-043",
+    "prompt": "They didn’t understand the instructions because they didn’t read them.",
+    "before": "If they ",
+    "middle": " the instructions, ",
+    "after": " them.",
+    "answer1": "had read",
+    "answer2": "would have understood"
+  },
+  {
+    "id": "upper-06-044",
+    "prompt": "The students didn’t understand the instructions because they didn’t read them.",
+    "before": "If the students ",
+    "middle": " the instructions, ",
+    "after": " them.",
+    "answer1": "had read",
+    "answer2": "would have understood"
+  },
+  {
+    "id": "upper-06-045",
+    "prompt": "They couldn’t repair the bike because they lacked the right tools.",
+    "before": "If they ",
+    "middle": " the right tools, ",
+    "after": " the bike.",
+    "answer1": "had had",
+    "answer2": "could have repaired"
+  },
+  {
+    "id": "upper-06-046",
+    "prompt": "The students couldn’t repair the bike because they lacked the right tools.",
+    "before": "If the students ",
+    "middle": " the right tools, ",
+    "after": " the bike.",
+    "answer1": "had had",
+    "answer2": "could have repaired"
+  },
+  {
+    "id": "upper-06-047",
+    "prompt": "They lost their documents because they didn’t back them up.",
+    "before": "If they ",
+    "middle": " up their documents, ",
+    "after": " them.",
+    "answer1": "had backed",
+    "answer2": "wouldn’t have lost"
+  },
+  {
+    "id": "upper-06-048",
+    "prompt": "The students lost their documents because they didn’t back them up.",
+    "before": "If the students ",
+    "middle": " up their documents, ",
+    "after": " them.",
+    "answer1": "had backed",
+    "answer2": "wouldn’t have lost"
+  },
+  {
+    "id": "upper-06-049",
+    "prompt": "They didn’t finish the race because they injured their legs.",
+    "before": "If they ",
+    "middle": " injury, ",
+    "after": " the race.",
+    "answer1": "had avoided",
+    "answer2": "might have finished"
+  },
+  {
+    "id": "upper-06-050",
+    "prompt": "The students didn’t finish the race because they injured their legs.",
+    "before": "If the students ",
+    "middle": " injury, ",
+    "after": " the race.",
+    "answer1": "had avoided",
+    "answer2": "might have finished"
+  },
+  {
+    "id": "upper-06-051",
+    "prompt": "They couldn’t pay the bill because they forgot their wallets.",
+    "before": "If they ",
+    "middle": " their wallets, ",
+    "after": " the bill.",
+    "answer1": "had brought",
+    "answer2": "could have paid"
+  },
+  {
+    "id": "upper-06-052",
+    "prompt": "The students couldn’t pay the bill because they forgot their wallets.",
+    "before": "If the students ",
+    "middle": " their wallets, ",
+    "after": " the bill.",
+    "answer1": "had brought",
+    "answer2": "could have paid"
+  },
+  {
+    "id": "upper-06-053",
+    "prompt": "They missed the bus because they stopped for coffee.",
+    "before": "If they ",
+    "middle": " the coffee stop, ",
+    "after": " the bus.",
+    "answer1": "had skipped",
+    "answer2": "could have caught"
+  },
+  {
+    "id": "upper-06-054",
+    "prompt": "The students missed the bus because they stopped for coffee.",
+    "before": "If the students ",
+    "middle": " the coffee stop, ",
+    "after": " the bus.",
+    "answer1": "had skipped",
+    "answer2": "could have caught"
+  },
+  {
+    "id": "upper-06-055",
+    "prompt": "They couldn’t cook dinner because they forgot to buy ingredients.",
+    "before": "If they ",
+    "middle": " the ingredients, ",
+    "after": " dinner.",
+    "answer1": "had bought",
+    "answer2": "could have cooked"
+  },
+  {
+    "id": "upper-06-056",
+    "prompt": "The students couldn’t cook dinner because they forgot to buy ingredients.",
+    "before": "If the students ",
+    "middle": " the ingredients, ",
+    "after": " dinner.",
+    "answer1": "had bought",
+    "answer2": "could have cooked"
+  },
+  {
+    "id": "upper-06-057",
+    "prompt": "They didn’t pass the driving test because they made a serious error.",
+    "before": "If they ",
+    "middle": " the serious error, ",
+    "after": " the driving test.",
+    "answer1": "had avoided",
+    "answer2": "might have passed"
+  },
+  {
+    "id": "upper-06-058",
+    "prompt": "The students didn’t pass the driving test because they made a serious error.",
+    "before": "If the students ",
+    "middle": " the serious error, ",
+    "after": " the driving test.",
+    "answer1": "had avoided",
+    "answer2": "might have passed"
+  },
+  {
+    "id": "upper-06-059",
+    "prompt": "They couldn’t take photographs because they left the camera at home.",
+    "before": "If they ",
+    "middle": " the camera, ",
+    "after": " photographs.",
+    "answer1": "had brought",
+    "answer2": "could have taken"
+  },
+  {
+    "id": "upper-06-060",
+    "prompt": "The students couldn’t take photographs because they left the camera at home.",
+    "before": "If the students ",
+    "middle": " the camera, ",
+    "after": " photographs.",
+    "answer1": "had brought",
+    "answer2": "could have taken"
+  },
+  {
+    "id": "upper-06-061",
+    "prompt": "They didn’t recognise the teacher because they had never met her.",
+    "before": "If they ",
+    "middle": " the teacher before, ",
+    "after": " her.",
+    "answer1": "had met",
+    "answer2": "might have recognised"
+  },
+  {
+    "id": "upper-06-062",
+    "prompt": "The students didn’t recognise the teacher because they had never met her.",
+    "before": "If the students ",
+    "middle": " the teacher before, ",
+    "after": " her.",
+    "answer1": "had met",
+    "answer2": "might have recognised"
+  },
+  {
+    "id": "upper-06-063",
+    "prompt": "They couldn’t join the video call because their internet stopped working.",
+    "before": "If they ",
+    "middle": " a working internet connection, ",
+    "after": " the video call.",
+    "answer1": "had had",
+    "answer2": "could have joined"
+  },
+  {
+    "id": "upper-06-064",
+    "prompt": "The students couldn’t join the video call because their internet stopped working.",
+    "before": "If the students ",
+    "middle": " a working internet connection, ",
+    "after": " the video call.",
+    "answer1": "had had",
+    "answer2": "could have joined"
+  },
+  {
+    "id": "upper-06-065",
+    "prompt": "They didn’t enjoy the picnic because it rained heavily.",
+    "before": "If they ",
+    "middle": " better weather, ",
+    "after": " the picnic.",
+    "answer1": "had had",
+    "answer2": "might have enjoyed"
+  },
+  {
+    "id": "upper-06-066",
+    "prompt": "The students didn’t enjoy the picnic because it rained heavily.",
+    "before": "If the students ",
+    "middle": " better weather, ",
+    "after": " the picnic.",
+    "answer1": "had had",
+    "answer2": "might have enjoyed"
+  },
+  {
+    "id": "upper-06-067",
+    "prompt": "They missed the deadline because they ignored the reminder.",
+    "before": "If they ",
+    "middle": " attention to the reminder, ",
+    "after": " the deadline.",
+    "answer1": "had paid",
+    "answer2": "might have met"
+  },
+  {
+    "id": "upper-06-068",
+    "prompt": "The students missed the deadline because they ignored the reminder.",
+    "before": "If the students ",
+    "middle": " attention to the reminder, ",
+    "after": " the deadline.",
+    "answer1": "had paid",
+    "answer2": "might have met"
+  },
+  {
+    "id": "upper-06-069",
+    "prompt": "They couldn’t find their seats because they entered the wrong hall.",
+    "before": "If they ",
+    "middle": " the correct hall, ",
+    "after": " their seats.",
+    "answer1": "had entered",
+    "answer2": "could have found"
+  },
+  {
+    "id": "upper-06-070",
+    "prompt": "The students couldn’t find their seats because they entered the wrong hall.",
+    "before": "If the students ",
+    "middle": " the correct hall, ",
+    "after": " their seats.",
+    "answer1": "had entered",
+    "answer2": "could have found"
+  }
+];
+async function loadBank(){
+  BANK=EMBEDDED_QUESTIONS;
+  $("create").disabled=false;
+  $("create").textContent="Create Live Session";
+  return true;
+}
+async function rpc(fn,data={}) {
+  const response = await fetch(
+    URL_BASE + "/rest/v1/rpc/" + fn,
+    {
+      method:"POST",
+      headers:{
+        apikey:PUBLIC_KEY,
+        Authorization:"Bearer " + PUBLIC_KEY,
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify(data)
+    }
+  );
+  const raw = await response.text();
+  let result;
+  try {
+    result = raw ? JSON.parse(raw) : null;
+  } catch {
+    result = raw;
+  }
+  if (!response.ok) {
+    throw Error(
+      result?.message ||
+      result?.hint ||
+      String(result) ||
+      "Supabase request failed"
+    );
+  }
+  return result;
+}
+async function run(fn) {
+  if (busy) return;
+  busy = true;
+  notice("");
+  try {
+    await fn();
+  } catch(error) {
+    notice(error.message || String(error));
+  } finally {
+    busy = false;
+  }
+}
+function shuffle(items) {
+  const result = [...items];
+  for (let i=result.length-1;i>0;i--) {
+    const random = crypto.getRandomValues(
+      new Uint32Array(1)
+    )[0];
+    const j = random % (i+1);
+    [result[i],result[j]] = [result[j],result[i]];
+  }
+  return result;
+}
+function questionKey(q) {
+  return normalize(q.prompt);
+}
+function choose(){return [...BANK].sort(()=>Math.random()-.5).slice(0,QUESTION_COUNT);}
+function sessionCode() {
+  const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  return Array.from(
+    crypto.getRandomValues(new Uint8Array(8)),
+    value => chars[value % chars.length]
+  ).join("");
+}
+function saveProgress() {
+  if (!code || !playerId || !selected.length) {
+    return;
+  }
+  writeStorage(progressKey(),{
+    questionIds:selected.map(q=>q.id),
+    answers,
+    index,
+    submitted
+  });
+}
+function restoreProgress() {
+  const saved = readStorage(progressKey());
+  if (!saved || !Array.isArray(saved.questionIds)) {
+    return false;
+  }
+  if (saved.questionIds.length !== QUESTION_COUNT) {
+    return false;
+  }
+  const questions = saved.questionIds.map(
+    id => BANK.find(q=>q.id===id)
+  );
+  if (
+    questions.some(q=>!q) ||
+    new Set(saved.questionIds).size !== QUESTION_COUNT ||
+    new Set(questions.map(questionKey)).size !== QUESTION_COUNT
+  ) {
+    return false;
+  }
+  selected = questions;
+  answers =
+    saved.answers &&
+    typeof saved.answers === "object" &&
+    !Array.isArray(saved.answers)
+      ? saved.answers
+      : {};
+  index = Number.isInteger(saved.index)
+    ? Math.max(
+        0,
+        Math.min(saved.index,QUESTION_COUNT-1)
+      )
+    : 0;
+  submitted = saved.submitted === true;
+  return true;
+}
+$("create").onclick = () => run(async()=>{
+  if (BANK.length !== 70) {
+    throw Error("Question bank is not loaded.");
+  }
+  const newToken = crypto.randomUUID();
+  const newCode = sessionCode();
+  await rpc("eps2_create",{
+    p_code:newCode,
+    p_token:newToken
+  });
+  await rpc("eps2_publish",{
+    p_code:newCode,
+    p_token:newToken,
+    p_title:QUIZ_TITLE,
+    p_path:QUIZ_PATH
+  });
+  code = newCode;
+  teacherToken = newToken;
+  sessionClosed = false;
+  writeStorage(TEACHER_KEY,{
+    code,
+    teacherToken
+  });
+  $("code").textContent = code;
+  show("teacher");
+  await poll(true);
+});
+$("joinBtn").onclick = () => run(async()=>{
+  const name = $("name").value.trim();
+  const joinCode = query.get("join") || "";
+  if (!name) {
+    throw Error("Please enter your full name.");
+  }
+  if (!joinCode) {
+    throw Error("Session code is missing.");
+  }
+  const existing = readStorage(PLAYER_KEY);
+  if (existing && existing.code === joinCode && existing.playerId) {
+    code = existing.code;
+    playerId = existing.playerId;
+    show("waiting");
+    await poll(true);
+    return;
+  }
+  const result = await rpc("eps2_join",{
+    p_code:joinCode,
+    p_name:name
+  });
+  if (!result?.player_id) {
+    throw Error("Student ID was not returned.");
+  }
+  code = joinCode;
+  playerId = result.player_id;
+  selected = [];
+  answers = {};
+  index = 0;
+  submitted = false;
+  quizStarted = false;
+  sessionClosed = false;
+  writeStorage(PLAYER_KEY,{
+    code,
+    playerId
+  });
+  show("waiting");
+  await poll(true);
+});
+$("start").onclick = () => run(async()=>{
+  await rpc("eps2_start",{
+    p_code:code,
+    p_token:teacherToken
+  });
+  await poll(true);
+});
+$("end").onclick = () => run(async()=>{
+  if (!confirm("End this live session?")) return;
+  // Capture authoritative scores before the session closes.
+  const snapshot = await rpc("eps2_state",{
+    p_code:code,p_token:teacherToken,p_player:null
+  });
+  await rpc("eps2_end",{p_code:code,p_token:teacherToken});
+  sessionClosed = true;
+  removeStorage(TEACHER_KEY);
+  teacherToken = "";
+  code = "";
+  renderFinalLeaderboard(Array.isArray(snapshot?.players)?snapshot.players:[]);
+  show("finalLeaderboard");
+  notice("");
+});
+function renderFinalLeaderboard(players){
+ // Only the final teacher-facing presentation changes; score values come from eps2_state.
+ const ranked=players.map((p,i)=>({name:String(p.name||"Student"),score:p.completed&&Number.isFinite(Number(p.score))?Number(p.score):null,order:i}));
+ ranked.sort((a,b)=>(b.score??-1)-(a.score??-1)||a.order-b.order);
+ const finished=ranked.filter(p=>p.score!==null),passed=finished.filter(p=>p.score>=PASS_MARK).length;
+ $("finalTotal").textContent=String(ranked.length);
+ $("finalPassed").textContent=String(passed);
+ $("finalFailed").textContent=String(finished.length-passed);
+ const podium=$("finalPodium"),empty=$("finalEmpty"),list=$("finalList");
+ podium.replaceChildren();list.replaceChildren();
+ podium.classList.toggle("hidden",finished.length===0);
+ empty.classList.toggle("hidden",finished.length!==0);
+ // Display the first three finishers in podium order: second, first, third.
+ for(const [place,medal,cls] of [[1,"🥈","second"],[0,"🥇","first"],[2,"🥉","third"]]){
+  const p=finished[place];if(!p)continue;
+  const slot=document.createElement("div");slot.className="podium-place";
+  const m=document.createElement("div");m.className="podium-medal";m.textContent=medal;
+  const n=document.createElement("div");n.className="podium-name";n.textContent=p.name;
+  const sc=document.createElement("div");sc.className="podium-score";sc.textContent=p.score+"%";
+  const block=document.createElement("div");block.className="podium-block "+cls;block.textContent=String(place+1);
+  slot.append(m,n,sc,block);podium.append(slot);
+ }
+ ranked.forEach((p,i)=>{
+  const row=document.createElement("div");row.className="final-person "+(p.score===null?"pending":p.score>=PASS_MARK?"passed":"failed");
+  const rank=document.createElement("span");rank.className="final-rank";rank.textContent=String(i+1)+".";
+  const info=document.createElement("div");info.className="final-info";
+  const name=document.createElement("strong");name.textContent=p.name;
+  const status=document.createElement("small");status.textContent=p.score===null?"Not submitted":p.score>=PASS_MARK?"✓ Passed":"✕ Failed";
+  info.append(name,status);
+  const score=document.createElement("span");score.className="final-percent";score.textContent=p.score===null?"—":p.score+"%";
+  row.append(rank,info,score);list.append(row);
+ });
+}
+function render(){
+  $("counter").textContent="10 transformations · Third conditional";
+  const container=$("dialogue");container.replaceChildren();
+  selected.forEach((q,i)=>{
+    const card=document.createElement("div");card.className="noun-card";
+    const label=document.createElement("div");label.className="noun-number";label.textContent="QUESTION "+(i+1)+" / 10";
+    const a=document.createElement("p");a.className="noun-sentence";
+    const strong=document.createElement("strong");strong.textContent="ORIGINAL SITUATION (A)";
+    a.append(strong,document.createElement("br"),document.createTextNode(q.prompt));
+    const b=document.createElement("div");b.className="noun-sentence";
+    const title=document.createElement("strong");title.textContent="COMPLETE SENTENCE (B)";
+    const line=document.createElement("div");line.className="inline-line";
+    const first=document.createElement("input");first.className="inline-gap";first.placeholder="First gap";first.setAttribute("aria-label","First gap for question "+(i+1));
+    const second=document.createElement("input");second.className="inline-gap";second.placeholder="Second gap";second.setAttribute("aria-label","Second gap for question "+(i+1));
+    const prior=answers[q.id]||"";
+    const pieces=prior.split(" || ");first.value=pieces[0]||"";second.value=pieces[1]||"";
+    function update(){answers[q.id]=first.value.trim()+" || "+second.value.trim();saveProgress();$("fill").style.width=(selected.filter(item=>complete(item)).length/QUESTION_COUNT*100)+"%";}
+    first.addEventListener("input",update);second.addEventListener("input",update);
+    line.append(document.createTextNode(q.before),first,document.createTextNode(q.middle),second,document.createTextNode(q.after));
+    b.append(title,line);card.append(label,a,b);container.append(card);
+  });
+  $("fill").style.width=(selected.filter(q=>complete(q)).length/QUESTION_COUNT*100)+"%";
+}
+function complete(q){const a=String(answers[q.id]||"").split(" || ");return a.length===2&&a.every(x=>x.trim());}
+function isCorrect(q,answer){const parts=String(answer||"").split(" || ");return parts.length===2&&normalize(parts[0])===normalize(q.answer1)&&normalize(parts[1])===normalize(q.answer2);}
+$("next").onclick=()=>run(async()=>{
+  if(submitted)return;
+  if(selected.length!==QUESTION_COUNT)throw Error("Exercise is not ready.");
+  if(selected.some(q=>!complete(q)))throw Error("Complete both gaps in all 10 questions before submitting.");
+  if(!confirm("Submit your 10 answers?"))return;
+  const correct=selected.filter(q=>isCorrect(q,answers[q.id])).length;
+  const score=correct*100/QUESTION_COUNT;
+  await rpc("eps2_submit",{p_code:code,p_player:playerId,p_score:score});
+  submitted=true;saveProgress();displayResult(score);
+});
+function displayResult(score) {
+  quizStarted = false;
+  show("result");
+  const correct = Math.round(score * QUESTION_COUNT / 100);
+  $("score").textContent =
+    `${score}% · ${correct}/${QUESTION_COUNT} correct`;
+  $("outcome").textContent =
+    score >= PASS_MARK
+      ? "Passed!"
+      : "Below 80% — your result was saved for extra support.";
+  const review = $("review");
+  review.replaceChildren();
+  selected.forEach(q=>{
+    const item = document.createElement("div");
+    item.className = "review";
+    const question = document.createElement("strong");
+    question.textContent = q.prompt;
+    const answer = document.createElement("p");
+    answer.textContent =
+      "Your answer: " + (answers[q.id] || "—").replace(" || "," / ");
+    const feedback = document.createElement("p");
+    const correct = isCorrect(q,answers[q.id]);
+    feedback.className = correct
+      ? "good"
+      : "bad";
+    feedback.textContent = correct
+      ? "✓ Correct"
+      : "Correct answer: " + q.before + q.answer1 + q.middle + q.answer2 + q.after;
+    item.append(question,answer,feedback);
+    review.append(item);
+  });
+}
+$("toggleReview").onclick = () => {
+  $("review").classList.toggle("hidden");
+};
+async function poll(force=false) {
+  if (
+    !code ||
+    sessionClosed ||
+    polling ||
+    (!force && busy)
+  ) {
+    return;
+  }
+  polling = true;
+  try {
+    const state = await rpc("eps2_state",{
+      p_code:code,
+      p_token:teacherToken || null,
+      p_player:playerId || null
+    });
+    if (teacherToken) {
+      const players = Array.isArray(state.players)
+        ? state.players
+        : [];
+      $("count").textContent =
+        `${players.length} student(s) · ${state.status}`;
+      $("start").disabled =
+        state.status !== "waiting";
+      $("end").disabled =
+        state.status !== "active";
+      const leaderboard = $("leader");
+      leaderboard.replaceChildren();
+      players.forEach((player,i)=>{
+        const row = document.createElement("tr");
+        const name = document.createElement("td");
+        name.textContent =
+          `${i+1}. ${player.name}`;
+        const score = document.createElement("td");
+        score.textContent = player.completed
+          ? player.score + "%"
+          : "—";
+        row.append(name,score);
+        leaderboard.append(row);
+      });
+    } else if (playerId) {
+      if (
+        state.status === "active" &&
+        !submitted
+      ) {
+        if (BANK.length !== 70) {
+          const loaded = await loadBank();
+          if (!loaded) return;
+        }
+        // Only select questions if none are saved.
+        if (!selected.length) {
+          if (!restoreProgress()) {
+            selected = choose();
+            index = 0;
+            answers = {};
+            saveProgress();
+          }
+        }
+        // CRITICAL FIX:
+        // Render only when entering the quiz.
+        // Never render again during ordinary polling.
+        if (!quizStarted) {
+          quizStarted = true;
+          show("quiz");
+          render();
+        }
+      }
+      if (
+        state.status === "completed" &&
+        !submitted
+      ) {
+        sessionClosed = true;
+        notice("Teacher ended the session.");
+        if (!quizStarted) {
+          show("waiting");
+        }
+      }
+    }
+  } catch(error) {
+    notice(error.message || String(error));
+  } finally {
+    polling = false;
+  }
+}
+function restoreSession() {
+  if (query.has("join")) {
+    const saved = readStorage(PLAYER_KEY);
+    const requestedCode = query.get("join");
+    if (
+      saved &&
+      saved.code === requestedCode &&
+      saved.playerId
+    ) {
+      code = saved.code;
+      playerId = saved.playerId;
+      show("waiting");
+    } else {
+      show("join");
+    }
+  } else {
+    const saved = readStorage(TEACHER_KEY);
+    if (
+      saved &&
+      saved.code &&
+      saved.teacherToken
+    ) {
+      code = saved.code;
+      teacherToken = saved.teacherToken;
+      $("code").textContent = code;
+      show("teacher");
+    }
+  }
+}
+async function initialize() {
+  restoreSession();
+  const loaded = await loadBank();
+  if (!loaded) return;
+  if (playerId) {
+    restoreProgress();
+    if (submitted) {
+      const correct = selected.filter(
+        q => isCorrect(q,answers[q.id])
+      ).length;
+      if (selected.length === QUESTION_COUNT) {
+        displayResult(correct*100/QUESTION_COUNT);
+        return;
+      }
+    }
+  }
+  if (code && !submitted) {
+    await poll(true);
+  }
+}
+initialize();
+// Poll only for session changes.
+// Never reset or re-render the active question.
+setInterval(()=>{
+  if (
+    code &&
+    !submitted &&
+    !sessionClosed
+  ) {
+    poll();
+  }
+},3000);
+</script>
+</body>
+</html>
