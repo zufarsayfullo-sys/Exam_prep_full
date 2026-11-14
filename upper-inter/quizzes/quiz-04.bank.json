@@ -1,0 +1,927 @@
+{
+  "title": "Mixed Grammar — Sentence Transformations",
+  "level": "upper-intermediate",
+  "category": "Grammar",
+  "instructions": "Complete the second sentence so it has a similar meaning to the first. Use the given word unchanged. Write between two and six words.",
+  "keywords": [
+    "OBJECTION",
+    "DEMANDED",
+    "MUST",
+    "UNLESS",
+    "IF"
+  ],
+  "questionsPerAttempt": 10,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "upper-04-001",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "The police didn't object to the drivers breaking the traffic rules because of the emergency.",
+      "original": "The police didn't object to the drivers breaking the traffic rules because of the emergency.",
+      "before": "Because of the emergency, the police didn't ",
+      "after": " to the drivers breaking the traffic rules.",
+      "answer": "raise any objection",
+      "acceptedAnswers": [
+        "raise any objection"
+      ]
+    },
+    {
+      "id": "upper-04-002",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "Nobody objected to the proposed timetable.",
+      "original": "Nobody objected to the proposed timetable.",
+      "before": "Nobody ",
+      "after": " to the proposed timetable.",
+      "answer": "raised any objection",
+      "acceptedAnswers": [
+        "raised any objection"
+      ]
+    },
+    {
+      "id": "upper-04-003",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "The neighbours did not object to the new playground.",
+      "original": "The neighbours did not object to the new playground.",
+      "before": "The neighbours ",
+      "after": " to the new playground.",
+      "answer": "had no objection",
+      "acceptedAnswers": [
+        "had no objection"
+      ]
+    },
+    {
+      "id": "upper-04-004",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "She was happy for us to use her notes.",
+      "original": "She was happy for us to use her notes.",
+      "before": "She ",
+      "after": " to us using her notes.",
+      "answer": "had no objection",
+      "acceptedAnswers": [
+        "had no objection"
+      ]
+    },
+    {
+      "id": "upper-04-005",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "The committee opposed the plan to close the library.",
+      "original": "The committee opposed the plan to close the library.",
+      "before": "The committee ",
+      "after": " to the plan to close the library.",
+      "answer": "raised an objection",
+      "acceptedAnswers": [
+        "raised an objection"
+      ]
+    },
+    {
+      "id": "upper-04-006",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "The manager did not mind us leaving early.",
+      "original": "The manager did not mind us leaving early.",
+      "before": "The manager ",
+      "after": " to us leaving early.",
+      "answer": "had no objection",
+      "acceptedAnswers": [
+        "had no objection"
+      ]
+    },
+    {
+      "id": "upper-04-007",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "Several residents protested against the new road.",
+      "original": "Several residents protested against the new road.",
+      "before": "Several residents ",
+      "after": " to the new road.",
+      "answer": "raised an objection",
+      "acceptedAnswers": [
+        "raised an objection"
+      ]
+    },
+    {
+      "id": "upper-04-008",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "The teacher did not mind the students working in pairs.",
+      "original": "The teacher did not mind the students working in pairs.",
+      "before": "The teacher ",
+      "after": " to the students working in pairs.",
+      "answer": "had no objection",
+      "acceptedAnswers": [
+        "had no objection"
+      ]
+    },
+    {
+      "id": "upper-04-009",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "Nobody complained about the change in venue.",
+      "original": "Nobody complained about the change in venue.",
+      "before": "Nobody ",
+      "after": " to the change in venue.",
+      "answer": "raised any objection",
+      "acceptedAnswers": [
+        "raised any objection"
+      ]
+    },
+    {
+      "id": "upper-04-010",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "He was against the proposal from the beginning.",
+      "original": "He was against the proposal from the beginning.",
+      "before": "He ",
+      "after": " to the proposal from the beginning.",
+      "answer": "raised an objection",
+      "acceptedAnswers": [
+        "raised an objection"
+      ]
+    },
+    {
+      "id": "upper-04-011",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "The board accepted the changes without opposing them.",
+      "original": "The board accepted the changes without opposing them.",
+      "before": "The board ",
+      "after": " to the changes.",
+      "answer": "had no objection",
+      "acceptedAnswers": [
+        "had no objection"
+      ]
+    },
+    {
+      "id": "upper-04-012",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "They did not mind their children staying out later.",
+      "original": "They did not mind their children staying out later.",
+      "before": "They ",
+      "after": " to their children staying out later.",
+      "answer": "had no objection",
+      "acceptedAnswers": [
+        "had no objection"
+      ]
+    },
+    {
+      "id": "upper-04-013",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "Several parents objected to the school trip being cancelled.",
+      "original": "Several parents objected to the school trip being cancelled.",
+      "before": "Several parents ",
+      "after": " to the school trip being cancelled.",
+      "answer": "raised an objection",
+      "acceptedAnswers": [
+        "raised an objection"
+      ]
+    },
+    {
+      "id": "upper-04-014",
+      "type": "sentence-transformation",
+      "keyword": "OBJECTION",
+      "prompt": "My supervisor was fine with me working remotely.",
+      "original": "My supervisor was fine with me working remotely.",
+      "before": "My supervisor ",
+      "after": " to me working remotely.",
+      "answer": "had no objection",
+      "acceptedAnswers": [
+        "had no objection"
+      ]
+    },
+    {
+      "id": "upper-04-015",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The client insisted on seeing the manager to complain about the poor service.",
+      "original": "The client insisted on seeing the manager to complain about the poor service.",
+      "before": "The client ",
+      "after": " the manager to complain about the poor service.",
+      "answer": "demanded to see",
+      "acceptedAnswers": [
+        "demanded to see"
+      ]
+    },
+    {
+      "id": "upper-04-016",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The protesters insisted that the mayor resign immediately.",
+      "original": "The protesters insisted that the mayor resign immediately.",
+      "before": "The protesters ",
+      "after": " immediately.",
+      "answer": "demanded that the mayor resign",
+      "acceptedAnswers": [
+        "demanded that the mayor resign"
+      ]
+    },
+    {
+      "id": "upper-04-017",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "She insisted on receiving a full refund.",
+      "original": "She insisted on receiving a full refund.",
+      "before": "She ",
+      "after": " a full refund.",
+      "answer": "demanded to receive",
+      "acceptedAnswers": [
+        "demanded to receive"
+      ]
+    },
+    {
+      "id": "upper-04-018",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The workers insisted that the company improve safety standards.",
+      "original": "The workers insisted that the company improve safety standards.",
+      "before": "The workers ",
+      "after": " safety standards.",
+      "answer": "demanded that the company improve",
+      "acceptedAnswers": [
+        "demanded that the company improve"
+      ]
+    },
+    {
+      "id": "upper-04-019",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "He insisted on being told the truth.",
+      "original": "He insisted on being told the truth.",
+      "before": "He ",
+      "after": " the truth.",
+      "answer": "demanded to be told",
+      "acceptedAnswers": [
+        "demanded to be told"
+      ]
+    },
+    {
+      "id": "upper-04-020",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The passengers insisted on speaking to the airline representative.",
+      "original": "The passengers insisted on speaking to the airline representative.",
+      "before": "The passengers ",
+      "after": " to the airline representative.",
+      "answer": "demanded to speak",
+      "acceptedAnswers": [
+        "demanded to speak"
+      ]
+    },
+    {
+      "id": "upper-04-021",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The residents insisted that the council repair the road.",
+      "original": "The residents insisted that the council repair the road.",
+      "before": "The residents ",
+      "after": " the road.",
+      "answer": "demanded that the council repair",
+      "acceptedAnswers": [
+        "demanded that the council repair"
+      ]
+    },
+    {
+      "id": "upper-04-022",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "She insisted on an explanation for the delay.",
+      "original": "She insisted on an explanation for the delay.",
+      "before": "She ",
+      "after": " for the delay.",
+      "answer": "demanded an explanation",
+      "acceptedAnswers": [
+        "demanded an explanation"
+      ]
+    },
+    {
+      "id": "upper-04-023",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The journalist insisted on seeing the official report.",
+      "original": "The journalist insisted on seeing the official report.",
+      "before": "The journalist ",
+      "after": " the official report.",
+      "answer": "demanded to see",
+      "acceptedAnswers": [
+        "demanded to see"
+      ]
+    },
+    {
+      "id": "upper-04-024",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The students insisted that the exam be postponed.",
+      "original": "The students insisted that the exam be postponed.",
+      "before": "The students ",
+      "after": " postponed.",
+      "answer": "demanded that the exam be",
+      "acceptedAnswers": [
+        "demanded that the exam be"
+      ]
+    },
+    {
+      "id": "upper-04-025",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The customer insisted on talking to the supervisor.",
+      "original": "The customer insisted on talking to the supervisor.",
+      "before": "The customer ",
+      "after": " to the supervisor.",
+      "answer": "demanded to talk",
+      "acceptedAnswers": [
+        "demanded to talk"
+      ]
+    },
+    {
+      "id": "upper-04-026",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The union insisted on better working conditions.",
+      "original": "The union insisted on better working conditions.",
+      "before": "The union ",
+      "after": " from the employer.",
+      "answer": "demanded better working conditions",
+      "acceptedAnswers": [
+        "demanded better working conditions"
+      ]
+    },
+    {
+      "id": "upper-04-027",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The director insisted that everyone attend the briefing.",
+      "original": "The director insisted that everyone attend the briefing.",
+      "before": "The director ",
+      "after": " the briefing.",
+      "answer": "demanded that everyone attend",
+      "acceptedAnswers": [
+        "demanded that everyone attend"
+      ]
+    },
+    {
+      "id": "upper-04-028",
+      "type": "sentence-transformation",
+      "keyword": "DEMANDED",
+      "prompt": "The tenants insisted on having the heating repaired.",
+      "original": "The tenants insisted on having the heating repaired.",
+      "before": "The tenants ",
+      "after": " the heating repaired.",
+      "answer": "demanded to have",
+      "acceptedAnswers": [
+        "demanded to have"
+      ]
+    },
+    {
+      "id": "upper-04-029",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm sure Tom has already left for work because nobody is at home.",
+      "original": "I'm sure Tom has already left for work because nobody is at home.",
+      "before": "Tom ",
+      "after": " for work because nobody is at home.",
+      "answer": "must have left",
+      "acceptedAnswers": [
+        "must have left"
+      ]
+    },
+    {
+      "id": "upper-04-030",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm certain she is exhausted after working all night.",
+      "original": "I'm certain she is exhausted after working all night.",
+      "before": "She ",
+      "after": " after working all night.",
+      "answer": "must be exhausted",
+      "acceptedAnswers": [
+        "must be exhausted"
+      ]
+    },
+    {
+      "id": "upper-04-031",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm sure they forgot about our appointment.",
+      "original": "I'm sure they forgot about our appointment.",
+      "before": "They ",
+      "after": " about our appointment.",
+      "answer": "must have forgotten",
+      "acceptedAnswers": [
+        "must have forgotten"
+      ]
+    },
+    {
+      "id": "upper-04-032",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm certain this is the correct address.",
+      "original": "I'm certain this is the correct address.",
+      "before": "This ",
+      "after": " correct address.",
+      "answer": "must be the",
+      "acceptedAnswers": [
+        "must be the"
+      ]
+    },
+    {
+      "id": "upper-04-033",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm sure he misunderstood the instructions.",
+      "original": "I'm sure he misunderstood the instructions.",
+      "before": "He ",
+      "after": " the instructions.",
+      "answer": "must have misunderstood",
+      "acceptedAnswers": [
+        "must have misunderstood"
+      ]
+    },
+    {
+      "id": "upper-04-034",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm certain the children are asleep by now.",
+      "original": "I'm certain the children are asleep by now.",
+      "before": "The children ",
+      "after": " by now.",
+      "answer": "must be asleep",
+      "acceptedAnswers": [
+        "must be asleep"
+      ]
+    },
+    {
+      "id": "upper-04-035",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm sure the parcel arrived yesterday.",
+      "original": "I'm sure the parcel arrived yesterday.",
+      "before": "The parcel ",
+      "after": " yesterday.",
+      "answer": "must have arrived",
+      "acceptedAnswers": [
+        "must have arrived"
+      ]
+    },
+    {
+      "id": "upper-04-036",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm certain she knows the answer.",
+      "original": "I'm certain she knows the answer.",
+      "before": "She ",
+      "after": " answer.",
+      "answer": "must know the",
+      "acceptedAnswers": [
+        "must know the"
+      ]
+    },
+    {
+      "id": "upper-04-037",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm sure he took the wrong train.",
+      "original": "I'm sure he took the wrong train.",
+      "before": "He ",
+      "after": " the wrong train.",
+      "answer": "must have taken",
+      "acceptedAnswers": [
+        "must have taken"
+      ]
+    },
+    {
+      "id": "upper-04-038",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm certain the restaurant is closed at this hour.",
+      "original": "I'm certain the restaurant is closed at this hour.",
+      "before": "The restaurant ",
+      "after": " at this hour.",
+      "answer": "must be closed",
+      "acceptedAnswers": [
+        "must be closed"
+      ]
+    },
+    {
+      "id": "upper-04-039",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm sure you left your keys at the office.",
+      "original": "I'm sure you left your keys at the office.",
+      "before": "You ",
+      "after": " your keys at the office.",
+      "answer": "must have left",
+      "acceptedAnswers": [
+        "must have left"
+      ]
+    },
+    {
+      "id": "upper-04-040",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm certain the twins are related to her.",
+      "original": "I'm certain the twins are related to her.",
+      "before": "The twins ",
+      "after": " to her.",
+      "answer": "must be related",
+      "acceptedAnswers": [
+        "must be related"
+      ]
+    },
+    {
+      "id": "upper-04-041",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm sure the driver didn't see the sign.",
+      "original": "I'm sure the driver didn't see the sign.",
+      "before": "The driver ",
+      "after": " the sign.",
+      "answer": "must have missed",
+      "acceptedAnswers": [
+        "must have missed"
+      ]
+    },
+    {
+      "id": "upper-04-042",
+      "type": "sentence-transformation",
+      "keyword": "MUST",
+      "prompt": "I'm certain they are waiting for us outside.",
+      "original": "I'm certain they are waiting for us outside.",
+      "before": "They ",
+      "after": " for us outside.",
+      "answer": "must be waiting",
+      "acceptedAnswers": [
+        "must be waiting"
+      ]
+    },
+    {
+      "id": "upper-04-043",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "You won't meet the project deadline if you don't speed up.",
+      "original": "You won't meet the project deadline if you don't speed up.",
+      "before": "You won't meet the project deadline ",
+      "after": ".",
+      "answer": "unless you speed up",
+      "acceptedAnswers": [
+        "unless you speed up"
+      ]
+    },
+    {
+      "id": "upper-04-044",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "We won't go hiking if the weather doesn't improve.",
+      "original": "We won't go hiking if the weather doesn't improve.",
+      "before": "We won't go hiking ",
+      "after": ".",
+      "answer": "unless the weather improves",
+      "acceptedAnswers": [
+        "unless the weather improves"
+      ]
+    },
+    {
+      "id": "upper-04-045",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "You can't enter the building if you don't show your ID.",
+      "original": "You can't enter the building if you don't show your ID.",
+      "before": "You can't enter the building ",
+      "after": ".",
+      "answer": "unless you show your ID",
+      "acceptedAnswers": [
+        "unless you show your ID"
+      ]
+    },
+    {
+      "id": "upper-04-046",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "She won't pass the course if she doesn't study regularly.",
+      "original": "She won't pass the course if she doesn't study regularly.",
+      "before": "She won't pass the course ",
+      "after": ".",
+      "answer": "unless she studies regularly",
+      "acceptedAnswers": [
+        "unless she studies regularly"
+      ]
+    },
+    {
+      "id": "upper-04-047",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "They won't accept the application if you don't sign it.",
+      "original": "They won't accept the application if you don't sign it.",
+      "before": "They won't accept the application ",
+      "after": ".",
+      "answer": "unless you sign it",
+      "acceptedAnswers": [
+        "unless you sign it"
+      ]
+    },
+    {
+      "id": "upper-04-048",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "We can't finish on time if everyone doesn't help.",
+      "original": "We can't finish on time if everyone doesn't help.",
+      "before": "We can't finish on time ",
+      "after": ".",
+      "answer": "unless everyone helps",
+      "acceptedAnswers": [
+        "unless everyone helps"
+      ]
+    },
+    {
+      "id": "upper-04-049",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "You won't understand the instructions if you don't read them carefully.",
+      "original": "You won't understand the instructions if you don't read them carefully.",
+      "before": "You won't understand the instructions ",
+      "after": ".",
+      "answer": "unless you read them carefully",
+      "acceptedAnswers": [
+        "unless you read them carefully"
+      ]
+    },
+    {
+      "id": "upper-04-050",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "The plants will die if you don't water them.",
+      "original": "The plants will die if you don't water them.",
+      "before": "The plants will die ",
+      "after": ".",
+      "answer": "unless you water them",
+      "acceptedAnswers": [
+        "unless you water them"
+      ]
+    },
+    {
+      "id": "upper-04-051",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "He won't get the job if he doesn't prepare for the interview.",
+      "original": "He won't get the job if he doesn't prepare for the interview.",
+      "before": "He won't get the job ",
+      "after": ".",
+      "answer": "unless he prepares for the interview",
+      "acceptedAnswers": [
+        "unless he prepares for the interview"
+      ]
+    },
+    {
+      "id": "upper-04-052",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "You won't receive a refund if you don't keep the receipt.",
+      "original": "You won't receive a refund if you don't keep the receipt.",
+      "before": "You won't receive a refund ",
+      "after": ".",
+      "answer": "unless you keep the receipt",
+      "acceptedAnswers": [
+        "unless you keep the receipt"
+      ]
+    },
+    {
+      "id": "upper-04-053",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "We can't start the meeting if the chairperson doesn't arrive.",
+      "original": "We can't start the meeting if the chairperson doesn't arrive.",
+      "before": "We can't start the meeting ",
+      "after": ".",
+      "answer": "unless the chairperson arrives",
+      "acceptedAnswers": [
+        "unless the chairperson arrives"
+      ]
+    },
+    {
+      "id": "upper-04-054",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "You won't improve your pronunciation if you don't practise.",
+      "original": "You won't improve your pronunciation if you don't practise.",
+      "before": "You won't improve your pronunciation ",
+      "after": ".",
+      "answer": "unless you practise",
+      "acceptedAnswers": [
+        "unless you practise"
+      ]
+    },
+    {
+      "id": "upper-04-055",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "The team won't qualify if they don't win the next match.",
+      "original": "The team won't qualify if they don't win the next match.",
+      "before": "The team won't qualify ",
+      "after": ".",
+      "answer": "unless they win the next match",
+      "acceptedAnswers": [
+        "unless they win the next match"
+      ]
+    },
+    {
+      "id": "upper-04-056",
+      "type": "sentence-transformation",
+      "keyword": "UNLESS",
+      "prompt": "I won't lend you the car if you don't promise to drive carefully.",
+      "original": "I won't lend you the car if you don't promise to drive carefully.",
+      "before": "I won't lend you the car ",
+      "after": ".",
+      "answer": "unless you promise to drive carefully",
+      "acceptedAnswers": [
+        "unless you promise to drive carefully"
+      ]
+    },
+    {
+      "id": "upper-04-057",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Does your friend speak foreign languages?' Bobur asked his brother.",
+      "original": "'Does your friend speak foreign languages?' Bobur asked his brother.",
+      "before": "Bobur asked his brother ",
+      "after": ".",
+      "answer": "if his friend spoke foreign languages",
+      "acceptedAnswers": [
+        "if his friend spoke foreign languages"
+      ]
+    },
+    {
+      "id": "upper-04-058",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Are you ready?' the teacher asked us.",
+      "original": "'Are you ready?' the teacher asked us.",
+      "before": "The teacher asked us ",
+      "after": ".",
+      "answer": "if we were ready",
+      "acceptedAnswers": [
+        "if we were ready"
+      ]
+    },
+    {
+      "id": "upper-04-059",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Did you lock the door?' Mum asked me.",
+      "original": "'Did you lock the door?' Mum asked me.",
+      "before": "Mum asked me ",
+      "after": ".",
+      "answer": "if I had locked the door",
+      "acceptedAnswers": [
+        "if I had locked the door"
+      ]
+    },
+    {
+      "id": "upper-04-060",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Can you help me?' she asked him.",
+      "original": "'Can you help me?' she asked him.",
+      "before": "She asked him ",
+      "after": ".",
+      "answer": "if he could help her",
+      "acceptedAnswers": [
+        "if he could help her"
+      ]
+    },
+    {
+      "id": "upper-04-061",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Will they arrive tonight?' he asked me.",
+      "original": "'Will they arrive tonight?' he asked me.",
+      "before": "He asked me ",
+      "after": ".",
+      "answer": "if they would arrive that night",
+      "acceptedAnswers": [
+        "if they would arrive that night"
+      ]
+    },
+    {
+      "id": "upper-04-062",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Have you finished the report?' the manager asked her.",
+      "original": "'Have you finished the report?' the manager asked her.",
+      "before": "The manager asked her ",
+      "after": ".",
+      "answer": "if she had finished the report",
+      "acceptedAnswers": [
+        "if she had finished the report"
+      ]
+    },
+    {
+      "id": "upper-04-063",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Is the shop still open?' he asked me.",
+      "original": "'Is the shop still open?' he asked me.",
+      "before": "He asked me ",
+      "after": ".",
+      "answer": "if the shop was still open",
+      "acceptedAnswers": [
+        "if the shop was still open"
+      ]
+    },
+    {
+      "id": "upper-04-064",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Do your parents live nearby?' she asked him.",
+      "original": "'Do your parents live nearby?' she asked him.",
+      "before": "She asked him ",
+      "after": ".",
+      "answer": "if his parents lived nearby",
+      "acceptedAnswers": [
+        "if his parents lived nearby"
+      ]
+    },
+    {
+      "id": "upper-04-065",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Were you at the conference?' the lecturer asked me.",
+      "original": "'Were you at the conference?' the lecturer asked me.",
+      "before": "The lecturer asked me ",
+      "after": ".",
+      "answer": "if I attended the conference",
+      "acceptedAnswers": [
+        "if I attended the conference"
+      ]
+    },
+    {
+      "id": "upper-04-066",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Does this bus stop at the station?' she asked the driver.",
+      "original": "'Does this bus stop at the station?' she asked the driver.",
+      "before": "She asked the driver ",
+      "after": ".",
+      "answer": "if the bus stopped there",
+      "acceptedAnswers": [
+        "if the bus stopped there"
+      ]
+    },
+    {
+      "id": "upper-04-067",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Could you attend the meeting?' he asked her.",
+      "original": "'Could you attend the meeting?' he asked her.",
+      "before": "He asked her ",
+      "after": ".",
+      "answer": "if she could attend the meeting",
+      "acceptedAnswers": [
+        "if she could attend the meeting"
+      ]
+    },
+    {
+      "id": "upper-04-068",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Are the children sleeping?' Dad asked Mum.",
+      "original": "'Are the children sleeping?' Dad asked Mum.",
+      "before": "Dad asked Mum ",
+      "after": ".",
+      "answer": "if the children were sleeping",
+      "acceptedAnswers": [
+        "if the children were sleeping"
+      ]
+    },
+    {
+      "id": "upper-04-069",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Did you enjoy the concert?' she asked me.",
+      "original": "'Did you enjoy the concert?' she asked me.",
+      "before": "She asked me ",
+      "after": ".",
+      "answer": "if I had enjoyed the concert",
+      "acceptedAnswers": [
+        "if I had enjoyed the concert"
+      ]
+    },
+    {
+      "id": "upper-04-070",
+      "type": "sentence-transformation",
+      "keyword": "IF",
+      "prompt": "'Will you be home by six?' he asked me.",
+      "original": "'Will you be home by six?' he asked me.",
+      "before": "He asked me ",
+      "after": ".",
+      "answer": "if I would return by six",
+      "acceptedAnswers": [
+        "if I would return by six"
+      ]
+    }
+  ]
+}
