@@ -52,5 +52,12 @@
   "file": "quiz-11.html",
   "questionCount": 6,
   "passMark": 80
+},
+  {
+  "id": "quiz-06",
+  "title": "Third Conditional \u2014 Sentence Transformations",
+  "file": "quiz-06.html",
+  "questionCount": 10,
+  "level": "upper-intermediate"
 }
 ]
