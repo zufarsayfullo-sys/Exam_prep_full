@@ -1,0 +1,932 @@
+{
+  "title": "Word Bank — Vocabulary in Context",
+  "level": "upper-intermediate",
+  "category": "Vocabulary",
+  "instructions": "Choose the correct word from the box to complete each sentence. Use only the ten words provided.",
+  "wordBank": [
+    "beautifully",
+    "weekly",
+    "dramatically",
+    "likely",
+    "freshly",
+    "honesty",
+    "careful",
+    "nearby",
+    "remarkably",
+    "happiness"
+  ],
+  "passMark": 80,
+  "questionsPerAttempt": 10,
+  "questions": [
+    {
+      "id": "upper-03-001",
+      "type": "multiple-choice",
+      "prompt": "The choir sang ___ at the charity concert.",
+      "options": [
+        "nearby",
+        "careful",
+        "beautifully"
+      ],
+      "answer": "beautifully",
+      "correctIndex": 2,
+      "word": "beautifully"
+    },
+    {
+      "id": "upper-03-002",
+      "type": "multiple-choice",
+      "prompt": "The room was ___ decorated for the celebration.",
+      "options": [
+        "beautifully",
+        "remarkably",
+        "careful"
+      ],
+      "answer": "beautifully",
+      "correctIndex": 0,
+      "word": "beautifully"
+    },
+    {
+      "id": "upper-03-003",
+      "type": "multiple-choice",
+      "prompt": "She writes so ___ that her letters are a pleasure to read.",
+      "options": [
+        "likely",
+        "honesty",
+        "beautifully"
+      ],
+      "answer": "beautifully",
+      "correctIndex": 2,
+      "word": "beautifully"
+    },
+    {
+      "id": "upper-03-004",
+      "type": "multiple-choice",
+      "prompt": "The dancers moved ___ across the stage.",
+      "options": [
+        "beautifully",
+        "dramatically",
+        "careful"
+      ],
+      "answer": "beautifully",
+      "correctIndex": 0,
+      "word": "beautifully"
+    },
+    {
+      "id": "upper-03-005",
+      "type": "multiple-choice",
+      "prompt": "The landscape was ___ captured in the photograph.",
+      "options": [
+        "beautifully",
+        "nearby",
+        "honesty"
+      ],
+      "answer": "beautifully",
+      "correctIndex": 0,
+      "word": "beautifully"
+    },
+    {
+      "id": "upper-03-006",
+      "type": "multiple-choice",
+      "prompt": "The designer arranged the flowers ___ for the wedding.",
+      "options": [
+        "happiness",
+        "nearby",
+        "beautifully"
+      ],
+      "answer": "beautifully",
+      "correctIndex": 2,
+      "word": "beautifully"
+    },
+    {
+      "id": "upper-03-007",
+      "type": "multiple-choice",
+      "prompt": "The pianist performed the final piece ___.",
+      "options": [
+        "beautifully",
+        "weekly",
+        "honesty"
+      ],
+      "answer": "beautifully",
+      "correctIndex": 0,
+      "word": "beautifully"
+    },
+    {
+      "id": "upper-03-008",
+      "type": "multiple-choice",
+      "prompt": "The magazine is published ___ rather than every day.",
+      "options": [
+        "honesty",
+        "weekly",
+        "freshly"
+      ],
+      "answer": "weekly",
+      "correctIndex": 1,
+      "word": "weekly"
+    },
+    {
+      "id": "upper-03-009",
+      "type": "multiple-choice",
+      "prompt": "Our team holds a ___ meeting every Friday.",
+      "options": [
+        "likely",
+        "beautifully",
+        "weekly"
+      ],
+      "answer": "weekly",
+      "correctIndex": 2,
+      "word": "weekly"
+    },
+    {
+      "id": "upper-03-010",
+      "type": "multiple-choice",
+      "prompt": "The manager checks our progress on a ___ basis.",
+      "options": [
+        "weekly",
+        "happiness",
+        "freshly"
+      ],
+      "answer": "weekly",
+      "correctIndex": 0,
+      "word": "weekly"
+    },
+    {
+      "id": "upper-03-011",
+      "type": "multiple-choice",
+      "prompt": "The club organises ___ training sessions on Saturdays.",
+      "options": [
+        "weekly",
+        "likely",
+        "happiness"
+      ],
+      "answer": "weekly",
+      "correctIndex": 0,
+      "word": "weekly"
+    },
+    {
+      "id": "upper-03-012",
+      "type": "multiple-choice",
+      "prompt": "Staff receive a ___ newsletter every Monday.",
+      "options": [
+        "freshly",
+        "weekly",
+        "nearby"
+      ],
+      "answer": "weekly",
+      "correctIndex": 1,
+      "word": "weekly"
+    },
+    {
+      "id": "upper-03-013",
+      "type": "multiple-choice",
+      "prompt": "The course includes a ___ assessment of your progress.",
+      "options": [
+        "happiness",
+        "remarkably",
+        "weekly"
+      ],
+      "answer": "weekly",
+      "correctIndex": 2,
+      "word": "weekly"
+    },
+    {
+      "id": "upper-03-014",
+      "type": "multiple-choice",
+      "prompt": "We meet ___ to discuss our research findings.",
+      "options": [
+        "weekly",
+        "remarkably",
+        "nearby"
+      ],
+      "answer": "weekly",
+      "correctIndex": 0,
+      "word": "weekly"
+    },
+    {
+      "id": "upper-03-015",
+      "type": "multiple-choice",
+      "prompt": "Sales increased ___ after the advertising campaign.",
+      "options": [
+        "dramatically",
+        "nearby",
+        "remarkably"
+      ],
+      "answer": "dramatically",
+      "correctIndex": 0,
+      "word": "dramatically"
+    },
+    {
+      "id": "upper-03-016",
+      "type": "multiple-choice",
+      "prompt": "The weather changed ___ within a few minutes.",
+      "options": [
+        "dramatically",
+        "honesty",
+        "nearby"
+      ],
+      "answer": "dramatically",
+      "correctIndex": 0,
+      "word": "dramatically"
+    },
+    {
+      "id": "upper-03-017",
+      "type": "multiple-choice",
+      "prompt": "House prices fell ___ during the economic crisis.",
+      "options": [
+        "freshly",
+        "careful",
+        "dramatically"
+      ],
+      "answer": "dramatically",
+      "correctIndex": 2,
+      "word": "dramatically"
+    },
+    {
+      "id": "upper-03-018",
+      "type": "multiple-choice",
+      "prompt": "Her confidence improved ___ after several months of practice.",
+      "options": [
+        "dramatically",
+        "weekly",
+        "freshly"
+      ],
+      "answer": "dramatically",
+      "correctIndex": 0,
+      "word": "dramatically"
+    },
+    {
+      "id": "upper-03-019",
+      "type": "multiple-choice",
+      "prompt": "The number of visitors rose ___ over the summer.",
+      "options": [
+        "careful",
+        "dramatically",
+        "happiness"
+      ],
+      "answer": "dramatically",
+      "correctIndex": 1,
+      "word": "dramatically"
+    },
+    {
+      "id": "upper-03-020",
+      "type": "multiple-choice",
+      "prompt": "The company reduced its costs ___ by changing suppliers.",
+      "options": [
+        "remarkably",
+        "freshly",
+        "dramatically"
+      ],
+      "answer": "dramatically",
+      "correctIndex": 2,
+      "word": "dramatically"
+    },
+    {
+      "id": "upper-03-021",
+      "type": "multiple-choice",
+      "prompt": "The situation deteriorated ___ after the negotiations failed.",
+      "options": [
+        "dramatically",
+        "nearby",
+        "happiness"
+      ],
+      "answer": "dramatically",
+      "correctIndex": 0,
+      "word": "dramatically"
+    },
+    {
+      "id": "upper-03-022",
+      "type": "multiple-choice",
+      "prompt": "It is highly ___ that the train will be delayed by the storm.",
+      "options": [
+        "weekly",
+        "freshly",
+        "likely"
+      ],
+      "answer": "likely",
+      "correctIndex": 2,
+      "word": "likely"
+    },
+    {
+      "id": "upper-03-023",
+      "type": "multiple-choice",
+      "prompt": "She is ___ to win the competition after such a strong performance.",
+      "options": [
+        "freshly",
+        "likely",
+        "nearby"
+      ],
+      "answer": "likely",
+      "correctIndex": 1,
+      "word": "likely"
+    },
+    {
+      "id": "upper-03-024",
+      "type": "multiple-choice",
+      "prompt": "It seems ___ that the new policy will be introduced next year.",
+      "options": [
+        "likely",
+        "beautifully",
+        "nearby"
+      ],
+      "answer": "likely",
+      "correctIndex": 0,
+      "word": "likely"
+    },
+    {
+      "id": "upper-03-025",
+      "type": "multiple-choice",
+      "prompt": "The most ___ explanation is that someone forgot to lock the door.",
+      "options": [
+        "likely",
+        "beautifully",
+        "careful"
+      ],
+      "answer": "likely",
+      "correctIndex": 0,
+      "word": "likely"
+    },
+    {
+      "id": "upper-03-026",
+      "type": "multiple-choice",
+      "prompt": "Without more funding, the project is not ___ to succeed.",
+      "options": [
+        "careful",
+        "remarkably",
+        "likely"
+      ],
+      "answer": "likely",
+      "correctIndex": 2,
+      "word": "likely"
+    },
+    {
+      "id": "upper-03-027",
+      "type": "multiple-choice",
+      "prompt": "The forecast suggests that rain is ___ this evening.",
+      "options": [
+        "happiness",
+        "likely",
+        "dramatically"
+      ],
+      "answer": "likely",
+      "correctIndex": 1,
+      "word": "likely"
+    },
+    {
+      "id": "upper-03-028",
+      "type": "multiple-choice",
+      "prompt": "Applicants with relevant experience are more ___ to be shortlisted.",
+      "options": [
+        "remarkably",
+        "likely",
+        "nearby"
+      ],
+      "answer": "likely",
+      "correctIndex": 1,
+      "word": "likely"
+    },
+    {
+      "id": "upper-03-029",
+      "type": "multiple-choice",
+      "prompt": "The café serves ___ baked bread every morning.",
+      "options": [
+        "likely",
+        "happiness",
+        "freshly"
+      ],
+      "answer": "freshly",
+      "correctIndex": 2,
+      "word": "freshly"
+    },
+    {
+      "id": "upper-03-030",
+      "type": "multiple-choice",
+      "prompt": "The walls were ___ painted when we moved in.",
+      "options": [
+        "freshly",
+        "careful",
+        "dramatically"
+      ],
+      "answer": "freshly",
+      "correctIndex": 0,
+      "word": "freshly"
+    },
+    {
+      "id": "upper-03-031",
+      "type": "multiple-choice",
+      "prompt": "We enjoyed a cup of ___ brewed coffee.",
+      "options": [
+        "nearby",
+        "freshly",
+        "careful"
+      ],
+      "answer": "freshly",
+      "correctIndex": 1,
+      "word": "freshly"
+    },
+    {
+      "id": "upper-03-032",
+      "type": "multiple-choice",
+      "prompt": "The chef used ___ picked herbs from the garden.",
+      "options": [
+        "freshly",
+        "remarkably",
+        "dramatically"
+      ],
+      "answer": "freshly",
+      "correctIndex": 0,
+      "word": "freshly"
+    },
+    {
+      "id": "upper-03-033",
+      "type": "multiple-choice",
+      "prompt": "The restaurant offers ___ prepared meals at lunchtime.",
+      "options": [
+        "remarkably",
+        "honesty",
+        "freshly"
+      ],
+      "answer": "freshly",
+      "correctIndex": 2,
+      "word": "freshly"
+    },
+    {
+      "id": "upper-03-034",
+      "type": "multiple-choice",
+      "prompt": "She arrived with ___ washed hair.",
+      "options": [
+        "freshly",
+        "beautifully",
+        "likely"
+      ],
+      "answer": "freshly",
+      "correctIndex": 0,
+      "word": "freshly"
+    },
+    {
+      "id": "upper-03-035",
+      "type": "multiple-choice",
+      "prompt": "The hotel provides ___ laundered towels each day.",
+      "options": [
+        "happiness",
+        "freshly",
+        "dramatically"
+      ],
+      "answer": "freshly",
+      "correctIndex": 1,
+      "word": "freshly"
+    },
+    {
+      "id": "upper-03-036",
+      "type": "multiple-choice",
+      "prompt": "___ is essential for building trust in a friendship.",
+      "options": [
+        "dramatically",
+        "nearby",
+        "honesty"
+      ],
+      "answer": "honesty",
+      "correctIndex": 2,
+      "word": "honesty"
+    },
+    {
+      "id": "upper-03-037",
+      "type": "multiple-choice",
+      "prompt": "The interviewer appreciated her ___ about her lack of experience.",
+      "options": [
+        "happiness",
+        "honesty",
+        "nearby"
+      ],
+      "answer": "honesty",
+      "correctIndex": 1,
+      "word": "honesty"
+    },
+    {
+      "id": "upper-03-038",
+      "type": "multiple-choice",
+      "prompt": "He answered the difficult question with complete ___.",
+      "options": [
+        "likely",
+        "honesty",
+        "freshly"
+      ],
+      "answer": "honesty",
+      "correctIndex": 1,
+      "word": "honesty"
+    },
+    {
+      "id": "upper-03-039",
+      "type": "multiple-choice",
+      "prompt": "A good leader should value ___ above flattery.",
+      "options": [
+        "freshly",
+        "remarkably",
+        "honesty"
+      ],
+      "answer": "honesty",
+      "correctIndex": 2,
+      "word": "honesty"
+    },
+    {
+      "id": "upper-03-040",
+      "type": "multiple-choice",
+      "prompt": "Her ___ made it easier to resolve the misunderstanding.",
+      "options": [
+        "honesty",
+        "remarkably",
+        "likely"
+      ],
+      "answer": "honesty",
+      "correctIndex": 0,
+      "word": "honesty"
+    },
+    {
+      "id": "upper-03-041",
+      "type": "multiple-choice",
+      "prompt": "The company promised greater ___ in its financial reporting.",
+      "options": [
+        "honesty",
+        "dramatically",
+        "happiness"
+      ],
+      "answer": "honesty",
+      "correctIndex": 0,
+      "word": "honesty"
+    },
+    {
+      "id": "upper-03-042",
+      "type": "multiple-choice",
+      "prompt": "We respect his ___ even when we disagree with him.",
+      "options": [
+        "likely",
+        "honesty",
+        "careful"
+      ],
+      "answer": "honesty",
+      "correctIndex": 1,
+      "word": "honesty"
+    },
+    {
+      "id": "upper-03-043",
+      "type": "multiple-choice",
+      "prompt": "Be ___ when crossing the busy road.",
+      "options": [
+        "happiness",
+        "likely",
+        "careful"
+      ],
+      "answer": "careful",
+      "correctIndex": 2,
+      "word": "careful"
+    },
+    {
+      "id": "upper-03-044",
+      "type": "multiple-choice",
+      "prompt": "You need to be ___ with confidential information.",
+      "options": [
+        "weekly",
+        "likely",
+        "careful"
+      ],
+      "answer": "careful",
+      "correctIndex": 2,
+      "word": "careful"
+    },
+    {
+      "id": "upper-03-045",
+      "type": "multiple-choice",
+      "prompt": "A ___ examination of the figures revealed an error.",
+      "options": [
+        "careful",
+        "weekly",
+        "remarkably"
+      ],
+      "answer": "careful",
+      "correctIndex": 0,
+      "word": "careful"
+    },
+    {
+      "id": "upper-03-046",
+      "type": "multiple-choice",
+      "prompt": "She is always ___ about checking her work before submitting it.",
+      "options": [
+        "dramatically",
+        "remarkably",
+        "careful"
+      ],
+      "answer": "careful",
+      "correctIndex": 2,
+      "word": "careful"
+    },
+    {
+      "id": "upper-03-047",
+      "type": "multiple-choice",
+      "prompt": "Please be ___ not to spill water on the equipment.",
+      "options": [
+        "nearby",
+        "careful",
+        "beautifully"
+      ],
+      "answer": "careful",
+      "correctIndex": 1,
+      "word": "careful"
+    },
+    {
+      "id": "upper-03-048",
+      "type": "multiple-choice",
+      "prompt": "The technician made a ___ inspection of the machine.",
+      "options": [
+        "honesty",
+        "likely",
+        "careful"
+      ],
+      "answer": "careful",
+      "correctIndex": 2,
+      "word": "careful"
+    },
+    {
+      "id": "upper-03-049",
+      "type": "multiple-choice",
+      "prompt": "We should make a ___ decision rather than rush into it.",
+      "options": [
+        "careful",
+        "remarkably",
+        "nearby"
+      ],
+      "answer": "careful",
+      "correctIndex": 0,
+      "word": "careful"
+    },
+    {
+      "id": "upper-03-050",
+      "type": "multiple-choice",
+      "prompt": "There is a pharmacy ___ if you need any medicine.",
+      "options": [
+        "honesty",
+        "nearby",
+        "happiness"
+      ],
+      "answer": "nearby",
+      "correctIndex": 1,
+      "word": "nearby"
+    },
+    {
+      "id": "upper-03-051",
+      "type": "multiple-choice",
+      "prompt": "We stopped at a ___ café for lunch.",
+      "options": [
+        "freshly",
+        "nearby",
+        "happiness"
+      ],
+      "answer": "nearby",
+      "correctIndex": 1,
+      "word": "nearby"
+    },
+    {
+      "id": "upper-03-052",
+      "type": "multiple-choice",
+      "prompt": "A ___ village was evacuated because of the flooding.",
+      "options": [
+        "freshly",
+        "dramatically",
+        "nearby"
+      ],
+      "answer": "nearby",
+      "correctIndex": 2,
+      "word": "nearby"
+    },
+    {
+      "id": "upper-03-053",
+      "type": "multiple-choice",
+      "prompt": "The students found accommodation ___ to avoid a long commute.",
+      "options": [
+        "freshly",
+        "nearby",
+        "beautifully"
+      ],
+      "answer": "nearby",
+      "correctIndex": 1,
+      "word": "nearby"
+    },
+    {
+      "id": "upper-03-054",
+      "type": "multiple-choice",
+      "prompt": "The museum is ___, so we can walk there.",
+      "options": [
+        "careful",
+        "weekly",
+        "nearby"
+      ],
+      "answer": "nearby",
+      "correctIndex": 2,
+      "word": "nearby"
+    },
+    {
+      "id": "upper-03-055",
+      "type": "multiple-choice",
+      "prompt": "Several ___ shops stay open until midnight.",
+      "options": [
+        "nearby",
+        "careful",
+        "beautifully"
+      ],
+      "answer": "nearby",
+      "correctIndex": 0,
+      "word": "nearby"
+    },
+    {
+      "id": "upper-03-056",
+      "type": "multiple-choice",
+      "prompt": "A ___ hospital treated the injured passengers.",
+      "options": [
+        "nearby",
+        "honesty",
+        "careful"
+      ],
+      "answer": "nearby",
+      "correctIndex": 0,
+      "word": "nearby"
+    },
+    {
+      "id": "upper-03-057",
+      "type": "multiple-choice",
+      "prompt": "She recovered ___ quickly after the operation.",
+      "options": [
+        "careful",
+        "remarkably",
+        "freshly"
+      ],
+      "answer": "remarkably",
+      "correctIndex": 1,
+      "word": "remarkably"
+    },
+    {
+      "id": "upper-03-058",
+      "type": "multiple-choice",
+      "prompt": "The two paintings look ___ similar despite being made decades apart.",
+      "options": [
+        "happiness",
+        "remarkably",
+        "dramatically"
+      ],
+      "answer": "remarkably",
+      "correctIndex": 1,
+      "word": "remarkably"
+    },
+    {
+      "id": "upper-03-059",
+      "type": "multiple-choice",
+      "prompt": "The new system is ___ easy to use.",
+      "options": [
+        "dramatically",
+        "remarkably",
+        "weekly"
+      ],
+      "answer": "remarkably",
+      "correctIndex": 1,
+      "word": "remarkably"
+    },
+    {
+      "id": "upper-03-060",
+      "type": "multiple-choice",
+      "prompt": "His explanation was ___ clear for such a complicated subject.",
+      "options": [
+        "remarkably",
+        "careful",
+        "likely"
+      ],
+      "answer": "remarkably",
+      "correctIndex": 0,
+      "word": "remarkably"
+    },
+    {
+      "id": "upper-03-061",
+      "type": "multiple-choice",
+      "prompt": "The city has remained ___ peaceful throughout the festival.",
+      "options": [
+        "careful",
+        "remarkably",
+        "likely"
+      ],
+      "answer": "remarkably",
+      "correctIndex": 1,
+      "word": "remarkably"
+    },
+    {
+      "id": "upper-03-062",
+      "type": "multiple-choice",
+      "prompt": "The young musician is ___ talented for her age.",
+      "options": [
+        "nearby",
+        "freshly",
+        "remarkably"
+      ],
+      "answer": "remarkably",
+      "correctIndex": 2,
+      "word": "remarkably"
+    },
+    {
+      "id": "upper-03-063",
+      "type": "multiple-choice",
+      "prompt": "The results were ___ consistent across all five experiments.",
+      "options": [
+        "beautifully",
+        "happiness",
+        "remarkably"
+      ],
+      "answer": "remarkably",
+      "correctIndex": 2,
+      "word": "remarkably"
+    },
+    {
+      "id": "upper-03-064",
+      "type": "multiple-choice",
+      "prompt": "Money alone cannot guarantee ___.",
+      "options": [
+        "happiness",
+        "beautifully",
+        "likely"
+      ],
+      "answer": "happiness",
+      "correctIndex": 0,
+      "word": "happiness"
+    },
+    {
+      "id": "upper-03-065",
+      "type": "multiple-choice",
+      "prompt": "For her, ___ comes from spending time with family.",
+      "options": [
+        "freshly",
+        "careful",
+        "happiness"
+      ],
+      "answer": "happiness",
+      "correctIndex": 2,
+      "word": "happiness"
+    },
+    {
+      "id": "upper-03-066",
+      "type": "multiple-choice",
+      "prompt": "He believes that good health contributes to long-term ___.",
+      "options": [
+        "happiness",
+        "honesty",
+        "likely"
+      ],
+      "answer": "happiness",
+      "correctIndex": 0,
+      "word": "happiness"
+    },
+    {
+      "id": "upper-03-067",
+      "type": "multiple-choice",
+      "prompt": "The children shouted with ___ when they saw the presents.",
+      "options": [
+        "likely",
+        "beautifully",
+        "happiness"
+      ],
+      "answer": "happiness",
+      "correctIndex": 2,
+      "word": "happiness"
+    },
+    {
+      "id": "upper-03-068",
+      "type": "multiple-choice",
+      "prompt": "Finding a meaningful career brought her great ___.",
+      "options": [
+        "happiness",
+        "weekly",
+        "careful"
+      ],
+      "answer": "happiness",
+      "correctIndex": 0,
+      "word": "happiness"
+    },
+    {
+      "id": "upper-03-069",
+      "type": "multiple-choice",
+      "prompt": "Their faces were filled with ___ after the reunion.",
+      "options": [
+        "honesty",
+        "happiness",
+        "likely"
+      ],
+      "answer": "happiness",
+      "correctIndex": 1,
+      "word": "happiness"
+    },
+    {
+      "id": "upper-03-070",
+      "type": "multiple-choice",
+      "prompt": "She measures success by personal ___ rather than income.",
+      "options": [
+        "remarkably",
+        "happiness",
+        "honesty"
+      ],
+      "answer": "happiness",
+      "correctIndex": 1,
+      "word": "happiness"
+    }
+  ]
+}
