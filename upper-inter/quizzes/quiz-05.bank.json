@@ -1,0 +1,850 @@
+{
+  "title": "Wishes & If Only — Choose the Correct Sentence",
+  "level": "upper-intermediate",
+  "category": "Grammar",
+  "instructions": "Choose the grammatically correct sentence. One sentence contains a mistake.",
+  "questionsPerAttempt": 10,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "upper-05-001",
+      "type": "multiple-choice",
+      "topic": "present_unreal",
+      "prompt": "Choose the correct sentence (1). One sentence contains a mistake.",
+      "options": [
+        "I wish I know the answer to this question.",
+        "I wish I knew the answer to this question."
+      ],
+      "answer": "I wish I knew the answer to this question.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-002",
+      "type": "multiple-choice",
+      "topic": "present_unreal",
+      "prompt": "Choose the correct sentence (2). One sentence contains a mistake.",
+      "options": [
+        "If only we lived closer to the university.",
+        "If only we live closer to the university."
+      ],
+      "answer": "If only we lived closer to the university.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-003",
+      "type": "multiple-choice",
+      "topic": "present_unreal",
+      "prompt": "Choose the correct sentence (3). One sentence contains a mistake.",
+      "options": [
+        "She wishes she has more free time.",
+        "She wishes she had more free time."
+      ],
+      "answer": "She wishes she had more free time.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-004",
+      "type": "multiple-choice",
+      "topic": "present_unreal",
+      "prompt": "Choose the correct sentence (4). One sentence contains a mistake.",
+      "options": [
+        "I wish the train station were nearer.",
+        "I wish the train station is nearer."
+      ],
+      "answer": "I wish the train station were nearer.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-005",
+      "type": "multiple-choice",
+      "topic": "present_unreal",
+      "prompt": "Choose the correct sentence (5). One sentence contains a mistake.",
+      "options": [
+        "If only he can speak French fluently.",
+        "If only he could speak French fluently."
+      ],
+      "answer": "If only he could speak French fluently.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-006",
+      "type": "multiple-choice",
+      "topic": "present_unreal",
+      "prompt": "Choose the correct sentence (6). One sentence contains a mistake.",
+      "options": [
+        "They wish their apartment was larger.",
+        "They wish their apartment is larger."
+      ],
+      "answer": "They wish their apartment was larger.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-007",
+      "type": "multiple-choice",
+      "topic": "present_unreal",
+      "prompt": "Choose the correct sentence (7). One sentence contains a mistake.",
+      "options": [
+        "I wish I do not have to work this weekend.",
+        "I wish I did not have to work this weekend."
+      ],
+      "answer": "I wish I did not have to work this weekend.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-008",
+      "type": "multiple-choice",
+      "topic": "past_regret",
+      "prompt": "Choose the correct sentence (8). One sentence contains a mistake.",
+      "options": [
+        "I wish I had saved the document before closing the laptop.",
+        "I wish I saved the document before closing the laptop."
+      ],
+      "answer": "I wish I had saved the document before closing the laptop.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-009",
+      "type": "multiple-choice",
+      "topic": "past_regret",
+      "prompt": "Choose the correct sentence (9). One sentence contains a mistake.",
+      "options": [
+        "If only she has checked the address before leaving.",
+        "If only she had checked the address before leaving."
+      ],
+      "answer": "If only she had checked the address before leaving.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-010",
+      "type": "multiple-choice",
+      "topic": "past_regret",
+      "prompt": "Choose the correct sentence (10). One sentence contains a mistake.",
+      "options": [
+        "He wishes he had taken the earlier train yesterday.",
+        "He wishes he took the earlier train yesterday."
+      ],
+      "answer": "He wishes he had taken the earlier train yesterday.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-011",
+      "type": "multiple-choice",
+      "topic": "past_regret",
+      "prompt": "Choose the correct sentence (11). One sentence contains a mistake.",
+      "options": [
+        "We wish we have booked our tickets in advance.",
+        "We wish we had booked our tickets in advance."
+      ],
+      "answer": "We wish we had booked our tickets in advance.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-012",
+      "type": "multiple-choice",
+      "topic": "past_regret",
+      "prompt": "Choose the correct sentence (12). One sentence contains a mistake.",
+      "options": [
+        "If only I had listened to your advice last week.",
+        "If only I listened to your advice last week."
+      ],
+      "answer": "If only I had listened to your advice last week.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-013",
+      "type": "multiple-choice",
+      "topic": "past_regret",
+      "prompt": "Choose the correct sentence (13). One sentence contains a mistake.",
+      "options": [
+        "She wishes she has not missed the interview.",
+        "She wishes she had not missed the interview."
+      ],
+      "answer": "She wishes she had not missed the interview.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-014",
+      "type": "multiple-choice",
+      "topic": "past_regret",
+      "prompt": "Choose the correct sentence (14). One sentence contains a mistake.",
+      "options": [
+        "If only they had brought an umbrella yesterday.",
+        "If only they bring an umbrella yesterday."
+      ],
+      "answer": "If only they had brought an umbrella yesterday.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-015",
+      "type": "multiple-choice",
+      "topic": "would_change",
+      "prompt": "Choose the correct sentence (15). One sentence contains a mistake.",
+      "options": [
+        "I wish our neighbours turn down the music.",
+        "I wish our neighbours would turn down the music."
+      ],
+      "answer": "I wish our neighbours would turn down the music.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-016",
+      "type": "multiple-choice",
+      "topic": "would_change",
+      "prompt": "Choose the correct sentence (16). One sentence contains a mistake.",
+      "options": [
+        "She wishes her brother would stop borrowing her phone.",
+        "She wishes her brother stops borrowing her phone."
+      ],
+      "answer": "She wishes her brother would stop borrowing her phone.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-017",
+      "type": "multiple-choice",
+      "topic": "would_change",
+      "prompt": "Choose the correct sentence (17). One sentence contains a mistake.",
+      "options": [
+        "If only the bus driver waits a little longer.",
+        "If only the bus driver would wait a little longer."
+      ],
+      "answer": "If only the bus driver would wait a little longer.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-018",
+      "type": "multiple-choice",
+      "topic": "would_change",
+      "prompt": "Choose the correct sentence (18). One sentence contains a mistake.",
+      "options": [
+        "I wish you would listen before interrupting me.",
+        "I wish you listen before interrupting me."
+      ],
+      "answer": "I wish you would listen before interrupting me.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-019",
+      "type": "multiple-choice",
+      "topic": "would_change",
+      "prompt": "Choose the correct sentence (19). One sentence contains a mistake.",
+      "options": [
+        "They wish the council repairs the broken streetlights.",
+        "They wish the council would repair the broken streetlights."
+      ],
+      "answer": "They wish the council would repair the broken streetlights.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-020",
+      "type": "multiple-choice",
+      "topic": "would_change",
+      "prompt": "Choose the correct sentence (20). One sentence contains a mistake.",
+      "options": [
+        "If only my colleagues would arrive on time.",
+        "If only my colleagues arrive on time."
+      ],
+      "answer": "If only my colleagues would arrive on time.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-021",
+      "type": "multiple-choice",
+      "topic": "would_change",
+      "prompt": "Choose the correct sentence (21). One sentence contains a mistake.",
+      "options": [
+        "I wish the dog stops barking at night.",
+        "I wish the dog would stop barking at night."
+      ],
+      "answer": "I wish the dog would stop barking at night.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-022",
+      "type": "multiple-choice",
+      "topic": "could_ability",
+      "prompt": "Choose the correct sentence (22). One sentence contains a mistake.",
+      "options": [
+        "I wish I could drive so I could visit you more often.",
+        "I wish I can drive so I could visit you more often."
+      ],
+      "answer": "I wish I could drive so I could visit you more often.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-023",
+      "type": "multiple-choice",
+      "topic": "could_ability",
+      "prompt": "Choose the correct sentence (23). One sentence contains a mistake.",
+      "options": [
+        "If only she can play the piano like her sister.",
+        "If only she could play the piano like her sister."
+      ],
+      "answer": "If only she could play the piano like her sister.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-024",
+      "type": "multiple-choice",
+      "topic": "could_ability",
+      "prompt": "Choose the correct sentence (24). One sentence contains a mistake.",
+      "options": [
+        "He wishes he could remember everyone’s name.",
+        "He wishes he can remember everyone’s name."
+      ],
+      "answer": "He wishes he could remember everyone’s name.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-025",
+      "type": "multiple-choice",
+      "topic": "could_ability",
+      "prompt": "Choose the correct sentence (25). One sentence contains a mistake.",
+      "options": [
+        "I wish we can afford a bigger house.",
+        "I wish we could afford a bigger house."
+      ],
+      "answer": "I wish we could afford a bigger house.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-026",
+      "type": "multiple-choice",
+      "topic": "could_ability",
+      "prompt": "Choose the correct sentence (26). One sentence contains a mistake.",
+      "options": [
+        "If only I could understand this complicated diagram.",
+        "If only I can understand this complicated diagram."
+      ],
+      "answer": "If only I could understand this complicated diagram.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-027",
+      "type": "multiple-choice",
+      "topic": "could_ability",
+      "prompt": "Choose the correct sentence (27). One sentence contains a mistake.",
+      "options": [
+        "She wishes she can swim confidently.",
+        "She wishes she could swim confidently."
+      ],
+      "answer": "She wishes she could swim confidently.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-028",
+      "type": "multiple-choice",
+      "topic": "could_ability",
+      "prompt": "Choose the correct sentence (28). One sentence contains a mistake.",
+      "options": [
+        "They wish they could stay for another week.",
+        "They wish they can stay for another week."
+      ],
+      "answer": "They wish they could stay for another week.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-029",
+      "type": "multiple-choice",
+      "topic": "past_negative",
+      "prompt": "Choose the correct sentence (29). One sentence contains a mistake.",
+      "options": [
+        "I wish I did not delete those photographs yesterday.",
+        "I wish I had not deleted those photographs."
+      ],
+      "answer": "I wish I had not deleted those photographs.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-030",
+      "type": "multiple-choice",
+      "topic": "past_negative",
+      "prompt": "Choose the correct sentence (30). One sentence contains a mistake.",
+      "options": [
+        "If only he had not spent all his savings last month.",
+        "If only he has not spent all his savings last month."
+      ],
+      "answer": "If only he had not spent all his savings last month.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-031",
+      "type": "multiple-choice",
+      "topic": "past_negative",
+      "prompt": "Choose the correct sentence (31). One sentence contains a mistake.",
+      "options": [
+        "She wishes she does not tell everyone the secret yesterday.",
+        "She wishes she had not told everyone the secret."
+      ],
+      "answer": "She wishes she had not told everyone the secret.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-032",
+      "type": "multiple-choice",
+      "topic": "past_negative",
+      "prompt": "Choose the correct sentence (32). One sentence contains a mistake.",
+      "options": [
+        "We wish we had not ignored the warning signs.",
+        "We wish we have not ignored the warning signs."
+      ],
+      "answer": "We wish we had not ignored the warning signs.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-033",
+      "type": "multiple-choice",
+      "topic": "past_negative",
+      "prompt": "Choose the correct sentence (33). One sentence contains a mistake.",
+      "options": [
+        "If only I have not forgotten my passport at home.",
+        "If only I had not forgotten my passport at home."
+      ],
+      "answer": "If only I had not forgotten my passport at home.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-034",
+      "type": "multiple-choice",
+      "topic": "past_negative",
+      "prompt": "Choose the correct sentence (34). One sentence contains a mistake.",
+      "options": [
+        "He wishes he had not accepted that job last year.",
+        "He wishes he has not accepted that job last year."
+      ],
+      "answer": "He wishes he had not accepted that job last year.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-035",
+      "type": "multiple-choice",
+      "topic": "past_negative",
+      "prompt": "Choose the correct sentence (35). One sentence contains a mistake.",
+      "options": [
+        "If only they did not cancel the reservation yesterday.",
+        "If only they had not cancelled the reservation."
+      ],
+      "answer": "If only they had not cancelled the reservation.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-036",
+      "type": "multiple-choice",
+      "topic": "past_positive",
+      "prompt": "Choose the correct sentence (36). One sentence contains a mistake.",
+      "options": [
+        "I wish I had studied harder for the exam last year.",
+        "I wish I have studied harder for the exam last year."
+      ],
+      "answer": "I wish I had studied harder for the exam last year.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-037",
+      "type": "multiple-choice",
+      "topic": "past_positive",
+      "prompt": "Choose the correct sentence (37). One sentence contains a mistake.",
+      "options": [
+        "If only we leave home ten minutes earlier yesterday.",
+        "If only we had left home ten minutes earlier."
+      ],
+      "answer": "If only we had left home ten minutes earlier.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-038",
+      "type": "multiple-choice",
+      "topic": "past_positive",
+      "prompt": "Choose the correct sentence (38). One sentence contains a mistake.",
+      "options": [
+        "She wishes she had applied for the scholarship.",
+        "She wishes she applies for the scholarship last year."
+      ],
+      "answer": "She wishes she had applied for the scholarship.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-039",
+      "type": "multiple-choice",
+      "topic": "past_positive",
+      "prompt": "Choose the correct sentence (39). One sentence contains a mistake.",
+      "options": [
+        "He wishes he calls his grandmother yesterday.",
+        "He wishes he had called his grandmother yesterday."
+      ],
+      "answer": "He wishes he had called his grandmother yesterday.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-040",
+      "type": "multiple-choice",
+      "topic": "past_positive",
+      "prompt": "Choose the correct sentence (40). One sentence contains a mistake.",
+      "options": [
+        "If only they had read the instructions before assembling it.",
+        "If only they have read the instructions before assembling it."
+      ],
+      "answer": "If only they had read the instructions before assembling it.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-041",
+      "type": "multiple-choice",
+      "topic": "past_positive",
+      "prompt": "Choose the correct sentence (41). One sentence contains a mistake.",
+      "options": [
+        "I wish I buy the cheaper ticket last week.",
+        "I wish I had bought the cheaper ticket last week."
+      ],
+      "answer": "I wish I had bought the cheaper ticket last week.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-042",
+      "type": "multiple-choice",
+      "topic": "past_positive",
+      "prompt": "Choose the correct sentence (42). One sentence contains a mistake.",
+      "options": [
+        "We wish we had visited the museum while we were there.",
+        "We wish we visit the museum while we were there."
+      ],
+      "answer": "We wish we had visited the museum while we were there.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-043",
+      "type": "multiple-choice",
+      "topic": "present_negative",
+      "prompt": "Choose the correct sentence (43). One sentence contains a mistake.",
+      "options": [
+        "I wish it does not rain so often here.",
+        "I wish it did not rain so often here."
+      ],
+      "answer": "I wish it did not rain so often here.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-044",
+      "type": "multiple-choice",
+      "topic": "present_negative",
+      "prompt": "Choose the correct sentence (44). One sentence contains a mistake.",
+      "options": [
+        "If only I did not live so far from my workplace.",
+        "If only I do not live so far from my workplace."
+      ],
+      "answer": "If only I did not live so far from my workplace.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-045",
+      "type": "multiple-choice",
+      "topic": "present_negative",
+      "prompt": "Choose the correct sentence (45). One sentence contains a mistake.",
+      "options": [
+        "She wishes she is not so nervous before presentations.",
+        "She wishes she was not so nervous before presentations."
+      ],
+      "answer": "She wishes she was not so nervous before presentations.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-046",
+      "type": "multiple-choice",
+      "topic": "present_negative",
+      "prompt": "Choose the correct sentence (46). One sentence contains a mistake.",
+      "options": [
+        "I wish my phone did not run out of battery so quickly.",
+        "I wish my phone does not run out of battery so quickly."
+      ],
+      "answer": "I wish my phone did not run out of battery so quickly.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-047",
+      "type": "multiple-choice",
+      "topic": "present_negative",
+      "prompt": "Choose the correct sentence (47). One sentence contains a mistake.",
+      "options": [
+        "If only he does not have such a long commute.",
+        "If only he did not have such a long commute."
+      ],
+      "answer": "If only he did not have such a long commute.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-048",
+      "type": "multiple-choice",
+      "topic": "present_negative",
+      "prompt": "Choose the correct sentence (48). One sentence contains a mistake.",
+      "options": [
+        "They wish the office was not so noisy.",
+        "They wish the office is not so noisy."
+      ],
+      "answer": "They wish the office was not so noisy.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-049",
+      "type": "multiple-choice",
+      "topic": "present_negative",
+      "prompt": "Choose the correct sentence (49). One sentence contains a mistake.",
+      "options": [
+        "I wish the lessons do not start so early.",
+        "I wish the lessons did not start so early."
+      ],
+      "answer": "I wish the lessons did not start so early.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-050",
+      "type": "multiple-choice",
+      "topic": "past_could",
+      "prompt": "Choose the correct sentence (50). One sentence contains a mistake.",
+      "options": [
+        "I wish I could have attended the ceremony yesterday.",
+        "I wish I can have attended the ceremony yesterday."
+      ],
+      "answer": "I wish I could have attended the ceremony yesterday.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-051",
+      "type": "multiple-choice",
+      "topic": "past_could",
+      "prompt": "Choose the correct sentence (51). One sentence contains a mistake.",
+      "options": [
+        "If only she can have joined us on the trip last weekend.",
+        "If only she could have joined us on the trip last weekend."
+      ],
+      "answer": "If only she could have joined us on the trip last weekend.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-052",
+      "type": "multiple-choice",
+      "topic": "past_could",
+      "prompt": "Choose the correct sentence (52). One sentence contains a mistake.",
+      "options": [
+        "He wishes he could have helped his friend yesterday.",
+        "He wishes he can have helped his friend yesterday."
+      ],
+      "answer": "He wishes he could have helped his friend yesterday.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-053",
+      "type": "multiple-choice",
+      "topic": "past_could",
+      "prompt": "Choose the correct sentence (53). One sentence contains a mistake.",
+      "options": [
+        "I wish we can have stayed longer at the festival.",
+        "I wish we could have stayed longer at the festival."
+      ],
+      "answer": "I wish we could have stayed longer at the festival.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-054",
+      "type": "multiple-choice",
+      "topic": "past_could",
+      "prompt": "Choose the correct sentence (54). One sentence contains a mistake.",
+      "options": [
+        "If only they could have reached us before the deadline.",
+        "If only they can have reached us before the deadline."
+      ],
+      "answer": "If only they could have reached us before the deadline.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-055",
+      "type": "multiple-choice",
+      "topic": "past_could",
+      "prompt": "Choose the correct sentence (55). One sentence contains a mistake.",
+      "options": [
+        "She wishes she can have seen the performance last night.",
+        "She wishes she could have seen the performance last night."
+      ],
+      "answer": "She wishes she could have seen the performance last night.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-056",
+      "type": "multiple-choice",
+      "topic": "past_could",
+      "prompt": "Choose the correct sentence (56). One sentence contains a mistake.",
+      "options": [
+        "I wish I could have spoken to the manager yesterday.",
+        "I wish I can have spoken to the manager yesterday."
+      ],
+      "answer": "I wish I could have spoken to the manager yesterday.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-057",
+      "type": "multiple-choice",
+      "topic": "if_only_present",
+      "prompt": "Choose the correct sentence (57). One sentence contains a mistake.",
+      "options": [
+        "If only I have a little more patience.",
+        "If only I had a little more patience."
+      ],
+      "answer": "If only I had a little more patience.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-058",
+      "type": "multiple-choice",
+      "topic": "if_only_present",
+      "prompt": "Choose the correct sentence (58). One sentence contains a mistake.",
+      "options": [
+        "If only the library stayed open later.",
+        "If only the library stays open later."
+      ],
+      "answer": "If only the library stayed open later.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-059",
+      "type": "multiple-choice",
+      "topic": "if_only_present",
+      "prompt": "Choose the correct sentence (59). One sentence contains a mistake.",
+      "options": [
+        "If only my parents understand my decision.",
+        "If only my parents understood my decision."
+      ],
+      "answer": "If only my parents understood my decision.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-060",
+      "type": "multiple-choice",
+      "topic": "if_only_present",
+      "prompt": "Choose the correct sentence (60). One sentence contains a mistake.",
+      "options": [
+        "If only the weather was warmer today.",
+        "If only the weather is warmer today."
+      ],
+      "answer": "If only the weather was warmer today.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-061",
+      "type": "multiple-choice",
+      "topic": "if_only_present",
+      "prompt": "Choose the correct sentence (61). One sentence contains a mistake.",
+      "options": [
+        "If only we know where the keys were.",
+        "If only we knew where the keys were."
+      ],
+      "answer": "If only we knew where the keys were.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-062",
+      "type": "multiple-choice",
+      "topic": "if_only_present",
+      "prompt": "Choose the correct sentence (62). One sentence contains a mistake.",
+      "options": [
+        "If only the internet connection worked properly.",
+        "If only the internet connection works properly."
+      ],
+      "answer": "If only the internet connection worked properly.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-063",
+      "type": "multiple-choice",
+      "topic": "if_only_present",
+      "prompt": "Choose the correct sentence (63). One sentence contains a mistake.",
+      "options": [
+        "If only my brother lives in the same city.",
+        "If only my brother lived in the same city."
+      ],
+      "answer": "If only my brother lived in the same city.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-064",
+      "type": "multiple-choice",
+      "topic": "if_only_would",
+      "prompt": "Choose the correct sentence (64). One sentence contains a mistake.",
+      "options": [
+        "If only the rain would stop before the match.",
+        "If only the rain will stop before the match."
+      ],
+      "answer": "If only the rain would stop before the match.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-065",
+      "type": "multiple-choice",
+      "topic": "if_only_would",
+      "prompt": "Choose the correct sentence (65). One sentence contains a mistake.",
+      "options": [
+        "If only the children will tidy their room.",
+        "If only the children would tidy their room."
+      ],
+      "answer": "If only the children would tidy their room.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-066",
+      "type": "multiple-choice",
+      "topic": "if_only_would",
+      "prompt": "Choose the correct sentence (66). One sentence contains a mistake.",
+      "options": [
+        "I wish the company would respond to my email.",
+        "I wish the company will respond to my email."
+      ],
+      "answer": "I wish the company would respond to my email.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-067",
+      "type": "multiple-choice",
+      "topic": "if_only_would",
+      "prompt": "Choose the correct sentence (67). One sentence contains a mistake.",
+      "options": [
+        "If only the neighbours will keep the hallway clean.",
+        "If only the neighbours would keep the hallway clean."
+      ],
+      "answer": "If only the neighbours would keep the hallway clean.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-068",
+      "type": "multiple-choice",
+      "topic": "if_only_would",
+      "prompt": "Choose the correct sentence (68). One sentence contains a mistake.",
+      "options": [
+        "I wish the printer would work when I need it.",
+        "I wish the printer will work when I need it."
+      ],
+      "answer": "I wish the printer would work when I need it.",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-05-069",
+      "type": "multiple-choice",
+      "topic": "if_only_would",
+      "prompt": "Choose the correct sentence (69). One sentence contains a mistake.",
+      "options": [
+        "If only the traffic lights will change sooner.",
+        "If only the traffic lights would change sooner."
+      ],
+      "answer": "If only the traffic lights would change sooner.",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-05-070",
+      "type": "multiple-choice",
+      "topic": "if_only_would",
+      "prompt": "Choose the correct sentence (70). One sentence contains a mistake.",
+      "options": [
+        "I wish people would stop leaving rubbish in the park.",
+        "I wish people will stop leaving rubbish in the park."
+      ],
+      "answer": "I wish people would stop leaving rubbish in the park.",
+      "correctIndex": 0
+    }
+  ]
+}
