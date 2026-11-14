@@ -31,6 +31,10 @@
   "title": "Wishes & If Only \u2014 Choose the Correct Sentence",
   "bank": "quiz-05.bank.json",
   "file": "quiz-05.html"
+},
+  {
+  "title": "Verbs & Prepositions — Vocabulary in Context",
+  "bank": "quiz-07.bank.json",
+  "file": "quiz-07.html"
 }
-
 ]
