@@ -1,0 +1,920 @@
+{
+  "title": "Verbs & Prepositions — Vocabulary in Context",
+  "level": "upper-intermediate",
+  "category": "Vocabulary",
+  "instructions": "Choose the correct preposition to complete each sentence.",
+  "questionsPerAttempt": 10,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "upper-07-001",
+      "type": "multiple-choice",
+      "topic": "hear of",
+      "prompt": "Have you ever heard ___ Silbo Gomero, the whistling language?",
+      "options": [
+        "about",
+        "from",
+        "of"
+      ],
+      "answer": "of",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-002",
+      "type": "multiple-choice",
+      "topic": "hear of",
+      "prompt": "I had never heard ___ this ancient language before the lesson.",
+      "options": [
+        "from",
+        "of",
+        "about"
+      ],
+      "answer": "of",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-003",
+      "type": "multiple-choice",
+      "topic": "confuse with",
+      "prompt": "Some tourists confuse the whistling language ___ ordinary bird calls.",
+      "options": [
+        "with",
+        "to",
+        "for"
+      ],
+      "answer": "with",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-004",
+      "type": "multiple-choice",
+      "topic": "confuse with",
+      "prompt": "Do not confuse this regional dialect ___ a separate language.",
+      "options": [
+        "to",
+        "for",
+        "with"
+      ],
+      "answer": "with",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-005",
+      "type": "multiple-choice",
+      "topic": "prevent from",
+      "prompt": "The project aims to prevent the language ___ disappearing.",
+      "options": [
+        "to",
+        "from",
+        "of"
+      ],
+      "answer": "from",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-006",
+      "type": "multiple-choice",
+      "topic": "prevent from",
+      "prompt": "Heavy rain prevented the researchers ___ reaching the village.",
+      "options": [
+        "from",
+        "of",
+        "to"
+      ],
+      "answer": "from",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-007",
+      "type": "multiple-choice",
+      "topic": "consist of",
+      "prompt": "The traditional system consists ___ several distinct whistles.",
+      "options": [
+        "from",
+        "in",
+        "of"
+      ],
+      "answer": "of",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-008",
+      "type": "multiple-choice",
+      "topic": "consist of",
+      "prompt": "The committee consists ___ five local teachers.",
+      "options": [
+        "in",
+        "of",
+        "from"
+      ],
+      "answer": "of",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-009",
+      "type": "multiple-choice",
+      "topic": "adapt to",
+      "prompt": "The islanders adapted ___ difficult mountain conditions.",
+      "options": [
+        "to",
+        "with",
+        "for"
+      ],
+      "answer": "to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-010",
+      "type": "multiple-choice",
+      "topic": "adapt to",
+      "prompt": "New employees need time to adapt ___ the working environment.",
+      "options": [
+        "with",
+        "for",
+        "to"
+      ],
+      "answer": "to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-011",
+      "type": "multiple-choice",
+      "topic": "depend on",
+      "prompt": "The success of the campaign depends ___ public support.",
+      "options": [
+        "in",
+        "on",
+        "of"
+      ],
+      "answer": "on",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-012",
+      "type": "multiple-choice",
+      "topic": "depend on",
+      "prompt": "Many rural communities depend ___ reliable transport links.",
+      "options": [
+        "on",
+        "of",
+        "in"
+      ],
+      "answer": "on",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-013",
+      "type": "multiple-choice",
+      "topic": "disapprove of",
+      "prompt": "Some residents disapprove ___ replacing traditional methods.",
+      "options": [
+        "for",
+        "with",
+        "of"
+      ],
+      "answer": "of",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-014",
+      "type": "multiple-choice",
+      "topic": "disapprove of",
+      "prompt": "Her parents strongly disapproved ___ the proposed changes.",
+      "options": [
+        "with",
+        "of",
+        "for"
+      ],
+      "answer": "of",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-015",
+      "type": "multiple-choice",
+      "topic": "result in",
+      "prompt": "The new policy could result ___ fewer traffic accidents.",
+      "options": [
+        "in",
+        "to",
+        "from"
+      ],
+      "answer": "in",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-016",
+      "type": "multiple-choice",
+      "topic": "result in",
+      "prompt": "Poor planning resulted ___ a significant delay.",
+      "options": [
+        "to",
+        "from",
+        "in"
+      ],
+      "answer": "in",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-017",
+      "type": "multiple-choice",
+      "topic": "lead to",
+      "prompt": "Regular practice can lead ___ better pronunciation.",
+      "options": [
+        "for",
+        "to",
+        "in"
+      ],
+      "answer": "to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-018",
+      "type": "multiple-choice",
+      "topic": "lead to",
+      "prompt": "The misunderstanding led ___ an unnecessary argument.",
+      "options": [
+        "to",
+        "in",
+        "for"
+      ],
+      "answer": "to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-019",
+      "type": "multiple-choice",
+      "topic": "ban from",
+      "prompt": "The referee banned the player ___ taking part in the next match.",
+      "options": [
+        "to",
+        "of",
+        "from"
+      ],
+      "answer": "from",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-020",
+      "type": "multiple-choice",
+      "topic": "ban from",
+      "prompt": "The school banned students ___ using phones during examinations.",
+      "options": [
+        "of",
+        "from",
+        "to"
+      ],
+      "answer": "from",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-021",
+      "type": "multiple-choice",
+      "topic": "rely on",
+      "prompt": "Researchers rely ___ accurate data to draw conclusions.",
+      "options": [
+        "on",
+        "in",
+        "to"
+      ],
+      "answer": "on",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-022",
+      "type": "multiple-choice",
+      "topic": "rely on",
+      "prompt": "You cannot always rely ___ online reviews.",
+      "options": [
+        "in",
+        "to",
+        "on"
+      ],
+      "answer": "on",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-023",
+      "type": "multiple-choice",
+      "topic": "belong to",
+      "prompt": "These historical documents belong ___ the local museum.",
+      "options": [
+        "for",
+        "to",
+        "with"
+      ],
+      "answer": "to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-024",
+      "type": "multiple-choice",
+      "topic": "belong to",
+      "prompt": "Who does this jacket belong ___?",
+      "options": [
+        "to",
+        "with",
+        "for"
+      ],
+      "answer": "to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-025",
+      "type": "multiple-choice",
+      "topic": "suffer from",
+      "prompt": "Many commuters suffer ___ stress during rush hour.",
+      "options": [
+        "of",
+        "with",
+        "from"
+      ],
+      "answer": "from",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-026",
+      "type": "multiple-choice",
+      "topic": "suffer from",
+      "prompt": "The region has suffered ___ a prolonged drought.",
+      "options": [
+        "with",
+        "from",
+        "of"
+      ],
+      "answer": "from",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-027",
+      "type": "multiple-choice",
+      "topic": "apologise for",
+      "prompt": "She apologised ___ arriving late to the meeting.",
+      "options": [
+        "for",
+        "about",
+        "to"
+      ],
+      "answer": "for",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-028",
+      "type": "multiple-choice",
+      "topic": "apologise for",
+      "prompt": "The company apologised ___ the inconvenience.",
+      "options": [
+        "about",
+        "to",
+        "for"
+      ],
+      "answer": "for",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-029",
+      "type": "multiple-choice",
+      "topic": "apply for",
+      "prompt": "He plans to apply ___ a scholarship next year.",
+      "options": [
+        "with",
+        "for",
+        "to"
+      ],
+      "answer": "for",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-030",
+      "type": "multiple-choice",
+      "topic": "apply for",
+      "prompt": "Several graduates applied ___ the vacant position.",
+      "options": [
+        "for",
+        "to",
+        "with"
+      ],
+      "answer": "for",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-031",
+      "type": "multiple-choice",
+      "topic": "concentrate on",
+      "prompt": "Please concentrate ___ the main argument of the article.",
+      "options": [
+        "in",
+        "at",
+        "on"
+      ],
+      "answer": "on",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-032",
+      "type": "multiple-choice",
+      "topic": "concentrate on",
+      "prompt": "The course concentrates ___ developing practical skills.",
+      "options": [
+        "at",
+        "on",
+        "in"
+      ],
+      "answer": "on",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-033",
+      "type": "multiple-choice",
+      "topic": "participate in",
+      "prompt": "Over a hundred volunteers participated ___ the clean-up.",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ],
+      "answer": "in",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-034",
+      "type": "multiple-choice",
+      "topic": "participate in",
+      "prompt": "Students are encouraged to participate ___ classroom discussions.",
+      "options": [
+        "on",
+        "at",
+        "in"
+      ],
+      "answer": "in",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-035",
+      "type": "multiple-choice",
+      "topic": "insist on",
+      "prompt": "The customer insisted ___ speaking to the manager.",
+      "options": [
+        "for",
+        "on",
+        "to"
+      ],
+      "answer": "on",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-036",
+      "type": "multiple-choice",
+      "topic": "insist on",
+      "prompt": "The organisers insisted ___ checking every ticket.",
+      "options": [
+        "on",
+        "to",
+        "for"
+      ],
+      "answer": "on",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-037",
+      "type": "multiple-choice",
+      "topic": "deal with",
+      "prompt": "The new department deals ___ customer complaints.",
+      "options": [
+        "on",
+        "about",
+        "with"
+      ],
+      "answer": "with",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-038",
+      "type": "multiple-choice",
+      "topic": "deal with",
+      "prompt": "She knows how to deal ___ difficult situations calmly.",
+      "options": [
+        "about",
+        "with",
+        "on"
+      ],
+      "answer": "with",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-039",
+      "type": "multiple-choice",
+      "topic": "recover from",
+      "prompt": "The athlete is still recovering ___ a knee injury.",
+      "options": [
+        "from",
+        "of",
+        "with"
+      ],
+      "answer": "from",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-040",
+      "type": "multiple-choice",
+      "topic": "recover from",
+      "prompt": "The local economy has recovered ___ the crisis.",
+      "options": [
+        "of",
+        "with",
+        "from"
+      ],
+      "answer": "from",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-041",
+      "type": "multiple-choice",
+      "topic": "object to",
+      "prompt": "Several residents objected ___ the construction plan.",
+      "options": [
+        "for",
+        "to",
+        "against"
+      ],
+      "answer": "to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-042",
+      "type": "multiple-choice",
+      "topic": "object to",
+      "prompt": "Would you object ___ changing the meeting time?",
+      "options": [
+        "to",
+        "against",
+        "for"
+      ],
+      "answer": "to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-043",
+      "type": "multiple-choice",
+      "topic": "refer to",
+      "prompt": "The author refers ___ several recent studies.",
+      "options": [
+        "about",
+        "on",
+        "to"
+      ],
+      "answer": "to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-044",
+      "type": "multiple-choice",
+      "topic": "refer to",
+      "prompt": "What does this abbreviation refer ___?",
+      "options": [
+        "on",
+        "to",
+        "about"
+      ],
+      "answer": "to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-045",
+      "type": "multiple-choice",
+      "topic": "agree with",
+      "prompt": "I agree ___ your interpretation of the results.",
+      "options": [
+        "with",
+        "to",
+        "on"
+      ],
+      "answer": "with",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-046",
+      "type": "multiple-choice",
+      "topic": "agree with",
+      "prompt": "Not everyone agrees ___ the professor on this issue.",
+      "options": [
+        "to",
+        "on",
+        "with"
+      ],
+      "answer": "with",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-047",
+      "type": "multiple-choice",
+      "topic": "complain about",
+      "prompt": "Passengers complained ___ the long delays.",
+      "options": [
+        "to",
+        "about",
+        "for"
+      ],
+      "answer": "about",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-048",
+      "type": "multiple-choice",
+      "topic": "complain about",
+      "prompt": "She complained ___ the noise coming from next door.",
+      "options": [
+        "about",
+        "for",
+        "to"
+      ],
+      "answer": "about",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-049",
+      "type": "multiple-choice",
+      "topic": "succeed in",
+      "prompt": "The team succeeded ___ completing the project early.",
+      "options": [
+        "at",
+        "on",
+        "in"
+      ],
+      "answer": "in",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-050",
+      "type": "multiple-choice",
+      "topic": "succeed in",
+      "prompt": "She succeeded ___ persuading the committee to reconsider.",
+      "options": [
+        "on",
+        "in",
+        "at"
+      ],
+      "answer": "in",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-051",
+      "type": "multiple-choice",
+      "topic": "responsible for",
+      "prompt": "This group is responsible ___ implementing the project.",
+      "options": [
+        "for",
+        "to",
+        "with"
+      ],
+      "answer": "for",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-052",
+      "type": "multiple-choice",
+      "topic": "responsible for",
+      "prompt": "Who is responsible ___ maintaining the equipment?",
+      "options": [
+        "to",
+        "with",
+        "for"
+      ],
+      "answer": "for",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-053",
+      "type": "multiple-choice",
+      "topic": "good at",
+      "prompt": "He is particularly good ___ solving complex problems.",
+      "options": [
+        "on",
+        "at",
+        "in"
+      ],
+      "answer": "at",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-054",
+      "type": "multiple-choice",
+      "topic": "good at",
+      "prompt": "My sister is good ___ remembering names.",
+      "options": [
+        "at",
+        "in",
+        "on"
+      ],
+      "answer": "at",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-055",
+      "type": "multiple-choice",
+      "topic": "dependent on",
+      "prompt": "The village is heavily dependent ___ tourism.",
+      "options": [
+        "of",
+        "with",
+        "on"
+      ],
+      "answer": "on",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-056",
+      "type": "multiple-choice",
+      "topic": "dependent on",
+      "prompt": "Young adults should not remain financially dependent ___ their parents.",
+      "options": [
+        "with",
+        "on",
+        "of"
+      ],
+      "answer": "on",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-057",
+      "type": "multiple-choice",
+      "topic": "aware of",
+      "prompt": "The geologists were not aware ___ the danger ahead.",
+      "options": [
+        "of",
+        "about",
+        "to"
+      ],
+      "answer": "of",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-058",
+      "type": "multiple-choice",
+      "topic": "aware of",
+      "prompt": "Are you aware ___ the latest changes to the schedule?",
+      "options": [
+        "about",
+        "to",
+        "of"
+      ],
+      "answer": "of",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-059",
+      "type": "multiple-choice",
+      "topic": "known as",
+      "prompt": "The traditional language is known locally ___ Silbo Gomero.",
+      "options": [
+        "for",
+        "as",
+        "by"
+      ],
+      "answer": "as",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-060",
+      "type": "multiple-choice",
+      "topic": "known as",
+      "prompt": "The scientist became known ___ a pioneer in her field.",
+      "options": [
+        "as",
+        "by",
+        "for"
+      ],
+      "answer": "as",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-061",
+      "type": "multiple-choice",
+      "topic": "preferable to",
+      "prompt": "A practical solution is preferable ___ endless speculation.",
+      "options": [
+        "than",
+        "from",
+        "to"
+      ],
+      "answer": "to",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-062",
+      "type": "multiple-choice",
+      "topic": "preferable to",
+      "prompt": "For short journeys, walking is often preferable ___ driving.",
+      "options": [
+        "from",
+        "to",
+        "than"
+      ],
+      "answer": "to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-063",
+      "type": "multiple-choice",
+      "topic": "bring about",
+      "prompt": "The reforms brought ___ significant improvements.",
+      "options": [
+        "about",
+        "on",
+        "to"
+      ],
+      "answer": "about",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-064",
+      "type": "multiple-choice",
+      "topic": "bring about",
+      "prompt": "Technological advances can bring ___ rapid social change.",
+      "options": [
+        "on",
+        "to",
+        "about"
+      ],
+      "answer": "about",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-065",
+      "type": "multiple-choice",
+      "topic": "contribute to",
+      "prompt": "Local volunteers contributed ___ the restoration project.",
+      "options": [
+        "with",
+        "to",
+        "for"
+      ],
+      "answer": "to",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-066",
+      "type": "multiple-choice",
+      "topic": "contribute to",
+      "prompt": "Regular exercise contributes ___ overall well-being.",
+      "options": [
+        "to",
+        "for",
+        "with"
+      ],
+      "answer": "to",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-067",
+      "type": "multiple-choice",
+      "topic": "protect from",
+      "prompt": "Sunscreen protects the skin ___ harmful ultraviolet rays.",
+      "options": [
+        "against",
+        "of",
+        "from"
+      ],
+      "answer": "from",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-07-068",
+      "type": "multiple-choice",
+      "topic": "protect from",
+      "prompt": "The new barrier protects the village ___ flooding.",
+      "options": [
+        "of",
+        "from",
+        "against"
+      ],
+      "answer": "from",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-07-069",
+      "type": "multiple-choice",
+      "topic": "invest in",
+      "prompt": "The council plans to invest ___ public transport.",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ],
+      "answer": "in",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-07-070",
+      "type": "multiple-choice",
+      "topic": "invest in",
+      "prompt": "Many companies invest ___ staff development.",
+      "options": [
+        "on",
+        "at",
+        "in"
+      ],
+      "answer": "in",
+      "correctIndex": 2
+    }
+  ]
+}
