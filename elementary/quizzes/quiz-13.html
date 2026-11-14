@@ -153,7 +153,7 @@ a{color:#6832cb}
   <span class="tag" id="counter"></span>
   <h2>Write the second and third forms.</h2>
   <p class="muted">
-    Complete both spaces. Each correct form is worth 5 points.
+    Complete both V2 and V3 correctly to earn 10 points. If either form is incorrect, you earn 0 points for that question.
   </p>
   <div class="progress"><div id="fill"></div></div>
 
@@ -286,8 +286,8 @@ function scoreAnswers(){
   selected.forEach(question=>{
     const answer=answers[question.id]||{};
 
-    if(isFormCorrect(question,"v2",answer.v2))points+=5;
-    if(isFormCorrect(question,"v3",answer.v3))points+=5;
+    if(isFormCorrect(question,"v2",answer.v2) &&
+       isFormCorrect(question,"v3",answer.v3))points+=10;
   });
 
   return points;
