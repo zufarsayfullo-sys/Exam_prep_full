@@ -1,0 +1,850 @@
+{
+  "title": "Vocabulary in Context — Media, Communication & Society",
+  "level": "upper-intermediate",
+  "category": "Vocabulary",
+  "instructions": "Choose the correct option (A–C) to complete each sentence.",
+  "questionsPerAttempt": 10,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "upper-08-001",
+      "type": "multiple-choice",
+      "prompt": "I tend to change the channel when the ___ come on because I dislike advertisements.",
+      "options": [
+        "commercial breaks",
+        "match highlights",
+        "current affairs"
+      ],
+      "answer": "commercial breaks",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-002",
+      "type": "multiple-choice",
+      "prompt": "The film was interrupted by several ___ advertising household products.",
+      "options": [
+        "current affairs",
+        "match highlights",
+        "commercial breaks"
+      ],
+      "answer": "commercial breaks",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-003",
+      "type": "multiple-choice",
+      "prompt": "The broadcaster earns much of its income by selling airtime during ___.",
+      "options": [
+        "current affairs",
+        "commercial breaks",
+        "match highlights"
+      ],
+      "answer": "commercial breaks",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-004",
+      "type": "multiple-choice",
+      "prompt": "We made tea during the ___ and returned before the programme resumed.",
+      "options": [
+        "commercial breaks",
+        "match highlights",
+        "current affairs"
+      ],
+      "answer": "commercial breaks",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-005",
+      "type": "multiple-choice",
+      "prompt": "She follows ___ closely to stay informed about elections and international events.",
+      "options": [
+        "commercial breaks",
+        "current affairs",
+        "match highlights"
+      ],
+      "answer": "current affairs",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-006",
+      "type": "multiple-choice",
+      "prompt": "The evening programme discusses ___ rather than celebrity gossip.",
+      "options": [
+        "current affairs",
+        "commercial breaks",
+        "match highlights"
+      ],
+      "answer": "current affairs",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-007",
+      "type": "multiple-choice",
+      "prompt": "Our teacher encouraged us to read about ___ before the debate on public policy.",
+      "options": [
+        "current affairs",
+        "commercial breaks",
+        "match highlights"
+      ],
+      "answer": "current affairs",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-008",
+      "type": "multiple-choice",
+      "prompt": "He prefers documentaries and ___ programmes to fictional dramas.",
+      "options": [
+        "current affairs",
+        "match highlights",
+        "commercial breaks"
+      ],
+      "answer": "current affairs",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-009",
+      "type": "multiple-choice",
+      "prompt": "The journalist specialises in ___, covering political and social developments.",
+      "options": [
+        "commercial breaks",
+        "match highlights",
+        "current affairs"
+      ],
+      "answer": "current affairs",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-010",
+      "type": "multiple-choice",
+      "prompt": "I missed the football game, so I watched the ___ to see the goals.",
+      "options": [
+        "current affairs",
+        "commercial breaks",
+        "match highlights"
+      ],
+      "answer": "match highlights",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-011",
+      "type": "multiple-choice",
+      "prompt": "The sports channel showed the ___ immediately after the final whistle.",
+      "options": [
+        "commercial breaks",
+        "match highlights",
+        "current affairs"
+      ],
+      "answer": "match highlights",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-012",
+      "type": "multiple-choice",
+      "prompt": "Although she could not watch the entire tennis final, the ___ showed the decisive points.",
+      "options": [
+        "current affairs",
+        "match highlights",
+        "commercial breaks"
+      ],
+      "answer": "match highlights",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-013",
+      "type": "multiple-choice",
+      "prompt": "The video of the ___ included the winning goal and the goalkeeper’s best saves.",
+      "options": [
+        "commercial breaks",
+        "match highlights",
+        "current affairs"
+      ],
+      "answer": "match highlights",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-014",
+      "type": "multiple-choice",
+      "prompt": "Fans shared the ___ online so everyone could see the key moments.",
+      "options": [
+        "current affairs",
+        "match highlights",
+        "commercial breaks"
+      ],
+      "answer": "match highlights",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-015",
+      "type": "multiple-choice",
+      "prompt": "By ___ his mistake, the manager showed that he was willing to take responsibility.",
+      "options": [
+        "denying",
+        "claiming",
+        "admitting"
+      ],
+      "answer": "admitting",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-016",
+      "type": "multiple-choice",
+      "prompt": "He avoided ___ that he had copied the report from a colleague.",
+      "options": [
+        "denying",
+        "claiming",
+        "admitting"
+      ],
+      "answer": "admitting",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-017",
+      "type": "multiple-choice",
+      "prompt": "After ___ that she had lost the keys, she offered to pay for replacements.",
+      "options": [
+        "admitting",
+        "claiming",
+        "denying"
+      ],
+      "answer": "admitting",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-018",
+      "type": "multiple-choice",
+      "prompt": "The witness surprised everyone by ___ that his earlier statement was false.",
+      "options": [
+        "admitting",
+        "claiming",
+        "denying"
+      ],
+      "answer": "admitting",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-019",
+      "type": "multiple-choice",
+      "prompt": "Instead of ___ defeat, the candidate insisted that the count was wrong.",
+      "options": [
+        "admitting",
+        "claiming",
+        "denying"
+      ],
+      "answer": "admitting",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-020",
+      "type": "multiple-choice",
+      "prompt": "There is no point in ___ your involvement when the security footage clearly shows you.",
+      "options": [
+        "denying",
+        "claiming",
+        "admitting"
+      ],
+      "answer": "denying",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-021",
+      "type": "multiple-choice",
+      "prompt": "The company issued a statement ___ that it had broken any safety rules.",
+      "options": [
+        "claiming",
+        "denying",
+        "admitting"
+      ],
+      "answer": "denying",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-022",
+      "type": "multiple-choice",
+      "prompt": "Despite the evidence, the suspect kept ___ that he had entered the building.",
+      "options": [
+        "denying",
+        "admitting",
+        "claiming"
+      ],
+      "answer": "denying",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-023",
+      "type": "multiple-choice",
+      "prompt": "He responded to the accusation by ___ that he had ever met the complainant.",
+      "options": [
+        "claiming",
+        "admitting",
+        "denying"
+      ],
+      "answer": "denying",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-024",
+      "type": "multiple-choice",
+      "prompt": "The athlete was criticised for repeatedly ___ the use of banned substances.",
+      "options": [
+        "denying",
+        "claiming",
+        "admitting"
+      ],
+      "answer": "denying",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-025",
+      "type": "multiple-choice",
+      "prompt": "The company is ___ that its new device can double battery life, although no tests have been published.",
+      "options": [
+        "admitting",
+        "denying",
+        "claiming"
+      ],
+      "answer": "claiming",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-026",
+      "type": "multiple-choice",
+      "prompt": "He attracted attention by ___ that he could predict the future.",
+      "options": [
+        "claiming",
+        "denying",
+        "admitting"
+      ],
+      "answer": "claiming",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-027",
+      "type": "multiple-choice",
+      "prompt": "The advertisement was criticised for ___ that the cream could cure every skin condition.",
+      "options": [
+        "denying",
+        "admitting",
+        "claiming"
+      ],
+      "answer": "claiming",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-028",
+      "type": "multiple-choice",
+      "prompt": "The politician made headlines by ___ that taxes would fall immediately.",
+      "options": [
+        "denying",
+        "claiming",
+        "admitting"
+      ],
+      "answer": "claiming",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-029",
+      "type": "multiple-choice",
+      "prompt": "She is ___ to be the rightful owner of the painting, but the dispute remains unresolved.",
+      "options": [
+        "admitting",
+        "denying",
+        "claiming"
+      ],
+      "answer": "claiming",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-030",
+      "type": "multiple-choice",
+      "prompt": "It is completely ___ to pay two employees differently for identical work solely because of their gender.",
+      "options": [
+        "unmanageable",
+        "unacceptable",
+        "irrelevant"
+      ],
+      "answer": "unacceptable",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-031",
+      "type": "multiple-choice",
+      "prompt": "The principal described bullying at school as absolutely ___.",
+      "options": [
+        "unmanageable",
+        "irrelevant",
+        "unacceptable"
+      ],
+      "answer": "unacceptable",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-032",
+      "type": "multiple-choice",
+      "prompt": "Leaving dangerous equipment unattended in a classroom is ___.",
+      "options": [
+        "unmanageable",
+        "irrelevant",
+        "unacceptable"
+      ],
+      "answer": "unacceptable",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-033",
+      "type": "multiple-choice",
+      "prompt": "The inspector said the kitchen’s hygiene standards were ___.",
+      "options": [
+        "unacceptable",
+        "unmanageable",
+        "irrelevant"
+      ],
+      "answer": "unacceptable",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-034",
+      "type": "multiple-choice",
+      "prompt": "The airline apologised for the ___ delay and poor communication.",
+      "options": [
+        "unmanageable",
+        "irrelevant",
+        "unacceptable"
+      ],
+      "answer": "unacceptable",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-035",
+      "type": "multiple-choice",
+      "prompt": "The candidate’s favourite colour is ___ to whether she can do the job.",
+      "options": [
+        "unacceptable",
+        "unmanageable",
+        "irrelevant"
+      ],
+      "answer": "irrelevant",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-036",
+      "type": "multiple-choice",
+      "prompt": "Please remove any ___ details that do not help answer the essay question.",
+      "options": [
+        "unacceptable",
+        "irrelevant",
+        "unmanageable"
+      ],
+      "answer": "irrelevant",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-037",
+      "type": "multiple-choice",
+      "prompt": "The judge ruled that the witness’s comments about the defendant’s hairstyle were ___.",
+      "options": [
+        "unmanageable",
+        "irrelevant",
+        "unacceptable"
+      ],
+      "answer": "irrelevant",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-038",
+      "type": "multiple-choice",
+      "prompt": "His remarks about last year’s weather were ___ to our discussion of the budget.",
+      "options": [
+        "unacceptable",
+        "unmanageable",
+        "irrelevant"
+      ],
+      "answer": "irrelevant",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-039",
+      "type": "multiple-choice",
+      "prompt": "The interviewer asked an ___ question that had nothing to do with the vacancy.",
+      "options": [
+        "unmanageable",
+        "irrelevant",
+        "unacceptable"
+      ],
+      "answer": "irrelevant",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-040",
+      "type": "multiple-choice",
+      "prompt": "Without additional staff, the nurses’ workload has become ___.",
+      "options": [
+        "unmanageable",
+        "unacceptable",
+        "irrelevant"
+      ],
+      "answer": "unmanageable",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-041",
+      "type": "multiple-choice",
+      "prompt": "The project grew so large and complicated that it was almost ___.",
+      "options": [
+        "unacceptable",
+        "unmanageable",
+        "irrelevant"
+      ],
+      "answer": "unmanageable",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-042",
+      "type": "multiple-choice",
+      "prompt": "With hundreds of emails arriving every hour, her inbox felt ___.",
+      "options": [
+        "unacceptable",
+        "irrelevant",
+        "unmanageable"
+      ],
+      "answer": "unmanageable",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-043",
+      "type": "multiple-choice",
+      "prompt": "The debt became ___ after the interest rate increased sharply.",
+      "options": [
+        "unacceptable",
+        "irrelevant",
+        "unmanageable"
+      ],
+      "answer": "unmanageable",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-044",
+      "type": "multiple-choice",
+      "prompt": "Unless the class is divided into smaller groups, its size will be ___.",
+      "options": [
+        "unacceptable",
+        "unmanageable",
+        "irrelevant"
+      ],
+      "answer": "unmanageable",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-045",
+      "type": "multiple-choice",
+      "prompt": "The researchers conducted a ___ to find out how often people exercise.",
+      "options": [
+        "campaign",
+        "agreement",
+        "survey"
+      ],
+      "answer": "survey",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-046",
+      "type": "multiple-choice",
+      "prompt": "A nationwide ___ asked residents about their satisfaction with public transport.",
+      "options": [
+        "survey",
+        "campaign",
+        "agreement"
+      ],
+      "answer": "survey",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-047",
+      "type": "multiple-choice",
+      "prompt": "The company sent customers a short ___ about their shopping experience.",
+      "options": [
+        "campaign",
+        "agreement",
+        "survey"
+      ],
+      "answer": "survey",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-048",
+      "type": "multiple-choice",
+      "prompt": "According to a recent ___, most respondents prefer flexible working hours.",
+      "options": [
+        "survey",
+        "campaign",
+        "agreement"
+      ],
+      "answer": "survey",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-049",
+      "type": "multiple-choice",
+      "prompt": "Students completed an anonymous ___ about the quality of school meals.",
+      "options": [
+        "survey",
+        "campaign",
+        "agreement"
+      ],
+      "answer": "survey",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-050",
+      "type": "multiple-choice",
+      "prompt": "The government launched an environmental ___ to raise awareness of endangered species.",
+      "options": [
+        "campaign",
+        "survey",
+        "agreement"
+      ],
+      "answer": "campaign",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-051",
+      "type": "multiple-choice",
+      "prompt": "The charity organised a fundraising ___ to support families after the floods.",
+      "options": [
+        "agreement",
+        "campaign",
+        "survey"
+      ],
+      "answer": "campaign",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-052",
+      "type": "multiple-choice",
+      "prompt": "Her election ___ focused on housing and public transport.",
+      "options": [
+        "campaign",
+        "agreement",
+        "survey"
+      ],
+      "answer": "campaign",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-053",
+      "type": "multiple-choice",
+      "prompt": "The school began an anti-bullying ___ involving students and parents.",
+      "options": [
+        "agreement",
+        "campaign",
+        "survey"
+      ],
+      "answer": "campaign",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-054",
+      "type": "multiple-choice",
+      "prompt": "After weeks of negotiations, both sides finally reached an ___.",
+      "options": [
+        "agreement",
+        "campaign",
+        "survey"
+      ],
+      "answer": "agreement",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-055",
+      "type": "multiple-choice",
+      "prompt": "The two companies signed an ___ to share research costs.",
+      "options": [
+        "campaign",
+        "agreement",
+        "survey"
+      ],
+      "answer": "agreement",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-056",
+      "type": "multiple-choice",
+      "prompt": "The neighbours came to an ___ about where to build the fence.",
+      "options": [
+        "agreement",
+        "campaign",
+        "survey"
+      ],
+      "answer": "agreement",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-057",
+      "type": "multiple-choice",
+      "prompt": "The union and the employer failed to reach an ___ on salaries.",
+      "options": [
+        "survey",
+        "campaign",
+        "agreement"
+      ],
+      "answer": "agreement",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-058",
+      "type": "multiple-choice",
+      "prompt": "The peace ___ was welcomed by leaders from both countries.",
+      "options": [
+        "campaign",
+        "survey",
+        "agreement"
+      ],
+      "answer": "agreement",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-059",
+      "type": "multiple-choice",
+      "prompt": "The detective novel has a complicated ___ with several unexpected twists.",
+      "options": [
+        "analysis",
+        "plot",
+        "tip"
+      ],
+      "answer": "plot",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-060",
+      "type": "multiple-choice",
+      "prompt": "The film’s ___ follows a scientist trying to save her city.",
+      "options": [
+        "plot",
+        "analysis",
+        "tip"
+      ],
+      "answer": "plot",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-061",
+      "type": "multiple-choice",
+      "prompt": "I enjoyed the acting, but the ___ was predictable and unconvincing.",
+      "options": [
+        "analysis",
+        "tip",
+        "plot"
+      ],
+      "answer": "plot",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-062",
+      "type": "multiple-choice",
+      "prompt": "The writer revealed very little about the ___ of her next novel.",
+      "options": [
+        "analysis",
+        "plot",
+        "tip"
+      ],
+      "answer": "plot",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-063",
+      "type": "multiple-choice",
+      "prompt": "The court examined a detailed ___ of the financial records.",
+      "options": [
+        "tip",
+        "analysis",
+        "plot"
+      ],
+      "answer": "analysis",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-064",
+      "type": "multiple-choice",
+      "prompt": "The scientist published an ___ of the experiment’s results.",
+      "options": [
+        "tip",
+        "analysis",
+        "plot"
+      ],
+      "answer": "analysis",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-065",
+      "type": "multiple-choice",
+      "prompt": "A careful ___ of the survey data revealed a surprising pattern.",
+      "options": [
+        "analysis",
+        "plot",
+        "tip"
+      ],
+      "answer": "analysis",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-066",
+      "type": "multiple-choice",
+      "prompt": "The report includes an ___ of the causes of rising unemployment.",
+      "options": [
+        "plot",
+        "tip",
+        "analysis"
+      ],
+      "answer": "analysis",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-067",
+      "type": "multiple-choice",
+      "prompt": "The guide gave us a useful ___ for remembering irregular verbs.",
+      "options": [
+        "plot",
+        "analysis",
+        "tip"
+      ],
+      "answer": "tip",
+      "correctIndex": 2
+    },
+    {
+      "id": "upper-08-068",
+      "type": "multiple-choice",
+      "prompt": "Here is a simple ___ for keeping your passwords secure.",
+      "options": [
+        "plot",
+        "tip",
+        "analysis"
+      ],
+      "answer": "tip",
+      "correctIndex": 1
+    },
+    {
+      "id": "upper-08-069",
+      "type": "multiple-choice",
+      "prompt": "My coach shared a practical ___ to help me improve my running technique.",
+      "options": [
+        "tip",
+        "plot",
+        "analysis"
+      ],
+      "answer": "tip",
+      "correctIndex": 0
+    },
+    {
+      "id": "upper-08-070",
+      "type": "multiple-choice",
+      "prompt": "The article offers a helpful ___ for saving money on groceries.",
+      "options": [
+        "analysis",
+        "plot",
+        "tip"
+      ],
+      "answer": "tip",
+      "correctIndex": 2
+    }
+  ]
+}
