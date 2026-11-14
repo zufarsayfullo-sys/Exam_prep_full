@@ -45,5 +45,12 @@
   {
   "title": "Dialogue Completion \u2014 Polite Interruptions",
   "file": "quiz-09.html"
+},
+  {
+  "id": "quiz-11",
+  "title": "Word Formation \u2014 Noun Suffixes",
+  "file": "quiz-11.html",
+  "questionCount": 6,
+  "passMark": 80
 }
 ]
