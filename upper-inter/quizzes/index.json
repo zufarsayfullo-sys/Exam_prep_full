@@ -16,5 +16,11 @@
   "file": "quiz-02.html",
   "bank": "quiz-02.bank.json",
   "questionCount": 70
+},
+  {
+  "title": "Word Bank \u2014 Vocabulary in Context",
+  "bank": "quiz-03.bank.json",
+  "file": "quiz-03.html"
 }
+
 ]
