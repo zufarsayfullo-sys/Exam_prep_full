@@ -111,9 +111,12 @@
   "path": "quiz-14.html",
   "level": "elementary"
 },
-  {
+ {
+  "id": "quiz-15",
   "title": "Present Simple vs Present Continuous",
-  "path": "elementary/quizzes/quiz-15.html",
+  "category": "Grammar",
+  "path": "quiz-15.html",
+  "bank": "quiz-15.bank.json",
   "level": "elementary"
 }
 ]
