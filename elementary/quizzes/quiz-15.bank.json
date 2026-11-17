@@ -1,0 +1,634 @@
+{
+  "questions": [
+    {
+      "id": "pspc-01",
+      "type": "inline-verb",
+      "before": "She works at a bank, right now she ",
+      "after": " in a meeting.",
+      "verb": "sit",
+      "answer": "is sitting",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-02",
+      "type": "inline-verb",
+      "before": "The children always ",
+      "after": " in the garden.",
+      "verb": "play",
+      "answer": "play",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-03",
+      "type": "inline-verb",
+      "before": "My father ",
+      "after": " the newspaper every morning.",
+      "verb": "read",
+      "answer": "reads",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-04",
+      "type": "inline-verb",
+      "before": "He is usually late, but today he ",
+      "after": " on time.",
+      "verb": "arrive",
+      "answer": "is arriving",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-05",
+      "type": "inline-verb",
+      "before": "Look! The waiter ",
+      "after": " your drinks now.",
+      "verb": "bring",
+      "answer": "is bringing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-06",
+      "type": "inline-verb",
+      "before": "My sister usually ",
+      "after": " emails.",
+      "verb": "write",
+      "answer": "writes",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-07",
+      "type": "inline-verb",
+      "before": "The children always walk to school, but they ",
+      "after": " the bus this week.",
+      "verb": "take",
+      "answer": "are taking",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-08",
+      "type": "inline-verb",
+      "before": "The waiter usually ",
+      "after": " food quickly.",
+      "verb": "bring",
+      "answer": "brings",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-09",
+      "type": "inline-verb",
+      "before": "The students usually listen to music after school, but now they ",
+      "after": ".",
+      "verb": "study",
+      "answer": "are studying",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-10",
+      "type": "inline-verb",
+      "before": "She ",
+      "after": " designer shoes today. Usually she wears sneakers.",
+      "verb": "wear",
+      "answer": "is wearing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-11",
+      "type": "inline-verb",
+      "before": "Look! The children ",
+      "after": " in the park now.",
+      "verb": "run",
+      "answer": "are running",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-12",
+      "type": "inline-verb",
+      "before": "The children usually ",
+      "after": " to school.",
+      "verb": "walk",
+      "answer": "walk",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-13",
+      "type": "inline-verb",
+      "before": "Look! My dad ",
+      "after": " his car outside the house.",
+      "verb": "clean",
+      "answer": "is cleaning",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-15",
+      "type": "inline-verb",
+      "before": "Look! My brother ",
+      "after": " photos of the beautiful view.",
+      "verb": "take",
+      "answer": "is taking",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-16",
+      "type": "inline-verb",
+      "before": "My mother usually ",
+      "after": "  dinner at six.",
+      "verb": "cook",
+      "answer": "cooks",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-17",
+      "type": "inline-verb",
+      "before": "We ",
+      "after": "  English on Mondays.",
+      "verb": "study",
+      "answer": "study",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-18",
+      "type": "inline-verb",
+      "before": "Tom ",
+      "after": "  to work by train every day.",
+      "verb": "go",
+      "answer": "goes",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-19",
+      "type": "inline-verb",
+      "before": "I ",
+      "after": "  coffee in the morning.",
+      "verb": "drink",
+      "answer": "drink",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-20",
+      "type": "inline-verb",
+      "before": "Anna often ",
+      "after": "  her grandmother on Sundays.",
+      "verb": "visit",
+      "answer": "visits",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-21",
+      "type": "inline-verb",
+      "before": "They ",
+      "after": "  near the city centre.",
+      "verb": "live",
+      "answer": "live",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-22",
+      "type": "inline-verb",
+      "before": "My brother ",
+      "after": "  his bike to school every day.",
+      "verb": "ride",
+      "answer": "rides",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-23",
+      "type": "inline-verb",
+      "before": "Our teacher always ",
+      "after": "  the lesson clearly.",
+      "verb": "explain",
+      "answer": "explains",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-24",
+      "type": "inline-verb",
+      "before": "The shop ",
+      "after": "  at nine every morning.",
+      "verb": "open",
+      "answer": "opens",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-25",
+      "type": "inline-verb",
+      "before": "I usually ",
+      "after": "  my homework after dinner.",
+      "verb": "do",
+      "answer": "do",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-26",
+      "type": "inline-verb",
+      "before": "Sarah ",
+      "after": "  her teeth twice a day.",
+      "verb": "brush",
+      "answer": "brushes",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-27",
+      "type": "inline-verb",
+      "before": "We sometimes ",
+      "after": "  films at the weekend.",
+      "verb": "watch",
+      "answer": "watch",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-28",
+      "type": "inline-verb",
+      "before": "My parents ",
+      "after": "  in a hospital.",
+      "verb": "work",
+      "answer": "work",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-29",
+      "type": "inline-verb",
+      "before": "The bus ",
+      "after": "  at half past seven every morning.",
+      "verb": "leave",
+      "answer": "leaves",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-30",
+      "type": "inline-verb",
+      "before": "Jack never ",
+      "after": "  breakfast before school.",
+      "verb": "eat",
+      "answer": "eats",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-31",
+      "type": "inline-verb",
+      "before": "The baby usually ",
+      "after": "  for two hours in the afternoon.",
+      "verb": "sleep",
+      "answer": "sleeps",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-32",
+      "type": "inline-verb",
+      "before": "My friends ",
+      "after": "  football every Saturday.",
+      "verb": "play",
+      "answer": "play",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-33",
+      "type": "inline-verb",
+      "before": "Emma always ",
+      "after": "  her room on Fridays.",
+      "verb": "tidy",
+      "answer": "tidies",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-34",
+      "type": "inline-verb",
+      "before": "I ",
+      "after": "  my grandparents every month.",
+      "verb": "call",
+      "answer": "call",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-35",
+      "type": "inline-verb",
+      "before": "He usually ",
+      "after": "  a blue jacket to work.",
+      "verb": "wear",
+      "answer": "wears",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-36",
+      "type": "inline-verb",
+      "before": "The students ",
+      "after": "  their books to class every day.",
+      "verb": "bring",
+      "answer": "bring",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-37",
+      "type": "inline-verb",
+      "before": "My uncle ",
+      "after": "  cars for a living.",
+      "verb": "repair",
+      "answer": "repairs",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-38",
+      "type": "inline-verb",
+      "before": "We ",
+      "after": "  lunch at school on weekdays.",
+      "verb": "have",
+      "answer": "have",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-39",
+      "type": "inline-verb",
+      "before": "Lisa ",
+      "after": "  the piano every evening.",
+      "verb": "practise",
+      "answer": "practises",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-40",
+      "type": "inline-verb",
+      "before": "My dog often ",
+      "after": "  in the garden.",
+      "verb": "run",
+      "answer": "runs",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-41",
+      "type": "inline-verb",
+      "before": "They usually ",
+      "after": "  the house on Saturday mornings.",
+      "verb": "clean",
+      "answer": "clean",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-42",
+      "type": "inline-verb",
+      "before": "My cousin ",
+      "after": "  French at university.",
+      "verb": "learn",
+      "answer": "learns",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-43",
+      "type": "inline-verb",
+      "before": "I always ",
+      "after": "  my hands before eating.",
+      "verb": "wash",
+      "answer": "wash",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-44",
+      "type": "inline-verb",
+      "before": "Our neighbours ",
+      "after": "  to music every night.",
+      "verb": "listen",
+      "answer": "listen",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-45",
+      "type": "inline-verb",
+      "before": "Peter ",
+      "after": "  his keys in the same place every day.",
+      "verb": "keep",
+      "answer": "keeps",
+      "form": "simple"
+    },
+    {
+      "id": "pspc-46",
+      "type": "inline-verb",
+      "before": "Listen! Someone ",
+      "after": "  at the door.",
+      "verb": "knock",
+      "answer": "is knocking",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-47",
+      "type": "inline-verb",
+      "before": "I ",
+      "after": "  for my keys at the moment.",
+      "verb": "look",
+      "answer": "am looking",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-48",
+      "type": "inline-verb",
+      "before": "They ",
+      "after": "  dinner in the kitchen right now.",
+      "verb": "make",
+      "answer": "are making",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-49",
+      "type": "inline-verb",
+      "before": "Look! The dog ",
+      "after": "  in the river.",
+      "verb": "swim",
+      "answer": "is swimming",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-50",
+      "type": "inline-verb",
+      "before": "We ",
+      "after": "  for our exam this week.",
+      "verb": "prepare",
+      "answer": "are preparing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-51",
+      "type": "inline-verb",
+      "before": "My mum ",
+      "after": "  on the phone at the moment.",
+      "verb": "talk",
+      "answer": "is talking",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-52",
+      "type": "inline-verb",
+      "before": "Be quiet! The baby ",
+      "after": "  upstairs.",
+      "verb": "sleep",
+      "answer": "is sleeping",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-53",
+      "type": "inline-verb",
+      "before": "The boys ",
+      "after": "  basketball in the park now.",
+      "verb": "play",
+      "answer": "are playing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-54",
+      "type": "inline-verb",
+      "before": "I ",
+      "after": "  a new book this week.",
+      "verb": "read",
+      "answer": "am reading",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-55",
+      "type": "inline-verb",
+      "before": "Look! The birds ",
+      "after": "  over the lake.",
+      "verb": "fly",
+      "answer": "are flying",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-56",
+      "type": "inline-verb",
+      "before": "He ",
+      "after": "  his homework right now.",
+      "verb": "do",
+      "answer": "is doing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-57",
+      "type": "inline-verb",
+      "before": "We ",
+      "after": "  for the bus at the moment.",
+      "verb": "wait",
+      "answer": "are waiting",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-58",
+      "type": "inline-verb",
+      "before": "My friends ",
+      "after": "  a film in the living room now.",
+      "verb": "watch",
+      "answer": "are watching",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-59",
+      "type": "inline-verb",
+      "before": "She ",
+      "after": "  a message to her teacher right now.",
+      "verb": "send",
+      "answer": "is sending",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-60",
+      "type": "inline-verb",
+      "before": "Look! It ",
+      "after": "  outside.",
+      "verb": "snow",
+      "answer": "is snowing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-61",
+      "type": "inline-verb",
+      "before": "I ",
+      "after": "  my bedroom today.",
+      "verb": "paint",
+      "answer": "am painting",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-62",
+      "type": "inline-verb",
+      "before": "The chef ",
+      "after": "  lunch for the guests at the moment.",
+      "verb": "prepare",
+      "answer": "is preparing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-63",
+      "type": "inline-verb",
+      "before": "They ",
+      "after": "  a new bridge near our school this month.",
+      "verb": "build",
+      "answer": "are building",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-64",
+      "type": "inline-verb",
+      "before": "My brother ",
+      "after": "  his bicycle in the garage now.",
+      "verb": "fix",
+      "answer": "is fixing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-65",
+      "type": "inline-verb",
+      "before": "We ",
+      "after": "  a new grammar topic in class today.",
+      "verb": "learn",
+      "answer": "are learning",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-66",
+      "type": "inline-verb",
+      "before": "Listen! The students ",
+      "after": "  a song.",
+      "verb": "sing",
+      "answer": "are singing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-67",
+      "type": "inline-verb",
+      "before": "She ",
+      "after": "  her suitcase for the trip right now.",
+      "verb": "pack",
+      "answer": "is packing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-68",
+      "type": "inline-verb",
+      "before": "The cat ",
+      "after": "  under the table at the moment.",
+      "verb": "hide",
+      "answer": "is hiding",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-69",
+      "type": "inline-verb",
+      "before": "I ",
+      "after": "  a letter to my friend right now.",
+      "verb": "write",
+      "answer": "am writing",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-70",
+      "type": "inline-verb",
+      "before": "Look! The children ",
+      "after": "  a snowman.",
+      "verb": "make",
+      "answer": "are making",
+      "form": "continuous"
+    },
+    {
+      "id": "pspc-71",
+      "type": "inline-verb",
+      "before": "He ",
+      "after": "  a new pair of shoes today.",
+      "verb": "wear",
+      "answer": "is wearing",
+      "form": "continuous"
+    }
+  ]
+}
