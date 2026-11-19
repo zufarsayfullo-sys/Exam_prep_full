@@ -43,7 +43,10 @@ button:disabled{opacity:.45;cursor:default}
   border-radius:20px;overflow:hidden;margin:18px 0
 }
 .progress div{height:100%;background:#7138e5;width:0}
-.sentence-line{font-size:clamp(18px,3vw,23px);line-height:2.7;margin:24px 0;overflow-wrap:anywhere}.inline-answer{display:inline-block;vertical-align:middle;width:min(210px,70vw);height:49px;padding:8px 12px;border:2px solid #c8b8f5;border-radius:11px;background:#fff;color:#202044;font:inherit;font-size:18px;font-weight:650;text-align:center;margin:0 5px}.inline-answer:focus{outline:3px solid #dacdff;border-color:#7138e5}.verb-hint{color:#7138e5;font-size:17px;font-weight:650;white-space:nowrap}
+.sentence-line{font-size:clamp(18px,3vw,23px);line-height:2.7;margin:24px 0;overflow-wrap:anywhere}
+.inline-answer{display:inline-block;vertical-align:middle;width:min(210px,70vw);height:49px;padding:8px 12px;border:2px solid #c8b8f5;border-radius:11px;background:#fff;color:#202044;font:inherit;font-size:18px;font-weight:650;text-align:center;margin:0 5px}
+.inline-answer:focus{outline:3px solid #dacdff;border-color:#7138e5}
+.verb-hint{color:#7138e5;font-size:17px;font-weight:650;white-space:nowrap}
 table{width:100%;border-collapse:collapse}
 td,th{text-align:left;border-bottom:1px solid #eee;padding:12px}
 .review{padding:14px 0;border-bottom:1px solid #eee}
@@ -62,8 +65,8 @@ a{color:#6832cb}
     position:sticky;bottom:0;background:white;
     padding:10px 0 4px;z-index:2
   }
-  .sentence-line{font-size:18px;line-height:2.7}.inline-answer{width:min(170px,65vw);height:46px;font-size:16px}
-
+  .sentence-line{font-size:18px;line-height:2.7}
+  .inline-answer{width:min(170px,65vw);height:46px;font-size:16px}
 }
 </style>
 </head>
@@ -75,7 +78,7 @@ a{color:#6832cb}
   <span class="tag">Elementary · Grammar</span>
   <h1>Present Simple vs Present Continuous</h1>
   <p class="muted">
-    15 bank entries · 10 randomly selected sentences ·
+    70 bank entries · 10 randomly selected sentences ·
     Pass mark 80%
   </p>
   <button id="create" disabled>Loading question bank...</button>
@@ -132,7 +135,9 @@ a{color:#6832cb}
   <div class="progress"><div id="fill"></div></div>
 
   <p class="muted">Example: I <strong>am playing</strong> (play) football now.</p>
-  <div class="sentence-line" id="sentenceLine"><span id="sentenceBefore"></span><input id="verbAnswer" class="inline-answer" type="text" placeholder="Your answer" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="55" aria-label="Verb form"><span class="verb-hint" id="verbHint"></span><span id="sentenceAfter"></span></div>
+  <div class="sentence-line" id="sentenceLine">
+    <span id="sentenceBefore"></span><input id="verbAnswer" class="inline-answer" type="text" placeholder="Your answer" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="55" aria-label="Verb form"><span class="verb-hint" id="verbHint"></span><span id="sentenceAfter"></span>
+  </div>
 
   <div class="actions">
     <button class="alt" id="prev">Previous</button>
@@ -222,7 +227,13 @@ function acceptedForms(question){return [question.answer];}
 
 function isFormCorrect(question,value){return normalize(question.answer)===normalize(value);}
 
-function scoreAnswers(){let points=0;selected.forEach(question=>{if(isFormCorrect(question,answers[question.id]||""))points+=10;});return points;}
+function scoreAnswers(){
+  let points=0;
+  selected.forEach(question=>{
+    if(isFormCorrect(question,answers[question.id]||""))points+=10;
+  });
+  return points;
+}
 
 function validateBank(data){
  const questions=Array.isArray(data)?data:data?.questions;
@@ -230,7 +241,9 @@ function validateBank(data){
  const ids=new Set();
  const prompts=new Set();
  let simpleCount=0,continuousCount=0;
- for(const q of questions){if(!q||q.type!=="inline-verb"||!["id","before","after","verb","answer"].every(k=>typeof q[k]==="string")||!q.id||!q.verb||!q.answer||!["simple","continuous"].includes(q.form)||ids.has(q.id))throw Error("Invalid question bank entry.");ids.add(q.id);
+ for(const q of questions){
+  if(!q||q.type!=="inline-verb"||!["id","before","after","verb","answer"].every(k=>typeof q[k]==="string")||!q.id||!q.verb||!q.answer||!["simple","continuous"].includes(q.form)||ids.has(q.id))throw Error("Invalid question bank entry.");
+  ids.add(q.id);
   const prompt=(q.before+"___"+q.after).replace(/\s+/g," ").toLowerCase();
   if(prompts.has(prompt))throw Error("Duplicate sentence: "+q.id);
   prompts.add(prompt);
@@ -332,7 +345,7 @@ function shuffle(items){
   return result;
 }
 
-// Avoid repeating the same infinitive in one attempt.
+// Five Present Simple and five Present Continuous questions.
 function choose(){
  if(BANK.length!==BANK_SIZE)throw Error("Question bank is not ready.");
  const simple=shuffle(BANK.filter(q=>q.form==="simple")).slice(0,5);
@@ -372,7 +385,7 @@ function restoreProgress(){
 }
 
 $("create").onclick=()=>run(async()=>{
-  if(BANK.length!==15){
+  if(BANK.length!==BANK_SIZE){
     throw Error("Question bank is not loaded.");
   }
 
@@ -427,10 +440,16 @@ $("end").onclick=()=>run(async()=>{
   notice("Session ended.");
 });
 
-function saveCurrentAnswer(){const q=selected[index];if(!q)return;answers[q.id]=$("verbAnswer").value;saveProgress();}
+function saveCurrentAnswer(){
+  const q=selected[index];
+  if(!q)return;
+  answers[q.id]=$("verbAnswer").value;
+  saveProgress();
+}
 
 function render(){
- const q=selected[index];if(!q){notice("Question unavailable. Please reload.");return;}
+ const q=selected[index];
+ if(!q){notice("Question unavailable. Please reload.");return;}
  $("counter").textContent=`Question ${index+1} of ${selected.length}`;
  $("fill").style.width=((index+1)/selected.length*100)+"%";
  $("sentenceBefore").textContent=q.before;
@@ -441,8 +460,19 @@ function render(){
  $("next").textContent=index===selected.length-1?"Submit Answers":"Next";
 }
 
-$("verbAnswer").addEventListener("input",()=>{if(!submitted){saveCurrentAnswer();notice("");}});
-$("verbAnswer").addEventListener("keydown",event=>{if(event.key==="Enter"){event.preventDefault();$("next").click();}});
+$("verbAnswer").addEventListener("input",()=>{
+  if(!submitted){
+    saveCurrentAnswer();
+    notice("");
+  }
+});
+
+$("verbAnswer").addEventListener("keydown",event=>{
+  if(event.key==="Enter"){
+    event.preventDefault();
+    $("next").click();
+  }
+});
 
 $("prev").onclick=()=>{
   if(submitted||!selected.length)return;
@@ -492,18 +522,25 @@ $("next").onclick=()=>run(async()=>{
 });
 
 function displayResult(score){
- quizStarted=false;show("result");
+ quizStarted=false;
+ show("result");
  $("score").textContent=score+"%";
  $("outcome").textContent=score>=PASS_MARK?"Passed!":"Below 80% — your result was saved for extra support.";
- const review=$("review");review.replaceChildren();review.classList.add("hidden");
+ const review=$("review");
+ review.replaceChildren();
+ review.classList.add("hidden");
  selected.forEach(q=>{
   const answer=answers[q.id]||"";
-  const item=document.createElement("div");item.className="review";
-  const heading=document.createElement("strong");heading.textContent=q.before+"_____ ("+q.verb+") "+q.after;
-  const response=document.createElement("p");const correct=isFormCorrect(q,answer);
+  const item=document.createElement("div");
+  item.className="review";
+  const heading=document.createElement("strong");
+  heading.textContent=q.before+"_____ ("+q.verb+") "+q.after;
+  const response=document.createElement("p");
+  const correct=isFormCorrect(q,answer);
   response.className=correct?"good":"bad";
   response.textContent="Your answer: "+(answer||"—")+(correct?" ✓":" ✗  Correct: "+q.answer);
-  item.append(heading,response);review.append(item);
+  item.append(heading,response);
+  review.append(item);
  });
 }
 
@@ -558,7 +595,7 @@ async function poll(force=false){
 
     }else if(playerId){
       if(state.status==="active"&&!submitted){
-        if(BANK.length!==15){
+        if(BANK.length!==BANK_SIZE){
           const loaded=await loadBank();
           if(!loaded)return;
         }
