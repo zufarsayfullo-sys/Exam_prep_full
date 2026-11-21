@@ -6,108 +6,64 @@
 <meta name="theme-color" content="#172554">
 <title>ExamPrep Studio | Teacher Dashboard</title>
 <style>
-:root{--navy:#172554;--blue:#3156d9;--ink:#172033;--muted:#667085;--line:#e7ebf3;--page:#f5f7fc;--shadow:0 12px 32px rgba(23,37,84,.07)}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--page)}
-.topbar{background:linear-gradient(115deg,#172554,#253d82);color:#fff;padding:12px max(20px,calc((100% - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{display:flex;align-items:center;gap:10px}.brand-mark{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(145deg,#8b9cff,#5268ee);font-size:18px;font-weight:800}.brand-name{font-size:17px;font-weight:750}.brand-sub{color:#c8d2f5;font-size:11px}.teacher-pill{border:1px solid #ffffff35;background:#ffffff12;padding:7px 11px;border-radius:999px;font-size:12px}
-main{width:min(1180px,calc(100% - 32px));margin:17px auto 24px}.heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px}.heading h1{font-size:clamp(19px,2.5vw,25px);margin:0;letter-spacing:-.6px;color:#18264d}.heading p{margin:0;color:var(--muted);font-size:12px}
-.panel{background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow);overflow:hidden}.panel-head{width:100%;border:0;background:#fff;padding:12px 16px;display:flex;align-items:center;gap:10px;text-align:left;cursor:pointer;color:var(--ink);font:inherit}.panel-head strong{font-size:16px}.panel-head small{color:var(--muted);font-size:12px}.panel-head .chevron{margin-left:auto;font-size:19px;color:var(--blue)}.icon{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:#eaeaff;color:var(--blue);font-size:17px;flex:none}
-.panel-body{border-top:1px solid var(--line);padding:12px 14px 14px}.level-row{display:flex;gap:8px;margin-bottom:11px}.level-btn{border:1px solid #dfe5f3;background:#f5f7fc;color:#25345f;border-radius:9px;min-width:43px;height:36px;padding:0 10px;font-weight:800;cursor:pointer}.level-btn[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:white}.level-btn:focus-visible,.quiz:focus-visible,.panel-head:focus-visible,.mini:focus-visible{outline:3px solid #9badff;outline-offset:2px}
-.quiz-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:9px}.quiz-top strong{font-size:13px}.quiz-top span{font-size:11px;color:var(--muted)}.quiz-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}.quiz{display:flex;align-items:flex-start;gap:6px;min-height:45px;padding:8px 9px;border-radius:9px;background:#f5f7fc;border:1px solid #edf0f7;text-decoration:none;color:#263553;transition:background .15s,border-color .15s}.quiz:hover{background:#eaf0ff;border-color:#b9c9ff}.quiz-number{font-size:10px;font-weight:800;color:#3156d9;flex:none;white-space:nowrap;margin-top:2px}.quiz-title{font-size:11px;font-weight:650;line-height:1.25;overflow-wrap:anywhere}.message{padding:13px;background:#f5f7fc;border-radius:9px;color:var(--muted);font-size:12px}.message.error{color:#b42318;background:#fff1f0}
-.bottom{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.mini{display:flex;align-items:center;gap:10px;min-height:54px;padding:10px 13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:white;border-radius:12px;box-shadow:var(--shadow)}.mini .icon{width:29px;height:29px;font-size:15px}.mini strong{display:block;font-size:13px}.mini small{display:block;font-size:11px;color:var(--muted);margin-top:2px}.mini .arrow{margin-left:auto;color:var(--blue)}.mini.disabled{cursor:default}.mini.disabled .arrow{font-size:10px;color:var(--muted)}
-footer{text-align:center;color:#98a1b3;font-size:11px;padding:12px 20px} [hidden]{display:none!important}
-@media(max-width:850px){.quiz-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media(max-width:620px){.teacher-pill{display:none}.heading{display:block}.heading p{margin-top:4px}.quiz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.level-row{gap:6px}.level-btn{flex:1;min-width:0;padding:0 4px}.bottom{grid-template-columns:1fr}.quiz{min-height:43px}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+:root{--navy:#172554;--blue:#3156d9;--ink:#172033;--muted:#667085;--line:#e7ebf3;--page:#f5f7fc;--shadow:0 16px 40px rgba(23,37,84,.08)}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--page)}
+.topbar{background:linear-gradient(115deg,#172554,#253d82);color:white;padding:12px max(20px,calc((100% - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px}.brand-mark{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(145deg,#8b9cff,#5268ee);box-shadow:inset 0 1px 3px #ffffff80,0 6px 18px #090f2d66;font-size:19px;font-weight:800}.brand-name{font-size:17px;font-weight:750;letter-spacing:-.4px}.brand-sub{color:#c8d2f5;font-size:11px;margin-top:2px}.teacher-pill{border:1px solid #ffffff35;background:#ffffff12;padding:8px 12px;border-radius:999px;font-size:12px;color:#edf1ff}
+main{width:min(1180px,calc(100% - 32px));margin:18px auto 22px}.intro{margin-bottom:14px}.eyebrow{color:var(--blue);text-transform:uppercase;letter-spacing:1.4px;font-size:10px;font-weight:800}h1{font-size:clamp(23px,3vw,29px);letter-spacing:-.8px;margin:4px 0;color:#18264d}.intro p{color:var(--muted);margin:0;font-size:13px;line-height:1.4}
+.panel{background:white;border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow);overflow:hidden}.panel-head{width:100%;border:0;background:white;padding:14px 17px;display:flex;align-items:center;gap:12px;text-align:left;cursor:pointer;color:var(--ink);font:inherit}.panel-head:hover{background:#fafbff}.icon{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:#eaeefe;color:#3156d9;font-size:19px;flex:none}.panel-name{font-size:16px;font-weight:750}.panel-sub{font-size:12px;color:var(--muted);margin-top:2px}.chevron{margin-left:auto;color:#64748b;font-size:18px}.panel-body{border-top:1px solid var(--line);padding:12px 16px 15px}.level-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.level{min-width:48px;height:40px;border-radius:10px;border:1px solid #dbe2f2;background:#f5f7fc;color:#25345f;font-size:13px;font-weight:800;cursor:pointer}.level.active{background:var(--blue);color:white;border-color:var(--blue)}.level:focus-visible,.panel-head:focus-visible,a:focus-visible{outline:3px solid #9aaeff;outline-offset:2px}.quiz-area{border:1px solid var(--line);background:#f8faff;border-radius:12px;padding:12px}.quiz-title{font-weight:750;font-size:13px;margin-bottom:5px}.quiz-help{font-size:12px;color:var(--muted);line-height:1.45;margin:0 0 11px}.quiz-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.quiz-entry{display:flex;align-items:center;justify-content:center;min-height:39px;padding:7px 9px;background:white;border:1px solid #dce4f4;border-radius:9px;color:#253d82;text-decoration:none;font-size:12px;font-weight:750;text-align:center}.quiz-entry:hover{border-color:var(--blue);background:#edf1ff}.secondary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.mini{display:flex;align-items:center;gap:10px;background:white;border:1px solid var(--line);border-radius:13px;padding:12px 14px;min-height:62px;box-shadow:var(--shadow);text-decoration:none;color:inherit}.mini .icon{width:32px;height:32px;font-size:16px}.mini-title{font-size:13px;font-weight:750}.mini-sub{font-size:11px;color:var(--muted);margin-top:3px}.mini .arrow{margin-left:auto;color:#3156d9}.mini.soon{cursor:default}.bottom{margin-top:10px;display:flex;justify-content:flex-end}.settings-link{color:#3156d9;font-size:12px;font-weight:750;text-decoration:none;padding:7px 10px;border:1px solid #dce4ff;border-radius:9px;background:white}footer{text-align:center;color:#98a1b3;font-size:11px;padding:6px 20px 16px}
+[hidden]{display:none!important}
+@media(max-width:640px){.topbar{padding:12px 16px}.teacher-pill{display:none}main{width:calc(100% - 24px);margin-top:14px}.secondary{grid-template-columns:1fr}.quiz-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.panel-body{padding:12px}.level{min-width:43px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
 </style>
 </head>
 <body>
 <header class="topbar"><div class="brand"><div class="brand-mark">E</div><div><div class="brand-name">ExamPrep Studio</div><div class="brand-sub">Teacher workspace</div></div></div><div class="teacher-pill">Teacher 1 · Live learning</div></header>
 <main>
-<div class="heading"><h1>Teacher Dashboard</h1><p>Choose a level and open a quiz.</p></div>
+<section class="intro"><div class="eyebrow">Your teaching workspace</div><h1>Welcome back, Teacher</h1><p>Launch a live classroom quiz, monitor student progress, or manage your question bank.</p></section>
 <section class="panel" aria-label="Live Quiz">
-<button class="panel-head" id="liveToggle" type="button" aria-expanded="true" aria-controls="liveContent"><span class="icon" aria-hidden="true">▣</span><strong>Live Quiz</strong><small>Choose level → quiz</small><span class="chevron" id="chevron" aria-hidden="true">⌃</span></button>
-<div class="panel-body" id="liveContent">
-<div class="level-row" id="levels" role="group" aria-label="Choose quiz level">
-<button class="level-btn" type="button" data-level="beginner" title="Beginner" aria-label="Beginner" aria-pressed="false">B</button>
-<button class="level-btn" type="button" data-level="elementary" title="Elementary" aria-label="Elementary" aria-pressed="true">E</button>
-<button class="level-btn" type="button" data-level="pre-int" title="Pre-Intermediate" aria-label="Pre-Intermediate" aria-pressed="false">PI</button>
-<button class="level-btn" type="button" data-level="inter" title="Intermediate" aria-label="Intermediate" aria-pressed="false">I</button>
-<button class="level-btn" type="button" data-level="upper-int" title="Upper-Intermediate" aria-label="Upper-Intermediate" aria-pressed="false">UI</button>
+<button class="panel-head" id="toggleLive" aria-expanded="true" aria-controls="liveBody" type="button"><span class="icon" aria-hidden="true">▣</span><span><span class="panel-name">Live Quiz</span><span class="panel-sub" style="display:block">Choose a level and open the existing quiz menu</span></span><span class="chevron" id="chevron" aria-hidden="true">⌃</span></button>
+<div class="panel-body" id="liveBody">
+<div class="level-row" aria-label="Learning levels">
+<button class="level" type="button" data-level="Beginner" title="Beginner" aria-label="Beginner">B</button>
+<button class="level active" type="button" data-level="Elementary" title="Elementary" aria-label="Elementary" aria-pressed="true">E</button>
+<button class="level" type="button" data-level="Pre-Intermediate" title="Pre-Intermediate" aria-label="Pre-Intermediate">PI</button>
+<button class="level" type="button" data-level="Intermediate" title="Intermediate" aria-label="Intermediate">I</button>
+<button class="level" type="button" data-level="Upper-Intermediate" title="Upper-Intermediate" aria-label="Upper-Intermediate">UI</button>
 </div>
-<div class="quiz-top"><strong id="levelTitle">Elementary Quizzes</strong><span id="quizCount" aria-live="polite">Loading...</span></div>
-<div class="quiz-grid" id="quizGrid" aria-live="polite"></div>
-<div class="message" id="quizMessage">Loading quizzes...</div>
+<div class="quiz-area"><div class="quiz-title" id="levelHeading">Elementary Quizzes</div><p class="quiz-help">Open the existing Live Quiz menu to see and select the quizzes for this level. Individual quiz catalogue paths are not specified in the original dashboard.</p><div class="quiz-grid"><a class="quiz-entry" href="live-quiz.html">Open Live Quiz →</a></div></div>
 </div>
 </section>
-<div class="bottom">
-<div class="mini disabled" aria-label="Weekly Test coming soon"><span class="icon" aria-hidden="true">▦</span><span><strong>Weekly Test</strong><small>Weekly assessments · weekly-test/</small></span><span class="arrow">Coming Soon</span></div>
-<a class="mini" href="underperforming.html"><span class="icon" aria-hidden="true">♙</span><span><strong>Underperforming Students</strong></span><span class="arrow" aria-hidden="true">↗</span></a>
+<div class="secondary">
+<div class="mini soon" aria-label="Weekly Test coming soon"><span class="icon" aria-hidden="true">▦</span><span><span class="mini-title">Weekly Test</span><span class="mini-sub" style="display:block">Coming Soon · weekly-test/</span></span></div>
+<a class="mini" href="underperforming.html"><span class="icon" aria-hidden="true">♙</span><span class="mini-title">Underperforming Students</span><span class="arrow" aria-hidden="true">↗</span></a>
 </div>
+<div class="bottom"><a class="settings-link" href="quiz-editor.html">Quiz Bank Settings →</a></div>
 </main>
 <footer>ExamPrep Studio · Teacher dashboard</footer>
 <script>
 "use strict";
-const LEVELS={"beginner":"Beginner","elementary":"Elementary","pre-intermediate":"Pre-Intermediate","intermediate":"Intermediate","upper-intermediate":"Upper-Intermediate"};
-const grid=document.getElementById("quizGrid");
-const message=document.getElementById("quizMessage");
-const levelTitle=document.getElementById("levelTitle");
-const quizCount=document.getElementById("quizCount");
-let requestId=0;
-function showMessage(text,error=false){message.textContent=text;message.classList.toggle("error",error);message.hidden=false;}
-function safePath(path){
- if(typeof path!=="string"||!path.trim())return null;
- const p=path.trim();
- if(p.startsWith("/")||p.startsWith("\\")||p.includes("\\")||p.split("/").includes("..")||/^[a-z][a-z\d+.-]*:/i.test(p)||p.startsWith("//"))return null;
- return p;
-}
-async function loadLevel(level){
- const current=++requestId;
- document.querySelectorAll(".level-btn").forEach(button=>button.setAttribute("aria-pressed",String(button.dataset.level===level)));
- levelTitle.textContent=LEVELS[level]+" Quizzes";
- quizCount.textContent="Loading...";
- grid.replaceChildren();
- showMessage("Loading quizzes...");
- try{
-  const response=await fetch(level+"/quizzes/index.json",{cache:"no-store"});
-  if(!response.ok)throw new Error("Catalogue unavailable (HTTP "+response.status+")");
-  const data=await response.json();
-  if(current!==requestId)return;
-  const quizzes=Array.isArray(data)?data:Array.isArray(data.quizzes)?data.quizzes:null;
-  if(!quizzes)throw new Error("Catalogue must be an array or contain a quizzes array.");
-  let shown=0;
-  for(const item of quizzes){
-   if(!item||typeof item!=="object")continue;
-   const path=safePath(item.path);
-   if(!path)continue;
-   const title=String(item.title||item.name||item.id||"Untitled quiz");
-   const id=String(item.id||"");
-   const number=id.match(/\d+$/)?.[0]||String(shown+1).padStart(2,"0");
-   const a=document.createElement("a");a.className="quiz";
-   a.href=level+"/quizzes/"+path;
-   a.title=title;
-   const num=document.createElement("span");num.className="quiz-number";num.textContent="#"+number;
-   const label=document.createElement("span");label.className="quiz-title";label.textContent=title;
-   a.append(num,label);grid.append(a);shown++;
-  }
-  quizCount.textContent=shown+" quiz"+(shown===1?"":"zes");
-  if(shown)message.hidden=true;
-  else showMessage("No quizzes have been added to this level yet.");
- }catch(error){
-  if(current!==requestId)return;
-  quizCount.textContent="Unavailable";
-  showMessage("Could not load "+LEVELS[level]+" quizzes: "+error.message,true);
- }
-}
-document.querySelectorAll(".level-btn").forEach(button=>button.addEventListener("click",()=>loadLevel(button.dataset.level)));
-const toggle=document.getElementById("liveToggle");
+const toggle=document.getElementById("toggleLive");
+const body=document.getElementById("liveBody");
+const chevron=document.getElementById("chevron");
 toggle.addEventListener("click",()=>{
- const open=toggle.getAttribute("aria-expanded")!=="true";
- toggle.setAttribute("aria-expanded",String(open));
- document.getElementById("liveContent").hidden=!open;
- document.getElementById("chevron").textContent=open?"⌃":"⌄";
+  const expanded=toggle.getAttribute("aria-expanded")==="true";
+  toggle.setAttribute("aria-expanded",String(!expanded));
+  body.hidden=expanded;
+  chevron.textContent=expanded?"⌄":"⌃";
 });
-loadLevel("elementary");
+document.querySelectorAll(".level").forEach(button=>{
+  button.setAttribute("aria-pressed",String(button.classList.contains("active")));
+  button.addEventListener("click",()=>{
+    document.querySelectorAll(".level").forEach(item=>{
+      const active=item===button;
+      item.classList.toggle("active",active);
+      item.setAttribute("aria-pressed",String(active));
+    });
+    document.getElementById("levelHeading").textContent=button.dataset.level+" Quizzes";
+  });
+});
 </script>
 </body>
 </html>
