@@ -1,11 +1,471 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f7fb"><title>Academic Support | ExamPrep Studio</title>
-<style>
-:root{--navy:#172554;--blue:#4f46e5;--muted:#64748b;--bg:#f5f7fb}*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:#172033}header{background:var(--navy);color:white;padding:24px max(5%,calc((100% - 1100px)/2))}.topbar{display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:750;font-size:19px}.brand small{display:block;color:#cbd5e1;font-size:12px;font-weight:400;margin-top:4px}.header-actions{display:flex;gap:12px;align-items:center}.header-actions a{color:white;text-decoration:none;font-size:13px}.settings{border:1px solid #52617e;background:#25365f;color:white;border-radius:10px;padding:10px 13px;cursor:pointer}.hero{padding:35px 0 8px}.hero h1{font-size:clamp(27px,4vw,38px);margin:0 0 9px}.hero p{color:#cbd5e1;margin:0;font-size:15px}main{max-width:1100px;margin:30px auto;padding:0 22px 50px}.card{background:white;border:1px solid #e2e8f0;border-radius:17px;padding:25px;margin-bottom:20px;box-shadow:0 4px 18px rgba(15,23,42,.035)}.card-heading{display:flex;align-items:center;gap:13px;margin-bottom:9px}.icon{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:23px;flex-shrink:0}.green{background:#ecfdf5}.orange{background:#fff7ed}h2{font-size:20px;margin:0}.description{color:var(--muted);font-size:14px;line-height:1.6;margin:5px 0 18px}.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.level{display:flex;align-items:center;justify-content:space-between;gap:8px;text-decoration:none;color:#26344c;background:#f8fafc;border:1px solid #e2e8f0;border-radius:11px;padding:15px;font-size:14px;font-weight:600;transition:.2s}.level:hover{border-color:#818cf8;background:#eef2ff;transform:translateY(-2px)}.arrow{color:#64748b}.support-row{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.secondary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 5px;color:#475569;text-decoration:none;font-size:14px;font-weight:600}.secondary:hover{color:var(--blue)}.primary-link{display:inline-flex;align-items:center;gap:12px;justify-content:space-between;min-height:46px;padding:12px 17px;border-radius:11px;background:#4f46e5;color:#fff;text-decoration:none;font-size:14px;font-weight:700}.primary-link:hover{background:#4338ca}.links{display:flex;gap:12px;flex-wrap:wrap}.note{font-size:12px;color:#64748b;margin:12px 0 0}footer{text-align:center;color:#94a3b8;font-size:12px;padding:20px}@media(max-width:650px){header{padding:20px}.topbar{align-items:flex-start}.brand{font-size:16px}.header-actions{flex-wrap:wrap;justify-content:flex-end}.hero{padding-top:28px}main{padding:0 15px 35px;margin:20px auto}.card{padding:19px}.levels{grid-template-columns:1fr}.links{display:grid;grid-template-columns:1fr}.primary-link{width:100%}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body>
-<header><div class="topbar"><div class="brand">🎓 ExamPrep Studio<small>Academic Support · Teacher Workspace</small></div><div class="header-actions"><a href="index.html">Main menu</a><button class="settings" onclick="openSettings()" title="Quiz bank settings">⚙</button></div></div><div class="hero"><h1>Academic Support</h1><p>Prepare learning materials and monitor student progress.</p></div></header>
-<main>
-<section class="card"><div class="card-heading"><div class="icon green">🖨️</div><h2>Print Worksheets</h2></div><p class="description">Choose any learning level and quiz, generate 10 random questions from its JSON question bank, and prepare a printable worksheet.</p><div class="links"><a class="primary-link" href="print-worksheets.html">Open Worksheet Generator <span>→</span></a></div><p class="note">The universal worksheet generator will be located in the repository root as print-worksheets.html.</p></section>
-<section class="card"><div class="support-row"><div class="card-heading" style="margin:0"><div class="icon orange">👥</div><h2>Underperforming Students</h2></div></div><p class="description">Review failed live-quiz results, monitor students who need support, and manage Needs Support and Resolved Issues in the shared dashboard.</p><div class="links"><a class="primary-link" href="underperforming.html">Open Underperforming List <span>→</span></a></div></section>
-<section class="card" style="padding:8px 20px"><a class="secondary" href="#" onclick="openSettings();return false;"><span>⚙️ &nbsp; Quiz Bank Settings</span><span>→</span></a></section>
-</main><footer>ExamPrep Studio · Academic Support</footer><script>function openSettings(){alert('Quiz Bank Settings will be connected when the question editor is developed.')}</script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Academic Support | ExamPrep Studio</title><style>*{box-sizing:border-box}body{margin:0;background:#f5f7fc;color:#172033;font:14px system-ui,sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}.hidden{display:none!important}.wrap{max-width:1600px;margin:auto;padding:0 14px 10px}.top{margin:0 -14px 10px;padding:10px 18px;background:#172554;color:white;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;font-size:17px}.brand small{display:block;font-size:10px;color:#c8d2f5;font-weight:400}.right,.toolbar,.tabs,.levels,.filters,.bulkbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.top a,.top button{color:white;background:transparent;border:1px solid #ffffff55;border-radius:6px;padding:5px 9px;text-decoration:none}.toolbar{justify-content:space-between;margin-bottom:7px}.tab,.level,.action{border:1px solid #dce3ef;background:white;color:#172554;border-radius:6px;padding:6px 10px;font-size:12px;font-weight:650}.tab[aria-selected=true],.level[aria-pressed=true]{background:#3156d9;color:white;border-color:#3156d9}.filters{margin-bottom:6px}.field{border:1px solid #dce3ef;border-radius:6px;padding:6px 9px;background:white;min-width:0}.filters input{flex:2}.filters select{flex:1}.bulkbar{margin-bottom:7px;font-size:12px}.selectlabel{display:flex;align-items:center;gap:5px}.bulkcount{color:#667085}.danger{margin-left:auto;color:#b42338;border-color:#f1c5ca}.row-select,#selectAll{accent-color:#3156d9;margin:0;width:14px;height:14px;flex:none}.names{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px}.record{display:flex;align-items:center;gap:5px;min-width:0;background:white;border:1px solid #e1e6ef;border-radius:7px;padding:5px 6px;min-height:34px}.record-name{flex:1;min-width:0;font-size:12px;font-weight:650;overflow-wrap:anywhere}.iconbtn{display:grid;place-items:center;width:25px;height:25px;flex:none;border:0;background:transparent;border-radius:5px;color:#3156d9;padding:3px}.iconbtn:hover{background:#edf1ff}.iconbtn.resolve{color:#16834b}.iconbtn.reopen{color:#667085}.iconbtn svg{width:17px;height:17px}.detail{position:fixed;z-index:10;background:white;border:1px solid #dce3ef;box-shadow:0 5px 20px #17255422;border-radius:7px;padding:7px 9px;font-size:11px;max-width:min(280px,calc(100vw - 16px));overflow-wrap:anywhere}.detail small{display:block;color:#667085;font-size:10px;margin-top:3px}.stats{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;background:white;border:1px solid #e1e6ef;border-radius:7px;margin-top:8px;padding:7px;font-size:11px;color:#667085}.stat strong{color:#172554;margin-left:5px}.status{font-size:12px;color:#b42338;overflow-wrap:anywhere;margin:5px 0}.status:empty{display:none}.subtle{font-size:10px;color:#667085;margin:5px 0}.empty{padding:18px;text-align:center;color:#667085}@media(max-width:1200px){.names{grid-template-columns:repeat(5,minmax(0,1fr))}}@media(max-width:950px){.names{grid-template-columns:repeat(4,minmax(0,1fr))}}@media(max-width:750px){.names{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:520px){.names{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{gap:8px}.record{padding:4px}.iconbtn{width:23px}.filters{flex-wrap:nowrap}}
+#printView{font-family:Inter,Arial,sans-serif;color:#172554;background:#f5f7fc}
+#printView *{box-sizing:border-box}
+#printView{margin:0}
+#printView header{background:#172554;color:white;padding:28px max(20px,calc((100% - 1050px)/2))}
+#printView header h1{margin:10px 0;font-size:30px}
+#printView header p{color:#cbd5e1;margin:0}
+#printView{max-width:1050px;margin:28px auto;padding:0 18px}
+#printView .panel{background:white;border:1px solid #e2e8f0;border-radius:18px;padding:24px;margin-bottom:20px}
+#printView .controls{display:grid;grid-template-columns:1fr 1fr 145px;gap:14px}
+#printView label{display:block;font-size:13px;font-weight:700;margin-bottom:8px}
+#printView select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;background:white;font:inherit}
+#printView button{background:#4f46e5;color:white;border:0;border-radius:10px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}
+#printView button:disabled{opacity:.5;cursor:not-allowed}
+#printView .secondary{background:#eef2ff;color:#3730a3}
+#printView .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;align-items:center}
+#printView .status{font-size:13px;color:#475569;margin:14px 0 0;line-height:1.6;white-space:pre-line}
+#printView .error{color:#b91c1c}
+#printView .hidden{display:none!important}
+#printView .sheet{background:white;color:#111827;border:1px solid #e2e8f0;border-radius:15px;padding:32px}
+#printView .sheet h2{text-align:center;margin:0 0 8px}
+#printView .subtitle{text-align:center;color:#475569;margin-bottom:25px}
+#printView .student-fields{display:flex;justify-content:space-between;gap:15px;margin-bottom:25px}
+#printView .question{break-inside:avoid;margin-bottom:22px;line-height:1.6}
+#printView .options{display:grid;grid-template-columns:1fr 1fr;gap:7px 18px;margin:10px 0 0 22px}
+#printView .line{border-bottom:1px dotted #9ca3af;height:24px;margin:8px 0 0 22px}
+#printView .key{margin-top:28px;border-top:2px dashed #94a3b8;padding-top:18px}
+#printView .key-list{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;font-size:13px}
+#printView footer{text-align:center;color:#64748b;font-size:12px;padding:20px}
+@media (max-width:650px){#printView .controls{grid-template-columns:1fr}
+#printView .sheet{padding:18px}
+#printView .options{grid-template-columns:1fr}
+#printView .student-fields{display:block}
+#printView .student-fields div{margin-bottom:10px}
+#printView .key-list{grid-template-columns:repeat(2,1fr)}}
+@page{size:A4;margin:15mm}
+#printView .passive-sentence{margin:9px 0 0 20px;line-height:2.1}
+#printView .inline-blank{display:inline-block;min-width:165px;white-space:nowrap;letter-spacing:0.3px;color:#334155}
+#printView .worksheet-instructions{margin:0 0 17px;line-height:1.55;color:#334155}
+#printView .word-bank{border:1px solid #cbd5e1;background:#f8fafc;padding:12px 16px;border-radius:8px;margin:0 0 22px;line-height:1.8}
+#printView .word-bank strong{display:block;margin-bottom:3px}
+#printView .passage-group{margin:0 0 26px}
+#printView .passage-heading{margin:14px 0 8px;font-size:16px}
+#printView .passage-text{line-height:1.65;margin:0 0 16px;white-space:pre-line}
+#printView .reported-opening{margin:8px 0 0 20px;line-height:2}
+#printView .context-reply{margin:8px 0 4px 22px;font-size:15px;line-height:1.5;color:#334155;break-inside:avoid}
+.top{margin:0 -14px 10px}.mainTabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:12px}.mainTabs button,.mainTabs a{display:flex;justify-content:center;align-items:center;min-height:42px;border:1px solid #dce3ef;border-radius:8px;background:white;color:#172554;font-weight:700;text-decoration:none}.mainTabs button[aria-selected=true]{background:#3156d9;color:white}.right button{font-size:15px}#printView{max-width:none;margin:0;padding:0;background:transparent}#printView .panel{padding:12px;margin-bottom:10px}#printView .controls{display:block;max-width:145px}#printView .controls [hidden]{display:none!important}#printView .level{background:white;color:#172554;border:1px solid #dce3ef;padding:6px 10px;font-size:12px}#printView .level[aria-pressed=true]{background:#3156d9;color:white}#quizCards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin:10px 0}#printView .quizcard{background:white;color:#172554;border:1px solid #dce3ef;text-align:left;font-size:12px;padding:10px;overflow-wrap:anywhere}#printView .quizcard[aria-pressed=true]{border-color:#3156d9;background:#eef2ff}#printView .actions{margin-top:10px}#printView .sheet{max-width:1050px;margin:auto}@media(max-width:950px){#quizCards{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:650px){#quizCards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media print{.top,.mainTabs,#dashboard,#printView .panel,.printToolbar,#quizCards,.detail{display:none!important}body,.wrap,#printView{background:white!important;margin:0!important;padding:0!important;max-width:none!important}#printView .sheet{border:0;border-radius:0;padding:0;max-width:none}#printView .key{break-before:page}#printView .question{margin-bottom:16px}#printView .passage-group{break-inside:avoid-page}#printView .passage-heading,#printView .passage-text{break-after:avoid}#printView .word-bank{background:white}}
+</style></head><body><div class="wrap"><header class="top"><div class="brand">✦ ExamPrep Studio<small>Academic Support · Teacher 2</small></div><div class="right"><button id="refresh" title="Refresh student list" aria-label="Refresh student list">↻</button><button onclick="openSettings()" title="Quiz Bank Settings" aria-label="Quiz Bank Settings">⚙</button><a href="index.html">Home ↗</a></div></header><nav class="mainTabs" aria-label="Teacher workspace"><button id="studentsTab" aria-selected="true">Student List</button><button id="printTab" aria-selected="false">Print</button><a href="chat.html">Chat</a></nav><section id="dashboard"><div class="toolbar"><div aria-label="Support status" class="tabs" role="tablist"><button aria-selected="true" class="tab" id="tabPending" role="tab">Pending <span id="pendingTabCount"></span></button><button aria-selected="false" class="tab" id="tabResolved" role="tab">Resolved <span id="resolvedTabCount"></span></button></div><div aria-label="Filter by level" class="levels" id="levelButtons"></div><select aria-label="Filter by level" class="hidden" id="levelFilter"><option value="">All levels</option></select></div><div class="filters"><input aria-label="Search students" class="field" id="search" placeholder="Search student or quiz..." type="search"/><select aria-label="Filter by quiz" class="field" id="quizFilter"><option value="">All quizzes</option></select></div><div class="bulkbar"><label class="selectlabel"><input id="selectAll" type="checkbox"/>Select all shown</label><span class="bulkcount" id="selectedCount">0 selected</span><button class="action danger" disabled="" id="deleteSelected" type="button">Delete selected</button></div><div class="names" id="rows"></div><div class="empty hidden" id="empty">No matching records</div><p class="status" id="dashboardError" role="status"></p><div class="stats"><div class="stat">Pending <strong id="pendingCount">—</strong></div><div class="stat">Resolved <strong id="resolvedCount">—</strong></div><div class="stat">Avg. failed score <strong id="average">—</strong></div></div><p class="subtle">Shared dashboard — no sign-in. Anyone with access may view and change records. Original scores are retained when resolved.</p></section><section id="printView" class="hidden"><div class="printToolbar"><div class="levels" id="printLevels" aria-label="Print level"></div></div><div id="quizCards"></div>
+<section class="panel">
+<div class="controls">
+<div hidden=""><label for="level">Level</label><select disabled="" id="level"><option>Loading levels...</option></select></div>
+<div hidden=""><label for="quiz">Quiz</label><select disabled="" id="quiz"><option value="">Choose a level</option></select></div>
+<div><label for="count">Questions</label><select id="count"><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></div>
+</div>
+<div class="actions">
+<button disabled="" id="generate">Generate worksheet</button>
+<button class="secondary" disabled="" id="reshuffle">New random set</button>
+<button class="secondary" disabled="" id="print">Print</button>
+<label style="display:flex;align-items:center;gap:8px;margin:0 0 0 auto"><input id="answerKey" type="checkbox"/>Include answer key</label>
+</div>
+<p aria-live="polite" class="status" id="status" role="status">Loading quiz catalogues...</p>
+</section>
+<article class="sheet hidden" id="sheet">
+<h2 id="sheetTitle"></h2><p class="subtitle" id="sheetSub"></p>
+<div class="student-fields"><div>Name: ______________________</div><div>Date: ______________</div><div>Score: ____ / <span id="maxScore"></span></div></div>
+<div id="worksheetInstructions"></div>
+<div id="worksheetWordBank"></div>
+<div id="questions"></div>
+<section class="key" id="key"><h3>Answer Key</h3><div class="key-list" id="answers"></div></section>
+</article>
+</section></div><script>function openSettings(){alert('Quiz Bank Settings will be connected when the question editor is developed.')}
+function switchView(print){document.getElementById('dashboard').classList.toggle('hidden',print);document.getElementById('printView').classList.toggle('hidden',!print);document.getElementById('studentsTab').setAttribute('aria-selected',String(!print));document.getElementById('printTab').setAttribute('aria-selected',String(print));document.getElementById('refresh').classList.toggle('hidden',print);document.querySelector('.detail')?.remove()}
+document.getElementById('studentsTab').onclick=()=>switchView(false);document.getElementById('printTab').onclick=()=>switchView(true);
+</script><script>
+(()=>{
+'use strict';
+const SUPABASE_URL='https://dfepopppcggzecdxexeh.supabase.co';
+// Public anon key from the working ExamPrep live quiz (same Supabase project).
+const PUBLIC_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo';
+const $=id=>document.getElementById(id);
+let records=[],tab='pending',working=false;
+const selectedIds=new Set();
+let visibleIds=[];
+const ready=()=>PUBLIC_KEY&&!PUBLIC_KEY.startsWith('PASTE_');
+async function rpc(name,body={}){
+ const res=await fetch(SUPABASE_URL+'/rest/v1/rpc/'+name,{
+  method:'POST',
+  headers:{apikey:PUBLIC_KEY,Authorization:'Bearer '+PUBLIC_KEY,'Content-Type':'application/json'},
+  body:JSON.stringify(body)
+ });
+ const raw=await res.text();let data;try{data=raw?JSON.parse(raw):null}catch{data=raw}
+ if(!res.ok)throw Error(data?.message||data?.error||`HTTP ${res.status}`);
+ return data;
+}
+function message(id,text){$(id).textContent=text||''}
+async function load(){
+ message('dashboardError','');
+ if(!ready()){message('dashboardError','Add the matching Supabase public key in this HTML first.');return}
+ try{const data=await rpc('eps2_support_list');records=Array.isArray(data)?data:[];const existing=new Set(records.map(r=>String(r.id)));for(const id of selectedIds)if(!existing.has(id))selectedIds.delete(id);render()}
+ catch(e){message('dashboardError',e.message)}
+}
+function dateText(v){if(!v)return '—';const d=new Date(v);return Number.isNaN(d.getTime())?'—':d.toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'})}
+function el(tag,text,cls){const node=document.createElement(tag);if(text!==undefined)node.textContent=String(text);if(cls)node.className=cls;return node}
+function actionButton(r){const b=el('button',r.support_status==='resolved'?'↶ Reopen Issue':'✓ Mark as Resolved','action');b.type='button';b.disabled=working;b.addEventListener('click',()=>changeStatus(r));return b}
+async function changeStatus(r){if(working)return;const next=r.support_status==='resolved'?'pending':'resolved';if(!confirm(`${next==='resolved'?'Mark as resolved':'Reopen'} the issue for ${r.student_name}?`))return;working=true;message('dashboardError','');render();try{await rpc('eps2_support_set_status',{p_id:r.id,p_status:next});await load()}catch(e){message('dashboardError',e.message)}finally{working=false;render()}}
+function selectionCheckbox(r){
+ const input=document.createElement('input');input.type='checkbox';input.className='row-select';input.setAttribute('aria-label','Select '+(r.student_name||'student'));
+ input.checked=selectedIds.has(String(r.id));input.disabled=working;
+ input.addEventListener('change',()=>{const id=String(r.id);if(input.checked)selectedIds.add(id);else selectedIds.delete(id);render()});return input;
+}
+function updateSelectionControls(){
+ const visible=new Set(visibleIds),selectedVisible=visibleIds.filter(id=>selectedIds.has(id));
+ const all=$('selectAll');all.checked=visibleIds.length>0&&selectedVisible.length===visibleIds.length;
+ all.indeterminate=selectedVisible.length>0&&selectedVisible.length<visibleIds.length;
+ all.disabled=working||visibleIds.length===0;
+ $('selectedCount').textContent=selectedVisible.length+' selected'+(selectedIds.size>selectedVisible.length?' ('+selectedIds.size+' across filters)':'');
+ $('deleteSelected').disabled=working||selectedIds.size===0;
+ $('deleteSelected').textContent=working?'Working…':'Delete selected'+(selectedIds.size?' ('+selectedIds.size+')':'');
+}
+async function deleteSelected(){
+ if(working||!selectedIds.size)return;
+ const ids=[...selectedIds];
+ if(!confirm('PERMANENTLY DELETE '+ids.length+' selected support record(s) from Supabase?\n\nThis cannot be undone.'))return;
+ working=true;message('dashboardError','');render();
+ try{
+  const result=await rpc('eps2_support_delete',{p_ids:ids});
+  selectedIds.clear();await load();
+  message('dashboardError','Deleted '+(typeof result==='number'?result:ids.length)+' record(s) permanently.');
+ }catch(e){message('dashboardError','Deletion failed: '+e.message+' — Run the supplied Supabase SQL setup if the function is missing.');}
+ finally{working=false;render()}
+}
+function updateQuizFilter(){const current=$('quizFilter').value;const names=[...new Set(records.map(r=>r.quiz_name||'Unknown quiz'))].sort((a,b)=>a.localeCompare(b));$('quizFilter').replaceChildren(new Option('All quizzes',''),...names.map(n=>new Option(n,n)));$('quizFilter').value=names.includes(current)?current:''}
+function levelName(r){
+ const raw=String(r.quiz_level||'').trim().toLowerCase();
+ return ({beginner:'Beginner',elementary:'Elementary','pre-int':'Pre-Intermediate','pre-intermediate':'Pre-Intermediate',inter:'Intermediate',intermediate:'Intermediate','upper-inter':'Upper-Intermediate','upper-intermediate':'Upper-Intermediate'})[raw]|| (raw ? r.quiz_level : 'Not specified');
+}
+const levelOptions=[['','All'],['Beginner','B'],['Elementary','E'],['Pre-Intermediate','PI'],['Intermediate','I'],['Upper-Intermediate','UI']];
+function updateLevelFilter(){const selected=$('levelFilter').value;const options=[...levelOptions];for(const name of new Set(records.map(levelName)))if(!options.some(x=>x[0]===name))options.push([name,name]);$('levelFilter').replaceChildren(...options.map(([v,l])=>new Option(l,v)));$('levelFilter').value=options.some(x=>x[0]===selected)?selected:'';$('levelButtons').replaceChildren(...options.map(([v,l])=>{const b=el('button',l,'level');b.type='button';b.title=v||'All levels';b.setAttribute('aria-label',b.title);b.setAttribute('aria-pressed',String($('levelFilter').value===v));b.onclick=()=>{$('levelFilter').value=v;render()};return b}));}
+const icons={eye:'<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',resolve:'<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',reopen:'<path d="M9 5 3 11l6 6M3 11h11a6 6 0 0 1 0 12"/>'};
+function icon(b,name){b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+icons[name]+'</svg>';}
+function closeDetail(){document.querySelector('.detail')?.remove()}
+function showDetail(r,b){const was=document.querySelector('.detail')?.dataset.id===String(r.id);closeDetail();if(was)return;const d=el('div',undefined,'detail');d.dataset.id=String(r.id);d.setAttribute('role','status');d.append(el('strong',levelName(r)+' · '+r.score+'%'),el('small',(r.quiz_name||'Unknown quiz')+' · '+dateText(r.created_at)));if(r.support_status==='resolved')d.append(el('small','Resolved '+dateText(r.resolved_at)));document.body.append(d);const rect=b.getBoundingClientRect();d.style.left=Math.max(8,Math.min(rect.left,innerWidth-d.offsetWidth-8))+'px';d.style.top=Math.max(8,rect.bottom+d.offsetHeight+6>innerHeight?rect.top-d.offsetHeight-4:rect.bottom+4)+'px';}
+document.addEventListener('click',e=>{if(!e.target.closest('.detail,.eye'))closeDetail()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail()});window.addEventListener('resize',closeDetail);window.addEventListener('scroll',closeDetail,true);
+function render(){closeDetail();const pending=records.filter(r=>r.support_status!=='resolved');const resolved=records.filter(r=>r.support_status==='resolved');$('pendingCount').textContent=pending.length;$('resolvedCount').textContent=resolved.length;$('average').textContent=records.length?Math.round(records.reduce((a,r)=>a+Number(r.score||0),0)/records.length)+'%':'—';$('pendingTabCount').textContent=`(${pending.length})`;$('resolvedTabCount').textContent=`(${resolved.length})`;$('tabPending').setAttribute('aria-selected',String(tab==='pending'));$('tabResolved').setAttribute('aria-selected',String(tab==='resolved'));updateQuizFilter();updateLevelFilter();const level=$('levelFilter').value;const q=$('search').value.trim().toLowerCase(),quiz=$('quizFilter').value;const filtered=records.filter(r=>(tab==='resolved'?r.support_status==='resolved':r.support_status!=='resolved')&&(!level||levelName(r)===level)&&(!quiz||(r.quiz_name||'Unknown quiz')===quiz)&&[r.student_name,r.quiz_name,levelName(r)].join(' ').toLowerCase().includes(q));$('rows').replaceChildren();$('empty').classList.toggle('hidden',filtered.length>0);visibleIds=filtered.map(r=>String(r.id));updateSelectionControls();
+ for(const r of filtered){const card=el('article',undefined,'record');const name=el('span',r.student_name,'record-name');const eye=el('button',undefined,'iconbtn eye');eye.type='button';eye.title='View details';eye.setAttribute('aria-label','View details for '+r.student_name);icon(eye,'eye');eye.onclick=()=>showDetail(r,eye);const action=actionButton(r);const kind=r.support_status==='resolved'?'reopen':'resolve';action.title=action.textContent;action.setAttribute('aria-label',action.title+' for '+r.student_name);action.className='iconbtn '+kind;icon(action,kind);card.append(selectionCheckbox(r),name,eye,action);$('rows').append(card)} }
+$('selectAll').addEventListener('change',e=>{for(const id of visibleIds){if(e.target.checked)selectedIds.add(id);else selectedIds.delete(id)}render()});$('deleteSelected').addEventListener('click',deleteSelected);$('refresh').addEventListener('click',load);$('tabPending').addEventListener('click',()=>{tab='pending';selectedIds.clear();render()});$('tabResolved').addEventListener('click',()=>{tab='resolved';selectedIds.clear();render()});$('search').addEventListener('input',render);$('quizFilter').addEventListener('change',render);$('levelFilter').addEventListener('change',render);
+if(ready())load();else message('dashboardError','Setup required: add the matching Supabase public key.');
+
+})();</script><script>
+(()=>{
+"use strict";
+const LEVELS = [
+  ["beginner", "Beginner"],
+  ["elementary", "Elementary"],
+  ["pre-int", "Pre-Intermediate"],
+  ["inter", "Intermediate"],
+  ["upper-inter", "Upper-Intermediate"]
+];
+const $ = id => document.getElementById(id);
+const catalog = new Map();
+const problems = new Map();
+let bank = [];
+let selection = [];
+let loadedPath = "";
+let generationId = 0;
+let bankMeta = {};
+function message(text, isError = false) {
+  $("status").textContent = text;
+  $("status").classList.toggle("error", isError);
+}
+async function getJSON(path) {
+  let response;
+  try {
+    response = await fetch(path, {cache:"no-store"});
+  } catch (error) {
+    throw new Error("Network error loading " + path + ": " + error.message);
+  }
+  if (!response.ok) throw new Error("HTTP " + response.status + " loading " + path);
+  try { return await response.json(); }
+  catch (error) { throw new Error("Invalid JSON in " + path + ": " + error.message); }
+}
+function getEntries(index) {
+  if (Array.isArray(index)) return index;
+  for (const field of ["quizzes", "items", "entries", "data"]) {
+    if (Array.isArray(index?.[field])) return index[field];
+  }
+  throw new Error("Catalogue must be a JSON array or contain a quizzes array");
+}
+function resolveBank(slug, item, position) {
+  // Catalogue entries may be objects, filenames, or labels.
+  const raw = typeof item === "string" ? {file:item} : item;
+  const obj = raw && typeof raw === "object" ? raw : {};
+  const candidates = [obj.bank,obj.bank_file,obj.bankFile,obj.questions_file,
+    obj.questionsFile,obj.json,obj.path,obj.file,obj.url,obj.href,obj.quiz,
+    obj.id,typeof item === "string" ? item : null];
+  let filename = "";
+  for (const candidate of candidates) {
+    if (typeof candidate !== "string") continue;
+    const base = candidate.split(/[?#]/)[0].split("/").pop();
+    if (/^quiz[-_]\d+(?:\.bank)?\.(?:json|html)$/i.test(base)) {
+      filename = base.replace(/\.html$/i,".bank.json")
+        .replace(/^(quiz[-_]\d+)\.json$/i,"$1.bank.json");
+      break;
+    }
+    const match = candidate.match(/(?:quiz[-_]|(?:beginner|elementary)[-_])(\d+)/i);
+    if (match) {
+      filename = "quiz-" + String(Number(match[1])).padStart(2,"0") + ".bank.json";
+      break;
+    }
+  }
+  // When a catalogue supplies only labels, its ordered entries still
+  // correspond to quiz-01, quiz-02, etc. Do not silently drop them.
+  if (!filename) filename = "quiz-" + String(position + 1).padStart(2,"0") + ".bank.json";
+  const fallback = "Quiz " + String(position + 1).padStart(2,"0");
+  const label = [obj.title,obj.name,obj.label].find(v=>typeof v==="string" && v.trim()) || fallback;
+  return {path:slug + "/quizzes/" + filename,label};
+}
+async function loadLevel(slug) {
+  const path = slug + "/quizzes/index.json";
+  try {
+    const entries = getEntries(await getJSON(path));
+    const unique = new Map();
+    for (const [position, entry] of entries.entries()) {
+      const quiz = resolveBank(slug, entry, position);
+      unique.set(quiz.path, quiz);
+    }
+    const quizzes = [...unique.values()].sort((a,b) => a.path.localeCompare(b.path, undefined, {numeric:true}));
+    // Resolve descriptive titles from each bank when index.json only provides filenames.
+    // A missing/invalid bank must NOT remove the quiz from the dropdown.
+    await Promise.all(quizzes.map(async quiz => {
+      try {
+        const data = await getJSON(quiz.path);
+        const title = data && typeof data === "object"
+          ? (data.title || data.quiz_title || data.name)
+          : null;
+        if (typeof title === "string" && title.trim()) quiz.label = title.trim();
+      } catch (error) {
+        console.warn("Quiz title unavailable:", quiz.path, error.message);
+      }
+    }));
+    catalog.set(slug, quizzes);
+    problems.set(slug, "");
+  } catch (error) {
+    catalog.set(slug, []);
+    problems.set(slug, error.message);
+  }
+}
+function resetSheet() {
+  bank = [];
+  bankMeta = {};
+  selection = [];
+  loadedPath = "";
+  $("sheet").classList.add("hidden");
+  $("generate").disabled = true;
+  $("reshuffle").disabled = true;
+  $("print").disabled = true;
+}
+function changeLevel() {
+  generationId++;
+  resetSheet();
+  const slug = $("level").value;
+  const quizzes = catalog.get(slug) || [];
+  $("quiz").replaceChildren(new Option(quizzes.length ? "Select quiz" : "No quizzes registered", ""), ...quizzes.map((quiz,i) => new Option(quiz.label, String(i))));
+  $("quiz").value = quizzes.length ? "0" : "";
+  $("generate").disabled = !quizzes.length;
+  renderQuizCards();
+  const issue = problems.get(slug);
+  if (issue) message("Catalogue issue for " + slug + ": " + issue, true);
+  else if (quizzes.length) message(quizzes.length + " registered quiz(es) in " + slug + ". Select a quiz to generate a worksheet.");
+  else message("No quizzes listed in " + slug + "/quizzes/index.json. Add quiz entries to this catalogue.", true);
+}
+async function initialize() {
+  $("level").replaceChildren(...LEVELS.map(([slug,label]) => new Option(label,slug)));
+  await Promise.all(LEVELS.map(([slug]) => loadLevel(slug)));
+  $("level").disabled = false;
+  $("quiz").disabled = false;
+  $("level").value = "beginner";
+  changeLevel();
+  const total = LEVELS.reduce((sum,[slug]) => sum + (catalog.get(slug)?.length || 0), 0);
+  const errors = LEVELS.filter(([slug]) => problems.get(slug));
+  if (errors.length) console.warn("Catalogue diagnostics:", errors.map(([slug]) => ({level:slug, issue:problems.get(slug)})));
+  console.info("Registered quiz total:", total);
+}
+function extractQuestions(data) {
+  if (Array.isArray(data)) return data;
+  if (!data || typeof data !== "object") return [];
+  for (const key of ["questions","bank","items","data","questionBank","question_bank"]) {
+    if (Array.isArray(data[key])) return data[key];
+  }
+  for (const value of Object.values(data)) {
+    if (Array.isArray(value) && value.some(q => q && typeof q === "object" && (q.prompt || q.question || q.text || q.q || q.original || q.originalSentence || q.active || q.given))) return value;
+  }
+  return [];
+}
+function normalizeQuestion(q) {
+  if (typeof q === "string") return {prompt:q, options:[], answer:""};
+  if (!q || typeof q !== "object") return null;
+  const pick = (...values) => values.find(v => typeof v === "string" && v.trim()) || "";
+  const source = pick(q.original,q.originalSentence,q.original_sentence,q.active,q.activeSentence,q.active_sentence,q.given,q.source,q.sourceSentence,q.source_sentence,q.firstSentence,q.first_sentence);
+  const before = pick(q.before,q.prefix,q.start,q.sentenceBefore,q.sentence_before,q.passiveBefore,q.passive_before,q.passivePrefix,q.passive_prefix,q.secondBefore,q.second_before);
+  const after = pick(q.after,q.suffix,q.end,q.sentenceAfter,q.sentence_after,q.passiveAfter,q.passive_after,q.passiveSuffix,q.passive_suffix,q.secondAfter,q.second_after);
+  const rawPrompt = pick(q.question,q.prompt,q.text,q.q,q.sentence,q.stem);
+  const transformation = !!(source && (before || after));
+  const type = pick(q.type);
+  const opening = pick(q.opening);
+  const passageId = pick(q.passage_id,q.passageId);
+  const passage = pick(q.passage,q.readingText,q.reading_text);
+  const passageTitle = pick(q.passage_title,q.passageTitle);
+  const prompt = rawPrompt || source || (before + " ___ " + after).trim();
+  if (!prompt) return null;
+  let options = q.options || q.choices || q.answers || [];
+  if (options && !Array.isArray(options) && typeof options === "object") options = Object.values(options);
+  options = Array.isArray(options) ? options.map(v => typeof v === "string" ? v : v?.text || v?.label || v?.value || "").filter(Boolean) : [];
+  let answer = q.correctAnswer ?? q.correct_answer ?? q.correct ?? q.answer ?? q.key ?? q.expected ?? q.acceptedAnswers?.[0] ?? "";
+  if (typeof answer === "number" && options.length) answer = options[answer] ?? String(answer);
+  if (typeof answer === "string" && /^[A-D]$/i.test(answer) && options.length) answer = options[answer.toUpperCase().charCodeAt(0)-65] || answer;
+  return {prompt, options, answer:String(answer), acceptedAnswers:Array.isArray(q.acceptedAnswers)?q.acceptedAnswers:[], type, opening, passageId, passage, passageTitle, transformation, source, before, after, reply:pick(q.reply,q.response,q.contextReply,q.context_reply), verb:pick(q.verb,q.baseVerb,q.base_verb)};
+}
+function randomSample(array, count) {
+  const copy = [...array];
+  for (let i=copy.length-1; i>0; i--) {
+    const j = Math.floor(Math.random()*(i+1));
+    [copy[i],copy[j]] = [copy[j],copy[i]];
+  }
+  return copy.slice(0,count);
+}
+function addElement(tag, value, parent, className) {
+  const element = document.createElement(tag);
+  element.textContent = value;
+  if (className) element.className = className;
+  parent.append(element);
+  return element;
+}
+function appendInlineSentence(parent, before, after, hint = "") {
+  const line = addElement("div","",parent,"passive-sentence");
+  if (before) addElement("span",before,line);
+  addElement("span","________________________",line,"inline-blank");
+  if (after) addElement("span",after,line);
+  if (hint) addElement("span"," ("+hint+")",line,"verb-hint");
+}
+function renderQuestion(q, i, parent) {
+  const wrap = addElement("div","",parent,"question");
+  if (q.type === "reported-question") {
+    addElement("strong",(i+1)+'. "'+q.prompt.replace(/^"|"$/g,"")+'"',wrap);
+    const line = addElement("div","",wrap,"reported-opening");
+    addElement("span",(q.opening || "")+" ",line);
+    addElement("span","________________________________________",line,"inline-blank");
+  } else if (q.type === "context-modal-fill") {
+    addElement("strong",(i+1)+".",wrap);
+    appendInlineSentence(wrap,q.before,q.after,q.verb);
+  } else if (q.transformation) {
+    addElement("strong",(i+1)+". "+q.source,wrap);
+    appendInlineSentence(wrap,q.before+ (q.before ? " " : ""),q.after ? " "+q.after : "");
+  } else {
+    addElement("strong",(i+1)+". "+q.prompt,wrap);
+    if (q.verb) addElement("span"," ("+q.verb+")",wrap,"verb-hint");
+    if (q.reply) addElement("div","Reply: "+q.reply,wrap,"context-reply");
+    if (q.options.length) {
+      const opts = addElement("div","",wrap,"options");
+      q.options.forEach((option,j) => addElement("div",String.fromCharCode(65+j)+". "+option,opts));
+    } else if (!q.prompt.includes("___") && !q.reply) addElement("div","",wrap,"line");
+  }
+  const variants = [q.answer,...q.acceptedAnswers.filter(a=>a && a!==q.answer)];
+  addElement("div",(i+1)+". "+(variants.filter(Boolean).join(" / ") || "—"),$("answers"));
+}
+function renderWorksheet() {
+  const slug = $("level").value;
+  const quiz = catalog.get(slug)?.[Number($("quiz").value)];
+  if (!quiz || quiz.path !== loadedPath || !selection.length) return;
+  $("sheetTitle").textContent = quiz.label;
+  $("sheetSub").textContent = (LEVELS.find(([key])=>key===slug)?.[1] || slug) + " · " + selection.length + " questions";
+  $("maxScore").textContent = selection.length;
+  $("questions").replaceChildren();
+  $("answers").replaceChildren();
+  $("worksheetInstructions").replaceChildren();
+  $("worksheetWordBank").replaceChildren();
+  if (bankMeta.instructions) addElement("p",bankMeta.instructions,$("worksheetInstructions"),"worksheet-instructions");
+  if (bankMeta.wordBank?.length) {
+    const box = addElement("div","",$("worksheetWordBank"),"word-bank");
+    addElement("strong","Word bank",box);
+    addElement("div",bankMeta.wordBank.join("  ·  "),box);
+  }
+  let previousPassage = null;
+  let group = null;
+  selection.forEach((q,i) => {
+    let parent = $("questions");
+    if (q.type === "context-modal-fill" && q.passageId) {
+      if (previousPassage !== q.passageId) {
+        group = addElement("section","",$("questions"),"passage-group");
+        if (q.passageTitle) addElement("h3",q.passageTitle,group,"passage-heading");
+        if (q.passage) addElement("p",q.passage,group,"passage-text");
+        previousPassage = q.passageId;
+      }
+      parent = group;
+    } else {
+      previousPassage = null;
+    }
+    renderQuestion(q,i,parent);
+  });
+  $("key").classList.toggle("hidden",!$("answerKey").checked);
+  $("sheet").classList.remove("hidden");
+  $("print").disabled = false;
+  $("reshuffle").disabled = false;
+}
+function reshuffle() {
+  const quiz = catalog.get($("level").value)?.[Number($("quiz").value)];
+  if (!bank.length || !quiz || quiz.path !== loadedPath) return;
+  const count = Math.min(Number($("count").value),bank.length);
+  if (bank.every(q=>q.type === "context-modal-fill" && q.passageId)) {
+    const groups = new Map();
+    for (const q of bank) {
+      if (!groups.has(q.passageId)) groups.set(q.passageId,[]);
+      groups.get(q.passageId).push(q);
+    }
+    const complete = [...groups.values()].filter(group=>group.length === 5);
+    if (complete.length && count % 5 === 0 && complete.length >= count / 5) {
+      selection = randomSample(complete,count/5).flat();
+    } else {
+      selection = randomSample(bank,count);
+    }
+  } else {
+    selection = randomSample(bank,count);
+  }
+  renderWorksheet();
+}
+async function generateWorksheet() {
+  const quiz = catalog.get($("level").value)?.[Number($("quiz").value)];
+  if (!quiz) return;
+  const current = ++generationId;
+  resetSheet();
+  message("Loading " + quiz.path + "...");
+  try {
+    const data = await getJSON(quiz.path);
+    if (current !== generationId) return;
+    const questions = extractQuestions(data).map(normalizeQuestion).filter(Boolean);
+    if (!questions.length) throw new Error("No supported questions found in " + quiz.path + ". Check the question fields in this bank.");
+    bank = questions;
+    bankMeta = {instructions:typeof data?.instructions === "string" ? data.instructions : "", wordBank:Array.isArray(data?.wordBank) ? data.wordBank.filter(v=>typeof v === "string") : []};
+    loadedPath = quiz.path;
+    reshuffle();
+    message("Loaded " + bank.length + " questions from " + quiz.path);
+  } catch (error) {
+    if (current !== generationId) return;
+    resetSheet();
+    message("Question bank error: " + error.message,true);
+  } finally {
+    if (current === generationId) $("generate").disabled = false;
+  }
+}
+$("level").addEventListener("change",changeLevel);
+$("quiz").addEventListener("change",() => {
+  generationId++;
+  resetSheet();
+  const selected = $("quiz").value;
+  $("generate").disabled = selected === "" || !catalog.get($("level").value)?.[Number(selected)];
+  message($("generate").disabled ? "Select a quiz." : "Ready to generate a worksheet.");
+});
+$("count").addEventListener("change",() => {if (bank.length) reshuffle();});
+$("generate").addEventListener("click",generateWorksheet);
+$("reshuffle").addEventListener("click",reshuffle);
+$("print").addEventListener("click",()=>window.print());
+$("answerKey").addEventListener("change",()=>$("key").classList.toggle("hidden",!$("answerKey").checked));
+function renderQuizCards(){
+ const slug=$("level").value;
+ $("printLevels").replaceChildren(...LEVELS.map(([key,label],i)=>{const b=document.createElement('button');b.type='button';b.className='level';b.textContent=['B','E','PI','I','UI'][i];b.title=label;b.setAttribute('aria-label',label);b.setAttribute('aria-pressed',String(key===slug));b.onclick=()=>{$("level").value=key;changeLevel()};return b}));
+ const quizzes=catalog.get(slug)||[];
+ $("quizCards").replaceChildren(...quizzes.map((q,i)=>{const b=document.createElement('button');b.type='button';b.className='quizcard';b.setAttribute('aria-pressed',String($("quiz").value===String(i)));b.textContent=q.label+'  ⎙';b.onclick=()=>{$("quiz").value=String(i);$("quiz").dispatchEvent(new Event('change'));renderQuizCards();generateWorksheet()};return b}));
+}
+initialize();
+
+})();</script></body></html>
