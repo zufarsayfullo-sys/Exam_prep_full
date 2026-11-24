@@ -14,23 +14,346 @@ main{width:min(1180px,calc(100% - 32px));margin:18px auto 22px}.intro{margin-bot
 .panel{background:#fff;border:1px solid var(--line);border-radius:17px;box-shadow:0 12px 35px rgba(23,37,84,.07);overflow:hidden}.panel-header{width:100%;display:flex;align-items:center;gap:12px;text-align:left;background:#fff;border:0;padding:14px 16px;cursor:pointer;color:var(--ink)}.panel-header strong{display:block;font-size:15px}.panel-header small{color:var(--muted);font-size:11px}.icon{width:34px;height:34px;display:grid;place-items:center;background:#edf1ff;color:var(--blue);border-radius:10px;flex-shrink:0}.chevron{margin-left:auto}.panel-body{border-top:1px solid var(--line);padding:12px 16px 15px}.levels{display:flex;gap:8px;flex-wrap:wrap}.level{min-width:48px;height:39px;border-radius:10px;border:1px solid #d8e1f8;background:#f5f7fc;font-weight:800;color:#172554;cursor:pointer}.level[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}.list-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 9px}.list-head strong{font-size:13px}.count{font-size:11px;color:var(--muted)}.quizzes{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}.quiz{min-width:0;text-decoration:none;color:#172554;background:#f7f9fd;border:1px solid #e0e7f5;border-radius:9px;padding:9px 10px;min-height:58px;display:flex;flex-direction:column;gap:4px}.quiz:hover,.quiz:focus-visible{border-color:#3156d9;background:#edf2ff}.quiz-num{color:var(--blue);font-size:10px;font-weight:800}.quiz-title{font-size:11px;font-weight:650;line-height:1.25;overflow-wrap:anywhere}.message{grid-column:1/-1;padding:16px;border:1px dashed #d7dfef;border-radius:10px;color:var(--muted);font-size:13px;background:#f8faff}
 .shortcuts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.shortcut{min-height:62px;display:flex;align-items:center;gap:10px;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:13px;text-decoration:none;color:var(--ink);box-shadow:0 10px 28px rgba(23,37,84,.05)}.shortcut strong{font-size:12px}.shortcut small{display:block;font-size:11px;color:var(--muted);margin-top:3px}.shortcut .arrow{margin-left:auto;color:var(--blue)}.settings{display:flex;justify-content:flex-end;margin-top:10px}.settings a{font-size:11px;color:var(--blue);text-decoration:none;border:1px solid #dce4ff;padding:8px 11px;border-radius:9px;background:#fff}footer{text-align:center;color:#98a1b3;font-size:11px;padding:8px 16px 16px}
 [hidden]{display:none!important}@media(max-width:950px){.quizzes{grid-template-columns:repeat(4,minmax(0,1fr))}}@media(max-width:700px){.topbar{padding:12px 16px}.teacher-pill{display:none}main{margin-top:15px}.quizzes{grid-template-columns:repeat(2,minmax(0,1fr))}.shortcuts{grid-template-columns:1fr}h1{font-size:23px}}@media(max-width:360px){.quizzes{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* =========================================
+   TEACHER CHAT — ADDITIONAL STYLES
+   ========================================= */
+
+.header-chat{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:7px;
+ color:#fff;
+ background:#ffffff12;
+ border:1px solid #ffffff35;
+ border-radius:9px;
+ padding:8px 12px;
+ text-decoration:none;
+ font-size:12px;
+ font-weight:650;
+ white-space:nowrap;
+ margin-left:auto;
+ flex-shrink:0;
+}
+
+.header-chat:hover{
+ background:#ffffff25;
+}
+
+.chat-unread{
+ display:inline-block;
+ width:9px;
+ height:9px;
+ background:#ef4444;
+ border-radius:50%;
+ flex-shrink:0;
+}
+
+.chat-unread[hidden]{
+ display:none!important;
+}
+
+.chat-label{
+ display:flex;
+ align-items:center;
+ gap:7px;
+}
+
+.chat-icon{
+ width:18px;
+ height:18px;
+ flex-shrink:0;
+}
+
+.chat-shortcut:hover{
+ border-color:#3156d9;
+ background:#f8faff;
+}
+
+@media(min-width:701px){
+ .shortcuts{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+ }
+}
+
+@media(max-width:700px){
+ .header-chat{
+  padding:8px 10px;
+ }
+ .topbar{
+  gap:10px;
+ }
+}
+
+@media(max-width:360px){
+ .topbar{
+  padding:10px;
+ }
+ .brand{
+  gap:6px;
+ }
+ .brand-name{
+  font-size:14px;
+ }
+ .header-chat{
+  padding:7px 8px;
+ }
+}
+
 </style>
 </head>
 <body>
-<header class="topbar"><div class="brand"><div class="brand-mark">E</div><div><div class="brand-name">ExamPrep Studio</div><div class="brand-sub">Teacher workspace</div></div></div><div class="teacher-pill">Teacher 1 · Live learning</div></header>
+
+<header class="topbar">
+
+ <div class="brand">
+  <div class="brand-mark">E</div>
+  <div>
+   <div class="brand-name">ExamPrep Studio</div>
+   <div class="brand-sub">Teacher workspace</div>
+  </div>
+ </div>
+
+ <!-- NEW: HEADER CHAT -->
+
+ <a class="header-chat" href="chat.html?teacher=1">
+
+  <svg class="chat-icon"
+   viewBox="0 0 24 24"
+   fill="none"
+   stroke="currentColor"
+   stroke-width="1.8"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   aria-hidden="true">
+   <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8
+   8.5 8.5 0 0 1-7.6 4.7
+   8.4 8.4 0 0 1-3.8-.9L3 21
+   l1.9-5.7a8.4 8.4 0 0 1-.9-3.8
+   8.5 8.5 0 0 1 4.7-7.6
+   8.4 8.4 0 0 1 3.8-.9h.5
+   a8.5 8.5 0 0 1 8 8v.5z"/>
+  </svg>
+
+  Chat
+
+  <span class="chat-unread"
+   aria-label="Unread messages"
+   hidden></span>
+
+ </a>
+
+ <div class="teacher-pill">
+  Teacher 1 · Live learning
+ </div>
+
+</header>
+
 <main>
-<section class="intro"><div class="eyebrow">Your teaching workspace</div><h1>Welcome back, Teacher</h1><p>Launch a live classroom quiz, monitor student progress, or manage your question bank.</p></section>
-<section class="panel" aria-label="Live Quiz"><button class="panel-header" id="toggle" type="button" aria-expanded="true" aria-controls="panelBody"><span class="icon" aria-hidden="true">▣</span><span><strong>Live Quiz</strong><small>Choose a level and open a quiz</small></span><span class="chevron" id="chevron" aria-hidden="true">⌃</span></button>
-<div class="panel-body" id="panelBody"><div class="levels" role="group" aria-label="Quiz level">
-<button class="level" type="button" data-folder="beginner" data-label="Beginner" aria-label="Beginner" title="Beginner" aria-pressed="true">B</button>
-<button class="level" type="button" data-folder="elementary" data-label="Elementary" aria-label="Elementary" title="Elementary" aria-pressed="false">E</button>
-<button class="level" type="button" data-folder="pre-int" data-label="Pre-Intermediate" aria-label="Pre-Intermediate" title="Pre-Intermediate" aria-pressed="false">PI</button>
-<button class="level" type="button" data-folder="inter" data-label="Intermediate" aria-label="Intermediate" title="Intermediate" aria-pressed="false">I</button>
-<button class="level" type="button" data-folder="upper-inter" data-label="Upper-Intermediate" aria-label="Upper-Intermediate" title="Upper-Intermediate" aria-pressed="false">UI</button>
-</div><div class="list-head"><strong id="levelName">Beginner Quizzes</strong><span class="count" id="quizCount" aria-live="polite"></span></div><div class="quizzes" id="quizGrid" aria-live="polite"><div class="message">Loading quizzes…</div></div></div></section>
-<section class="shortcuts" aria-label="Other teacher tools"><div class="shortcut"><span class="icon" aria-hidden="true">▦</span><span><strong>Weekly Test</strong><small>Coming Soon</small></span></div><a class="shortcut" href="underperforming.html"><span class="icon" aria-hidden="true">♙</span><span><strong>Underperforming Students</strong><small>Review student support tasks</small></span><span class="arrow" aria-hidden="true">↗</span></a></section>
-<div class="settings"><a href="quiz-editor.html">Quiz Bank Settings →</a></div>
-</main><footer>ExamPrep Studio · Teacher dashboard</footer>
+
+<section class="intro">
+ <div class="eyebrow">Your teaching workspace</div>
+ <h1>Welcome back, Teacher</h1>
+ <p>Launch a live classroom quiz, monitor student progress, or manage your question bank.</p>
+</section>
+
+<section class="panel" aria-label="Live Quiz">
+
+ <button class="panel-header"
+  id="toggle"
+  type="button"
+  aria-expanded="true"
+  aria-controls="panelBody">
+
+  <span class="icon" aria-hidden="true">▣</span>
+
+  <span>
+   <strong>Live Quiz</strong>
+   <small>Choose a level and open a quiz</small>
+  </span>
+
+  <span class="chevron"
+   id="chevron"
+   aria-hidden="true">⌃</span>
+
+ </button>
+
+ <div class="panel-body" id="panelBody">
+
+  <div class="levels"
+   role="group"
+   aria-label="Quiz level">
+
+   <button class="level"
+    type="button"
+    data-folder="beginner"
+    data-label="Beginner"
+    aria-label="Beginner"
+    title="Beginner"
+    aria-pressed="true">B</button>
+
+   <button class="level"
+    type="button"
+    data-folder="elementary"
+    data-label="Elementary"
+    aria-label="Elementary"
+    title="Elementary"
+    aria-pressed="false">E</button>
+
+   <button class="level"
+    type="button"
+    data-folder="pre-int"
+    data-label="Pre-Intermediate"
+    aria-label="Pre-Intermediate"
+    title="Pre-Intermediate"
+    aria-pressed="false">PI</button>
+
+   <button class="level"
+    type="button"
+    data-folder="inter"
+    data-label="Intermediate"
+    aria-label="Intermediate"
+    title="Intermediate"
+    aria-pressed="false">I</button>
+
+   <button class="level"
+    type="button"
+    data-folder="upper-inter"
+    data-label="Upper-Intermediate"
+    aria-label="Upper-Intermediate"
+    title="Upper-Intermediate"
+    aria-pressed="false">UI</button>
+
+  </div>
+
+  <div class="list-head">
+
+   <strong id="levelName">
+    Beginner Quizzes
+   </strong>
+
+   <span class="count"
+    id="quizCount"
+    aria-live="polite"></span>
+
+  </div>
+
+  <div class="quizzes"
+   id="quizGrid"
+   aria-live="polite">
+
+   <div class="message">
+    Loading quizzes…
+   </div>
+
+  </div>
+
+ </div>
+
+</section>
+
+<section class="shortcuts"
+ aria-label="Other teacher tools">
+
+ <!-- ORIGINAL: WEEKLY TEST -->
+
+ <div class="shortcut">
+
+  <span class="icon"
+   aria-hidden="true">▦</span>
+
+  <span>
+   <strong>Weekly Test</strong>
+   <small>Coming Soon</small>
+  </span>
+
+ </div>
+
+ <!-- ORIGINAL: UNDERPERFORMING STUDENTS -->
+
+ <a class="shortcut"
+  href="underperforming.html">
+
+  <span class="icon"
+   aria-hidden="true">♙</span>
+
+  <span>
+   <strong>Underperforming Students</strong>
+   <small>Review student support tasks</small>
+  </span>
+
+  <span class="arrow"
+   aria-hidden="true">↗</span>
+
+ </a>
+
+ <!-- NEW: CHAT SHORTCUT -->
+
+ <a class="shortcut chat-shortcut"
+  href="chat.html?teacher=1">
+
+  <span class="icon" aria-hidden="true">
+
+   <svg class="chat-icon"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8
+    8.5 8.5 0 0 1-7.6 4.7
+    8.4 8.4 0 0 1-3.8-.9L3 21
+    l1.9-5.7a8.4 8.4 0 0 1-.9-3.8
+    8.5 8.5 0 0 1 4.7-7.6
+    8.4 8.4 0 0 1 3.8-.9h.5
+    a8.5 8.5 0 0 1 8 8v.5z"/>
+
+   </svg>
+
+  </span>
+
+  <span>
+
+   <span class="chat-label">
+
+    <strong>Chat</strong>
+
+    <span class="chat-unread"
+     aria-label="Unread messages"
+     hidden></span>
+
+   </span>
+
+   <small>Academic Support</small>
+
+  </span>
+
+  <span class="arrow"
+   aria-hidden="true">↗</span>
+
+ </a>
+
+</section>
+
+<div class="settings">
+ <a href="quiz-editor.html">
+  Quiz Bank Settings →
+ </a>
+</div>
+
+</main>
+
+<footer>
+ ExamPrep Studio · Teacher dashboard
+</footer>
+
+<!-- ======================================
+     ORIGINAL QUIZ JAVASCRIPT — UNCHANGED
+     ====================================== -->
+
 <script>
 'use strict';
 const buttons=[...document.querySelectorAll('.level')];
@@ -92,5 +415,183 @@ document.getElementById('toggle').addEventListener('click',()=>{
 });
 selectLevel(buttons[0]);
 </script>
+
+<!-- ======================================
+     NEW: CHAT UNREAD NOTIFICATION SYSTEM
+     ====================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+(function(){
+
+ 'use strict';
+
+ const SUPABASE_URL =
+ 'https://dfepopppcggzecdxexeh.supabase.co';
+
+ const PUBLIC_KEY =
+ 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmZXBvcHBwY2dnemVjZHhleGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MDY5ODcsImV4cCI6MjEwOTA4Mjk4N30.yNIrIx4jST4zDjqs0TZ56tDEl8NRQOGrJyxmfRnKBDo';
+
+ const ROLE = 'teacher1';
+
+ const TABLE = 'eps2_teacher_messages';
+
+ const dots =
+ document.querySelectorAll('.chat-unread');
+
+ if(!dots.length)return;
+
+ if(!window.supabase){
+
+  console.warn(
+   'Chat notifications unavailable.'
+  );
+
+  return;
+
+ }
+
+ const db = window.supabase.createClient(
+  SUPABASE_URL,
+  PUBLIC_KEY
+ );
+
+ let checking = false;
+ let pending = false;
+
+ function showUnread(unread){
+
+  dots.forEach(dot=>{
+
+   dot.hidden = !unread;
+
+   const link = dot.closest('a');
+
+   if(link){
+
+    link.setAttribute(
+     'aria-label',
+     unread
+      ? 'Chat — unread messages'
+      : 'Chat'
+    );
+
+   }
+
+  });
+
+ }
+
+ async function updateUnread(){
+
+  if(checking){
+
+   pending = true;
+   return;
+
+  }
+
+  checking = true;
+
+  try{
+
+   const {data,error} = await db
+    .from(TABLE)
+    .select('id')
+    .eq('receiver',ROLE)
+    .is('read_at',null)
+    .limit(1);
+
+   if(error)throw error;
+
+   const unread =
+    Array.isArray(data) &&
+    data.length > 0;
+
+   showUnread(unread);
+
+  }catch(error){
+
+   console.warn(
+    'Chat notification check:',
+    error.message
+   );
+
+  }finally{
+
+   checking = false;
+
+   if(pending){
+
+    pending = false;
+    updateUnread();
+
+   }
+
+  }
+
+ }
+
+ /* Real-time unread updates */
+
+ db.channel('eps2-chat-counter-teacher1')
+
+  .on(
+   'postgres_changes',
+   {
+    event:'*',
+    schema:'public',
+    table:TABLE
+   },
+   updateUnread
+  )
+
+  .subscribe(status=>{
+
+   if(status==='SUBSCRIBED'){
+
+    updateUnread();
+
+   }
+
+  });
+
+ /* Initial unread check */
+
+ updateUnread();
+
+ /* Refresh when returning to dashboard */
+
+ window.addEventListener(
+  'focus',
+  updateUnread
+ );
+
+ window.addEventListener(
+  'pageshow',
+  updateUnread
+ );
+
+ document.addEventListener(
+  'visibilitychange',
+  ()=>{
+
+   if(!document.hidden){
+
+    updateUnread();
+
+   }
+
+  }
+ );
+
+ /* Fallback check every 15 seconds */
+
+ setInterval(updateUnread,15000);
+
+})();
+</script>
+
 </body>
 </html>
