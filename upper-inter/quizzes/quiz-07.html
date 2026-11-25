@@ -160,6 +160,9 @@ a {
 }
 .choices{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}.choice{background:#f1edff;color:#5430a9;border:2px solid transparent;min-height:60px}.choice.chosen{border-color:#7138e5;background:#e3d8ff}@media(max-width:500px){.choices{grid-template-columns:1fr}}
 /* Final leaderboard only — all existing quiz styles remain unchanged. */
+#teacher.active,#teacher.final{min-height:calc(100dvh - 90px)}body.board .wrap{max-width:1600px}body.board .brand{margin-bottom:10px}.name-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr));gap:12px}.name-card{border:1px solid #e6e4f5;border-radius:16px;padding:20px;text-align:center;font-size:clamp(18px,2.5vw,30px);font-weight:750;overflow-wrap:anywhere;background:white}.name-card.done{background:#dcfce7;border-color:#86efac}.name-card.lock{background:#fee2e2;border-color:#fca5a5}.name-card button{display:block;margin:10px auto 0}.podium{display:flex;align-items:end;justify-content:center;gap:12px;margin:24px 0}.podium div{flex:1;max-width:230px;text-align:center;background:#f0eaff;border-radius:16px;padding:18px;overflow-wrap:anywhere}.podium div:first-child{background:#fef0b7}.final-score{font-size:24px;font-weight:800}.spark{position:fixed;pointer-events:none;z-index:20;animation:fall 1.8s ease-in forwards}@keyframes fall{from{transform:translateY(-10vh) rotate(0)}to{transform:translateY(110vh) rotate(540deg);opacity:0}}#quiz{min-height:calc(100dvh - 100px)}#quiz .actions{margin-top:30px}#saveStatus{font-size:13px;color:#69718a}#teacher.active #waitingInfo,#teacher.final #waitingInfo{display:none}#teacher.active #start,#teacher.final #start,#teacher.final #end{display:none}#teacher.active .table-scroll{display:none}#teacher.final #names{display:none}#teacher:not(.active):not(.final) #names{display:none}#teacher.final #boardTitle{display:none}#teacher:not(.final) #finalSummary,#teacher:not(.final) #back{display:none}#teacher.final #count{display:none}
+.remove-player{color:#b91c1c!important;background:#fff1f2!important;min-height:40px;padding:6px 16px;font-size:22px} #teacher:not(.active):not(.final) td:last-child{text-align:right}
+.security{text-align:center}.security button{width:100%}
 </style>
 </head>
 <body>
@@ -182,32 +185,7 @@ a {
     Start the session when everyone is ready.
   </p>
 </section>
-<section class="card hidden" id="teacher">
-  <span class="tag">Teacher live session</span>
-  <h1>Verbs & Prepositions — Vocabulary in Context</h1>
-  <p>Session code: <strong id="code"></strong></p>
-  <p>
-    Student Board:
-    <a href="../../student.html" target="_blank" rel="noopener">
-      Open student.html
-    </a>
-  </p>
-  <p id="count"></p>
-  <div class="actions">
-    <button id="start">Start Quiz</button>
-    <button id="end" class="alt">End Session</button>
-  </div>
-  <h2>Live leaderboard</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Student</th>
-        <th>Score</th>
-      </tr>
-    </thead>
-    <tbody id="leader"></tbody>
-  </table>
-</section>
+<section class="card hidden" id="teacher"><h1 id="boardTitle">Verbs & Prepositions — Vocabulary in Context</h1><div id="waitingInfo"><span class="tag">Teacher live session</span><span id="code" hidden></span><p class="muted">Waiting for students to join…</p></div><p id="count"></p><div id="finalSummary" class="hidden"><h1>🏆 Final Leaderboard</h1><p id="stats"></p><div class="podium" id="podium"></div></div><div id="names" class="name-grid"></div><div class="table-scroll"><table><thead id="head"></thead><tbody id="leader"></tbody></table></div><div class="actions"><button id="start">Start Quiz</button><button id="end">Finish Quiz</button><button id="back">Back to Dashboard</button></div></section>
 <section class="card hidden" id="finalLeaderboard"><div class="final-heading"><div class="cup" aria-hidden="true">🏆</div><h1>Final Leaderboard</h1><p>Upper-Intermediate · Verbs & Prepositions — Vocabulary in Context</p></div><div id="finalPodium" class="podium hidden"></div><div id="finalEmpty" class="final-empty hidden">No completed student results yet.</div><div class="final-stats"><div class="final-stat"><strong id="finalTotal">0</strong><small>Students</small></div><div class="final-stat pass"><strong id="finalPassed">0</strong><small>Passed</small></div><div class="final-stat fail"><strong id="finalFailed">0</strong><small>Failed</small></div></div><h2>All Student Results</h2><div id="finalList" class="final-list"></div><p class="final-footer">Green = passed (80% or higher). Red = failed (below 80%).</p></section>
 <section class="card hidden" id="join">
   <span class="tag">Student joining</span>
@@ -226,6 +204,8 @@ a {
     Wait for your teacher to start the quiz.
   </p>
 </section>
+<section class="card hidden security" id="rules"><span class="tag">Exam Mode</span><h1>Before you start</h1><p>Do not leave the quiz, switch apps or minimise Telegram. An interruption may lock your attempt. Only your teacher can unlock it.</p><button id="acceptRules">I understand — Start Quiz</button></section>
+<section class="card hidden security" id="locked"><span class="tag">Exam Mode</span><h1>🔒 Quiz Locked</h1><p>Your quiz has been interrupted. Please contact your teacher.</p><p id="lockStatus" class="muted">Waiting for teacher approval.</p></section>
 <section class="card hidden" id="quiz">
   <span class="tag" id="counter"></span>
   <h2>Choose the correct modal verb or expression to complete each sentence.</h2>
@@ -256,6 +236,8 @@ a {
 </section>
 <p id="notice" role="status"></p>
 </main>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="../../exam-guard.js"></script>
 <script>
 "use strict";
 const URL_BASE =
@@ -271,7 +253,7 @@ const TEACHER_KEY = "eps2_teacher";
 const PLAYER_KEY = "eps2_player";
 const PROGRESS_PREFIX = "eps2_upper_quiz07_progress_";
 const $ = id => document.getElementById(id);
-const views = [
+const views = ["rules","locked",
   "home",
   "teacher",
   "finalLeaderboard",
@@ -406,7 +388,7 @@ async function loadBank() {
     return false;
   }
 }
-async function rpc(fn,data={}) {
+async function rawRpc(fn,data={}) {
   const response = await fetch(
     URL_BASE + "/rest/v1/rpc/" + fn,
     {
@@ -787,7 +769,7 @@ function displayResult(score) {
 $("toggleReview").onclick = () => {
   $("review").classList.toggle("hidden");
 };
-async function poll(force=false) {
+async function oldPoll(force=false) {
   if (
     !code ||
     sessionClosed ||
@@ -920,6 +902,29 @@ async function initialize() {
     await poll(true);
   }
 }
+function fullScreen(){document.body.classList.add('board');const tg=window.Telegram?.WebApp;try{if(tg?.initData&&tg.isVersionAtLeast?.('8.0')){tg.requestFullscreen();return;}if(tg?.initData)tg.expand();else document.documentElement.requestFullscreen?.()?.catch(()=>{});}catch{}}
+let celebrated=false;
+function duration(n){return n==null?'—':`${Math.floor(n/60)}:${String(n%60).padStart(2,'0')}`}
+function cell(row,value,cls){const td=document.createElement('td');td.textContent=value;if(cls)td.className=cls;row.append(td)}
+function teacherBoard(d){const active=d.status==='active',final=d.status==='completed';$('teacher').classList.toggle('active',active);$('teacher').classList.toggle('final',final);document.body.classList.toggle('board',active||final);$('finalSummary').classList.toggle('hidden',!final);$('count').textContent=active?`${d.completed_students} of ${d.total_students} students finished`:`${d.players.length} students joined`;$('start').disabled=d.status!=='waiting'||!d.players.length;$('end').disabled=!active;const names=$('names'),t=$('leader');names.replaceChildren();t.replaceChildren();$('head').innerHTML=final?'<tr><th>Rank</th><th>Student</th><th>Score</th><th>Time</th></tr>':'<tr><th>Student</th><th>Action</th></tr>';for(const p of d.players){if(active){const card=document.createElement('div');card.className='name-card '+(p.completed?'done':p.exam_locked?'lock':'');const name=document.createElement('div');name.textContent=p.name;card.append(name);if(p.exam_locked&&!p.completed){const btn=document.createElement('button');btn.textContent='Unlock';btn.onclick=()=>run(async()=>{await rpc('eps2_exam_unlock',{p_code:code,p_token:teacherToken,p_player:p.id});await poll(true)});card.append(btn)}names.append(card)}else{const tr=document.createElement('tr');if(final)cell(tr,p.rank);cell(tr,p.name);if(final){cell(tr,p.score==null?'—':p.score+'%',p.score>=80?'good':'bad');cell(tr,duration(p.duration_seconds))}else if(d.status==='waiting'){const td=document.createElement('td');const btn=document.createElement('button');btn.className='alt remove-player';btn.textContent='×';btn.setAttribute('aria-label','Remove '+p.name);btn.onclick=()=>run(async()=>{await rpc('eps2_remove_player',{p_code:code,p_token:teacherToken,p_player:p.id});await poll(true)});td.append(btn);tr.append(td)}t.append(tr)}}if(final){$('stats').textContent=`${d.total_students} students · ${d.passed_students} passed · ${d.failed_students} failed · All results saved`;$('podium').replaceChildren();for(const p of d.players.filter(p=>p.rank<=3)){const card=document.createElement('div');card.textContent=`${['🥇','🥈','🥉'][p.rank-1]} ${p.name} · ${p.score}% · ${duration(p.duration_seconds)}`;$('podium').append(card)}if(!celebrated){celebrated=true;for(let i=0;i<45;i++){const el=document.createElement('span');el.className='spark';el.textContent=['✦','★','●'][i%3];el.style.cssText=`left:${Math.random()*100}%;top:-20px;color:${['#7138e5','#d4a017','#16a34a'][i%3]};animation-delay:${Math.random()*.6}s`;document.body.append(el);setTimeout(()=>el.remove(),2600)}}}}
+
+let bulkStarted=false, bulkLocked=false, bulkPending=false, bulkSyncing=false, bulkEpoch=0, bulkTimer, bulkChain=Promise.resolve(), bulkDirty=false, bulkFinal=false;
+function bulkScore(){return selected.filter(q=>isCorrect(q,answers[q.id])).length*10;}
+function bulkSchedule(){if(!bulkStarted||bulkLocked||submitted||bulkFinal)return;bulkDirty=true;clearTimeout(bulkTimer);bulkTimer=setTimeout(()=>void bulkSave(),250);}
+function bulkSave(){clearTimeout(bulkTimer);if(!bulkStarted||bulkLocked||submitted||bulkFinal)return Promise.resolve(false);const snapshot=JSON.parse(JSON.stringify(answers));const score=bulkScore();bulkDirty=false;const task=bulkChain.then(async()=>{if(bulkLocked||submitted||bulkFinal)return false;try{await rawRpc('eps2_save_progress',{p_code:code,p_player:playerId,p_answers:snapshot,p_score:score});return true}catch(e){bulkDirty=true;notice('Progress not saved yet — reconnecting…');return false}});bulkChain=task.catch(()=>false);return task;}
+async function rpc(fn,data={}){if(fn==='eps2_submit'){if(bulkLocked||bulkFinal)throw Error('Quiz is locked or finished');if(!await bulkSave())throw Error('Answers not saved. Please retry.');if(bulkLocked||bulkFinal)throw Error('Quiz is locked or finished');const result=await rawRpc(fn,data);if(result.score!==data.p_score||result.auto_submitted){const state=await rawRpc('eps2_state',{p_code:code,p_player:playerId});bulkResult(state);throw Error('Session already finished; saved result displayed.');}window.ExamGuard?.stop();return result;}return rawRpc(fn,data);}
+function bulkBlock(){bulkLocked=true;window.ExamGuard?.lock();show('locked');}
+async function bulkSync(){if(!bulkPending||bulkSyncing||bulkFinal||submitted)return;bulkSyncing=true;try{const d=await rawRpc('eps2_exam_lock',{p_code:code,p_player:playerId});if(d.locked){bulkPending=false;$('lockStatus').textContent='Waiting for teacher approval.';}}catch(e){$('lockStatus').textContent='Reconnecting…';}finally{bulkSyncing=false;}}
+function bulkViolation(){if(!bulkStarted||bulkLocked||submitted||bulkFinal)return;bulkPending=true;bulkEpoch++;bulkBlock();void bulkSync();}
+function bulkArm(){window.ExamGuard.start({locked:bulkLocked,onViolation:bulkViolation,onReturn:()=>{void bulkSync();void poll(true)}});}
+function bulkResult(d){bulkFinal=true;submitted=true;clearTimeout(bulkTimer);window.ExamGuard?.stop();if(!selected.length)restoreProgress();answers=d.saved_answers||{};displayResult(d.score);if(!selected.length)$('toggleReview').disabled=true;saveProgress();}
+$('acceptRules').onclick=()=>{if(bulkStarted||bulkFinal)return;if(!window.ExamGuard){notice('Exam protection could not load. Reload the page.');return;}fullScreen();if(!selected.length){selected=choose();answers={};index=0;}bulkStarted=true;show('quiz');render();saveProgress();bulkArm();void bulkSave();};
+$('start').onclick=()=>{fullScreen();run(async()=>{await rpc('eps2_start',{p_code:code,p_token:teacherToken});await poll(true)});};
+$('end').onclick=()=>run(async()=>{await rpc('eps2_end',{p_code:code,p_token:teacherToken});await poll(true)});
+$('back').onclick=()=>{sessionStorage.removeItem('eps2_teacher');try{window.Telegram?.WebApp?.exitFullscreen?.();}catch{}if(document.fullscreenElement)document.exitFullscreen?.().catch(()=>{});location.href='../../teacher.html';};
+async function poll(force=false){if(!code||polling||(!force&&busy))return;polling=true;const epoch=bulkEpoch,wasPending=bulkPending||bulkSyncing;try{const d=await rpc('eps2_state',{p_code:code,p_token:teacherToken||null,p_player:playerId||null});if(teacherToken){teacherBoard(d);return;}if(!playerId)return;if(d.completed){if(!bulkFinal)bulkResult(d);return;}if(d.status==='completed'){bulkFinal=true;window.ExamGuard?.stop();show('waiting');notice('Session finished.');return;}if(d.status!=='active'||submitted)return;if(!bulkStarted){if(!window.ExamGuard){notice('Exam protection could not load. Reload the page.');return;}if(selected.length||d.exam_locked){if(!selected.length){selected=choose();answers={};index=0;}bulkStarted=true;bulkPending=!d.exam_locked;bulkBlock();bulkArm();void bulkSync();}else show('rules');return;}if(bulkPending){void bulkSync();return;}if(d.exam_locked){bulkBlock();return;}if(bulkLocked&&!wasPending&&epoch===bulkEpoch){bulkLocked=false;show('quiz');render();window.ExamGuard?.unlock();void bulkSave();}else if(bulkDirty)void bulkSave();}catch(e){if(playerId&&!teacherToken&&!bulkStarted&&/Invalid participant/i.test(e.message)){sessionStorage.removeItem('eps2_player');playerId='';code='';show('join');notice('You were removed. Please rejoin from the Student Board.');}else notice(e.message||String(e));}finally{polling=false;}}
+const originalSaveProgress=saveProgress;saveProgress=function(){originalSaveProgress();bulkSchedule();};
+
 initialize();
 // Poll only for session changes.
 // Never reset or re-render the active question.
